@@ -47,8 +47,25 @@
 
   <!-- ── Screen 1: Class Picker ── -->
   <section id="class-picker" class="screen">
-    <div class="mascot">🦉</div>
-    <h2 class="screen-title">Which class are you in?</h2>
+
+    <div class="welcome-banner hidden" id="welcome-banner">
+      <div class="welcome-left">
+        <p id="time-greeting" class="time-greeting"></p>
+        <h2 id="welcome-name" class="welcome-name">Welcome!</h2>
+        <p class="welcome-sub">What will you learn today?</p>
+      </div>
+      <div class="welcome-stats">
+        <div class="stat-pill">🔥 <strong id="home-streak">0</strong></div>
+        <div class="stat-pill">⭐ <strong id="home-stars">0</strong></div>
+      </div>
+    </div>
+
+    <div id="continue-bar" class="continue-bar hidden">
+      <span class="continue-label">Continue</span>
+      <button id="continue-btn" class="continue-btn"></button>
+    </div>
+
+    <h2 class="screen-title pick-title">Choose your class</h2>
     <div class="class-grid" id="class-grid">
       <!-- populated by JS -->
     </div>
