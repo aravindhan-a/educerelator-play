@@ -112,23 +112,11 @@ body {
 
 /* ── WELCOME BANNER ── */
 .welcome-banner {
-  display: flex; align-items: center; justify-content: space-between;
-  background: rgba(255,255,255,0.22); backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.45);
-  border-radius: 22px; padding: 18px 22px; margin-bottom: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 4px 0 12px; margin-bottom: 4px;
 }
-.welcome-left { flex: 1; }
-.time-greeting { font-size: 0.85rem; font-weight: 700; color: rgba(255,255,255,0.8); margin: 0 0 2px; }
-.welcome-name  { font-size: 1.55rem; font-weight: 900; color: #fff; margin: 0 0 2px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18); }
-.welcome-sub   { font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.75); margin: 0; }
-.welcome-stats { display: flex; flex-direction: column; gap: 7px; margin-left: 16px; }
-.stat-pill {
-  background: rgba(255,255,255,0.3); border-radius: 999px;
-  padding: 5px 14px; font-size: 0.95rem; font-weight: 700;
-  color: #fff; text-align: center; min-width: 68px;
-}
+.time-greeting { font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.75); margin: 0 0 2px; }
+.welcome-name  { font-size: 1.4rem; font-weight: 900; color: #fff; margin: 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15); }
 
 /* ── CONTINUE BAR ── */
 .continue-bar {
@@ -346,10 +334,7 @@ body {
   .topbar h1 { font-size: 1.1rem; }
   .choices { gap: 10px; }
   .choice-btn { font-size: 1.2rem; padding: 16px 6px; }
-  .welcome-banner { padding: 14px 16px; }
-  .welcome-name { font-size: 1.25rem; }
-  .welcome-stats { gap: 5px; }
-  .stat-pill { font-size: 0.82rem; padding: 4px 10px; min-width: 54px; }
+  .welcome-name { font-size: 1.15rem; }
 }
 @media (max-width: 380px) {
   .class-grid { grid-template-columns: repeat(2, 1fr); }
@@ -405,17 +390,6 @@ body {
 .hero-tagline {
   font-size: 1.15rem; color: rgba(255,255,255,0.88); margin: 0;
   line-height: 1.5; font-weight: 500;
-}
-.hero-features {
-  display: flex; flex-direction: column; gap: 10px; width: 100%;
-}
-.hero-feat {
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 12px; padding: 11px 16px;
-  font-size: 0.95rem; color: white; font-weight: 600;
 }
 .hero-chips {
   display: flex; flex-wrap: wrap; gap: 8px;
