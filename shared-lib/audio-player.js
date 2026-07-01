@@ -2,9 +2,13 @@
 // Usage: playAudio({ id: 'num-1-5-001', lang: 'hi', text: 'कितने सेब हैं?' })
 
 const TTS_LANG_CODES = {
-  en: "en-IN",
-  hi: "hi-IN",
-  ta: "ta-IN",
+  en: "en-IN", hi: "hi-IN", ta: "ta-IN",
+  bn: "bn-IN", gu: "gu-IN", kn: "kn-IN", ml: "ml-IN",
+  mr: "mr-IN", pa: "pa-IN", te: "te-IN", ur: "ur-IN",
+  as: "as-IN", or: "or-IN", ne: "ne-IN", sa: "sa-IN",
+  // fallbacks for less-supported locales
+  brx: "hi-IN", doi: "hi-IN", kok: "mr-IN", mai: "hi-IN",
+  mni: "bn-IN", sat: "hi-IN", sd: "ur-IN", ks: "ur-IN",
 };
 
 function clipUrl(id, lang) {

@@ -18,10 +18,42 @@ import {
   saveUserProgress,
 } from "./auth.js";
 
+// ── UI strings for all 22 official Indian languages + English ──
+const UI_STRINGS = {
+  en:  { pickClass:"Choose your class", pickSubject:"Choose a subject", morning:"Good morning! ☀️", afternoon:"Good afternoon! 🌤️", evening:"Good evening! 🌙", wellDone:"Well done! 🎉", tryAgain:"Try again next time!", continueLabel:"Continue where you left off" },
+  hi:  { pickClass:"अपनी कक्षा चुनें", pickSubject:"एक विषय चुनें", morning:"शुभ प्रभात! ☀️", afternoon:"शुभ दोपहर! 🌤️", evening:"शुभ संध्या! 🌙", wellDone:"शाबाश! 🎉", tryAgain:"अगली बार फिर कोशिश करें!", continueLabel:"जहाँ छोड़ा वहाँ से जारी रखें" },
+  ta:  { pickClass:"உங்கள் வகுப்பைத் தேர்ந்தெடுங்கள்", pickSubject:"ஒரு பாடத்தைத் தேர்ந்தெடுங்கள்", morning:"காலை வணக்கம்! ☀️", afternoon:"மதிய வணக்கம்! 🌤️", evening:"மாலை வணக்கம்! 🌙", wellDone:"மிகவும் நல்லது! 🎉", tryAgain:"அடுத்த முறை முயற்சிக்கவும்!", continueLabel:"நிறுத்திய இடத்தில் தொடரவும்" },
+  bn:  { pickClass:"আপনার শ্রেণী বেছে নিন", pickSubject:"একটি বিষয় বেছে নিন", morning:"শুভ সকাল! ☀️", afternoon:"শুভ দুপুর! 🌤️", evening:"শুভ সন্ধ্যা! 🌙", wellDone:"চমৎকার! 🎉", tryAgain:"পরের বার আবার চেষ্টা করুন!", continueLabel:"যেখানে ছেড়েছিলেন সেখান থেকে চালিয়ে যান" },
+  gu:  { pickClass:"તમારો વર્ગ પસંદ કરો", pickSubject:"એક વિષય પસંદ કરો", morning:"સુપ્રભાત! ☀️", afternoon:"શુભ બપોર! 🌤️", evening:"શુભ સાંજ! 🌙", wellDone:"શાબાશ! 🎉", tryAgain:"આગળ વખત ફરી પ્રયાસ કરો!", continueLabel:"જ્યાં છોડ્યું ત્યાંથી ચાલુ રાખો" },
+  kn:  { pickClass:"ನಿಮ್ಮ ತರಗತಿ ಆಯ್ಕೆ ಮಾಡಿ", pickSubject:"ಒಂದು ವಿಷಯ ಆಯ್ಕೆ ಮಾಡಿ", morning:"ಶುಭೋದಯ! ☀️", afternoon:"ಶುಭ ಮಧ್ಯಾಹ್ನ! 🌤️", evening:"ಶುಭ ಸಂಜೆ! 🌙", wellDone:"ಭಲೇ! 🎉", tryAgain:"ಮುಂದಿನ ಬಾರಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ!", continueLabel:"ನಿಲ್ಲಿಸಿದ ಕಡೆಯಿಂದ ಮುಂದುವರಿಸಿ" },
+  ml:  { pickClass:"നിങ്ങളുടെ ക്ലാസ് തിരഞ്ഞെടുക്കുക", pickSubject:"ഒരു വിഷയം തിരഞ്ഞെടുക്കുക", morning:"ശുഭപ്രഭാതം! ☀️", afternoon:"ശുഭ ഉച്ചനേരം! 🌤️", evening:"ശുഭ സന്ധ്യ! 🌙", wellDone:"നന്നായി! 🎉", tryAgain:"അടുത്ത തവണ വീണ്ടും ശ്രമിക്കൂ!", continueLabel:"നിർത്തിയ ഇടത്ത് നിന്ന് തുടരുക" },
+  mr:  { pickClass:"तुमचा वर्ग निवडा", pickSubject:"एक विषय निवडा", morning:"शुभ प्रभात! ☀️", afternoon:"शुभ दुपार! 🌤️", evening:"शुभ संध्या! 🌙", wellDone:"शाबास! 🎉", tryAgain:"पुढच्या वेळी पुन्हा प्रयत्न करा!", continueLabel:"सोडलेल्या जागेपासून सुरू ठेवा" },
+  pa:  { pickClass:"ਆਪਣੀ ਕਲਾਸ ਚੁਣੋ", pickSubject:"ਇੱਕ ਵਿਸ਼ਾ ਚੁਣੋ", morning:"ਸ਼ੁਭ ਸਵੇਰ! ☀️", afternoon:"ਸ਼ੁਭ ਦੁਪਹਿਰ! 🌤️", evening:"ਸ਼ੁਭ ਸ਼ਾਮ! 🌙", wellDone:"ਸ਼ਾਬਾਸ਼! 🎉", tryAgain:"ਅਗਲੀ ਵਾਰ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ!", continueLabel:"ਜਿੱਥੇ ਛੱਡਿਆ ਉੱਥੋਂ ਜਾਰੀ ਰੱਖੋ" },
+  te:  { pickClass:"మీ తరగతిని ఎంచుకోండి", pickSubject:"ఒక సబ్జెక్ట్ ఎంచుకోండి", morning:"శుభోదయం! ☀️", afternoon:"శుభ మధ్యాహ్నం! 🌤️", evening:"శుభ సాయంత్రం! 🌙", wellDone:"చాలా బాగు! 🎉", tryAgain:"తదుపరి సారి మళ్ళీ ప్రయత్నించు!", continueLabel:"ఆగిన చోటి నుండి కొనసాగించు" },
+  ur:  { pickClass:"اپنی کلاس منتخب کریں", pickSubject:"ایک مضمون منتخب کریں", morning:"صبح بخیر! ☀️", afternoon:"سہ پہر بخیر! 🌤️", evening:"شام بخیر! 🌙", wellDone:"شاباش! 🎉", tryAgain:"اگلی بار پھر کوشش کریں!", continueLabel:"جہاں چھوڑا وہاں سے جاری رکھیں" },
+  as:  { pickClass:"আপোনাৰ শ্ৰেণী বাছক", pickSubject:"এটা বিষয় বাছক", morning:"শুভ ৰাতিপুৱা! ☀️", afternoon:"শুভ দুপৰীয়া! 🌤️", evening:"শুভ সন্ধিয়া! 🌙", wellDone:"চমৎকাৰ! 🎉", tryAgain:"পৰৱৰ্তী বাৰ আকৌ চেষ্টা কৰক!", continueLabel:"য'ত এৰি থৈছিল তাৰ পৰা আৰম্ভ কৰক" },
+  or:  { pickClass:"ଆପଣଙ୍କ ଶ୍ରେଣୀ ବାଛନ୍ତୁ", pickSubject:"ଏକ ବିଷୟ ବାଛନ୍ତୁ", morning:"ଶୁଭ ସକାଳ! ☀️", afternoon:"ଶୁଭ ଅପରାହ୍ନ! 🌤️", evening:"ଶୁଭ ସନ୍ଧ୍ୟା! 🌙", wellDone:"ବଢ଼ିଆ! 🎉", tryAgain:"ପରବର୍ତ୍ତୀ ଥର ଆଉ ଚେଷ୍ଟା କର!", continueLabel:"ଯେଉଁଠୁ ଛାଡ଼ିଥିଲ ସେଠୁ ଜାରି ରଖ" },
+  ne:  { pickClass:"आफ्नो कक्षा छान्नुहोस्", pickSubject:"एउटा विषय छान्नुहोस्", morning:"शुभ प्रभात! ☀️", afternoon:"शुभ दिउँसो! 🌤️", evening:"शुभ साँझ! 🌙", wellDone:"साबाश! 🎉", tryAgain:"अर्को पटक फेरि कोशिश गर्नुहोस्!", continueLabel:"छाडेकोबाट जारी राख्नुहोस्" },
+  sa:  { pickClass:"स्वकक्षां चिनुत", pickSubject:"एकं विषयं चिनुत", morning:"सुप्रभातम्! ☀️", afternoon:"शुभं मध्याह्नम्! 🌤️", evening:"शुभं सायाह्नम्! 🌙", wellDone:"साधु! 🎉", tryAgain:"पुनः प्रयत्नं करोतु!", continueLabel:"यत्र अत्यक्षत तत्र पुनरारभत" },
+};
+function t(key) { return (UI_STRINGS[lang] || UI_STRINGS.en)[key] || UI_STRINGS.en[key]; }
+
+function applyUIStrings() {
+  document.querySelectorAll(".pick-title").forEach(el => { el.textContent = t("pickClass"); });
+  const subjectTitle = document.querySelector("#subject-picker .screen-title");
+  if (subjectTitle) subjectTitle.textContent = t("pickSubject");
+  const contLabel = document.querySelector(".continue-label");
+  if (contLabel) contLabel.textContent = t("continueLabel");
+}
+
 // ── persisted state keys ──
 const ADAPTIVE_KEY = "adaptiveState";
 const LANG_KEY     = "lang";
 const CURR_KEY     = "curriculum";
+
+// ── session progress ──
+const SESSION_TOTAL = 10;
+let sessionCount = 0;
 
 // ── runtime state ──
 let lang            = localStorage.getItem(LANG_KEY) || "en";
@@ -87,6 +119,13 @@ function saveAdaptiveState() {
 }
 function adaptiveKey(classNum, subject) { return `${classNum}:${subject}`; }
 
+function updateProgressBar() {
+  const fill  = document.getElementById("session-bar-fill");
+  const label = document.getElementById("session-label");
+  if (fill)  fill.style.width = `${Math.min(sessionCount / SESSION_TOTAL, 1) * 100}%`;
+  if (label) label.textContent = `${Math.min(sessionCount, SESSION_TOTAL)} / ${SESSION_TOTAL}`;
+}
+
 function updateWelcomeBanner() {
   if (!currentUser) return;
   const banner = document.getElementById("welcome-banner");
@@ -94,7 +133,7 @@ function updateWelcomeBanner() {
 
   const hour = new Date().getHours();
   document.getElementById("time-greeting").textContent =
-    hour < 12 ? "Good morning! ☀️" : hour < 17 ? "Good afternoon! 🌤️" : "Good evening! 🌙";
+    hour < 12 ? t("morning") : hour < 17 ? t("afternoon") : t("evening");
 
   const name = currentUser.displayName || currentUser.email.split("@")[0];
   document.getElementById("welcome-name").textContent = `Hi, ${name.split(" ")[0]}! 👋`;
@@ -220,6 +259,7 @@ onAuthChange(async (user) => {
       }
     } catch { /* offline — use whatever is in localStorage */ }
 
+    applyUIStrings();
     showClassPicker();
     updateWelcomeBanner();
   } else {
@@ -234,6 +274,8 @@ langSwitcher.value = lang;
 langSwitcher.addEventListener("change", () => {
   lang = langSwitcher.value;
   localStorage.setItem(LANG_KEY, lang);
+  applyUIStrings();
+  updateWelcomeBanner();
   if (currentQuestion) renderQuestion(currentQuestion);
 });
 
@@ -316,6 +358,9 @@ async function startPlay(subject) {
   playBadgeEl.textContent = `Class ${currentClass} · ${meta?.label ?? subject}`;
   localStorage.setItem("lastPlayed", JSON.stringify({ classNum: currentClass, subject }));
 
+  sessionCount = 0;
+  updateProgressBar();
+
   subjectPickerEl.classList.add("hidden");
   playScreenEl.classList.remove("hidden");
   streakDisplay.classList.remove("hidden");
@@ -382,9 +427,12 @@ function handleAnswer(selectedIndex) {
     else if (i === selectedIndex)          btn.classList.add("wrong");
   });
 
-  feedbackEl.textContent = correct ? "Well done! 🎉" : "Try again next time!";
+  feedbackEl.textContent = correct ? t("wellDone") : t("tryAgain");
   feedbackEl.classList.toggle("correct", correct);
   feedbackEl.classList.toggle("wrong",   !correct);
+
+  sessionCount = Math.min(sessionCount + 1, SESSION_TOTAL);
+  updateProgressBar();
 
   const stats = recordResult(key, correct);
   streakCountEl.textContent = stats.streak;
