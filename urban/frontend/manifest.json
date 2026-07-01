@@ -1,0 +1,12 @@
+{
+  "name": "Educerelator Play",
+  "short_name": "Educerelator",
+  "description": "Free learning games for children — numbers, letters, words, shapes & colors, patterns.",
+  "start_url": "/urban/frontend/index.html",
+  "display": "standalone",
+  "background_color": "#fdfcf7",
+  "theme_color": "#ff5e7e",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

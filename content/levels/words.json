@@ -1,0 +1,65 @@
+{
+  "skill": "words",
+  "levels": [
+    {
+      "id": "words-animals",
+      "difficulty": 1,
+      "questions": [
+        {
+          "id": "wrd-animals-001",
+          "type": "match-image",
+          "prompt": {
+            "en": "Which word matches the picture?",
+            "hi": "कौन सा शब्द चित्र से मेल खाता है?",
+            "ta": "எந்த சொல் படத்துடன் பொருந்துகிறது?"
+          },
+          "visual": "🐶",
+          "choices": [
+            { "en": "Dog", "hi": "कुत्ता", "ta": "நாய்" },
+            { "en": "Cat", "hi": "बिल्ली", "ta": "பூனை" },
+            { "en": "Cow", "hi": "गाय", "ta": "மாடு" }
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "wrd-animals-002",
+          "type": "match-image",
+          "prompt": {
+            "en": "Which word matches the picture?",
+            "hi": "कौन सा शब्द चित्र से मेल खाता है?",
+            "ta": "எந்த சொல் படத்துடன் பொருந்துகிறது?"
+          },
+          "visual": "🐘",
+          "choices": [
+            { "en": "Elephant", "hi": "हाथी", "ta": "யானை" },
+            { "en": "Tiger", "hi": "बाघ", "ta": "புலி" },
+            { "en": "Bear", "hi": "भालू", "ta": "கரடி" }
+          ],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "words-fruits",
+      "difficulty": 2,
+      "questions": [
+        {
+          "id": "wrd-fruits-001",
+          "type": "match-image",
+          "prompt": {
+            "en": "Which word matches the picture?",
+            "hi": "कौन सा शब्द चित्र से मेल खाता है?",
+            "ta": "எந்த சொல் படத்துடன் பொருந்துகிறது?"
+          },
+          "visual": "🍌",
+          "choices": [
+            { "en": "Banana", "hi": "केला", "ta": "வாழைப்பழம்" },
+            { "en": "Mango", "hi": "आम", "ta": "மாம்பழம்" },
+            { "en": "Apple", "hi": "सेब", "ta": "ஆப்பிள்" }
+          ],
+          "answerIndex": 0
+        }
+      ]
+    }
+  ]
+}

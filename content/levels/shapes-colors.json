@@ -1,0 +1,65 @@
+{
+  "skill": "shapes-colors",
+  "levels": [
+    {
+      "id": "shapes-basic",
+      "difficulty": 1,
+      "questions": [
+        {
+          "id": "shp-basic-001",
+          "type": "identify-shape",
+          "prompt": {
+            "en": "What shape is this?",
+            "hi": "यह कौन सी आकृति है?",
+            "ta": "இது என்ன வடிவம்?"
+          },
+          "visual": "🔺",
+          "choices": [
+            { "en": "Triangle", "hi": "त्रिभुज", "ta": "முக்கோணம்" },
+            { "en": "Square", "hi": "वर्ग", "ta": "சதுரம்" },
+            { "en": "Circle", "hi": "वृत्त", "ta": "வட்டம்" }
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "shp-basic-002",
+          "type": "identify-shape",
+          "prompt": {
+            "en": "What shape is this?",
+            "hi": "यह कौन सी आकृति है?",
+            "ta": "இது என்ன வடிவம்?"
+          },
+          "visual": "🔵",
+          "choices": [
+            { "en": "Square", "hi": "वर्ग", "ta": "சதுரம்" },
+            { "en": "Circle", "hi": "वृत्त", "ta": "வட்டம்" },
+            { "en": "Star", "hi": "तारा", "ta": "நட்சத்திரம்" }
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "colors-basic",
+      "difficulty": 2,
+      "questions": [
+        {
+          "id": "clr-basic-001",
+          "type": "identify-color",
+          "prompt": {
+            "en": "What color is this?",
+            "hi": "यह कौन सा रंग है?",
+            "ta": "இது என்ன நிறம்?"
+          },
+          "visual": "🟥",
+          "choices": [
+            { "en": "Red", "hi": "लाल", "ta": "சிவப்பு" },
+            { "en": "Blue", "hi": "नीला", "ta": "நீலம்" },
+            { "en": "Green", "hi": "हरा", "ta": "பச்சை" }
+          ],
+          "answerIndex": 0
+        }
+      ]
+    }
+  ]
+}

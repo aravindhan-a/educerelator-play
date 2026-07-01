@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble deploy folder
+        run: |
+          mkdir -p deploy
+          cp urban/frontend/index.html deploy/
+          cp urban/frontend/favicon.svg deploy/
+          cp urban/frontend/manifest.json deploy/
+          cp urban/frontend/robots.txt deploy/
+          cp urban/frontend/sitemap.xml deploy/
+          cp -r urban/frontend/css deploy/
+          cp -r urban/frontend/js deploy/
+          cp -r content deploy/
+          cp -r shared-lib deploy/
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy
+          cname: educerelator.com

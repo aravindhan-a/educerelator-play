@@ -1,0 +1,60 @@
+import { generateQuestionBatch } from "../lib/anthropic.js";
+import { getCachedBatch, setCachedBatch } from "../lib/cache.js";
+
+const VALID_SUBJECTS = [
+  "math", "english", "evs", "science", "social-studies",
+  "hindi", "tamil", "computer-science", "physics", "chemistry",
+  "biology", "economics", "business-studies", "history",
+  "geography", "political-science", "psychology", "sociology",
+];
+const VALID_CURRICULA = ["cbse", "state", "international"];
+const MAX_CLASS      = 12;
+const MAX_DIFFICULTY = 10;
+
+const ALLOWED_ORIGINS = new Set([
+  "https://educerelator.com",
+  "https://www.educerelator.com",
+]);
+
+function applyCors(req, res) {
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_ORIGINS.has(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
+  res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+}
+
+// GET /api/generate-questions?class=6&subject=science&curriculum=cbse&difficulty=2
+export default async function handler(req, res) {
+  applyCors(req, res);
+  if (req.method === "OPTIONS") return res.status(204).end();
+  if (req.method !== "GET")    return res.status(405).json({ error: "Method not allowed" });
+
+  const classNum   = parseInt(req.query.class, 10);
+  const subject    = req.query.subject;
+  const curriculum = req.query.curriculum || "cbse";
+  const difficulty = parseInt(req.query.difficulty, 10);
+
+  if (
+    !Number.isInteger(classNum)  || classNum < 1  || classNum > MAX_CLASS ||
+    !VALID_SUBJECTS.includes(subject) ||
+    !VALID_CURRICULA.includes(curriculum) ||
+    !Number.isInteger(difficulty) || difficulty < 1 || difficulty > MAX_DIFFICULTY
+  ) {
+    return res.status(400).json({ error: "Invalid parameters" });
+  }
+
+  try {
+    let batch = await getCachedBatch(classNum, subject, curriculum, difficulty);
+    if (!batch) {
+      batch = await generateQuestionBatch({ classNum, subject, curriculum, difficulty });
+      await setCachedBatch(classNum, subject, curriculum, difficulty, batch);
+    }
+    res.setHeader("Cache-Control", "public, max-age=3600");
+    return res.status(200).json({ classNum, subject, curriculum, difficulty, questions: batch });
+  } catch (err) {
+    console.error("generate-questions failed:", err);
+    return res.status(502).json({ error: "Question generation failed" });
+  }
+}

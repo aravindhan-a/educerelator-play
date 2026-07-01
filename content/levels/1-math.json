@@ -1,0 +1,78 @@
+{
+  "class": 1,
+  "subject": "math",
+  "levels": [
+    {
+      "id": "class1-math-1",
+      "difficulty": 1,
+      "questions": [
+        {
+          "id": "1-math-001",
+          "type": "count",
+          "prompt": { "en": "How many apples?", "hi": "कितने सेब हैं?", "ta": "எத்தனை ஆப்பிள்கள்?" },
+          "visual": "🍎🍎🍎",
+          "choices": [
+            { "en": "2", "hi": "2", "ta": "2" },
+            { "en": "3", "hi": "3", "ta": "3" },
+            { "en": "4", "hi": "4", "ta": "4" }
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "1-math-002",
+          "type": "count",
+          "prompt": { "en": "How many stars?", "hi": "कितने तारे हैं?", "ta": "எத்தனை நட்சத்திரங்கள்?" },
+          "visual": "⭐⭐",
+          "choices": [
+            { "en": "1", "hi": "1", "ta": "1" },
+            { "en": "2", "hi": "2", "ta": "2" },
+            { "en": "5", "hi": "5", "ta": "5" }
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": "1-math-003",
+          "type": "count",
+          "prompt": { "en": "How many balloons?", "hi": "कितने गुब्बारे हैं?", "ta": "எத்தனை பலூன்கள்?" },
+          "visual": "🎈🎈🎈🎈",
+          "choices": [
+            { "en": "3", "hi": "3", "ta": "3" },
+            { "en": "4", "hi": "4", "ta": "4" },
+            { "en": "5", "hi": "5", "ta": "5" }
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "class1-math-2",
+      "difficulty": 2,
+      "questions": [
+        {
+          "id": "1-math-004",
+          "type": "complete-pattern",
+          "prompt": { "en": "What comes next?", "hi": "आगे क्या आएगा?", "ta": "அடுத்தது என்ன வரும்?" },
+          "visual": "🔴🔵🔴🔵❓",
+          "choices": [
+            { "en": "🔴", "hi": "🔴", "ta": "🔴" },
+            { "en": "🔵", "hi": "🔵", "ta": "🔵" },
+            { "en": "🟢", "hi": "🟢", "ta": "🟢" }
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "1-math-005",
+          "type": "count",
+          "prompt": { "en": "How many flowers?", "hi": "कितने फूल हैं?", "ta": "எத்தனை பூக்கள்?" },
+          "visual": "🌸🌸🌸🌸🌸",
+          "choices": [
+            { "en": "4", "hi": "4", "ta": "4" },
+            { "en": "5", "hi": "5", "ta": "5" },
+            { "en": "6", "hi": "6", "ta": "6" }
+          ],
+          "answerIndex": 1
+        }
+      ]
+    }
+  ]
+}

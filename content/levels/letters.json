@@ -1,0 +1,65 @@
+{
+  "skill": "letters",
+  "levels": [
+    {
+      "id": "letters-a-e",
+      "difficulty": 1,
+      "questions": [
+        {
+          "id": "let-a-e-001",
+          "type": "identify",
+          "prompt": {
+            "en": "Which letter is this?",
+            "hi": "यह कौन सा अक्षर है?",
+            "ta": "இது எந்த எழுத்து?"
+          },
+          "visual": "A",
+          "choices": [
+            { "en": "A", "hi": "A", "ta": "A" },
+            { "en": "B", "hi": "B", "ta": "B" },
+            { "en": "C", "hi": "C", "ta": "C" }
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "let-a-e-002",
+          "type": "match-sound",
+          "prompt": {
+            "en": "What starts with the same sound as 'Cat'?",
+            "hi": "'बिल्ली' जैसी ध्वनि से कौन सा शब्द शुरू होता है?",
+            "ta": "'பூனை' போன்ற ஒலியில் தொடங்கும் சொல் எது?"
+          },
+          "visual": "🐱",
+          "choices": [
+            { "en": "Car", "hi": "कार", "ta": "கார்" },
+            { "en": "Dog", "hi": "कुत्ता", "ta": "நாய்" },
+            { "en": "Sun", "hi": "सूरज", "ta": "சூரியன்" }
+          ],
+          "answerIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "letters-f-j",
+      "difficulty": 2,
+      "questions": [
+        {
+          "id": "let-f-j-001",
+          "type": "identify",
+          "prompt": {
+            "en": "Which letter is this?",
+            "hi": "यह कौन सा अक्षर है?",
+            "ta": "இது எந்த எழுத்து?"
+          },
+          "visual": "J",
+          "choices": [
+            { "en": "G", "hi": "G", "ta": "G" },
+            { "en": "J", "hi": "J", "ta": "J" },
+            { "en": "I", "hi": "I", "ta": "I" }
+          ],
+          "answerIndex": 1
+        }
+      ]
+    }
+  ]
+}
