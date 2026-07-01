@@ -3,6 +3,8 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  signInWithPopup,
+  GoogleAuthProvider,
   updateProfile,
   onAuthStateChanged,
   signOut,
@@ -17,30 +19,47 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { FIREBASE_CONFIG } from "./firebase-config.js";
 
-const app  = initializeApp(FIREBASE_CONFIG);
-const auth = getAuth(app);
-const db   = getFirestore(app);
+const app            = initializeApp(FIREBASE_CONFIG);
+const auth           = getAuth(app);
+const db             = getFirestore(app);
+const googleProvider = new GoogleAuthProvider();
+
+async function ensureUserDoc(user) {
+  const ref  = doc(db, "users", user.uid);
+  const snap = await getDoc(ref);
+  if (!snap.exists()) {
+    await setDoc(ref, {
+      name:       user.displayName || user.email.split("@")[0],
+      email:      user.email,
+      createdAt:  serverTimestamp(),
+      lastActive: serverTimestamp(),
+      progress:   {},
+    });
+  } else {
+    await updateDoc(ref, { lastActive: serverTimestamp() });
+  }
+}
 
 export function onAuthChange(callback) {
   return onAuthStateChanged(auth, callback);
 }
 
+export async function loginWithGoogle() {
+  const cred = await signInWithPopup(auth, googleProvider);
+  await ensureUserDoc(cred.user);
+  return cred.user;
+}
+
 export async function registerUser(name, email, password) {
   const cred = await createUserWithEmailAndPassword(auth, email, password);
   await updateProfile(cred.user, { displayName: name });
-  await setDoc(doc(db, "users", cred.user.uid), {
-    name,
-    email,
-    createdAt:  serverTimestamp(),
-    lastActive: serverTimestamp(),
-    progress:   {},
-  });
+  await ensureUserDoc(cred.user);
   return cred.user;
 }
 
 export async function loginUser(email, password) {
   const cred = await signInWithEmailAndPassword(auth, email, password);
-  await updateDoc(doc(db, "users", cred.user.uid), { lastActive: serverTimestamp() });
+  await ensureUserDoc(cred.user);
   return cred.user;
 }
 
