@@ -69,6 +69,14 @@ const signoutBtnEl     = document.getElementById("signout-btn");
 
 const CONFETTI_EMOJI = ["🎉", "⭐", "✨", "🎈", "🏆"];
 
+const GROUP_EMOJI = {
+  "group-primary-low": "🐣",
+  "group-primary":     "🌱",
+  "group-middle":      "🚀",
+  "group-secondary":   "⚡",
+  "group-senior":      "🏆",
+};
+
 // ── helpers ──
 function loadJSON(key, defaultFn) {
   try { return JSON.parse(localStorage.getItem(key)) || defaultFn(); }
@@ -78,6 +86,43 @@ function saveAdaptiveState() {
   localStorage.setItem(ADAPTIVE_KEY, JSON.stringify(adaptiveState));
 }
 function adaptiveKey(classNum, subject) { return `${classNum}:${subject}`; }
+
+function updateWelcomeBanner() {
+  if (!currentUser) return;
+  const banner = document.getElementById("welcome-banner");
+  banner.classList.remove("hidden");
+
+  const hour = new Date().getHours();
+  document.getElementById("time-greeting").textContent =
+    hour < 12 ? "Good morning! ☀️" : hour < 17 ? "Good afternoon! 🌤️" : "Good evening! 🌙";
+
+  const name = currentUser.displayName || currentUser.email.split("@")[0];
+  document.getElementById("welcome-name").textContent = `Hi, ${name.split(" ")[0]}! 👋`;
+
+  const skills = (loadJSON("progress", () => ({ skills: {} })).skills) || {};
+  const totalStars  = Object.values(skills).reduce((s, v) => s + (v.correct  || 0), 0);
+  const bestStreak  = Object.values(skills).reduce((s, v) => Math.max(s, v.streak || 0), 0);
+  document.getElementById("home-stars").textContent  = totalStars;
+  document.getElementById("home-streak").textContent = bestStreak;
+
+  // Continue bar
+  const last = loadJSON("lastPlayed", () => null);
+  const continueBar = document.getElementById("continue-bar");
+  if (last) {
+    const subjects = getSubjectsForClass(last.classNum);
+    const meta = subjects.find((s) => s.id === last.subject);
+    const label = meta ? `${meta.emoji} Class ${last.classNum} · ${meta.label}` : `Class ${last.classNum} · ${last.subject}`;
+    document.getElementById("continue-btn").textContent = label;
+    continueBar.classList.remove("hidden");
+  } else {
+    continueBar.classList.add("hidden");
+  }
+}
+
+async function startPlayFromContinue(classNum, subject) {
+  currentClass = classNum;
+  await startPlay(subject);
+}
 
 function syncProgress() {
   if (!currentUser) return;
@@ -176,6 +221,7 @@ onAuthChange(async (user) => {
     } catch { /* offline — use whatever is in localStorage */ }
 
     showClassPicker();
+    updateWelcomeBanner();
   } else {
     currentUser = null;
     userInfoEl.classList.add("hidden");
@@ -195,9 +241,16 @@ langSwitcher.addEventListener("change", () => {
 ALL_CLASSES.forEach(({ num, groupLabel, colorClass }) => {
   const btn = document.createElement("button");
   btn.className = `class-btn ${colorClass}`;
-  btn.innerHTML = `<span class="class-num">${num}</span><span class="class-label">${groupLabel}</span>`;
+  const emoji = GROUP_EMOJI[colorClass] || "⭐";
+  btn.innerHTML = `<span class="class-emoji">${emoji}</span><span class="class-num">${num}</span><span class="class-label">${groupLabel}</span>`;
   btn.addEventListener("click", () => showSubjectPicker(num));
   classGridEl.appendChild(btn);
+});
+
+// ── continue button ──
+document.getElementById("continue-btn").addEventListener("click", () => {
+  const last = loadJSON("lastPlayed", () => null);
+  if (last) startPlayFromContinue(last.classNum, last.subject);
 });
 
 // ── curriculum tabs ──
@@ -234,6 +287,7 @@ function showClassPicker() {
   subjectPickerEl.classList.add("hidden");
   playScreenEl.classList.add("hidden");
   streakDisplay.classList.add("hidden");
+  updateWelcomeBanner();
 }
 
 function showSubjectPicker(classNum) {
@@ -260,6 +314,7 @@ async function startPlay(subject) {
   const subjects = getSubjectsForClass(currentClass);
   const meta = subjects.find((s) => s.id === subject);
   playBadgeEl.textContent = `Class ${currentClass} · ${meta?.label ?? subject}`;
+  localStorage.setItem("lastPlayed", JSON.stringify({ classNum: currentClass, subject }));
 
   subjectPickerEl.classList.add("hidden");
   playScreenEl.classList.remove("hidden");
