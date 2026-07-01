@@ -1,10 +1,9 @@
-// Fill these in from your Firebase project console (Project Settings → Your apps → Web).
-// These values are intentionally public — Firebase security rules control data access.
+// Firebase client config — intentionally public. Security is enforced by Firestore rules.
 export const FIREBASE_CONFIG = {
-  apiKey:            "REPLACE_WITH_YOUR_API_KEY",
-  authDomain:        "REPLACE_WITH_YOUR_PROJECT_ID.firebaseapp.com",
-  projectId:         "REPLACE_WITH_YOUR_PROJECT_ID",
-  storageBucket:     "REPLACE_WITH_YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "REPLACE_WITH_YOUR_SENDER_ID",
-  appId:             "REPLACE_WITH_YOUR_APP_ID",
+  apiKey:            "AIzaSyBcWAdau65Lb2aVfeLvnopVRjnZBwc5NXk",
+  authDomain:        "educerelator-play.firebaseapp.com",
+  projectId:         "educerelator-play",
+  storageBucket:     "educerelator-play.firebasestorage.app",
+  messagingSenderId: "88853589781",
+  appId:             "1:88853589781:web:27f6a329c38bb2e73d031c",
 };
