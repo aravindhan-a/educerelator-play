@@ -1,0 +1,48 @@
+{
+  "class": 1,
+  "subject": "evs",
+  "levels": [
+    {
+      "id": "class1-evs-1",
+      "difficulty": 1,
+      "questions": [
+        {
+          "id": "1-evs-001",
+          "type": "identify-shape",
+          "prompt": { "en": "What shape is this?", "hi": "यह कौन सी आकृति है?", "ta": "இது என்ன வடிவம்?" },
+          "visual": "🔺",
+          "choices": [
+            { "en": "Triangle", "hi": "त्रिभुज", "ta": "முக்கோணம்" },
+            { "en": "Square",   "hi": "वर्ग",    "ta": "சதுரம்" },
+            { "en": "Circle",   "hi": "वृत्त",   "ta": "வட்டம்" }
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "1-evs-002",
+          "type": "identify-color",
+          "prompt": { "en": "What color is this?", "hi": "यह कौन सा रंग है?", "ta": "இது என்ன நிறம்?" },
+          "visual": "🟥",
+          "choices": [
+            { "en": "Red",   "hi": "लाल",  "ta": "சிவப்பு" },
+            { "en": "Blue",  "hi": "नीला", "ta": "நீலம்" },
+            { "en": "Green", "hi": "हरा",  "ta": "பச்சை" }
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "1-evs-003",
+          "type": "identify",
+          "prompt": { "en": "Which one gives us milk?", "hi": "हमें दूध कौन देता है?", "ta": "நமக்கு பால் தருவது எது?" },
+          "visual": "🐄",
+          "choices": [
+            { "en": "Cow",  "hi": "गाय",    "ta": "மாடு" },
+            { "en": "Dog",  "hi": "कुत्ता", "ta": "நாய்" },
+            { "en": "Fish", "hi": "मछली",   "ta": "மீன்" }
+          ],
+          "answerIndex": 0
+        }
+      ]
+    }
+  ]
+}

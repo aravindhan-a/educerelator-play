@@ -1,0 +1,65 @@
+{
+  "skill": "patterns",
+  "levels": [
+    {
+      "id": "patterns-simple",
+      "difficulty": 1,
+      "questions": [
+        {
+          "id": "pat-simple-001",
+          "type": "complete-pattern",
+          "prompt": {
+            "en": "What comes next?",
+            "hi": "आगे क्या आएगा?",
+            "ta": "அடுத்தது என்ன வரும்?"
+          },
+          "visual": "🔴🔵🔴🔵❓",
+          "choices": [
+            { "en": "🔴", "hi": "🔴", "ta": "🔴" },
+            { "en": "🔵", "hi": "🔵", "ta": "🔵" },
+            { "en": "🟢", "hi": "🟢", "ta": "🟢" }
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": "pat-simple-002",
+          "type": "complete-pattern",
+          "prompt": {
+            "en": "What comes next?",
+            "hi": "आगे क्या आएगा?",
+            "ta": "அடுத்தது என்ன வரும்?"
+          },
+          "visual": "⭐⭐🌙⭐⭐🌙❓",
+          "choices": [
+            { "en": "⭐", "hi": "⭐", "ta": "⭐" },
+            { "en": "🌙", "hi": "🌙", "ta": "🌙" },
+            { "en": "☀️", "hi": "☀️", "ta": "☀️" }
+          ],
+          "answerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "patterns-growing",
+      "difficulty": 2,
+      "questions": [
+        {
+          "id": "pat-growing-001",
+          "type": "complete-pattern",
+          "prompt": {
+            "en": "What comes next?",
+            "hi": "आगे क्या आएगा?",
+            "ta": "அடுத்தது என்ன வரும்?"
+          },
+          "visual": "🟩🟩🟨🟩🟩🟩🟨❓",
+          "choices": [
+            { "en": "🟨", "hi": "🟨", "ta": "🟨" },
+            { "en": "🟩", "hi": "🟩", "ta": "🟩" },
+            { "en": "🟥", "hi": "🟥", "ta": "🟥" }
+          ],
+          "answerIndex": 1
+        }
+      ]
+    }
+  ]
+}
