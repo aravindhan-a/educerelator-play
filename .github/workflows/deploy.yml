@@ -17,6 +17,8 @@ jobs:
         run: |
           mkdir -p deploy
           cp urban/frontend/index.html deploy/
+          cp urban/frontend/privacy.html deploy/
+          cp urban/frontend/terms.html deploy/
           cp urban/frontend/favicon.svg deploy/
           cp urban/frontend/manifest.json deploy/
           cp urban/frontend/robots.txt deploy/
