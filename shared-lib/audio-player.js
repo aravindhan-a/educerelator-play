@@ -17,6 +17,7 @@ function clipUrl(id, lang) {
 
 function speak(text, lang) {
   if (!("speechSynthesis" in window)) return;
+  window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = TTS_LANG_CODES[lang] || "en-IN";
   utterance.rate = 0.8;
