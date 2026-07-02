@@ -2,7 +2,7 @@
   "name": "EC Play",
   "short_name": "EC Play",
   "description": "Free adaptive learning games for Class 1–12 by Educerelator.",
-  "start_url": "/urban/frontend/index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fdfcf7",
   "theme_color": "#ff5e7e",

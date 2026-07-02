@@ -20,7 +20,7 @@ import {
   saveUserProgress,
 } from "./auth.js";
 
-// ── UI strings for all 22 official Indian languages + English ──
+// ── UI strings for supported languages (English + 12 Indian languages) ──
 const UI_STRINGS = {
   en:  { pickClass:"Choose your class", pickSubject:"Choose a subject", morning:"Good morning! ☀️", afternoon:"Good afternoon! 🌤️", evening:"Good evening! 🌙", wellDone:"Well done! 🎉", tryAgain:"Try again next time!", continueLabel:"Continue where you left off" },
   hi:  { pickClass:"अपनी कक्षा चुनें", pickSubject:"एक विषय चुनें", morning:"शुभ प्रभात! ☀️", afternoon:"शुभ दोपहर! 🌤️", evening:"शुभ संध्या! 🌙", wellDone:"शाबाश! 🎉", tryAgain:"अगली बार फिर कोशिश करें!", continueLabel:"जहाँ छोड़ा वहाँ से जारी रखें" },
@@ -52,6 +52,7 @@ function applyUIStrings() {
 const ADAPTIVE_KEY = "adaptiveState";
 const LANG_KEY     = "lang";
 const CURR_KEY     = "curriculum";
+const GUEST_KEY    = "ecplay_guest";
 
 // ── session progress ──
 const SESSION_TOTAL = 10;
@@ -66,6 +67,7 @@ let sessionAnswers = []; // true/false per question answered
 let comboBannerTimer = null;
 
 // ── runtime state ──
+let guestMode       = localStorage.getItem(GUEST_KEY) === "1";
 let lang            = localStorage.getItem(LANG_KEY) || "en";
 let curriculum      = localStorage.getItem(CURR_KEY) || "cbse";
 let adaptiveState   = loadJSON(ADAPTIVE_KEY, createAdaptiveState);
@@ -153,10 +155,13 @@ function renderHUD() {
   const heartsEl = document.getElementById("hud-hearts");
   if (heartsEl) {
     heartsEl.innerHTML = "";
+    heartsEl.setAttribute("role", "img");
+    heartsEl.setAttribute("aria-label", `${sessionHearts} of 3 lives remaining`);
     for (let i = 0; i < 3; i++) {
       const h = document.createElement("span");
       h.className = "hud-heart" + (i >= sessionHearts ? " broken" : "");
       h.textContent = "❤️";
+      h.setAttribute("aria-hidden", "true");
       heartsEl.appendChild(h);
     }
   }
@@ -272,7 +277,7 @@ function countUpScore(target) {
 }
 
 function updateWelcomeBanner() {
-  if (!currentUser) return;
+  if (!currentUser && !guestMode) return;
   const banner = document.getElementById("welcome-banner");
   banner.classList.remove("hidden");
 
@@ -280,8 +285,11 @@ function updateWelcomeBanner() {
   document.getElementById("time-greeting").textContent =
     hour < 12 ? t("morning") : hour < 17 ? t("afternoon") : t("evening");
 
-  const name = currentUser.displayName || currentUser.email.split("@")[0];
-  document.getElementById("welcome-name").textContent = `Hi, ${name.split(" ")[0]}! 👋`;
+  const name = currentUser
+    ? (currentUser.displayName || currentUser.email.split("@")[0])
+    : null;
+  document.getElementById("welcome-name").textContent =
+    name ? `Hi, ${name.split(" ")[0]}! 👋` : "Welcome! 👋";
 
   const s   = loadStats();
   const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : null;
@@ -389,13 +397,18 @@ registerFormEl.addEventListener("submit", async (e) => {
 signoutBtnEl.addEventListener("click", () => logoutUser());
 
 // ── auth state listener (entry point of the app) ──
+const topbarSigninBtn = document.getElementById("topbar-signin");
+
 onAuthChange(async (user) => {
   if (user) {
     currentUser = user;
+    guestMode = false;
+    localStorage.removeItem(GUEST_KEY);
     const name = user.displayName || user.email.split("@")[0];
     const initials = name.split(" ").map(w => w[0]).join("").toUpperCase().slice(0, 2);
     userInitialsEl.textContent = initials;
     userInfoEl.classList.remove("hidden");
+    topbarSigninBtn.classList.add("hidden");
     authModalEl.classList.add("hidden");
 
     // Load cloud progress and merge into localStorage
@@ -415,15 +428,38 @@ onAuthChange(async (user) => {
   } else {
     currentUser = null;
     userInfoEl.classList.add("hidden");
-    authModalEl.classList.remove("hidden");
+    if (guestMode) {
+      authModalEl.classList.add("hidden");
+      topbarSigninBtn.classList.remove("hidden");
+      applyUIStrings();
+      showClassPicker();
+    } else {
+      authModalEl.classList.remove("hidden");
+    }
   }
+});
+
+// ── guest mode ──
+document.getElementById("guest-btn").addEventListener("click", () => {
+  guestMode = true;
+  localStorage.setItem(GUEST_KEY, "1");
+  authModalEl.classList.add("hidden");
+  topbarSigninBtn.classList.remove("hidden");
+  applyUIStrings();
+  showClassPicker();
+});
+
+topbarSigninBtn.addEventListener("click", () => {
+  authModalEl.classList.remove("hidden");
 });
 
 // ── lang switcher ──
 langSwitcher.value = lang;
+document.documentElement.lang = lang;
 langSwitcher.addEventListener("change", () => {
   lang = langSwitcher.value;
   localStorage.setItem(LANG_KEY, lang);
+  document.documentElement.lang = lang;
   applyUIStrings();
   updateWelcomeBanner();
   if (currentQuestion) renderQuestion(currentQuestion);
@@ -462,6 +498,14 @@ aboutLink.addEventListener("click", () => aboutModal.classList.remove("hidden"))
 aboutClose.addEventListener("click", () => aboutModal.classList.add("hidden"));
 aboutModal.addEventListener("click", (e) => {
   if (e.target === aboutModal) aboutModal.classList.add("hidden");
+});
+
+// ── Escape closes overlays ──
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  aboutModal.classList.add("hidden");
+  premiumModalEl.classList.add("hidden");
+  if (guestMode || currentUser) authModalEl.classList.add("hidden");
 });
 
 // ── back buttons ──
@@ -559,16 +603,26 @@ async function loadNextQuestion() {
   questionStartedAt = Date.now();
 }
 
+let displayOrder = []; // shuffled original-index per button position
+
 function renderQuestion(question) {
   questionVisual.textContent = question.visual;
   questionPrompt.textContent = question.prompt[lang] || question.prompt.en;
   choicesEl.innerHTML = "";
 
-  question.choices.forEach((choice, index) => {
+  // Shuffle choice order at render time so the correct answer's position
+  // is unpredictable even for AI-generated batches.
+  displayOrder = question.choices.map((_, i) => i);
+  for (let i = displayOrder.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [displayOrder[i], displayOrder[j]] = [displayOrder[j], displayOrder[i]];
+  }
+
+  displayOrder.forEach((origIndex) => {
     const btn = document.createElement("button");
     btn.className = "choice-btn";
-    btn.textContent = choice[lang] || choice.en;
-    btn.addEventListener("click", () => handleAnswer(index));
+    btn.textContent = question.choices[origIndex][lang] || question.choices[origIndex].en;
+    btn.addEventListener("click", () => handleAnswer(origIndex, btn));
     choicesEl.appendChild(btn);
   });
 
@@ -583,16 +637,17 @@ function speakPrompt(question) {
   });
 }
 
-function handleAnswer(selectedIndex) {
+function handleAnswer(selectedIndex, selectedBtn) {
   const correct   = selectedIndex === currentQuestion.answerIndex;
   const elapsedMs = Date.now() - questionStartedAt;
   const key       = adaptiveKey(currentClass, currentSubject);
 
   const btns = [...choicesEl.children];
-  btns.forEach((btn, i) => {
+  btns.forEach((btn, pos) => {
     btn.disabled = true;
-    if (i === currentQuestion.answerIndex) btn.classList.add("correct");
-    else if (i === selectedIndex)          btn.classList.add("wrong");
+    const origIndex = displayOrder[pos];
+    if (origIndex === currentQuestion.answerIndex) btn.classList.add("correct");
+    else if (origIndex === selectedIndex)          btn.classList.add("wrong");
   });
 
   feedbackEl.textContent = correct ? t("wellDone") : t("tryAgain");
@@ -608,8 +663,8 @@ function handleAnswer(selectedIndex) {
     const multiplier = sessionCombo >= 6 ? 4 : sessionCombo >= 4 ? 3 : sessionCombo >= 2 ? 2 : 1;
     const points     = 100 * multiplier;
     sessionScore    += points;
-    flyScore(points, btns[selectedIndex]);
-    sparkleAnswer(btns[selectedIndex]);
+    flyScore(points, selectedBtn);
+    sparkleAnswer(selectedBtn);
     if (sessionCombo >= 2) showComboBanner(multiplier);
   } else {
     sessionCombo  = 0;
@@ -699,8 +754,8 @@ function shareScore() {
 
 function shareApp() {
   shareContent(
-    `🌟 EC Play — Free AI-powered learning games for Indian students, Class 1–12!\n` +
-    `Questions in 13 Indian languages · Completely FREE →`
+    `🌟 EC Play — Free adaptive learning games for Indian students, Class 1–12!\n` +
+    `Questions in 13 languages · Completely FREE →`
   );
 }
 
@@ -817,7 +872,7 @@ checkoutBtn.addEventListener("click", async () => {
   await openRazorpayCheckout(currentUser, selectedPlan, () => {
     premiumModalEl.classList.add("hidden");
     upgradeStripEl.classList.add("hidden");
-    alert("Welcome to EC Play Premium! 🎉 You now have unlimited AI questions.");
+    alert("Welcome to EC Play Premium! 🎉 Fresh AI questions are now unlocked for you.");
   });
   checkoutBtn.disabled = false;
   checkoutBtn.textContent = selectedPlan === "yearly" ? "Pay ₹999 / year" : "Pay ₹149 / month";

@@ -1,6 +1,11 @@
 import { generateQuestionBatch } from "../lib/anthropic.js";
 import { getCachedBatch, setCachedBatch } from "../lib/cache.js";
-import { verifyAndGetUid, isPremiumUser } from "../lib/firebase-admin.js";
+import { verifyAndGetUid, isPremiumUser, checkAndIncrementAiUsage } from "../lib/firebase-admin.js";
+
+// Fair-use cap: max fresh AI batches a premium user can trigger per day.
+// Each batch = 20 questions. Cached batches are free and do NOT count, so a
+// real student never reaches this — it only bounds cost/abuse.
+const AI_DAILY_LIMIT = 50;
 
 const VALID_SUBJECTS = [
   "math", "english", "evs", "science", "social-studies",
@@ -59,6 +64,15 @@ export default async function handler(req, res) {
   try {
     let batch = await getCachedBatch(classNum, subject, curriculum, difficulty);
     if (!batch) {
+      // Only fresh generations (cache misses) count against the fair-use cap.
+      const usage = await checkAndIncrementAiUsage(uid, AI_DAILY_LIMIT);
+      if (!usage.allowed) {
+        return res.status(429).json({
+          error: "Daily fresh-question limit reached. Your saved practice questions are still available — new AI questions unlock again tomorrow.",
+          fairUse: true,
+          limit: usage.limit,
+        });
+      }
       batch = await generateQuestionBatch({ classNum, subject, curriculum, difficulty });
       await setCachedBatch(classNum, subject, curriculum, difficulty, batch);
     }

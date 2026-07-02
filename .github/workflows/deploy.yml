@@ -19,7 +19,11 @@ jobs:
           cp urban/frontend/index.html deploy/
           cp urban/frontend/privacy.html deploy/
           cp urban/frontend/terms.html deploy/
+          cp urban/frontend/cbse-practice-questions.html deploy/
+          cp urban/frontend/learn-in-hindi.html deploy/
+          cp urban/frontend/online-learning-games-india.html deploy/
           cp urban/frontend/favicon.svg deploy/
+          cp urban/frontend/og-image.png deploy/
           cp urban/frontend/manifest.json deploy/
           cp urban/frontend/robots.txt deploy/
           cp urban/frontend/sitemap.xml deploy/
