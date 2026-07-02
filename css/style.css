@@ -75,6 +75,14 @@ body {
   border-radius: 999px; box-shadow: inset 0 0 0 2px rgba(255,255,255,0.4);
 }
 .streak-display.hidden { display: none; }
+.topbar-signin {
+  font-family: inherit; font-size: 0.92rem; font-weight: 700;
+  background: rgba(255,255,255,0.92); color: #7c3aed;
+  border: none; border-radius: 999px; padding: 7px 16px; cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.topbar-signin:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.18); }
+.topbar-signin.hidden { display: none; }
 #lang-switcher {
   font-family: inherit; font-size: 1rem; padding: 7px 12px;
   border-radius: 12px; border: none; font-weight: 700; cursor: pointer;
@@ -227,6 +235,11 @@ body {
 .curr-tab.active {
   background: var(--card-bg); border-color: var(--card-bg);
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.curriculum-note {
+  text-align: center; font-size: 0.78rem; font-weight: 600;
+  color: rgba(255,255,255,0.85); margin: -10px 0 16px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
 /* subject grid */
@@ -579,6 +592,14 @@ body {
 .auth-submit:hover  { transform: translateY(-2px); box-shadow: 0 6px 0 rgba(0,0,0,0.14); }
 .auth-submit:active { transform: translateY(2px);  box-shadow: 0 2px 0 rgba(0,0,0,0.14); }
 .auth-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.guest-btn {
+  display: block; width: 100%; margin-top: 16px;
+  background: none; border: none; cursor: pointer;
+  font-family: inherit; font-size: 0.95rem; font-weight: 700;
+  color: #7c3aed; padding: 10px; border-radius: 12px;
+  transition: background 0.15s;
+}
+.guest-btn:hover { background: #f3e8ff; }
 .auth-note { font-size: 0.78rem; color: #aaa; margin: 14px 0 0; line-height: 1.5; }
 
 /* Google button */
@@ -926,4 +947,82 @@ body {
 @keyframes badgePop {
   from { transform: scale(0); opacity: 0; }
   to   { transform: scale(1); opacity: 1; }
+}
+
+
+/* ══════════════════════════════════════
+   SEO STATIC CONTENT SECTION
+══════════════════════════════════════ */
+.seo-section {
+  background: #1a1030;
+  color: rgba(255,255,255,0.82);
+  padding: 60px 24px 80px;
+  margin-top: 40px;
+}
+.seo-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  font-family: "Baloo 2", system-ui, sans-serif;
+}
+.seo-inner h2 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff;
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+.seo-inner h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #c4b5fd;
+  margin: 28px 0 8px;
+}
+.seo-inner p { font-size: 0.95rem; line-height: 1.7; margin: 0 0 12px; }
+.seo-inner ul { padding-left: 20px; margin: 0; line-height: 2; font-size: 0.95rem; }
+.seo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 28px 0 36px;
+}
+.seo-col { background: rgba(255,255,255,0.06); border-radius: 14px; padding: 18px; }
+.seo-inner details {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 14px 0;
+}
+.seo-inner details summary {
+  font-weight: 700;
+  color: #e9d5ff;
+  cursor: pointer;
+  font-size: 0.97rem;
+  list-style: none;
+}
+.seo-inner details summary::before { content: '+ '; opacity: 0.6; }
+.seo-inner details[open] summary::before { content: '− '; }
+.seo-inner details p { margin: 10px 0 4px 16px; font-size: 0.9rem; color: rgba(255,255,255,0.72); }
+.seo-inner a { color: #c4b5fd; }
+.seo-cta-text { margin-top: 32px !important; font-weight: 700; color: #fff; }
+@media (max-width: 600px) {
+  .seo-grid { grid-template-columns: 1fr; }
+  .seo-inner h2 { font-size: 1.3rem; }
+}
+
+/* ── accessibility ── */
+:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+.choice-btn:focus-visible, .class-btn:focus-visible, .subject-btn:focus-visible {
+  outline: 3px solid #7c3aed;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .fly-score, .sparkle-piece, .end-confetti-piece, .confetti-piece { display: none !important; }
 }

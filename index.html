@@ -3,12 +3,98 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>EC Play — Free Learning Games for Children</title>
-<meta name="description" content="Free adaptive learning games for Class 1–12: maths, science, English and more. Works in English, Hindi and Tamil." />
+<title>EC Play – Free CBSE Practice Questions for Class 1 to 12 | 13 Indian Languages</title>
+<meta name="description" content="Free adaptive quiz games for Indian students, Class 1 to 12. Practice Maths, Science and English in 13 languages — Hindi, Telugu, Tamil, Bengali, Gujarati and more. No ads, 100% free." />
 <meta name="theme-color" content="#ff5e7e" />
-<meta property="og:title" content="EC Play" />
-<meta property="og:description" content="Free AI-adaptive learning games for Class 1–12, in English, Hindi and Tamil." />
-<meta property="og:type" content="website" />
+<link rel="canonical" href="https://educerelator.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type"        content="website" />
+<meta property="og:url"         content="https://educerelator.com/" />
+<meta property="og:title"       content="EC Play – Free Practice Questions for Class 1–12 in 13 Indian Languages" />
+<meta property="og:description" content="Adaptive quiz games in Hindi, Telugu, Tamil, Bengali and 9 more Indian languages. Free for all Class 1–12 students. No ads." />
+<meta property="og:image"       content="https://educerelator.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name"   content="EC Play by Educerelator" />
+<meta property="og:locale"      content="en_IN" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="EC Play – Free Learning Games for Class 1–12 India" />
+<meta name="twitter:description" content="Practice Maths, Science & English in 13 Indian languages. Free adaptive games for CBSE students, no ads." />
+<meta name="twitter:image"       content="https://educerelator.com/og-image.png" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "EC Play",
+      "alternateName": "Educerelator Play",
+      "url": "https://educerelator.com/",
+      "description": "Free adaptive quiz games for Indian students Class 1 to 12 in 13 languages, aligned with CBSE and NCERT curriculum.",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student",
+        "audienceType": "Indian students Class 1 to 12"
+      },
+      "inLanguage": ["en","hi","bn","te","mr","ta","gu","kn","ml","or","pa","ur","ne"],
+      "educationalLevel": "Grade 1 through Grade 12",
+      "about": { "@type": "Thing", "name": "CBSE and NCERT Curriculum" },
+      "provider": { "@type": "Organization", "name": "Educerelator", "url": "https://educerelator.com" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is EC Play completely free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. EC Play is 100% free for all students. No subscription required. Over 700 practice questions across all subjects and classes are available at no cost, with no ads." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which classes does EC Play cover?",
+          "acceptedAnswer": { "@type": "Answer", "text": "EC Play covers Class 1 through Class 12 — Primary (1–5), Middle (6–8), Secondary (9–10), and Senior Secondary (11–12). Each class has questions calibrated to its level." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Indian languages does EC Play support?",
+          "acceptedAnswer": { "@type": "Answer", "text": "EC Play supports 13 languages: English plus 12 Indian languages — Hindi, Bengali, Telugu, Marathi, Tamil, Gujarati, Kannada, Malayalam, Odia, Punjabi, Urdu and Nepali. Switch language at any time from the menu." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which subjects are covered in EC Play?",
+          "acceptedAnswer": { "@type": "Answer", "text": "EC Play covers Mathematics, Science, English, Hindi, Social Studies, General Knowledge, Computer Science and Environmental Studies — aligned with CBSE and NCERT guidelines for Class 1 to 12." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is EC Play aligned with CBSE and NCERT?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. All questions are designed to match the CBSE curriculum and NCERT textbook content from Class 1 to Class 12. The adaptive engine adjusts difficulty based on each student's performance." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to download an app to use EC Play?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No download needed. Open educerelator.com in any mobile or desktop browser and start playing immediately. EC Play works on Android, iPhone, tablets and computers." }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "Educerelator",
+      "url": "https://educerelator.com",
+      "description": "Building free adaptive learning tools for Indian students in every Indian language"
+    }
+  ]
+}
+</script>
+
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="manifest" href="manifest.json" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,6 +117,7 @@
   <button id="topbar-brand" class="topbar-brand">🦉 EC Play</button>
   <div class="topbar-right">
     <span id="streak-display" class="streak-display hidden">🔥 <span id="streak-count">0</span></span>
+    <button id="topbar-signin" class="topbar-signin hidden">Sign in</button>
     <div id="user-info" class="user-info hidden">
       <button id="user-avatar-btn" class="user-avatar-btn" aria-label="My Profile">
         <span id="user-initials"></span>
@@ -38,28 +125,18 @@
     </div>
     <select id="lang-switcher" aria-label="Language">
       <option value="en">English</option>
-      <option value="as">অসমীয়া</option>
-      <option value="bn">বাংলা</option>
-      <option value="brx">बड़ो</option>
-      <option value="doi">डोगरी</option>
-      <option value="gu">ગુજરાતી</option>
       <option value="hi">हिन्दी</option>
-      <option value="kn">ಕನ್ನಡ</option>
-      <option value="kok">कोंकणी</option>
-      <option value="ks">کشمیری</option>
-      <option value="mai">मैथिली</option>
-      <option value="ml">മലയാളം</option>
-      <option value="mni">মৈতৈলোন্</option>
+      <option value="bn">বাংলা</option>
+      <option value="te">తెలుగు</option>
       <option value="mr">मराठी</option>
-      <option value="ne">नेपाली</option>
+      <option value="ta">தமிழ்</option>
+      <option value="gu">ગુજરાતી</option>
+      <option value="kn">ಕನ್ನಡ</option>
+      <option value="ml">മലയാളം</option>
       <option value="or">ଓଡ଼ିଆ</option>
       <option value="pa">ਪੰਜਾਬੀ</option>
-      <option value="sa">संस्कृतम्</option>
-      <option value="sat">ᱥᱟᱱᱛᱟᱲᱤ</option>
-      <option value="sd">سنڌي</option>
-      <option value="ta">தமிழ்</option>
-      <option value="te">తెలుగు</option>
       <option value="ur">اردو</option>
+      <option value="ne">नेपाली</option>
     </select>
   </div>
 </header>
@@ -114,6 +191,7 @@
       <button class="curr-tab" data-curr="state">State Board</button>
       <button class="curr-tab" data-curr="international">International</button>
     </div>
+    <p class="curriculum-note">Free questions follow the CBSE/NCERT syllabus. Board-specific questions are AI-generated for Premium members.</p>
 
     <h2 class="screen-title">Choose a subject</h2>
     <div class="subject-grid" id="subject-grid">
@@ -142,12 +220,12 @@
     <div id="combo-banner" class="combo-banner" aria-live="polite"></div>
 
     <div class="question-card">
-      <div id="mascot-play" class="mascot mascot-small">🦉</div>
-      <div id="question-visual" class="visual"></div>
+      <div id="mascot-play" class="mascot mascot-small" aria-hidden="true">🦉</div>
+      <div id="question-visual" class="visual" aria-hidden="true"></div>
       <button id="repeat-audio-btn" aria-label="Repeat audio">🔊</button>
-      <p id="question-prompt" class="prompt"></p>
+      <p id="question-prompt" class="prompt" aria-live="polite"></p>
       <div id="choices" class="choices"></div>
-      <p id="feedback" class="feedback"></p>
+      <p id="feedback" class="feedback" aria-live="assertive"></p>
     </div>
     <div id="confetti-layer" class="confetti-layer"></div>
   </section>
@@ -229,8 +307,8 @@
         <div class="upgrade-strip-inner">
           <span class="upgrade-icon">⚡</span>
           <div>
-            <strong>Want unlimited questions?</strong>
-            <p>Upgrade to Premium — AI-powered questions that never repeat.</p>
+            <strong>Want fresh questions every day?</strong>
+            <p>Upgrade to Premium — new AI-powered questions tuned to your level.</p>
           </div>
         </div>
         <button id="upgrade-from-session" class="btn-upgrade">Upgrade · ₹149/mo</button>
@@ -241,13 +319,13 @@
 </main>
 
 <footer class="site-footer">
-  <span class="footer-brand">© 2025 Educerelator · India 🇮🇳</span>
+  <span class="footer-brand">© 2026 Educerelator · India 🇮🇳</span>
   <span class="footer-sep">·</span>
   <button id="about-link" class="footer-link">About</button>
   <span class="footer-sep">·</span>
-  <a href="privacy.html" class="footer-link" target="_blank">Privacy Policy</a>
+  <a href="privacy.html" class="footer-link" target="_blank" rel="noopener">Privacy Policy</a>
   <span class="footer-sep">·</span>
-  <a href="terms.html" class="footer-link" target="_blank">Terms of Use</a>
+  <a href="terms.html" class="footer-link" target="_blank" rel="noopener">Terms of Use</a>
   <span class="footer-sep">·</span>
   <a href="mailto:hello@educerelator.com" class="footer-link">Contact</a>
 </footer>
@@ -257,7 +335,7 @@
   <div class="modal-card premium-card">
     <button id="premium-close" class="modal-close" aria-label="Close">✕</button>
     <div class="premium-header">⚡ EC Play Premium</div>
-    <p class="premium-subhead">Unlimited AI questions · 13 languages · All 12 classes</p>
+    <p class="premium-subhead">Fresh AI questions daily · 13 languages · All 12 classes</p>
     <div class="plan-grid">
       <button class="plan-card" data-plan="monthly">
         <div class="plan-name">Monthly</div>
@@ -272,7 +350,7 @@
       </button>
     </div>
     <button id="checkout-btn" class="btn-checkout" disabled>Select a plan</button>
-    <p class="premium-note">Secure payment via Razorpay · Cancel anytime</p>
+    <p class="premium-note">Secure payment via Razorpay · One-time payment, no auto-renewal</p>
   </div>
 </div>
 
@@ -302,7 +380,7 @@
       <p class="hero-tagline">Adaptive learning games for Class 1–12.</p>
       <div class="lang-ticker" aria-label="Supported languages">
         <div class="lang-ticker-track">
-          <span>English</span><span class="sep">·</span><span>हिन्दी</span><span class="sep">·</span><span>தமிழ்</span><span class="sep">·</span><span>বাংলা</span><span class="sep">·</span><span>తెలుగు</span><span class="sep">·</span><span>मराठी</span><span class="sep">·</span><span>ગુજરાતી</span><span class="sep">·</span><span>ಕನ್ನಡ</span><span class="sep">·</span><span>മലയാളം</span><span class="sep">·</span><span>ਪੰਜਾਬੀ</span><span class="sep">·</span><span>اردو</span><span class="sep">·</span><span>অসমীয়া</span><span class="sep">·</span><span>ଓଡ଼ିଆ</span><span class="sep">·</span><span>नेपाली</span><span class="sep">·</span><span>संस्कृतम्</span><span class="sep">·</span><span>मैथिली</span><span class="sep">·</span><span>डोगरी</span><span class="sep">·</span><span>कोंकणी</span><span class="sep">·</span><span>বড়ো</span><span class="sep">·</span><span>مۆتئی</span><span class="sep">·</span><span>ᱥᱟᱱᱛᱟᱲᱤ</span><span class="sep">·</span><span>سنڌي</span><span class="sep">·</span><span>کشمیری</span><span class="sep">·</span><span>English</span><span class="sep">·</span><span>हिन्दी</span><span class="sep">·</span><span>தமிழ்</span><span class="sep">·</span><span>বাংলা</span><span class="sep">·</span><span>తెలుగు</span><span class="sep">·</span><span>मराठी</span><span class="sep">·</span><span>ગુજરાતી</span><span class="sep">·</span><span>ಕನ್ನಡ</span><span class="sep">·</span><span>മലയാളം</span><span class="sep">·</span><span>ਪੰਜਾਬੀ</span><span class="sep">·</span><span>اردو</span><span class="sep">·</span><span>অসমীয়া</span><span class="sep">·</span><span>ଓଡ଼ିଆ</span><span class="sep">·</span><span>नेपाली</span><span class="sep">·</span><span>संस्कृतम्</span><span class="sep">·</span><span>मैथिली</span><span class="sep">·</span><span>डोगरी</span><span class="sep">·</span><span>कोंकणी</span><span class="sep">·</span><span>বড়ো</span><span class="sep">·</span><span>مۆتئی</span><span class="sep">·</span><span>ᱥᱟᱱᱛᱟᱲᱤ</span><span class="sep">·</span><span>سنڌي</span><span class="sep">·</span><span>کشمیری</span>
+          <span>English</span><span class="sep">·</span><span>हिन्दी</span><span class="sep">·</span><span>বাংলা</span><span class="sep">·</span><span>తెలుగు</span><span class="sep">·</span><span>मराठी</span><span class="sep">·</span><span>தமிழ்</span><span class="sep">·</span><span>ગુજરાતી</span><span class="sep">·</span><span>ಕನ್ನಡ</span><span class="sep">·</span><span>മലയാളം</span><span class="sep">·</span><span>ଓଡ଼ିଆ</span><span class="sep">·</span><span>ਪੰਜਾਬੀ</span><span class="sep">·</span><span>اردو</span><span class="sep">·</span><span>नेपाली</span><span class="sep">·</span><span>English</span><span class="sep">·</span><span>हिन्दी</span><span class="sep">·</span><span>বাংলা</span><span class="sep">·</span><span>తెలుగు</span><span class="sep">·</span><span>मराठी</span><span class="sep">·</span><span>தமிழ்</span><span class="sep">·</span><span>ગુજરાતી</span><span class="sep">·</span><span>ಕನ್ನಡ</span><span class="sep">·</span><span>മലയാളം</span><span class="sep">·</span><span>ଓଡ଼ିଆ</span><span class="sep">·</span><span>ਪੰਜਾਬੀ</span><span class="sep">·</span><span>اردو</span><span class="sep">·</span><span>नेपाली</span>
         </div>
       </div>
       <div class="hero-chips">
@@ -338,26 +416,93 @@
       </div>
 
       <form id="login-form" class="auth-form">
-        <input type="email" id="login-email" class="auth-input" placeholder="Email" autocomplete="email" required />
-        <input type="password" id="login-password" class="auth-input" placeholder="Password" autocomplete="current-password" required />
+        <input type="email" id="login-email" class="auth-input" placeholder="Email" aria-label="Email" autocomplete="email" required />
+        <input type="password" id="login-password" class="auth-input" placeholder="Password" aria-label="Password" autocomplete="current-password" required />
         <p id="login-error" class="auth-error" aria-live="polite"></p>
         <button type="submit" class="auth-submit">Sign In</button>
       </form>
 
       <form id="register-form" class="auth-form hidden">
-        <input type="text" id="reg-name" class="auth-input" placeholder="Your name" autocomplete="name" required />
-        <input type="email" id="reg-email" class="auth-input" placeholder="Email" autocomplete="email" required />
-        <input type="password" id="reg-password" class="auth-input" placeholder="Password (min 6 characters)" autocomplete="new-password" required />
+        <input type="text" id="reg-name" class="auth-input" placeholder="Your name" aria-label="Your name" autocomplete="name" required />
+        <input type="email" id="reg-email" class="auth-input" placeholder="Email" aria-label="Email" autocomplete="email" required />
+        <input type="password" id="reg-password" class="auth-input" placeholder="Password (min 6 characters)" aria-label="Password, minimum 6 characters" autocomplete="new-password" required />
         <p id="register-error" class="auth-error" aria-live="polite"></p>
         <button type="submit" class="auth-submit">Create Account</button>
       </form>
 
-      <p class="auth-note">For students under 13, a parent or guardian should sign up.</p>
+      <button id="guest-btn" class="guest-btn">Try without an account →</button>
+
+      <p class="auth-note">By creating an account you confirm you are 13 or older, or that a parent or guardian is setting it up for you.</p>
     </div>
   </div>
 
 </div>
 
 <script type="module" src="js/main.js"></script>
+
+<!-- Static content for search engine crawlers — visible but below the app -->
+<section class="seo-section" aria-label="About EC Play">
+  <div class="seo-inner">
+    <h2>Free Practice Questions for Class 1 to 12 — in Your Language</h2>
+    <p>EC Play is a free adaptive learning game for Indian students from Class 1 to Class 12. Practice Maths, Science, English and more in 13 languages — Hindi, Telugu, Tamil, Bengali, Gujarati, Kannada and more. No fees, no ads, no downloads needed.</p>
+
+    <div class="seo-grid">
+      <div class="seo-col">
+        <h3>Subjects Covered</h3>
+        <ul>
+          <li>Mathematics</li>
+          <li>Science &amp; Environmental Studies</li>
+          <li>English Language &amp; Grammar</li>
+          <li>Hindi</li>
+          <li>Social Studies &amp; General Knowledge</li>
+          <li>Computer Science</li>
+        </ul>
+      </div>
+      <div class="seo-col">
+        <h3>All 12 Classes</h3>
+        <p><strong>Primary:</strong> Class 1, 2, 3, 4, 5</p>
+        <p><strong>Middle:</strong> Class 6, 7, 8</p>
+        <p><strong>Secondary:</strong> Class 9, 10</p>
+        <p><strong>Senior:</strong> Class 11, 12</p>
+      </div>
+      <div class="seo-col">
+        <h3>13 Languages</h3>
+        <p>English · Hindi · Bengali · Telugu · Marathi · Tamil · Gujarati · Kannada · Malayalam · Odia · Punjabi · Urdu · Nepali</p>
+      </div>
+    </div>
+
+    <h3>How EC Play Works</h3>
+    <p>EC Play uses an <strong>adaptive engine</strong> — the more you play, the better it understands your level. Get a question right and the next one gets a little harder. Get it wrong and it finds an easier route. This means every student gets a personalised practice session, not a one-size-fits-all quiz.</p>
+    <p>After each 10-question session you earn a star rating, see your score and track your streak. The home screen shows your running accuracy and day streak so you always know how you are doing.</p>
+
+    <h3>Frequently Asked Questions</h3>
+    <details>
+      <summary>Is EC Play free?</summary>
+      <p>Yes — completely free. Over 700 practice questions across all subjects and all 12 classes, with no subscription required and no advertisements. A premium plan adds fresh AI-generated questions every day (fair-use limits apply), and the free tier never expires.</p>
+    </details>
+    <details>
+      <summary>Which board does EC Play follow — CBSE or State Board?</summary>
+      <p>Questions are aligned with CBSE and NCERT guidelines. State board variants for Maharashtra SSC, Tamil Nadu Samacheer and others are coming soon.</p>
+    </details>
+    <details>
+      <summary>Can I study in Hindi, Telugu or Tamil?</summary>
+      <p>Yes. Every question is available in all 13 languages. Switch language instantly from the dropdown at the top of the page — the question text, answer choices and audio all change to your chosen language.</p>
+    </details>
+    <details>
+      <summary>Do I need to install an app?</summary>
+      <p>No download needed. Open <a href="https://educerelator.com">educerelator.com</a> in any browser — mobile or desktop — and start playing immediately. Works on Android, iPhone, tablets and computers.</p>
+    </details>
+    <details>
+      <summary>Is there audio support?</summary>
+      <p>Yes. Each question is read aloud automatically using text-to-speech in your selected language, making EC Play accessible for early learners and students with reading difficulties.</p>
+    </details>
+    <details>
+      <summary>Is EC Play good for competitive exam preparation?</summary>
+      <p>EC Play builds a strong conceptual foundation that helps with competitive exams. The adaptive difficulty and subject-wise question bank are particularly useful for students preparing for Class 10 boards, NTSE, and Class 12 board examinations.</p>
+    </details>
+
+    <p class="seo-cta-text">Ready to start? <a href="https://educerelator.com">Play free at educerelator.com</a> — no sign-up required to try.</p>
+  </div>
+</section>
 </body>
 </html>
