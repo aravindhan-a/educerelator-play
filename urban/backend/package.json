@@ -2,6 +2,7 @@
   "name": "educerelator-urban-backend",
   "version": "1.0.0",
   "private": true,
+  "engines": { "node": ">=20" },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.0",
     "@vercel/kv": "^2.0.0"
