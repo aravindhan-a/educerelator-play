@@ -398,6 +398,36 @@ body {
   font-size: 1.15rem; color: rgba(255,255,255,0.88); margin: 0;
   line-height: 1.5; font-weight: 500;
 }
+/* Language ticker */
+.lang-ticker {
+  overflow: hidden;
+  width: 100%;
+  margin: 10px 0 4px;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+.lang-ticker-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  animation: ticker-scroll 28s linear infinite;
+}
+.lang-ticker-track span {
+  white-space: nowrap;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.82);
+  letter-spacing: 0.01em;
+}
+.lang-ticker-track .sep {
+  opacity: 0.4;
+  font-weight: 400;
+}
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 .hero-chips {
   display: flex; flex-wrap: wrap; gap: 8px;
 }
