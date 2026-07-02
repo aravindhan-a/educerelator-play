@@ -40,10 +40,15 @@ export async function openRazorpayCheckout(user, plan, onSuccess) {
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
       body:    JSON.stringify({ plan }),
     });
-    if (!res.ok) throw new Error("order failed");
+    if (!res.ok) {
+      let detail = "";
+      try { detail = (await res.json()).error || ""; } catch {}
+      throw new Error(`HTTP ${res.status}${detail ? ": " + detail : ""}`);
+    }
     orderData = await res.json();
-  } catch {
-    alert("Could not start checkout. Please try again.");
+  } catch (err) {
+    console.error("create-order failed:", err);
+    alert(`Could not start checkout (${err.message}). Please try again.`);
     return;
   }
 
