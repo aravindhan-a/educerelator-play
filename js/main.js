@@ -18,6 +18,7 @@ import {
   logoutUser,
   loadUserProgress,
   saveUserProgress,
+  resetPassword,
 } from "./auth.js";
 
 // ── UI strings for supported languages (English + 12 Indian languages) ──
@@ -393,6 +394,26 @@ registerFormEl.addEventListener("submit", async (e) => {
   }
 });
 
+// ── forgot password ──
+document.getElementById("forgot-password-btn").addEventListener("click", async () => {
+  const email = document.getElementById("login-email").value.trim();
+  loginErrorEl.classList.remove("auth-success");
+  if (!email) {
+    loginErrorEl.textContent = "Type your email above first, then tap 'Forgot password?'";
+    return;
+  }
+  try {
+    await resetPassword(email);
+    loginErrorEl.textContent = `Reset link sent to ${email}. Check your inbox (and spam folder).`;
+    loginErrorEl.classList.add("auth-success");
+  } catch (err) {
+    loginErrorEl.textContent =
+      err.code === "auth/invalid-email" ? "Please enter a valid email address."
+      : err.code === "auth/user-not-found" ? "No account found with this email. Try creating an account instead."
+      : "Could not send the reset email. Please try again in a minute.";
+  }
+});
+
 // ── signout ──
 signoutBtnEl.addEventListener("click", () => logoutUser());
 
@@ -519,6 +540,7 @@ repeatAudioBtn.addEventListener("click", () => {
 
 // ── navigation ──
 function showClassPicker() {
+  document.body.classList.remove("focus-mode");
   classPickerEl.classList.remove("hidden");
   subjectPickerEl.classList.add("hidden");
   playScreenEl.classList.add("hidden");
@@ -531,6 +553,7 @@ function showClassPicker() {
 document.getElementById("topbar-brand").addEventListener("click", showClassPicker);
 
 function showSubjectPicker(classNum) {
+  document.body.classList.remove("focus-mode");
   currentClass = classNum;
   const subjects = getSubjectsForClass(classNum);
 
@@ -566,6 +589,7 @@ async function startPlay(subject) {
   sessionStartedAt = Date.now();
   renderHUD();
 
+  document.body.classList.add("focus-mode");
   subjectPickerEl.classList.add("hidden");
   sessionCompleteEl.classList.add("hidden");
   playScreenEl.classList.remove("hidden");
@@ -699,6 +723,7 @@ function handleAnswer(selectedIndex, selectedBtn) {
 
 // ── Session Complete ──
 function showSessionComplete() {
+  document.body.classList.remove("focus-mode");
   window.speechSynthesis?.cancel();
 
   if (sessionStartedAt) {
@@ -728,7 +753,15 @@ function showSessionComplete() {
   animateStars(stars);
   setTimeout(() => countUpScore(sessionScore), 400);
 
-  upgradeStripEl.classList.toggle("hidden", isPremiumCached());
+  // Respectful upsell: at most once a day, and only after a good session —
+  // never while a student is struggling.
+  const UPSELL_KEY = "ecplay_upsell_last";
+  const lastUpsell = parseInt(localStorage.getItem(UPSELL_KEY) || "0");
+  const showUpsell = !isPremiumCached()
+    && sessionCorrect >= 5
+    && Date.now() - lastUpsell > 24 * 60 * 60 * 1000;
+  if (showUpsell) localStorage.setItem(UPSELL_KEY, Date.now());
+  upgradeStripEl.classList.toggle("hidden", !showUpsell);
 }
 
 // ── Social Share ──

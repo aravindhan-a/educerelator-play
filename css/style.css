@@ -57,10 +57,17 @@ body {
 .topbar-brand {
   font-size: 1.4rem; margin: 0; font-weight: 800;
   color: white; background: none; border: none; padding: 0; cursor: pointer;
-  font-family: inherit;
+  font-family: inherit; white-space: nowrap;
   text-shadow: 0 2px 0 rgba(0,0,0,0.15);
   animation: wobble 4s ease-in-out infinite;
   transition: opacity 0.15s;
+}
+@media (max-width: 420px) {
+  .topbar { padding: 12px 14px; }
+  .topbar-right { gap: 8px; }
+  .topbar-brand { font-size: 1.15rem; }
+  .streak-display { font-size: 1rem; padding: 5px 10px; }
+  #lang-switcher { font-size: 0.9rem; padding: 6px 8px; }
 }
 .topbar-brand:hover { opacity: 0.85; }
 @keyframes wobble {
@@ -592,6 +599,13 @@ body {
 .auth-submit:hover  { transform: translateY(-2px); box-shadow: 0 6px 0 rgba(0,0,0,0.14); }
 .auth-submit:active { transform: translateY(2px);  box-shadow: 0 2px 0 rgba(0,0,0,0.14); }
 .auth-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.forgot-link {
+  background: none; border: none; cursor: pointer; padding: 0;
+  font-family: inherit; font-size: 0.82rem; font-weight: 700;
+  color: #7c3aed; text-align: right; display: block; margin: -6px 0 4px auto;
+}
+.forgot-link:hover { text-decoration: underline; }
+.auth-error.auth-success { color: #059669; }
 .guest-btn {
   display: block; width: 100%; margin-top: 16px;
   background: none; border: none; cursor: pointer;
@@ -1006,6 +1020,10 @@ body {
   .seo-grid { grid-template-columns: 1fr; }
   .seo-inner h2 { font-size: 1.3rem; }
 }
+
+/* ── focus mode: calm the background while a question is on screen ── */
+body.focus-mode { animation-play-state: paused; }
+body.focus-mode .bg-shape { display: none; }
 
 /* ── accessibility ── */
 :focus-visible {
