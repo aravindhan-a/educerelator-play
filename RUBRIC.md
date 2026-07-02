@@ -32,6 +32,9 @@ _Last audit: 2 July 2026_
 | B5 | Motion sensitivity | Respect prefers-reduced-motion | 🟢 | Media query disables confetti/sparkles/animations |
 | B6 | Early-childhood usability | Class 1 child can self-serve | 🟡 | Emoji visuals + audio help, but no full session in a single tap from home. **Gap: "continue" flow is good; consider a kid-mode with bigger targets** |
 | B7 | Colour contrast | WCAG AA on text | 🟡 | Main text passes; some white-on-gradient chips are borderline. **Gap: run a full contrast sweep** |
+| B8 | Account recovery | Self-service password reset, any email provider | 🟢 | "Forgot password?" → Firebase reset email (added 2 Jul 2026); email/password signup works without Gmail |
+| B9 | Mobile-first install | Installable on Android/iOS without a store | 🟢 | PWA with real 192/512 icons + maskable variant; Android install prompt now fires; Play Store path documented (TWA) |
+| B10 | Calm learning surface | Minimal distraction while answering | 🟢 | Focus mode: decorations hidden + background animation paused during questions; premium upsell limited to once/day after good sessions |
 
 **Verdict: 🟢 Genuinely accessible for the core flows — rare for edtech at this stage.**
 
@@ -91,3 +94,6 @@ Product: guest mode; fair-use quota (backend + terms); "22 languages"→13 every
 4. **Difficulty-tagged seed content** (C2) — lets the adaptive engine work fully offline
 5. **Uptime monitoring** (A6) — free tier of any uptime service + alert email
 6. **State-board content** (C7) — start with Tamil Nadu Samacheer Class 10
+7. **Contextual scaling** (the long-term vision) — questions localised to the student's state and district: word problems using local rivers, crops, festivals and city names. The content pipeline already supports it (per-curriculum AI generation + JSON banks keyed by class/subject — a `region` key extends it naturally). Sequence: state boards → state context in questions → district context
+8. **Play Store listing** — wrap the PWA as a TWA once weekly actives justify the $25 fee (steps in DEPLOYMENT.md §6)
+9. **Phone-OTP sign-in** — for parents without any email; Firebase supports it (SMS costs apply), removes the last sign-up barrier

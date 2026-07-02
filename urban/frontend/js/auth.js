@@ -8,6 +8,7 @@ import {
   updateProfile,
   onAuthStateChanged,
   signOut,
+  sendPasswordResetEmail,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {
   getFirestore,
@@ -65,6 +66,10 @@ export async function loginUser(email, password) {
 
 export async function logoutUser() {
   await signOut(auth);
+}
+
+export function resetPassword(email) {
+  return sendPasswordResetEmail(auth, email);
 }
 
 export async function loadUserProgress(uid) {

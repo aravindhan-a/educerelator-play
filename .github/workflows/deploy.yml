@@ -24,6 +24,8 @@ jobs:
           cp urban/frontend/online-learning-games-india.html deploy/
           cp urban/frontend/favicon.svg deploy/
           cp urban/frontend/og-image.png deploy/
+          cp urban/frontend/icon-192.png deploy/
+          cp urban/frontend/icon-512.png deploy/
           cp urban/frontend/manifest.json deploy/
           cp urban/frontend/robots.txt deploy/
           cp urban/frontend/sitemap.xml deploy/

@@ -80,7 +80,21 @@ The error alert shows the HTTP status — map it here:
 | Popup opens but payment fails | Normal payment declines | Nothing to fix server-side |
 | Paid but not premium | `verify-payment` and webhook both failed | Vercel logs → `grantPremium failed`; webhook misconfigured secret shows `Invalid signature` |
 
-## 6. Pre-launch checklist
+## 6. Mobile app path (Play Store)
+
+EC Play is an installable PWA today: Android Chrome shows an "Install app" prompt (real icons + manifest shipped 2 Jul 2026); iOS installs via Share → *Add to Home Screen*. Both launch full-screen with the owl icon.
+
+To ship a real **Play Store listing** without rewriting anything, wrap the PWA as a Trusted Web Activity — the same production URL runs inside the app (this is the standard route; the app IS the website, so every content update ships instantly with no app-store review):
+
+1. `npm i -g @bubblewrap/cli && bubblewrap init --manifest https://educerelator.com/manifest.json`
+2. It generates an Android project + signing key → `bubblewrap build` → `app-release-bundle.aab`
+3. Host the digital asset link it prints at `https://educerelator.com/.well-known/assetlinks.json` (add to the deploy workflow) — this removes the browser bar inside the app
+4. Google Play Console: one-time $25 developer fee → create app → upload the `.aab` → declare the *Designed for Families* / Teacher-approved program if targeting under-13s (stricter review, worth it for discoverability)
+5. Each store update is only needed when the icon/name changes — content updates flow through the website
+
+iOS App Store later requires a thin WebView wrapper (Capacitor) + $99/yr — defer until Android traction justifies it. Android is ~95% of the Indian student market.
+
+## 7. Pre-launch checklist
 
 - [ ] Backend redeployed with all six env vars (test keys)
 - [ ] Test-mode purchase → instant activation verified
