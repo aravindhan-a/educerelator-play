@@ -8,6 +8,17 @@ const CURRICULUM_DESC = {
   international: "International curriculum (IB / Cambridge IGCSE equivalent)",
 };
 
+// 13 languages generated in every batch — frontend picks the right one instantly
+const LANG_NAMES = {
+  en: "English", hi: "Hindi (हिन्दी)", ta: "Tamil (தமிழ்)",
+  bn: "Bengali (বাংলা)", te: "Telugu (తెలుగు)", mr: "Marathi (मराठी)",
+  gu: "Gujarati (ગુજરાતી)", kn: "Kannada (ಕನ್ನಡ)", ml: "Malayalam (മലയാളം)",
+  pa: "Punjabi (ਪੰਜਾਬੀ)", ur: "Urdu (اردو)", or: "Odia (ଓଡ଼ିଆ)",
+  ne: "Nepali (नेपाली)",
+};
+
+const LANG_KEYS = Object.keys(LANG_NAMES);
+
 export async function generateQuestionBatch({
   classNum, subject, curriculum, difficulty, count = 20,
 }) {
@@ -19,30 +30,46 @@ studying "${subject}" under the ${currDesc} curriculum, at difficulty level ${di
 
 Return ONLY a valid JSON array, no markdown fences or prose. Each item must follow this exact shape:
 {
-  "id": "<unique short id, e.g. c${classNum}-${subject}-001>",
-  "type": "<short type tag, e.g. identify, count, match, solve, recall>",
-  "prompt": { "en": "...", "hi": "...", "ta": "..." },
-  "visual": "<1-6 relevant emoji that illustrate the question — no image files>",
+  "id": "c${classNum}-${subject}-001",
+  "type": "identify",
+  "prompt": {
+    "en": "...", "hi": "...", "ta": "...", "bn": "...", "te": "...",
+    "mr": "...", "gu": "...", "kn": "...", "ml": "...",
+    "pa": "...", "ur": "...", "or": "...", "ne": "..."
+  },
+  "visual": "🔬",
   "choices": [
-    { "en": "...", "hi": "...", "ta": "..." },
-    { "en": "...", "hi": "...", "ta": "..." },
-    { "en": "...", "hi": "...", "ta": "..." }
+    { "en": "...", "hi": "...", "ta": "...", "bn": "...", "te": "...",
+      "mr": "...", "gu": "...", "kn": "...", "ml": "...",
+      "pa": "...", "ur": "...", "or": "...", "ne": "..." },
+    { "en": "...", "hi": "...", "ta": "...", "bn": "...", "te": "...",
+      "mr": "...", "gu": "...", "kn": "...", "ml": "...",
+      "pa": "...", "ur": "...", "or": "...", "ne": "..." },
+    { "en": "...", "hi": "...", "ta": "...", "bn": "...", "te": "...",
+      "mr": "...", "gu": "...", "kn": "...", "ml": "...",
+      "pa": "...", "ur": "...", "or": "...", "ne": "..." },
+    { "en": "...", "hi": "...", "ta": "...", "bn": "...", "te": "...",
+      "mr": "...", "gu": "...", "kn": "...", "ml": "...",
+      "pa": "...", "ur": "...", "or": "...", "ne": "..." }
   ],
-  "answerIndex": <0, 1, or 2>
+  "answerIndex": 0
 }
+
+Languages to translate into: ${LANG_KEYS.map(k => LANG_NAMES[k]).join(", ")}.
 
 Requirements:
 - Strictly aligned to Class ${classNum} ${currDesc} syllabus for ${subject}.
-- Natural, age-appropriate language in all three languages (English, Hindi, Tamil).
+- All 13 language translations must be natural and age-appropriate — not literal word-for-word.
 - Difficulty ${difficulty}: ${difficulty <= 3 ? "simple recall and recognition" : difficulty <= 6 ? "application and reasoning" : "analysis, inference, or multi-step problems"}.
-- Exactly 3 choices per question — one correct, two plausible distractors.
+- Exactly 4 choices per question — one correct, three plausible distractors.
 - Vary question types; do not repeat identical scenarios.
-- Keep choices short (a word, number, or brief phrase).
-- Emoji visual must relate clearly to the question topic.`;
+- Keep choices short (a word, number, or brief phrase) in all languages.
+- Emoji visual must relate clearly to the question topic.
+- Use correct script for each language (Devanagari for hi/mr/ne, Tamil script for ta, etc.).`;
 
   const response = await client.messages.create({
     model: "claude-sonnet-4-6",
-    max_tokens: 6000,
+    max_tokens: 12000,
     messages: [{ role: "user", content: prompt }],
   });
 
