@@ -54,11 +54,15 @@ body {
   color: white;
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
-.topbar h1 {
+.topbar-brand {
   font-size: 1.4rem; margin: 0; font-weight: 800;
+  color: white; background: none; border: none; padding: 0; cursor: pointer;
+  font-family: inherit;
   text-shadow: 0 2px 0 rgba(0,0,0,0.15);
   animation: wobble 4s ease-in-out infinite;
+  transition: opacity 0.15s;
 }
+.topbar-brand:hover { opacity: 0.85; }
 @keyframes wobble {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(-2deg); }
@@ -428,7 +432,7 @@ body {
   .class-num { font-size: 1.5rem; }
   .class-emoji { font-size: 1.2rem; }
   .subject-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
-  .topbar h1 { font-size: 1.1rem; }
+  .topbar-brand { font-size: 1.1rem; }
   .choices { gap: 10px; }
   .choice-btn { font-size: 1.2rem; padding: 16px 6px; }
   .welcome-name { font-size: 1.15rem; }

@@ -353,9 +353,13 @@ function showClassPicker() {
   classPickerEl.classList.remove("hidden");
   subjectPickerEl.classList.add("hidden");
   playScreenEl.classList.add("hidden");
+  sessionCompleteEl.classList.add("hidden");
+  profileScreenEl.classList.add("hidden");
   streakDisplay.classList.add("hidden");
   updateWelcomeBanner();
 }
+
+document.getElementById("topbar-brand").addEventListener("click", showClassPicker);
 
 function showSubjectPicker(classNum) {
   currentClass = classNum;
