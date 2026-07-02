@@ -158,11 +158,12 @@ function updateWelcomeBanner() {
   const name = currentUser.displayName || currentUser.email.split("@")[0];
   document.getElementById("welcome-name").textContent = `Hi, ${name.split(" ")[0]}! 👋`;
 
-  const skills = (loadJSON("progress", () => ({ skills: {} })).skills) || {};
-  const totalStars  = Object.values(skills).reduce((s, v) => s + (v.correct  || 0), 0);
-  const bestStreak  = Object.values(skills).reduce((s, v) => Math.max(s, v.streak || 0), 0);
-  document.getElementById("home-stars").textContent  = totalStars;
-  document.getElementById("home-streak").textContent = bestStreak;
+  const s   = loadStats();
+  const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : null;
+  document.getElementById("home-streak").textContent  = s.dayStreak   || 0;
+  document.getElementById("home-stars").textContent   = s.totalAnswered || 0;
+  document.getElementById("home-accuracy").textContent = pct !== null ? `${pct}%` : "—";
+  document.getElementById("home-stats").classList.toggle("hidden", s.totalAnswered === 0);
 
   // Continue bar
   const last = loadJSON("lastPlayed", () => null);
@@ -505,6 +506,7 @@ function showSessionComplete() {
 
   playScreenEl.classList.add("hidden");
   sessionCompleteEl.classList.remove("hidden");
+  updateWelcomeBanner(); // refresh home stats now that session data is saved
 
   const pct  = sessionCorrect / SESSION_TOTAL;
   completeEmojiEl.textContent = pct >= 0.8 ? "🏆" : pct >= 0.5 ? "🎉" : "💪";

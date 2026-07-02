@@ -115,8 +115,22 @@ body {
   padding: 4px 0 12px; margin-bottom: 4px;
 }
 .time-greeting { font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.75); margin: 0 0 2px; }
-.welcome-name  { font-size: 1.4rem; font-weight: 900; color: #fff; margin: 0;
+.welcome-name  { font-size: 1.4rem; font-weight: 900; color: #fff; margin: 0 0 12px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+
+/* home stats chips */
+.home-stats {
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+.home-stat-chip {
+  display: flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,0.22); border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 999px; padding: 6px 14px;
+  backdrop-filter: blur(4px);
+}
+.home-stat-icon  { font-size: 1rem; }
+.home-stat-value { font-size: 1rem; font-weight: 900; color: #fff; }
+.home-stat-label { font-size: 0.72rem; font-weight: 700; color: rgba(255,255,255,0.75); }
 
 /* ── CONTINUE BAR ── */
 .continue-bar {
