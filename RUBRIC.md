@@ -49,6 +49,7 @@ _Last audit: 2 July 2026_
 | C5 | Content correctness | Zero known wrong answers | 🟢 | Full 720-question audit (2 Jul 2026): 6 errors found and fixed; answer positions de-biased (was 85% B/C); render-time shuffle added |
 | C6 | Fresh content for heavy users | Practice never feels stale | 🟡 | Premium AI generation solves this; free tier recycles 10 questions/subject. **Gap: grow seed bank toward 30/subject** |
 | C7 | Board adaptation | State boards, international | 🔴 | Tabs exist; AI can generate board-specific (premium), but no curated state-board content. Site now labels this honestly. **Gap: Samacheer/SSC content** |
+| C8 | Contextual localisation | Questions grounded in the student's own region (all 36: 28 states + 8 UTs) | 🟡 | Architecture shipped 2 Jul 2026: region picker, regional question overlays, region-aware AI generation, draft-gated content factory. Tamil Nadu exemplar pack live (8 verified questions × 13 languages). **Gap: 35 regions to fill via the factory + review** |
 
 **Verdict: 🟡→🟢 The adaptive core is real; content depth is the growth axis.**
 
@@ -94,6 +95,6 @@ Product: guest mode; fair-use quota (backend + terms); "22 languages"→13 every
 4. **Difficulty-tagged seed content** (C2) — lets the adaptive engine work fully offline
 5. **Uptime monitoring** (A6) — free tier of any uptime service + alert email
 6. **State-board content** (C7) — start with Tamil Nadu Samacheer Class 10
-7. **Contextual scaling** (the long-term vision) — questions localised to the student's state and district: word problems using local rivers, crops, festivals and city names. The content pipeline already supports it (per-curriculum AI generation + JSON banks keyed by class/subject — a `region` key extends it naturally). Sequence: state boards → state context in questions → district context
+7. **Contextual scaling** (the long-term vision — see the founder's TEDx talk on contextual education for India) — ARCHITECTURE SHIPPED 2 Jul 2026. Remaining: run `urban/backend/scripts/generate-regional-content.mjs` per region/class/subject, review drafts (remove `"draft": true` after verifying local facts), commit. Sequence: fill the 35 remaining regions → deepen per-class coverage → district-level context
 8. **Play Store listing** — wrap the PWA as a TWA once weekly actives justify the $25 fee (steps in DEPLOYMENT.md §6)
 9. **Phone-OTP sign-in** — for parents without any email; Firebase supports it (SMS costs apply), removes the last sign-up barrier

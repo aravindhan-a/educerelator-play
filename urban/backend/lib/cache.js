@@ -1,5 +1,5 @@
-function cacheKey(classNum, subject, curriculum, difficulty) {
-  return `bank:${classNum}:${subject}:${curriculum}:${difficulty}`;
+function cacheKey(classNum, subject, curriculum, difficulty, region = "all") {
+  return `bank:${classNum}:${subject}:${curriculum}:${difficulty}:${region}`;
 }
 
 function getKV() {
@@ -15,22 +15,22 @@ function getKV() {
   }
 }
 
-export async function getCachedBatch(classNum, subject, curriculum, difficulty) {
+export async function getCachedBatch(classNum, subject, curriculum, difficulty, region) {
   const kv = getKV();
   if (!kv) return null;
   try {
-    return await kv.get(cacheKey(classNum, subject, curriculum, difficulty));
+    return await kv.get(cacheKey(classNum, subject, curriculum, difficulty, region));
   } catch {
     return null;
   }
 }
 
-export async function setCachedBatch(classNum, subject, curriculum, difficulty, questions) {
+export async function setCachedBatch(classNum, subject, curriculum, difficulty, region, questions) {
   const kv = getKV();
   if (!kv) return;
   try {
     await kv.set(
-      cacheKey(classNum, subject, curriculum, difficulty),
+      cacheKey(classNum, subject, curriculum, difficulty, region),
       questions,
       { ex: 60 * 60 * 24 * 7 }
     );

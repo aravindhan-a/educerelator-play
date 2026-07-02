@@ -194,6 +194,11 @@
     </div>
     <p class="curriculum-note">Free questions follow the CBSE/NCERT syllabus. Board-specific questions are AI-generated for Premium members.</p>
 
+    <div class="region-row">
+      <span class="region-pin" aria-hidden="true">📍</span>
+      <select id="region-picker" aria-label="Your state or union territory"></select>
+    </div>
+
     <h2 class="screen-title">Choose a subject</h2>
     <div class="subject-grid" id="subject-grid">
       <!-- populated by JS -->
@@ -418,7 +423,10 @@
 
       <form id="login-form" class="auth-form">
         <input type="email" id="login-email" class="auth-input" placeholder="Email" aria-label="Email" autocomplete="email" required />
-        <input type="password" id="login-password" class="auth-input" placeholder="Password" aria-label="Password" autocomplete="current-password" required />
+        <div class="pw-wrap">
+          <input type="password" id="login-password" class="auth-input" placeholder="Password" aria-label="Password" autocomplete="current-password" required />
+          <button type="button" class="pw-toggle" data-target="login-password" aria-label="Show password">👁</button>
+        </div>
         <button type="button" id="forgot-password-btn" class="forgot-link">Forgot password?</button>
         <p id="login-error" class="auth-error" aria-live="polite"></p>
         <button type="submit" class="auth-submit">Sign In</button>
@@ -427,7 +435,10 @@
       <form id="register-form" class="auth-form hidden">
         <input type="text" id="reg-name" class="auth-input" placeholder="Your name" aria-label="Your name" autocomplete="name" required />
         <input type="email" id="reg-email" class="auth-input" placeholder="Email" aria-label="Email" autocomplete="email" required />
-        <input type="password" id="reg-password" class="auth-input" placeholder="Password (min 6 characters)" aria-label="Password, minimum 6 characters" autocomplete="new-password" required />
+        <div class="pw-wrap">
+          <input type="password" id="reg-password" class="auth-input" placeholder="Password (min 6 characters)" aria-label="Password, minimum 6 characters" autocomplete="new-password" required />
+          <button type="button" class="pw-toggle" data-target="reg-password" aria-label="Show password">👁</button>
+        </div>
         <p id="register-error" class="auth-error" aria-live="polite"></p>
         <button type="submit" class="auth-submit">Create Account</button>
       </form>
