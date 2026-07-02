@@ -54,6 +54,7 @@ const CURR_KEY     = "curriculum";
 // ── session progress ──
 const SESSION_TOTAL = 10;
 let sessionCount = 0;
+let sessionSeenIds = new Set();
 
 // ── runtime state ──
 let lang            = localStorage.getItem(LANG_KEY) || "en";
@@ -359,6 +360,7 @@ async function startPlay(subject) {
   localStorage.setItem("lastPlayed", JSON.stringify({ classNum: currentClass, subject }));
 
   sessionCount = 0;
+  sessionSeenIds = new Set();
   updateProgressBar();
 
   subjectPickerEl.classList.add("hidden");
@@ -379,8 +381,9 @@ async function loadNextQuestion() {
 
   try {
     currentQuestion = await getNextQuestion(
-      currentClass, currentSubject, curriculum, difficulty
+      currentClass, currentSubject, curriculum, difficulty, sessionSeenIds
     );
+    sessionSeenIds.add(currentQuestion.id);
   } catch (err) {
     questionPrompt.textContent =
       "⚠️ Connect to the internet to load questions for this class and subject.";
