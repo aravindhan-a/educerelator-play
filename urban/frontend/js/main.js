@@ -58,6 +58,12 @@ const SESSION_TOTAL = 10;
 let sessionCount   = 0;
 let sessionCorrect = 0;
 let sessionSeenIds = new Set();
+// ── game state ──
+let sessionScore   = 0;
+let sessionCombo   = 0;
+let sessionHearts  = 3;
+let sessionAnswers = []; // true/false per question answered
+let comboBannerTimer = null;
 
 // ── runtime state ──
 let lang            = localStorage.getItem(LANG_KEY) || "en";
@@ -110,7 +116,9 @@ const backFromProfile  = document.getElementById("back-from-profile");
 // session complete + premium
 const sessionCompleteEl    = document.getElementById("session-complete");
 const completeScoreEl      = document.getElementById("complete-score");
-const completeEmojiEl      = document.getElementById("complete-emoji");
+const completeTitleEl      = document.getElementById("complete-title");
+const scoreRevealValEl     = document.getElementById("score-reveal-val");
+const newRecordBadgeEl     = document.getElementById("new-record-badge");
 const playAgainBtn         = document.getElementById("play-again-btn");
 const newSubjectBtn        = document.getElementById("new-subject-btn");
 const upgradeStripEl       = document.getElementById("upgrade-strip");
@@ -139,11 +147,128 @@ function saveAdaptiveState() {
 }
 function adaptiveKey(classNum, subject) { return `${classNum}:${subject}`; }
 
-function updateProgressBar() {
-  const fill  = document.getElementById("session-bar-fill");
-  const label = document.getElementById("session-label");
-  if (fill)  fill.style.width = `${Math.min(sessionCount / SESSION_TOTAL, 1) * 100}%`;
-  if (label) label.textContent = `${Math.min(sessionCount, SESSION_TOTAL)} / ${SESSION_TOTAL}`;
+// ── HUD rendering ──
+function renderHUD() {
+  // Hearts
+  const heartsEl = document.getElementById("hud-hearts");
+  if (heartsEl) {
+    heartsEl.innerHTML = "";
+    for (let i = 0; i < 3; i++) {
+      const h = document.createElement("span");
+      h.className = "hud-heart" + (i >= sessionHearts ? " broken" : "");
+      h.textContent = "❤️";
+      heartsEl.appendChild(h);
+    }
+  }
+  // Score
+  const scoreEl = document.getElementById("hud-score-val");
+  if (scoreEl) {
+    scoreEl.textContent = sessionScore.toLocaleString();
+    scoreEl.classList.remove("pop");
+    void scoreEl.offsetWidth;
+    scoreEl.classList.add("pop");
+    setTimeout(() => scoreEl.classList.remove("pop"), 200);
+  }
+  // Dots
+  const dotsEl = document.getElementById("hud-dots");
+  if (dotsEl) {
+    dotsEl.innerHTML = "";
+    for (let i = 0; i < SESSION_TOTAL; i++) {
+      const d = document.createElement("div");
+      d.className = "hud-dot";
+      if (i < sessionCount) {
+        d.classList.add(sessionAnswers[i] ? "dot-correct" : "dot-wrong");
+      }
+      dotsEl.appendChild(d);
+    }
+  }
+}
+
+function showComboBanner(multiplier) {
+  const el = document.getElementById("combo-banner");
+  if (!el) return;
+  const labels = { 2: "🔥 Combo ×2!", 3: "🔥🔥 Combo ×3!", 4: "⚡ MAX COMBO ×4!" };
+  el.textContent = labels[multiplier] || `×${multiplier}`;
+  el.classList.add("show");
+  clearTimeout(comboBannerTimer);
+  comboBannerTimer = setTimeout(() => el.classList.remove("show"), 1500);
+}
+
+function flyScore(points, fromEl) {
+  const rect = fromEl.getBoundingClientRect();
+  const el   = document.createElement("div");
+  el.className   = "fly-score";
+  el.textContent = `+${points}`;
+  el.style.left  = `${rect.left + rect.width / 2}px`;
+  el.style.top   = `${rect.top}px`;
+  document.body.appendChild(el);
+  el.addEventListener("animationend", () => el.remove());
+}
+
+function sparkleAnswer(fromEl) {
+  const rect   = fromEl.getBoundingClientRect();
+  const cx     = rect.left + rect.width / 2;
+  const cy     = rect.top  + rect.height / 2;
+  const sparks = ["✨","⭐","💫","🌟","✦"];
+  for (let i = 0; i < 8; i++) {
+    const s   = document.createElement("span");
+    s.className   = "sparkle-piece";
+    const angle   = (i / 8) * Math.PI * 2;
+    const dist    = 50 + Math.random() * 60;
+    s.style.left  = `${cx}px`;
+    s.style.top   = `${cy}px`;
+    s.style.setProperty("--sdx", `${Math.cos(angle) * dist}px`);
+    s.style.setProperty("--sdy", `${Math.sin(angle) * dist}px`);
+    s.style.setProperty("--srot", `${(Math.random() - 0.5) * 360}deg`);
+    s.textContent = sparks[Math.floor(Math.random() * sparks.length)];
+    document.body.appendChild(s);
+    s.addEventListener("animationend", () => s.remove());
+  }
+}
+
+function launchEndConfetti() {
+  const container = document.getElementById("end-confetti");
+  if (!container) return;
+  container.innerHTML = "";
+  const colors = ["#f59e0b","#10b981","#3b82f6","#ec4899","#8b5cf6","#ef4444","#fbbf24"];
+  for (let i = 0; i < 80; i++) {
+    const p = document.createElement("div");
+    p.className      = "end-confetti-piece";
+    p.style.left     = `${Math.random() * 100}%`;
+    p.style.background = colors[Math.floor(Math.random() * colors.length)];
+    p.style.setProperty("--fdx",  `${(Math.random() - 0.5) * 200}px`);
+    p.style.setProperty("--frot", `${(Math.random() - 0.5) * 720}deg`);
+    p.style.animationDuration = `${1.5 + Math.random() * 2}s`;
+    p.style.animationDelay   = `${Math.random() * 0.6}s`;
+    p.style.width  = `${6 + Math.random() * 8}px`;
+    p.style.height = `${6 + Math.random() * 8}px`;
+    container.appendChild(p);
+    p.addEventListener("animationend", () => p.remove());
+  }
+}
+
+function animateStars(count) {
+  for (let i = 1; i <= 3; i++) {
+    const el = document.getElementById(`star${i}`);
+    if (!el) continue;
+    if (i <= count) {
+      setTimeout(() => el.classList.add("earned"), i * 220);
+    } else {
+      el.classList.remove("earned");
+    }
+  }
+}
+
+function countUpScore(target) {
+  const el = document.getElementById("score-reveal-val");
+  if (!el) return;
+  let current = 0;
+  const step  = Math.ceil(target / 40);
+  const timer = setInterval(() => {
+    current = Math.min(current + step, target);
+    el.textContent = current.toLocaleString();
+    if (current >= target) clearInterval(timer);
+  }, 30);
 }
 
 function updateWelcomeBanner() {
@@ -390,8 +515,12 @@ async function startPlay(subject) {
   sessionCount     = 0;
   sessionCorrect   = 0;
   sessionSeenIds   = new Set();
+  sessionScore     = 0;
+  sessionCombo     = 0;
+  sessionHearts    = 3;
+  sessionAnswers   = [];
   sessionStartedAt = Date.now();
-  updateProgressBar();
+  renderHUD();
 
   subjectPickerEl.classList.add("hidden");
   sessionCompleteEl.classList.add("hidden");
@@ -459,7 +588,8 @@ function handleAnswer(selectedIndex) {
   const elapsedMs = Date.now() - questionStartedAt;
   const key       = adaptiveKey(currentClass, currentSubject);
 
-  [...choicesEl.children].forEach((btn, i) => {
+  const btns = [...choicesEl.children];
+  btns.forEach((btn, i) => {
     btn.disabled = true;
     if (i === currentQuestion.answerIndex) btn.classList.add("correct");
     else if (i === selectedIndex)          btn.classList.add("wrong");
@@ -469,9 +599,23 @@ function handleAnswer(selectedIndex) {
   feedbackEl.classList.toggle("correct", correct);
   feedbackEl.classList.toggle("wrong",   !correct);
 
+  // ── game logic ──
   sessionCount = Math.min(sessionCount + 1, SESSION_TOTAL);
-  if (correct) sessionCorrect++;
-  updateProgressBar();
+  sessionAnswers.push(correct);
+  if (correct) {
+    sessionCorrect++;
+    sessionCombo++;
+    const multiplier = sessionCombo >= 6 ? 4 : sessionCombo >= 4 ? 3 : sessionCombo >= 2 ? 2 : 1;
+    const points     = 100 * multiplier;
+    sessionScore    += points;
+    flyScore(points, btns[selectedIndex]);
+    sparkleAnswer(btns[selectedIndex]);
+    if (sessionCombo >= 2) showComboBanner(multiplier);
+  } else {
+    sessionCombo  = 0;
+    sessionHearts = Math.max(0, sessionHearts - 1);
+  }
+  renderHUD();
 
   const stats = recordResult(key, correct);
   streakCountEl.textContent = stats.streak;
@@ -502,7 +646,6 @@ function handleAnswer(selectedIndex) {
 function showSessionComplete() {
   window.speechSynthesis?.cancel();
 
-  // Record screen time for this session
   if (sessionStartedAt) {
     recordScreenTime(Date.now() - sessionStartedAt);
     sessionStartedAt = null;
@@ -510,14 +653,26 @@ function showSessionComplete() {
 
   playScreenEl.classList.add("hidden");
   sessionCompleteEl.classList.remove("hidden");
-  updateWelcomeBanner(); // refresh home stats now that session data is saved
+  updateWelcomeBanner();
 
-  const pct  = sessionCorrect / SESSION_TOTAL;
-  completeEmojiEl.textContent = pct >= 0.8 ? "🏆" : pct >= 0.5 ? "🎉" : "💪";
-  completeScoreEl.textContent =
-    `You got ${sessionCorrect} out of ${SESSION_TOTAL} correct`;
+  // Stars: 3 = ≥8/10, 2 = ≥5/10, 1 = below
+  const stars = sessionCorrect >= 8 ? 3 : sessionCorrect >= 5 ? 2 : 1;
+  const titles = { 3: "Brilliant! 🏆", 2: "Well done! 🎉", 1: "Keep going! 💪" };
+  if (completeTitleEl) completeTitleEl.textContent = titles[stars];
+  completeScoreEl.textContent = `${sessionCorrect} / ${SESSION_TOTAL} correct`;
 
-  // Hide upgrade strip for premium users
+  // High score per class+subject
+  const hsKey  = `ecplay_hs_${currentClass}_${currentSubject}`;
+  const prevHs = parseInt(localStorage.getItem(hsKey) || "0");
+  const isNew  = sessionScore > prevHs;
+  if (isNew) localStorage.setItem(hsKey, sessionScore);
+  if (newRecordBadgeEl) newRecordBadgeEl.classList.toggle("hidden", !isNew);
+
+  // Animate in order: confetti → stars → score count-up → badge
+  launchEndConfetti();
+  animateStars(stars);
+  setTimeout(() => countUpScore(sessionScore), 400);
+
   upgradeStripEl.classList.toggle("hidden", isPremiumCached());
 }
 
@@ -535,7 +690,7 @@ function shareScore() {
   const s   = loadStats();
   const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : 0;
   shareContent(
-    `I just scored ${sessionCorrect}/${SESSION_TOTAL} on EC Play! 🎯\n` +
+    `I just scored ${sessionScore.toLocaleString()} pts (${sessionCorrect}/${SESSION_TOTAL}) on EC Play! 🎯\n` +
     `Class ${currentClass} ${currentSubject} — playing in my language 🌏\n` +
     `Total: ${s.totalAnswered} questions, ${pct}% accuracy · ${s.dayStreak} day streak 🔥\n` +
     `Free for all Indian students →`
