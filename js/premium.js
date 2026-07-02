@@ -61,13 +61,36 @@ export async function openRazorpayCheckout(user, plan, onSuccess) {
     description: plan === "yearly" ? "Premium — 1 Year" : "Premium — 1 Month",
     prefill:     { name: user.displayName || "", email: user.email || "" },
     theme:       { color: "#7c3aed" },
-    handler: async () => {
+    handler: async (response) => {
       clearPremiumCache();
-      // Webhook updates Firestore; give it 2 s then re-check
-      await new Promise(r => setTimeout(r, 2000));
+      // Instant activation: server verifies the payment signature and grants
+      // premium immediately. The webhook remains as a backstop.
+      try {
+        const token = await user.getIdToken();
+        const res = await fetch(`${API_BASE}/api/verify-payment`, {
+          method:  "POST",
+          headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+          body:    JSON.stringify({
+            razorpay_order_id:   response.razorpay_order_id,
+            razorpay_payment_id: response.razorpay_payment_id,
+            razorpay_signature:  response.razorpay_signature,
+          }),
+        });
+        if (res.ok) {
+          const status = await res.json();
+          localStorage.setItem(CACHE_KEY, JSON.stringify({ ...status, checkedAt: Date.now() }));
+          onSuccess();
+          return;
+        }
+        console.error("verify-payment returned", res.status);
+      } catch (err) {
+        console.error("verify-payment failed:", err);
+      }
+      // Fallback: wait for the webhook, then re-check
+      await new Promise(r => setTimeout(r, 2500));
       const isNowPremium = await checkPremium(user);
       if (isNowPremium) onSuccess();
-      else alert("Payment received — your account will upgrade shortly. Refresh in a moment.");
+      else alert("Payment received — your account will upgrade within a minute. Please refresh.");
     },
   };
 
