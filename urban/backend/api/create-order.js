@@ -17,6 +17,11 @@ export default async function handler(req, res) {
   if (req.method === "OPTIONS") return res.status(204).end();
   if (req.method !== "POST") return res.status(405).end();
 
+  if (!process.env.FIREBASE_SERVICE_ACCOUNT) {
+    console.error("Missing FIREBASE_SERVICE_ACCOUNT env var");
+    return res.status(503).json({ error: "Auth not configured on server" });
+  }
+
   let uid;
   try { uid = await verifyAndGetUid(req.headers.authorization); }
   catch { return res.status(401).json({ error: "Unauthorized" }); }
