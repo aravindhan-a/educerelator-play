@@ -9,6 +9,7 @@ import {
   onAuthStateChanged,
   signOut,
   sendPasswordResetEmail,
+  sendEmailVerification,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {
   getFirestore,
@@ -55,6 +56,9 @@ export async function registerUser(name, email, password) {
   const cred = await createUserWithEmailAndPassword(auth, email, password);
   await updateProfile(cred.user, { displayName: name });
   await ensureUserDoc(cred.user);
+  // Non-blocking: catches typo'd emails early — a wrong address here would
+  // make password recovery impossible later.
+  sendEmailVerification(cred.user).catch(() => {});
   return cred.user;
 }
 

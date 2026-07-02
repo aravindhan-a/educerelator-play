@@ -1,4 +1,5 @@
 import { ALL_CLASSES, CURRICULA, getSubjectsForClass } from "../../../content/curriculum.js";
+import { STATES, UNION_TERRITORIES } from "../../../content/regions.js";
 import { getNextQuestion } from "./question-bank.js";
 import { checkPremium, isPremiumCached, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
@@ -54,6 +55,7 @@ const ADAPTIVE_KEY = "adaptiveState";
 const LANG_KEY     = "lang";
 const CURR_KEY     = "curriculum";
 const GUEST_KEY    = "ecplay_guest";
+const REGION_KEY   = "region";
 
 // ── session progress ──
 const SESSION_TOTAL = 10;
@@ -71,6 +73,7 @@ let comboBannerTimer = null;
 let guestMode       = localStorage.getItem(GUEST_KEY) === "1";
 let lang            = localStorage.getItem(LANG_KEY) || "en";
 let curriculum      = localStorage.getItem(CURR_KEY) || "cbse";
+let region          = localStorage.getItem(REGION_KEY) || "all";
 let adaptiveState   = loadJSON(ADAPTIVE_KEY, createAdaptiveState);
 let currentClass    = null;
 let currentSubject  = null;
@@ -394,6 +397,17 @@ registerFormEl.addEventListener("submit", async (e) => {
   }
 });
 
+// ── password visibility toggles ──
+document.querySelectorAll(".pw-toggle").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const input = document.getElementById(btn.dataset.target);
+    const show  = input.type === "password";
+    input.type  = show ? "text" : "password";
+    btn.setAttribute("aria-label", show ? "Hide password" : "Show password");
+    btn.classList.toggle("showing", show);
+  });
+});
+
 // ── forgot password ──
 document.getElementById("forgot-password-btn").addEventListener("click", async () => {
   const email = document.getElementById("login-email").value.trim();
@@ -404,7 +418,9 @@ document.getElementById("forgot-password-btn").addEventListener("click", async (
   }
   try {
     await resetPassword(email);
-    loginErrorEl.textContent = `Reset link sent to ${email}. Check your inbox (and spam folder).`;
+    loginErrorEl.textContent =
+      `If an account exists for ${email}, a reset link is on its way — check your inbox and spam folder. ` +
+      `If you signed up with Google, use "Continue with Google" instead.`;
     loginErrorEl.classList.add("auth-success");
   } catch (err) {
     loginErrorEl.textContent =
@@ -432,11 +448,17 @@ onAuthChange(async (user) => {
     topbarSigninBtn.classList.add("hidden");
     authModalEl.classList.add("hidden");
 
-    // Load cloud progress and merge into localStorage
+    // Load cloud progress. Cloud wins only if it has real data — a fresh
+    // account (e.g. a guest upgrading) must not wipe local progress.
     try {
       const serverProgress = await loadUserProgress(user.uid);
-      if (serverProgress) {
+      const hasServerData  = serverProgress && Object.keys(serverProgress.skills || {}).length > 0;
+      const local          = loadJSON("progress", () => null);
+      const hasLocalData   = local && Object.keys(local.skills || {}).length > 0;
+      if (hasServerData) {
         localStorage.setItem("progress", JSON.stringify(serverProgress));
+      } else if (hasLocalData) {
+        saveUserProgress(user.uid, local);
       }
     } catch { /* offline */ }
 
@@ -500,6 +522,32 @@ ALL_CLASSES.forEach(({ num, groupLabel, colorClass }) => {
 document.getElementById("continue-btn").addEventListener("click", () => {
   const last = loadJSON("lastPlayed", () => null);
   if (last) startPlayFromContinue(last.classNum, last.subject);
+});
+
+// ── region picker ──
+const regionPickerEl = document.getElementById("region-picker");
+{
+  const allOpt = document.createElement("option");
+  allOpt.value = "all";
+  allOpt.textContent = "🇮🇳 All India";
+  regionPickerEl.appendChild(allOpt);
+  const groups = [["States", STATES], ["Union Territories", UNION_TERRITORIES]];
+  groups.forEach(([label, list]) => {
+    const og = document.createElement("optgroup");
+    og.label = label;
+    list.forEach(({ id, label: name }) => {
+      const opt = document.createElement("option");
+      opt.value = id;
+      opt.textContent = name;
+      og.appendChild(opt);
+    });
+    regionPickerEl.appendChild(og);
+  });
+  regionPickerEl.value = region;
+}
+regionPickerEl.addEventListener("change", () => {
+  region = regionPickerEl.value;
+  localStorage.setItem(REGION_KEY, region);
 });
 
 // ── curriculum tabs ──
@@ -613,7 +661,7 @@ async function loadNextQuestion() {
 
   try {
     currentQuestion = await getNextQuestion(
-      currentClass, currentSubject, curriculum, difficulty, sessionSeenIds, getToken
+      currentClass, currentSubject, curriculum, difficulty, sessionSeenIds, getToken, region
     );
     sessionSeenIds.add(currentQuestion.id);
   } catch (err) {
