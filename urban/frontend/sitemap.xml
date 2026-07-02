@@ -1,8 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home / app shell -->
   <url>
     <loc>https://educerelator.com/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <lastmod>2025-07-01</lastmod>
   </url>
+
+  <!-- SEO landing pages -->
+  <url>
+    <loc>https://educerelator.com/cbse-practice-questions.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://educerelator.com/learn-in-hindi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://educerelator.com/online-learning-games-india.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+
+  <!-- Legal / support -->
+  <url>
+    <loc>https://educerelator.com/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+
+  <url>
+    <loc>https://educerelator.com/terms.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+
 </urlset>
