@@ -7,9 +7,7 @@ const PLANS = {
 };
 
 function cors(req, res) {
-  const allowed = new Set(["https://educerelator.com", "https://www.educerelator.com"]);
-  const origin = req.headers.origin;
-  if (origin && allowed.has(origin)) res.setHeader("Access-Control-Allow-Origin", origin);
+  res.setHeader("Access-Control-Allow-Origin", req.headers.origin || "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 }
