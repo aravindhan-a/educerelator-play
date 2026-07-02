@@ -127,12 +127,20 @@
       <button id="back-to-subjects" class="back-btn" aria-label="Back">⬅</button>
       <span id="play-badge" class="class-badge"></span>
     </div>
-    <div class="session-progress">
-      <div class="session-bar-track">
-        <div id="session-bar-fill" class="session-bar-fill"></div>
+
+    <!-- Game HUD -->
+    <div class="game-hud">
+      <div class="hud-hearts" id="hud-hearts"></div>
+      <div class="hud-score-wrap">
+        <span class="hud-score-label">SCORE</span>
+        <span id="hud-score-val" class="hud-score-val">0</span>
       </div>
-      <span id="session-label" class="session-label">0 / 10</span>
+      <div class="hud-dots" id="hud-dots"></div>
     </div>
+
+    <!-- Combo banner -->
+    <div id="combo-banner" class="combo-banner" aria-live="polite"></div>
+
     <div class="question-card">
       <div id="mascot-play" class="mascot mascot-small">🦉</div>
       <div id="question-visual" class="visual"></div>
@@ -198,10 +206,20 @@
 
   <!-- Session Complete Screen -->
   <section id="session-complete" class="screen hidden">
+    <div id="end-confetti" class="end-confetti"></div>
     <div class="complete-card">
-      <div class="complete-emoji" id="complete-emoji">🎉</div>
-      <h2 class="complete-title">Session Complete!</h2>
-      <p class="complete-score" id="complete-score">You got 8 out of 10 correct</p>
+      <div class="stars-row" id="stars-row">
+        <span class="star" id="star1">⭐</span>
+        <span class="star" id="star2">⭐</span>
+        <span class="star" id="star3">⭐</span>
+      </div>
+      <h2 class="complete-title" id="complete-title">Session Complete!</h2>
+      <div class="score-reveal">
+        <span id="score-reveal-val" class="score-reveal-val">0</span>
+        <span class="score-reveal-label">pts</span>
+      </div>
+      <p class="complete-score" id="complete-score">8 / 10 correct</p>
+      <div id="new-record-badge" class="new-record-badge hidden">🏆 New High Score!</div>
       <div class="complete-actions">
         <button id="play-again-btn" class="btn-secondary-action">Play Again</button>
         <button id="new-subject-btn" class="btn-secondary-action">New Subject</button>
