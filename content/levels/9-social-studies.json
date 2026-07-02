@@ -1,0 +1,176 @@
+{
+  "class": 9,
+  "subject": "social-studies",
+  "questions": [
+    {
+      "id": "9-social-studies-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "The French Revolution began in which year?",
+        "hi": "फ्रांसीसी क्रांति किस वर्ष शुरू हुई?",
+        "ta": "பிரெஞ்சுப் புரட்சி எந்த ஆண்டு தொடங்கியது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "1789", "hi": "1789", "ta": "1789" },
+        { "en": "1799", "hi": "1799", "ta": "1799" },
+        { "en": "1776", "hi": "1776", "ta": "1776" },
+        { "en": "1815", "hi": "1815", "ta": "1815" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "9-social-studies-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which is the largest river basin in India?",
+        "hi": "भारत का सबसे बड़ा नदी बेसिन कौन सा है?",
+        "ta": "இந்தியாவின் மிகப்பெரிய நதி நீர்வழி எது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Brahmaputra basin", "hi": "ब्रह्मपुत्र बेसिन", "ta": "பிரம்மபுத்திரா நீர்வழி" },
+        { "en": "Ganga basin", "hi": "गंगा बेसिन", "ta": "கங்கை நீர்வழி" },
+        { "en": "Godavari basin", "hi": "गोदावरी बेसिन", "ta": "கோதாவரி நீர்வழி" },
+        { "en": "Krishna basin", "hi": "कृष्णा बेसिन", "ta": "கிருஷ்ணா நீர்வழி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-social-studies-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a feature of a democratic government?",
+        "hi": "निम्नलिखित में से कौन सा लोकतांत्रिक सरकार की विशेषता है?",
+        "ta": "பின்வருவனவற்றில் ஜனநாயக அரசாங்கத்தின் அம்சம் எது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Power held by one person", "hi": "एक व्यक्ति के हाथ में सत्ता", "ta": "ஒரே நபரிடம் அதிகாரம்" },
+        { "en": "Elections held regularly", "hi": "नियमित रूप से चुनाव होते हैं", "ta": "தொடர்ந்து தேர்தல் நடைபெறுகிறது" },
+        { "en": "No freedom of speech", "hi": "वाक् स्वतंत्रता नहीं", "ta": "பேச்சு சுதந்திரம் இல்லை" },
+        { "en": "Hereditary rulers", "hi": "वंशानुगत शासक", "ta": "பரம்பரை ஆட்சியாளர்கள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-social-studies-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Tropic of Cancer passes through how many Indian states?",
+        "hi": "कर्क रेखा कितने भारतीय राज्यों से होकर गुजरती है?",
+        "ta": "கடகரேகை எத்தனை இந்திய மாநிலங்கள் வழியாக செல்கிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "6", "hi": "6", "ta": "6" },
+        { "en": "7", "hi": "7", "ta": "7" },
+        { "en": "8", "hi": "8", "ta": "8" },
+        { "en": "9", "hi": "9", "ta": "9" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-social-studies-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Who wrote the 'Declaration of the Rights of Man' during the French Revolution?",
+        "hi": "फ्रांसीसी क्रांति के दौरान 'मनुष्य के अधिकारों की घोषणा' किसने लिखी?",
+        "ta": "பிரெஞ்சுப் புரட்சியின் போது 'மனித உரிமைகள் பிரகடனம்' யாரால் எழுதப்பட்டது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Louis XVI", "hi": "लुई XVI", "ta": "லூயி XVI" },
+        { "en": "Napoleon", "hi": "नेपोलियन", "ta": "நெப்போலியன்" },
+        { "en": "The National Assembly", "hi": "राष्ट्रीय सभा", "ta": "தேசிய சபை" },
+        { "en": "Rousseau", "hi": "रूसो", "ta": "ரூசோ" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-social-studies-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which mountain range separates India from China?",
+        "hi": "कौन सी पर्वत श्रृंखला भारत को चीन से अलग करती है?",
+        "ta": "இந்தியாவை சீனாவிலிருந்து பிரிக்கும் மலைத்தொடர் எது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Aravalli", "hi": "अरावली", "ta": "அரவல்லி" },
+        { "en": "Western Ghats", "hi": "पश्चिमी घाट", "ta": "மேற்குத் தொடர்ச்சி மலை" },
+        { "en": "Himalayas", "hi": "हिमालय", "ta": "இமயமலை" },
+        { "en": "Vindhya", "hi": "विंध्य", "ta": "விந்திய" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-social-studies-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Poverty line in India is determined by:",
+        "hi": "भारत में गरीबी रेखा किसके द्वारा निर्धारित की जाती है?",
+        "ta": "இந்தியாவில் வறுமைக் கோடு எதன் அடிப்படையில் தீர்மானிக்கப்படுகிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Wealth", "hi": "धन-संपत्ति", "ta": "செல்வம்" },
+        { "en": "Caloric intake and expenditure", "hi": "कैलोरी सेवन और व्यय", "ta": "கலோரி உட்கொள்ளல் மற்றும் செலவு" },
+        { "en": "Land ownership", "hi": "भूमि स्वामित्व", "ta": "நிலம் உடைமை" },
+        { "en": "Number of family members", "hi": "परिवार के सदस्यों की संख्या", "ta": "குடும்ப உறுப்பினர்களின் எண்ணிக்கை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-social-studies-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "India's standard meridian passes through which state?",
+        "hi": "भारत का मानक याम्योत्तर किस राज्य से होकर गुजरता है?",
+        "ta": "இந்தியாவின் நிலையான தீர்க்கரேகை எந்த மாநிலம் வழியாக செல்கிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Rajasthan", "hi": "राजस्थान", "ta": "ராஜஸ்தான்" },
+        { "en": "Uttar Pradesh", "hi": "उत्तर प्रदेश", "ta": "உத்தர பிரதேசம்" },
+        { "en": "Bihar", "hi": "बिहार", "ta": "பீகார்" },
+        { "en": "Maharashtra", "hi": "महाराष्ट्र", "ta": "மகாராஷ்டிரா" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-social-studies-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which organisation was set up to look after the health of people all over the world?",
+        "hi": "विश्व भर में लोगों के स्वास्थ्य की देखभाल के लिए कौन सा संगठन स्थापित किया गया है?",
+        "ta": "உலகெங்கும் மக்களின் உடல்நலனை கவனிக்க எந்த அமைப்பு அமைக்கப்பட்டது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "UNESCO", "hi": "यूनेस्को", "ta": "யுனெஸ்கோ" },
+        { "en": "UNICEF", "hi": "यूनिसेफ", "ta": "யூனிசெஃப்" },
+        { "en": "WHO", "hi": "विश्व स्वास्थ्य संगठन (WHO)", "ta": "உலக சுகாதார அமைப்பு (WHO)" },
+        { "en": "IMF", "hi": "आईएमएफ", "ta": "ஐ.எம்.எஃப்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-social-studies-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Bastille was a symbol of what in France?",
+        "hi": "बास्तील फ्रांस में किस का प्रतीक था?",
+        "ta": "பிரான்சில் பாஸ்டில் எதன் சின்னமாக இருந்தது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Democracy", "hi": "लोकतंत्र", "ta": "ஜனநாயகம்" },
+        { "en": "Royal tyranny and despotism", "hi": "राजकीय अत्याचार और निरंकुशता", "ta": "அரச கொடுங்கோண்மை மற்றும் சர்வாதிகாரம்" },
+        { "en": "Freedom of press", "hi": "प्रेस की स्वतंत्रता", "ta": "பத்திரிகை சுதந்திரம்" },
+        { "en": "Economic equality", "hi": "आर्थिक समानता", "ta": "பொருளாதார சமத்துவம்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

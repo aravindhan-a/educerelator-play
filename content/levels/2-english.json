@@ -1,0 +1,176 @@
+{
+  "class": 2,
+  "subject": "english",
+  "questions": [
+    {
+      "id": "2-english-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these is a fruit?",
+        "hi": "इनमें से कौन सा एक फल है?",
+        "ta": "இவற்றில் எது ஒரு பழம்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Chair", "hi": "कुर्सी", "ta": "நாற்காலி" },
+        { "en": "Mango", "hi": "आम", "ta": "மாம்பழம்" },
+        { "en": "Book", "hi": "किताब", "ta": "புத்தகம்" },
+        { "en": "Pen", "hi": "कलम", "ta": "பேனா" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "2-english-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Fill in the blank: The cat ___ on the mat.",
+        "hi": "रिक्त स्थान भरें: The cat ___ on the mat.",
+        "ta": "இடைவெளியை நிரப்புங்கள்: The cat ___ on the mat."
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "sit", "hi": "sit", "ta": "sit" },
+        { "en": "sits", "hi": "sits", "ta": "sits" },
+        { "en": "sat", "hi": "sat", "ta": "sat" },
+        { "en": "sitting", "hi": "sitting", "ta": "sitting" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "2-english-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the opposite of 'big'?",
+        "hi": "'big' का विलोम शब्द कौन सा है?",
+        "ta": "'big' என்ற சொல்லின் எதிர்ச்சொல் எது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Large", "hi": "Large", "ta": "Large" },
+        { "en": "Huge", "hi": "Huge", "ta": "Huge" },
+        { "en": "Small", "hi": "Small", "ta": "Small" },
+        { "en": "Tall", "hi": "Tall", "ta": "Tall" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "2-english-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "How many letters are in the word 'SCHOOL'?",
+        "hi": "'SCHOOL' शब्द में कितने अक्षर हैं?",
+        "ta": "'SCHOOL' என்ற சொல்லில் எத்தனை எழுத்துகள் உள்ளன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "5", "hi": "5", "ta": "5" },
+        { "en": "7", "hi": "7", "ta": "7" },
+        { "en": "4", "hi": "4", "ta": "4" },
+        { "en": "6", "hi": "6", "ta": "6" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "2-english-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which animal says 'moo'?",
+        "hi": "कौन सा जानवर 'moo' बोलता है?",
+        "ta": "எந்த விலங்கு 'moo' என்று சொல்லும்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Dog", "hi": "कुत्ता", "ta": "நாய்" },
+        { "en": "Cow", "hi": "गाय", "ta": "பசு" },
+        { "en": "Cat", "hi": "बिल्ली", "ta": "பூனை" },
+        { "en": "Hen", "hi": "मुर्गी", "ta": "கோழி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "2-english-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sentence is correct?",
+        "hi": "कौन सा वाक्य सही है?",
+        "ta": "எந்த வாக்கியம் சரியானது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "She go to school.", "hi": "She go to school.", "ta": "She go to school." },
+        { "en": "She goes to school.", "hi": "She goes to school.", "ta": "She goes to school." },
+        { "en": "She going to school.", "hi": "She going to school.", "ta": "She going to school." },
+        { "en": "She gone to school.", "hi": "She gone to school.", "ta": "She gone to school." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "2-english-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of 'child'?",
+        "hi": "'child' का बहुवचन क्या है?",
+        "ta": "'child'-இன் பன்மை என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Childs", "hi": "Childs", "ta": "Childs" },
+        { "en": "Childes", "hi": "Childes", "ta": "Childes" },
+        { "en": "Children", "hi": "Children", "ta": "Children" },
+        { "en": "Childrens", "hi": "Childrens", "ta": "Childrens" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "2-english-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word rhymes with 'cat'?",
+        "hi": "'cat' के साथ तुकबंदी करने वाला शब्द कौन सा है?",
+        "ta": "'cat'-உடன் ஒலியொத்த சொல் எது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Cup", "hi": "Cup", "ta": "Cup" },
+        { "en": "Bat", "hi": "Bat", "ta": "Bat" },
+        { "en": "Car", "hi": "Car", "ta": "Car" },
+        { "en": "Bed", "hi": "Bed", "ta": "Bed" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "2-english-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these is a colour?",
+        "hi": "इनमें से कौन सा एक रंग है?",
+        "ta": "இவற்றில் எது ஒரு நிறம்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Apple", "hi": "Apple", "ta": "Apple" },
+        { "en": "Stone", "hi": "Stone", "ta": "Stone" },
+        { "en": "Green", "hi": "Green", "ta": "Green" },
+        { "en": "River", "hi": "River", "ta": "River" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "2-english-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Fill in the blank: I ___ a student.",
+        "hi": "रिक्त स्थान भरें: I ___ a student.",
+        "ta": "இடைவெளியை நிரப்புங்கள்: I ___ a student."
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "is", "hi": "is", "ta": "is" },
+        { "en": "are", "hi": "are", "ta": "are" },
+        { "en": "am", "hi": "am", "ta": "am" },
+        { "en": "be", "hi": "be", "ta": "be" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

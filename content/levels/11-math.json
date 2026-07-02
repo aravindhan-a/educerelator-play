@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "math",
+  "questions": [
+    {
+      "id": "11-math-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is an example of an empty set?",
+        "hi": "निम्नलिखित में से कौन सा रिक्त समुच्चय का उदाहरण है?",
+        "ta": "பின்வருவனவற்றில் எது வெற்று கணத்தின் எடுத்துக்காட்டு?"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "Set of even prime numbers", "hi": "सम अभाज्य संख्याओं का समुच्चय", "ta": "இரட்டை பகா எண்களின் கணம்" },
+        { "en": "Set of natural numbers less than 1", "hi": "1 से छोटी प्राकृत संख्याओं का समुच्चय", "ta": "1 ஐ விட சிறிய இயல் எண்களின் கணம்" },
+        { "en": "Set of odd numbers divisible by 2", "hi": "2 से विभाज्य विषम संख्याओं का समुच्चय", "ta": "2 ஆல் வகுபடும் ஒற்றை எண்களின் கணம்" },
+        { "en": "Set of letters in the word MATH", "hi": "MATH शब्द के अक्षरों का समुच्चय", "ta": "MATH என்ற வார்த்தையில் உள்ள எழுத்துகளின் கணம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-math-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The domain of the function f(x) = √(x − 2) is:",
+        "hi": "फलन f(x) = √(x − 2) का प्रांत है:",
+        "ta": "f(x) = √(x − 2) என்ற சார்பின் களம் என்ன?"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "x < 2", "hi": "x < 2", "ta": "x < 2" },
+        { "en": "x ≤ 2", "hi": "x ≤ 2", "ta": "x ≤ 2" },
+        { "en": "x ≥ 2", "hi": "x ≥ 2", "ta": "x ≥ 2" },
+        { "en": "All real numbers", "hi": "सभी वास्तविक संख्याएँ", "ta": "அனைத்து மெய் எண்களும்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-math-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "If A = {1, 2, 3} and B = {2, 3, 4}, what is A ∩ B?",
+        "hi": "यदि A = {1, 2, 3} और B = {2, 3, 4}, तो A ∩ B क्या है?",
+        "ta": "A = {1, 2, 3} மற்றும் B = {2, 3, 4} எனில் A ∩ B என்ன?"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "{1, 2, 3, 4}", "hi": "{1, 2, 3, 4}", "ta": "{1, 2, 3, 4}" },
+        { "en": "{2, 3}", "hi": "{2, 3}", "ta": "{2, 3}" },
+        { "en": "{1, 4}", "hi": "{1, 4}", "ta": "{1, 4}" },
+        { "en": "{}", "hi": "{}", "ta": "{}" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-math-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the value of sin 90°?",
+        "hi": "sin 90° का मान क्या है?",
+        "ta": "sin 90° இன் மதிப்பு என்ன?"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "0", "hi": "0", "ta": "0" },
+        { "en": "1/2", "hi": "1/2", "ta": "1/2" },
+        { "en": "√3/2", "hi": "√3/2", "ta": "√3/2" },
+        { "en": "1", "hi": "1", "ta": "1" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "11-math-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is the identity for cos 2θ?",
+        "hi": "cos 2θ के लिए निम्नलिखित में से कौन सी सर्वसमिका है?",
+        "ta": "cos 2θ க்கான சர்வசமன்பாடு எது?"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "2 sin²θ − 1", "hi": "2 sin²θ − 1", "ta": "2 sin²θ − 1" },
+        { "en": "1 − 2 sin²θ", "hi": "1 − 2 sin²θ", "ta": "1 − 2 sin²θ" },
+        { "en": "2 cos²θ + 1", "hi": "2 cos²θ + 1", "ta": "2 cos²θ + 1" },
+        { "en": "sin²θ − cos²θ", "hi": "sin²θ − cos²θ", "ta": "sin²θ − cos²θ" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-math-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The number of subsets of a set with 3 elements is:",
+        "hi": "3 अवयवों वाले समुच्चय के उपसमुच्चयों की संख्या है:",
+        "ta": "3 உறுப்புகளைக் கொண்ட கணத்தின் உட்கணங்களின் எண்ணிக்கை:"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "3", "hi": "3", "ta": "3" },
+        { "en": "6", "hi": "6", "ta": "6" },
+        { "en": "8", "hi": "8", "ta": "8" },
+        { "en": "9", "hi": "9", "ta": "9" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-math-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the principal value of cos⁻¹(1/2)?",
+        "hi": "cos⁻¹(1/2) का मुख्य मान क्या है?",
+        "ta": "cos⁻¹(1/2) இன் முதன்மை மதிப்பு என்ன?"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "30°", "hi": "30°", "ta": "30°" },
+        { "en": "45°", "hi": "45°", "ta": "45°" },
+        { "en": "60°", "hi": "60°", "ta": "60°" },
+        { "en": "90°", "hi": "90°", "ta": "90°" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-math-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "If f(x) = x² and g(x) = x + 1, what is f(g(2))?",
+        "hi": "यदि f(x) = x² और g(x) = x + 1, तो f(g(2)) क्या है?",
+        "ta": "f(x) = x² மற்றும் g(x) = x + 1 எனில் f(g(2)) என்ன?"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "5", "hi": "5", "ta": "5" },
+        { "en": "9", "hi": "9", "ta": "9" },
+        { "en": "7", "hi": "7", "ta": "7" },
+        { "en": "4", "hi": "4", "ta": "4" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-math-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the radian measure of 180°?",
+        "hi": "180° का रेडियन माप क्या है?",
+        "ta": "180° இன் ரேடியன் அளவு என்ன?"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "π/2", "hi": "π/2", "ta": "π/2" },
+        { "en": "π", "hi": "π", "ta": "π" },
+        { "en": "2π", "hi": "2π", "ta": "2π" },
+        { "en": "π/4", "hi": "π/4", "ta": "π/4" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-math-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following represents a one-to-one function?",
+        "hi": "निम्नलिखित में से कौन एकैकी फलन को दर्शाता है?",
+        "ta": "பின்வருவனவற்றில் எது ஒன்று-ஒன்று சார்பை குறிக்கிறது?"
+      },
+      "visual": "📐",
+      "choices": [
+        { "en": "f(x) = x²", "hi": "f(x) = x²", "ta": "f(x) = x²" },
+        { "en": "f(x) = |x|", "hi": "f(x) = |x|", "ta": "f(x) = |x|" },
+        { "en": "f(x) = sin x", "hi": "f(x) = sin x", "ta": "f(x) = sin x" },
+        { "en": "f(x) = 2x + 3", "hi": "f(x) = 2x + 3", "ta": "f(x) = 2x + 3" }
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

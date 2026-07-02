@@ -1,0 +1,176 @@
+{
+  "class": 12,
+  "subject": "chemistry",
+  "questions": [
+    {
+      "id": "12-chemistry-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which functional group is present in alcohols?",
+        "hi": "अल्कोहल में कौन सा क्रियात्मक समूह होता है?",
+        "ta": "ஆல்கஹால்களில் எந்த செயல்பாட்டு குழு உள்ளது?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "−COOH", "hi": "−COOH", "ta": "−COOH" },
+        { "en": "−OH", "hi": "−OH", "ta": "−OH" },
+        { "en": "−CHO", "hi": "−CHO", "ta": "−CHO" },
+        { "en": "−NH₂", "hi": "−NH₂", "ta": "−NH₂" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-chemistry-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "In electrochemistry, oxidation occurs at the:",
+        "hi": "विद्युत रसायन में, ऑक्सीकरण होता है:",
+        "ta": "மின் வேதியியலில், ஆக்சிகரணம் நிகழ்வது:"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Cathode", "hi": "कैथोड", "ta": "கேத்தோடு" },
+        { "en": "Anode", "hi": "एनोड", "ta": "ஆனோடு" },
+        { "en": "Both electrodes", "hi": "दोनों इलेक्ट्रोड", "ta": "இரண்டு மின்வாய்களிலும்" },
+        { "en": "Electrolyte", "hi": "विद्युत अपघट्य", "ta": "மின்பகுளி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-chemistry-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a halogen?",
+        "hi": "निम्नलिखित में से कौन एक हैलोजन है?",
+        "ta": "பின்வருவனவற்றில் எது ஒரு ஹேலோஜன்?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Sodium", "hi": "सोडियम", "ta": "சோடியம்" },
+        { "en": "Magnesium", "hi": "मैग्नीशियम", "ta": "மெக்னீசியம்" },
+        { "en": "Bromine", "hi": "ब्रोमीन", "ta": "புரோமின்" },
+        { "en": "Phosphorus", "hi": "फॉस्फोरस", "ta": "பாஸ்பரஸ்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-chemistry-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "The IUPAC name of CH₃−CH₂−OH is:",
+        "hi": "CH₃−CH₂−OH का IUPAC नाम है:",
+        "ta": "CH₃−CH₂−OH இன் IUPAC பெயர்:"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Methanol", "hi": "मेथनॉल", "ta": "மெத்தனால்" },
+        { "en": "Ethanol", "hi": "एथनॉल", "ta": "எத்தனால்" },
+        { "en": "Propanol", "hi": "प्रोपेनॉल", "ta": "புரோப்பனால்" },
+        { "en": "Butanol", "hi": "बुटेनॉल", "ta": "பியூட்டனால்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-chemistry-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which type of isomerism is shown by compounds with the same molecular formula but different structural arrangements?",
+        "hi": "एक ही आण्विक सूत्र लेकिन अलग संरचनात्मक व्यवस्था वाले यौगिक किस प्रकार की समावयवता दर्शाते हैं?",
+        "ta": "ஒரே மூலக்கூற்று வாய்ப்பாட்டுடன் வேறுபட்ட அமைப்பு கொண்ட கலவைகள் எந்த வகை ஐசோமெரிஸம் காட்டுகின்றன?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Geometrical isomerism", "hi": "ज्यामितीय समावयवता", "ta": "வடிவ இரட்டை வடிவம்" },
+        { "en": "Optical isomerism", "hi": "प्रकाशीय समावयवता", "ta": "ஒளியியல் இரட்டை வடிவம்" },
+        { "en": "Structural isomerism", "hi": "संरचनात्मक समावयवता", "ta": "கட்டமைப்பு இரட்டை வடிவம்" },
+        { "en": "Conformational isomerism", "hi": "संरूपणी समावयवता", "ta": "உருவமாற்ற இரட்டை வடிவம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-chemistry-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Faraday's first law of electrolysis states that the mass deposited is proportional to:",
+        "hi": "विद्युत अपघटन का फैराडे का पहला नियम कहता है कि जमा हुई द्रव्यमान समानुपाती है:",
+        "ta": "மின் பகுப்பின் ஃபாரடேயின் முதல் விதி கூறுகிறது, படிந்த நிறை எதற்கு விகிதாசாரம்?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Voltage applied", "hi": "लगाए गए वोल्टेज", "ta": "செலுத்திய மின்னழுத்தம்" },
+        { "en": "Quantity of charge passed", "hi": "प्रवाहित आवेश की मात्रा", "ta": "கடத்தப்பட்ட மின்னூட்ட அளவு" },
+        { "en": "Resistance of electrolyte", "hi": "विद्युत अपघट्य का प्रतिरोध", "ta": "மின்பகுளியின் மின்தடை" },
+        { "en": "Temperature of the solution", "hi": "विलयन का तापमान", "ta": "கரைசலின் வெப்பநிலை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-chemistry-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which reagent is used to distinguish aldehydes from ketones?",
+        "hi": "एल्डिहाइड को कीटोन से अलग करने के लिए कौन सा अभिकर्मक उपयोग किया जाता है?",
+        "ta": "ஆல்டிகைடுகளை கீட்டோன்களிலிருந்து வேறுபடுத்த எந்த காரணி பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Tollens' reagent", "hi": "टॉलेन्स अभिकर्मक", "ta": "டோலன்ஸ் காரணி" },
+        { "en": "Benedict's solution", "hi": "बेनेडिक्ट घोल", "ta": "பெனிடிக்ட் கரைசல்" },
+        { "en": "Both Tollens' and Benedict's reagent", "hi": "टॉलेन्स और बेनेडिक्ट दोनों अभिकर्मक", "ta": "டோலன்ஸ் மற்றும் பெனிடிக்ட் இரண்டும்" },
+        { "en": "Fehling's solution only", "hi": "केवल फेहलिंग घोल", "ta": "ஃபேலிங் கரைசல் மட்டும்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-chemistry-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the oxidation state of oxygen in H₂O?",
+        "hi": "H₂O में ऑक्सीजन की ऑक्सीकरण अवस्था क्या है?",
+        "ta": "H₂O இல் ஆக்சிஜனின் ஆக்சிகரண நிலை என்ன?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "+2", "hi": "+2", "ta": "+2" },
+        { "en": "0", "hi": "0", "ta": "0" },
+        { "en": "−2", "hi": "−2", "ta": "−2" },
+        { "en": "+1", "hi": "+1", "ta": "+1" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-chemistry-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Addition polymerisation produces polymers by joining monomers through:",
+        "hi": "योगात्मक बहुलकीकरण मोनोमरों को जोड़कर बहुलक उत्पन्न करता है:",
+        "ta": "கூட்டு பலதளவு உருவாக்கம் ஒற்றை அலகுகளை இணைத்து பலதளவு உருவாக்குகிறது:"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Loss of small molecules", "hi": "छोटे अणुओं की हानि से", "ta": "சிறு மூலக்கூறுகளை இழப்பதால்" },
+        { "en": "Double or triple bonds opening", "hi": "द्विबंध या त्रिबंध खुलने से", "ta": "இரட்டை அல்லது மூன்று பிணைப்புகள் திறப்பதால்" },
+        { "en": "Ionic reactions only", "hi": "केवल आयनिक अभिक्रियाओं से", "ta": "அயனி வினைகளால் மட்டும்" },
+        { "en": "Hydrolysis", "hi": "जलापघटन", "ta": "நீரிகழ்தல்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-chemistry-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a reducing sugar?",
+        "hi": "निम्नलिखित में से कौन एक अपचायक शर्करा है?",
+        "ta": "பின்வருவனவற்றில் எது ஒரு குறைத்தல் சர்க்கரை?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Sucrose", "hi": "सुक्रोज", "ta": "சுக்ரோஸ்" },
+        { "en": "Glucose", "hi": "ग्लूकोज", "ta": "குளுக்கோஸ்" },
+        { "en": "Cellulose", "hi": "सेल्युलोज", "ta": "செல்லுலோஸ்" },
+        { "en": "Starch", "hi": "स्टार्च", "ta": "மாவுச் சத்து" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "class": 3,
+  "subject": "science",
+  "questions": [
+    {
+      "id": "3-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which part of the plant absorbs water from the soil?",
+        "hi": "पौधे का कौन सा भाग मिट्टी से पानी अवशोषित करता है?",
+        "ta": "தாவரத்தின் எந்த பகுதி மண்ணிலிருந்து நீரை உறிஞ்சுகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Leaf", "hi": "पत्ती", "ta": "இலை" },
+        { "en": "Flower", "hi": "फूल", "ta": "பூ" },
+        { "en": "Root", "hi": "जड़", "ta": "வேர்" },
+        { "en": "Stem", "hi": "तना", "ta": "தண்டு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "In a food chain, which organism is always at the beginning?",
+        "hi": "एक खाद्य श्रृंखला में, कौन सा जीव हमेशा शुरुआत में होता है?",
+        "ta": "உணவு சங்கிலியில், எந்த உயிரினம் எப்போதும் தொடக்கத்தில் இருக்கும்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Lion", "hi": "शेर", "ta": "சிங்கம்" },
+        { "en": "Deer", "hi": "हिरण", "ta": "மான்" },
+        { "en": "Green plant", "hi": "हरा पौधा", "ta": "பச்சை தாவரம்" },
+        { "en": "Eagle", "hi": "बाज", "ta": "கழுகு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Water evaporates and goes up into the sky to form ___.",
+        "hi": "पानी वाष्पित होकर आसमान में ऊपर जाकर ___ बनाता है।",
+        "ta": "நீர் ஆவியாகி வானில் மேலே சென்று ___ உருவாக்குகிறது."
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Rain", "hi": "बारिश", "ta": "மழை" },
+        { "en": "Clouds", "hi": "बादल", "ta": "மேகங்கள்" },
+        { "en": "Snow", "hi": "बर्फ", "ta": "பனி" },
+        { "en": "Rivers", "hi": "नदियाँ", "ta": "நதிகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which simple machine helps us lift heavy objects easily?",
+        "hi": "कौन सी सरल मशीन भारी वस्तुओं को आसानी से उठाने में मदद करती है?",
+        "ta": "எந்த எளிய இயந்திரம் கனமான பொருட்களை எளிதாக தூக்க உதவுகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Wheel", "hi": "पहिया", "ta": "சக்கரம்" },
+        { "en": "Lever", "hi": "लीवर", "ta": "நெம்புகோல்" },
+        { "en": "Screw", "hi": "पेंच", "ta": "திருகு" },
+        { "en": "Wedge", "hi": "कील", "ta": "ஆப்பு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these animals is a herbivore?",
+        "hi": "इनमें से कौन सा जानवर शाकाहारी है?",
+        "ta": "இவற்றில் எந்த விலங்கு தாவர உண்ணி?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Tiger", "hi": "बाघ", "ta": "புலி" },
+        { "en": "Eagle", "hi": "बाज", "ta": "கழுகு" },
+        { "en": "Rabbit", "hi": "खरगोश", "ta": "முயல்" },
+        { "en": "Frog", "hi": "मेंढक", "ta": "தவளை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "What do plants need to make their own food?",
+        "hi": "पौधों को अपना भोजन बनाने के लिए क्या चाहिए?",
+        "ta": "தாவரங்கள் தம் உணவு தயாரிக்க என்ன தேவை?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Milk and salt", "hi": "दूध और नमक", "ta": "பால் மற்றும் உப்பு" },
+        { "en": "Sunlight, water and air", "hi": "सूर्य का प्रकाश, पानी और हवा", "ta": "சூரிய ஒளி, நீர் மற்றும் காற்று" },
+        { "en": "Sand and stones", "hi": "रेत और पत्थर", "ta": "மணல் மற்றும் கற்கள்" },
+        { "en": "Fire and smoke", "hi": "आग और धुआँ", "ta": "நெருப்பு மற்றும் புகை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "In the water cycle, what happens to clouds when they get heavy with water?",
+        "hi": "जल चक्र में, जब बादलों में पानी अधिक हो जाता है तो क्या होता है?",
+        "ta": "நீர் சுழற்சியில், மேகங்கள் நீரால் கனமாகும்போது என்ன நடக்கும்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "They fly away", "hi": "वे उड़ जाते हैं", "ta": "அவை பறந்து போகும்" },
+        { "en": "They turn into rocks", "hi": "वे पत्थर बन जाते हैं", "ta": "அவை கற்களாக மாறும்" },
+        { "en": "It rains", "hi": "बारिश होती है", "ta": "மழை பெய்யும்" },
+        { "en": "They grow bigger", "hi": "वे बड़े हो जाते हैं", "ta": "அவை பெரிதாகும்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these is NOT a source of light?",
+        "hi": "इनमें से कौन प्रकाश का स्रोत नहीं है?",
+        "ta": "இவற்றில் எது ஒளியின் மூலம் இல்லை?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Sun", "hi": "सूरज", "ta": "சூரியன்" },
+        { "en": "Bulb", "hi": "बल्ब", "ta": "மின்குமிழ்" },
+        { "en": "Stone", "hi": "पत्थर", "ta": "கல்" },
+        { "en": "Candle", "hi": "मोमबत्ती", "ta": "மெழுகுவர்த்தி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "An inclined plane is a type of which simple machine?",
+        "hi": "एक आनत तल किस सरल मशीन का एक प्रकार है?",
+        "ta": "சாய்வுதளம் எந்த எளிய இயந்திரத்தின் ஒரு வகை?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Pulley", "hi": "चरखी", "ta": "நுழையாணி" },
+        { "en": "Lever", "hi": "लीवर", "ta": "நெம்புகோல்" },
+        { "en": "Ramp", "hi": "रैम्प", "ta": "சாய்வு பாதை" },
+        { "en": "Wheel and axle", "hi": "पहिया और धुरी", "ta": "சக்கரமும் அச்சும்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these animals lays eggs?",
+        "hi": "इनमें से कौन सा जानवर अंडे देता है?",
+        "ta": "இவற்றில் எந்த விலங்கு முட்டையிடும்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Cow", "hi": "गाय", "ta": "பசு" },
+        { "en": "Dog", "hi": "कुत्ता", "ta": "நாய்" },
+        { "en": "Hen", "hi": "मुर्गी", "ta": "கோழி" },
+        { "en": "Horse", "hi": "घोड़ा", "ta": "குதிரை" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

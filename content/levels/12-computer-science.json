@@ -1,0 +1,176 @@
+{
+  "class": 12,
+  "subject": "computer-science",
+  "questions": [
+    {
+      "id": "12-computer-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which SQL command is used to retrieve data from a database?",
+        "hi": "डेटाबेस से डेटा पुनः प्राप्त करने के लिए कौन-सा SQL कमांड उपयोग किया जाता है?",
+        "ta": "தரவுத்தளத்திலிருந்து தரவை மீட்டெடுக்க எந்த SQL கட்டளை பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "INSERT", "hi": "INSERT", "ta": "INSERT" },
+        { "en": "UPDATE", "hi": "UPDATE", "ta": "UPDATE" },
+        { "en": "SELECT", "hi": "SELECT", "ta": "SELECT" },
+        { "en": "DELETE", "hi": "DELETE", "ta": "DELETE" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-computer-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does IP stand for in networking?",
+        "hi": "नेटवर्किंग में IP का पूर्ण रूप क्या है?",
+        "ta": "நெட்வொர்க்கிங்கில் IP என்றால் என்ன?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Internet Protocol", "hi": "इंटरनेट प्रोटोकॉल", "ta": "இணைய நெறிமுறை" },
+        { "en": "Internal Process", "hi": "आंतरिक प्रक्रिया", "ta": "உள் செயல்முறை" },
+        { "en": "Information Packet", "hi": "सूचना पैकेट", "ta": "தகவல் தொகுப்பு" },
+        { "en": "Integrated Program", "hi": "एकीकृत कार्यक्रम", "ta": "ஒருங்கிணைந்த நிரல்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "12-computer-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which type of cyberattack involves overwhelming a server with traffic?",
+        "hi": "किस प्रकार के साइबर हमले में सर्वर को ट्रैफिक से अभिभूत किया जाता है?",
+        "ta": "எந்த வகையான சைபர் தாக்குதல் ஒரு சேவையகத்தை போக்குவரத்தால் மூழ்கடிக்கிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Phishing", "hi": "फिशिंग", "ta": "ஃபிஷிங்" },
+        { "en": "Denial of Service (DoS)", "hi": "सेवा अस्वीकरण (DoS)", "ta": "சேவை மறுப்பு (DoS)" },
+        { "en": "Ransomware", "hi": "रैनसमवेयर", "ta": "ரான்சம்வேர்" },
+        { "en": "Trojan Horse", "hi": "ट्रोजन हॉर्स", "ta": "ட்ரோஜன் ஹார்ஸ்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-computer-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "In a relational database, the primary key is used to:",
+        "hi": "रिलेशनल डेटाबेस में, प्राथमिक कुंजी का उपयोग किया जाता है:",
+        "ta": "தொடர்புடைய தரவுத்தளத்தில், முதன்மை சாவி எதற்கு பயன்படுத்தப்படுகிறது:"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Encrypt the data", "hi": "डेटा एन्क्रिप्ट करना", "ta": "தரவை குறியாக்கம் செய்வது" },
+        { "en": "Uniquely identify each record", "hi": "प्रत्येक रिकॉर्ड को विशिष्ट रूप से पहचानना", "ta": "ஒவ்வொரு பதிவையும் தனித்துவமாக அடையாளம் காண்பது" },
+        { "en": "Sort the records", "hi": "रिकॉर्ड को क्रमबद्ध करना", "ta": "பதிவுகளை வரிசைப்படுத்துவது" },
+        { "en": "Link to other tables only", "hi": "केवल अन्य तालिकाओं से लिंक करना", "ta": "மட்டுமே மற்ற அட்டவணைகளுக்கு இணைப்பு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-computer-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is an example of a NoSQL database?",
+        "hi": "निम्नलिखित में से कौन-सा NoSQL डेटाबेस का उदाहरण है?",
+        "ta": "பின்வருவனவற்றில் எது NoSQL தரவுத்தளத்திற்கு ஒரு உதாரணம்?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "MySQL", "hi": "MySQL", "ta": "MySQL" },
+        { "en": "PostgreSQL", "hi": "PostgreSQL", "ta": "PostgreSQL" },
+        { "en": "MongoDB", "hi": "MongoDB", "ta": "MongoDB" },
+        { "en": "Oracle", "hi": "Oracle", "ta": "Oracle" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-computer-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "HTTP stands for:",
+        "hi": "HTTP का पूर्ण रूप है:",
+        "ta": "HTTP என்றால்:"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "HyperText Transfer Protocol", "hi": "हाइपरटेक्स्ट ट्रांसफर प्रोटोकॉल", "ta": "ஹைப்பர்டெக்ஸ்ட் மாற்று நெறிமுறை" },
+        { "en": "High Text Transfer Protocol", "hi": "हाई टेक्स्ट ट्रांसफर प्रोटोकॉल", "ta": "உயர் உரை மாற்று நெறிமுறை" },
+        { "en": "HyperText Transmission Process", "hi": "हाइपरटेक्स्ट ट्रांसमिशन प्रक्रिया", "ta": "ஹைப்பர்டெக்ஸ்ட் பரிமாற்ற செயல்முறை" },
+        { "en": "Host Text Transfer Protocol", "hi": "होस्ट टेक्स्ट ट्रांसफर प्रोटोकॉल", "ta": "ஹோஸ்ட் உரை மாற்று நெறிமுறை" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "12-computer-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which Python library is commonly used for data analysis?",
+        "hi": "डेटा विश्लेषण के लिए आमतौर पर कौन-सी Python लाइब्रेरी उपयोग की जाती है?",
+        "ta": "தரவு பகுப்பாய்வுக்கு பொதுவாக எந்த Python நூலகம் பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Tkinter", "hi": "Tkinter", "ta": "Tkinter" },
+        { "en": "Pandas", "hi": "Pandas", "ta": "Pandas" },
+        { "en": "Pygame", "hi": "Pygame", "ta": "Pygame" },
+        { "en": "Flask", "hi": "Flask", "ta": "Flask" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-computer-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the full form of LAN?",
+        "hi": "LAN का पूर्ण रूप क्या है?",
+        "ta": "LAN இன் முழு வடிவம் என்ன?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Large Area Network", "hi": "लार्ज एरिया नेटवर्क", "ta": "பெரிய பகுதி நெட்வொர்க்" },
+        { "en": "Local Area Network", "hi": "लोकल एरिया नेटवर्क", "ta": "உள்ளூர் பகுதி நெட்வொர்க்" },
+        { "en": "Linked Area Network", "hi": "लिंक्ड एरिया नेटवर्क", "ta": "இணைக்கப்பட்ட பகுதி நெட்வொர்க்" },
+        { "en": "Leased Access Network", "hi": "लीज्ड एक्सेस नेटवर्क", "ta": "குத்தகை அணுகல் நெட்வொர்க்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-computer-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Recursion in programming means:",
+        "hi": "प्रोग्रामिंग में पुनरावृत्ति का अर्थ है:",
+        "ta": "நிரல் வரையறையில் தன்னிலை சுழற்சி என்றால்:"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Running a loop indefinitely", "hi": "एक लूप को अनिश्चित काल तक चलाना", "ta": "ஒரு வளையை காலவரம்பின்றி இயக்குவது" },
+        { "en": "A function calling itself", "hi": "एक फ़ंक्शन का स्वयं को कॉल करना", "ta": "ஒரு செயல்பாடு தன்னை அழைப்பது" },
+        { "en": "Calling multiple functions simultaneously", "hi": "एक साथ कई फ़ंक्शन कॉल करना", "ta": "ஒரே நேரத்தில் பல செயல்பாடுகளை அழைப்பது" },
+        { "en": "Reusing code from other programs", "hi": "अन्य प्रोग्राम से कोड पुन: उपयोग करना", "ta": "மற்ற நிரல்களிலிருந்து குறியீட்டை மீண்டும் பயன்படுத்துவது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-computer-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which is the correct SQL syntax to add a new column to an existing table?",
+        "hi": "मौजूदा तालिका में एक नया कॉलम जोड़ने का सही SQL सिंटैक्स कौन-सा है?",
+        "ta": "இருக்கும் அட்டவணையில் புதிய நெடுவரிசை சேர்க்க சரியான SQL தொடரமைப்பு எது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "ALTER TABLE table_name ADD column_name datatype", "hi": "ALTER TABLE table_name ADD column_name datatype", "ta": "ALTER TABLE table_name ADD column_name datatype" },
+        { "en": "INSERT COLUMN INTO table_name column_name datatype", "hi": "INSERT COLUMN INTO table_name column_name datatype", "ta": "INSERT COLUMN INTO table_name column_name datatype" },
+        { "en": "MODIFY TABLE table_name ADD column_name datatype", "hi": "MODIFY TABLE table_name ADD column_name datatype", "ta": "MODIFY TABLE table_name ADD column_name datatype" },
+        { "en": "UPDATE TABLE table_name ADD COLUMN column_name", "hi": "UPDATE TABLE table_name ADD COLUMN column_name", "ta": "UPDATE TABLE table_name ADD COLUMN column_name" }
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

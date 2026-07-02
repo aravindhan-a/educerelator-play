@@ -1,0 +1,176 @@
+{
+  "class": 7,
+  "subject": "tamil",
+  "questions": [
+    {
+      "id": "7-tamil-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Thirukkural was written by which poet?",
+        "hi": "तिरुक्कुरल की रचना किस कवि ने की?",
+        "ta": "திருக்குறளை எந்த கவிஞர் எழுதினார்?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Kambar", "hi": "कम्बर", "ta": "கம்பர்" },
+        { "en": "Thiruvalluvar", "hi": "तिरुवल्लुवर", "ta": "திருவள்ளுவர்" },
+        { "en": "Avvaiyar", "hi": "अव्वैयार", "ta": "ஔவையார்" },
+        { "en": "Ilango Adigal", "hi": "इलंगो अडिगल", "ta": "இளங்கோ அடிகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-tamil-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Tamil, a 'kural' (குறள்) has how many lines?",
+        "hi": "तमिल में एक 'குறள்' में कितनी पंक्तियाँ होती हैं?",
+        "ta": "தமிழில் ஒரு 'குறள்' எத்தனை வரிகளை கொண்டது?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "1", "hi": "1", "ta": "1" },
+        { "en": "2", "hi": "2", "ta": "2" },
+        { "en": "4", "hi": "4", "ta": "4" },
+        { "en": "8", "hi": "8", "ta": "8" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-tamil-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Tamil epic 'Silappadikaram' was written by?",
+        "hi": "तमिल महाकाव्य 'सिलप्पदिकारम' किसने लिखा?",
+        "ta": "தமிழ் காப்பியம் 'சிலப்பதிகாரம்' யாரால் எழுதப்பட்டது?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Thiruvalluvar", "hi": "तिरुवल्लुवर", "ta": "திருவள்ளுவர்" },
+        { "en": "Ilango Adigal", "hi": "इलंगो अडिगल", "ta": "இளங்கோ அடிகள்" },
+        { "en": "Kambar", "hi": "कम्बर", "ta": "கம்பர்" },
+        { "en": "Avvaiyar", "hi": "अव्वैयार", "ta": "ஔவையார்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-tamil-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Tamil grammar, 'vinai' (வினை) refers to?",
+        "hi": "तमिल व्याकरण में 'வினை' किसे कहते हैं?",
+        "ta": "தமிழ் இலக்கணத்தில் 'வினை' என்பது எதை குறிக்கும்?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Noun", "hi": "संज्ञा", "ta": "பெயர்ச்சொல்" },
+        { "en": "Verb", "hi": "क्रिया", "ta": "வினைச்சொல்" },
+        { "en": "Adjective", "hi": "विशेषण", "ta": "பெயரடை" },
+        { "en": "Pronoun", "hi": "सर्वनाम", "ta": "பிரதிபெயர்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-tamil-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "How many chapters (adhikaaram) does the Thirukkural have?",
+        "hi": "तिरुक्कुरल में कितने अधिकार हैं?",
+        "ta": "திருக்குறளில் எத்தனை அதிகாரங்கள் உள்ளன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "108", "hi": "108", "ta": "108" },
+        { "en": "133", "hi": "133", "ta": "133" },
+        { "en": "96", "hi": "96", "ta": "96" },
+        { "en": "200", "hi": "200", "ta": "200" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-tamil-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Tamil word 'Thannambikkai' (தன்னம்பிக்கை) means?",
+        "hi": "तमिल शब्द 'தன்னம்பிக்கை' का अर्थ क्या है?",
+        "ta": "தமிழ் சொல் 'தன்னம்பிக்கை' என்பதன் பொருள் என்ன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Jealousy", "hi": "ईर्ष्या", "ta": "பொறாமை" },
+        { "en": "Self-confidence", "hi": "आत्मविश्वास", "ta": "தன்னம்பிக்கை" },
+        { "en": "Honesty", "hi": "ईमानदारी", "ta": "நேர்மை" },
+        { "en": "Patience", "hi": "धैर्य", "ta": "பொறுமை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-tamil-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Tamil, which sangam (literary academy) was the oldest?",
+        "hi": "तमिल में सबसे प्राचीन संगम (साहित्यिक अकादमी) कौन सा था?",
+        "ta": "தமிழில் மிக பழமையான சங்கம் எது?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Second Sangam", "hi": "द्वितीय संगम", "ta": "இரண்டாம் சங்கம்" },
+        { "en": "Third Sangam", "hi": "तृतीय संगम", "ta": "மூன்றாம் சங்கம்" },
+        { "en": "First Sangam", "hi": "प्रथम संगम", "ta": "முதல் சங்கம்" },
+        { "en": "Fourth Sangam", "hi": "चतुर्थ संगम", "ta": "நான்காம் சங்கம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-tamil-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Tamil word 'Malay' (மலை) means?",
+        "hi": "तमिल शब्द 'மலை' का अर्थ क्या है?",
+        "ta": "தமிழ் சொல் 'மலை' என்பதன் பொருள் என்ன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "River", "hi": "नदी", "ta": "நதி" },
+        { "en": "Sea", "hi": "समुद्र", "ta": "கடல்" },
+        { "en": "Mountain", "hi": "पहाड़", "ta": "மலை" },
+        { "en": "Forest", "hi": "जंगल", "ta": "காடு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-tamil-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Tamil grammar, 'urai' (உரை) means?",
+        "hi": "तमिल व्याकरण में 'உரை' का अर्थ क्या है?",
+        "ta": "தமிழ் இலக்கணத்தில் 'உரை' என்பதன் பொருள் என்ன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Poetry", "hi": "कविता", "ta": "கவிதை" },
+        { "en": "Prose", "hi": "गद्य", "ta": "உரைநடை" },
+        { "en": "Song", "hi": "गाना", "ta": "பாட்டு" },
+        { "en": "Drama", "hi": "नाटक", "ta": "நாடகம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-tamil-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a Tamil greeting?",
+        "hi": "निम्नलिखित में से कौन सा तमिल अभिवादन है?",
+        "ta": "பின்வருவனவற்றில் எது தமிழ் வாழ்த்து?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Namaste", "hi": "नमस्ते", "ta": "நமஸ்தே" },
+        { "en": "Vanakkam", "hi": "वणक्कम", "ta": "வணக்கம்" },
+        { "en": "Salaam", "hi": "सलाम", "ta": "சலாம்" },
+        { "en": "Sat Sri Akal", "hi": "सत श्री अकाल", "ta": "சத் ஸ்ரீ அகால்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

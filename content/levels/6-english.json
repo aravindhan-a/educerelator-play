@@ -1,0 +1,176 @@
+{
+  "class": 6,
+  "subject": "english",
+  "questions": [
+    {
+      "id": "6-english-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sentence is in the simple past tense?",
+        "hi": "कौन सा वाक्य सामान्य भूतकाल में है?",
+        "ta": "எந்த வாக்கியம் எளிய கடந்த காலத்தில் உள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "She is singing.", "hi": "वह गा रही है।", "ta": "அவள் பாடுகிறாள்." },
+        { "en": "She sings every day.", "hi": "वह हर दिन गाती है।", "ta": "அவள் தினமும் பாடுகிறாள்." },
+        { "en": "She sang a song.", "hi": "उसने एक गाना गाया।", "ta": "அவள் ஒரு பாட்டு பாடினாள்." },
+        { "en": "She will sing tomorrow.", "hi": "वह कल गाएगी।", "ta": "அவள் நாளை பாடுவாள்." }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-english-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word is a proper noun?",
+        "hi": "कौन सा शब्द एक व्यक्तिवाचक संज्ञा है?",
+        "ta": "எந்த சொல் ஒரு சரியான பெயர்ச்சொல்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "city", "hi": "शहर", "ta": "நகரம்" },
+        { "en": "river", "hi": "नदी", "ta": "நதி" },
+        { "en": "Delhi", "hi": "दिल्ली", "ta": "டெல்லி" },
+        { "en": "mountain", "hi": "पहाड़", "ta": "மலை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-english-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of 'child'?",
+        "hi": "'child' का बहुवचन क्या है?",
+        "ta": "'child' இன் பன்மை என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "childs", "hi": "childs", "ta": "childs" },
+        { "en": "childes", "hi": "childes", "ta": "childes" },
+        { "en": "children", "hi": "children", "ta": "children" },
+        { "en": "childrens", "hi": "childrens", "ta": "childrens" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-english-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Identify the adjective: 'She wore a beautiful dress.'",
+        "hi": "विशेषण पहचानें: 'She wore a beautiful dress.'",
+        "ta": "பெயரடையை கண்டறியுங்கள்: 'She wore a beautiful dress.'"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "wore", "hi": "wore", "ta": "wore" },
+        { "en": "beautiful", "hi": "beautiful", "ta": "beautiful" },
+        { "en": "dress", "hi": "dress", "ta": "dress" },
+        { "en": "she", "hi": "she", "ta": "she" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-english-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which punctuation mark ends a question?",
+        "hi": "प्रश्न के अंत में कौन सा विराम चिह्न लगता है?",
+        "ta": "ஒரு கேள்வியை முடிக்கும் நிறுத்தற்குறி எது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Full stop (.)", "hi": "पूर्ण विराम (.)", "ta": "முழு நிறுத்தம் (.)" },
+        { "en": "Comma (,)", "hi": "अल्पविराम (,)", "ta": "கமா (,)" },
+        { "en": "Exclamation mark (!)", "hi": "विस्मयादिबोधक चिह्न (!)", "ta": "ஆச்சரிய குறி (!)" },
+        { "en": "Question mark (?)", "hi": "प्रश्न चिह्न (?)", "ta": "கேள்வி குறி (?)" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "6-english-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the correct article: '___ apple a day keeps the doctor away.'",
+        "hi": "सही article चुनें: '___ apple a day keeps the doctor away.'",
+        "ta": "சரியான article தேர்ந்தெடுங்கள்: '___ apple a day keeps the doctor away.'"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "A", "hi": "A", "ta": "A" },
+        { "en": "An", "hi": "An", "ta": "An" },
+        { "en": "The", "hi": "The", "ta": "The" },
+        { "en": "No article needed", "hi": "कोई article नहीं", "ta": "article தேவையில்லை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-english-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the antonym of 'brave'?",
+        "hi": "'brave' का विलोम शब्द क्या है?",
+        "ta": "'brave' இன் எதிர்ச்சொல் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Bold", "hi": "साहसी", "ta": "தைரியமான" },
+        { "en": "Cowardly", "hi": "कायर", "ta": "கோழைத்தனமான" },
+        { "en": "Strong", "hi": "मजबूत", "ta": "வலுவான" },
+        { "en": "Kind", "hi": "दयालु", "ta": "கருணையுள்ள" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-english-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a compound word?",
+        "hi": "निम्नलिखित में से कौन सा समस्त पद है?",
+        "ta": "பின்வருவனவற்றில் எது கூட்டுச்சொல்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Running", "hi": "Running", "ta": "Running" },
+        { "en": "Sunflower", "hi": "Sunflower", "ta": "Sunflower" },
+        { "en": "Happily", "hi": "Happily", "ta": "Happily" },
+        { "en": "Quickly", "hi": "Quickly", "ta": "Quickly" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-english-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the correct verb: 'The team ___ playing well.'",
+        "hi": "सही क्रिया चुनें: 'The team ___ playing well.'",
+        "ta": "சரியான வினைச்சொல் தேர்ந்தெடுங்கள்: 'The team ___ playing well.'"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "are", "hi": "are", "ta": "are" },
+        { "en": "were", "hi": "were", "ta": "were" },
+        { "en": "is", "hi": "is", "ta": "is" },
+        { "en": "have", "hi": "have", "ta": "have" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-english-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word is a synonym of 'happy'?",
+        "hi": "'happy' का समानार्थक शब्द कौन सा है?",
+        "ta": "'happy' இன் ஒத்த பொருள்சொல் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Sad", "hi": "दुखी", "ta": "சோகமான" },
+        { "en": "Angry", "hi": "क्रोधित", "ta": "கோபமான" },
+        { "en": "Joyful", "hi": "प्रसन्न", "ta": "மகிழ்ச்சியான" },
+        { "en": "Tired", "hi": "थका हुआ", "ta": "சோர்வான" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

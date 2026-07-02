@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "geography",
+  "questions": [
+    {
+      "id": "11-geography-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which is the longest river in the world?",
+        "hi": "विश्व की सबसे लंबी नदी कौन-सी है?",
+        "ta": "உலகின் மிக நீளமான நதி எது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Amazon", "hi": "अमेज़न", "ta": "அமேசான்" },
+        { "en": "Nile", "hi": "नील", "ta": "நைல்" },
+        { "en": "Yangtze", "hi": "यांगत्ज़ी", "ta": "யாங்த்சே" },
+        { "en": "Ganges", "hi": "गंगा", "ta": "கங்கை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-geography-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Tropic of Cancer passes through how many Indian states?",
+        "hi": "कर्क रेखा कितने भारतीय राज्यों से गुजरती है?",
+        "ta": "கர்க ரேகை எத்தனை இந்திய மாநிலங்களில் கடந்து செல்கிறது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "6", "hi": "6", "ta": "6" },
+        { "en": "7", "hi": "7", "ta": "7" },
+        { "en": "8", "hi": "8", "ta": "8" },
+        { "en": "9", "hi": "9", "ta": "9" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-geography-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which type of rock is formed by the cooling of molten magma?",
+        "hi": "पिघले हुए मैग्मा के ठंडा होने से कौन-सी चट्टान बनती है?",
+        "ta": "உருகிய மாக்மா குளிர்வதால் எந்த வகை பாறை உருவாகிறது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Sedimentary Rock", "hi": "अवसादी चट्टान", "ta": "படிவுப் பாறை" },
+        { "en": "Metamorphic Rock", "hi": "कायांतरित चट्टान", "ta": "உருமாறிய பாறை" },
+        { "en": "Igneous Rock", "hi": "आग्नेय चट्टान", "ta": "தீப்பாறை" },
+        { "en": "Limestone", "hi": "चूना पत्थर", "ta": "சுண்ணாம்புக் கல்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-geography-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which is the highest plateau in the world?",
+        "hi": "विश्व का सबसे ऊँचा पठार कौन-सा है?",
+        "ta": "உலகின் மிக உயரமான பீடபூமி எது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Deccan Plateau", "hi": "दक्कन पठार", "ta": "தக்காண பீடபூமி" },
+        { "en": "Colorado Plateau", "hi": "कोलोराडो पठार", "ta": "கொலராடோ பீடபூமி" },
+        { "en": "Tibetan Plateau", "hi": "तिब्बती पठार", "ta": "திபெத்திய பீடபூமி" },
+        { "en": "Ethiopian Plateau", "hi": "इथियोपियाई पठार", "ta": "எத்தியோப்பிய பீடபூமி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-geography-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "The movement of the Earth around the Sun is called:",
+        "hi": "पृथ्वी का सूर्य के चारों ओर चक्कर लगाना क्या कहलाता है?",
+        "ta": "பூமியின் சூரியனை சுற்றும் இயக்கம் என்று அழைக்கப்படுகிறது:"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Rotation", "hi": "घूर्णन", "ta": "சுழற்சி" },
+        { "en": "Revolution", "hi": "परिक्रमण", "ta": "புரட்சி" },
+        { "en": "Precession", "hi": "अयनचलन", "ta": "முன்னோக்கம்" },
+        { "en": "Inclination", "hi": "झुकाव", "ta": "சாய்வு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-geography-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which ocean is the largest in the world?",
+        "hi": "विश्व का सबसे बड़ा महासागर कौन-सा है?",
+        "ta": "உலகின் மிகப் பெரிய பெருங்கடல் எது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Atlantic Ocean", "hi": "अटलांटिक महासागर", "ta": "அட்லாண்டிக் பெருங்கடல்" },
+        { "en": "Indian Ocean", "hi": "हिंद महासागर", "ta": "இந்திய பெருங்கடல்" },
+        { "en": "Pacific Ocean", "hi": "प्रशांत महासागर", "ta": "பசிபிக் பெருங்கடல்" },
+        { "en": "Arctic Ocean", "hi": "आर्कटिक महासागर", "ta": "ஆர்க்டிக் பெருங்கடல்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-geography-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Western Ghats are also known as:",
+        "hi": "पश्चिमी घाट को किस अन्य नाम से भी जाना जाता है?",
+        "ta": "மேற்குத் தொடர்ச்சி மலைகள் எந்த பெயரிலும் அறியப்படுகின்றன?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Sahyadri", "hi": "सह्याद्री", "ta": "சஹ்யாத்ரி" },
+        { "en": "Vindhyas", "hi": "विंध्य", "ta": "விந்தியா" },
+        { "en": "Aravalli", "hi": "अरावली", "ta": "அரவல்லி" },
+        { "en": "Satpura", "hi": "सतपुड़ा", "ta": "சத்புரா" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-geography-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which layer of the atmosphere contains the ozone layer?",
+        "hi": "वायुमंडल की किस परत में ओजोन परत पाई जाती है?",
+        "ta": "வாயுமண்டலத்தின் எந்த அடுக்கில் ஓசோன் அடுக்கு காணப்படுகிறது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Troposphere", "hi": "क्षोभमंडल", "ta": "மண்டல வெப்பமண்டலம்" },
+        { "en": "Stratosphere", "hi": "समतापमंडल", "ta": "நேர்மைப்படல மண்டலம்" },
+        { "en": "Mesosphere", "hi": "मध्यमंडल", "ta": "நடுமண்டலம்" },
+        { "en": "Thermosphere", "hi": "ताप मंडल", "ta": "வெப்பமண்டலம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-geography-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Deccan Trap is made up of which type of rock?",
+        "hi": "दक्कन ट्रैप किस प्रकार की चट्टान से बना है?",
+        "ta": "தக்காண பொறி எந்த வகை பாறையால் ஆனது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Sandstone", "hi": "बलुआ पत्थर", "ta": "மணற்கல்" },
+        { "en": "Granite", "hi": "ग्रेनाइट", "ta": "கிரானைட்" },
+        { "en": "Basalt", "hi": "बेसाल्ट", "ta": "பாசால்ட்" },
+        { "en": "Limestone", "hi": "चूना पत्थर", "ta": "சுண்ணாம்புக் கல்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-geography-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Sundarbans mangrove forest is located in the delta of which river?",
+        "hi": "सुंदरवन मैंग्रोव वन किस नदी के डेल्टा में स्थित है?",
+        "ta": "சுந்தர்பன் சதுப்பு நிலக் காடு எந்த நதியின் டெல்டாவில் அமைந்துள்ளது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Mahanadi", "hi": "महानदी", "ta": "மகாநதி" },
+        { "en": "Godavari", "hi": "गोदावरी", "ta": "கோதாவரி" },
+        { "en": "Ganges-Brahmaputra", "hi": "गंगा-ब्रह्मपुत्र", "ta": "கங்கை-பிரம்மபுத்திரா" },
+        { "en": "Krishna", "hi": "कृष्णा", "ta": "கிருஷ்ணா" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

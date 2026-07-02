@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "computer-science",
+  "questions": [
+    {
+      "id": "11-computer-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which keyword is used to define a function in Python?",
+        "hi": "Python में फ़ंक्शन परिभाषित करने के लिए कौन-सा कीवर्ड उपयोग किया जाता है?",
+        "ta": "Python-ல் செயல்பாட்டை வரையறுக்க எந்த முக்கியச் சொல் பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "func", "hi": "func", "ta": "func" },
+        { "en": "define", "hi": "define", "ta": "define" },
+        { "en": "def", "hi": "def", "ta": "def" },
+        { "en": "function", "hi": "function", "ta": "function" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-computer-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which data structure follows the LIFO (Last In First Out) principle?",
+        "hi": "कौन-सी डेटा संरचना LIFO (अंतिम आया प्रथम गया) सिद्धांत का पालन करती है?",
+        "ta": "எந்த தரவு கட்டமைப்பு LIFO (கடைசியாக வந்தது முதலில் செல்லும்) கொள்கையை பின்பற்றுகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Queue", "hi": "कतार", "ta": "வரிசை" },
+        { "en": "Stack", "hi": "स्टैक", "ta": "அடுக்கு" },
+        { "en": "Array", "hi": "एरे", "ta": "வரிசை வரிசை" },
+        { "en": "Linked List", "hi": "लिंक्ड लिस्ट", "ta": "இணைக்கப்பட்ட பட்டியல்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-computer-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the output of: print(type(5.0)) in Python?",
+        "hi": "Python में print(type(5.0)) का आउटपुट क्या होगा?",
+        "ta": "Python-ல் print(type(5.0)) இன் வெளியீடு என்ன?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "<class 'int'>", "hi": "<class 'int'>", "ta": "<class 'int'>" },
+        { "en": "<class 'float'>", "hi": "<class 'float'>", "ta": "<class 'float'>" },
+        { "en": "<class 'str'>", "hi": "<class 'str'>", "ta": "<class 'str'>" },
+        { "en": "<class 'double'>", "hi": "<class 'double'>", "ta": "<class 'double'>" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-computer-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Python, which symbol is used for single-line comments?",
+        "hi": "Python में एकल-पंक्ति टिप्पणियों के लिए कौन-सा चिन्ह उपयोग किया जाता है?",
+        "ta": "Python-ல் ஒற்றை வரி கருத்துரைகளுக்கு எந்த சின்னம் பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "//", "hi": "//", "ta": "//" },
+        { "en": "/* */", "hi": "/* */", "ta": "/* */" },
+        { "en": "#", "hi": "#", "ta": "#" },
+        { "en": "--", "hi": "--", "ta": "--" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-computer-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a mutable data type in Python?",
+        "hi": "Python में निम्नलिखित में से कौन-सा परिवर्तनशील डेटा प्रकार है?",
+        "ta": "Python-ல் பின்வருவனவற்றில் எது மாற்றக்கூடிய தரவு வகை?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "String", "hi": "स्ट्रिंग", "ta": "சரம்" },
+        { "en": "Tuple", "hi": "टपल", "ta": "டப்பிள்" },
+        { "en": "List", "hi": "सूची", "ta": "பட்டியல்" },
+        { "en": "Integer", "hi": "पूर्णांक", "ta": "முழுவெண்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-computer-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The full form of CPU is:",
+        "hi": "CPU का पूर्ण रूप है:",
+        "ta": "CPU இன் முழு வடிவம்:"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Central Processing Unit", "hi": "केंद्रीय प्रसंस्करण इकाई", "ta": "மத்திய செயலாக்க அலகு" },
+        { "en": "Computer Processing Unit", "hi": "कंप्यूटर प्रसंस्करण इकाई", "ta": "கணினி செயலாக்க அலகு" },
+        { "en": "Central Program Unit", "hi": "केंद्रीय प्रोग्राम इकाई", "ta": "மத்திய நிரல் அலகு" },
+        { "en": "Core Processing Unit", "hi": "कोर प्रसंस्करण इकाई", "ta": "மையல் செயலாக்க அலகு" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-computer-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is NOT a Python loop?",
+        "hi": "निम्नलिखित में से कौन-सा Python लूप नहीं है?",
+        "ta": "பின்வருவனவற்றில் எது Python வளை அல்ல?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "for loop", "hi": "for लूप", "ta": "for வளை" },
+        { "en": "while loop", "hi": "while लूप", "ta": "while வளை" },
+        { "en": "do-while loop", "hi": "do-while लूप", "ta": "do-while வளை" },
+        { "en": "nested loop", "hi": "नेस्टेड लूप", "ta": "உள்ளூர் வளை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-computer-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Python, a dictionary stores data as:",
+        "hi": "Python में, एक dictionary डेटा को किस रूप में संग्रहित करती है?",
+        "ta": "Python-ல், அகராதி தரவை எவ்வாறு சேமிக்கிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Index-Value pairs", "hi": "इंडेक्स-मान जोड़े", "ta": "குறியீட்டு-மதிப்பு இணைகள்" },
+        { "en": "Key-Value pairs", "hi": "की-वैल्यू जोड़े", "ta": "சாவி-மதிப்பு இணைகள்" },
+        { "en": "Stack elements", "hi": "स्टैक तत्व", "ta": "அடுக்கு உறுப்புகள்" },
+        { "en": "Sequential elements", "hi": "अनुक्रमिक तत्व", "ta": "தொடர் உறுப்புகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-computer-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does RAM stand for?",
+        "hi": "RAM का पूर्ण रूप क्या है?",
+        "ta": "RAM என்றால் என்ன?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Random Access Memory", "hi": "रैंडम एक्सेस मेमोरी", "ta": "சீர்கேடான அணுகல் நினைவகம்" },
+        { "en": "Read Access Memory", "hi": "रीड एक्सेस मेमोरी", "ta": "படிக்கும் அணுகல் நினைவகம்" },
+        { "en": "Random Application Memory", "hi": "रैंडम एप्लीकेशन मेमोरी", "ta": "சீரற்ற பயன்பாட்டு நினைவகம்" },
+        { "en": "Rapid Access Memory", "hi": "रैपिड एक्सेस मेमोरी", "ta": "விரைவான அணுகல் நினைவகம்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-computer-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which operator is used for floor division in Python?",
+        "hi": "Python में फ्लोर विभाजन के लिए कौन-सा ऑपरेटर उपयोग किया जाता है?",
+        "ta": "Python-ல் தரை வகுத்தலுக்கு எந்த செயற்குறி பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "/", "hi": "/", "ta": "/" },
+        { "en": "//", "hi": "//", "ta": "//" },
+        { "en": "%", "hi": "%", "ta": "%" },
+        { "en": "**", "hi": "**", "ta": "**" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "political-science",
+  "questions": [
+    {
+      "id": "11-political-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Indian Constitution came into effect on:",
+        "hi": "भारतीय संविधान कब लागू हुआ?",
+        "ta": "இந்திய அரசியலமைப்பு எப்போது நடைமுறைக்கு வந்தது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "15 August 1947", "hi": "15 अगस्त 1947", "ta": "15 ஆகஸ்ட் 1947" },
+        { "en": "26 November 1949", "hi": "26 नवंबर 1949", "ta": "26 நவம்பர் 1949" },
+        { "en": "26 January 1950", "hi": "26 जनवरी 1950", "ta": "26 ஜனவரி 1950" },
+        { "en": "2 October 1952", "hi": "2 अक्टूबर 1952", "ta": "2 அக்டோபர் 1952" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-political-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Preamble to the Indian Constitution begins with the words:",
+        "hi": "भारतीय संविधान की प्रस्तावना किन शब्दों से शुरू होती है?",
+        "ta": "இந்திய அரசியலமைப்பின் முகவுரை எந்த வார்த்தைகளில் தொடங்குகிறது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "We the People of India", "hi": "हम, भारत के लोग", "ta": "நாம், இந்திய மக்கள்" },
+        { "en": "India is a Sovereign Nation", "hi": "भारत एक संप्रभु राष्ट्र है", "ta": "இந்தியா ஒரு இறையாண்மை நாடு" },
+        { "en": "The Constitution of India", "hi": "भारत का संविधान", "ta": "இந்தியாவின் அரசியலமைப்பு" },
+        { "en": "In the name of God", "hi": "ईश्वर के नाम पर", "ta": "கடவுள் பெயரில்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-political-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "How many Fundamental Rights are provided in the Indian Constitution?",
+        "hi": "भारतीय संविधान में कितने मौलिक अधिकार प्रदान किए गए हैं?",
+        "ta": "இந்திய அரசியலமைப்பில் எத்தனை அடிப்படை உரிமைகள் வழங்கப்பட்டுள்ளன?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "5", "hi": "5", "ta": "5" },
+        { "en": "6", "hi": "6", "ta": "6" },
+        { "en": "7", "hi": "7", "ta": "7" },
+        { "en": "8", "hi": "8", "ta": "8" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-political-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which article of the Constitution abolishes untouchability?",
+        "hi": "संविधान का कौन-सा अनुच्छेद अस्पृश्यता का उन्मूलन करता है?",
+        "ta": "அரசியலமைப்பின் எந்த பிரிவு தீண்டாமையை ஒழிக்கிறது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "Article 14", "hi": "अनुच्छेद 14", "ta": "பிரிவு 14" },
+        { "en": "Article 17", "hi": "अनुच्छेद 17", "ta": "பிரிவு 17" },
+        { "en": "Article 19", "hi": "अनुच्छेद 19", "ta": "பிரிவு 19" },
+        { "en": "Article 21", "hi": "अनुच्छेद 21", "ta": "பிரிவு 21" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-political-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "The concept of Directive Principles of State Policy was borrowed from:",
+        "hi": "राज्य नीति के निदेशक सिद्धांतों की अवधारणा किससे ली गई है?",
+        "ta": "அரச கொள்கையின் வழிகாட்டும் கோட்பாடுகளின் கருத்து எதிலிருந்து எடுக்கப்பட்டது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "USA", "hi": "अमेरिका", "ta": "அமெரிக்கா" },
+        { "en": "UK", "hi": "यूके", "ta": "இங்கிலாந்து" },
+        { "en": "Ireland", "hi": "आयरलैंड", "ta": "அயர்லாந்து" },
+        { "en": "Canada", "hi": "कनाडा", "ta": "கனடா" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-political-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which writ is issued to produce a person before the court?",
+        "hi": "न्यायालय के समक्ष किसी व्यक्ति को पेश करने के लिए कौन-सी रिट जारी की जाती है?",
+        "ta": "நீதிமன்றத்தில் ஒரு நபரை ஆஜர்படுத்த எந்த உத்தரவு வழங்கப்படுகிறது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "Mandamus", "hi": "परमादेश", "ta": "ஆணை" },
+        { "en": "Certiorari", "hi": "उत्प्रेषण", "ta": "சான்றிடல்" },
+        { "en": "Habeas Corpus", "hi": "बंदी प्रत्यक्षीकरण", "ta": "உடல் ஆஜர்" },
+        { "en": "Prohibition", "hi": "प्रतिषेध", "ta": "தடை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-political-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Indian Parliament consists of how many houses?",
+        "hi": "भारतीय संसद में कितने सदन हैं?",
+        "ta": "இந்திய நாடாளுமன்றம் எத்தனை அவைகளை கொண்டுள்ளது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "1", "hi": "1", "ta": "1" },
+        { "en": "2", "hi": "2", "ta": "2" },
+        { "en": "3", "hi": "3", "ta": "3" },
+        { "en": "4", "hi": "4", "ta": "4" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-political-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Right to Education Act was passed in the year:",
+        "hi": "शिक्षा का अधिकार अधिनियम किस वर्ष पारित हुआ?",
+        "ta": "கல்வி உரிமை சட்டம் எந்த ஆண்டு நிறைவேற்றப்பட்டது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "2002", "hi": "2002", "ta": "2002" },
+        { "en": "2005", "hi": "2005", "ta": "2005" },
+        { "en": "2009", "hi": "2009", "ta": "2009" },
+        { "en": "2012", "hi": "2012", "ta": "2012" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-political-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "India follows which type of government system?",
+        "hi": "भारत किस प्रकार की सरकार प्रणाली का पालन करता है?",
+        "ta": "இந்தியா எந்த வகையான அரசாங்க அமைப்பை பின்பற்றுகிறது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "Presidential", "hi": "राष्ट्रपति", "ta": "குடியரசுத்தலைவர்" },
+        { "en": "Parliamentary", "hi": "संसदीय", "ta": "நாடாளுமன்றம்" },
+        { "en": "Monarchical", "hi": "राजतंत्रीय", "ta": "முடியாட்சி" },
+        { "en": "Oligarchical", "hi": "अल्पतंत्रीय", "ta": "சிறுபான்மை ஆட்சி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-political-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Constituent Assembly of India was chaired by:",
+        "hi": "भारत की संविधान सभा की अध्यक्षता किसने की थी?",
+        "ta": "இந்தியாவின் அரசியலமைப்பு சபையின் தலைவர் யார்?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "Jawaharlal Nehru", "hi": "जवाहरलाल नेहरू", "ta": "ஜவகர்லால் நேரு" },
+        { "en": "B. R. Ambedkar", "hi": "बी. आर. अंबेडकर", "ta": "பி. ஆர். அம்பேத்கர்" },
+        { "en": "Rajendra Prasad", "hi": "राजेंद्र प्रसाद", "ta": "ராஜேந்திர பிரசாத்" },
+        { "en": "Sardar Patel", "hi": "सरदार पटेल", "ta": "சர்தார் படேல்" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

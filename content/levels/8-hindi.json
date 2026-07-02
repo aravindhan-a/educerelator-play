@@ -1,0 +1,176 @@
+{
+  "class": 8,
+  "subject": "hindi",
+  "questions": [
+    {
+      "id": "8-hindi-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is an example of 'upma alankar' (simile) in Hindi?",
+        "hi": "निम्नलिखित में से कौन सा हिंदी में 'उपमा अलंकार' का उदाहरण है?",
+        "ta": "பின்வருவனவற்றில் எது இந்தியில் 'உவமை அலங்காரம்' இன் உதாரணம்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Chanda maama (Moon uncle)", "hi": "चंदा मामा", "ta": "சந்தா மாமா" },
+        { "en": "Mukh chandra sa sundar hai (Face is as beautiful as the moon)", "hi": "मुख चंद्र सा सुंदर है", "ta": "முகம் சந்திரன் போல அழகானது" },
+        { "en": "Nadi gaati hai (River sings)", "hi": "नदी गाती है", "ta": "நதி பாட்டு பாடுகிறது" },
+        { "en": "Veer yodha (Brave warrior)", "hi": "वीर योद्धा", "ta": "வீர வீரன்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-hindi-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "In a formal Hindi letter, which phrase is used to begin the body of the letter?",
+        "hi": "औपचारिक हिंदी पत्र में पत्र का मुख्य भाग शुरू करने के लिए कौन सा वाक्यांश प्रयोग होता है?",
+        "ta": "முறையான இந்தி கடிதத்தில் கடிதத்தின் உடலை தொடங்க எந்த சொற்றொடர் பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Pranam (Greetings)", "hi": "प्रणाम", "ta": "பிரணாம் (வணக்கம்)" },
+        { "en": "Sewa mein (To the respected...)", "hi": "सेवा में", "ta": "சேவா மேன் (மரியாதை நிமித்தம்...)" },
+        { "en": "Aapka mitra (Your friend)", "hi": "आपका मित्र", "ta": "ஆப்கா மித்ரா (உங்கள் நண்பன்)" },
+        { "en": "Theek hai (OK)", "hi": "ठीक है", "ta": "தீக் ஹை (சரி)" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-hindi-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which Hindi poet wrote 'Madhushala'?",
+        "hi": "'मधुशाला' किस हिंदी कवि ने लिखी?",
+        "ta": "'Madhushala' ஐ எந்த இந்தி கவிஞர் எழுதினார்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Mahadevi Varma", "hi": "महादेवी वर्मा", "ta": "மஹாதேவி வர்மா" },
+        { "en": "Jaishankar Prasad", "hi": "जयशंकर प्रसाद", "ta": "ஜெய்ஷங்கர் பிரசாத்" },
+        { "en": "Harivansh Rai Bachchan", "hi": "हरिवंश राय बच्चन", "ta": "ஹரிவம்ஷ் ராய் பச்சன்" },
+        { "en": "Sumitranandan Pant", "hi": "सुमित्रानंदन पंत", "ta": "சுமித்ரானந்தன் பந்த்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-hindi-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Hindi, 'samas' refers to?",
+        "hi": "हिंदी में 'समास' किसे कहते हैं?",
+        "ta": "இந்தியில் 'samas' என்பது எதை குறிக்கும்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "A type of poem", "hi": "एक प्रकार की कविता", "ta": "ஒரு வகை கவிதை" },
+        { "en": "The combining of two or more words into one compound word", "hi": "दो या अधिक शब्दों को मिलाकर एक समस्त पद बनाना", "ta": "இரண்டு அல்லது அதிகமான சொற்களை ஒரு கூட்டுச்சொல்லாக இணைப்பது" },
+        { "en": "A grammatical error", "hi": "व्याकरणिक त्रुटि", "ta": "இலக்கண பிழை" },
+        { "en": "A type of paragraph", "hi": "एक प्रकार का अनुच्छेद", "ta": "ஒரு வகை பத்தி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-hindi-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is 'nibandh' in Hindi?",
+        "hi": "हिंदी में 'निबंध' क्या है?",
+        "ta": "இந்தியில் 'nibandh' என்றால் என்ன?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "A poem", "hi": "कविता", "ta": "கவிதை" },
+        { "en": "An essay", "hi": "निबंध", "ta": "கட்டுரை" },
+        { "en": "A story", "hi": "कहानी", "ta": "கதை" },
+        { "en": "A drama", "hi": "नाटक", "ta": "நாடகம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-hindi-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the Hindi term for 'passive voice'?",
+        "hi": "'Passive voice' को हिंदी में क्या कहते हैं?",
+        "ta": "'Passive voice' ஐ இந்தியில் என்று அழைப்பார்கள்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Kartari prayog", "hi": "कर्तरी प्रयोग", "ta": "கர்தரி பிரயோக்" },
+        { "en": "Karmani prayog", "hi": "कर्मणि प्रयोग", "ta": "கர்மணி பிரயோக்" },
+        { "en": "Bhav prayog", "hi": "भाव प्रयोग", "ta": "பாவ் பிரயோக்" },
+        { "en": "Sahkarmak prayog", "hi": "सहकर्मक प्रयोग", "ta": "சஹகர்மக் பிரயோக்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-hindi-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The famous Hindi novel 'Godan' was written by?",
+        "hi": "प्रसिद्ध हिंदी उपन्यास 'गोदान' किसने लिखा?",
+        "ta": "புகழ்பெற்ற இந்தி நாவல் 'Godan' ஐ யார் எழுதினார்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Bankim Chandra", "hi": "बंकिम चंद्र", "ta": "பங்கிம் சந்திரா" },
+        { "en": "Premchand", "hi": "प्रेमचंद", "ta": "பிரேம்சந்த்" },
+        { "en": "Rabindranath Tagore", "hi": "रबींद्रनाथ टैगोर", "ta": "ரவீந்திரநாத் தாகூர்" },
+        { "en": "Jaishankar Prasad", "hi": "जयशंकर प्रसाद", "ta": "ஜெய்ஷங்கர் பிரசாத்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-hindi-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Hindi grammar, 'kaal' refers to?",
+        "hi": "हिंदी व्याकरण में 'काल' किसे कहते हैं?",
+        "ta": "இந்தி இலக்கணத்தில் 'kaal' என்பது எதை குறிக்கும்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Gender", "hi": "लिंग", "ta": "பால்" },
+        { "en": "Number", "hi": "वचन", "ta": "எண்" },
+        { "en": "Tense", "hi": "काल", "ta": "காலம்" },
+        { "en": "Case", "hi": "कारक", "ta": "வேற்றுமை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-hindi-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a correct example of 'vyatirek alankar' (contrast figure of speech) in Hindi?",
+        "hi": "हिंदी में 'व्यतिरेक अलंकार' का कौन सा उदाहरण सही है?",
+        "ta": "இந்தியில் 'vyatirek alankar' (வேறுபாட்டு அலங்காரம்) இன் சரியான உதாரணம் எது?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Uska mukh chandra sa sundar hai (Her face is as beautiful as the moon)", "hi": "उसका मुख चंद्र सा सुंदर है", "ta": "அவளது முகம் சந்திரன் போல அழகானது" },
+        { "en": "Chanda bhi lajaye uske mukh ko dekh kar (Even the moon would be ashamed looking at her face)", "hi": "चंदा भी लजाए उसके मुख को देखकर", "ta": "அவளது முகத்தை பார்த்தால் சந்திரனும் வெட்கப்படுவான்" },
+        { "en": "Nadi gaati chali jaati (River keeps singing)", "hi": "नदी गाती चली जाती", "ta": "நதி பாட்டுப் பாடிக்கொண்டே செல்கிறது" },
+        { "en": "Saagar ki leherein (Waves of the ocean)", "hi": "सागर की लहरें", "ta": "கடலின் அலைகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-hindi-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is 'anuched lekhan' in Hindi?",
+        "hi": "हिंदी में 'अनुच्छेद लेखन' क्या है?",
+        "ta": "இந்தியில் 'anuched lekhan' என்றால் என்ன?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Letter writing", "hi": "पत्र लेखन", "ta": "கடிதம் எழுதுதல்" },
+        { "en": "Paragraph writing", "hi": "अनुच्छेद लेखन", "ta": "பத்தி எழுதுதல்" },
+        { "en": "Story writing", "hi": "कहानी लेखन", "ta": "கதை எழுதுதல்" },
+        { "en": "Poem writing", "hi": "कविता लेखन", "ta": "கவிதை எழுதுதல்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

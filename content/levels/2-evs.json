@@ -1,0 +1,176 @@
+{
+  "class": 2,
+  "subject": "evs",
+  "questions": [
+    {
+      "id": "2-evs-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which part of the body do we use to smell?",
+        "hi": "हम शरीर के किस अंग से सूँघते हैं?",
+        "ta": "நாம் உடலின் எந்த பகுதியால் நுகர்கிறோம்?"
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "Eyes", "hi": "आँखें", "ta": "கண்கள்" },
+        { "en": "Ears", "hi": "कान", "ta": "காதுகள்" },
+        { "en": "Nose", "hi": "नाक", "ta": "மூக்கு" },
+        { "en": "Tongue", "hi": "जीभ", "ta": "நாக்கு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "2-evs-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these animals gives us milk?",
+        "hi": "इनमें से कौन सा जानवर हमें दूध देता है?",
+        "ta": "இவற்றில் எந்த விலங்கு நமக்கு பால் தருகிறது?"
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "Lion", "hi": "शेर", "ta": "சிங்கம்" },
+        { "en": "Parrot", "hi": "तोता", "ta": "கிளி" },
+        { "en": "Fish", "hi": "मछली", "ta": "மீன்" },
+        { "en": "Cow", "hi": "गाय", "ta": "பசு" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "2-evs-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which part of the plant makes food?",
+        "hi": "पौधे का कौन सा भाग भोजन बनाता है?",
+        "ta": "தாவரத்தின் எந்த பகுதி உணவு தயாரிக்கிறது?"
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "Root", "hi": "जड़", "ta": "வேர்" },
+        { "en": "Leaf", "hi": "पत्ती", "ta": "இலை" },
+        { "en": "Stem", "hi": "तना", "ta": "தண்டு" },
+        { "en": "Flower", "hi": "फूल", "ta": "பூ" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "2-evs-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which food gives us energy to run and play?",
+        "hi": "कौन सा भोजन हमें दौड़ने और खेलने की ऊर्जा देता है?",
+        "ta": "எந்த உணவு ஓடவும் விளையாடவும் நமக்கு சக்தி தருகிறது?"
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "Rice", "hi": "चावल", "ta": "அரிசி" },
+        { "en": "Water", "hi": "पानी", "ta": "தண்ணீர்" },
+        { "en": "Air", "hi": "हवा", "ta": "காற்று" },
+        { "en": "Stone", "hi": "पत्थर", "ta": "கல்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "2-evs-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Who is the father of your father?",
+        "hi": "आपके पिता के पिता कौन हैं?",
+        "ta": "உங்கள் தந்தையின் தந்தை யார்?"
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "Uncle", "hi": "चाचा", "ta": "மாமா" },
+        { "en": "Grandfather", "hi": "दादा", "ta": "தாத்தா" },
+        { "en": "Brother", "hi": "भाई", "ta": "அண்ணன்" },
+        { "en": "Cousin", "hi": "चचेरे भाई", "ta": "உறவினர்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "2-evs-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these is a wild animal?",
+        "hi": "इनमें से कौन सा एक जंगली जानवर है?",
+        "ta": "இவற்றில் எது ஒரு காட்டு விலங்கு?"
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "Dog", "hi": "कुत्ता", "ta": "நாய்" },
+        { "en": "Goat", "hi": "बकरी", "ta": "ஆடு" },
+        { "en": "Tiger", "hi": "बाघ", "ta": "புலி" },
+        { "en": "Hen", "hi": "मुर्गी", "ta": "கோழி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "2-evs-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "How many fingers do we have on both hands?",
+        "hi": "दोनों हाथों में हमारी कितनी उंगलियाँ होती हैं?",
+        "ta": "இரு கைகளிலும் நமக்கு எத்தனை விரல்கள் உள்ளன?"
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "8", "hi": "8", "ta": "8" },
+        { "en": "10", "hi": "10", "ta": "10" },
+        { "en": "12", "hi": "12", "ta": "12" },
+        { "en": "6", "hi": "6", "ta": "6" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "2-evs-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these is a vegetable?",
+        "hi": "इनमें से कौन सी एक सब्जी है?",
+        "ta": "இவற்றில் எது ஒரு காய்கறி?"
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "Banana", "hi": "केला", "ta": "வாழைப்பழம்" },
+        { "en": "Mango", "hi": "आम", "ta": "மாம்பழம்" },
+        { "en": "Carrot", "hi": "गाजर", "ta": "கேரட்" },
+        { "en": "Grapes", "hi": "अंगूर", "ta": "திராட்சை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "2-evs-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Birds use ___ to fly.",
+        "hi": "पक्षी उड़ने के लिए ___ का उपयोग करते हैं।",
+        "ta": "பறவைகள் ___ பயன்படுத்தி பறக்கின்றன."
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "Legs", "hi": "पैर", "ta": "கால்கள்" },
+        { "en": "Wings", "hi": "पंख", "ta": "சிறகுகள்" },
+        { "en": "Tail", "hi": "पूँछ", "ta": "வால்" },
+        { "en": "Beak", "hi": "चोंच", "ta": "அலகு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "2-evs-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sense organ helps us hear sounds?",
+        "hi": "कौन सा ज्ञानेन्द्रिय हमें आवाज़ें सुनने में मदद करता है?",
+        "ta": "எந்த உணர் உறுப்பு நமக்கு ஒலிகளைக் கேட்க உதவுகிறது?"
+      },
+      "visual": "🌿",
+      "choices": [
+        { "en": "Eyes", "hi": "आँखें", "ta": "கண்கள்" },
+        { "en": "Nose", "hi": "नाक", "ta": "மூக்கு" },
+        { "en": "Skin", "hi": "त्वचा", "ta": "தோல்" },
+        { "en": "Ears", "hi": "कान", "ta": "காதுகள்" }
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

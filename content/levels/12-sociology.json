@@ -1,0 +1,176 @@
+{
+  "class": 12,
+  "subject": "sociology",
+  "questions": [
+    {
+      "id": "12-sociology-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Social change refers to:",
+        "hi": "सामाजिक परिवर्तन का अर्थ है:",
+        "ta": "சமூக மாற்றம் என்பது:"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Only economic development", "hi": "केवल आर्थिक विकास", "ta": "பொருளாதார வளர்ச்சி மட்டும்" },
+        { "en": "Alterations in the structure and functioning of society over time", "hi": "समय के साथ समाज की संरचना और कार्यप्रणाली में परिवर्तन", "ta": "காலப்போக்கில் சமூகத்தின் கட்டமைப்பு மற்றும் செயல்பாட்டில் மாற்றங்கள்" },
+        { "en": "Changes in government policies", "hi": "सरकारी नीतियों में परिवर्तन", "ta": "அரசாங்க கொள்கைகளில் மாற்றங்கள்" },
+        { "en": "Individual personality development", "hi": "व्यक्तिगत व्यक्तित्व विकास", "ta": "தனிப்பட்ட ஆளுமை வளர்ச்சி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-sociology-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Gender inequality refers to:",
+        "hi": "लैंगिक असमानता का अर्थ है:",
+        "ta": "பாலின சமத்துவமின்மை என்பது:"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Biological differences between males and females", "hi": "पुरुषों और महिलाओं के बीच जैविक अंतर", "ta": "ஆண்கள் மற்றும் பெண்களுக்கிடையேயான உயிரியல் வேறுபாடுகள்" },
+        { "en": "Unequal treatment and opportunities based on gender", "hi": "लिंग के आधार पर असमान व्यवहार और अवसर", "ta": "பாலினத்தின் அடிப்படையில் சம அல்லாத நடத்தை மற்றும் வாய்ப்புகள்" },
+        { "en": "Differences in education levels", "hi": "शिक्षा स्तर में अंतर", "ta": "கல்வி நிலைகளில் வேறுபாடுகள்" },
+        { "en": "Income differences only", "hi": "केवल आय में अंतर", "ta": "வருமான வேறுபாடுகள் மட்டும்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-sociology-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Urbanisation refers to the process of:",
+        "hi": "शहरीकरण किस प्रक्रिया को संदर्भित करता है?",
+        "ta": "நகரமயமாக்கல் எந்த செயல்முறையை குறிக்கிறது?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Decrease in city population", "hi": "शहरी जनसंख्या में कमी", "ta": "நகர மக்கள்தொகை குறைவு" },
+        { "en": "Migration of people from urban to rural areas", "hi": "शहरी से ग्रामीण क्षेत्रों में लोगों का प्रवास", "ta": "நகர்ப்புறத்திலிருந்து கிராமப்புறங்களுக்கு மக்கள் இடம்பெயர்வு" },
+        { "en": "Growth of cities and increasing proportion of urban population", "hi": "शहरों का विकास और शहरी जनसंख्या के अनुपात में वृद्धि", "ta": "நகரங்களின் வளர்ச்சி மற்றும் நகர மக்கள்தொகை விகிதம் அதிகரிப்பு" },
+        { "en": "Development of rural infrastructure", "hi": "ग्रामीण बुनियादी ढाँचे का विकास", "ta": "கிராமப்புற உள்கட்டமைப்பு வளர்ச்சி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-sociology-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "The women's suffrage movement primarily fought for:",
+        "hi": "महिला मताधिकार आंदोलन मुख्य रूप से किसके लिए लड़ा?",
+        "ta": "பெண்களின் வாக்குரிமை இயக்கம் முதன்மையாக எதற்காக போராடியது?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Women's right to work", "hi": "महिलाओं के काम करने का अधिकार", "ta": "பெண்களுக்கு வேலை செய்யும் உரிமை" },
+        { "en": "Women's right to vote", "hi": "महिलाओं के मतदान का अधिकार", "ta": "பெண்களுக்கு வாக்களிக்கும் உரிமை" },
+        { "en": "Women's right to education", "hi": "महिलाओं के शिक्षा का अधिकार", "ta": "பெண்களுக்கு கல்வி உரிமை" },
+        { "en": "Women's right to property", "hi": "महिलाओं के संपत्ति का अधिकार", "ta": "பெண்களுக்கு சொத்து உரிமை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-sociology-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Communalism refers to:",
+        "hi": "साम्प्रदायिकता का अर्थ है:",
+        "ta": "வகுப்புவாதம் என்பது:"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Living in communities", "hi": "समुदायों में रहना", "ta": "சமூகங்களில் வாழ்வது" },
+        { "en": "An ideology that promotes one religious community over others", "hi": "एक विचारधारा जो एक धार्मिक समुदाय को दूसरों से ऊपर बढ़ावा देती है", "ta": "ஒரு மதக் குழுவை மற்றவர்களுக்கு மேலாக மேம்படுத்தும் சித்தாந்தம்" },
+        { "en": "Collective decision making", "hi": "सामूहिक निर्णय लेना", "ta": "கூட்டு முடிவெடுப்பு" },
+        { "en": "Sharing of community resources", "hi": "सामुदायिक संसाधनों का साझाकरण", "ta": "சமூக வளங்களை பகிர்வது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-sociology-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Globalisation has led to:",
+        "hi": "वैश्वीकरण ने क्या उत्पन्न किया है?",
+        "ta": "உலகமயமாக்கல் எதற்கு வழிவகுத்தது?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Isolation of economies", "hi": "अर्थव्यवस्थाओं का अलगाव", "ta": "பொருளாதாரங்களின் தனிமை" },
+        { "en": "Greater interconnection of societies and economies", "hi": "समाजों और अर्थव्यवस्थाओं की अधिक अंतर्संबद्धता", "ta": "சமூகங்கள் மற்றும் பொருளாதாரங்களின் அதிகமான ஒருங்கிணைப்பு" },
+        { "en": "Disappearance of local cultures", "hi": "स्थानीय संस्कृतियों का लोप", "ta": "உள்ளூர் கலாச்சாரங்களின் அழிவு" },
+        { "en": "Reduction in international trade", "hi": "अंतर्राष्ट्रीय व्यापार में कमी", "ta": "சர்வதேச வர்த்தகம் குறைவு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-sociology-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which social problem is directly linked to population growth in India?",
+        "hi": "भारत में जनसंख्या वृद्धि से सीधे जुड़ी कौन-सी सामाजिक समस्या है?",
+        "ta": "இந்தியாவில் மக்கள்தொகை வளர்ச்சியுடன் நேரடியாக இணைக்கப்பட்ட சமூக சிக்கல் எது?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Technological development", "hi": "तकनीकी विकास", "ta": "தொழில்நுட்ப வளர்ச்சி" },
+        { "en": "Unemployment and poverty", "hi": "बेरोजगारी और गरीबी", "ta": "வேலையின்மை மற்றும் வறுமை" },
+        { "en": "Cultural diversity", "hi": "सांस्कृतिक विविधता", "ta": "கலாச்சார பன்முகத்தன்மை" },
+        { "en": "Rise in literacy", "hi": "साक्षरता में वृद्धि", "ta": "கல்வியறிவு அதிகரிப்பு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-sociology-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "The term 'Patriarchy' refers to a system where:",
+        "hi": "'पितृसत्ता' शब्द उस प्रणाली को संदर्भित करता है जहाँ:",
+        "ta": "'ஆணாதிக்கம்' என்ற சொல் எந்த அமைப்பை குறிக்கிறது:"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Women hold primary power in the family", "hi": "महिलाएँ परिवार में प्राथमिक शक्ति रखती हैं", "ta": "குடும்பத்தில் பெண்கள் முதன்மை சக்தியை வைத்திருக்கிறார்கள்" },
+        { "en": "Men hold primary power in society", "hi": "पुरुष समाज में प्राथमिक शक्ति रखते हैं", "ta": "சமூகத்தில் ஆண்கள் முதன்மை சக்தியை வைத்திருக்கிறார்கள்" },
+        { "en": "Power is equally shared", "hi": "शक्ति समान रूप से साझा की जाती है", "ta": "சக்தி சமத்துவமாக பகிரப்படுகிறது" },
+        { "en": "Children have the most authority", "hi": "बच्चों का सबसे अधिक अधिकार होता है", "ta": "குழந்தைகளுக்கு அதிகமான அதிகாரம் உள்ளது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-sociology-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sociologist wrote 'The Division of Labour in Society'?",
+        "hi": "'समाज में श्रम विभाजन' किस समाजशास्त्री ने लिखा?",
+        "ta": "'சமூகத்தில் தொழில் பிரிவு' என்ற நூலை எந்த சமூகவியலாளர் எழுதினார்?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Max Weber", "hi": "मैक्स वेबर", "ta": "மாக்ஸ் வெபர்" },
+        { "en": "Karl Marx", "hi": "कार्ल मार्क्स", "ta": "கார்ல் மார்க்ஸ்" },
+        { "en": "Emile Durkheim", "hi": "एमिल दुर्खीम", "ta": "எமில் டர்க்கைம்" },
+        { "en": "Auguste Comte", "hi": "ऑगस्ट कॉम्टे", "ta": "ஆகஸ்ட் கொம்டே" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-sociology-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Child labour is primarily caused by:",
+        "hi": "बाल श्रम का प्राथमिक कारण है:",
+        "ta": "குழந்தை தொழிலாளர் முதன்மையாக எதனால் ஏற்படுகிறது?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Children preferring to work over studying", "hi": "बच्चों का पढ़ाई के बजाय काम करना पसंद करना", "ta": "குழந்தைகள் படிப்பதை விட வேலை செய்வதை விரும்புவது" },
+        { "en": "Poverty and lack of access to education", "hi": "गरीबी और शिक्षा तक पहुँच का अभाव", "ta": "வறுமை மற்றும் கல்வியில் அணுகல் இல்லாமை" },
+        { "en": "Government policies encouraging child work", "hi": "बाल श्रम को प्रोत्साहित करने वाली सरकारी नीतियाँ", "ta": "குழந்தை வேலையை ஊக்கிவிக்கும் அரசாங்க கொள்கைகள்" },
+        { "en": "Cultural traditions that value work over education", "hi": "शिक्षा से अधिक काम को महत्व देने वाली सांस्कृतिक परंपराएँ", "ta": "கல்வியை விட வேலையை மதிக்கும் கலாச்சார மரபுகள்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

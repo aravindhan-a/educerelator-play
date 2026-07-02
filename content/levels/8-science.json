@@ -1,0 +1,176 @@
+{
+  "class": 8,
+  "subject": "science",
+  "questions": [
+    {
+      "id": "8-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a metal?",
+        "hi": "निम्नलिखित में से कौन सा एक धातु है?",
+        "ta": "பின்வருவனவற்றில் எது ஒரு உலோகம்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Sulphur", "hi": "सल्फर", "ta": "கந்தகம்" },
+        { "en": "Carbon", "hi": "कार्बन", "ta": "கார்பன்" },
+        { "en": "Copper", "hi": "तांबा", "ta": "செம்பு" },
+        { "en": "Phosphorus", "hi": "फास्फोरस", "ta": "பாஸ்பரஸ்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The speed of sound in air is approximately?",
+        "hi": "हवा में ध्वनि की गति लगभग कितनी है?",
+        "ta": "காற்றில் ஒலியின் வேகம் தோராயமாக என்ன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "330 m/s", "hi": "330 m/s", "ta": "330 m/s" },
+        { "en": "3000 m/s", "hi": "3000 m/s", "ta": "3000 m/s" },
+        { "en": "3 × 10⁸ m/s", "hi": "3 × 10⁸ m/s", "ta": "3 × 10⁸ m/s" },
+        { "en": "30 m/s", "hi": "30 m/s", "ta": "30 m/s" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "8-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which microorganism causes malaria?",
+        "hi": "मलेरिया किस सूक्ष्मजीव के कारण होता है?",
+        "ta": "மலேரியாவை எந்த நுண்ணுயிரி ஏற்படுத்துகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Bacteria", "hi": "जीवाणु", "ta": "பாக்டீரியா" },
+        { "en": "Virus", "hi": "विषाणु", "ta": "வைரஸ்" },
+        { "en": "Protozoa (Plasmodium)", "hi": "प्रोटोज़ोआ (प्लाज़्मोडियम)", "ta": "புரோட்டோசோவா (பிளாஸ்மோடியம்)" },
+        { "en": "Fungus", "hi": "कवक", "ta": "பூஞ்சை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which property of metals allows them to be drawn into wires?",
+        "hi": "धातुओं का कौन सा गुण उन्हें तारों में खींचने योग्य बनाता है?",
+        "ta": "உலோகங்களை கம்பிகளாக இழுக்க வைக்கும் பண்பு என்ன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Malleability", "hi": "आघातवर्धनीयता", "ta": "அடிக்கக்கூடிய தன்மை" },
+        { "en": "Ductility", "hi": "तन्यता", "ta": "நீட்டிக்கும் தன்மை" },
+        { "en": "Conductivity", "hi": "चालकता", "ta": "கடத்தல் திறன்" },
+        { "en": "Lustre", "hi": "चमक", "ta": "பளபளப்பு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which gas is responsible for the greenhouse effect?",
+        "hi": "ग्रीनहाउस प्रभाव के लिए कौन सी गैस जिम्मेदार है?",
+        "ta": "கிரீன்ஹவுஸ் விளைவுக்கு காரணமான வாயு எது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Oxygen", "hi": "ऑक्सीजन", "ta": "ஆக்சிஜன்" },
+        { "en": "Nitrogen", "hi": "नाइट्रोजन", "ta": "நைட்ரஜன்" },
+        { "en": "Carbon dioxide", "hi": "कार्बन डाइऑक्साइड", "ta": "கார்பன் டை ஆக்சைடு" },
+        { "en": "Hydrogen", "hi": "हाइड्रोजन", "ta": "ஹைட்ரஜன்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which type of cell division produces gametes (sex cells)?",
+        "hi": "कौन सा कोशिका विभाजन युग्मक (जनन कोशिकाएं) उत्पन्न करता है?",
+        "ta": "கேமீட்டுகளை (இனப்பெருக்க செல்களை) உற்பத்தி செய்யும் செல் பிரிவு எது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Mitosis", "hi": "समसूत्री विभाजन", "ta": "சமவிகித பகுப்பு" },
+        { "en": "Meiosis", "hi": "अर्धसूत्री विभाजन", "ta": "குறைவிகித பகுப்பு" },
+        { "en": "Binary fission", "hi": "द्विआधारी विखंडन", "ta": "இரும வெடிப்பு" },
+        { "en": "Budding", "hi": "मुकुलन", "ta": "மொட்டு அரும்புதல்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The loudness of sound is measured in?",
+        "hi": "ध्वनि की तीव्रता किसमें मापी जाती है?",
+        "ta": "ஒலியின் உரத்தன்மை எதில் அளவிடப்படுகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Hertz (Hz)", "hi": "हर्ट्ज़ (Hz)", "ta": "ஹெர்ட்ஸ் (Hz)" },
+        { "en": "Decibel (dB)", "hi": "डेसिबल (dB)", "ta": "டெசிபெல் (dB)" },
+        { "en": "Metre/second (m/s)", "hi": "मीटर/सेकंड (m/s)", "ta": "மீட்டர்/விநாடி (m/s)" },
+        { "en": "Newton (N)", "hi": "न्यूटन (N)", "ta": "நியூட்டன் (N)" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Coal and petroleum are examples of?",
+        "hi": "कोयला और पेट्रोलियम किसके उदाहरण हैं?",
+        "ta": "நிலக்கரி மற்றும் பெட்ரோலியம் எதன் உதாரணங்கள்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Renewable resources", "hi": "नवीकरणीय संसाधन", "ta": "புதுப்பிக்கக்கூடிய வளங்கள்" },
+        { "en": "Fossil fuels", "hi": "जीवाश्म ईंधन", "ta": "புதைபடிவ எரிபொருட்கள்" },
+        { "en": "Biomass fuels", "hi": "बायोमास ईंधन", "ta": "உயிரியம் எரிபொருட்கள்" },
+        { "en": "Nuclear fuels", "hi": "परमाणु ईंधन", "ta": "அணு எரிபொருட்கள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the chemical formula of water?",
+        "hi": "पानी का रासायनिक सूत्र क्या है?",
+        "ta": "நீரின் இரசாயன சூத்திரம் என்ன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "CO₂", "hi": "CO₂", "ta": "CO₂" },
+        { "en": "NaCl", "hi": "NaCl", "ta": "NaCl" },
+        { "en": "H₂O", "hi": "H₂O", "ta": "H₂O" },
+        { "en": "O₂", "hi": "O₂", "ta": "O₂" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which organ produces insulin in the human body?",
+        "hi": "मानव शरीर में इंसुलिन कौन सा अंग बनाता है?",
+        "ta": "மனித உடலில் இன்சுலினை உற்பத்தி செய்யும் உறுப்பு எது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Liver", "hi": "यकृत", "ta": "கல்லீரல்" },
+        { "en": "Kidney", "hi": "गुर्दा", "ta": "சிறுநீரகம்" },
+        { "en": "Pancreas", "hi": "अग्न्याशय", "ta": "கணையம்" },
+        { "en": "Stomach", "hi": "पेट", "ta": "வயிறு" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

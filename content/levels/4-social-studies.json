@@ -1,0 +1,176 @@
+{
+  "class": 4,
+  "subject": "social-studies",
+  "questions": [
+    {
+      "id": "4-social-studies-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the capital city of India?",
+        "hi": "भारत की राजधानी शहर क्या है?",
+        "ta": "இந்தியாவின் தலைநகரம் எது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Mumbai", "hi": "मुंबई", "ta": "மும்பை" },
+        { "en": "Kolkata", "hi": "कोलकाता", "ta": "கொல்கத்தா" },
+        { "en": "New Delhi", "hi": "नई दिल्ली", "ta": "புது தில்லி" },
+        { "en": "Chennai", "hi": "चेन्नई", "ta": "சென்னை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-social-studies-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which is the longest river in India?",
+        "hi": "भारत की सबसे लंबी नदी कौन सी है?",
+        "ta": "இந்தியாவின் மிக நீளமான நதி எது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Yamuna", "hi": "यमुना", "ta": "யமுனை" },
+        { "en": "Ganga", "hi": "गंगा", "ta": "கங்கை" },
+        { "en": "Brahmaputra", "hi": "ब्रह्मपुत्र", "ta": "பிரம்மபுத்திரா" },
+        { "en": "Krishna", "hi": "कृष्णा", "ta": "கிருஷ்ணா" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "4-social-studies-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "A map uses a _____ to show directions.",
+        "hi": "एक नक्शा दिशाओं को दर्शाने के लिए _____ का उपयोग करता है।",
+        "ta": "ஒரு வரைபடம் திசைகளைக் காட்ட _____ பயன்படுத்துகிறது."
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Scale", "hi": "माप", "ta": "அளவுகோல்" },
+        { "en": "Legend", "hi": "किंवदंती", "ta": "குறிவிளக்கம்" },
+        { "en": "Compass rose", "hi": "दिशा सूचक", "ta": "திசைக்காட்டி" },
+        { "en": "Grid", "hi": "ग्रिड", "ta": "கட்டம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-social-studies-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which Indian state is famous for the Taj Mahal?",
+        "hi": "कौन सा भारतीय राज्य ताज महल के लिए प्रसिद्ध है?",
+        "ta": "தாஜ் மஹாலுக்கு பிரசித்தமான இந்திய மாநிலம் எது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Rajasthan", "hi": "राजस्थान", "ta": "ராஜஸ்தான்" },
+        { "en": "Gujarat", "hi": "गुजरात", "ta": "குஜராத்" },
+        { "en": "Uttar Pradesh", "hi": "उत्तर प्रदेश", "ta": "உத்தரப் பிரதேசம்" },
+        { "en": "Madhya Pradesh", "hi": "मध्य प्रदेश", "ta": "மத்திய பிரதேசம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-social-studies-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which ocean lies to the south of India?",
+        "hi": "भारत के दक्षिण में कौन सा महासागर है?",
+        "ta": "இந்தியாவின் தெற்கே எந்த கடல் உள்ளது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Pacific Ocean", "hi": "प्रशांत महासागर", "ta": "பசிபிக் பெருங்கடல்" },
+        { "en": "Atlantic Ocean", "hi": "अटलांटिक महासागर", "ta": "அட்லாண்டிக் பெருங்கடல்" },
+        { "en": "Arctic Ocean", "hi": "आर्कटिक महासागर", "ta": "ஆர்க்டிக் பெருங்கடல்" },
+        { "en": "Indian Ocean", "hi": "हिंद महासागर", "ta": "இந்தியப் பெருங்கடல்" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "4-social-studies-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "What do we call a person who makes pots from clay?",
+        "hi": "मिट्टी से बर्तन बनाने वाले व्यक्ति को हम क्या कहते हैं?",
+        "ta": "களிமண்ணால் பாத்திரங்கள் செய்பவரை என்ன என்று அழைக்கிறோம்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Carpenter", "hi": "बढ़ई", "ta": "தச்சர்" },
+        { "en": "Blacksmith", "hi": "लोहार", "ta": "கொல்லர்" },
+        { "en": "Potter", "hi": "कुम्हार", "ta": "குயவர்" },
+        { "en": "Weaver", "hi": "बुनकर", "ta": "நெசவாளர்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-social-studies-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which mountain range runs along the northern border of India?",
+        "hi": "कौन सी पर्वत श्रृंखला भारत की उत्तरी सीमा पर स्थित है?",
+        "ta": "இந்தியாவின் வடக்கு எல்லையில் எந்த மலைத்தொடர் உள்ளது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Vindhya Range", "hi": "विंध्याचल श्रेणी", "ta": "விந்திய மலைத்தொடர்" },
+        { "en": "Western Ghats", "hi": "पश्चिमी घाट", "ta": "மேற்குத் தொடர்ச்சி மலை" },
+        { "en": "Aravalli Range", "hi": "अरावली श्रेणी", "ta": "அரவல்லி மலைத்தொடர்" },
+        { "en": "The Himalayas", "hi": "हिमालय", "ta": "இமயமலை" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "4-social-studies-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "The national bird of India is:",
+        "hi": "भारत का राष्ट्रीय पक्षी है:",
+        "ta": "இந்தியாவின் தேசிய பறவை:"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Sparrow", "hi": "गौरैया", "ta": "சிட்டுக்குருவி" },
+        { "en": "Eagle", "hi": "चील", "ta": "கழுகு" },
+        { "en": "Peacock", "hi": "मोर", "ta": "மயில்" },
+        { "en": "Parrot", "hi": "तोता", "ta": "கிளி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-social-studies-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these is a means of communication?",
+        "hi": "इनमें से कौन सा संचार का साधन है?",
+        "ta": "இவற்றில் எது ஒரு தகவல் தொடர்பு சாதனம்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Bus", "hi": "बस", "ta": "பேருந்து" },
+        { "en": "Bicycle", "hi": "साइकिल", "ta": "சைக்கிள்" },
+        { "en": "Newspaper", "hi": "समाचार पत्र", "ta": "செய்தித்தாள்" },
+        { "en": "Ship", "hi": "जहाज", "ta": "கப்பல்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-social-studies-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "In which direction does the sun rise?",
+        "hi": "सूर्य किस दिशा में उगता है?",
+        "ta": "சூரியன் எந்த திசையில் உதிக்கிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "West", "hi": "पश्चिम", "ta": "மேற்கு" },
+        { "en": "North", "hi": "उत्तर", "ta": "வடக்கு" },
+        { "en": "South", "hi": "दक्षिण", "ta": "தெற்கு" },
+        { "en": "East", "hi": "पूर्व", "ta": "கிழக்கு" }
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

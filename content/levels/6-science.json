@@ -1,0 +1,176 @@
+{
+  "class": 6,
+  "subject": "science",
+  "questions": [
+    {
+      "id": "6-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the basic unit of life?",
+        "hi": "जीवन की मूल इकाई क्या है?",
+        "ta": "உயிரின் அடிப்படை அலகு என்ன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Tissue", "hi": "ऊतक", "ta": "திசு" },
+        { "en": "Organ", "hi": "अंग", "ta": "உறுப்பு" },
+        { "en": "Cell", "hi": "कोशिका", "ta": "செல்" },
+        { "en": "Organism", "hi": "जीव", "ta": "உயிரினம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which nutrient gives us the most energy?",
+        "hi": "कौन सा पोषक तत्व हमें सबसे अधिक ऊर्जा देता है?",
+        "ta": "எந்த ஊட்டச்சத்து நமக்கு அதிக ஆற்றல் தருகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Proteins", "hi": "प्रोटीन", "ta": "புரதங்கள்" },
+        { "en": "Vitamins", "hi": "विटामिन", "ta": "வைட்டமின்கள்" },
+        { "en": "Carbohydrates", "hi": "कार्बोहाइड्रेट", "ta": "கார்போஹைட்ரேட்" },
+        { "en": "Minerals", "hi": "खनिज", "ta": "தாதுக்கள்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Cotton fibre is obtained from which part of the plant?",
+        "hi": "कपास का रेशा पौधे के किस भाग से प्राप्त होता है?",
+        "ta": "பருத்தி நார் தாவரத்தின் எந்த பகுதியிலிருந்து பெறப்படுகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Stem", "hi": "तना", "ta": "தண்டு" },
+        { "en": "Leaf", "hi": "पत्ती", "ta": "இலை" },
+        { "en": "Root", "hi": "जड़", "ta": "வேர்" },
+        { "en": "Fruit/Seed", "hi": "फल/बीज", "ta": "கனி/விதை" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "6-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a natural fibre?",
+        "hi": "निम्नलिखित में से कौन सा प्राकृतिक रेशा है?",
+        "ta": "பின்வருவனவற்றில் எது இயற்கை நார்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Nylon", "hi": "नायलॉन", "ta": "நைலான்" },
+        { "en": "Polyester", "hi": "पॉलिएस्टर", "ta": "பாலியெஸ்டர்" },
+        { "en": "Silk", "hi": "रेशम", "ta": "பட்டு" },
+        { "en": "Acrylic", "hi": "ऐक्रेलिक", "ta": "அக்ரிலிக்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "The process by which plants make their own food is called?",
+        "hi": "जिस प्रक्रिया द्वारा पौधे अपना भोजन बनाते हैं, उसे क्या कहते हैं?",
+        "ta": "தாவரங்கள் தங்கள் உணவை தாமே தயாரிக்கும் செயல்முறை என்ன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Respiration", "hi": "श्वसन", "ta": "சுவாசம்" },
+        { "en": "Photosynthesis", "hi": "प्रकाश संश्लेषण", "ta": "ஒளிச்சேர்க்கை" },
+        { "en": "Digestion", "hi": "पाचन", "ta": "செரிமானம்" },
+        { "en": "Excretion", "hi": "उत्सर्जन", "ta": "வெளியேற்றம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which gas do plants take in during photosynthesis?",
+        "hi": "प्रकाश संश्लेषण के दौरान पौधे कौन सी गैस ग्रहण करते हैं?",
+        "ta": "ஒளிச்சேர்க்கையின் போது தாவரங்கள் எந்த வாயுவை உட்கொள்கின்றன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Oxygen", "hi": "ऑक्सीजन", "ta": "ஆக்சிஜன்" },
+        { "en": "Nitrogen", "hi": "नाइट्रोजन", "ta": "நைட்ரஜன்" },
+        { "en": "Carbon dioxide", "hi": "कार्बन डाइऑक्साइड", "ta": "கார்பன் டை ஆக்சைடு" },
+        { "en": "Hydrogen", "hi": "हाइड्रोजन", "ta": "ஹைட்ரஜன்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which part of a cell controls its activities?",
+        "hi": "कोशिका का कौन सा भाग उसकी गतिविधियों को नियंत्रित करता है?",
+        "ta": "செல்லின் எந்த பகுதி அதன் செயல்பாடுகளை கட்டுப்படுத்துகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Cell wall", "hi": "कोशिका भित्ति", "ta": "செல் சுவர்" },
+        { "en": "Cell membrane", "hi": "कोशिका झिल्ली", "ta": "செல் சவ்வு" },
+        { "en": "Nucleus", "hi": "केंद्रक", "ta": "உட்கரு" },
+        { "en": "Cytoplasm", "hi": "कोशिका द्रव्य", "ta": "சைட்டோபிளாசம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following animals is a herbivore?",
+        "hi": "निम्नलिखित में से कौन सा जानवर शाकाहारी है?",
+        "ta": "பின்வருவனவற்றில் எது தாவர உண்ணி விலங்கு?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Lion", "hi": "शेर", "ta": "சிங்கம்" },
+        { "en": "Frog", "hi": "मेंढक", "ta": "தவளை" },
+        { "en": "Cow", "hi": "गाय", "ta": "பசு" },
+        { "en": "Eagle", "hi": "गरुड़", "ta": "கழுகு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the function of stomata in a leaf?",
+        "hi": "पत्ती में रंध्र का क्या कार्य है?",
+        "ta": "இலையில் இருக்கும் ரந்திரங்களின் செயல்பாடு என்ன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Absorb sunlight", "hi": "सूर्य प्रकाश अवशोषित करना", "ta": "சூரிய ஒளியை உறிஞ்சுவது" },
+        { "en": "Exchange of gases", "hi": "गैसों का आदान-प्रदान", "ta": "வாயுக்களை பரிமாறுவது" },
+        { "en": "Absorb water", "hi": "पानी अवशोषित करना", "ta": "நீரை உறிஞ்சுவது" },
+        { "en": "Store food", "hi": "भोजन संग्रहित करना", "ta": "உணவை சேமிப்பது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Silk is produced by which insect?",
+        "hi": "रेशम किस कीट द्वारा उत्पादित होता है?",
+        "ta": "பட்டு எந்த பூச்சியால் உற்பத்தி செய்யப்படுகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Honeybee", "hi": "मधुमक्खी", "ta": "தேனீ" },
+        { "en": "Silkworm", "hi": "रेशम कीट", "ta": "பட்டுப்பூச்சி" },
+        { "en": "Butterfly", "hi": "तितली", "ta": "பட்டாம்பூச்சி" },
+        { "en": "Mosquito", "hi": "मच्छर", "ta": "கொசு" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

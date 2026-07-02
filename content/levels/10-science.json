@@ -1,0 +1,176 @@
+{
+  "class": 10,
+  "subject": "science",
+  "questions": [
+    {
+      "id": "10-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "What type of reaction is: Zn + CuSO₄ → ZnSO₄ + Cu?",
+        "hi": "Zn + CuSO₄ → ZnSO₄ + Cu किस प्रकार की अभिक्रिया है?",
+        "ta": "Zn + CuSO₄ → ZnSO₄ + Cu எந்த வகையான வினை?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Combination reaction", "hi": "संयोजन अभिक्रिया", "ta": "சேர்வு வினை" },
+        { "en": "Decomposition reaction", "hi": "अपघटन अभिक्रिया", "ta": "சிதைவு வினை" },
+        { "en": "Displacement reaction", "hi": "विस्थापन अभिक्रिया", "ta": "இடப்பெயர்ச்சி வினை" },
+        { "en": "Double displacement reaction", "hi": "द्विविस्थापन अभिक्रिया", "ta": "இரட்டை இடப்பெயர்ச்சி வினை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The SI unit of electric current is:",
+        "hi": "विद्युत धारा की SI इकाई है:",
+        "ta": "மின்னோட்டத்தின் SI அலகு:"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Volt", "hi": "वोल्ट", "ta": "வோல்ட்" },
+        { "en": "Ohm", "hi": "ओह्म", "ta": "ஓம்" },
+        { "en": "Ampere", "hi": "एम्पीयर", "ta": "ஆம்பியர்" },
+        { "en": "Watt", "hi": "वाट", "ta": "வாட்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "The focal length of a concave mirror is 10 cm. Its radius of curvature is:",
+        "hi": "एक अवतल दर्पण की फोकस दूरी 10 cm है। इसकी वक्रता त्रिज्या है:",
+        "ta": "ஒரு குழி ஆடியின் குவிய தூரம் 10 cm. அதன் வளைவு ஆரம்:"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "5 cm", "hi": "5 cm", "ta": "5 cm" },
+        { "en": "10 cm", "hi": "10 cm", "ta": "10 cm" },
+        { "en": "20 cm", "hi": "20 cm", "ta": "20 cm" },
+        { "en": "40 cm", "hi": "40 cm", "ta": "40 cm" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which gas is produced when dilute HCl reacts with zinc?",
+        "hi": "जब तनु HCl जस्ते के साथ अभिक्रिया करता है तो कौन सी गैस उत्पन्न होती है?",
+        "ta": "நீர்த்த HCl துத்தநாகத்துடன் வினைபுரியும்போது எந்த வாயு உருவாகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Oxygen", "hi": "ऑक्सीजन", "ta": "ஆக்சிஜன்" },
+        { "en": "Chlorine", "hi": "क्लोरीन", "ta": "குளோரின்" },
+        { "en": "Hydrogen", "hi": "हाइड्रोजन", "ta": "ஹைட்ரஜன்" },
+        { "en": "Carbon dioxide", "hi": "कार्बन डाइऑक्साइड", "ta": "கார்பன் டை ஆக்சைடு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "According to Ohm's law, V = IR. If V is doubled and R remains the same, then I:",
+        "hi": "ओहम के नियम के अनुसार V = IR. यदि V दोगुना हो जाए और R समान रहे, तो I:",
+        "ta": "ஓமின் விதி V = IR படி, V இரட்டிப்பாகி R மாறாமல் இருந்தால் I:"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Remains the same", "hi": "समान रहता है", "ta": "மாறாமல் இருக்கும்" },
+        { "en": "Doubles", "hi": "दोगुना हो जाता है", "ta": "இரட்டிப்பாகும்" },
+        { "en": "Halves", "hi": "आधा हो जाता है", "ta": "பாதியாகும்" },
+        { "en": "Quadruples", "hi": "चार गुना हो जाता है", "ta": "நான்கு மடங்காகும்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The process by which green plants make their own food is called:",
+        "hi": "वह प्रक्रिया जिसके द्वारा हरे पौधे अपना भोजन बनाते हैं, कहलाती है:",
+        "ta": "பச்சை தாவரங்கள் தமது உணவை தாமே உற்பத்தி செய்யும் செயல்முறை:"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Respiration", "hi": "श्वसन", "ta": "சுவாசம்" },
+        { "en": "Photosynthesis", "hi": "प्रकाश संश्लेषण", "ta": "ஒளிச்சேர்க்கை" },
+        { "en": "Transpiration", "hi": "वाष्पोत्सर्जन", "ta": "நீராவிப்போக்கு" },
+        { "en": "Digestion", "hi": "पाचन", "ta": "செரிமானம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a non-renewable source of energy?",
+        "hi": "निम्नलिखित में से कौन सा ऊर्जा का अनवीकरणीय स्रोत है?",
+        "ta": "பின்வருவனவற்றில் எது மீளா ஆற்றல் மூலம்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Solar energy", "hi": "सौर ऊर्जा", "ta": "சூரிய ஆற்றல்" },
+        { "en": "Wind energy", "hi": "पवन ऊर्जा", "ta": "காற்று ஆற்றல்" },
+        { "en": "Coal", "hi": "कोयला", "ta": "நிலக்கரி" },
+        { "en": "Hydropower", "hi": "जलविद्युत", "ta": "நீர் மின்சாரம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "The pH of a neutral solution is:",
+        "hi": "उदासीन विलयन का pH होता है:",
+        "ta": "நடுநிலை கரைசலின் pH:"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Below 7", "hi": "7 से कम", "ta": "7 க்கு கீழே" },
+        { "en": "7", "hi": "7", "ta": "7" },
+        { "en": "Above 7", "hi": "7 से अधिक", "ta": "7 க்கு மேலே" },
+        { "en": "0", "hi": "0", "ta": "0" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The refraction of light occurs because:",
+        "hi": "प्रकाश का अपवर्तन होता है क्योंकि:",
+        "ta": "ஒளியின் விலகல் ஏன் நிகழ்கிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Light changes colour when entering a new medium", "hi": "प्रकाश नए माध्यम में प्रवेश करने पर रंग बदलता है", "ta": "புதிய ஊடகத்தில் நுழையும்போது ஒளி நிறம் மாறுகிறது" },
+        { "en": "Light changes speed when it passes from one medium to another", "hi": "प्रकाश एक माध्यम से दूसरे में जाने पर गति बदलती है", "ta": "ஒரு ஊடகத்திலிருந்து மற்றொன்றுக்கு செல்லும்போது ஒளியின் வேகம் மாறுகிறது" },
+        { "en": "Light bounces back from the surface", "hi": "प्रकाश सतह से परावर्तित होता है", "ta": "ஒளி மேற்பரப்பிலிருந்து மீண்டு வருகிறது" },
+        { "en": "Light is absorbed by the medium", "hi": "प्रकाश माध्यम द्वारा अवशोषित हो जाता है", "ta": "ஒளி ஊடகத்தால் உறிஞ்சப்படுகிறது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Mendel's law of segregation states that:",
+        "hi": "मेंडल का पृथक्करण का नियम कहता है कि:",
+        "ta": "மென்டலின் பிரிதல் விதி கூறுவது:"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "All offspring are identical to the parent", "hi": "सभी संतान माता-पिता के समान होती हैं", "ta": "அனைத்து சந்ததிகளும் பெற்றோருக்கு ஒத்தவை" },
+        { "en": "Alleles separate during gamete formation", "hi": "युग्मक निर्माण के दौरान युग्मविकल्पी अलग हो जाते हैं", "ta": "கேமட் உருவாகும்போது அலீல்கள் பிரிகின்றன" },
+        { "en": "Genes always blend together", "hi": "जीन हमेशा मिश्रित होते हैं", "ta": "மரபணுக்கள் எப்போதும் கலந்து விடும்" },
+        { "en": "Dominant traits always appear", "hi": "प्रभावी लक्षण हमेशा प्रकट होते हैं", "ta": "ஆதிக்கப் பண்புகள் எப்போதும் தோன்றும்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

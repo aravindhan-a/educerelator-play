@@ -1,0 +1,176 @@
+{
+  "class": 5,
+  "subject": "science",
+  "questions": [
+    {
+      "id": "5-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which organ pumps blood throughout the human body?",
+        "hi": "कौन सा अंग पूरे मानव शरीर में रक्त पंप करता है?",
+        "ta": "மனித உடலில் இரத்தத்தை செலுத்தும் உறுப்பு எது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Lungs", "hi": "फेफड़े", "ta": "நுரையீரல்" },
+        { "en": "Brain", "hi": "मस्तिष्क", "ta": "மூளை" },
+        { "en": "Heart", "hi": "हृदय", "ta": "இதயம்" },
+        { "en": "Liver", "hi": "यकृत", "ta": "கல்லீரல்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "5-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which system in the human body is responsible for digesting food?",
+        "hi": "मानव शरीर में कौन सा तंत्र भोजन पचाने के लिए जिम्मेदार है?",
+        "ta": "மனித உடலில் உணவை செரிக்கும் மண்டலம் எது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Nervous system", "hi": "तंत्रिका तंत्र", "ta": "நரம்பு மண்டலம்" },
+        { "en": "Digestive system", "hi": "पाचन तंत्र", "ta": "செரிமான மண்டலம்" },
+        { "en": "Skeletal system", "hi": "कंकाल तंत्र", "ta": "எலும்பு மண்டலம்" },
+        { "en": "Respiratory system", "hi": "श्वसन तंत्र", "ta": "சுவாச மண்டலம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "5-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a synthetic material?",
+        "hi": "निम्नलिखित में से कौन सी एक कृत्रिम सामग्री है?",
+        "ta": "கீழ்காணும் எது ஒரு செயற்கை பொருள்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Cotton", "hi": "कपास", "ta": "பருத்தி" },
+        { "en": "Wool", "hi": "ऊन", "ta": "கம்பளி" },
+        { "en": "Silk", "hi": "रेशम", "ta": "பட்டு" },
+        { "en": "Nylon", "hi": "नायलॉन", "ta": "நைலான்" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "5-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the function of the lungs in the human body?",
+        "hi": "मानव शरीर में फेफड़ों का क्या कार्य है?",
+        "ta": "மனித உடலில் நுரையீரலின் செயல்பாடு என்ன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "To pump blood", "hi": "रक्त पंप करना", "ta": "இரத்தத்தை செலுத்துவது" },
+        { "en": "To digest food", "hi": "भोजन पचाना", "ta": "உணவை செரிப்பது" },
+        { "en": "To exchange oxygen and carbon dioxide", "hi": "ऑक्सीजन और कार्बन डाइऑक्साइड का आदान-प्रदान करना", "ta": "ஆக்சிஜன் மற்றும் கார்பன் டை ஆக்சைட்டை பரிமாறுவது" },
+        { "en": "To filter blood", "hi": "रक्त को छानना", "ta": "இரத்தத்தை வடிகட்டுவது" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "5-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which planet is known as the Red Planet?",
+        "hi": "किस ग्रह को लाल ग्रह के नाम से जाना जाता है?",
+        "ta": "எந்த கோள் சிவப்பு கோள் என்று அழைக்கப்படுகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Venus", "hi": "शुक्र", "ta": "வெள்ளி" },
+        { "en": "Jupiter", "hi": "बृहस्पति", "ta": "வியாழன்" },
+        { "en": "Mars", "hi": "मंगल", "ta": "செவ்வாய்" },
+        { "en": "Saturn", "hi": "शनि", "ta": "சனி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "5-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which type of soil is best for growing crops?",
+        "hi": "फसलें उगाने के लिए कौन सी मिट्टी सबसे उपयुक्त है?",
+        "ta": "பயிர்கள் வளர்க்க எந்த வகை மண் சிறந்தது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Sandy soil", "hi": "रेतीली मिट्टी", "ta": "மணல் மண்" },
+        { "en": "Clayey soil", "hi": "चिकनी मिट्टी", "ta": "களிமண்" },
+        { "en": "Loamy soil", "hi": "दोमट मिट्टी", "ta": "வண்டல் மண்" },
+        { "en": "Gravel", "hi": "बजरी", "ta": "சரளை மண்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "5-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the role of decomposers in an ecosystem?",
+        "hi": "पारिस्थितिकी तंत्र में अपघटकों की क्या भूमिका है?",
+        "ta": "சுற்றுச்சூழல் மண்டலத்தில் சிதைவுண்ணிகளின் பங்கு என்ன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "They produce food from sunlight", "hi": "वे सूर्य के प्रकाश से भोजन उत्पन्न करते हैं", "ta": "சூரிய ஒளியிலிருந்து உணவை உற்பத்தி செய்கின்றன" },
+        { "en": "They eat other animals", "hi": "वे अन्य जानवरों को खाते हैं", "ta": "மற்ற விலங்குகளை உண்கின்றன" },
+        { "en": "They break down dead matter and return nutrients to soil", "hi": "वे मृत पदार्थ को तोड़ते हैं और पोषक तत्व मिट्टी में वापस करते हैं", "ta": "இறந்த பொருளை சிதைத்து ஊட்டச்சத்துக்களை மண்ணுக்கு திரும்ப கொடுக்கின்றன" },
+        { "en": "They control the climate", "hi": "वे जलवायु को नियंत्रित करते हैं", "ta": "காலநிலையை கட்டுப்படுத்துகின்றன" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "5-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which vitamin is produced by our skin when exposed to sunlight?",
+        "hi": "सूर्य के प्रकाश के संपर्क में आने पर हमारी त्वचा कौन सा विटामिन उत्पन्न करती है?",
+        "ta": "சூரிய ஒளி படும்போது நம் தோல் எந்த வைட்டமினை உற்பத்தி செய்கிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Vitamin A", "hi": "विटामिन A", "ta": "வைட்டமின் A" },
+        { "en": "Vitamin B", "hi": "विटामिन B", "ta": "வைட்டமின் B" },
+        { "en": "Vitamin C", "hi": "विटामिन C", "ta": "வைட்டமின் C" },
+        { "en": "Vitamin D", "hi": "विटामिन D", "ta": "வைட்டமின் D" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "5-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the process by which water changes from liquid to vapour called?",
+        "hi": "जल का द्रव से वाष्प में परिवर्तित होने की प्रक्रिया क्या कहलाती है?",
+        "ta": "நீர் திரவத்திலிருந்து ஆவியாக மாறும் செயல்முறை என்ன எனப்படும்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Condensation", "hi": "संघनन", "ta": "ஒடுக்கம்" },
+        { "en": "Evaporation", "hi": "वाष्पीकरण", "ta": "ஆவியாதல்" },
+        { "en": "Precipitation", "hi": "वर्षण", "ta": "மழைவீழ்ச்சி" },
+        { "en": "Infiltration", "hi": "अंत:स्यंदन", "ta": "நீர்உட்புகுதல்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "5-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a renewable source of energy?",
+        "hi": "निम्नलिखित में से कौन सा ऊर्जा का नवीकरणीय स्रोत है?",
+        "ta": "கீழ்காணும் எது மீளுருவாக்கக்கூடிய ஆற்றல் ஆதாரம்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Coal", "hi": "कोयला", "ta": "நிலக்கரி" },
+        { "en": "Petroleum", "hi": "पेट्रोलियम", "ta": "பெட்ரோலியம்" },
+        { "en": "Natural gas", "hi": "प्राकृतिक गैस", "ta": "இயற்கை வாயு" },
+        { "en": "Solar energy", "hi": "सौर ऊर्जा", "ta": "சூரிய ஆற்றல்" }
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

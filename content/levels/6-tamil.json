@@ -1,0 +1,176 @@
+{
+  "class": 6,
+  "subject": "tamil",
+  "questions": [
+    {
+      "id": "6-tamil-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "How many vowels (uyir ezhutthu) are there in Tamil?",
+        "hi": "तमिल में कितने स्वर (उयिर एड़ुत्तु) हैं?",
+        "ta": "தமிழில் எத்தனை உயிர் எழுத்துக்கள் உள்ளன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "10", "hi": "10", "ta": "10" },
+        { "en": "12", "hi": "12", "ta": "12" },
+        { "en": "16", "hi": "16", "ta": "16" },
+        { "en": "18", "hi": "18", "ta": "18" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-tamil-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "How many consonants (mei ezhutthu) are there in Tamil?",
+        "hi": "तमिल में कितने व्यंजन (मेई एड़ुत्तु) हैं?",
+        "ta": "தமிழில் எத்தனை மெய் எழுத்துக்கள் உள்ளன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "16", "hi": "16", "ta": "16" },
+        { "en": "18", "hi": "18", "ta": "18" },
+        { "en": "12", "hi": "12", "ta": "12" },
+        { "en": "20", "hi": "20", "ta": "20" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-tamil-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which is the first letter of the Tamil alphabet?",
+        "hi": "तमिल वर्णमाला का पहला अक्षर कौन सा है?",
+        "ta": "தமிழ் எழுத்துமாலையின் முதல் எழுத்து எது?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "இ (i)", "hi": "இ (i)", "ta": "இ" },
+        { "en": "அ (a)", "hi": "அ (a)", "ta": "அ" },
+        { "en": "உ (u)", "hi": "உ (u)", "ta": "உ" },
+        { "en": "ஆ (aa)", "hi": "ஆ (aa)", "ta": "ஆ" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-tamil-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does the Tamil word 'Vaanam' (வானம்) mean?",
+        "hi": "तमिल शब्द 'வானம்' का अर्थ क्या है?",
+        "ta": "'வானம்' என்பதன் பொருள் என்ன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Earth", "hi": "पृथ्वी", "ta": "பூமி" },
+        { "en": "Water", "hi": "जल", "ta": "நீர்" },
+        { "en": "Sky", "hi": "आकाश", "ta": "வானம்" },
+        { "en": "Mountain", "hi": "पहाड़", "ta": "மலை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-tamil-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Tamil grammar, 'peyar' (பெயர்) refers to?",
+        "hi": "तमिल व्याकरण में 'பெயர்' किसे कहते हैं?",
+        "ta": "தமிழ் இலக்கணத்தில் 'பெயர்' என்பது எதை குறிக்கும்?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Verb", "hi": "क्रिया", "ta": "வினைச்சொல்" },
+        { "en": "Noun", "hi": "संज्ञा", "ta": "பெயர்ச்சொல்" },
+        { "en": "Adjective", "hi": "विशेषण", "ta": "பெயரடை" },
+        { "en": "Adverb", "hi": "क्रिया विशेषण", "ta": "வினையடை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-tamil-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Tamil belongs to which language family?",
+        "hi": "तमिल भाषा किस भाषा परिवार से संबंधित है?",
+        "ta": "தமிழ் மொழி எந்த மொழிக் குடும்பத்தைச் சேர்ந்தது?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Indo-Aryan", "hi": "भारतीय-आर्य", "ta": "இந்தோ-ஆரியன்" },
+        { "en": "Sino-Tibetan", "hi": "चीनी-तिब्बती", "ta": "சீன-திபெத்திய" },
+        { "en": "Dravidian", "hi": "द्रविड़", "ta": "திராவிட" },
+        { "en": "Austronesian", "hi": "ऑस्ट्रोनेशियन", "ta": "ஆஸ்திரோனேசிய" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-tamil-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which Tamil pronoun means 'he' (third person masculine singular)?",
+        "hi": "'वह' (पुरुष, एकवचन, तृतीय पुरुष) के लिए तमिल सर्वनाम कौन सा है?",
+        "ta": "'அவன்' (மூன்றாம் ஆண்பால் ஒருமை) என்பதற்கான சொல் எது?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "அவள் (aval – she)", "hi": "அவள் (aval – वह, स्त्री)", "ta": "அவள்" },
+        { "en": "நான் (naan – I)", "hi": "நான் (naan – मैं)", "ta": "நான்" },
+        { "en": "அவன் (avan – he)", "hi": "அவன் (avan – वह, पुरुष)", "ta": "அவன்" },
+        { "en": "நீ (nee – you)", "hi": "நீ (nee – तुम)", "ta": "நீ" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-tamil-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does 'Paal' (பால்) mean in Tamil?",
+        "hi": "तमिल में 'பால்' का अर्थ क्या है?",
+        "ta": "தமிழில் 'பால்' என்பதன் பொருள் என்ன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Water", "hi": "पानी", "ta": "நீர்" },
+        { "en": "Milk", "hi": "दूध", "ta": "பால்" },
+        { "en": "Rice", "hi": "चावल", "ta": "அரிசி" },
+        { "en": "Fruit", "hi": "फल", "ta": "பழம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-tamil-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The letters க, ச, ட, த, ப, ற in Tamil are called?",
+        "hi": "तमिल में க, ச, ட, த, ப, ற अक्षरों को क्या कहते हैं?",
+        "ta": "தமிழில் க, ச, ட, த, ப, ற என்ற எழுத்துக்கள் என்று அழைக்கப்படுகின்றன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Idaiyinam (soft consonants)", "hi": "इडैयिनम (मृदु व्यंजन)", "ta": "இடையினம்" },
+        { "en": "Mellinam (nasal consonants)", "hi": "मेल्लिनम (नासिका व्यंजन)", "ta": "மெல்லினம்" },
+        { "en": "Vallinam (hard consonants)", "hi": "वल्लिनम (कठोर व्यंजन)", "ta": "வல்லினம்" },
+        { "en": "Uyirinam (vowel consonants)", "hi": "उयिरिनम (स्वर व्यंजन)", "ta": "உயிரினம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-tamil-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does 'Kathal' (காதல்) mean in Tamil?",
+        "hi": "तमिल में 'காதல்' का अर्थ क्या है?",
+        "ta": "தமிழில் 'காதல்' என்பதன் பொருள் என்ன?"
+      },
+      "visual": "🌺",
+      "choices": [
+        { "en": "Anger", "hi": "क्रोध", "ta": "கோபம்" },
+        { "en": "Sadness", "hi": "दुख", "ta": "சோகம்" },
+        { "en": "Love", "hi": "प्यार", "ta": "காதல்" },
+        { "en": "Fear", "hi": "डर", "ta": "பயம்" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

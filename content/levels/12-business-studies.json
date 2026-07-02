@@ -1,0 +1,176 @@
+{
+  "class": 12,
+  "subject": "business-studies",
+  "questions": [
+    {
+      "id": "12-business-studies-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "The marketing mix consists of how many 'P's?",
+        "hi": "मार्केटिंग मिश्रण में कितने 'P' होते हैं?",
+        "ta": "சந்தைப்படுத்தல் கலவையில் எத்தனை 'P' உள்ளன?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "2", "hi": "2", "ta": "2" },
+        { "en": "4", "hi": "4", "ta": "4" },
+        { "en": "6", "hi": "6", "ta": "6" },
+        { "en": "8", "hi": "8", "ta": "8" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-business-studies-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Financial management is primarily concerned with:",
+        "hi": "वित्तीय प्रबंधन मुख्य रूप से किससे संबंधित है?",
+        "ta": "நிதி மேலாண்மை முதன்மையாக எதனோடு தொடர்புடையது?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Recruitment of employees", "hi": "कर्मचारियों की भर्ती", "ta": "பணியாளர் ஆட்சேர்ப்பு" },
+        { "en": "Procurement and utilisation of funds", "hi": "धन की प्राप्ति और उपयोग", "ta": "நிதி திரட்டல் மற்றும் பயன்பாடு" },
+        { "en": "Product development", "hi": "उत्पाद विकास", "ta": "தயாரிப்பு மேம்பாடு" },
+        { "en": "Sales promotion", "hi": "बिक्री संवर्धन", "ta": "விற்பனை மேம்பாடு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-business-studies-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which function of management involves assigning duties to employees?",
+        "hi": "प्रबंधन का कौन-सा कार्य कर्मचारियों को कर्तव्य सौंपने से संबंधित है?",
+        "ta": "மேலாண்மையின் எந்த செயல்பாடு பணியாளர்களுக்கு கடமைகளை ஒதுக்குவதை உள்ளடக்கியது?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Planning", "hi": "नियोजन", "ta": "திட்டமிடல்" },
+        { "en": "Staffing", "hi": "कर्मचारी प्रबंधन", "ta": "பணியாளர் மேலாண்மை" },
+        { "en": "Organising", "hi": "संगठन", "ta": "ஒழுங்கமைத்தல்" },
+        { "en": "Controlling", "hi": "नियंत्रण", "ta": "கட்டுப்படுத்துதல்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-business-studies-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "SEBI stands for:",
+        "hi": "SEBI का पूर्ण रूप है:",
+        "ta": "SEBI என்றால்:"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Securities and Exchange Board of India", "hi": "भारतीय प्रतिभूति और विनिमय बोर्ड", "ta": "இந்திய பத்திரங்கள் மற்றும் பரிவர்த்தனை வாரியம்" },
+        { "en": "Stock Exchange Board of India", "hi": "भारतीय स्टॉक एक्सचेंज बोर्ड", "ta": "இந்திய பங்கு பரிமாற்ற வாரியம்" },
+        { "en": "Share Exchange Bureau of India", "hi": "भारतीय शेयर विनिमय ब्यूरो", "ta": "இந்திய பங்கு பரிமாற்ற அலுவலகம்" },
+        { "en": "Securities and Economy Board of India", "hi": "भारतीय प्रतिभूति और अर्थव्यवस्था बोर्ड", "ta": "இந்திய பத்திரங்கள் மற்றும் பொருளாதார வாரியம்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "12-business-studies-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Maslow's need hierarchy theory is related to:",
+        "hi": "मास्लो की आवश्यकता पदानुक्रम सिद्धांत किससे संबंधित है?",
+        "ta": "மாஸ்லோவின் தேவை படிநிலை கோட்பாடு எதனோடு தொடர்புடையது?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Financial planning", "hi": "वित्तीय नियोजन", "ta": "நிதி திட்டமிடல்" },
+        { "en": "Motivation", "hi": "अभिप्रेरणा", "ta": "உந்துதல்" },
+        { "en": "Marketing", "hi": "विपणन", "ta": "சந்தைப்படுத்தல்" },
+        { "en": "Controlling", "hi": "नियंत्रण", "ta": "கட்டுப்படுத்துதல்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-business-studies-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Consumer Protection Act was passed in:",
+        "hi": "उपभोक्ता संरक्षण अधिनियम कब पारित हुआ?",
+        "ta": "நுகர்வோர் பாதுகாப்பு சட்டம் எப்போது நிறைவேற்றப்பட்டது?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "1978", "hi": "1978", "ta": "1978" },
+        { "en": "1986", "hi": "1986", "ta": "1986" },
+        { "en": "1992", "hi": "1992", "ta": "1992" },
+        { "en": "2000", "hi": "2000", "ta": "2000" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-business-studies-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Working capital is calculated as:",
+        "hi": "कार्यशील पूँजी की गणना इस प्रकार की जाती है:",
+        "ta": "செயல்பாட்டு மூலதனம் எவ்வாறு கணக்கிடப்படுகிறது:"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Fixed Assets - Current Liabilities", "hi": "स्थायी संपत्ति - चालू देनदारियाँ", "ta": "நிலையான சொத்துக்கள் - நடப்பு பொறுப்புகள்" },
+        { "en": "Current Assets - Current Liabilities", "hi": "चालू संपत्ति - चालू देनदारियाँ", "ta": "நடப்பு சொத்துக்கள் - நடப்பு பொறுப்புகள்" },
+        { "en": "Total Assets - Total Liabilities", "hi": "कुल संपत्ति - कुल देनदारियाँ", "ta": "மொத்த சொத்துக்கள் - மொத்த பொறுப்புகள்" },
+        { "en": "Net Profit - Depreciation", "hi": "शुद्ध लाभ - मूल्यह्रास", "ta": "நிகர லாபம் - தேய்மானம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-business-studies-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a source of long-term finance?",
+        "hi": "निम्नलिखित में से कौन-सा दीर्घकालिक वित्त का स्रोत है?",
+        "ta": "பின்வருவனவற்றில் எது நீண்டகால நிதியின் ஆதாரம்?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Trade Credit", "hi": "व्यापार ऋण", "ta": "வர்த்தக கடன்" },
+        { "en": "Bank Overdraft", "hi": "बैंक ओवरड्राफ्ट", "ta": "வங்கி அதிக பற்று" },
+        { "en": "Debentures", "hi": "ऋणपत्र", "ta": "கடன் பத்திரங்கள்" },
+        { "en": "Commercial Paper", "hi": "वाणिज्यिक पत्र", "ta": "வணிக காகிதம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-business-studies-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Advertising is a form of:",
+        "hi": "विज्ञापन किसका एक रूप है?",
+        "ta": "விளம்பரம் எதன் ஒரு வடிவம்?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Personal selling", "hi": "व्यक्तिगत विक्रय", "ta": "தனிப்பட்ட விற்பனை" },
+        { "en": "Non-personal paid communication", "hi": "गैर-व्यक्तिगत भुगतान संचार", "ta": "தனிப்பட்டதல்லாத கட்டண தொடர்பு" },
+        { "en": "Sales promotion", "hi": "बिक्री संवर्धन", "ta": "விற்பனை மேம்பாடு" },
+        { "en": "Public relations", "hi": "जनसंपर्क", "ta": "பொது உறவுகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-business-studies-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "In leadership, Laissez-faire style means:",
+        "hi": "नेतृत्व में, लेसेज-फेयर शैली का अर्थ है:",
+        "ta": "தலைமையில், லைசெஸ்-ஃபேர் பாணி என்றால்:"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Leader makes all decisions alone", "hi": "नेता अकेले सभी निर्णय लेता है", "ta": "தலைவர் மட்டுமே எல்லா முடிவுகளையும் எடுக்கிறார்" },
+        { "en": "Decisions are made by group consensus", "hi": "निर्णय समूह सहमति द्वारा लिए जाते हैं", "ta": "முடிவுகள் குழு ஒருமித்த கருத்தால் எடுக்கப்படுகின்றன" },
+        { "en": "Complete freedom is given to subordinates", "hi": "अधीनस्थों को पूर्ण स्वतंत्रता दी जाती है", "ta": "கீழ்நிலை பணியாளர்களுக்கு முழு சுதந்திரம் வழங்கப்படுகிறது" },
+        { "en": "Leader consults experts before deciding", "hi": "नेता निर्णय लेने से पहले विशेषज्ञों से परामर्श करता है", "ta": "முடிவு எடுப்பதற்கு முன் தலைவர் நிபுணர்களை ஆலோசிக்கிறார்" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

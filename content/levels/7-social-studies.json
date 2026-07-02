@@ -1,0 +1,176 @@
+{
+  "class": 7,
+  "subject": "social-studies",
+  "questions": [
+    {
+      "id": "7-social-studies-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Who founded the Mughal Empire in India?",
+        "hi": "भारत में मुगल साम्राज्य की स्थापना किसने की?",
+        "ta": "இந்தியாவில் முகலாய சாம்ராஜ்யத்தை யார் நிறுவினார்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Akbar", "hi": "अकबर", "ta": "அக்பர்" },
+        { "en": "Babur", "hi": "बाबर", "ta": "பாபர்" },
+        { "en": "Humayun", "hi": "हुमायूँ", "ta": "ஹுமாயூன்" },
+        { "en": "Aurangzeb", "hi": "औरंगज़ेब", "ta": "அவுரங்கசீப்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-social-studies-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which type of weather is described by high temperature and low rainfall?",
+        "hi": "उच्च तापमान और कम वर्षा किस प्रकार के मौसम का वर्णन करती है?",
+        "ta": "அதிக வெப்பநிலை மற்றும் குறைந்த மழை எந்த வகை வானிலையை விவரிக்கிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Tropical rainforest", "hi": "उष्णकटिबंधीय वर्षा वन", "ta": "வெப்பமண்டல மழைக்காடு" },
+        { "en": "Desert", "hi": "मरुस्थल", "ta": "பாலைவனம்" },
+        { "en": "Tundra", "hi": "टुंड्रा", "ta": "டுண்ட்ரா" },
+        { "en": "Temperate", "hi": "समशीतोष्ण", "ta": "மிதவெப்ப மண்டலம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-social-studies-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "The first Battle of Panipat (1526) was fought between?",
+        "hi": "पानीपत की पहली लड़ाई (1526) किनके बीच लड़ी गई थी?",
+        "ta": "பாணிப்பட்டின் முதல் போர் (1526) யாருக்கிடையே நடந்தது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Akbar and Hemu", "hi": "अकबर और हेमू", "ta": "அக்பர் மற்றும் ஹேமு" },
+        { "en": "Babur and Ibrahim Lodi", "hi": "बाबर और इब्राहिम लोदी", "ta": "பாபர் மற்றும் இப்ராஹிம் லோடி" },
+        { "en": "Humayun and Sher Shah", "hi": "हुमायूँ और शेर शाह", "ta": "ஹுமாயூன் மற்றும் ஷேர் ஷா" },
+        { "en": "Aurangzeb and Shivaji", "hi": "औरंगज़ेब और शिवाजी", "ta": "அவுரங்கசீப் மற்றும் சிவாஜி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-social-studies-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which instrument is used to measure atmospheric pressure?",
+        "hi": "वायुमंडलीय दबाव मापने के लिए कौन सा उपकरण उपयोग किया जाता है?",
+        "ta": "வளிமண்டல அழுத்தத்தை அளவிட எந்த கருவி பயன்படுகிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Thermometer", "hi": "थर्मामीटर", "ta": "வெப்பமானி" },
+        { "en": "Barometer", "hi": "बैरोमीटर", "ta": "பாரோமீட்டர்" },
+        { "en": "Anemometer", "hi": "एनीमोमीटर", "ta": "காற்று வேக மீட்டர்" },
+        { "en": "Rain gauge", "hi": "वर्षा मापी", "ta": "மழை அளவீட்டு கருவி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-social-studies-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Taj Mahal was built by which Mughal emperor?",
+        "hi": "ताजमहल किस मुगल सम्राट द्वारा बनवाया गया था?",
+        "ta": "தாஜ்மஹாலை எந்த முகலாய பேரரசர் கட்டினார்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Akbar", "hi": "अकबर", "ta": "அக்பர்" },
+        { "en": "Babur", "hi": "बाबर", "ta": "பாபர்" },
+        { "en": "Shah Jahan", "hi": "शाहजहाँ", "ta": "ஷாஜஹான்" },
+        { "en": "Aurangzeb", "hi": "औरंगज़ेब", "ta": "அவுரங்கசீப்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-social-studies-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Tropic of Cancer passes through which Indian state?",
+        "hi": "कर्क रेखा किस भारतीय राज्य से होकर गुज़रती है?",
+        "ta": "கடகரேகை எந்த இந்திய மாநிலத்தின் வழியாக செல்கிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Tamil Nadu", "hi": "तमिलनाडु", "ta": "தமிழ்நாடு" },
+        { "en": "Maharashtra", "hi": "महाराष्ट्र", "ta": "மகாராஷ்டிரா" },
+        { "en": "Gujarat", "hi": "गुजरात", "ta": "குஜராத்" },
+        { "en": "Kerala", "hi": "केरल", "ta": "கேரளா" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-social-studies-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which is the world's largest desert?",
+        "hi": "विश्व का सबसे बड़ा रेगिस्तान कौन सा है?",
+        "ta": "உலகின் மிகப்பெரிய பாலைவனம் எது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Arabian Desert", "hi": "अरब मरुस्थल", "ta": "அரேபிய பாலைவனம்" },
+        { "en": "Thar Desert", "hi": "थार रेगिस्तान", "ta": "தார் பாலைவனம்" },
+        { "en": "Gobi Desert", "hi": "गोबी रेगिस्तान", "ta": "கோபி பாலைவனம்" },
+        { "en": "Sahara Desert", "hi": "सहारा रेगिस्तान", "ta": "சஹாரா பாலைவனம்" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "7-social-studies-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Indian Constitution came into effect on?",
+        "hi": "भारतीय संविधान कब लागू हुआ?",
+        "ta": "இந்திய அரசியலமைப்பு எப்போது நடைமுறைக்கு வந்தது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "15 August 1947", "hi": "15 अगस्त 1947", "ta": "15 ஆகஸ்ட் 1947" },
+        { "en": "26 November 1949", "hi": "26 नवंबर 1949", "ta": "26 நவம்பர் 1949" },
+        { "en": "26 January 1950", "hi": "26 जनवरी 1950", "ta": "26 ஜனவரி 1950" },
+        { "en": "2 October 1948", "hi": "2 अक्टूबर 1948", "ta": "2 அக்டோபர் 1948" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-social-studies-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a non-renewable resource?",
+        "hi": "निम्नलिखित में से कौन सा अनवीकरणीय संसाधन है?",
+        "ta": "பின்வருவனவற்றில் எது புதுப்பிக்க முடியாத வளம்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Wind energy", "hi": "पवन ऊर्जा", "ta": "காற்று ஆற்றல்" },
+        { "en": "Solar energy", "hi": "सौर ऊर्जा", "ta": "சூரிய ஆற்றல்" },
+        { "en": "Coal", "hi": "कोयला", "ta": "நிலக்கரி" },
+        { "en": "Water", "hi": "जल", "ta": "நீர்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-social-studies-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "In which year did the Sepoy Mutiny (First War of Independence) take place?",
+        "hi": "सिपाही विद्रोह (प्रथम स्वतंत्रता संग्राम) किस वर्ष हुआ था?",
+        "ta": "சிப்பாய் கலகம் (முதல் சுதந்திரப் போர்) எந்த ஆண்டில் நடந்தது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "1857", "hi": "1857", "ta": "1857" },
+        { "en": "1905", "hi": "1905", "ta": "1905" },
+        { "en": "1942", "hi": "1942", "ta": "1942" },
+        { "en": "1947", "hi": "1947", "ta": "1947" }
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

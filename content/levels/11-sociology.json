@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "sociology",
+  "questions": [
+    {
+      "id": "11-sociology-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Sociology is the study of:",
+        "hi": "समाजशास्त्र किसका अध्ययन है?",
+        "ta": "சமூகவியல் எதன் ஆய்வு?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Individual psychology", "hi": "व्यक्तिगत मनोविज्ञान", "ta": "தனிநபர் உளவியல்" },
+        { "en": "Society and social relationships", "hi": "समाज और सामाजिक संबंध", "ta": "சமூகம் மற்றும் சமூக உறவுகள்" },
+        { "en": "Political systems", "hi": "राजनीतिक प्रणालियाँ", "ta": "அரசியல் அமைப்புகள்" },
+        { "en": "Economic theories", "hi": "आर्थिक सिद्धांत", "ta": "பொருளாதார கோட்பாடுகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-sociology-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The term 'Sociology' was coined by:",
+        "hi": "'समाजशास्त्र' शब्द किसने बनाया था?",
+        "ta": "'சமூகவியல்' என்ற சொல்லை உருவாக்கியவர் யார்?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Max Weber", "hi": "मैक्स वेबर", "ta": "மாக்ஸ் வெபர்" },
+        { "en": "Emile Durkheim", "hi": "एमिल दुर्खीम", "ta": "எமில் டர்க்கைம்" },
+        { "en": "Auguste Comte", "hi": "ऑगस्ट कॉम्टे", "ta": "ஆகஸ்ட் கொம்டே" },
+        { "en": "Karl Marx", "hi": "कार्ल मार्क्स", "ta": "கார்ல் மார்க்ஸ்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-sociology-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "The process by which a person learns the norms and values of their society is called:",
+        "hi": "वह प्रक्रिया जिसके द्वारा एक व्यक्ति अपने समाज के मानदंड और मूल्यों को सीखता है, कहलाती है:",
+        "ta": "ஒரு நபர் தனது சமூகத்தின் விதிமுறைகளையும் மதிப்புகளையும் கற்றுக்கொள்ளும் செயல்முறை:"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Socialization", "hi": "समाजीकरण", "ta": "சமூகமயமாக்கல்" },
+        { "en": "Stratification", "hi": "स्तरीकरण", "ta": "அடுக்கமைவு" },
+        { "en": "Modernization", "hi": "आधुनिकीकरण", "ta": "நவீனமயமாக்கல்" },
+        { "en": "Urbanization", "hi": "शहरीकरण", "ta": "நகரமயமாக்கல்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-sociology-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "A nuclear family consists of:",
+        "hi": "एकल परिवार में शामिल होते हैं:",
+        "ta": "அணு குடும்பம் என்பது:"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Parents, children and grandparents", "hi": "माता-पिता, बच्चे और दादा-दादी", "ta": "பெற்றோர், குழந்தைகள் மற்றும் தாத்தா-பாட்டி" },
+        { "en": "Only parents", "hi": "केवल माता-पिता", "ta": "பெற்றோர் மட்டும்" },
+        { "en": "Parents and their children", "hi": "माता-पिता और उनके बच्चे", "ta": "பெற்றோர் மற்றும் அவர்களது குழந்தைகள்" },
+        { "en": "Extended kin group", "hi": "विस्तारित कुटुंब समूह", "ta": "நீட்டிக்கப்பட்ட உறவினர் குழு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-sociology-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Caste system is an example of which type of social stratification?",
+        "hi": "जाति व्यवस्था किस प्रकार के सामाजिक स्तरीकरण का उदाहरण है?",
+        "ta": "சாதி முறை எந்த வகையான சமூக அடுக்கமைவுக்கு உதாரணம்?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Open system", "hi": "खुली व्यवस्था", "ta": "திறந்த அமைப்பு" },
+        { "en": "Closed system", "hi": "बंद व्यवस्था", "ta": "மூடிய அமைப்பு" },
+        { "en": "Mixed system", "hi": "मिश्रित व्यवस्था", "ta": "கலப்பு அமைப்பு" },
+        { "en": "Meritocratic system", "hi": "योग्यता-आधारित व्यवस्था", "ta": "திறமை அடிப்படை அமைப்பு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-sociology-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Culture refers to:",
+        "hi": "संस्कृति का अर्थ है:",
+        "ta": "கலாச்சாரம் என்பது:"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Art and music only", "hi": "केवल कला और संगीत", "ta": "கலை மற்றும் இசை மட்டும்" },
+        { "en": "Shared values, beliefs, norms and practices of a society", "hi": "समाज के साझा मूल्य, विश्वास, मानदंड और व्यवहार", "ta": "சமூகத்தின் பகிரப்பட்ட மதிப்புகள், நம்பிக்கைகள், விதிமுறைகள் மற்றும் நடைமுறைகள்" },
+        { "en": "Government laws and policies", "hi": "सरकारी कानून और नीतियाँ", "ta": "அரசாங்க சட்டங்கள் மற்றும் கொள்கைகள்" },
+        { "en": "Economic production methods", "hi": "आर्थिक उत्पादन विधियाँ", "ta": "பொருளாதார உற்பத்தி முறைகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-sociology-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sociologist introduced the concept of 'Social Fact'?",
+        "hi": "'सामाजिक तथ्य' की अवधारणा किस समाजशास्त्री ने प्रस्तुत की?",
+        "ta": "'சமூக உண்மை' என்ற கருத்தை எந்த சமூகவியலாளர் அறிமுகப்படுத்தினார்?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Max Weber", "hi": "मैक्स वेबर", "ta": "மாக்ஸ் வெபர்" },
+        { "en": "Karl Marx", "hi": "कार्ल मार्क्स", "ta": "கார்ல் மார்க்ஸ்" },
+        { "en": "Emile Durkheim", "hi": "एमिल दुर्खीम", "ta": "எமில் டர்க்கைம்" },
+        { "en": "Herbert Spencer", "hi": "हर्बर्ट स्पेंसर", "ta": "ஹெர்பர்ட் ஸ்பென்சர்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-sociology-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Primary socialization takes place mainly in the:",
+        "hi": "प्राथमिक समाजीकरण मुख्य रूप से कहाँ होता है?",
+        "ta": "முதன்மை சமூகமயமாக்கல் முக்கியமாக எங்கு நடைபெறுகிறது?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "School", "hi": "विद्यालय", "ta": "பள்ளி" },
+        { "en": "Family", "hi": "परिवार", "ta": "குடும்பம்" },
+        { "en": "Workplace", "hi": "कार्यस्थल", "ta": "பணியிடம்" },
+        { "en": "Religious institutions", "hi": "धार्मिक संस्थाएँ", "ta": "மதசார்பு நிறுவனங்கள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-sociology-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which Indian social reformer worked against sati practice?",
+        "hi": "किस भारतीय समाज सुधारक ने सती प्रथा के विरुद्ध कार्य किया?",
+        "ta": "எந்த இந்திய சமூக சீர்திருத்தவாதி சதி வழக்கத்திற்கு எதிராக பணியாற்றினார்?"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Dayanand Saraswati", "hi": "दयानंद सरस्वती", "ta": "தயானந்த சரஸ்வதி" },
+        { "en": "Ram Mohan Roy", "hi": "राम मोहन राय", "ta": "ராம் மோகன் ராய்" },
+        { "en": "Swami Vivekananda", "hi": "स्वामी विवेकानंद", "ta": "சுவாமி விவேகானந்தா" },
+        { "en": "B. R. Ambedkar", "hi": "बी. आर. अंबेडकर", "ta": "பி. ஆர். அம்பேத்கர்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-sociology-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Social norms are:",
+        "hi": "सामाजिक मानदंड हैं:",
+        "ta": "சமூக விதிமுறைகள் என்பவை:"
+      },
+      "visual": "👥",
+      "choices": [
+        { "en": "Written laws enforced by the government", "hi": "सरकार द्वारा लागू किए गए लिखित कानून", "ta": "அரசாங்கத்தால் செயல்படுத்தப்படும் எழுதப்பட்ட சட்டங்கள்" },
+        { "en": "Unwritten rules that guide social behaviour", "hi": "अलिखित नियम जो सामाजिक व्यवहार को मार्गदर्शन करते हैं", "ta": "சமூக நடத்தையை வழிகாட்டும் எழுதப்படாத விதிகள்" },
+        { "en": "Religious commandments", "hi": "धार्मिक आदेश", "ta": "மத கட்டளைகள்" },
+        { "en": "Economic regulations", "hi": "आर्थिक नियम", "ta": "பொருளாதார விதிமுறைகள்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

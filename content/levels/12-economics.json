@@ -1,0 +1,176 @@
+{
+  "class": 12,
+  "subject": "economics",
+  "questions": [
+    {
+      "id": "12-economics-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Macroeconomics is concerned with:",
+        "hi": "समष्टि अर्थशास्त्र किससे संबंधित है?",
+        "ta": "மேவு பொருளியல் எதனோடு தொடர்புடையது?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Behaviour of individual firms", "hi": "व्यक्तिगत फर्मों का व्यवहार", "ta": "தனிப்பட்ட நிறுவனங்களின் நடவடிக்கை" },
+        { "en": "The economy as a whole, including GDP and inflation", "hi": "जीडीपी और मुद्रास्फीति सहित समग्र अर्थव्यवस्था", "ta": "GDP மற்றும் பணவீக்கம் உட்பட ஒட்டுமொத்த பொருளாதாரம்" },
+        { "en": "Individual consumer choices", "hi": "व्यक्तिगत उपभोक्ता विकल्प", "ta": "தனிப்பட்ட நுகர்வோர் தேர்வுகள்" },
+        { "en": "Pricing of specific goods", "hi": "विशिष्ट वस्तुओं का मूल्य निर्धारण", "ta": "குறிப்பிட்ட பொருட்களின் விலை நிர்ணயம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-economics-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Gross Domestic Product (GDP) measures:",
+        "hi": "सकल घरेलू उत्पाद (GDP) किसे मापता है?",
+        "ta": "மொத்த உள்நாட்டு உற்பத்தி (GDP) எதை அளக்கிறது?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Total exports of a country", "hi": "एक देश का कुल निर्यात", "ta": "ஒரு நாட்டின் மொத்த ஏற்றுமதி" },
+        { "en": "Total value of goods and services produced in a country", "hi": "एक देश में उत्पादित वस्तुओं और सेवाओं का कुल मूल्य", "ta": "ஒரு நாட்டில் உற்பத்தி செய்யப்படும் பொருட்கள் மற்றும் சேவைகளின் மொத்த மதிப்பு" },
+        { "en": "Population growth rate", "hi": "जनसंख्या वृद्धि दर", "ta": "மக்கள்தொகை வளர்ச்சி விகிதம்" },
+        { "en": "Government tax revenue", "hi": "सरकारी कर राजस्व", "ta": "அரசு வரி வருவாய்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-economics-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Green Revolution in India was primarily associated with:",
+        "hi": "भारत में हरित क्रांति मुख्यतः किससे संबंधित थी?",
+        "ta": "இந்தியாவில் பசுமை புரட்சி முதன்மையாக எதனோடு தொடர்புடையது?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Industrial growth", "hi": "औद्योगिक विकास", "ta": "தொழில்துறை வளர்ச்சி" },
+        { "en": "Increased agricultural production using HYV seeds", "hi": "उच्च उपज वाले बीजों का उपयोग करके कृषि उत्पादन में वृद्धि", "ta": "அதிக மகசூல் தரும் விதைகளை பயன்படுத்தி விவசாய உற்பத்தி அதிகரிப்பு" },
+        { "en": "Forest conservation", "hi": "वन संरक्षण", "ta": "வனப் பாதுகாப்பு" },
+        { "en": "Urban infrastructure development", "hi": "शहरी बुनियादी ढाँचे का विकास", "ta": "நகர உள்கட்டமைப்பு மேம்பாடு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-economics-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Inflation is defined as:",
+        "hi": "मुद्रास्फीति को परिभाषित किया जाता है:",
+        "ta": "பணவீக்கம் என்பது:"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Decrease in money supply", "hi": "मुद्रा आपूर्ति में कमी", "ta": "பணப் பரிவர்த்தனை குறைவு" },
+        { "en": "Sustained rise in the general price level", "hi": "सामान्य मूल्य स्तर में निरंतर वृद्धि", "ta": "பொது விலை மட்டத்தில் தொடர்ந்த உயர்வு" },
+        { "en": "Increase in exports", "hi": "निर्यात में वृद्धि", "ta": "ஏற்றுமதி அதிகரிப்பு" },
+        { "en": "Fall in interest rates", "hi": "ब्याज दरों में गिरावट", "ta": "வட்டி விகிதங்கள் வீழ்ச்சி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-economics-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sector of the Indian economy employs the largest number of people?",
+        "hi": "भारतीय अर्थव्यवस्था का कौन सा क्षेत्र सबसे अधिक लोगों को रोजगार देता है?",
+        "ta": "இந்திய பொருளாதாரத்தின் எந்த துறை அதிக அளவிலான மக்களுக்கு வேலை வழங்குகிறது?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Industrial sector", "hi": "औद्योगिक क्षेत्र", "ta": "தொழில்துறை" },
+        { "en": "Services sector", "hi": "सेवा क्षेत्र", "ta": "சேவைத் துறை" },
+        { "en": "Agricultural sector", "hi": "कृषि क्षेत्र", "ta": "விவசாயத் துறை" },
+        { "en": "Technology sector", "hi": "प्रौद्योगिकी क्षेत्र", "ta": "தொழில்நுட்பத் துறை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-economics-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Aggregate demand is the total demand for goods and services in an economy at a given:",
+        "hi": "समग्र मांग किसी अर्थव्यवस्था में किसी दिए गए ____ पर वस्तुओं और सेवाओं की कुल मांग है:",
+        "ta": "ஒட்டுமொத்த தேவை என்பது ஒரு குறிப்பிட்ட ____ இல் ஒரு பொருளாதாரத்தில் பொருட்கள் மற்றும் சேவைகளுக்கான மொத்த தேவை:"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Level of taxation", "hi": "कराधान के स्तर पर", "ta": "வரிவிதிப்பு நிலை" },
+        { "en": "Price level", "hi": "मूल्य स्तर पर", "ta": "விலை நிலை" },
+        { "en": "Level of employment", "hi": "रोजगार के स्तर पर", "ta": "வேலைவாய்ப்பு நிலை" },
+        { "en": "Exchange rate", "hi": "विनिमय दर पर", "ta": "மாற்று விகிதம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-economics-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Reserve Bank of India (RBI) is responsible for:",
+        "hi": "भारतीय रिजर्व बैंक (RBI) किसके लिए जिम्मेदार है?",
+        "ta": "இந்திய ரிசர்வ் வங்கி (RBI) எதற்கு பொறுப்பாகும்?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Manufacturing goods", "hi": "वस्तुओं का निर्माण", "ta": "பொருட்கள் உற்பத்தி" },
+        { "en": "Monetary policy and currency issuance", "hi": "मौद्रिक नीति और मुद्रा जारी करना", "ta": "நாணய கொள்கை மற்றும் நாணய வெளியீடு" },
+        { "en": "Defence procurement", "hi": "रक्षा खरीद", "ta": "பாதுகாப்பு கொள்முதல்" },
+        { "en": "Agriculture subsidies", "hi": "कृषि सब्सिडी", "ta": "விவசாய மானியங்கள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-economics-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which five-year plan in India focused on self-reliance and growth?",
+        "hi": "भारत में कौन सी पंचवर्षीय योजना आत्मनिर्भरता और विकास पर केंद्रित थी?",
+        "ta": "இந்தியாவில் எந்த ஐந்தாண்டு திட்டம் சுயசார்பு மற்றும் வளர்ச்சியை மையமாகக் கொண்டிருந்தது?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "First Five-Year Plan", "hi": "प्रथम पंचवर्षीय योजना", "ta": "முதல் ஐந்தாண்டு திட்டம்" },
+        { "en": "Third Five-Year Plan", "hi": "तृतीय पंचवर्षीय योजना", "ta": "மூன்றாவது ஐந்தாண்டு திட்டம்" },
+        { "en": "Fourth Five-Year Plan", "hi": "चतुर्थ पंचवर्षीय योजना", "ta": "நான்காவது ஐந்தாண்டு திட்டம்" },
+        { "en": "Fifth Five-Year Plan", "hi": "पंचम पंचवर्षीय योजना", "ta": "ஐந்தாவது ஐந்தாண்டு திட்டம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-economics-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The multiplier effect in economics refers to:",
+        "hi": "अर्थशास्त्र में गुणक प्रभाव का तात्पर्य है:",
+        "ta": "பொருளியலில் பெருக்கி விளைவு என்பது:"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "A decrease in investment leading to lower income", "hi": "निवेश में कमी जिससे आय कम होती है", "ta": "முதலீடு குறைந்து வருமானம் குறைவது" },
+        { "en": "How an initial spending change leads to a larger change in income", "hi": "कैसे प्रारंभिक व्यय परिवर्तन आय में बड़े परिवर्तन की ओर ले जाता है", "ta": "ஆரம்ப செலவின மாற்றம் வருமானத்தில் பெரிய மாற்றத்திற்கு எப்படி வழிவகுக்கிறது" },
+        { "en": "Proportional tax increase", "hi": "आनुपातिक कर वृद्धि", "ta": "விகிதாசார வரி உயர்வு" },
+        { "en": "Equal distribution of income", "hi": "आय का समान वितरण", "ta": "வருமானத்தின் சம பகிர்வு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-economics-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is NOT a source of public revenue in India?",
+        "hi": "निम्नलिखित में से कौन भारत में सार्वजनिक राजस्व का स्रोत नहीं है?",
+        "ta": "பின்வருவனவற்றில் எது இந்தியாவில் பொது வருவாயின் மூலம் அல்ல?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Taxes", "hi": "कर", "ta": "வரிகள்" },
+        { "en": "Fees and fines", "hi": "शुल्क और जुर्माना", "ta": "கட்டணங்கள் மற்றும் அபராதங்கள்" },
+        { "en": "Public borrowing", "hi": "सार्वजनिक ऋण", "ta": "பொது கடன்வாங்கல்" },
+        { "en": "Household savings", "hi": "घरेलू बचत", "ta": "குடும்ப சேமிப்பு" }
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

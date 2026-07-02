@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "psychology",
+  "questions": [
+    {
+      "id": "11-psychology-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Psychology is defined as the scientific study of:",
+        "hi": "मनोविज्ञान को किसके वैज्ञानिक अध्ययन के रूप में परिभाषित किया जाता है?",
+        "ta": "உளவியல் எதன் அறிவியல் ஆய்வாக வரையறுக்கப்படுகிறது?"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "The brain and nervous system", "hi": "मस्तिष्क और तंत्रिका तंत्र", "ta": "மூளை மற்றும் நரம்பு மண்டலம்" },
+        { "en": "Behaviour and mental processes", "hi": "व्यवहार और मानसिक प्रक्रियाएँ", "ta": "நடத்தை மற்றும் மனச் செயல்முறைகள்" },
+        { "en": "Society and culture", "hi": "समाज और संस्कृति", "ta": "சமூகம் மற்றும் கலாச்சாரம்" },
+        { "en": "Diseases and disorders", "hi": "रोग और विकार", "ta": "நோய்கள் மற்றும் கோளாறுகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-psychology-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Who is considered the father of modern psychology?",
+        "hi": "आधुनिक मनोविज्ञान का जनक किसे माना जाता है?",
+        "ta": "நவீன உளவியலின் தந்தை யார் என்று கருதப்படுகிறது?"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "Sigmund Freud", "hi": "सिगमंड फ्रायड", "ta": "சிக்மண்ட் ஃப்ராய்டு" },
+        { "en": "Wilhelm Wundt", "hi": "विल्हेम वुंड", "ta": "வில்ஹெல்ம் வுண்ட்" },
+        { "en": "William James", "hi": "विलियम जेम्स", "ta": "வில்லியம் ஜேம்ஸ்" },
+        { "en": "John B. Watson", "hi": "जॉन बी. वाटसन", "ta": "ஜான் பி. வாட்சன்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-psychology-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Classical conditioning is associated with which psychologist?",
+        "hi": "शास्त्रीय अनुबंधन किस मनोवैज्ञानिक से जुड़ा है?",
+        "ta": "பாரம்பரிய சீரமைப்பு எந்த உளவியலாளரோடு தொடர்புடையது?"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "B.F. Skinner", "hi": "बी.एफ. स्किनर", "ta": "பி.எஃப். ஸ்கின்னர்" },
+        { "en": "Ivan Pavlov", "hi": "इवान पावलोव", "ta": "இவான் பாவ்லோவ்" },
+        { "en": "Sigmund Freud", "hi": "सिगमंड फ्रायड", "ta": "சிக்மண்ட் ஃப்ராய்டு" },
+        { "en": "Abraham Maslow", "hi": "अब्राहम मास्लो", "ta": "ஆபிரகாம் மாஸ்லோ" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-psychology-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Maslow's Hierarchy of Needs has how many levels?",
+        "hi": "मास्लो की आवश्यकताओं की पदानुक्रम में कितने स्तर हैं?",
+        "ta": "மாஸ்லோவின் தேவை படிநிலை எத்தனை மட்டங்களை கொண்டுள்ளது?"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "3", "hi": "3", "ta": "3" },
+        { "en": "4", "hi": "4", "ta": "4" },
+        { "en": "5", "hi": "5", "ta": "5" },
+        { "en": "6", "hi": "6", "ta": "6" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-psychology-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Sensation refers to the process of:",
+        "hi": "संवेदना किस प्रक्रिया को संदर्भित करती है?",
+        "ta": "உணர்வு எந்த செயல்முறையை குறிக்கிறது?"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "Interpreting stimuli", "hi": "उद्दीपनों की व्याख्या करना", "ta": "தூண்டுதல்களை விளக்குவது" },
+        { "en": "Receiving raw information from sense organs", "hi": "ज्ञानेंद्रियों से कच्ची जानकारी प्राप्त करना", "ta": "உணர்வு உறுப்புகளிலிருந்து மூல தகவல்களைப் பெறுவது" },
+        { "en": "Storing information in memory", "hi": "स्मृति में जानकारी संग्रहित करना", "ta": "நினைவகத்தில் தகவல்களை சேமிப்பது" },
+        { "en": "Making decisions based on past experiences", "hi": "पिछले अनुभवों के आधार पर निर्णय लेना", "ta": "கடந்த கால அனுபவங்களின் அடிப்படையில் முடிவு எடுப்பது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-psychology-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The part of the mind that is not directly accessible to awareness is the:",
+        "hi": "मन का वह भाग जो जागरूकता के लिए सीधे सुलभ नहीं है:",
+        "ta": "விழிப்புணர்வுக்கு நேரடியாக அணுக முடியாத மனதின் பகுதி:"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "Conscious mind", "hi": "चेतन मन", "ta": "நனவுள்ள மனம்" },
+        { "en": "Preconscious mind", "hi": "पूर्व-चेतन मन", "ta": "முன் நனவுள்ள மனம்" },
+        { "en": "Unconscious mind", "hi": "अचेतन मन", "ta": "நனவற்ற மனம்" },
+        { "en": "Subconscious mind", "hi": "अवचेतन मन", "ta": "அரை நனவுள்ள மனம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-psychology-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which method involves observing subjects in their natural settings?",
+        "hi": "किस विधि में विषयों को उनके प्राकृतिक परिवेश में देखा जाता है?",
+        "ta": "எந்த முறையில் இயற்கையான சூழலில் பாடங்களை கவனிக்கிறார்கள்?"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "Experiment", "hi": "प्रयोग", "ta": "சோதனை" },
+        { "en": "Survey", "hi": "सर्वेक्षण", "ta": "கணக்கெடுப்பு" },
+        { "en": "Naturalistic Observation", "hi": "प्राकृतिक अवलोकन", "ta": "இயற்கை கவனிப்பு" },
+        { "en": "Case Study", "hi": "केस अध्ययन", "ta": "வழக்கு ஆய்வு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-psychology-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Perception differs from sensation in that perception involves:",
+        "hi": "प्रत्यक्षण संवेदना से इस प्रकार भिन्न है कि प्रत्यक्षण में:",
+        "ta": "உணர்வுணர்தல் மற்றும் உணர்வுக்கு வேறுபாடு என்னவென்றால் உணர்வுணர்தலில்:"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "Raw data collection", "hi": "कच्चे डेटा का संग्रह", "ta": "மூல தரவு சேகரிப்பு" },
+        { "en": "Interpretation and meaning-making", "hi": "व्याख्या और अर्थ निर्माण", "ta": "விளக்கம் மற்றும் அர்த்தம் உருவாக்கம்" },
+        { "en": "Reflex actions", "hi": "प्रतिवर्त क्रियाएँ", "ta": "எதிர்வினை செயல்கள்" },
+        { "en": "Muscle movement", "hi": "मांसपेशियों की गति", "ta": "தசை இயக்கம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-psychology-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Intelligence Quotient (IQ) was first developed by:",
+        "hi": "बुद्धि लब्धि (IQ) को पहले किसने विकसित किया था?",
+        "ta": "அறிவுத் திறன் ஒப்பெண் (IQ) முதலில் யாரால் உருவாக்கப்பட்டது?"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "Howard Gardner", "hi": "हॉवर्ड गार्डनर", "ta": "ஹோவர்ட் கார்ட்னர்" },
+        { "en": "Alfred Binet", "hi": "अल्फ्रेड बिने", "ta": "ஆல்ஃப்ரெட் பினே" },
+        { "en": "Charles Spearman", "hi": "चार्ल्स स्पियरमैन", "ta": "சார்லஸ் ஸ்பியர்மேன்" },
+        { "en": "Robert Sternberg", "hi": "रॉबर्ट स्टर्नबर्ग", "ta": "ராபர்ட் ஸ்டெர்ன்பெர்க்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-psychology-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Short-term memory can hold approximately how many items at once?",
+        "hi": "अल्पकालिक स्मृति एक बार में लगभग कितनी वस्तुएँ धारण कर सकती है?",
+        "ta": "குறுகிய கால நினைவகம் ஒரே நேரத்தில் தோராயமாக எத்தனை உருப்படிகளை வைத்திருக்கும்?"
+      },
+      "visual": "🧠",
+      "choices": [
+        { "en": "3 ± 1", "hi": "3 ± 1", "ta": "3 ± 1" },
+        { "en": "7 ± 2", "hi": "7 ± 2", "ta": "7 ± 2" },
+        { "en": "12 ± 3", "hi": "12 ± 3", "ta": "12 ± 3" },
+        { "en": "20 ± 5", "hi": "20 ± 5", "ta": "20 ± 5" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

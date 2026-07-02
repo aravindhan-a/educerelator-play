@@ -1,0 +1,176 @@
+{
+  "class": 10,
+  "subject": "english",
+  "questions": [
+    {
+      "id": "10-english-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "In the poem 'Fire and Ice' by Robert Frost, what does 'fire' symbolise?",
+        "hi": "रॉबर्ट फ्रॉस्ट की कविता 'Fire and Ice' में 'fire' किसका प्रतीक है?",
+        "ta": "ராபர்ட் ஃப்ராஸ்டின் 'Fire and Ice' கவிதையில் 'fire' எதை குறிக்கிறது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Hatred", "hi": "घृणा", "ta": "வெறுப்பு" },
+        { "en": "Desire", "hi": "इच्छा", "ta": "ஆசை" },
+        { "en": "Fear", "hi": "भय", "ta": "பயம்" },
+        { "en": "Greed", "hi": "लालच", "ta": "பேராசை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "In 'A Letter to God' (First Flight), whom did Lencho blame for the missing money?",
+        "hi": "'A Letter to God' (First Flight) में लेन्चो ने गायब पैसों के लिए किसे दोषी ठहराया?",
+        "ta": "'A Letter to God' கதையில் காணாமல் போன பணத்திற்கு லென்சோ யாரை குறை கூறினான்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "God", "hi": "भगवान", "ta": "கடவுள்" },
+        { "en": "The post office employees", "hi": "डाकघर के कर्मचारी", "ta": "அஞ்சல் அலுவலக ஊழியர்கள்" },
+        { "en": "His family", "hi": "उसके परिवार", "ta": "அவனது குடும்பம்" },
+        { "en": "The postmaster", "hi": "पोस्टमास्टर", "ta": "அஞ்சல்காரர்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the correctly written formal letter opening:",
+        "hi": "सही रूप से लिखा गया औपचारिक पत्र का आरंभ चुनें:",
+        "ta": "சரியாக எழுதப்பட்ட முறையான கடிதத்தின் ஆரம்பத்தை தேர்ந்தெடுங்கள்:"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Dear Sir/Madam,", "hi": "Dear Sir/Madam,", "ta": "Dear Sir/Madam," },
+        { "en": "Hey there,", "hi": "Hey there,", "ta": "Hey there," },
+        { "en": "To whomever,", "hi": "To whomever,", "ta": "To whomever," },
+        { "en": "Hi friend,", "hi": "Hi friend,", "ta": "Hi friend," }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-english-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which literary device is used in 'Life is a rollercoaster'?",
+        "hi": "'Life is a rollercoaster' में कौन सा साहित्यिक अलंकार प्रयुक्त है?",
+        "ta": "'Life is a rollercoaster' என்பதில் எந்த இலக்கிய உத்தி பயன்படுத்தப்பட்டுள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Simile", "hi": "उपमा", "ta": "உவமை" },
+        { "en": "Metaphor", "hi": "रूपक", "ta": "உருவகம்" },
+        { "en": "Oxymoron", "hi": "विरोधाभास", "ta": "முரண்பாடு" },
+        { "en": "Hyperbole", "hi": "अतिशयोक्ति", "ta": "மிகைப்படுத்தல்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Convert to indirect speech: She said, 'I am tired.'",
+        "hi": "अप्रत्यक्ष कथन में बदलें: She said, 'I am tired.'",
+        "ta": "மறைமொழியில் மாற்றுக: She said, 'I am tired.'"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "She said that she is tired.", "hi": "She said that she is tired.", "ta": "She said that she is tired." },
+        { "en": "She said that she was tired.", "hi": "She said that she was tired.", "ta": "She said that she was tired." },
+        { "en": "She says that she is tired.", "hi": "She says that she is tired.", "ta": "She says that she is tired." },
+        { "en": "She told that I am tired.", "hi": "She told that I am tired.", "ta": "She told that I am tired." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "A notice must NOT include:",
+        "hi": "एक सूचना में क्या शामिल नहीं होना चाहिए?",
+        "ta": "ஒரு அறிவிப்பில் என்ன இருக்கக் கூடாது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Date", "hi": "दिनांक", "ta": "தேதி" },
+        { "en": "Heading", "hi": "शीर्षक", "ta": "தலைப்பு" },
+        { "en": "Personal opinions", "hi": "व्यक्तिगत राय", "ta": "தனிப்பட்ட கருத்துக்கள்" },
+        { "en": "Issuing authority", "hi": "जारी करने वाला प्राधिकरण", "ta": "வெளியிடும் அதிகாரம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-english-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The antonym of 'ancient' is:",
+        "hi": "'ancient' का विलोम शब्द है:",
+        "ta": "'ancient' என்பதன் எதிர்ச்சொல்:"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Old", "hi": "पुराना", "ta": "பழைய" },
+        { "en": "Historic", "hi": "ऐतिहासिक", "ta": "வரலாற்று" },
+        { "en": "Modern", "hi": "आधुनिक", "ta": "நவீன" },
+        { "en": "Archaic", "hi": "पुरातन", "ta": "தொன்மையான" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-english-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "In comprehension writing, the main purpose of a topic sentence is to:",
+        "hi": "गद्यांश लेखन में, विषय-वाक्य का मुख्य उद्देश्य है:",
+        "ta": "கட்டுரை எழுத்தில் தலைப்பு வாக்கியத்தின் முக்கிய நோக்கம்:"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "End the paragraph", "hi": "अनुच्छेद समाप्त करना", "ta": "பத்தியை முடிப்பது" },
+        { "en": "Introduce the main idea of a paragraph", "hi": "अनुच्छेद का मुख्य विचार प्रस्तुत करना", "ta": "பத்தியின் முக்கிய கருத்தை அறிமுகப்படுத்துவது" },
+        { "en": "Give examples", "hi": "उदाहरण देना", "ta": "உதாரணங்கள் கொடுப்பது" },
+        { "en": "Summarise the essay", "hi": "निबंध का सारांश देना", "ta": "கட்டுரையை சுருக்குவது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which tense is used in 'She has completed her homework'?",
+        "hi": "'She has completed her homework' में कौन सा काल है?",
+        "ta": "'She has completed her homework' என்ற வாக்கியத்தில் எந்த காலம் பயன்படுத்தப்பட்டுள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Simple past", "hi": "सामान्य भूतकाल", "ta": "எளிய கடந்தகாலம்" },
+        { "en": "Present perfect", "hi": "पूर्ण वर्तमान", "ta": "நிகழ் நிறைவு காலம்" },
+        { "en": "Past perfect", "hi": "पूर्ण भूतकाल", "ta": "கடந்தகால நிறைவு" },
+        { "en": "Simple present", "hi": "सामान्य वर्तमान", "ta": "எளிய நிகழ்காலம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The theme of the poem 'Dust of Snow' by Robert Frost is:",
+        "hi": "रॉबर्ट फ्रॉस्ट की कविता 'Dust of Snow' का विषय है:",
+        "ta": "ராபர்ட் ஃப்ராஸ்டின் 'Dust of Snow' கவிதையின் கருப்பொருள்:"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Danger of crows", "hi": "कौओं का खतरा", "ta": "காகங்களின் ஆபத்து" },
+        { "en": "A small moment can change one's mood for the better", "hi": "एक छोटा पल मन को बेहतर बना सकता है", "ta": "ஒரு சிறிய தருணம் மனநிலையை மாற்றும்" },
+        { "en": "Nature is always harmful to humans", "hi": "प्रकृति हमेशा इंसानों के लिए हानिकारक है", "ta": "இயற்கை எப்போதும் மனிதர்களுக்கு தீங்கானது" },
+        { "en": "Hemlock trees are dangerous", "hi": "हेमलॉक पेड़ खतरनाक होते हैं", "ta": "ஹெம்லாக் மரங்கள் ஆபத்தானவை" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

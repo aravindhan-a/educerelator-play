@@ -1,0 +1,176 @@
+{
+  "class": 3,
+  "subject": "social-studies",
+  "questions": [
+    {
+      "id": "3-social-studies-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the capital of India?",
+        "hi": "भारत की राजधानी क्या है?",
+        "ta": "இந்தியாவின் தலைநகரம் என்ன?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Mumbai", "hi": "मुंबई", "ta": "மும்பை" },
+        { "en": "Kolkata", "hi": "कोलकाता", "ta": "கொல்கத்தா" },
+        { "en": "Chennai", "hi": "चेन्नई", "ta": "சென்னை" },
+        { "en": "New Delhi", "hi": "नई दिल्ली", "ta": "புது தில்லி" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "3-social-studies-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which community helper puts out fires?",
+        "hi": "कौन सा सामुदायिक सहायक आग बुझाता है?",
+        "ta": "எந்த சமுதாய உதவியாளர் தீ அணைக்கிறார்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Doctor", "hi": "डॉक्टर", "ta": "மருத்துவர்" },
+        { "en": "Firefighter", "hi": "अग्निशामक", "ta": "தீயணைப்பு வீரர்" },
+        { "en": "Teacher", "hi": "शिक्षक", "ta": "ஆசிரியர்" },
+        { "en": "Farmer", "hi": "किसान", "ta": "விவசாயி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-social-studies-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which festival is known as the Festival of Lights?",
+        "hi": "कौन सा त्योहार 'रोशनी का त्योहार' के नाम से जाना जाता है?",
+        "ta": "எந்த திருவிழா 'ஒளியின் திருவிழா' என்று அழைக்கப்படுகிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Holi", "hi": "होली", "ta": "ஹோலி" },
+        { "en": "Eid", "hi": "ईद", "ta": "ஈத்" },
+        { "en": "Diwali", "hi": "दीवाली", "ta": "தீபாவளி" },
+        { "en": "Christmas", "hi": "क्रिसमस", "ta": "கிறிஸ்துமஸ்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-social-studies-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "On a map, what colour is usually used to show water?",
+        "hi": "मानचित्र पर पानी दिखाने के लिए आमतौर पर कौन सा रंग उपयोग किया जाता है?",
+        "ta": "வரைபடத்தில் நீரைக் காட்ட பொதுவாக எந்த நிறம் பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Green", "hi": "हरा", "ta": "பச்சை" },
+        { "en": "Brown", "hi": "भूरा", "ta": "பழுப்பு" },
+        { "en": "Blue", "hi": "नीला", "ta": "நீலம்" },
+        { "en": "Yellow", "hi": "पीला", "ta": "மஞ்சள்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-social-studies-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Who grows food for us?",
+        "hi": "हमारे लिए भोजन कौन उगाता है?",
+        "ta": "நமக்காக உணவு யார் வளர்க்கிறார்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Soldier", "hi": "सैनिक", "ta": "சிப்பாய்" },
+        { "en": "Farmer", "hi": "किसान", "ta": "விவசாயி" },
+        { "en": "Postman", "hi": "डाकिया", "ta": "அஞ்சல்காரர்" },
+        { "en": "Pilot", "hi": "पायलट", "ta": "விமானி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-social-studies-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which direction does the sun rise from?",
+        "hi": "सूरज किस दिशा से उगता है?",
+        "ta": "சூரியன் எந்த திசையிலிருந்து உதிக்கிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "West", "hi": "पश्चिम", "ta": "மேற்கு" },
+        { "en": "South", "hi": "दक्षिण", "ta": "தெற்கு" },
+        { "en": "North", "hi": "उत्तर", "ta": "வடக்கு" },
+        { "en": "East", "hi": "पूर्व", "ta": "கிழக்கு" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "3-social-studies-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which festival is celebrated by playing with colours?",
+        "hi": "कौन सा त्योहार रंगों के साथ खेलकर मनाया जाता है?",
+        "ta": "நிறங்களுடன் விளையாடி எந்த திருவிழா கொண்டாடப்படுகிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Diwali", "hi": "दीवाली", "ta": "தீபாவளி" },
+        { "en": "Holi", "hi": "होली", "ta": "ஹோலி" },
+        { "en": "Pongal", "hi": "पोंगल", "ta": "பொங்கல்" },
+        { "en": "Navratri", "hi": "नवरात्रि", "ta": "நவராத்திரி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-social-studies-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "India is located in which continent?",
+        "hi": "भारत किस महाद्वीप में स्थित है?",
+        "ta": "இந்தியா எந்த கண்டத்தில் அமைந்துள்ளது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Africa", "hi": "अफ्रीका", "ta": "ஆப்பிரிக்கா" },
+        { "en": "Europe", "hi": "यूरोप", "ta": "ஐரோப்பா" },
+        { "en": "Asia", "hi": "एशिया", "ta": "ஆசியா" },
+        { "en": "Australia", "hi": "ऑस्ट्रेलिया", "ta": "ஆஸ்திரேலியா" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-social-studies-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which community helper treats sick people?",
+        "hi": "कौन सा सामुदायिक सहायक बीमार लोगों का इलाज करता है?",
+        "ta": "எந்த சமுதாய உதவியாளர் நோயாளிகளுக்கு சிகிச்சை அளிக்கிறார்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Police officer", "hi": "पुलिस अधिकारी", "ta": "போலீஸ் அதிகாரி" },
+        { "en": "Baker", "hi": "बेकर", "ta": "ரொட்டி தயாரிப்பவர்" },
+        { "en": "Doctor", "hi": "डॉक्टर", "ta": "மருத்துவர்" },
+        { "en": "Barber", "hi": "नाई", "ta": "முடிதிருத்துபவர்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-social-studies-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The national bird of India is ___.",
+        "hi": "भारत का राष्ट्रीय पक्षी ___ है।",
+        "ta": "இந்தியாவின் தேசிய பறவை ___."
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Parrot", "hi": "तोता", "ta": "கிளி" },
+        { "en": "Eagle", "hi": "बाज", "ta": "கழுகு" },
+        { "en": "Sparrow", "hi": "गौरैया", "ta": "குருவி" },
+        { "en": "Peacock", "hi": "मोर", "ta": "மயில்" }
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "chemistry",
+  "questions": [
+    {
+      "id": "11-chemistry-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "The number of electrons in the outermost shell of sodium (Na) is:",
+        "hi": "सोडियम (Na) के सबसे बाहरी कोश में इलेक्ट्रॉनों की संख्या है:",
+        "ta": "சோடியம் (Na) இன் வெளிப்புற ஓடில் உள்ள எலக்ட்ரான்களின் எண்ணிக்கை:"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "2", "hi": "2", "ta": "2" },
+        { "en": "8", "hi": "8", "ta": "8" },
+        { "en": "1", "hi": "1", "ta": "1" },
+        { "en": "11", "hi": "11", "ta": "11" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-chemistry-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which type of bond is formed by sharing of electrons?",
+        "hi": "इलेक्ट्रॉनों की साझेदारी से कौन सा बंध बनता है?",
+        "ta": "எலக்ட்ரான்களை பகிர்வதால் உருவாகும் பிணைப்பு வகை எது?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Ionic bond", "hi": "आयनिक बंध", "ta": "அயனிப் பிணைப்பு" },
+        { "en": "Covalent bond", "hi": "सहसंयोजी बंध", "ta": "சகசெல்லாண்மைப் பிணைப்பு" },
+        { "en": "Metallic bond", "hi": "धात्विक बंध", "ta": "உலோகப் பிணைப்பு" },
+        { "en": "Hydrogen bond", "hi": "हाइड्रोजन बंध", "ta": "ஹைட்ரஜன் பிணைப்பு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-chemistry-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "At STP, the volume of one mole of any ideal gas is:",
+        "hi": "STP पर किसी भी आदर्श गैस के एक मोल का आयतन है:",
+        "ta": "STP இல் எந்த ஒரு சிறந்த வாயுவின் ஒரு மோலின் கன அளவு:"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "11.2 L", "hi": "11.2 L", "ta": "11.2 L" },
+        { "en": "22.4 L", "hi": "22.4 L", "ta": "22.4 L" },
+        { "en": "44.8 L", "hi": "44.8 L", "ta": "44.8 L" },
+        { "en": "8.314 L", "hi": "8.314 L", "ta": "8.314 L" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-chemistry-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is an example of a noble gas?",
+        "hi": "निम्नलिखित में से कौन एक उत्कृष्ट गैस का उदाहरण है?",
+        "ta": "பின்வருவனவற்றில் எது ஒரு உன்னத வாயுவின் எடுத்துக்காட்டு?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Nitrogen", "hi": "नाइट्रोजन", "ta": "நைட்ரஜன்" },
+        { "en": "Oxygen", "hi": "ऑक्सीजन", "ta": "ஆக்சிஜன்" },
+        { "en": "Argon", "hi": "आर्गन", "ta": "ஆர்கான்" },
+        { "en": "Chlorine", "hi": "क्लोरीन", "ta": "குளோரின்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-chemistry-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "The atomic number of carbon is:",
+        "hi": "कार्बन की परमाणु संख्या है:",
+        "ta": "கார்பனின் அணு எண்:"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "4", "hi": "4", "ta": "4" },
+        { "en": "6", "hi": "6", "ta": "6" },
+        { "en": "8", "hi": "8", "ta": "8" },
+        { "en": "12", "hi": "12", "ta": "12" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-chemistry-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "According to Boyle's Law, at constant temperature, pressure and volume are:",
+        "hi": "बॉयल के नियम के अनुसार, स्थिर तापमान पर, दाब और आयतन:",
+        "ta": "பாய்லின் விதிப்படி, நிலையான வெப்பநிலையில், அழுத்தம் மற்றும் கன அளவு:"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Directly proportional", "hi": "सीधे आनुपातिक", "ta": "நேரடியாக விகிதாசாரம்" },
+        { "en": "Inversely proportional", "hi": "व्युत्क्रमानुपाती", "ta": "தலைகீழாக விகிதாசாரம்" },
+        { "en": "Equal", "hi": "बराबर", "ta": "சமம்" },
+        { "en": "Unrelated", "hi": "असंबंधित", "ta": "தொடர்பற்றது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-chemistry-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which subshell has a maximum of 10 electrons?",
+        "hi": "किस उपकोश में अधिकतम 10 इलेक्ट्रॉन होते हैं?",
+        "ta": "எந்த துணை ஓட்டில் அதிகபட்சம் 10 எலக்ட்ரான்கள் உள்ளன?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "s", "hi": "s", "ta": "s" },
+        { "en": "p", "hi": "p", "ta": "p" },
+        { "en": "d", "hi": "d", "ta": "d" },
+        { "en": "f", "hi": "f", "ta": "f" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-chemistry-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "The shape of a water (H₂O) molecule is:",
+        "hi": "जल (H₂O) अणु की आकृति है:",
+        "ta": "நீர் (H₂O) மூலக்கூறின் வடிவம்:"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Linear", "hi": "रेखीय", "ta": "நேர்கோட்டு" },
+        { "en": "Bent or V-shaped", "hi": "मुड़ी हुई या V-आकार", "ta": "வளைந்த அல்லது V வடிவம்" },
+        { "en": "Tetrahedral", "hi": "चतुष्फलकीय", "ta": "நான்முக வடிவம்" },
+        { "en": "Trigonal planar", "hi": "त्रिकोणीय समतलीय", "ta": "முக்கோண தளீய" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-chemistry-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Avogadro's number is approximately:",
+        "hi": "अवोगाद्रो संख्या लगभग है:",
+        "ta": "அவோகாட்ரோ எண் தோராயமாக:"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "6.022 × 10²¹", "hi": "6.022 × 10²¹", "ta": "6.022 × 10²¹" },
+        { "en": "6.022 × 10²³", "hi": "6.022 × 10²³", "ta": "6.022 × 10²³" },
+        { "en": "3.011 × 10²³", "hi": "3.011 × 10²³", "ta": "3.011 × 10²³" },
+        { "en": "1.602 × 10⁻¹⁹", "hi": "1.602 × 10⁻¹⁹", "ta": "1.602 × 10⁻¹⁹" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-chemistry-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which state of matter has a definite volume but no definite shape?",
+        "hi": "पदार्थ की कौन सी अवस्था में निश्चित आयतन होता है लेकिन कोई निश्चित आकार नहीं?",
+        "ta": "எந்த நிலைப் பொருளுக்கு நிச்சயமான கன அளவு உண்டு ஆனால் நிச்சயமான வடிவம் இல்லை?"
+      },
+      "visual": "🧪",
+      "choices": [
+        { "en": "Solid", "hi": "ठोस", "ta": "திடம்" },
+        { "en": "Liquid", "hi": "द्रव", "ta": "திரவம்" },
+        { "en": "Gas", "hi": "गैस", "ta": "வாயு" },
+        { "en": "Plasma", "hi": "प्लाज्मा", "ta": "பிளாஸ்மா" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}
