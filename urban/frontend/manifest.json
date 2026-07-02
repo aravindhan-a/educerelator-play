@@ -1,7 +1,7 @@
 {
-  "name": "Educerelator Play",
-  "short_name": "Educerelator",
-  "description": "Free learning games for children — numbers, letters, words, shapes & colors, patterns.",
+  "name": "EC Play",
+  "short_name": "EC Play",
+  "description": "Free adaptive learning games for Class 1–12 by Educerelator.",
   "start_url": "/urban/frontend/index.html",
   "display": "standalone",
   "background_color": "#fdfcf7",
