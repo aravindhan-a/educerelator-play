@@ -1,7 +1,4 @@
-// Manages the local question bank: localStorage cache per class+subject+curriculum+difficulty,
-// backend top-up when running low, and a local content fallback for Class 1.
-
-const API_BASE       = "https://api.educerelator.com";
+const API_BASE       = "https://educerelator-backend.vercel.app";
 const LOW_WATER_MARK = 5;
 
 function bankKey(classNum, subject, curriculum, difficulty) {
@@ -15,17 +12,16 @@ function loadBank(classNum, subject, curriculum, difficulty) {
 }
 
 function saveBank(classNum, subject, curriculum, difficulty, bank) {
-  localStorage.setItem(
-    bankKey(classNum, subject, curriculum, difficulty),
-    JSON.stringify(bank)
-  );
+  localStorage.setItem(bankKey(classNum, subject, curriculum, difficulty), JSON.stringify(bank));
 }
 
-async function fetchFromBackend(classNum, subject, curriculum, difficulty) {
+async function fetchFromBackend(classNum, subject, curriculum, difficulty, getToken) {
+  const token = getToken ? await getToken() : null;
+  if (!token) throw new Error("no token");
   const url = `${API_BASE}/api/generate-questions` +
     `?class=${classNum}&subject=${encodeURIComponent(subject)}` +
     `&curriculum=${curriculum}&difficulty=${difficulty}`;
-  const res = await fetch(url);
+  const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
   if (!res.ok) throw new Error(`backend ${res.status}`);
   const data = await res.json();
   return data.questions;
@@ -37,15 +33,15 @@ async function fetchLocalFallback(classNum, subject) {
   if (!res.ok) return null;
   const data = await res.json();
   if (Array.isArray(data)) return data;
-  if (data.levels) return data.levels.flatMap((l) => l.questions);
-  if (data.questions) return data.questions;
+  if (data.levels)     return data.levels.flatMap((l) => l.questions);
+  if (data.questions)  return data.questions;
   return null;
 }
 
-async function topUp(classNum, subject, curriculum, difficulty, bank) {
+async function topUp(classNum, subject, curriculum, difficulty, bank, getToken) {
   let fresh = null;
   try {
-    fresh = await fetchFromBackend(classNum, subject, curriculum, difficulty);
+    fresh = await fetchFromBackend(classNum, subject, curriculum, difficulty, getToken);
   } catch {
     fresh = await fetchLocalFallback(classNum, subject);
   }
@@ -55,25 +51,25 @@ async function topUp(classNum, subject, curriculum, difficulty, bank) {
   saveBank(classNum, subject, curriculum, difficulty, bank);
 }
 
-export async function getNextQuestion(classNum, subject, curriculum, difficulty, sessionSeenIds = new Set()) {
+export async function getNextQuestion(
+  classNum, subject, curriculum, difficulty,
+  sessionSeenIds = new Set(), getToken = null
+) {
   const bank   = loadBank(classNum, subject, curriculum, difficulty);
   const unused = bank.questions.filter((q) => !bank.usedIds.includes(q.id));
 
   if (unused.length <= LOW_WATER_MARK) {
-    await topUp(classNum, subject, curriculum, difficulty, bank);
+    await topUp(classNum, subject, curriculum, difficulty, bank, getToken);
   }
 
-  // Prefer questions not yet seen this session, regardless of which difficulty bank they came from
   let pool = bank.questions.filter(
     (q) => !sessionSeenIds.has(q.id) && !bank.usedIds.includes(q.id)
   );
 
-  // Fall back to all unseen-in-bank if session filter exhausts pool
   if (pool.length === 0) {
     pool = bank.questions.filter((q) => !sessionSeenIds.has(q.id));
   }
 
-  // Last resort: reset bank usedIds and use everything not seen this session
   if (pool.length === 0) {
     bank.usedIds = [];
     saveBank(classNum, subject, curriculum, difficulty, bank);

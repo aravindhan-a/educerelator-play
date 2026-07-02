@@ -1,5 +1,6 @@
 import { generateQuestionBatch } from "../lib/anthropic.js";
 import { getCachedBatch, setCachedBatch } from "../lib/cache.js";
+import { verifyAndGetUid, isPremiumUser } from "../lib/firebase-admin.js";
 
 const VALID_SUBJECTS = [
   "math", "english", "evs", "science", "social-studies",
@@ -22,14 +23,24 @@ function applyCors(req, res) {
     res.setHeader("Access-Control-Allow-Origin", origin);
   }
   res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 }
 
-// GET /api/generate-questions?class=6&subject=science&curriculum=cbse&difficulty=2
 export default async function handler(req, res) {
   applyCors(req, res);
   if (req.method === "OPTIONS") return res.status(204).end();
   if (req.method !== "GET")    return res.status(405).json({ error: "Method not allowed" });
+
+  // Premium check — only paying users get AI-generated questions
+  let uid;
+  try {
+    uid = await verifyAndGetUid(req.headers.authorization);
+  } catch {
+    return res.status(401).json({ error: "Sign in required" });
+  }
+
+  const premium = await isPremiumUser(uid);
+  if (!premium) return res.status(403).json({ error: "Premium required", upgrade: true });
 
   const classNum   = parseInt(req.query.class, 10);
   const subject    = req.query.subject;
@@ -51,7 +62,7 @@ export default async function handler(req, res) {
       batch = await generateQuestionBatch({ classNum, subject, curriculum, difficulty });
       await setCachedBatch(classNum, subject, curriculum, difficulty, batch);
     }
-    res.setHeader("Cache-Control", "public, max-age=3600");
+    res.setHeader("Cache-Control", "private, max-age=3600");
     return res.status(200).json({ classNum, subject, curriculum, difficulty, questions: batch });
   } catch (err) {
     console.error("generate-questions failed:", err);
