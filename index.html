@@ -126,6 +126,29 @@
     <div id="confetti-layer" class="confetti-layer"></div>
   </section>
 
+  <!-- Session Complete Screen -->
+  <section id="session-complete" class="screen hidden">
+    <div class="complete-card">
+      <div class="complete-emoji" id="complete-emoji">🎉</div>
+      <h2 class="complete-title">Session Complete!</h2>
+      <p class="complete-score" id="complete-score">You got 8 out of 10 correct</p>
+      <div class="complete-actions">
+        <button id="play-again-btn" class="btn-secondary-action">Play Again</button>
+        <button id="new-subject-btn" class="btn-secondary-action">New Subject</button>
+      </div>
+      <div class="upgrade-strip" id="upgrade-strip">
+        <div class="upgrade-strip-inner">
+          <span class="upgrade-icon">⚡</span>
+          <div>
+            <strong>Want unlimited questions?</strong>
+            <p>Upgrade to Premium — AI-powered questions that never repeat.</p>
+          </div>
+        </div>
+        <button id="upgrade-from-session" class="btn-upgrade">Upgrade · ₹149/mo</button>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -139,6 +162,30 @@
   <span class="footer-sep">·</span>
   <a href="mailto:hello@educerelator.com" class="footer-link">Contact</a>
 </footer>
+
+<!-- Premium Modal -->
+<div id="premium-modal" class="modal-overlay hidden">
+  <div class="modal-card premium-card">
+    <button id="premium-close" class="modal-close" aria-label="Close">✕</button>
+    <div class="premium-header">⚡ EC Play Premium</div>
+    <p class="premium-subhead">Unlimited AI questions · 13 languages · All 12 classes</p>
+    <div class="plan-grid">
+      <button class="plan-card" data-plan="monthly">
+        <div class="plan-name">Monthly</div>
+        <div class="plan-price">₹149</div>
+        <div class="plan-period">per month</div>
+      </button>
+      <button class="plan-card plan-featured" data-plan="yearly">
+        <div class="plan-badge">Save 44%</div>
+        <div class="plan-name">Yearly</div>
+        <div class="plan-price">₹999</div>
+        <div class="plan-period">per year</div>
+      </button>
+    </div>
+    <button id="checkout-btn" class="btn-checkout" disabled>Select a plan</button>
+    <p class="premium-note">Secure payment via Razorpay · Cancel anytime</p>
+  </div>
+</div>
 
 <div id="about-modal" class="modal-overlay hidden">
   <div class="modal-card">

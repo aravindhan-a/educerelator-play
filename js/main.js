@@ -1,5 +1,6 @@
 import { ALL_CLASSES, CURRICULA, getSubjectsForClass } from "../../../content/curriculum.js";
 import { getNextQuestion } from "./question-bank.js";
+import { checkPremium, isPremiumCached, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
 import { playCorrectChime, playWrongBuzz } from "./sound-fx.js";
 import { playAudio } from "../../../shared-lib/audio-player.js";
@@ -53,7 +54,8 @@ const CURR_KEY     = "curriculum";
 
 // ── session progress ──
 const SESSION_TOTAL = 10;
-let sessionCount = 0;
+let sessionCount   = 0;
+let sessionCorrect = 0;
 let sessionSeenIds = new Set();
 
 // ── runtime state ──
@@ -99,6 +101,17 @@ const registerErrorEl  = document.getElementById("register-error");
 const userInfoEl       = document.getElementById("user-info");
 const userNameEl       = document.getElementById("user-name");
 const signoutBtnEl     = document.getElementById("signout-btn");
+// session complete + premium
+const sessionCompleteEl    = document.getElementById("session-complete");
+const completeScoreEl      = document.getElementById("complete-score");
+const completeEmojiEl      = document.getElementById("complete-emoji");
+const playAgainBtn         = document.getElementById("play-again-btn");
+const newSubjectBtn        = document.getElementById("new-subject-btn");
+const upgradeStripEl       = document.getElementById("upgrade-strip");
+const upgradeFromSessionBtn= document.getElementById("upgrade-from-session");
+const premiumModalEl       = document.getElementById("premium-modal");
+const premiumCloseBtn      = document.getElementById("premium-close");
+const checkoutBtn          = document.getElementById("checkout-btn");
 
 const CONFETTI_EMOJI = ["🎉", "⭐", "✨", "🎈", "🏆"];
 
@@ -258,7 +271,10 @@ onAuthChange(async (user) => {
       if (serverProgress) {
         localStorage.setItem("progress", JSON.stringify(serverProgress));
       }
-    } catch { /* offline — use whatever is in localStorage */ }
+    } catch { /* offline */ }
+
+    // Background premium check (non-blocking)
+    checkPremium(user).catch(() => {});
 
     applyUIStrings();
     showClassPicker();
@@ -359,11 +375,13 @@ async function startPlay(subject) {
   playBadgeEl.textContent = `Class ${currentClass} · ${meta?.label ?? subject}`;
   localStorage.setItem("lastPlayed", JSON.stringify({ classNum: currentClass, subject }));
 
-  sessionCount = 0;
+  sessionCount   = 0;
+  sessionCorrect = 0;
   sessionSeenIds = new Set();
   updateProgressBar();
 
   subjectPickerEl.classList.add("hidden");
+  sessionCompleteEl.classList.add("hidden");
   playScreenEl.classList.remove("hidden");
   streakDisplay.classList.remove("hidden");
   await loadNextQuestion();
@@ -379,9 +397,13 @@ async function loadNextQuestion() {
   questionPrompt.textContent = "…";
   choicesEl.innerHTML = "";
 
+  const getToken = (currentUser && isPremiumCached())
+    ? () => currentUser.getIdToken()
+    : null;
+
   try {
     currentQuestion = await getNextQuestion(
-      currentClass, currentSubject, curriculum, difficulty, sessionSeenIds
+      currentClass, currentSubject, curriculum, difficulty, sessionSeenIds, getToken
     );
     sessionSeenIds.add(currentQuestion.id);
   } catch (err) {
@@ -435,6 +457,7 @@ function handleAnswer(selectedIndex) {
   feedbackEl.classList.toggle("wrong",   !correct);
 
   sessionCount = Math.min(sessionCount + 1, SESSION_TOTAL);
+  if (correct) sessionCorrect++;
   updateProgressBar();
 
   const stats = recordResult(key, correct);
@@ -454,8 +477,71 @@ function handleAnswer(selectedIndex) {
   recordAttempt(adaptiveState, key, { correct, ms: elapsedMs, startingDifficulty: 1 });
   saveAdaptiveState();
 
-  setTimeout(loadNextQuestion, 1400);
+  if (sessionCount >= SESSION_TOTAL) {
+    setTimeout(showSessionComplete, 1400);
+  } else {
+    setTimeout(loadNextQuestion, 1400);
+  }
 }
+
+// ── Session Complete ──
+function showSessionComplete() {
+  window.speechSynthesis?.cancel();
+  playScreenEl.classList.add("hidden");
+  sessionCompleteEl.classList.remove("hidden");
+
+  const pct  = sessionCorrect / SESSION_TOTAL;
+  completeEmojiEl.textContent = pct >= 0.8 ? "🏆" : pct >= 0.5 ? "🎉" : "💪";
+  completeScoreEl.textContent =
+    `You got ${sessionCorrect} out of ${SESSION_TOTAL} correct`;
+
+  // Hide upgrade strip for premium users
+  upgradeStripEl.classList.toggle("hidden", isPremiumCached());
+}
+
+playAgainBtn.addEventListener("click", () => startPlay(currentSubject));
+newSubjectBtn.addEventListener("click", () => {
+  sessionCompleteEl.classList.add("hidden");
+  showSubjectPicker(currentClass);
+});
+upgradeFromSessionBtn.addEventListener("click", openPremiumModal);
+
+// ── Premium Modal ──
+function openPremiumModal() {
+  if (!currentUser) {
+    authModalEl.classList.remove("hidden");
+    return;
+  }
+  premiumModalEl.classList.remove("hidden");
+}
+
+premiumCloseBtn.addEventListener("click", () => premiumModalEl.classList.add("hidden"));
+
+let selectedPlan = null;
+document.querySelectorAll(".plan-card").forEach(card => {
+  card.addEventListener("click", () => {
+    document.querySelectorAll(".plan-card").forEach(c => c.classList.remove("selected"));
+    card.classList.add("selected");
+    selectedPlan = card.dataset.plan;
+    checkoutBtn.textContent = selectedPlan === "yearly"
+      ? "Pay ₹999 / year"
+      : "Pay ₹149 / month";
+    checkoutBtn.disabled = false;
+  });
+});
+
+checkoutBtn.addEventListener("click", async () => {
+  if (!selectedPlan || !currentUser) return;
+  checkoutBtn.disabled = true;
+  checkoutBtn.textContent = "Opening checkout…";
+  await openRazorpayCheckout(currentUser, selectedPlan, () => {
+    premiumModalEl.classList.add("hidden");
+    upgradeStripEl.classList.add("hidden");
+    alert("Welcome to EC Play Premium! 🎉 You now have unlimited AI questions.");
+  });
+  checkoutBtn.disabled = false;
+  checkoutBtn.textContent = selectedPlan === "yearly" ? "Pay ₹999 / year" : "Pay ₹149 / month";
+});
 
 function burstConfetti() {
   for (let i = 0; i < 14; i++) {
