@@ -2,6 +2,7 @@ import { ALL_CLASSES, CURRICULA, getSubjectsForClass } from "../../../content/cu
 import { getNextQuestion } from "./question-bank.js";
 import { checkPremium, isPremiumCached, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
+import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration } from "./stats.js";
 import { playCorrectChime, playWrongBuzz } from "./sound-fx.js";
 import { playAudio } from "../../../shared-lib/audio-player.js";
 import {
@@ -66,7 +67,9 @@ let currentClass    = null;
 let currentSubject  = null;
 let currentQuestion = null;
 let questionStartedAt = null;
+let sessionStartedAt  = null;   // for screen-time tracking
 let currentUser     = null;
+let profilePrevScreen = null;   // which screen to restore when leaving profile
 
 // ── DOM refs ──
 const classPickerEl    = document.getElementById("class-picker");
@@ -99,8 +102,11 @@ const registerFormEl   = document.getElementById("register-form");
 const loginErrorEl     = document.getElementById("login-error");
 const registerErrorEl  = document.getElementById("register-error");
 const userInfoEl       = document.getElementById("user-info");
-const userNameEl       = document.getElementById("user-name");
+const userInitialsEl   = document.getElementById("user-initials");
+const userAvatarBtn    = document.getElementById("user-avatar-btn");
 const signoutBtnEl     = document.getElementById("signout-btn");
+const profileScreenEl  = document.getElementById("profile-screen");
+const backFromProfile  = document.getElementById("back-from-profile");
 // session complete + premium
 const sessionCompleteEl    = document.getElementById("session-complete");
 const completeScoreEl      = document.getElementById("complete-score");
@@ -261,7 +267,8 @@ onAuthChange(async (user) => {
   if (user) {
     currentUser = user;
     const name = user.displayName || user.email.split("@")[0];
-    userNameEl.textContent = name.split(" ")[0];
+    const initials = name.split(" ").map(w => w[0]).join("").toUpperCase().slice(0, 2);
+    userInitialsEl.textContent = initials;
     userInfoEl.classList.remove("hidden");
     authModalEl.classList.add("hidden");
 
@@ -375,9 +382,10 @@ async function startPlay(subject) {
   playBadgeEl.textContent = `Class ${currentClass} · ${meta?.label ?? subject}`;
   localStorage.setItem("lastPlayed", JSON.stringify({ classNum: currentClass, subject }));
 
-  sessionCount   = 0;
-  sessionCorrect = 0;
-  sessionSeenIds = new Set();
+  sessionCount     = 0;
+  sessionCorrect   = 0;
+  sessionSeenIds   = new Set();
+  sessionStartedAt = Date.now();
   updateProgressBar();
 
   subjectPickerEl.classList.add("hidden");
@@ -462,6 +470,7 @@ function handleAnswer(selectedIndex) {
 
   const stats = recordResult(key, correct);
   streakCountEl.textContent = stats.streak;
+  recordAnswer({ correct, subject: currentSubject });
   syncProgress();
 
   mascotPlay.classList.remove("celebrate", "oops");
@@ -487,6 +496,13 @@ function handleAnswer(selectedIndex) {
 // ── Session Complete ──
 function showSessionComplete() {
   window.speechSynthesis?.cancel();
+
+  // Record screen time for this session
+  if (sessionStartedAt) {
+    recordScreenTime(Date.now() - sessionStartedAt);
+    sessionStartedAt = null;
+  }
+
   playScreenEl.classList.add("hidden");
   sessionCompleteEl.classList.remove("hidden");
 
@@ -498,6 +514,109 @@ function showSessionComplete() {
   // Hide upgrade strip for premium users
   upgradeStripEl.classList.toggle("hidden", isPremiumCached());
 }
+
+// ── Social Share ──
+async function shareContent(text) {
+  const url = "https://educerelator.com";
+  if (navigator.share) {
+    try { await navigator.share({ title: "EC Play", text, url }); return; } catch { /* cancelled */ }
+  }
+  // Fallback: WhatsApp
+  window.open(`https://wa.me/?text=${encodeURIComponent(text + "\n" + url)}`, "_blank", "noopener");
+}
+
+function shareScore() {
+  const s   = loadStats();
+  const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : 0;
+  shareContent(
+    `I just scored ${sessionCorrect}/${SESSION_TOTAL} on EC Play! 🎯\n` +
+    `Class ${currentClass} ${currentSubject} — playing in my language 🌏\n` +
+    `Total: ${s.totalAnswered} questions, ${pct}% accuracy · ${s.dayStreak} day streak 🔥\n` +
+    `Free for all Indian students →`
+  );
+}
+
+function shareApp() {
+  shareContent(
+    `🌟 EC Play — Free AI-powered learning games for Indian students, Class 1–12!\n` +
+    `Questions in 13 Indian languages · Completely FREE →`
+  );
+}
+
+document.getElementById("share-score-btn").addEventListener("click", shareScore);
+
+// ── Profile Screen ──
+function openProfileScreen() {
+  // Remember which screen was active
+  profilePrevScreen = [classPickerEl, subjectPickerEl, playScreenEl, sessionCompleteEl]
+    .find(el => !el.classList.contains("hidden")) || classPickerEl;
+  profilePrevScreen.classList.add("hidden");
+  profileScreenEl.classList.remove("hidden");
+  renderProfileScreen();
+}
+
+function closeProfileScreen() {
+  profileScreenEl.classList.add("hidden");
+  (profilePrevScreen || classPickerEl).classList.remove("hidden");
+}
+
+function renderProfileScreen() {
+  if (!currentUser) return;
+  const name = currentUser.displayName || currentUser.email.split("@")[0];
+  const initials = name.split(" ").map(w => w[0]).join("").toUpperCase().slice(0, 2);
+
+  document.getElementById("profile-avatar-lg").textContent   = initials;
+  document.getElementById("profile-fullname").textContent    = name;
+  document.getElementById("profile-useremail").textContent   = currentUser.email || "";
+
+  const s   = loadStats();
+  const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : 0;
+  document.getElementById("stat-day-streak").textContent    = s.dayStreak || 0;
+  document.getElementById("stat-total-q").textContent       = s.totalAnswered || 0;
+  document.getElementById("stat-accuracy").textContent      = s.totalAnswered > 0 ? `${pct}%` : "—";
+  document.getElementById("stat-screen-time").textContent   = formatDuration(s.screenTimeMs || 0);
+  document.getElementById("stat-longest-streak").textContent = `${s.longestDayStreak || 0} days`;
+
+  // 7-day calendar
+  const calEl = document.getElementById("profile-calendar");
+  calEl.innerHTML = "";
+  getLast7Days().forEach(({ dayName, answered }) => {
+    const div = document.createElement("div");
+    div.className = "cal-day";
+    div.innerHTML =
+      `<div class="cal-dot ${answered > 0 ? "played" : "empty"}">${answered > 0 ? "✓" : ""}</div>` +
+      `<div class="cal-day-name">${dayName}</div>`;
+    calEl.appendChild(div);
+  });
+
+  // Subject breakdown
+  const subEl = document.getElementById("profile-subjects");
+  subEl.innerHTML = "";
+  const subjects = Object.entries(s.subjectStats || {})
+    .sort((a, b) => b[1].answered - a[1].answered)
+    .slice(0, 6);
+  if (subjects.length === 0) {
+    subEl.innerHTML = `<p style="color:rgba(255,255,255,0.7);font-size:0.9rem;text-align:center">Play a few sessions to see your breakdown!</p>`;
+  } else {
+    subjects.forEach(([subj, data]) => {
+      const acc = data.answered > 0 ? Math.round(data.correct / data.answered * 100) : 0;
+      const label = subj.replace(/-/g, " ");
+      const row = document.createElement("div");
+      row.className = "subject-bar-row";
+      row.innerHTML =
+        `<span class="subject-bar-label">${label}</span>` +
+        `<div class="subject-bar-track"><div class="subject-bar-fill" style="width:${acc}%"></div></div>` +
+        `<span class="subject-bar-pct">${acc}%</span>` +
+        `<span class="subject-bar-count">${data.answered}q</span>`;
+      subEl.appendChild(row);
+    });
+  }
+}
+
+userAvatarBtn.addEventListener("click", openProfileScreen);
+backFromProfile.addEventListener("click", closeProfileScreen);
+document.getElementById("profile-share-score").addEventListener("click", shareScore);
+document.getElementById("profile-share-app").addEventListener("click", shareApp);
 
 playAgainBtn.addEventListener("click", () => startPlay(currentSubject));
 newSubjectBtn.addEventListener("click", () => {
