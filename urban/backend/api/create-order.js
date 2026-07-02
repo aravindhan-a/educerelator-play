@@ -26,17 +26,27 @@ export default async function handler(req, res) {
   const { plan } = req.body;
   if (!PLANS[plan]) return res.status(400).json({ error: "Invalid plan" });
 
-  const rzp = new Razorpay({
-    key_id:     process.env.RAZORPAY_KEY_ID,
-    key_secret: process.env.RAZORPAY_KEY_SECRET,
-  });
+  if (!process.env.RAZORPAY_KEY_ID || !process.env.RAZORPAY_KEY_SECRET) {
+    console.error("Missing RAZORPAY_KEY_ID or RAZORPAY_KEY_SECRET env vars");
+    return res.status(503).json({ error: "Payment not configured" });
+  }
 
-  const order = await rzp.orders.create({
-    amount:   PLANS[plan].amount,
-    currency: "INR",
-    receipt:  `${uid.slice(0, 8)}-${plan}-${Date.now()}`,
-    notes:    { uid, plan },
-  });
+  let order;
+  try {
+    const rzp = new Razorpay({
+      key_id:     process.env.RAZORPAY_KEY_ID,
+      key_secret: process.env.RAZORPAY_KEY_SECRET,
+    });
+    order = await rzp.orders.create({
+      amount:   PLANS[plan].amount,
+      currency: "INR",
+      receipt:  `${uid.slice(0, 8)}-${plan}-${Date.now()}`,
+      notes:    { uid, plan },
+    });
+  } catch (err) {
+    console.error("Razorpay order creation failed:", err.message || err);
+    return res.status(502).json({ error: "Could not create order" });
+  }
 
   res.status(200).json({
     orderId:  order.id,
