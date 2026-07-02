@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "biology",
+  "questions": [
+    {
+      "id": "11-biology-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which organelle is known as the powerhouse of the cell?",
+        "hi": "किस अंगक को कोशिका का शक्ति केंद्र कहा जाता है?",
+        "ta": "எந்த உட்கட்டமைப்பு செல்லின் சக்தி நிலையம் என்று அழைக்கப்படுகிறது?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Nucleus", "hi": "केंद्रक", "ta": "உட்கரு" },
+        { "en": "Mitochondria", "hi": "माइटोकॉन्ड्रिया", "ta": "மைட்டோகாண்டிரியா" },
+        { "en": "Ribosome", "hi": "राइबोसोम", "ta": "ரிபோசோம்" },
+        { "en": "Golgi apparatus", "hi": "गॉल्जी उपकरण", "ta": "கோல்கி கருவி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-biology-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which biomolecule is the main source of energy for living organisms?",
+        "hi": "कौन सा जैव अणु जीवित जीवों के लिए ऊर्जा का मुख्य स्रोत है?",
+        "ta": "உயிரினங்களுக்கு ஆற்றலின் முக்கிய மூலமான உயிர் மூலக்கூறு எது?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Proteins", "hi": "प्रोटीन", "ta": "புரதங்கள்" },
+        { "en": "Lipids", "hi": "वसा", "ta": "கொழுப்புகள்" },
+        { "en": "Carbohydrates", "hi": "कार्बोहाइड्रेट", "ta": "கார்போஹைட்ரேட்டுகள்" },
+        { "en": "Nucleic acids", "hi": "न्यूक्लिक एसिड", "ta": "நியூக்கிளிக் அமிலங்கள்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-biology-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Cell theory was proposed by:",
+        "hi": "कोशिका सिद्धांत किसके द्वारा प्रस्तावित किया गया था?",
+        "ta": "செல் கோட்பாட்டை முன்மொழிந்தவர்கள்:"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Darwin and Wallace", "hi": "डार्विन और वालेस", "ta": "டார்வின் மற்றும் வாலஸ்" },
+        { "en": "Schleiden and Schwann", "hi": "स्लाइडेन और श्वान", "ta": "ஸ்லீடன் மற்றும் ஸ்வான்" },
+        { "en": "Watson and Crick", "hi": "वाटसन और क्रिक", "ta": "வாட்சன் மற்றும் க்ரிக்" },
+        { "en": "Mendel and Morgan", "hi": "मेंडल और मोर्गन", "ta": "மெண்டல் மற்றும் மோர்கன்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-biology-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Photosynthesis takes place in which organelle?",
+        "hi": "प्रकाश संश्लेषण किस अंगक में होता है?",
+        "ta": "ஒளிச்சேர்க்கை எந்த உட்கட்டமைப்பில் நடைபெறுகிறது?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Mitochondria", "hi": "माइटोकॉन्ड्रिया", "ta": "மைட்டோகாண்டிரியா" },
+        { "en": "Nucleus", "hi": "केंद्रक", "ta": "உட்கரு" },
+        { "en": "Chloroplast", "hi": "क्लोरोप्लास्ट", "ta": "குளோரோபிளாஸ்ட்" },
+        { "en": "Endoplasmic reticulum", "hi": "अंतर्द्रव्य जालिका", "ta": "உட்கட்டுத் திணிவு வலை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-biology-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a plant hormone that promotes cell elongation?",
+        "hi": "निम्नलिखित में से कौन सा पादप हार्मोन कोशिका दीर्घन को बढ़ावा देता है?",
+        "ta": "பின்வருவனவற்றில் எது செல் நீட்டிப்பை ஊக்குவிக்கும் தாவர ஹார்மோன்?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Abscisic acid", "hi": "एब्सिसिक एसिड", "ta": "அப்சிசிக் அமிலம்" },
+        { "en": "Cytokinin", "hi": "साइटोकाइनिन", "ta": "சைட்டோகைனின்" },
+        { "en": "Auxin", "hi": "ऑक्सिन", "ta": "ஆக்சின்" },
+        { "en": "Ethylene", "hi": "एथिलीन", "ta": "எத்திலீன்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-biology-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which macromolecule carries genetic information?",
+        "hi": "कौन सा वृहदाणु आनुवंशिक जानकारी वहन करता है?",
+        "ta": "எந்த பெரு மூலக்கூறு மரபணு தகவலை கொண்டு செல்கிறது?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Protein", "hi": "प्रोटीन", "ta": "புரதம்" },
+        { "en": "Lipid", "hi": "वसा", "ta": "கொழுப்பு" },
+        { "en": "DNA", "hi": "DNA", "ta": "DNA" },
+        { "en": "Carbohydrate", "hi": "कार्बोहाइड्रेट", "ta": "கார்போஹைட்ரேட்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-biology-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The process by which plants lose water through their leaves is called:",
+        "hi": "जिस प्रक्रिया से पौधे अपनी पत्तियों के माध्यम से पानी खोते हैं, उसे कहते हैं:",
+        "ta": "தாவரங்கள் இலைகள் வழியாக நீரை இழக்கும் செயல்முறை:"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Photosynthesis", "hi": "प्रकाश संश्लेषण", "ta": "ஒளிச்சேர்க்கை" },
+        { "en": "Transpiration", "hi": "वाष्पोत्सर्जन", "ta": "நீராவிப்போக்கு" },
+        { "en": "Respiration", "hi": "श्वसन", "ta": "சுவாசம்" },
+        { "en": "Osmosis", "hi": "परासरण", "ta": "சவ்வூடு பரவல்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-biology-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which type of cell lacks a true nucleus?",
+        "hi": "किस प्रकार की कोशिका में सच्चा केंद्रक नहीं होता?",
+        "ta": "எந்த வகை செல்லில் உண்மையான உட்கரு இல்லை?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Plant cell", "hi": "पादप कोशिका", "ta": "தாவர செல்" },
+        { "en": "Animal cell", "hi": "जंतु कोशिका", "ta": "விலங்கு செல்" },
+        { "en": "Prokaryotic cell", "hi": "प्रोकैरियोटिक कोशिका", "ta": "ப்ரோகேரியோட்டிக் செல்" },
+        { "en": "Eukaryotic cell", "hi": "यूकैरियोटिक कोशिका", "ta": "யூகேரியோட்டிக் செல்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-biology-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The functional unit of kidney is called:",
+        "hi": "वृक्क की कार्यात्मक इकाई को कहा जाता है:",
+        "ta": "சிறுநீரகத்தின் செயல்பாட்டு அலகு:"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Neuron", "hi": "न्यूरॉन", "ta": "நரம்பணு" },
+        { "en": "Nephron", "hi": "नेफ्रॉन", "ta": "நெஃப்ரான்" },
+        { "en": "Alveolus", "hi": "वायुकोश", "ta": "நுரையீரல் குமிழி" },
+        { "en": "Villus", "hi": "रसांकुर", "ta": "விலூஸ்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-biology-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which pigment is responsible for the green colour of plants?",
+        "hi": "पौधों के हरे रंग के लिए कौन सा वर्णक जिम्मेदार है?",
+        "ta": "தாவரங்களின் பச்சை நிறத்திற்கு காரணமான நிறமி எது?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Carotenoid", "hi": "कैरोटीनॉयड", "ta": "கரோட்டினாய்டு" },
+        { "en": "Anthocyanin", "hi": "एंथोसायनिन", "ta": "அந்தோசயனின்" },
+        { "en": "Xanthophyll", "hi": "जैंथोफिल", "ta": "சாந்தோபில்" },
+        { "en": "Chlorophyll", "hi": "क्लोरोफिल", "ta": "குளோரோபில்" }
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "class": 8,
+  "subject": "english",
+  "questions": [
+    {
+      "id": "8-english-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used in: 'Her voice is music to my ears'?",
+        "hi": "किस अलंकार का प्रयोग हुआ है: 'Her voice is music to my ears'?",
+        "ta": "'Her voice is music to my ears' என்பதில் எந்த அலங்காரம் பயன்படுத்தப்பட்டுள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Simile", "hi": "उपमा", "ta": "உவமை" },
+        { "en": "Metaphor", "hi": "रूपक", "ta": "உருவகம்" },
+        { "en": "Alliteration", "hi": "अनुप्रास", "ta": "எழுத்தொற்றுமை" },
+        { "en": "Personification", "hi": "मानवीकरण", "ta": "உருவகம் (personification)" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is an example of 'oxymoron'?",
+        "hi": "निम्नलिखित में से कौन सा 'विरोधाभास' का उदाहरण है?",
+        "ta": "பின்வருவனவற்றில் எது 'ஆக்ஸிமோரான்' இன் உதாரணம்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "As fast as a cheetah", "hi": "चीते जितना तेज", "ta": "சிறுத்தையைப் போல வேகமான" },
+        { "en": "The stars danced", "hi": "तारे नाचे", "ta": "நட்சத்திரங்கள் நடனமாடின" },
+        { "en": "Deafening silence", "hi": "बहरा करने वाला सन्नाटा", "ta": "செவிடாக்கும் அமைதி" },
+        { "en": "Peter Piper picked peppers", "hi": "पीटर पाइपर ने मिर्च चुनी", "ta": "பீட்டர் பைப்பர் மிளகாய் பறித்தான்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-english-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "In formal letter writing, how should you address an unknown person?",
+        "hi": "औपचारिक पत्र में अज्ञात व्यक्ति को कैसे संबोधित करें?",
+        "ta": "முறையான கடிதத்தில் அறியாத நபரை எவ்வாறு உரையாடவேண்டும்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Dear Friend", "hi": "प्रिय मित्र", "ta": "அன்பான நண்பர்" },
+        { "en": "Dear Sir/Madam", "hi": "प्रिय महोदय/महोदया", "ta": "மதிப்பிற்குரிய ஐயா/அம்மா" },
+        { "en": "Hello There", "hi": "नमस्कार", "ta": "வணக்கம்" },
+        { "en": "Hi", "hi": "हाय", "ta": "ஹாய்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the superlative form of 'good'?",
+        "hi": "'good' का उत्तमावस्था रूप क्या है?",
+        "ta": "'good' இன் உயர்ந்த நிலை வடிவம் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Gooder", "hi": "Gooder", "ta": "Gooder" },
+        { "en": "Better", "hi": "Better", "ta": "Better" },
+        { "en": "Goodest", "hi": "Goodest", "ta": "Goodest" },
+        { "en": "Best", "hi": "Best", "ta": "Best" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "8-english-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Convert to reported speech: She said, 'I am happy.'",
+        "hi": "परोक्ष कथन में बदलें: She said, 'I am happy.'",
+        "ta": "மறைமுக உரையாக மாற்றுங்கள்: She said, 'I am happy.'"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "She said that she is happy.", "hi": "उसने कहा कि वह खुश है।", "ta": "அவள் தான் மகிழ்ச்சியாக இருக்கிறாள் என்று சொன்னாள்." },
+        { "en": "She said that she was happy.", "hi": "उसने कहा कि वह खुश थी।", "ta": "அவள் தான் மகிழ்ச்சியாக இருந்ததாக சொன்னாள்." },
+        { "en": "She said that she has been happy.", "hi": "उसने कहा कि वह खुश रही है।", "ta": "அவள் தான் மகிழ்ச்சியாக இருந்து வருகிறாள் என்று சொன்னாள்." },
+        { "en": "She said that I am happy.", "hi": "उसने कहा कि मैं खुश हूँ।", "ta": "அவள் நான் மகிழ்ச்சியாக இருக்கிறேன் என்று சொன்னாள்." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following sentences is grammatically correct?",
+        "hi": "निम्नलिखित में से कौन सा वाक्य व्याकरणिक रूप से सही है?",
+        "ta": "பின்வருவனவற்றில் எந்த வாக்கியம் இலக்கணரீதியாக சரியானது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Neither of the boys were present.", "hi": "दोनों में से कोई भी लड़का उपस्थित नहीं था।", "ta": "சிறுவர்களில் இருவரும் இல்லாமல் இருந்தனர்." },
+        { "en": "Each of the students have submitted their work.", "hi": "प्रत्येक छात्र ने अपना काम जमा किया है।", "ta": "ஒவ்வொரு மாணவரும் தங்கள் வேலையை சமர்ப்பித்தனர்." },
+        { "en": "Neither of the boys was present.", "hi": "दोनों में से कोई भी लड़का उपस्थित नहीं था।", "ta": "சிறுவர்களில் ஒருவரும் இல்லாமல் இருந்தனர்." },
+        { "en": "Each of the students has submitted their work.", "hi": "प्रत्येक छात्र ने अपना काम जमा किया है।", "ta": "ஒவ்வொரு மாணவரும் தங்கள் வேலையை சமர்ப்பித்துள்ளனர்." }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-english-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the meaning of the phrase 'to burn the midnight oil'?",
+        "hi": "'to burn the midnight oil' का अर्थ क्या है?",
+        "ta": "'to burn the midnight oil' என்ற சொற்றொடரின் பொருள் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "To light a lamp at night", "hi": "रात में दीपक जलाना", "ta": "இரவில் விளக்கேற்றுவது" },
+        { "en": "To work late into the night", "hi": "देर रात तक काम करना", "ta": "இரவு வரை உழைப்பது" },
+        { "en": "To waste fuel", "hi": "ईंधन बर्बाद करना", "ta": "எரிபொருளை வீணாக்குவது" },
+        { "en": "To cook food at midnight", "hi": "आधी रात को खाना बनाना", "ta": "நள்ளிரவில் சமைப்பது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "In a narrative essay, what is the 'climax'?",
+        "hi": "एक आख्यान निबंध में 'क्लाइमेक्स' क्या है?",
+        "ta": "ஒரு கதை கட்டுரையில் 'உச்சம்' என்பது என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "The beginning of the story", "hi": "कहानी की शुरुआत", "ta": "கதையின் தொடக்கம்" },
+        { "en": "The turning point or most exciting part", "hi": "मोड़ या सबसे रोमांचक भाग", "ta": "திருப்புமுனை அல்லது மிக உத்தேஜகமான பகுதி" },
+        { "en": "The conclusion of the story", "hi": "कहानी का निष्कर्ष", "ta": "கதையின் முடிவு" },
+        { "en": "The introduction of characters", "hi": "पात्रों का परिचय", "ta": "கதாபாத்திரங்களின் அறிமுகம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sentence correctly uses a semicolon?",
+        "hi": "किस वाक्य में अर्धविराम का सही उपयोग हुआ है?",
+        "ta": "எந்த வாக்கியத்தில் அரைப்புள்ளி சரியாக பயன்படுத்தப்பட்டுள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "I like apples; and oranges.", "hi": "मुझे सेब; और संतरे पसंद हैं।", "ta": "எனக்கு ஆப்பிள்கள்; மற்றும் ஆரஞ்சுகள் பிடிக்கும்." },
+        { "en": "It was raining; we stayed inside.", "hi": "बारिश हो रही थी; हम अंदर रहे।", "ta": "மழை பெய்தது; நாங்கள் உள்ளே இருந்தோம்." },
+        { "en": "She ran fast; to catch the bus.", "hi": "वह तेज दौड़ी; बस पकड़ने के लिए।", "ta": "அவள் வேகமாக ஓடினாள்; பேருந்தை பிடிக்க." },
+        { "en": "He is; very smart.", "hi": "वह है; बहुत होशियार।", "ta": "அவன்; மிகவும் புத்திசாலி." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is 'alliteration' in English literature?",
+        "hi": "अंग्रेजी साहित्य में 'अनुप्रास' (alliteration) क्या है?",
+        "ta": "ஆங்கில இலக்கியத்தில் 'alliteration' என்றால் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Repetition of vowel sounds", "hi": "स्वर ध्वनियों की पुनरावृत्ति", "ta": "உயிர் ஒலிகளின் மீண்டும் மீண்டும் வருவது" },
+        { "en": "Repetition of initial consonant sounds", "hi": "प्रारंभिक व्यंजन ध्वनियों की पुनरावृत्ति", "ta": "தொடக்க மெய்யொலிகளின் மீண்டும் மீண்டும் வருவது" },
+        { "en": "Comparison using 'like' or 'as'", "hi": "'like' या 'as' का उपयोग करके तुलना", "ta": "'like' அல்லது 'as' பயன்படுத்தி ஒப்பீடு" },
+        { "en": "Giving human traits to non-human things", "hi": "निर्जीव वस्तुओं को मानवीय गुण देना", "ta": "மனித குணங்களை மனிதரல்லாத பொருட்களுக்கு கொடுப்பது" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

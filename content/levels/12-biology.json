@@ -1,0 +1,176 @@
+{
+  "class": 12,
+  "subject": "biology",
+  "questions": [
+    {
+      "id": "12-biology-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Mendel's law of segregation states that:",
+        "hi": "मेंडल का पृथक्करण का नियम कहता है कि:",
+        "ta": "மெண்டலின் பிரிவு விதி கூறுகிறது:"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Traits blend in offspring", "hi": "संतान में लक्षण मिश्रित होते हैं", "ta": "குழந்தைகளில் பண்புகள் கலக்கின்றன" },
+        { "en": "Alleles separate during gamete formation", "hi": "युग्मक निर्माण के दौरान युग्मविकल्पी अलग हो जाते हैं", "ta": "கேமட் உருவாக்கத்தின்போது அலீல்கள் பிரிகின்றன" },
+        { "en": "All offspring are identical", "hi": "सभी संतान समान होते हैं", "ta": "அனைத்து குழந்தைகளும் ஒரேமாதிரியாக இருக்கின்றன" },
+        { "en": "Genes are linked to sex chromosomes", "hi": "जीन लिंग गुणसूत्रों से जुड़े होते हैं", "ta": "மரபணுக்கள் பால் குரோமோசோம்களுடன் இணைக்கப்பட்டுள்ளன" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-biology-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "According to Darwin, natural selection acts on:",
+        "hi": "डार्विन के अनुसार, प्राकृतिक चयन किस पर कार्य करता है?",
+        "ta": "டார்வின் கூற்றுப்படி, இயற்கைத் தேர்வு எதன் மீது செயல்படுகிறது?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Mutations only", "hi": "केवल उत्परिवर्तन पर", "ta": "உருமாற்றங்கள் மட்டும்" },
+        { "en": "Heritable variations that affect survival and reproduction", "hi": "आनुवंशिक विभिन्नताएं जो उत्तरजीविता और प्रजनन को प्रभावित करती हैं", "ta": "உயிர் வாழ்வையும் இனப்பெருக்கத்தையும் பாதிக்கும் பரம்பரை வேறுபாடுகள்" },
+        { "en": "Random genetic drift alone", "hi": "केवल यादृच्छिक आनुवंशिक बहाव", "ta": "தனிமையான சீரற்ற மரபணு சறுக்கல்" },
+        { "en": "Acquired characteristics", "hi": "अर्जित लक्षण", "ta": "பெறப்பட்ட பண்புகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-biology-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "The process of copying DNA into RNA is called:",
+        "hi": "DNA को RNA में कॉपी करने की प्रक्रिया को कहते हैं:",
+        "ta": "DNA ஐ RNA ஆக நகலெடுக்கும் செயல்முறை:"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Translation", "hi": "अनुवादन", "ta": "மொழிமாற்றம்" },
+        { "en": "Replication", "hi": "प्रतिकृतिकरण", "ta": "நகலெடுத்தல்" },
+        { "en": "Transcription", "hi": "अनुलेखन", "ta": "படியெடுத்தல்" },
+        { "en": "Transduction", "hi": "पारक्रमण", "ta": "கடத்தல்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-biology-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which part of the ecosystem includes all living organisms?",
+        "hi": "पारिस्थितिकी तंत्र का कौन सा भाग सभी जीवित जीवों को शामिल करता है?",
+        "ta": "சுற்றுச்சூழல் அமைப்பில் அனைத்து உயிரினங்களையும் உள்ளடக்கும் பகுதி எது?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Abiotic component", "hi": "अजैविक घटक", "ta": "உயிரற்ற கூறு" },
+        { "en": "Biotic component", "hi": "जैविक घटक", "ta": "உயிர் கூறு" },
+        { "en": "Lithosphere", "hi": "स्थलमंडल", "ta": "நிலக்கோளம்" },
+        { "en": "Hydrosphere", "hi": "जलमंडल", "ta": "நீர்க்கோளம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-biology-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "The blood group that is considered the universal donor is:",
+        "hi": "जिस रक्त समूह को सार्वत्रिक दाता माना जाता है वह है:",
+        "ta": "பொது நன்கொடையாளராக கருதப்படும் இரத்த வகை:"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "AB", "hi": "AB", "ta": "AB" },
+        { "en": "A", "hi": "A", "ta": "A" },
+        { "en": "B", "hi": "B", "ta": "B" },
+        { "en": "O", "hi": "O", "ta": "O" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "12-biology-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "In a food chain, the organisms that fix solar energy are:",
+        "hi": "खाद्य श्रृंखला में, जो जीव सौर ऊर्जा को स्थिर करते हैं वे हैं:",
+        "ta": "உணவுச் சங்கிலியில் சூரிய ஆற்றலை நிலைநிறுத்தும் உயிரினங்கள்:"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Consumers", "hi": "उपभोक्ता", "ta": "நுகர்வோர்" },
+        { "en": "Decomposers", "hi": "अपघटक", "ta": "சிதைவுண்டாக்கிகள்" },
+        { "en": "Producers", "hi": "उत्पादक", "ta": "உற்பத்தியாளர்கள்" },
+        { "en": "Herbivores", "hi": "शाकाहारी", "ta": "தாவர உண்ணிகள்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-biology-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Down syndrome is caused by trisomy of chromosome number:",
+        "hi": "डाउन सिंड्रोम गुणसूत्र संख्या की त्रिसूत्रता के कारण होता है:",
+        "ta": "டவுன் நோய்க்குறி எந்த குரோமோசோம் எண்ணின் மூன்றாவது தொகுதியால் ஏற்படுகிறது?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "13", "hi": "13", "ta": "13" },
+        { "en": "18", "hi": "18", "ta": "18" },
+        { "en": "21", "hi": "21", "ta": "21" },
+        { "en": "23", "hi": "23", "ta": "23" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-biology-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which enzyme is used to cut DNA at specific sequences in genetic engineering?",
+        "hi": "आनुवंशिक अभियांत्रिकी में विशिष्ट अनुक्रमों पर DNA काटने के लिए कौन सा एंजाइम उपयोग किया जाता है?",
+        "ta": "மரபணு பொறியியலில் குறிப்பிட்ட வரிசைகளில் DNA வெட்ட பயன்படும் நொதி எது?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "DNA polymerase", "hi": "DNA पॉलिमरेज", "ta": "DNA பாலிமரேஸ்" },
+        { "en": "Restriction endonuclease", "hi": "प्रतिबंध एंडोन्यूक्लिएज", "ta": "கட்டுப்பாட்டு எண்டோநியூக்கிலியேஸ்" },
+        { "en": "RNA polymerase", "hi": "RNA पॉलिमरेज", "ta": "RNA பாலிமரேஸ்" },
+        { "en": "Ligase", "hi": "लाइगेज", "ta": "லைகேஸ்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-biology-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Biodiversity hotspots are areas with:",
+        "hi": "जैव विविधता हॉटस्पॉट ऐसे क्षेत्र हैं जहाँ:",
+        "ta": "உயிர்ப்பல்வகை சூடான புள்ளிகள் என்பன:"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "Low species diversity", "hi": "कम प्रजाति विविधता", "ta": "குறைந்த இனப் பன்முகத்தன்மை" },
+        { "en": "High species diversity and endemism", "hi": "उच்च प्रजाति विविधता और स्थानिकता", "ta": "அதிக இனப் பன்முகத்தன்மை மற்றும் சிறப்பிட வகைகள்" },
+        { "en": "Only marine organisms", "hi": "केवल समुद्री जीव", "ta": "கடல் உயிரினங்கள் மட்டும்" },
+        { "en": "Extreme climatic conditions", "hi": "अत्यधिक जलवायु परिस्थितियाँ", "ta": "தீவிரமான காலநிலை சூழ்நிலைகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-biology-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The human genome contains approximately how many genes?",
+        "hi": "मानव जीनोम में लगभग कितने जीन होते हैं?",
+        "ta": "மனித மரபணுவில் தோராயமாக எத்தனை மரபணுக்கள் உள்ளன?"
+      },
+      "visual": "🧬",
+      "choices": [
+        { "en": "2,000–3,000", "hi": "2,000–3,000", "ta": "2,000–3,000" },
+        { "en": "20,000–25,000", "hi": "20,000–25,000", "ta": "20,000–25,000" },
+        { "en": "100,000–150,000", "hi": "100,000–150,000", "ta": "100,000–150,000" },
+        { "en": "1,000,000+", "hi": "1,000,000+", "ta": "1,000,000+" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

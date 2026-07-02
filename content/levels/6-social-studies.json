@@ -1,0 +1,176 @@
+{
+  "class": 6,
+  "subject": "social-studies",
+  "questions": [
+    {
+      "id": "6-social-studies-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Harappan civilization was located in which river valley?",
+        "hi": "हड़प्पा सभ्यता किस नदी घाटी में स्थित थी?",
+        "ta": "ஹரப்பா நாகரிகம் எந்த நதி பள்ளத்தாக்கில் அமைந்திருந்தது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Ganga valley", "hi": "गंगा घाटी", "ta": "கங்கை பள்ளத்தாக்கு" },
+        { "en": "Indus valley", "hi": "सिंधु घाटी", "ta": "சிந்து பள்ளத்தாக்கு" },
+        { "en": "Deccan plateau", "hi": "दक्कन पठार", "ta": "தக்காண பீடபூமி" },
+        { "en": "Brahmaputra valley", "hi": "ब्रह्मपुत्र घाटी", "ta": "பிரம்மபுத்திரா பள்ளத்தாக்கு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-social-studies-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which is the longest river in India?",
+        "hi": "भारत की सबसे लंबी नदी कौन सी है?",
+        "ta": "இந்தியாவின் மிக நீண்ட நதி எது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Yamuna", "hi": "यमुना", "ta": "யமுனா" },
+        { "en": "Godavari", "hi": "गोदावरी", "ta": "கோதாவரி" },
+        { "en": "Ganga", "hi": "गंगा", "ta": "கங்கை" },
+        { "en": "Narmada", "hi": "नर्मदा", "ta": "நர்மதா" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-social-studies-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "A compass needle always points towards which direction?",
+        "hi": "कम्पास की सुई हमेशा किस दिशा में इंगित करती है?",
+        "ta": "திசைகாட்டியின் ஊசி எப்போதும் எந்த திசையை நோக்கும்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "South", "hi": "दक्षिण", "ta": "தெற்கு" },
+        { "en": "East", "hi": "पूर्व", "ta": "கிழக்கு" },
+        { "en": "North", "hi": "उत्तर", "ta": "வடக்கு" },
+        { "en": "West", "hi": "पश्चिम", "ta": "மேற்கு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-social-studies-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Vedas are the ancient sacred texts of which religion?",
+        "hi": "वेद किस धर्म के प्राचीन पवित्र ग्रंथ हैं?",
+        "ta": "வேதங்கள் எந்த மதத்தின் பண்டைய புனித நூல்கள்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Buddhism", "hi": "बौद्ध धर्म", "ta": "பவுத்தம்" },
+        { "en": "Jainism", "hi": "जैन धर्म", "ta": "சமணம்" },
+        { "en": "Hinduism", "hi": "हिंदू धर्म", "ta": "இந்து மதம்" },
+        { "en": "Sikhism", "hi": "सिख धर्म", "ta": "சீக்கியம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-social-studies-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the capital of India?",
+        "hi": "भारत की राजधानी क्या है?",
+        "ta": "இந்தியாவின் தலைநகரம் என்ன?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Mumbai", "hi": "मुंबई", "ta": "மும்பை" },
+        { "en": "Kolkata", "hi": "कोलकाता", "ta": "கொல்கத்தா" },
+        { "en": "Chennai", "hi": "चेन्नई", "ta": "சென்னை" },
+        { "en": "New Delhi", "hi": "नई दिल्ली", "ta": "புது டெல்லி" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "6-social-studies-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Lines running parallel to the equator on a globe are called?",
+        "hi": "ग्लोब पर भूमध्य रेखा के समानांतर रेखाओं को क्या कहते हैं?",
+        "ta": "புவியில் பூமத்திய ரேகைக்கு இணையாக செல்லும் கோடுகள் என்று அழைக்கப்படுகின்றன?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Meridians", "hi": "देशांतर रेखाएं", "ta": "தீர்க்கரேகைகள்" },
+        { "en": "Latitudes", "hi": "अक्षांश रेखाएं", "ta": "அட்சரேகைகள்" },
+        { "en": "Contour lines", "hi": "समोच्च रेखाएं", "ta": "சமநிலைக் கோடுகள்" },
+        { "en": "Grid lines", "hi": "ग्रिड रेखाएं", "ta": "கட்டக் கோடுகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-social-studies-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Ashoka the Great ruled during which dynasty?",
+        "hi": "अशोक महान किस वंश के दौरान शासन करते थे?",
+        "ta": "அசோகர் மகான் எந்த வம்சத்தின் கீழ் ஆட்சி செய்தார்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Mughal dynasty", "hi": "मुगल वंश", "ta": "முகலாய வம்சம்" },
+        { "en": "Maurya dynasty", "hi": "मौर्य वंश", "ta": "மௌரிய வம்சம்" },
+        { "en": "Gupta dynasty", "hi": "गुप्त वंश", "ta": "குப்த வம்சம்" },
+        { "en": "Chola dynasty", "hi": "चोल वंश", "ta": "சோழ வம்சம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-social-studies-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which ocean lies to the west of India?",
+        "hi": "भारत के पश्चिम में कौन सा महासागर है?",
+        "ta": "இந்தியாவின் மேற்கில் எந்த கடல் உள்ளது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Pacific Ocean", "hi": "प्रशांत महासागर", "ta": "பசிபிக் கடல்" },
+        { "en": "Atlantic Ocean", "hi": "अटलांटिक महासागर", "ta": "அட்லாண்டிக் கடல்" },
+        { "en": "Arabian Sea", "hi": "अरब सागर", "ta": "அரேபியக் கடல்" },
+        { "en": "Bay of Bengal", "hi": "बंगाल की खाड़ी", "ta": "வங்காள விரிகுடா" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-social-studies-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which mountain range is known as the 'Roof of India'?",
+        "hi": "किस पर्वत श्रृंखला को 'भारत की छत' कहा जाता है?",
+        "ta": "'இந்தியாவின் கூரை' என்று அழைக்கப்படும் மலைத்தொடர் எது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Aravalli", "hi": "अरावली", "ta": "அரவல்லி" },
+        { "en": "Western Ghats", "hi": "पश्चिमी घाट", "ta": "மேற்குத் தொடர்ச்சி மலை" },
+        { "en": "Himalayas", "hi": "हिमालय", "ta": "இமயமலை" },
+        { "en": "Vindhyas", "hi": "विंध्य", "ta": "விந்தியா" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-social-studies-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Who was the founder of Buddhism?",
+        "hi": "बौद्ध धर्म के संस्थापक कौन थे?",
+        "ta": "பவுத்தத்தின் நிறுவனர் யார்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Mahavira", "hi": "महावीर", "ta": "மகாவீரர்" },
+        { "en": "Guru Nanak", "hi": "गुरु नानक", "ta": "குரு நானக்" },
+        { "en": "Siddhartha Gautama", "hi": "सिद्धार्थ गौतम", "ta": "சித்தார்த்த கௌதமர்" },
+        { "en": "Adi Shankaracharya", "hi": "आदि शंकराचार्य", "ta": "ஆதி சங்கராச்சாரியார்" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

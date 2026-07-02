@@ -1,0 +1,176 @@
+{
+  "class": 8,
+  "subject": "social-studies",
+  "questions": [
+    {
+      "id": "8-social-studies-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "India gained independence on?",
+        "hi": "भारत को स्वतंत्रता कब मिली?",
+        "ta": "இந்தியா சுதந்திரம் அடைந்தது எப்போது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "15 August 1947", "hi": "15 अगस्त 1947", "ta": "15 ஆகஸ்ட் 1947" },
+        { "en": "26 January 1950", "hi": "26 जनवरी 1950", "ta": "26 ஜனவரி 1950" },
+        { "en": "2 October 1948", "hi": "2 अक्टूबर 1948", "ta": "2 அக்டோபர் 1948" },
+        { "en": "30 January 1948", "hi": "30 जनवरी 1948", "ta": "30 ஜனவரி 1948" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "8-social-studies-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Non-Cooperation Movement was launched by Mahatma Gandhi in which year?",
+        "hi": "असहयोग आंदोलन महात्मा गांधी ने किस वर्ष शुरू किया था?",
+        "ta": "ஒத்துழையாமை இயக்கத்தை மஹாத்மா காந்தி எந்த ஆண்டு தொடங்கினார்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "1905", "hi": "1905", "ta": "1905" },
+        { "en": "1915", "hi": "1915", "ta": "1915" },
+        { "en": "1920", "hi": "1920", "ta": "1920" },
+        { "en": "1942", "hi": "1942", "ta": "1942" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-social-studies-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which country gifted the Statue of Liberty to the United States?",
+        "hi": "स्टैच्यू ऑफ लिबर्टी किस देश ने संयुक्त राज्य अमेरिका को भेंट किया?",
+        "ta": "சுதந்திர சிலையை அமெரிக்காவிற்கு எந்த நாடு பரிசாக அளித்தது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Britain", "hi": "ब्रिटेन", "ta": "பிரிட்டன்" },
+        { "en": "France", "hi": "फ्रांस", "ta": "பிரான்சு" },
+        { "en": "Germany", "hi": "जर्मनी", "ta": "ஜெர்மனி" },
+        { "en": "Italy", "hi": "इटली", "ta": "இத்தாலி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-social-studies-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a mineral resource?",
+        "hi": "निम्नलिखित में से कौन सा खनिज संसाधन है?",
+        "ta": "பின்வருவனவற்றில் எது ஒரு கனிம வளம்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Forest", "hi": "वन", "ta": "காடு" },
+        { "en": "River", "hi": "नदी", "ta": "நதி" },
+        { "en": "Iron ore", "hi": "लौह अयस्क", "ta": "இரும்பு தாது" },
+        { "en": "Soil", "hi": "मिट्टी", "ta": "மண்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-social-studies-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Quit India Movement was launched in?",
+        "hi": "भारत छोड़ो आंदोलन कब शुरू हुआ?",
+        "ta": "வெள்ளையனே வெளியேறு இயக்கம் எப்போது தொடங்கியது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "1920", "hi": "1920", "ta": "1920" },
+        { "en": "1930", "hi": "1930", "ta": "1930" },
+        { "en": "1942", "hi": "1942", "ta": "1942" },
+        { "en": "1945", "hi": "1945", "ta": "1945" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-social-studies-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a Fundamental Right in India?",
+        "hi": "निम्नलिखित में से कौन सा भारत में मौलिक अधिकार है?",
+        "ta": "பின்வருவனவற்றில் எது இந்தியாவில் அடிப்படை உரிமை?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Right to vote", "hi": "मतदान का अधिकार", "ta": "வாக்களிக்கும் உரிமை" },
+        { "en": "Right to work", "hi": "काम करने का अधिकार", "ta": "வேலை செய்யும் உரிமை" },
+        { "en": "Right to equality", "hi": "समानता का अधिकार", "ta": "சமத்துவ உரிமை" },
+        { "en": "Right to free education up to age 18", "hi": "18 वर्ष तक मुफ्त शिक्षा का अधिकार", "ta": "18 வயது வரை இலவச கல்வி உரிமை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-social-studies-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which Indian leader was known as 'Iron Man of India'?",
+        "hi": "किस भारतीय नेता को 'भारत का लौह पुरुष' कहा जाता था?",
+        "ta": "'இந்தியாவின் இரும்பு மனிதன்' என்று அழைக்கப்பட்ட இந்திய தலைவர் யார்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Jawaharlal Nehru", "hi": "जवाहरलाल नेहरू", "ta": "ஜவாஹர்லால் நேரு" },
+        { "en": "Mahatma Gandhi", "hi": "महात्मा गांधी", "ta": "மஹாத்மா காந்தி" },
+        { "en": "Sardar Vallabhbhai Patel", "hi": "सरदार वल्लभभाई पटेल", "ta": "சர்தார் வல்லபாய் படேல்" },
+        { "en": "B.R. Ambedkar", "hi": "बी.आर. अंबेडकर", "ta": "பி.ஆர். அம்பேத்கர்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-social-studies-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What type of farming is done on steep hillside slopes using step-like fields?",
+        "hi": "खड़ी पहाड़ी ढलानों पर सीढ़ीदार खेतों में कौन सी खेती की जाती है?",
+        "ta": "செங்குத்தான மலை சரிவுகளில் படிகட்டு வயல்களில் செய்யப்படும் விவசாயம் என்ன?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Subsistence farming", "hi": "निर्वाह खेती", "ta": "உணவுத் தேவை விவசாயம்" },
+        { "en": "Commercial farming", "hi": "व्यावसायिक खेती", "ta": "வணிக விவசாயம்" },
+        { "en": "Terrace farming", "hi": "सीढ़ीदार खेती", "ta": "படிகட்டு விவசாயம்" },
+        { "en": "Plantation farming", "hi": "बागान खेती", "ta": "தோட்ட விவசாயம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-social-studies-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Indian Parliament consists of how many houses?",
+        "hi": "भारतीय संसद में कितने सदन होते हैं?",
+        "ta": "இந்திய நாடாளுமன்றம் எத்தனை அவைகளை கொண்டுள்ளது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "1", "hi": "1", "ta": "1" },
+        { "en": "2", "hi": "2", "ta": "2" },
+        { "en": "3", "hi": "3", "ta": "3" },
+        { "en": "4", "hi": "4", "ta": "4" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-social-studies-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Dandi March (Salt March) of 1930 was led by?",
+        "hi": "1930 की दांडी यात्रा (नमक मार्च) का नेतृत्व किसने किया था?",
+        "ta": "1930 ஆம் ஆண்டு தண்டி யாத்திரை (உப்பு யாத்திரை) யாரால் நடத்தப்பட்டது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Jawaharlal Nehru", "hi": "जवाहरलाल नेहरू", "ta": "ஜவாஹர்லால் நேரு" },
+        { "en": "Bal Gangadhar Tilak", "hi": "बाल गंगाधर तिलक", "ta": "பால் கங்காதர் திலக்" },
+        { "en": "Mahatma Gandhi", "hi": "महात्मा गांधी", "ta": "மஹாத்மா காந்தி" },
+        { "en": "Subhas Chandra Bose", "hi": "सुभाष चंद्र बोस", "ta": "சுபாஷ் சந்திர போஸ்" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

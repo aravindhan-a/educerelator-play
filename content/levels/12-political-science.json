@@ -1,0 +1,176 @@
+{
+  "class": 12,
+  "subject": "political-science",
+  "questions": [
+    {
+      "id": "12-political-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which amendment lowered the voting age in India from 21 to 18?",
+        "hi": "किस संशोधन ने भारत में मतदान की आयु 21 से घटाकर 18 वर्ष कर दी?",
+        "ta": "எந்த திருத்தம் இந்தியாவில் வாக்களிக்கும் வயதை 21 இல் இருந்து 18 ஆக குறைத்தது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "42nd Amendment", "hi": "42वाँ संशोधन", "ta": "42வது திருத்தம்" },
+        { "en": "52nd Amendment", "hi": "52वाँ संशोधन", "ta": "52வது திருத்தம்" },
+        { "en": "61st Amendment", "hi": "61वाँ संशोधन", "ta": "61வது திருத்தம்" },
+        { "en": "73rd Amendment", "hi": "73वाँ संशोधन", "ta": "73வது திருத்தம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-political-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The concept of 'Balance of Power' is central to:",
+        "hi": "'शक्ति संतुलन' की अवधारणा किसके लिए केंद्रीय है?",
+        "ta": "'சக்தி சமநிலை' கருத்து எதற்கு மையமானது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "International Relations", "hi": "अंतर्राष्ट्रीय संबंध", "ta": "சர்வதேச உறவுகள்" },
+        { "en": "Local governance", "hi": "स्थानीय शासन", "ta": "உள்ளூர் ஆட்சி" },
+        { "en": "Judicial review", "hi": "न्यायिक समीक्षा", "ta": "நீதித்துறை மதிப்பாய்வு" },
+        { "en": "Electoral politics", "hi": "चुनावी राजनीति", "ta": "தேர்தல் அரசியல்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "12-political-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Panchayati Raj was established in India by which amendment?",
+        "hi": "भारत में पंचायती राज किस संशोधन द्वारा स्थापित किया गया?",
+        "ta": "இந்தியாவில் பஞ்சாயத்தி ராஜ் எந்த திருத்தத்தால் நிறுவப்பட்டது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "42nd Amendment", "hi": "42वाँ संशोधन", "ta": "42வது திருத்தம்" },
+        { "en": "52nd Amendment", "hi": "52वाँ संशோधन", "ta": "52வது திருத்தம்" },
+        { "en": "73rd Amendment", "hi": "73वाँ संशोधन", "ta": "73வது திருத்தம்" },
+        { "en": "86th Amendment", "hi": "86वाँ संशोधन", "ta": "86வது திருத்தம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-political-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "NATO is an alliance of nations primarily from:",
+        "hi": "NATO मुख्य रूप से किन देशों का गठबंधन है?",
+        "ta": "NATO முதன்மையாக எந்த நாடுகளின் கூட்டணி?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "Asia and Africa", "hi": "एशिया और अफ्रीका", "ta": "ஆசியா மற்றும் ஆப்பிரிக்கா" },
+        { "en": "North America and Europe", "hi": "उत्तर अमेरिका और यूरोप", "ta": "வட அமெரிக்கா மற்றும் ஐரோப்பா" },
+        { "en": "South America and Oceania", "hi": "दक्षिण अमेरिका और ओशिनिया", "ta": "தென் அமெரிக்கா மற்றும் ஓசியானியா" },
+        { "en": "Middle East and Central Asia", "hi": "मध्य पूर्व और मध्य एशिया", "ta": "மத்திய கிழக்கு மற்றும் மத்திய ஆசியா" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-political-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "India's foreign policy is based on the principle of:",
+        "hi": "भारत की विदेश नीति किस सिद्धांत पर आधारित है?",
+        "ta": "இந்தியாவின் வெளியுறவு கொள்கை எந்த கோட்பாட்டை அடிப்படையாக கொண்டது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "Military alliances", "hi": "सैन्य गठबंधन", "ta": "இராணுவ கூட்டணி" },
+        { "en": "Non-Alignment", "hi": "गुटनिरपेक्षता", "ta": "அணி சேராமை" },
+        { "en": "Isolationism", "hi": "अलगाववाद", "ta": "தனிமைவாதம்" },
+        { "en": "Imperialism", "hi": "साम्राज्यवाद", "ta": "ஏகாதிபத்தியம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-political-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Election Commission of India is a:",
+        "hi": "भारत का चुनाव आयोग एक:",
+        "ta": "இந்தியாவின் தேர்தல் ஆணையம்:"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "Constitutional body", "hi": "संवैधानिक निकाय", "ta": "அரசியலமைப்பு அமைப்பு" },
+        { "en": "Statutory body", "hi": "वैधानिक निकाय", "ta": "சட்டரீதியான அமைப்பு" },
+        { "en": "Non-governmental organization", "hi": "गैर-सरकारी संगठन", "ta": "அரசு சாரா நிறுவனம்" },
+        { "en": "Ministry under Home Affairs", "hi": "गृह मंत्रालय के अधीन मंत्रालय", "ta": "உள்துறை அமைச்சகத்தின் கீழ் அமைச்சகம்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "12-political-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The concept of 'Separation of Powers' was given by:",
+        "hi": "'शक्तियों के पृथक्करण' की अवधारणा किसने दी?",
+        "ta": "'அதிகாரங்களை பிரிப்பது' என்ற கருத்தை யார் கொடுத்தார்?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "John Locke", "hi": "जॉन लॉक", "ta": "ஜான் லாக்" },
+        { "en": "Montesquieu", "hi": "मॉन्टेस्क्यू", "ta": "மாண்டெஸ்கியு" },
+        { "en": "Jean-Jacques Rousseau", "hi": "जीन-जैक्स रूसो", "ta": "ஜீன்-ஜாக்ஸ் ரூஸோ" },
+        { "en": "Thomas Hobbes", "hi": "थॉमस हॉब्स", "ta": "தாமஸ் ஹாப்ஸ்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-political-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which body resolves disputes between states in India?",
+        "hi": "भारत में राज्यों के बीच विवादों का निपटारा कौन-सा निकाय करता है?",
+        "ta": "இந்தியாவில் மாநிலங்களுக்கு இடையிலான சர்ச்சைகளை எந்த அமைப்பு தீர்க்கிறது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "High Court", "hi": "उच्च न्यायालय", "ta": "உயர் நீதிமன்றம்" },
+        { "en": "Supreme Court", "hi": "सर्वोच्च न्यायालय", "ta": "உச்ச நீதிமன்றம்" },
+        { "en": "Inter-State Council", "hi": "अंतर-राज्य परिषद", "ta": "மாநிலங்களுக்கிடையேயான சபை" },
+        { "en": "NITI Aayog", "hi": "नीति आयोग", "ta": "நீதி ஆயோக்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-political-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Human Rights Day is observed on:",
+        "hi": "मानवाधिकार दिवस कब मनाया जाता है?",
+        "ta": "மனித உரிமைகள் தினம் எப்போது கொண்டாடப்படுகிறது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "24 October", "hi": "24 अक्टूबर", "ta": "24 அக்டோபர்" },
+        { "en": "10 December", "hi": "10 दिसंबर", "ta": "10 டிசம்பர்" },
+        { "en": "26 January", "hi": "26 जनवरी", "ta": "26 ஜனவரி" },
+        { "en": "15 August", "hi": "15 अगस्त", "ta": "15 ஆகஸ்ட்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-political-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which article deals with the Right to Constitutional Remedies?",
+        "hi": "कौन-सा अनुच्छेद संवैधानिक उपचारों के अधिकार से संबंधित है?",
+        "ta": "எந்த பிரிவு அரசியலமைப்பு தீர்வு பெறுவதற்கான உரிமையை கையாள்கிறது?"
+      },
+      "visual": "⚖️",
+      "choices": [
+        { "en": "Article 19", "hi": "अनुच्छेद 19", "ta": "பிரிவு 19" },
+        { "en": "Article 21", "hi": "अनुच्छेद 21", "ta": "பிரிவு 21" },
+        { "en": "Article 32", "hi": "अनुच्छेद 32", "ta": "பிரிவு 32" },
+        { "en": "Article 44", "hi": "अनुच्छेद 44", "ta": "பிரிவு 44" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

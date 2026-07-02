@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "business-studies",
+  "questions": [
+    {
+      "id": "11-business-studies-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which form of business organisation has unlimited liability?",
+        "hi": "किस व्यावसायिक संगठन में असीमित दायित्व होता है?",
+        "ta": "எந்த வணிக அமைப்பில் வரம்பற்ற பொறுப்பு உள்ளது?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Private Limited Company", "hi": "प्राइवेट लिमिटेड कंपनी", "ta": "தனியார் லிமிடெட் நிறுவனம்" },
+        { "en": "Public Limited Company", "hi": "पब्लिक लिमिटेड कंपनी", "ta": "பொது லிமிடெட் நிறுவனம்" },
+        { "en": "Sole Proprietorship", "hi": "एकल स्वामित्व", "ta": "தனி உரிமை" },
+        { "en": "Cooperative Society", "hi": "सहकारी समिति", "ta": "கூட்டுறவு சங்கம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-business-studies-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The minimum number of members required to form a Partnership firm is:",
+        "hi": "साझेदारी फर्म बनाने के लिए न्यूनतम सदस्यों की संख्या है:",
+        "ta": "கூட்டாண்மை நிறுவனம் உருவாக்க தேவையான குறைந்தபட்ச உறுப்பினர்கள் எண்ணிக்கை:"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "1", "hi": "1", "ta": "1" },
+        { "en": "2", "hi": "2", "ta": "2" },
+        { "en": "5", "hi": "5", "ta": "5" },
+        { "en": "7", "hi": "7", "ta": "7" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-business-studies-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is NOT a feature of a Joint Stock Company?",
+        "hi": "निम्नलिखित में से कौन-सा संयुक्त स्टॉक कंपनी की विशेषता नहीं है?",
+        "ta": "பின்வருவனவற்றில் எது கூட்டு பங்கு நிறுவனத்தின் அம்சம் அல்ல?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Separate Legal Entity", "hi": "अलग कानूनी इकाई", "ta": "தனி சட்ட நிறுவனம்" },
+        { "en": "Perpetual Succession", "hi": "शाश्वत उत्तराधिकार", "ta": "நிரந்தர வாரிசு" },
+        { "en": "Unlimited Liability", "hi": "असीमित दायित्व", "ta": "வரம்பற்ற பொறுப்பு" },
+        { "en": "Transferability of Shares", "hi": "शेयरों की हस्तांतरणीयता", "ta": "பங்குகளின் பரிமாற்றம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-business-studies-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Commerce includes which two main activities?",
+        "hi": "वाणिज्य में कौन-सी दो मुख्य गतिविधियाँ शामिल हैं?",
+        "ta": "வணிகத்தில் எந்த இரண்டு முக்கிய நடவடிக்கைகள் அடங்கும்?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Trade and Aids to Trade", "hi": "व्यापार और व्यापार के सहायक", "ta": "வர்த்தகம் மற்றும் வர்த்தக உதவிகள்" },
+        { "en": "Manufacturing and Sales", "hi": "निर्माण और बिक्री", "ta": "உற்பத்தி மற்றும் விற்பனை" },
+        { "en": "Import and Export", "hi": "आयात और निर्यात", "ta": "இறக்குமதி மற்றும் ஏற்றுமதி" },
+        { "en": "Banking and Insurance", "hi": "बैंकिंग और बीमा", "ta": "வங்கி மற்றும் காப்பீடு" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-business-studies-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "A Cooperative Society is formed under which Act?",
+        "hi": "सहकारी समिति किस अधिनियम के तहत गठित होती है?",
+        "ta": "கூட்டுறவு சங்கம் எந்த சட்டத்தின் கீழ் உருவாக்கப்படுகிறது?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Companies Act 2013", "hi": "कंपनी अधिनियम 2013", "ta": "நிறுவனங்கள் சட்டம் 2013" },
+        { "en": "Partnership Act 1932", "hi": "साझेदारी अधिनियम 1932", "ta": "கூட்டாண்மை சட்டம் 1932" },
+        { "en": "Cooperative Societies Act 1912", "hi": "सहकारी समितियाँ अधिनियम 1912", "ta": "கூட்டுறவு சங்கங்கள் சட்டம் 1912" },
+        { "en": "Indian Contract Act 1872", "hi": "भारतीय अनुबंध अधिनियम 1872", "ta": "இந்திய ஒப்பந்த சட்டம் 1872" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-business-studies-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The document that governs the internal management of a company is called:",
+        "hi": "कंपनी के आंतरिक प्रबंधन को नियंत्रित करने वाले दस्तावेज़ को कहा जाता है:",
+        "ta": "நிறுவனத்தின் உள்நிர்வாகத்தை நிர்வகிக்கும் ஆவணம் என்று அழைக்கப்படுகிறது:"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Memorandum of Association", "hi": "सहायता ज्ञापन", "ta": "சங்க குறிப்பாணை" },
+        { "en": "Articles of Association", "hi": "अंतर्नियम", "ta": "சங்க விதிகள்" },
+        { "en": "Prospectus", "hi": "विवरण पत्र", "ta": "விளக்கப்பட்டியல்" },
+        { "en": "Annual Report", "hi": "वार्षिक रिपोर्ट", "ta": "ஆண்டு அறிக்கை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-business-studies-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which type of partner actively participates in the management of the firm?",
+        "hi": "कौन-सा साझेदार फर्म के प्रबंधन में सक्रिय रूप से भाग लेता है?",
+        "ta": "எந்த வகை கூட்டாளி நிறுவனத்தின் மேலாண்மையில் தீவிரமாக பங்கேற்கிறார்?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Sleeping Partner", "hi": "निद्रित साझेदार", "ta": "தூங்கும் கூட்டாளி" },
+        { "en": "Nominal Partner", "hi": "नामित साझेदार", "ta": "பெயரளவு கூட்டாளி" },
+        { "en": "Active Partner", "hi": "सक्रिय साझेदार", "ta": "செயலில் உள்ள கூட்டாளி" },
+        { "en": "Minor Partner", "hi": "अवयस्क साझेदार", "ta": "சிறுவர் கூட்டாளி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-business-studies-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Business risk arises due to:",
+        "hi": "व्यावसायिक जोखिम उत्पन्न होता है:",
+        "ta": "வணிக ஆபத்து எதனால் எழுகிறது:"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Certainty of returns", "hi": "प्रतिफल की निश्चितता", "ta": "வருமான நிச்சயம்" },
+        { "en": "Uncertainties in business environment", "hi": "व्यावसायिक वातावरण में अनिश्चितताएँ", "ta": "வணிக சூழலில் நிச்சயமற்ற தன்மை" },
+        { "en": "Government regulations", "hi": "सरकारी नियम", "ta": "அரசாங்க விதிமுறைகள்" },
+        { "en": "High profit motive", "hi": "उच्च लाभ उद्देश्य", "ta": "அதிக லாப நோக்கம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-business-studies-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the maximum number of members in a Private Limited Company?",
+        "hi": "प्राइवेट लिमिटेड कंपनी में अधिकतम सदस्यों की संख्या कितनी होती है?",
+        "ta": "தனியார் லிமிடெட் நிறுவனத்தில் அதிகபட்ச உறுப்பினர்கள் எண்ணிக்கை என்ன?"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "50", "hi": "50", "ta": "50" },
+        { "en": "100", "hi": "100", "ta": "100" },
+        { "en": "200", "hi": "200", "ta": "200" },
+        { "en": "Unlimited", "hi": "असीमित", "ta": "வரம்பற்றது" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-business-studies-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The primary objective of a business is:",
+        "hi": "व्यवसाय का प्राथमिक उद्देश्य है:",
+        "ta": "வணிகத்தின் முதன்மை நோக்கம்:"
+      },
+      "visual": "💼",
+      "choices": [
+        { "en": "Social welfare", "hi": "सामाजिक कल्याण", "ta": "சமூக நலன்" },
+        { "en": "Profit earning", "hi": "लाभ अर्जित करना", "ta": "லாபம் ஈட்டுவது" },
+        { "en": "Employment generation", "hi": "रोजगार सृजन", "ta": "வேலை வாய்ப்பு உருவாக்கம்" },
+        { "en": "Environmental protection", "hi": "पर्यावरण संरक्षण", "ta": "சுற்றுச்சூழல் பாதுகாப்பு" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "class": 6,
+  "subject": "hindi",
+  "questions": [
+    {
+      "id": "6-hindi-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a masculine noun (pulling) in Hindi?",
+        "hi": "निम्नलिखित में से कौन सा शब्द पुल्लिंग है?",
+        "ta": "பின்வருவனவற்றில் எது இந்தியில் ஆண்பால் பெயர்ச்சொல்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Ladki (girl)", "hi": "लड़की", "ta": "லட்கி (பெண்)" },
+        { "en": "Nadi (river)", "hi": "नदी", "ta": "நதி" },
+        { "en": "Ladka (boy)", "hi": "लड़का", "ta": "லட்கா (சிறுவன்)" },
+        { "en": "Kitaab (book)", "hi": "किताब", "ta": "கிட்டாப் (புத்தகம்)" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-hindi-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "How many vowels (swar) are there in the Hindi alphabet?",
+        "hi": "हिंदी वर्णमाला में कितने स्वर होते हैं?",
+        "ta": "இந்தி எழுத்துக்களில் எத்தனை உயிரெழுத்துகள் (स्वर) உள்ளன?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "10", "hi": "10", "ta": "10" },
+        { "en": "11", "hi": "11", "ta": "11" },
+        { "en": "12", "hi": "12", "ta": "12" },
+        { "en": "13", "hi": "13", "ta": "13" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-hindi-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of 'ladka' (boy) in Hindi?",
+        "hi": "'लड़का' का बहुवचन क्या है?",
+        "ta": "இந்தியில் 'ladka' (சிறுவன்) இன் பன்மை என்ன?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Ladkas", "hi": "लड़कास", "ta": "லட்காஸ்" },
+        { "en": "Ladke", "hi": "लड़के", "ta": "லட்கே" },
+        { "en": "Ladkon", "hi": "लड़कों", "ta": "லட்கோன்" },
+        { "en": "Ladkiyan", "hi": "लड़कियाँ", "ta": "லட்கியான்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-hindi-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a conjunction (sanyojak) in Hindi?",
+        "hi": "निम्नलिखित में से कौन सा हिंदी में संयोजक है?",
+        "ta": "பின்வருவனவற்றில் எது இந்தியில் இணைப்புச்சொல் (sanyojak)?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Aur (and)", "hi": "और", "ta": "ஆர் (மற்றும்)" },
+        { "en": "Ghar (house)", "hi": "घर", "ta": "கர் (வீடு)" },
+        { "en": "Sundar (beautiful)", "hi": "सुंदर", "ta": "சுந்தர் (அழகான)" },
+        { "en": "Dhire (slowly)", "hi": "धीरे", "ta": "தீரே (மெதுவாக)" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "6-hindi-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Hindi grammar, 'sandhi' means the joining of two?",
+        "hi": "हिंदी व्याकरण में 'संधि' किन दो का मिलन है?",
+        "ta": "இந்தி இலக்கணத்தில் 'संधि' என்பது இரண்டு எதன் இணைப்பு?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Sentences", "hi": "वाक्यों", "ta": "வாக்கியங்கள்" },
+        { "en": "Words", "hi": "शब्दों", "ta": "சொற்கள்" },
+        { "en": "Sounds/Letters", "hi": "वर्णों/ध्वनियों", "ta": "ஒலிகள்/எழுத்துக்கள்" },
+        { "en": "Paragraphs", "hi": "अनुच्छेदों", "ta": "பத்திகள்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-hindi-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a verb (kriya) in Hindi?",
+        "hi": "निम्नलिखित में से कौन सा हिंदी में क्रिया है?",
+        "ta": "பின்வருவனவற்றில் எது இந்தியில் வினைச்சொல் (kriya)?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Pahad (mountain)", "hi": "पहाड़", "ta": "பஹாட் (மலை)" },
+        { "en": "Khana (to eat)", "hi": "खाना", "ta": "கானா (சாப்பிட)" },
+        { "en": "Lal (red)", "hi": "लाल", "ta": "லால் (சிவப்பு)" },
+        { "en": "Tez (fast)", "hi": "तेज़", "ta": "தேஜ் (வேகமான)" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "6-hindi-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does 'Aakash' (आकाश) mean in Hindi?",
+        "hi": "'आकाश' का अर्थ क्या है?",
+        "ta": "இந்தியில் 'आकाश' என்பதன் அர்த்தம் என்ன?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Earth", "hi": "पृथ्वी", "ta": "பூமி" },
+        { "en": "Water", "hi": "जल", "ta": "நீர்" },
+        { "en": "Sky", "hi": "आसमान", "ta": "வானம்" },
+        { "en": "Fire", "hi": "अग्नि", "ta": "நெருப்பு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-hindi-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word is a feminine noun (striling) in Hindi?",
+        "hi": "हिंदी में कौन सा शब्द स्त्रीलिंग है?",
+        "ta": "இந்தியில் எந்த சொல் பெண்பால் பெயர்ச்சொல் (striling)?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Sher (lion)", "hi": "शेर", "ta": "ஷேர் (சிங்கம்)" },
+        { "en": "Ladka (boy)", "hi": "लड़का", "ta": "லட்கா (சிறுவன்)" },
+        { "en": "Nadi (river)", "hi": "नदी", "ta": "நதி" },
+        { "en": "Kutta (dog)", "hi": "कुत्ता", "ta": "குத்தா (நாய்)" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-hindi-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What type of word is 'sundar' (beautiful) in Hindi?",
+        "hi": "हिंदी में 'सुंदर' किस प्रकार का शब्द है?",
+        "ta": "இந்தியில் 'sundar' (அழகான) என்பது என்ன வகை சொல்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Noun (sangya)", "hi": "संज्ञा", "ta": "பெயர்ச்சொல்" },
+        { "en": "Verb (kriya)", "hi": "क्रिया", "ta": "வினைச்சொல்" },
+        { "en": "Adjective (visheshan)", "hi": "विशेषण", "ta": "பெயரடை" },
+        { "en": "Adverb (kriya-visheshan)", "hi": "क्रिया-विशेषण", "ta": "வினையடை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "6-hindi-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Hindi word 'Vidyalaya' (विद्यालय) means?",
+        "hi": "'विद्यालय' का अर्थ क्या है?",
+        "ta": "இந்தி சொல் 'Vidyalaya' (विद्यालय) என்பதன் பொருள்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Hospital", "hi": "अस्पताल", "ta": "மருத்துவமனை" },
+        { "en": "School", "hi": "विद्यालय", "ta": "பள்ளி" },
+        { "en": "Temple", "hi": "मंदिर", "ta": "கோயில்" },
+        { "en": "Market", "hi": "बाजार", "ta": "சந்தை" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

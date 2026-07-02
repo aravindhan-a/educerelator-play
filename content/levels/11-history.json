@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "history",
+  "questions": [
+    {
+      "id": "11-history-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which ancient civilization developed along the Indus River?",
+        "hi": "सिंधु नदी के किनारे कौन सी प्राचीन सभ्यता विकसित हुई?",
+        "ta": "சிந்து நதியோரத்தில் எந்த பண்டைய நாகரிகம் வளர்ந்தது?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "Egyptian", "hi": "मिस्री", "ta": "எகிப்திய" },
+        { "en": "Indus Valley", "hi": "सिंधु घाटी", "ta": "சிந்து வெளி" },
+        { "en": "Mesopotamian", "hi": "मेसोपोटामियन", "ta": "மெசொப்பொத்தேமியன்" },
+        { "en": "Greek", "hi": "यूनानी", "ta": "கிரேக்க" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-history-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The city of Mohenjo-daro was located in present-day:",
+        "hi": "मोहनजोदड़ो नगर वर्तमान में किस देश में स्थित है?",
+        "ta": "மொஹெஞ்சோ-தாரோ நகரம் இன்றைய எந்த நாட்டில் உள்ளது?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "India", "hi": "भारत", "ta": "இந்தியா" },
+        { "en": "Pakistan", "hi": "पाकिस्तान", "ta": "பாகிஸ்தான்" },
+        { "en": "Afghanistan", "hi": "अफगानिस्तान", "ta": "ஆஃப்கானிஸ்தான்" },
+        { "en": "Iran", "hi": "ईरान", "ta": "ஈரான்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-history-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Magna Carta was signed in the year:",
+        "hi": "मैग्ना कार्टा पर किस वर्ष हस्ताक्षर किए गए थे?",
+        "ta": "மக்னா கார்டா எந்த ஆண்டில் கையெழுத்திடப்பட்டது?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "1215", "hi": "1215", "ta": "1215" },
+        { "en": "1265", "hi": "1265", "ta": "1265" },
+        { "en": "1315", "hi": "1315", "ta": "1315" },
+        { "en": "1415", "hi": "1415", "ta": "1415" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-history-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which empire is known for building the Colosseum?",
+        "hi": "कोलोसियम का निर्माण करने वाले साम्राज्य के लिए कौन-सा साम्राज्य जाना जाता है?",
+        "ta": "கொலோசியம் கட்டிய எந்த பேரரசு அறியப்படுகிறது?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "Greek Empire", "hi": "यूनानी साम्राज्य", "ta": "கிரேக்கப் பேரரசு" },
+        { "en": "Roman Empire", "hi": "रोमन साम्राज्य", "ta": "ரோமப் பேரரசு" },
+        { "en": "Byzantine Empire", "hi": "बीजान्टिन साम्राज्य", "ta": "பைசான்டின் பேரரசு" },
+        { "en": "Ottoman Empire", "hi": "ओटोमन साम्राज्य", "ta": "ஒட்டோமான் பேரரசு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-history-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Mauryan Empire was founded by:",
+        "hi": "मौर्य साम्राज्य की स्थापना किसने की थी?",
+        "ta": "மௌரிய பேரரசை நிறுவியவர் யார்?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "Ashoka", "hi": "अशोक", "ta": "அசோகர்" },
+        { "en": "Chandragupta Maurya", "hi": "चंद्रगुप्त मौर्य", "ta": "சந்திரகுப்த மௌரியர்" },
+        { "en": "Bindusara", "hi": "बिंदुसार", "ta": "பிந்துசாரர்" },
+        { "en": "Samudragupta", "hi": "समुद्रगुप्त", "ta": "சமுத்திரகுப்தர்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-history-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Renaissance began in which country?",
+        "hi": "पुनर्जागरण की शुरुआत किस देश में हुई थी?",
+        "ta": "மறுமலர்ச்சி எந்த நாட்டில் தொடங்கியது?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "France", "hi": "फ्रांस", "ta": "பிரான்ஸ்" },
+        { "en": "England", "hi": "इंग्लैंड", "ta": "இங்கிலாந்து" },
+        { "en": "Italy", "hi": "इटली", "ta": "இத்தாலி" },
+        { "en": "Germany", "hi": "जर्मनी", "ta": "ஜெர்மனி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-history-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Gupta Empire is known as the 'Golden Age' of India. Who was its founder?",
+        "hi": "गुप्त साम्राज्य को भारत का 'स्वर्ण युग' कहा जाता है। इसके संस्थापक कौन थे?",
+        "ta": "குப்தப் பேரரசு இந்தியாவின் 'பொற்காலம்' என்று அழைக்கப்படுகிறது. அதன் நிறுவனர் யார்?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "Chandragupta I", "hi": "चंद्रगुप्त प्रथम", "ta": "சந்திரகுப்த முதலாமவர்" },
+        { "en": "Samudragupta", "hi": "समुद्रगुप्त", "ta": "சமுத்திரகுப்தர்" },
+        { "en": "Chandragupta II", "hi": "चंद्रगुप्त द्वितीय", "ta": "சந்திரகுப்த இரண்டாமவர்" },
+        { "en": "Skandagupta", "hi": "स्कंदगुप्त", "ta": "ஸ்கந்தகுப்தர்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-history-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which medieval trade route connected Europe to Asia?",
+        "hi": "कौन-सा मध्यकालीन व्यापार मार्ग यूरोप को एशिया से जोड़ता था?",
+        "ta": "எந்த இடைக்கால வணிக பாதை ஐரோப்பாவை ஆசியாவுடன் இணைத்தது?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "Silk Route", "hi": "रेशम मार्ग", "ta": "பட்டு வழித்தடம்" },
+        { "en": "Spice Route", "hi": "मसाला मार्ग", "ta": "மசாலா வழி" },
+        { "en": "Amber Route", "hi": "अंबर मार्ग", "ta": "அம்பர் வழி" },
+        { "en": "Incense Route", "hi": "धूप मार्ग", "ta": "தூப வழி" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-history-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Crusades were launched primarily to recapture:",
+        "hi": "धर्मयुद्ध मुख्य रूप से किसे वापस पाने के लिए शुरू किए गए थे?",
+        "ta": "சிலுவை யுத்தங்கள் முதன்மையாக எதை மீட்கவும் தொடங்கப்பட்டன?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "Rome", "hi": "रोम", "ta": "ரோம்" },
+        { "en": "Constantinople", "hi": "कॉन्स्टेंटिनोपल", "ta": "கான்ஸ்டான்டினோபிள்" },
+        { "en": "Jerusalem", "hi": "जेरूसलम", "ta": "ஜெருசலேம்" },
+        { "en": "Alexandria", "hi": "अलेक्जेंड्रिया", "ta": "அலெக்சாண்டிரியா" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-history-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Battle of Panipat (First) was fought in:",
+        "hi": "पानीपत की प्रथम लड़ाई कब लड़ी गई थी?",
+        "ta": "பாணிபட் முதல் போர் எப்போது நடந்தது?"
+      },
+      "visual": "📜",
+      "choices": [
+        { "en": "1526", "hi": "1526", "ta": "1526" },
+        { "en": "1556", "hi": "1556", "ta": "1556" },
+        { "en": "1761", "hi": "1761", "ta": "1761" },
+        { "en": "1498", "hi": "1498", "ta": "1498" }
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

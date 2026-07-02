@@ -1,0 +1,176 @@
+{
+  "class": 5,
+  "subject": "english",
+  "questions": [
+    {
+      "id": "5-english-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Identify the adjective in this sentence: 'She wore a beautiful red dress.'",
+        "hi": "इस वाक्य में विशेषण की पहचान करें: 'She wore a beautiful red dress.'",
+        "ta": "'She wore a beautiful red dress.' — இதில் உரிச்சொல்லை அடையாளப்படுத்துக."
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "She", "hi": "She", "ta": "She" },
+        { "en": "wore", "hi": "wore", "ta": "wore" },
+        { "en": "beautiful", "hi": "beautiful", "ta": "beautiful" },
+        { "en": "dress", "hi": "dress", "ta": "dress" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "5-english-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the correct form: 'Neither the students nor the teacher ___ present.'",
+        "hi": "सही रूप चुनें: 'Neither the students nor the teacher ___ present.'",
+        "ta": "சரியான வடிவம் தேர்க: 'Neither the students nor the teacher ___ present.'"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "are", "hi": "are", "ta": "are" },
+        { "en": "were", "hi": "were", "ta": "were" },
+        { "en": "was", "hi": "was", "ta": "was" },
+        { "en": "is", "hi": "is", "ta": "is" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "5-english-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the passive voice of: 'The farmer grows rice.'?",
+        "hi": "'The farmer grows rice.' का कर्मवाच्य क्या है?",
+        "ta": "'The farmer grows rice.' — இதன் படர்க்கை வாக்கியம் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Rice is grown by the farmer.", "hi": "Rice is grown by the farmer.", "ta": "Rice is grown by the farmer." },
+        { "en": "Rice grows by the farmer.", "hi": "Rice grows by the farmer.", "ta": "Rice grows by the farmer." },
+        { "en": "Rice was grown by the farmer.", "hi": "Rice was grown by the farmer.", "ta": "Rice was grown by the farmer." },
+        { "en": "The farmer is grown by rice.", "hi": "The farmer is grown by rice.", "ta": "The farmer is grown by rice." }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "5-english-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word correctly completes the analogy? Book : Library :: Painting : ___",
+        "hi": "कौन सा शब्द सादृश्य को सही ढंग से पूरा करता है? Book : Library :: Painting : ___",
+        "ta": "எந்த சொல் ஒப்புமையை சரியாக நிறைவு செய்கிறது? Book : Library :: Painting : ___"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "School", "hi": "School", "ta": "School" },
+        { "en": "Museum", "hi": "Museum", "ta": "Museum" },
+        { "en": "Hospital", "hi": "Hospital", "ta": "Hospital" },
+        { "en": "Shop", "hi": "Shop", "ta": "Shop" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "5-english-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Read the passage: 'Meena studied hard every day. She revised her notes and practised past papers. On exam day, she answered every question with confidence.' What quality does Meena show?",
+        "hi": "अनुच्छेद पढ़ें: 'Meena studied hard every day...' मीना किस गुण को दर्शाती है?",
+        "ta": "பத்தியைப் படிக்கவும்: 'Meena studied hard every day...' மீனா என்ன குணத்தை காட்டுகிறாள்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Laziness", "hi": "आलस्य", "ta": "சோம்பல்" },
+        { "en": "Diligence", "hi": "परिश्रम", "ta": "உழைப்பு" },
+        { "en": "Carelessness", "hi": "लापरवाही", "ta": "அலட்சியம்" },
+        { "en": "Arrogance", "hi": "अहंकार", "ta": "ஆணவம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "5-english-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the word that is spelt correctly.",
+        "hi": "सही वर्तनी वाला शब्द चुनें।",
+        "ta": "சரியான எழுத்துக்கூட்டம் உள்ள சொல்லை தேர்ந்தெடு."
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "recieve", "hi": "recieve", "ta": "recieve" },
+        { "en": "receive", "hi": "receive", "ta": "receive" },
+        { "en": "receve", "hi": "receve", "ta": "receve" },
+        { "en": "receeve", "hi": "receeve", "ta": "receeve" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "5-english-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a compound sentence?",
+        "hi": "निम्नलिखित में से कौन सा संयुक्त वाक्य है?",
+        "ta": "கீழ்காணும் எது ஒரு கூட்டு வாக்கியம்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "She sings.", "hi": "She sings.", "ta": "She sings." },
+        { "en": "He plays cricket.", "hi": "He plays cricket.", "ta": "He plays cricket." },
+        { "en": "She sings and he plays cricket.", "hi": "She sings and he plays cricket.", "ta": "She sings and he plays cricket." },
+        { "en": "Because she sings beautifully.", "hi": "Because she sings beautifully.", "ta": "Because she sings beautifully." }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "5-english-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does the idiom 'bite the bullet' mean?",
+        "hi": "'bite the bullet' मुहावरे का क्या अर्थ है?",
+        "ta": "'bite the bullet' என்னும் சொற்றொடரின் பொருள் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "To eat quickly", "hi": "जल्दी खाना", "ta": "விரைவாக சாப்பிட" },
+        { "en": "To endure a painful situation bravely", "hi": "साहसपूर्वक कठिन परिस्थिति को सहना", "ta": "கஷ்டமான நிலையை தைரியமாக தாங்குவது" },
+        { "en": "To argue with someone", "hi": "किसी से बहस करना", "ta": "யாரோடாவது வாக்குவாதமிட" },
+        { "en": "To run away from danger", "hi": "खतरे से भागना", "ta": "ஆபத்திலிருந்து தப்பி ஓட" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "5-english-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the correctly punctuated sentence.",
+        "hi": "सही विराम चिह्नों वाला वाक्य चुनें।",
+        "ta": "சரியான நிறுத்தக் குறிகளுடன் கூடிய வாக்கியம் தேர்க."
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "\"where are you going\" asked Rita.", "hi": "\"where are you going\" asked Rita.", "ta": "\"where are you going\" asked Rita." },
+        { "en": "\"Where are you going?\" asked Rita.", "hi": "\"Where are you going?\" asked Rita.", "ta": "\"Where are you going?\" asked Rita." },
+        { "en": "\"Where are you going\" asked rita?", "hi": "\"Where are you going\" asked rita?", "ta": "\"Where are you going\" asked rita?" },
+        { "en": "Where are you going asked Rita.", "hi": "Where are you going asked Rita.", "ta": "Where are you going asked Rita." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "5-english-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the best title for a paragraph that describes the importance of trees.",
+        "hi": "उस अनुच्छेद के लिए सबसे अच्छा शीर्षक चुनें जो पेड़ों के महत्व का वर्णन करता है।",
+        "ta": "மரங்களின் முக்கியத்துவத்தை விவரிக்கும் பத்திக்கு சிறந்த தலைப்பை தேர்க."
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Types of Fruits", "hi": "फलों के प्रकार", "ta": "பழங்களின் வகைகள்" },
+        { "en": "Our Green Friends: The Importance of Trees", "hi": "हमारे हरे मित्र: पेड़ों का महत्व", "ta": "நம் பச்சை நண்பர்கள்: மரங்களின் முக்கியத்துவம்" },
+        { "en": "How to Plant Seeds", "hi": "बीज कैसे बोएं", "ta": "விதைகளை எவ்வாறு விதைப்பது" },
+        { "en": "Animals of the Forest", "hi": "जंगल के जानवर", "ta": "காட்டு விலங்குகள்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

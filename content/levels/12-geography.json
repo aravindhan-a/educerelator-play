@@ -1,0 +1,176 @@
+{
+  "class": 12,
+  "subject": "geography",
+  "questions": [
+    {
+      "id": "12-geography-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Human geography focuses on:",
+        "hi": "मानव भूगोल किस पर ध्यान केंद्रित करता है?",
+        "ta": "மனித புவியியல் எதில் கவனம் செலுத்துகிறது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Physical features of the Earth", "hi": "पृथ्वी की भौतिक विशेषताएँ", "ta": "பூமியின் இயற்பியல் அம்சங்கள்" },
+        { "en": "Climate and weather patterns", "hi": "जलवायु और मौसम पैटर्न", "ta": "காலநிலை மற்றும் வானிலை வடிவங்கள்" },
+        { "en": "Human activities and their relationship with environment", "hi": "मानवीय गतिविधियाँ और पर्यावरण के साथ उनका संबंध", "ta": "மனித நடவடிக்கைகள் மற்றும் சுற்றுச்சூழலுடனான அவற்றின் உறவு" },
+        { "en": "Rocks and minerals", "hi": "चट्टानें और खनिज", "ta": "பாறைகள் மற்றும் தாதுக்கள்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-geography-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which is the most important cash crop of India?",
+        "hi": "भारत की सबसे महत्वपूर्ण नकद फसल कौन-सी है?",
+        "ta": "இந்தியாவின் மிக முக்கியமான பண பயிர் எது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Cotton", "hi": "कपास", "ta": "பருத்தி" },
+        { "en": "Jute", "hi": "जूट", "ta": "சணல்" },
+        { "en": "Sugarcane", "hi": "गन्ना", "ta": "கரும்பு" },
+        { "en": "Tea", "hi": "चाय", "ta": "தேயிலை" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "12-geography-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "The concept of 'Demographic Transition' refers to:",
+        "hi": "'जनसांख्यिकीय संक्रमण' की अवधारणा किससे संदर्भित है?",
+        "ta": "'மக்கள்தொகை மாற்றம்' என்ற கருத்து எதை குறிக்கிறது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Migration of people between countries", "hi": "देशों के बीच लोगों का प्रवास", "ta": "நாடுகளுக்கிடையே மக்கள் இடம்பெயர்வு" },
+        { "en": "Shift from high birth and death rates to low rates", "hi": "उच्च जन्म और मृत्यु दर से निम्न दरों में बदलाव", "ta": "அதிக பிறப்பு மற்றும் இறப்பு விகிதங்களிலிருந்து குறைந்த விகிதங்களுக்கு மாற்றம்" },
+        { "en": "Movement of people from rural to urban areas", "hi": "ग्रामीण से शहरी क्षेत्रों में लोगों का आंदोलन", "ta": "கிராமப்புறத்திலிருந்து நகர்ப்புறங்களுக்கு மக்கள் இடம்பெயர்வு" },
+        { "en": "Changes in the sex ratio of a population", "hi": "जनसंख्या के लिंग अनुपात में परिवर्तन", "ta": "மக்கள்தொகையின் பாலின விகிதத்தில் மாற்றங்கள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-geography-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which state in India is the largest producer of iron ore?",
+        "hi": "भारत में कौन-सा राज्य लौह अयस्क का सबसे बड़ा उत्पादक है?",
+        "ta": "இந்தியாவில் எந்த மாநிலம் இரும்பு தாதுவின் மிகப் பெரிய உற்பத்தியாளர்?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Jharkhand", "hi": "झारखंड", "ta": "ஜார்க்கண்ட்" },
+        { "en": "Odisha", "hi": "ओडिशा", "ta": "ஒடிசா" },
+        { "en": "Chhattisgarh", "hi": "छत्तीसगढ़", "ta": "சத்தீஸ்கர்" },
+        { "en": "Goa", "hi": "गोवा", "ta": "கோவா" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-geography-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "The National Highway 44 connects:",
+        "hi": "राष्ट्रीय राजमार्ग 44 किसे जोड़ता है?",
+        "ta": "தேசிய நெடுஞ்சாலை 44 எதை இணைக்கிறது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Delhi to Mumbai", "hi": "दिल्ली से मुंबई", "ta": "டெல்லியில் இருந்து மும்பை" },
+        { "en": "Srinagar to Kanyakumari", "hi": "श्रीनगर से कन्याकुमारी", "ta": "ஸ்ரீநகரிலிருந்து கன்னியாகுமரி" },
+        { "en": "Kolkata to Chennai", "hi": "कोलकाता से चेन्नई", "ta": "கொல்கத்தாவிலிருந்து சென்னை" },
+        { "en": "Amritsar to Kolkata", "hi": "अमृतसर से कोलकाता", "ta": "அமிர்தசரசிலிருந்து கொல்கத்தா" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-geography-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which region of India receives the highest rainfall?",
+        "hi": "भारत के किस क्षेत्र में सर्वाधिक वर्षा होती है?",
+        "ta": "இந்தியாவின் எந்த பகுதி அதிகபட்ச மழையை பெறுகிறது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Thar Desert", "hi": "थार रेगिस्तान", "ta": "தார் பாலைவனம்" },
+        { "en": "Western Ghats", "hi": "पश्चिमी घाट", "ta": "மேற்குத் தொடர்ச்சி மலைகள்" },
+        { "en": "Mawsynram, Meghalaya", "hi": "मावसिनराम, मेघालय", "ta": "மாசின்ராம், மேகாலயா" },
+        { "en": "Himalayan foothills", "hi": "हिमालय की तलहटी", "ta": "இமயமலையின் அடிவாரம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-geography-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Green Revolution in India was mainly associated with:",
+        "hi": "भारत में हरित क्रांति मुख्य रूप से किससे जुड़ी थी?",
+        "ta": "இந்தியாவில் பசுமை புரட்சி முதன்மையாக எதனோடு தொடர்புடையது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Cash crops like cotton and jute", "hi": "कपास और जूट जैसी नकद फसलें", "ta": "பருத்தி மற்றும் சணல் போன்ற பண பயிர்கள்" },
+        { "en": "High-yielding variety seeds for wheat and rice", "hi": "गेहूँ और चावल के लिए अधिक उपज वाली किस्म के बीज", "ta": "கோதுமை மற்றும் அரிசிக்கான அதிக மகசூல் ரக விதைகள்" },
+        { "en": "Plantation crops like tea and coffee", "hi": "चाय और कॉफी जैसी बागान फसलें", "ta": "தேயிலை மற்றும் காப்பி போன்ற தோட்ட பயிர்கள்" },
+        { "en": "Organic farming techniques", "hi": "जैविक खेती तकनीकें", "ta": "இயற்கை விவசாய நுட்பங்கள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-geography-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "India's population density is highest in:",
+        "hi": "भारत की जनसंख्या घनत्व सर्वाधिक है:",
+        "ta": "இந்தியாவின் மக்கள்தொகை அடர்த்தி மிக அதிகமாக உள்ளது:"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Bihar", "hi": "बिहार", "ta": "பீகார்" },
+        { "en": "Uttar Pradesh", "hi": "उत्तर प्रदेश", "ta": "உத்தரப் பிரதேசம்" },
+        { "en": "West Bengal", "hi": "पश्चिम बंगाल", "ta": "மேற்கு வங்காளம்" },
+        { "en": "Maharashtra", "hi": "महाराष्ट्र", "ta": "மகாராஷ்டிரா" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "12-geography-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which ocean current keeps the ports of Western Europe ice-free?",
+        "hi": "कौन-सी महासागरीय धारा पश्चिमी यूरोप के बंदरगाहों को बर्फ-मुक्त रखती है?",
+        "ta": "எந்த கடல் நீரோட்டம் மேற்கு ஐரோப்பாவின் துறைமுகங்களை பனி-இல்லாமல் வைத்திருக்கிறது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Labrador Current", "hi": "लैब्राडोर धारा", "ta": "லாப்ரடோர் நீரோட்டம்" },
+        { "en": "Humboldt Current", "hi": "हम्बोल्ट धारा", "ta": "ஹம்போல்ட் நீரோட்டம்" },
+        { "en": "North Atlantic Drift", "hi": "उत्तर अटलांटिक प्रवाह", "ta": "வட அட்லாண்டிக் நீரோட்டம்" },
+        { "en": "Benguela Current", "hi": "बेंगुएला धारा", "ta": "பெங்குவேலா நீரோட்டம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-geography-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The concept of Sustainable Development was popularised by which report?",
+        "hi": "'सतत विकास' की अवधारणा को किस रिपोर्ट ने लोकप्रिय बनाया?",
+        "ta": "நிலையான வளர்ச்சி கருத்து எந்த அறிக்கையால் பிரபலமடைந்தது?"
+      },
+      "visual": "🌍",
+      "choices": [
+        { "en": "Kyoto Protocol", "hi": "क्योटो प्रोटोकॉल", "ta": "கியோட்டோ ஒப்பந்தம்" },
+        { "en": "Brundtland Report", "hi": "ब्रुंटलैंड रिपोर्ट", "ta": "பிரண்ட்லேண்ட் அறிக்கை" },
+        { "en": "Paris Agreement", "hi": "पेरिस समझौता", "ta": "பாரிஸ் ஒப்பந்தம்" },
+        { "en": "Stockholm Declaration", "hi": "स्टॉकहोम घोषणा", "ta": "ஸ்டாக்ஹோம் அறிவிப்பு" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

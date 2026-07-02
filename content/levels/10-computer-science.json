@@ -1,0 +1,176 @@
+{
+  "class": 10,
+  "subject": "computer-science",
+  "questions": [
+    {
+      "id": "10-computer-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "What will print(type(5)) output in Python?",
+        "hi": "Python में print(type(5)) क्या आउटपुट देगा?",
+        "ta": "Python-இல் print(type(5)) என்ன வெளியீடு தரும்?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "<class 'str'>", "hi": "<class 'str'>", "ta": "<class 'str'>" },
+        { "en": "<class 'float'>", "hi": "<class 'float'>", "ta": "<class 'float'>" },
+        { "en": "<class 'int'>", "hi": "<class 'int'>", "ta": "<class 'int'>" },
+        { "en": "<class 'bool'>", "hi": "<class 'bool'>", "ta": "<class 'bool'>" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-computer-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which Python keyword is used to define a function?",
+        "hi": "Python में फ़ंक्शन परिभाषित करने के लिए कौन सा keyword प्रयोग होता है?",
+        "ta": "Python-இல் ஒரு செயலியை வரையறுக்க எந்த keyword பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "function", "hi": "function", "ta": "function" },
+        { "en": "define", "hi": "define", "ta": "define" },
+        { "en": "def", "hi": "def", "ta": "def" },
+        { "en": "fun", "hi": "fun", "ta": "fun" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-computer-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "In a relational database, a primary key is used to:",
+        "hi": "एक संबंधपरक डेटाबेस में, प्राथमिक कुंजी का उपयोग किसके लिए होता है?",
+        "ta": "ஒரு தொடர்பு தரவுத்தளத்தில், முதன்மை விசை எதற்காக பயன்படுகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Sort data alphabetically", "hi": "डेटा को वर्णमाला के अनुसार क्रमबद्ध करना", "ta": "தரவை அகரவரிசைப்படி வரிசைப்படுத்துவது" },
+        { "en": "Uniquely identify each record in a table", "hi": "तालिका में प्रत्येक रिकॉर्ड को विशिष्ट रूप से पहचानना", "ta": "அட்டவணையில் ஒவ்வொரு பதிவையும் தனித்துவமாக அடையாளப்படுத்துவது" },
+        { "en": "Link two different databases", "hi": "दो अलग-अलग डेटाबेस को जोड़ना", "ta": "இரண்டு வேறு தரவுத்தளங்களை இணைப்பது" },
+        { "en": "Encrypt the data", "hi": "डेटा को एन्क्रिप्ट करना", "ta": "தரவை குறியாக்கம் செய்வது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-computer-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a valid Python list?",
+        "hi": "निम्नलिखित में से कौन सा एक valid Python list है?",
+        "ta": "பின்வருவனவற்றில் எது சரியான Python list?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "(1, 2, 3)", "hi": "(1, 2, 3)", "ta": "(1, 2, 3)" },
+        { "en": "{1, 2, 3}", "hi": "{1, 2, 3}", "ta": "{1, 2, 3}" },
+        { "en": "[1, 2, 3]", "hi": "[1, 2, 3]", "ta": "[1, 2, 3]" },
+        { "en": "<1, 2, 3>", "hi": "<1, 2, 3>", "ta": "<1, 2, 3>" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-computer-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does SQL stand for?",
+        "hi": "SQL का पूर्ण रूप क्या है?",
+        "ta": "SQL என்பதன் விரிவாக்கம் என்ன?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Structured Query Language", "hi": "स्ट्रक्चर्ड क्वेरी लैंग्वेज", "ta": "கட்டமைக்கப்பட்ட வினவல் மொழி" },
+        { "en": "Simple Query Logic", "hi": "सिंपल क्वेरी लॉजिक", "ta": "எளிய வினவல் தர்க்கம்" },
+        { "en": "Software Query Language", "hi": "सॉफ्टवेयर क्वेरी लैंग्वेज", "ta": "மென்பொருள் வினவல் மொழி" },
+        { "en": "Sequential Query Language", "hi": "सीक्वेंशियल क्वेरी लैंग्वेज", "ta": "தொடர் வினவல் மொழி" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-computer-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Python, what is the output of 10 % 3?",
+        "hi": "Python में 10 % 3 का आउटपुट क्या है?",
+        "ta": "Python-இல் 10 % 3 இன் வெளியீடு என்ன?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "3", "hi": "3", "ta": "3" },
+        { "en": "1", "hi": "1", "ta": "1" },
+        { "en": "0", "hi": "0", "ta": "0" },
+        { "en": "10", "hi": "10", "ta": "10" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-computer-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which network topology connects all devices to a central hub?",
+        "hi": "कौन सी नेटवर्क टोपोलॉजी सभी डिवाइसों को एक केंद्रीय हब से जोड़ती है?",
+        "ta": "எந்த நெட்வொர்க் அமைப்பு அனைத்து சாதனங்களையும் மைய ஹப்புடன் இணைக்கிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Bus topology", "hi": "बस टोपोलॉजी", "ta": "பஸ் அமைப்பு" },
+        { "en": "Ring topology", "hi": "रिंग टोपोलॉजी", "ta": "வளைய அமைப்பு" },
+        { "en": "Star topology", "hi": "स्टार टोपोलॉजी", "ta": "நட்சத்திர அமைப்பு" },
+        { "en": "Mesh topology", "hi": "मेश टोपोलॉजी", "ta": "வலைப்பின்னல் அமைப்பு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-computer-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which Python loop is used when the number of iterations is unknown?",
+        "hi": "Python में कौन सा loop उपयोग किया जाता है जब iterations की संख्या अज्ञात हो?",
+        "ta": "மறுசுழற்சிகளின் எண்ணிக்கை தெரியாதபோது எந்த Python சுழற்சி பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "for loop", "hi": "for loop", "ta": "for loop" },
+        { "en": "while loop", "hi": "while loop", "ta": "while loop" },
+        { "en": "do-while loop", "hi": "do-while loop", "ta": "do-while loop" },
+        { "en": "nested loop", "hi": "nested loop", "ta": "nested loop" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-computer-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "HTTP stands for:",
+        "hi": "HTTP का पूर्ण रूप है:",
+        "ta": "HTTP என்பதன் விரிவாக்கம்:"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "HyperText Transfer Protocol", "hi": "हाइपरटेक्स्ट ट्रांसफर प्रोटोकॉल", "ta": "ஹைப்பர்டெக்ஸ்ட் டிரான்ஸ்ஃபர் புரோட்டோகால்" },
+        { "en": "High-Tech Text Protocol", "hi": "हाई-टेक टेक्स्ट प्रोटोकॉल", "ta": "உயர் தொழில்நுட்ப உரை புரோட்டோகால்" },
+        { "en": "Hyper Terminal Transfer Process", "hi": "हाइपर टर्मिनल ट्रांसफर प्रोसेस", "ta": "ஹைப்பர் டெர்மினல் டிரான்ஸ்ஃபர் செயல்முறை" },
+        { "en": "Home Transfer Text Protocol", "hi": "होम ट्रांसफर टेक्स्ट प्रोटोकॉल", "ta": "ஹோம் டிரான்ஸ்ஃபர் டெக்ஸ்ட் புரோட்டோகால்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-computer-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "In a database, a record is a:",
+        "hi": "डेटाबेस में, एक रिकॉर्ड है:",
+        "ta": "தரவுத்தளத்தில் ஒரு பதிவு என்பது:"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "A single column of data", "hi": "डेटा का एक स्तंभ", "ta": "தரவின் ஒரு நெடுவரிசை" },
+        { "en": "A complete row of related data fields", "hi": "संबंधित डेटा फ़ील्ड की एक पूर्ण पंक्ति", "ta": "தொடர்புடைய தரவு புலங்களின் முழு வரிசை" },
+        { "en": "The name of the database", "hi": "डेटाबेस का नाम", "ta": "தரவுத்தளத்தின் பெயர்" },
+        { "en": "A type of query", "hi": "एक प्रकार की query", "ta": "ஒரு வகை வினவல்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "physics",
+  "questions": [
+    {
+      "id": "11-physics-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the SI unit of force?",
+        "hi": "बल की SI इकाई क्या है?",
+        "ta": "விசையின் SI அலகு என்ன?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Joule", "hi": "जूल", "ta": "ஜூல்" },
+        { "en": "Newton", "hi": "न्यूटन", "ta": "நியூட்டன்" },
+        { "en": "Watt", "hi": "वाट", "ta": "வாட்" },
+        { "en": "Pascal", "hi": "पास्कल", "ta": "பாஸ்கல்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-physics-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "A body is said to be in uniform motion if it covers:",
+        "hi": "एक पिंड एकसमान गति में कहलाता है यदि वह:",
+        "ta": "ஒரு பொருள் சீரான இயக்கத்தில் இருக்கிறது என்றால்:"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Equal distances in unequal intervals of time", "hi": "असमान समय अंतराल में समान दूरी तय करता है", "ta": "சமகால இடைவெளிகளில் சமகாலத்தில் சமான தூரம் கடக்கிறது" },
+        { "en": "Unequal distances in equal intervals of time", "hi": "समान समय अंतराल में असमान दूरी तय करता है", "ta": "சம கால இடைவெளிகளில் சமகாலமற்ற தூரம் கடக்கிறது" },
+        { "en": "Equal distances in equal intervals of time", "hi": "समान समय अंतराल में समान दूरी तय करता है", "ta": "சம கால இடைவெளிகளில் சமகாலத்தில் சமான தூரம் கடக்கிறது" },
+        { "en": "No distance at all", "hi": "कोई भी दूरी नहीं", "ta": "எந்த தூரமும் இல்லை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-physics-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Newton's first law of motion is also known as the law of:",
+        "hi": "न्यूटन का पहला गति नियम किस नाम से भी जाना जाता है?",
+        "ta": "நியூட்டனின் முதல் இயக்க விதி எந்த விதி என்றும் அழைக்கப்படுகிறது?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Gravitation", "hi": "गुरुत्वाकर्षण", "ta": "ஈர்ப்பு விசை" },
+        { "en": "Inertia", "hi": "जड़ता", "ta": "நிலைமம்" },
+        { "en": "Momentum", "hi": "संवेग", "ta": "உந்தம்" },
+        { "en": "Energy conservation", "hi": "ऊर्जा संरक्षण", "ta": "ஆற்றல் பாதுகாப்பு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-physics-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "The acceleration of a freely falling body near Earth's surface is approximately:",
+        "hi": "पृथ्वी की सतह के पास स्वतंत्र रूप से गिरते पिंड का त्वरण लगभग होता है:",
+        "ta": "பூமியின் மேற்பரப்பிற்கு அருகில் சுதந்திரமாக விழும் பொருளின் முடுக்கம் தோராயமாக:"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "9.8 m/s²", "hi": "9.8 m/s²", "ta": "9.8 m/s²" },
+        { "en": "8.9 m/s²", "hi": "8.9 m/s²", "ta": "8.9 m/s²" },
+        { "en": "10.8 m/s²", "hi": "10.8 m/s²", "ta": "10.8 m/s²" },
+        { "en": "6.7 m/s²", "hi": "6.7 m/s²", "ta": "6.7 m/s²" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "11-physics-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which thermodynamic law states that energy cannot be created or destroyed?",
+        "hi": "कौन सा ऊष्मागतिकीय नियम कहता है कि ऊर्जा न तो बनाई जा सकती है और न ही नष्ट की जा सकती है?",
+        "ta": "எந்த வெப்பஇயக்கவியல் விதி ஆற்றலை உருவாக்கவோ அழிக்கவோ முடியாது என்கிறது?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Zeroth law", "hi": "शून्य नियम", "ta": "பூஜ்ய விதி" },
+        { "en": "First law", "hi": "प्रथम नियम", "ta": "முதல் விதி" },
+        { "en": "Second law", "hi": "द्वितीय नियम", "ta": "இரண்டாம் விதி" },
+        { "en": "Third law", "hi": "तृतीय नियम", "ta": "மூன்றாம் விதி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-physics-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the unit of velocity?",
+        "hi": "वेग की इकाई क्या है?",
+        "ta": "திசைவேகத்தின் அலகு என்ன?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "m/s²", "hi": "m/s²", "ta": "m/s²" },
+        { "en": "m/s", "hi": "m/s", "ta": "m/s" },
+        { "en": "kg·m/s", "hi": "kg·m/s", "ta": "kg·m/s" },
+        { "en": "N·s", "hi": "N·s", "ta": "N·s" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-physics-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a scalar quantity?",
+        "hi": "निम्नलिखित में से कौन एक अदिश राशि है?",
+        "ta": "பின்வருவனவற்றில் எது ஒரு அளவு (scalar) அளவீடு?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Force", "hi": "बल", "ta": "விசை" },
+        { "en": "Velocity", "hi": "वेग", "ta": "திசைவேகம்" },
+        { "en": "Speed", "hi": "चाल", "ta": "வேகம்" },
+        { "en": "Displacement", "hi": "विस्थापन", "ta": "இடப்பெயர்ச்சி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-physics-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "The second law of thermodynamics is related to:",
+        "hi": "ऊष्मागतिकी का दूसरा नियम किससे संबंधित है?",
+        "ta": "வெப்பஇயக்கவியலின் இரண்டாம் விதி எதனோடு தொடர்புடையது?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Conservation of energy", "hi": "ऊर्जा संरक्षण", "ta": "ஆற்றல் பாதுகாப்பு" },
+        { "en": "Absolute zero temperature", "hi": "परम शून्य तापमान", "ta": "முழுமையான பூஜ்ய வெப்பநிலை" },
+        { "en": "Entropy and direction of heat flow", "hi": "एन्ट्रॉपी और ऊष्मा प्रवाह की दिशा", "ta": "என்ட்ரோபி மற்றும் வெப்பப் பாய்வின் திசை" },
+        { "en": "Thermal equilibrium", "hi": "ताप संतुलन", "ta": "வெப்ப சமநிலை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-physics-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "A projectile is thrown horizontally. What is the horizontal acceleration?",
+        "hi": "एक प्रक्षेप्य क्षैतिज रूप से फेंका जाता है। क्षैतिज त्वरण क्या है?",
+        "ta": "ஒரு எறிபொருள் கிடைமட்டமாக எறியப்படுகிறது. கிடைமட்ட முடுக்கம் என்ன?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "g (downward)", "hi": "g (नीचे की ओर)", "ta": "g (கீழ்நோக்கி)" },
+        { "en": "g/2", "hi": "g/2", "ta": "g/2" },
+        { "en": "Zero", "hi": "शून्य", "ta": "பூஜ்யம்" },
+        { "en": "2g", "hi": "2g", "ta": "2g" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-physics-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Action and reaction forces act on:",
+        "hi": "क्रिया और प्रतिक्रिया बल किस पर कार्य करते हैं?",
+        "ta": "செயல் மற்றும் எதிர்செயல் விசைகள் எதன் மீது செயல்படுகின்றன?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "The same body", "hi": "एक ही पिंड पर", "ta": "அதே பொருளின் மீது" },
+        { "en": "Different bodies", "hi": "अलग-अलग पिंडों पर", "ta": "வெவ்வேறு பொருட்களின் மீது" },
+        { "en": "The ground only", "hi": "केवल जमीन पर", "ta": "தரையில் மட்டும்" },
+        { "en": "Only massless objects", "hi": "केवल द्रव्यमानहीन वस्तुओं पर", "ta": "நிறையற்ற பொருட்களில் மட்டும்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

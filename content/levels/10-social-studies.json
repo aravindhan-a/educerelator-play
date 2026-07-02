@@ -1,0 +1,176 @@
+{
+  "class": 10,
+  "subject": "social-studies",
+  "questions": [
+    {
+      "id": "10-social-studies-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "The non-cooperation movement was launched in India in which year?",
+        "hi": "भारत में असहयोग आंदोलन किस वर्ष शुरू किया गया था?",
+        "ta": "இந்தியாவில் ஒத்துழையாமை இயக்கம் எந்த ஆண்டு தொடங்கியது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "1915", "hi": "1915", "ta": "1915" },
+        { "en": "1920", "hi": "1920", "ta": "1920" },
+        { "en": "1930", "hi": "1930", "ta": "1930" },
+        { "en": "1942", "hi": "1942", "ta": "1942" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-social-studies-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a biotic component of a resource?",
+        "hi": "निम्नलिखित में से कौन सा संसाधन का जैविक घटक है?",
+        "ta": "பின்வருவனவற்றில் எது வளத்தின் உயிரியல் கூறு?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Minerals", "hi": "खनिज", "ta": "கனிமங்கள்" },
+        { "en": "Sunlight", "hi": "सूर्य का प्रकाश", "ta": "சூரிய ஒளி" },
+        { "en": "Forests", "hi": "वन", "ta": "காடுகள்" },
+        { "en": "Land", "hi": "भूमि", "ta": "நிலம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-social-studies-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Power sharing in Belgium was done to:",
+        "hi": "बेल्जियम में सत्ता साझाकरण किसलिए किया गया?",
+        "ta": "பெல்ஜியத்தில் அதிகார பகிர்வு எதற்காக செய்யப்பட்டது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Increase economic growth", "hi": "आर्थिक विकास बढ़ाने के लिए", "ta": "பொருளாதார வளர்ச்சியை அதிகரிக்க" },
+        { "en": "Avoid conflict between linguistic communities", "hi": "भाषायी समुदायों के बीच संघर्ष से बचने के लिए", "ta": "மொழி சமூகங்களுக்கிடையே மோதலை தவிர்க்க" },
+        { "en": "Establish a monarchy", "hi": "राजतंत्र स्थापित करने के लिए", "ta": "முடியாட்சியை நிறுவ" },
+        { "en": "Reduce taxation", "hi": "कराधान कम करने के लिए", "ta": "வரிவிதிப்பை குறைக்க" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-social-studies-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Dandi March was associated with which movement?",
+        "hi": "डांडी मार्च किस आंदोलन से जुड़ी थी?",
+        "ta": "தண்டி யாத்திரை எந்த இயக்கத்துடன் தொடர்புடையது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Non-Cooperation Movement", "hi": "असहयोग आंदोलन", "ta": "ஒத்துழையாமை இயக்கம்" },
+        { "en": "Civil Disobedience Movement", "hi": "सविनय अवज्ञा आंदोलन", "ta": "சட்டமறுப்பு இயக்கம்" },
+        { "en": "Quit India Movement", "hi": "भारत छोड़ो आंदोलन", "ta": "வெள்ளையனே வெளியேறு இயக்கம்" },
+        { "en": "Swadeshi Movement", "hi": "स्वदेशी आंदोलन", "ta": "சுதேசி இயக்கம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-social-studies-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sector of the economy involves the extraction of natural resources?",
+        "hi": "अर्थव्यवस्था का कौन सा क्षेत्र प्राकृतिक संसाधनों के निष्कर्षण से संबंधित है?",
+        "ta": "இயற்கை வளங்களை எடுப்பதில் பொருளாதாரத்தின் எந்த துறை ஈடுபட்டுள்ளது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Primary sector", "hi": "प्राथमिक क्षेत्र", "ta": "முதல்நிலைத் துறை" },
+        { "en": "Secondary sector", "hi": "द्वितीयक क्षेत्र", "ta": "இரண்டாம் நிலைத் துறை" },
+        { "en": "Tertiary sector", "hi": "तृतीयक क्षेत्र", "ta": "மூன்றாம் நிலைத் துறை" },
+        { "en": "Quaternary sector", "hi": "चतुर्थक क्षेत्र", "ta": "நான்காம் நிலைத் துறை" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-social-studies-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which political party system exists when only one party is allowed to control and run the government?",
+        "hi": "जब केवल एक दल को सरकार नियंत्रित और चलाने की अनुमति होती है, तो कौन सी दलीय प्रणाली होती है?",
+        "ta": "ஒரே ஒரு கட்சிக்கு மட்டுமே அரசாங்கத்தை கட்டுப்படுத்த அனுமதிக்கப்படும்போது, எந்த கட்சி அமைப்பு இருக்கிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Two-party system", "hi": "द्विदलीय प्रणाली", "ta": "இரு கட்சி அமைப்பு" },
+        { "en": "Multi-party system", "hi": "बहुदलीय प्रणाली", "ta": "பல கட்சி அமைப்பு" },
+        { "en": "One-party system", "hi": "एकदलीय प्रणाली", "ta": "ஒற்றைக் கட்சி அமைப்பு" },
+        { "en": "Federal system", "hi": "संघीय प्रणाली", "ta": "கூட்டாட்சி அமைப்பு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-social-studies-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Globalisation mainly refers to:",
+        "hi": "वैश्वीकरण मुख्यतः किसे कहते हैं?",
+        "ta": "உலகமயமாக்கல் முக்கியமாக எதை குறிக்கிறது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Increasing trade barriers between countries", "hi": "देशों के बीच व्यापार बाधाएं बढ़ाना", "ta": "நாடுகளுக்கிடையே வர்த்தகத் தடைகளை அதிகரிப்பது" },
+        { "en": "Integration of economies and societies across the world", "hi": "विश्व भर में अर्थव्यवस्थाओं और समाजों का एकीकरण", "ta": "உலகெங்கும் பொருளாதாரங்கள் மற்றும் சமூகங்களின் ஒருங்கிணைப்பு" },
+        { "en": "Closing of domestic markets", "hi": "घरेलू बाजारों को बंद करना", "ta": "உள்நாட்டு சந்தைகளை மூடுவது" },
+        { "en": "Restricting foreign investment", "hi": "विदेशी निवेश को प्रतिबंधित करना", "ta": "வெளிநாட்டு முதலீட்டை கட்டுப்படுத்துவது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-social-studies-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Soil erosion can be prevented by:",
+        "hi": "मृदा अपरदन को किसके द्वारा रोका जा सकता है?",
+        "ta": "மண் அரிப்பை எவ்வாறு தடுக்கலாம்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Deforestation", "hi": "वनों की कटाई", "ta": "காடழிப்பு" },
+        { "en": "Overgrazing", "hi": "अत्यधिक चराई", "ta": "அதிகப்படியான மேய்ச்சல்" },
+        { "en": "Afforestation", "hi": "वनरोपण", "ta": "மரம் நடுதல்" },
+        { "en": "Burning crop residue", "hi": "फसल अवशेष जलाना", "ta": "பயிர் எச்சங்களை எரிப்பது" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-social-studies-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The Rowlatt Act of 1919 allowed the British to:",
+        "hi": "1919 का रौलट एक्ट ब्रिटिशों को क्या करने की अनुमति देता था?",
+        "ta": "1919 ஆம் ஆண்டின் ரவுலட் சட்டம் பிரிட்டிஷாரை எதை செய்ய அனுமதித்தது?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Hold free elections", "hi": "मुक्त चुनाव कराना", "ta": "சுதந்திரத் தேர்தல் நடத்துவது" },
+        { "en": "Imprison Indians without trial", "hi": "बिना मुकदमे के भारतीयों को जेल भेजना", "ta": "விசாரணையின்றி இந்தியர்களை சிறையிடுவது" },
+        { "en": "Grant independence to India", "hi": "भारत को स्वतंत्रता देना", "ta": "இந்தியாவுக்கு சுதந்திரம் வழங்குவது" },
+        { "en": "Reduce taxes on Indians", "hi": "भारतीयों पर कर कम करना", "ta": "இந்தியர்களுக்கான வரியை குறைப்பது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-social-studies-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is an example of a formal source of credit in India?",
+        "hi": "निम्नलिखित में से कौन सा भारत में ऋण का एक औपचारिक स्रोत है?",
+        "ta": "பின்வருவனவற்றில் எது இந்தியாவில் கடனின் முறையான மூலம்?"
+      },
+      "visual": "🗺️",
+      "choices": [
+        { "en": "Moneylender", "hi": "साहूकार", "ta": "கடன் தரும் நபர்" },
+        { "en": "Friends and relatives", "hi": "मित्र और रिश्तेदार", "ta": "நண்பர்கள் மற்றும் உறவினர்கள்" },
+        { "en": "Commercial bank", "hi": "वाणिज्यिक बैंक", "ta": "வணிக வங்கி" },
+        { "en": "Chit fund", "hi": "चिट फंड", "ta": "சீட்டுக் குழு" }
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

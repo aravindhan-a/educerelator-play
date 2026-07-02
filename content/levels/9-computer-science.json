@@ -1,0 +1,176 @@
+{
+  "class": 9,
+  "subject": "computer-science",
+  "questions": [
+    {
+      "id": "9-computer-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is an input device?",
+        "hi": "निम्नलिखित में से कौन सा एक इनपुट डिवाइस है?",
+        "ta": "பின்வருவனவற்றில் எது உள்ளீட்டு சாதனம்?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Monitor", "hi": "मॉनीटर", "ta": "மானிட்டர்" },
+        { "en": "Printer", "hi": "प्रिंटर", "ta": "அச்சுப்பொறி" },
+        { "en": "Keyboard", "hi": "कीबोर्ड", "ta": "விசைப்பலகை" },
+        { "en": "Speaker", "hi": "स्पीकर", "ta": "ஒலிப்பெருக்கி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-computer-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does CPU stand for?",
+        "hi": "CPU का पूर्ण रूप क्या है?",
+        "ta": "CPU என்பதன் விரிவாக்கம் என்ன?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Central Processing Unit", "hi": "सेंट्रल प्रोसेसिंग यूनिट", "ta": "மத்திய செயலாக்க அலகு" },
+        { "en": "Computer Personal Unit", "hi": "कंप्यूटर पर्सनल यूनिट", "ta": "கணினி தனிநபர் அலகு" },
+        { "en": "Central Program Utility", "hi": "सेंट्रल प्रोग्राम यूटिलिटी", "ta": "மைய நிரல் பயன்பாடு" },
+        { "en": "Core Processing Unit", "hi": "कोर प्रोसेसिंग यूनिट", "ta": "மூல செயலாக்க அலகு" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "9-computer-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is system software?",
+        "hi": "निम्नलिखित में से कौन सा सिस्टम सॉफ्टवेयर है?",
+        "ta": "பின்வருவனவற்றில் எது சிஸ்டம் மென்பொருள்?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "MS Word", "hi": "MS Word", "ta": "MS Word" },
+        { "en": "VLC Media Player", "hi": "VLC मीडिया प्लेयर", "ta": "VLC மீடியா பிளேயர்" },
+        { "en": "Windows OS", "hi": "Windows ऑपरेटिंग सिस्टम", "ta": "விண்டோஸ் OS" },
+        { "en": "Google Chrome", "hi": "गूगल क्रोम", "ta": "கூகிள் குரோம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-computer-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "An algorithm is best described as:",
+        "hi": "एल्गोरिदम को सबसे अच्छी तरह कैसे वर्णित किया जा सकता है?",
+        "ta": "அல்காரிதம் என்பதை சிறப்பாக விவரிப்பது எது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "A programming language", "hi": "एक प्रोग्रामिंग भाषा", "ta": "ஒரு நிரலாக்க மொழி" },
+        { "en": "A step-by-step procedure to solve a problem", "hi": "किसी समस्या को हल करने की चरण-दर-चरण प्रक्रिया", "ta": "ஒரு பிரச்சனையை தீர்க்க படிப்படியான செயல்முறை" },
+        { "en": "A type of hardware", "hi": "एक प्रकार का हार्डवेयर", "ta": "ஒரு வகை வன்பொருள்" },
+        { "en": "A computer virus", "hi": "एक कंप्यूटर वायरस", "ta": "ஒரு கணினி வைரஸ்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-computer-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "RAM stands for:",
+        "hi": "RAM का पूर्ण रूप है:",
+        "ta": "RAM என்பதன் விரிவாக்கம்:"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Read Access Memory", "hi": "रीड एक्सेस मेमोरी", "ta": "ரீட் அக்சஸ் மெமரி" },
+        { "en": "Random Access Memory", "hi": "रैंडम एक्सेस मेमोरी", "ta": "ரேண்டம் அக்சஸ் மெமரி" },
+        { "en": "Rapid Access Module", "hi": "रैपिड एक्सेस मॉड्यूल", "ta": "ரேபிட் அக்சஸ் மாட்யூல்" },
+        { "en": "Run-time Application Memory", "hi": "रन-टाइम एप्लिकेशन मेमोरी", "ta": "ரன்-டைம் அப்ளிகேஷன் மெமரி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-computer-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which storage device has the highest storage capacity?",
+        "hi": "किस स्टोरेज डिवाइस की संग्रहण क्षमता सबसे अधिक होती है?",
+        "ta": "எந்த சேமிப்பு சாதனத்தின் சேமிப்பு திறன் மிக அதிகம்?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Floppy Disk", "hi": "फ्लॉपी डिस्क", "ta": "ஃப்ளாப்பி டிஸ்க்" },
+        { "en": "CD", "hi": "सीडी", "ta": "சிடி" },
+        { "en": "USB Pen Drive (32 GB)", "hi": "USB पेन ड्राइव (32 GB)", "ta": "USB பேன் டிரைவ் (32 GB)" },
+        { "en": "Hard Disk (1 TB)", "hi": "हार्ड डिस्क (1 TB)", "ta": "ஹார்ட் டிஸ்க் (1 TB)" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "9-computer-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is an example of application software?",
+        "hi": "निम्नलिखित में से कौन सा एप्लिकेशन सॉफ्टवेयर का उदाहरण है?",
+        "ta": "பின்வருவனவற்றில் எது அப்ளிகேஷன் மென்பொருளுக்கு உதாரணம்?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "BIOS", "hi": "BIOS", "ta": "BIOS" },
+        { "en": "Device Driver", "hi": "डिवाइस ड्राइवर", "ta": "சாதன இயக்கி" },
+        { "en": "MS Excel", "hi": "MS Excel", "ta": "MS Excel" },
+        { "en": "Operating System", "hi": "ऑपरेटिंग सिस्टम", "ta": "இயக்க முறைமை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-computer-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "In a flowchart, a diamond shape represents:",
+        "hi": "फ्लोचार्ट में, हीरे के आकार का बॉक्स दर्शाता है:",
+        "ta": "ஒரு ஓட்டப்படத்தில், வைரம் வடிவம் எதை குறிக்கிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "Start/End", "hi": "प्रारंभ/अंत", "ta": "தொடக்கம்/முடிவு" },
+        { "en": "Process", "hi": "प्रक्रिया", "ta": "செயல்முறை" },
+        { "en": "Decision", "hi": "निर्णय", "ta": "முடிவு" },
+        { "en": "Input/Output", "hi": "इनपुट/आउटपुट", "ta": "உள்ளீடு/வெளியீடு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-computer-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is NOT a type of software?",
+        "hi": "निम्नलिखित में से कौन सा सॉफ्टवेयर का प्रकार नहीं है?",
+        "ta": "பின்வருவனவற்றில் மென்பொருள் வகை இல்லாதது எது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "System Software", "hi": "सिस्टम सॉफ्टवेयर", "ta": "சிஸ்டம் மென்பொருள்" },
+        { "en": "Application Software", "hi": "एप्लिकेशन सॉफ्टवेयर", "ta": "அப்ளிகேஷன் மென்பொருள்" },
+        { "en": "Utility Software", "hi": "यूटिलिटी सॉफ्टवेयर", "ta": "பயன்பாட்டு மென்பொருள்" },
+        { "en": "Keyboard Software", "hi": "कीबोर्ड सॉफ्टवेयर", "ta": "விசைப்பலகை மென்பொருள்" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "9-computer-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "The binary number system uses how many digits?",
+        "hi": "द्विआधारी संख्या प्रणाली में कितने अंकों का उपयोग होता है?",
+        "ta": "இரும எண் முறை எத்தனை இலக்கங்களை பயன்படுத்துகிறது?"
+      },
+      "visual": "💻",
+      "choices": [
+        { "en": "8", "hi": "8", "ta": "8" },
+        { "en": "10", "hi": "10", "ta": "10" },
+        { "en": "16", "hi": "16", "ta": "16" },
+        { "en": "2", "hi": "2", "ta": "2" }
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "class": 7,
+  "subject": "hindi",
+  "questions": [
+    {
+      "id": "7-hindi-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is an example of 'swar sandhi' (vowel junction) in Hindi?",
+        "hi": "निम्नलिखित में से कौन सा 'स्वर संधि' का उदाहरण है?",
+        "ta": "பின்வருவனவற்றில் எது இந்தியில் 'स्वर संधि' (உயிர் சந்தி) இன் உதாரணம்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Vidya + Aalay = Vidyaalay", "hi": "विद्या + आलय = विद्यालय", "ta": "Vidya + Aalay = Vidyaalay" },
+        { "en": "Raat + Din = Raat-Din", "hi": "रात + दिन = रात-दिन", "ta": "Raat + Din = Raat-Din" },
+        { "en": "Man + Pasand = Manpasand", "hi": "मन + पसंद = मनपसंद", "ta": "Man + Pasand = Manpasand" },
+        { "en": "Desh + Bhakt = Deshbhakt", "hi": "देश + भक्त = देशभक्त", "ta": "Desh + Bhakt = Deshbhakt" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-hindi-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Hindi poetry, a 'doha' is a poem of how many lines?",
+        "hi": "हिंदी कविता में 'दोहा' कितनी पंक्तियों की कविता होती है?",
+        "ta": "இந்தி கவிதையில் 'doha' என்பது எத்தனை வரிகளைக் கொண்ட கவிதை?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "1 line", "hi": "1 पंक्ति", "ta": "1 வரி" },
+        { "en": "2 lines", "hi": "2 पंक्तियाँ", "ta": "2 வரிகள்" },
+        { "en": "4 lines", "hi": "4 पंक्तियाँ", "ta": "4 வரிகள்" },
+        { "en": "6 lines", "hi": "6 पंक्तियाँ", "ta": "6 வரிகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-hindi-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the meaning of the Hindi idiom 'aankhon ka taara' (आँखों का तारा)?",
+        "hi": "'आँखों का तारा' मुहावरे का अर्थ क्या है?",
+        "ta": "இந்தி சொலவடை 'aankhon ka taara' (आँखों का तारा) இன் பொருள் என்ன?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "A bright star", "hi": "एक चमकता तारा", "ta": "ஒரு பிரகாசமான நட்சத்திரம்" },
+        { "en": "A beloved person", "hi": "बहुत प्रिय व्यक्ति", "ta": "ஒரு அன்பான நபர்" },
+        { "en": "A bad person", "hi": "एक बुरा व्यक्ति", "ta": "ஒரு கெட்ட நபர்" },
+        { "en": "An enemy", "hi": "एक शत्रु", "ta": "ஒரு எதிரி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-hindi-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which famous Hindi poet wrote 'Ramcharitmanas'?",
+        "hi": "'रामचरितमानस' किस प्रसिद्ध हिंदी कवि ने लिखी?",
+        "ta": "'Ramcharitmanas' ஐ எந்த பிரசித்தமான இந்தி கவிஞர் எழுதினார்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Kabir", "hi": "कबीर", "ta": "கபீர்" },
+        { "en": "Tulsidas", "hi": "तुलसीदास", "ta": "துளசிதாஸ்" },
+        { "en": "Mirabai", "hi": "मीराबाई", "ta": "மீராபாய்" },
+        { "en": "Surdas", "hi": "सूरदास", "ta": "சூர்தாஸ்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-hindi-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Hindi grammar, 'karak' refers to?",
+        "hi": "हिंदी व्याकरण में 'कारक' किसे कहते हैं?",
+        "ta": "இந்தி இலக்கணத்தில் 'karak' என்பது எதை குறிக்கும்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Types of nouns", "hi": "संज्ञा के प्रकार", "ta": "பெயர்ச்சொல்லின் வகைகள்" },
+        { "en": "Case relations (like subject, object)", "hi": "कारक संबंध (जैसे कर्ता, कर्म)", "ta": "வேற்றுமை உறவுகள் (கர்த்தா, கர்மம் போன்றவை)" },
+        { "en": "Types of verbs", "hi": "क्रिया के प्रकार", "ta": "வினைச்சொல்லின் வகைகள்" },
+        { "en": "Sentence types", "hi": "वाक्य के प्रकार", "ta": "வாக்கிய வகைகள்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-hindi-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the Hindi term for 'antonym' (opposite word)?",
+        "hi": "विपरीत अर्थ वाले शब्द को हिंदी में क्या कहते हैं?",
+        "ta": "எதிர்ச்சொல்லை இந்தியில் என்று அழைப்பார்கள்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Paryayvachi", "hi": "पर्यायवाची", "ta": "பர்யாய்வாச்சி" },
+        { "en": "Vilom shabd", "hi": "विलोम शब्द", "ta": "விலோம் ஷப்த்" },
+        { "en": "Sanyojak", "hi": "संयोजक", "ta": "சன்யோஜக்" },
+        { "en": "Visheshan", "hi": "विशेषण", "ta": "விஷேஷண்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-hindi-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these is a proverb (kahavat) in Hindi?",
+        "hi": "इनमें से कौन सी हिंदी में कहावत है?",
+        "ta": "இவற்றில் எது இந்தியில் பழமொழி (kahavat)?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Aasaan kaam", "hi": "आसान काम", "ta": "ஆசான் காம்" },
+        { "en": "Aam ke aam, guthliyon ke daam", "hi": "आम के आम, गुठलियों के दाम", "ta": "ஆம் கே ஆம், குட்லியோன் கே தாம்" },
+        { "en": "Ghar mein raho", "hi": "घर में रहो", "ta": "கர் மேன் ரஹோ" },
+        { "en": "Kitab padhna", "hi": "किताब पढ़ना", "ta": "கிட்டாப் படனா" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-hindi-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Hindi, a letter written to a friend is called?",
+        "hi": "हिंदी में मित्र को लिखे पत्र को क्या कहते हैं?",
+        "ta": "இந்தியில் நண்பனுக்கு எழுதப்படும் கடிதம் என்று அழைக்கப்படுகிறது?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Aupcharik patra (formal letter)", "hi": "औपचारिक पत्र", "ta": "முறையான கடிதம்" },
+        { "en": "Anaupcharik patra (informal letter)", "hi": "अनौपचारिक पत्र", "ta": "முறைசாரா கடிதம்" },
+        { "en": "Shikayat patra (complaint letter)", "hi": "शिकायत पत्र", "ta": "புகார் கடிதம்" },
+        { "en": "Nivedan patra (request letter)", "hi": "निवेदन पत्र", "ta": "கோரிக்கை கடிதம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-hindi-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The word 'Baarissh' (बारिश) in Hindi means?",
+        "hi": "'बारिश' का अर्थ क्या है?",
+        "ta": "இந்தியில் 'Baarish' (बारिश) என்பதன் பொருள்?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "Wind", "hi": "हवा", "ta": "காற்று" },
+        { "en": "Rain", "hi": "बारिश/वर्षा", "ta": "மழை" },
+        { "en": "Snow", "hi": "बर्फ", "ta": "பனி" },
+        { "en": "Thunder", "hi": "गर्जना", "ta": "இடி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-hindi-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "In Hindi grammar, how many genders (ling) are there?",
+        "hi": "हिंदी व्याकरण में कितने लिंग होते हैं?",
+        "ta": "இந்தி இலக்கணத்தில் எத்தனை பால்கள் (ling) உள்ளன?"
+      },
+      "visual": "🇮🇳",
+      "choices": [
+        { "en": "1", "hi": "1", "ta": "1" },
+        { "en": "2", "hi": "2", "ta": "2" },
+        { "en": "3", "hi": "3", "ta": "3" },
+        { "en": "4", "hi": "4", "ta": "4" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

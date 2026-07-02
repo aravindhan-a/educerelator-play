@@ -1,0 +1,176 @@
+{
+  "class": 9,
+  "subject": "english",
+  "questions": [
+    {
+      "id": "9-english-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "In the poem 'The Road Not Taken', how many roads diverged in a wood?",
+        "hi": "'द रोड नॉट टेकन' कविता में जंगल में कितने रास्ते अलग होते हैं?",
+        "ta": "'The Road Not Taken' கவிதையில் காட்டில் எத்தனை பாதைகள் பிரிகின்றன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Two", "hi": "दो", "ta": "இரண்டு" },
+        { "en": "Three", "hi": "तीन", "ta": "மூன்று" },
+        { "en": "Four", "hi": "चार", "ta": "நான்கு" },
+        { "en": "One", "hi": "एक", "ta": "ஒன்று" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "9-english-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a proper noun?",
+        "hi": "निम्नलिखित में से कौन सा एक व्यक्तिवाचक संज्ञा है?",
+        "ta": "பின்வருவனவற்றில் எது சரியான பெயர்ச்சொல்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "city", "hi": "शहर", "ta": "நகரம்" },
+        { "en": "river", "hi": "नदी", "ta": "ஆறு" },
+        { "en": "Ganga", "hi": "गंगा", "ta": "கங்கை" },
+        { "en": "mountain", "hi": "पहाड़", "ta": "மலை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-english-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of 'write'?",
+        "hi": "'write' की भूतकाल क्रिया क्या है?",
+        "ta": "'write' என்பதன் கடந்தகால வினை என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "writed", "hi": "writed", "ta": "writed" },
+        { "en": "written", "hi": "written", "ta": "written" },
+        { "en": "wrote", "hi": "wrote", "ta": "wrote" },
+        { "en": "writing", "hi": "writing", "ta": "writing" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-english-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "In 'The Fun They Had' (Beehive), what subject did Margie hate most?",
+        "hi": "'द फन दे हैड' (Beehive) में मार्गी को कौन सा विषय सबसे अधिक नापसंद था?",
+        "ta": "'The Fun They Had' (Beehive) கதையில் மார்கிக்கு மிகவும் வெறுப்பான பாடம் எது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "History", "hi": "इतिहास", "ta": "வரலாறு" },
+        { "en": "Geography", "hi": "भूगोल", "ta": "புவியியல்" },
+        { "en": "Arithmetic", "hi": "अंकगणित", "ta": "கணக்கியல்" },
+        { "en": "Science", "hi": "विज्ञान", "ta": "அறிவியல்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-english-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Identify the adjective in the sentence: 'She wore a beautiful dress.'",
+        "hi": "वाक्य में विशेषण पहचानें: 'She wore a beautiful dress.'",
+        "ta": "'She wore a beautiful dress.' என்ற வாக்கியத்தில் உரிச்சொல்லை கண்டறியுங்கள்."
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "wore", "hi": "wore", "ta": "wore" },
+        { "en": "beautiful", "hi": "beautiful", "ta": "beautiful" },
+        { "en": "dress", "hi": "dress", "ta": "dress" },
+        { "en": "she", "hi": "she", "ta": "she" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-english-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used in 'The wind whispered through the trees'?",
+        "hi": "'The wind whispered through the trees' में कौन सा अलंकार प्रयुक्त है?",
+        "ta": "'The wind whispered through the trees' என்ற வரியில் எந்த உருவகம் பயன்படுத்தப்பட்டுள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Simile", "hi": "उपमा", "ta": "உவமை" },
+        { "en": "Metaphor", "hi": "रूपक", "ta": "உருவகம்" },
+        { "en": "Personification", "hi": "मानवीकरण", "ta": "உயிரூட்டல்" },
+        { "en": "Alliteration", "hi": "अनुप्रास", "ta": "அனுரணனம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "9-english-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the correctly punctuated sentence:",
+        "hi": "सही विराम चिन्ह वाला वाक्य चुनें:",
+        "ta": "சரியான நிறுத்தற்குறிகளுடன் கூடிய வாக்கியத்தை தேர்ந்தெடுங்கள்:"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "its raining outside.", "hi": "its raining outside.", "ta": "its raining outside." },
+        { "en": "It's raining outside.", "hi": "It's raining outside.", "ta": "It's raining outside." },
+        { "en": "Its' raining outside.", "hi": "Its' raining outside.", "ta": "Its' raining outside." },
+        { "en": "Its raining, outside.", "hi": "Its raining, outside.", "ta": "Its raining, outside." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-english-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is a synonym for 'brave'?",
+        "hi": "'brave' का पर्यायवाची शब्द क्या है?",
+        "ta": "'brave' என்பதன் ஒத்த பொருள் சொல் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Timid", "hi": "डरपोक", "ta": "கோழை" },
+        { "en": "Courageous", "hi": "साहसी", "ta": "தைரியமான" },
+        { "en": "Weak", "hi": "कमज़ोर", "ta": "பலவீனமான" },
+        { "en": "Lazy", "hi": "आलसी", "ta": "சோம்பேறி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-english-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The word 'autobiography' means:",
+        "hi": "'autobiography' शब्द का अर्थ है:",
+        "ta": "'autobiography' என்ற சொல்லின் பொருள்:"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "A story written about someone else's life", "hi": "किसी और के जीवन के बारे में लिखी गई कहानी", "ta": "வேறொருவரின் வாழ்க்கையைப் பற்றி எழுதப்பட்ட கதை" },
+        { "en": "A story written by oneself about one's own life", "hi": "अपने जीवन के बारे में स्वयं लिखी गई कहानी", "ta": "தன் சொந்த வாழ்க்கையைப் பற்றி தானே எழுதிய கதை" },
+        { "en": "A fictional story", "hi": "एक काल्पनिक कहानी", "ta": "ஒரு கற்பனைக் கதை" },
+        { "en": "A book about cars", "hi": "कारों के बारे में एक पुस्तक", "ta": "கார்களைப் பற்றிய புத்தகம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "9-english-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "In the passive voice, 'They built a house' becomes:",
+        "hi": "कर्मवाच्य में 'They built a house' बन जाता है:",
+        "ta": "செயப்படுவினையில் 'They built a house' ஆவது:"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "A house was built by them.", "hi": "A house was built by them.", "ta": "A house was built by them." },
+        { "en": "A house is built by them.", "hi": "A house is built by them.", "ta": "A house is built by them." },
+        { "en": "A house has been built by them.", "hi": "A house has been built by them.", "ta": "A house has been built by them." },
+        { "en": "They are building a house.", "hi": "They are building a house.", "ta": "They are building a house." }
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

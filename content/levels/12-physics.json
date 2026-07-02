@@ -1,0 +1,176 @@
+{
+  "class": 12,
+  "subject": "physics",
+  "questions": [
+    {
+      "id": "12-physics-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Coulomb's law gives the force between two point charges. The force is:",
+        "hi": "कूलॉम का नियम दो बिंदु आवेशों के बीच बल देता है। बल है:",
+        "ta": "கூலோம்பின் விதி இரண்டு புள்ளி மின்னூட்டங்களுக்கு இடையிலான விசையை கொடுக்கிறது. விசையானது:"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Proportional to distance", "hi": "दूरी के समानुपाती", "ta": "தூரத்திற்கு நேர்விகிதாசாரம்" },
+        { "en": "Inversely proportional to the square of distance", "hi": "दूरी के वर्ग के व्युत्क्रमानुपाती", "ta": "தூரத்தின் வர்க்கத்திற்கு எதிர் விகிதாசாரம்" },
+        { "en": "Independent of distance", "hi": "दूरी पर निर्भर नहीं", "ta": "தூரத்தை சார்ந்திருக்காதது" },
+        { "en": "Proportional to the cube of distance", "hi": "दूरी के घन के समानुपाती", "ta": "தூரத்தின் கனத்திற்கு நேர்விகிதாசாரம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-physics-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Ohm's law states that V = IR, where R is:",
+        "hi": "ओम का नियम कहता है कि V = IR, जहाँ R है:",
+        "ta": "ஓமின் விதி V = IR என்கிறது, R என்பது:"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Resistance", "hi": "प्रतिरोध", "ta": "மின்தடை" },
+        { "en": "Reactance", "hi": "प्रतिघात", "ta": "எதிர்ப்பு" },
+        { "en": "Resistivity", "hi": "प्रतिरोधकता", "ta": "தடைத்திறன்" },
+        { "en": "Ratio of capacitance", "hi": "धारिता का अनुपात", "ta": "மின்தேக்க விகிதம்" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "12-physics-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which phenomenon is responsible for the blue colour of the sky?",
+        "hi": "आकाश के नीले रंग के लिए कौन सी घटना जिम्मेदार है?",
+        "ta": "வானின் நீல நிறத்திற்கு எந்த நிகழ்வு காரணமாக இருக்கிறது?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Reflection", "hi": "परावर्तन", "ta": "எதிரொளிப்பு" },
+        { "en": "Refraction", "hi": "अपवर्तन", "ta": "ஒளிவளைவு" },
+        { "en": "Scattering (Rayleigh)", "hi": "प्रकीर्णन (रेले)", "ta": "சிதறல் (ரேலே)" },
+        { "en": "Diffraction", "hi": "विवर्तन", "ta": "விளிம்பொளி வளைவு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-physics-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "The unit of electric charge is:",
+        "hi": "विद्युत आवेश की इकाई है:",
+        "ta": "மின்னூட்டத்தின் அலகு:"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Ampere", "hi": "एम्पियर", "ta": "ஆம்பியர்" },
+        { "en": "Volt", "hi": "वोल्ट", "ta": "வோல்ட்" },
+        { "en": "Coulomb", "hi": "कूलॉम", "ta": "கூலோம்" },
+        { "en": "Farad", "hi": "फैराड", "ta": "ஃபராட்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "12-physics-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which lens is used to correct myopia (short-sightedness)?",
+        "hi": "मायोपिया (निकट दृष्टि दोष) के सुधार के लिए कौन सा लेंस उपयोग किया जाता है?",
+        "ta": "கிட்டப்பார்வை திருத்த எந்த லென்ஸ் பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Convex lens", "hi": "उत्तल लेंस", "ta": "குவிய லென்ஸ்" },
+        { "en": "Concave lens", "hi": "अवतल लेंस", "ta": "குழியா லென்ஸ்" },
+        { "en": "Cylindrical lens", "hi": "बेलनाकार लेंस", "ta": "உருளை லென்ஸ்" },
+        { "en": "Bifocal lens", "hi": "द्विफोकस लेंस", "ta": "இரட்டை குவிய லென்ஸ்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-physics-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "The energy of a photon is given by:",
+        "hi": "एक फोटॉन की ऊर्जा दी जाती है:",
+        "ta": "ஒரு ஃபோட்டானின் ஆற்றல் கொடுக்கப்படுகிறது:"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "E = mc²", "hi": "E = mc²", "ta": "E = mc²" },
+        { "en": "E = hf", "hi": "E = hf", "ta": "E = hf" },
+        { "en": "E = ½mv²", "hi": "E = ½mv²", "ta": "E = ½mv²" },
+        { "en": "E = qV", "hi": "E = qV", "ta": "E = qV" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-physics-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Capacitors connected in parallel have the same:",
+        "hi": "समानांतर में जोड़े गए संधारित्रों में समान होता है:",
+        "ta": "இணையாக இணைக்கப்பட்ட மின்தேக்கிகளுக்கு சமானமாக இருப்பது:"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Charge", "hi": "आवेश", "ta": "மின்னூட்டம்" },
+        { "en": "Voltage", "hi": "वोल्टेज", "ta": "மின்னழுத்தம்" },
+        { "en": "Capacitance", "hi": "धारिता", "ta": "மின்தேக்குதிறன்" },
+        { "en": "Current", "hi": "धारा", "ta": "மின்னோட்டம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-physics-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Total internal reflection occurs when light travels from:",
+        "hi": "पूर्ण आंतरिक परावर्तन तब होता है जब प्रकाश जाता है:",
+        "ta": "மொத்த உள் எதிரொளிப்பு நிகழும்போது ஒளி பயணிக்கும் திசை:"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Rarer to denser medium at any angle", "hi": "किसी भी कोण पर विरल से सघन माध्यम तक", "ta": "எந்த கோணத்திலும் நீர்ம ஊடகத்திலிருந்து அடர் ஊடகம் நோக்கி" },
+        { "en": "Denser to rarer medium beyond critical angle", "hi": "क्रांतिक कोण से परे सघन से विरल माध்यम तक", "ta": "அடர் ஊடகத்திலிருந்து நீர்ம ஊடகம் நோக்கி திக்கு கோணத்தை தாண்டி" },
+        { "en": "Rarer to rarer medium", "hi": "विरल से विरल माध्यम", "ta": "நீர்ம ஊடகத்திலிருந்து நீர்ம ஊடகம் நோக்கி" },
+        { "en": "Along the normal", "hi": "अभिलम्ब के साथ", "ta": "செங்குத்தின் வழியே" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "12-physics-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following has the highest frequency?",
+        "hi": "निम्नलिखित में से किसकी आवृत्ति सबसे अधिक है?",
+        "ta": "பின்வருவனவற்றில் எதன் அதிர்வெண் மிக அதிகம்?"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Radio waves", "hi": "रेडियो तरंगें", "ta": "வானொலி அலைகள்" },
+        { "en": "Visible light", "hi": "दृश्य प्रकाश", "ta": "புலப்படும் ஒளி" },
+        { "en": "X-rays", "hi": "X-किरणें", "ta": "எக்ஸ் கதிர்கள்" },
+        { "en": "Gamma rays", "hi": "गामा किरणें", "ta": "கேமா கதிர்கள்" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "12-physics-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Resistors connected in series have the same:",
+        "hi": "श्रेणी में जोड़े गए प्रतिरोधों में समान होता है:",
+        "ta": "தொடரில் இணைக்கப்பட்ட மின்தடைகளுக்கு சமானமாக இருப்பது:"
+      },
+      "visual": "⚡",
+      "choices": [
+        { "en": "Voltage", "hi": "वोल्टेज", "ta": "மின்னழுத்தம்" },
+        { "en": "Current", "hi": "धारा", "ta": "மின்னோட்டம்" },
+        { "en": "Power", "hi": "शक्ति", "ta": "திறன்" },
+        { "en": "Resistance", "hi": "प्रतिरोध", "ta": "மின்தடை" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

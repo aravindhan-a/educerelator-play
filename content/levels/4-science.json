@@ -1,0 +1,176 @@
+{
+  "class": 4,
+  "subject": "science",
+  "questions": [
+    {
+      "id": "4-science-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a living thing?",
+        "hi": "निम्नलिखित में से कौन सी एक सजीव वस्तु है?",
+        "ta": "கீழ்காணும் எது ஒரு உயிரினம்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Stone", "hi": "पत्थर", "ta": "கல்" },
+        { "en": "Water", "hi": "पानी", "ta": "தண்ணீர்" },
+        { "en": "Mushroom", "hi": "मशरूम", "ta": "காளான்" },
+        { "en": "Cloud", "hi": "बादल", "ta": "மேகம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-science-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which part of the plant makes food using sunlight?",
+        "hi": "पौधे का कौन सा भाग सूर्य के प्रकाश का उपयोग करके भोजन बनाता है?",
+        "ta": "சூரிய ஒளியைப் பயன்படுத்தி உணவை தயாரிக்கும் தாவர பாகம் எது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Root", "hi": "जड़", "ta": "வேர்" },
+        { "en": "Stem", "hi": "तना", "ta": "தண்டு" },
+        { "en": "Leaf", "hi": "पत्ती", "ta": "இலை" },
+        { "en": "Flower", "hi": "फूल", "ta": "மலர்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-science-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these animals is a herbivore?",
+        "hi": "इनमें से कौन सा जानवर शाकाहारी है?",
+        "ta": "இவற்றில் எது தாவரவுண்ணி விலங்கு?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Lion", "hi": "शेर", "ta": "சிங்கம்" },
+        { "en": "Tiger", "hi": "बाघ", "ta": "புலி" },
+        { "en": "Cow", "hi": "गाय", "ta": "பசு" },
+        { "en": "Fox", "hi": "लोमड़ी", "ta": "நரி" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-science-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "What do we call the process by which a caterpillar changes into a butterfly?",
+        "hi": "वह प्रक्रिया जिसके द्वारा एक कैटरपिलर तितली बन जाता है, उसे क्या कहते हैं?",
+        "ta": "கம்பளிப்பூச்சி பட்டாம்பூச்சியாக மாறும் செயல்முறை என்ன எனப்படும்?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Germination", "hi": "अंकुरण", "ta": "முளைத்தல்" },
+        { "en": "Metamorphosis", "hi": "कायापलट", "ta": "உருமாற்றம்" },
+        { "en": "Photosynthesis", "hi": "प्रकाश संश्लेषण", "ta": "ஒளிச்சேர்க்கை" },
+        { "en": "Pollination", "hi": "परागण", "ta": "மகரந்தச்சேர்க்கை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "4-science-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sense organ helps us hear sounds?",
+        "hi": "कौन सा ज्ञानेंद्रिय हमें ध्वनि सुनने में मदद करता है?",
+        "ta": "எந்த உணர்வு உறுப்பு நமக்கு ஒலிகளை கேட்க உதவுகிறது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Eyes", "hi": "आँखें", "ta": "கண்கள்" },
+        { "en": "Nose", "hi": "नाक", "ta": "மூக்கு" },
+        { "en": "Ears", "hi": "कान", "ta": "காதுகள்" },
+        { "en": "Tongue", "hi": "जीभ", "ta": "நாக்கு" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-science-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is a non-living thing?",
+        "hi": "निम्नलिखित में से कौन सा निर्जीव है?",
+        "ta": "கீழ்காணும் எது உயிரற்றது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Frog", "hi": "मेंढक", "ta": "தவளை" },
+        { "en": "Mango tree", "hi": "आम का पेड़", "ta": "மாமரம்" },
+        { "en": "Bacteria", "hi": "बैक्टीरिया", "ta": "பாக்டீரியா" },
+        { "en": "Rock", "hi": "चट्टान", "ta": "பாறை" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "4-science-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the main source of energy for the Earth?",
+        "hi": "पृथ्वी के लिए ऊर्जा का मुख्य स्रोत क्या है?",
+        "ta": "பூமிக்கு ஆற்றலின் முக்கிய ஆதாரம் என்ன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Moon", "hi": "चंद्रमा", "ta": "நிலா" },
+        { "en": "Wind", "hi": "हवा", "ta": "காற்று" },
+        { "en": "Sun", "hi": "सूर्य", "ta": "சூரியன்" },
+        { "en": "Stars", "hi": "तारे", "ta": "நட்சத்திரங்கள்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-science-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "A food chain shows how energy passes between living things. Which is the correct food chain?",
+        "hi": "खाद्य श्रृंखला दर्शाती है कि जीवों के बीच ऊर्जा कैसे स्थानांतरित होती है। सही खाद्य श्रृंखला कौन सी है?",
+        "ta": "உணவுச் சங்கிலி உயிரினங்களுக்கிடையே ஆற்றல் எவ்வாறு பரவுகிறது என்பதைக் காட்டுகிறது. சரியான உணவுச் சங்கிலி எது?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Frog → Grass → Snake → Eagle", "hi": "मेंढक → घास → सांप → चील", "ta": "தவளை → புல் → பாம்பு → கழுகு" },
+        { "en": "Eagle → Snake → Frog → Grass", "hi": "चील → सांप → मेंढक → घास", "ta": "கழுகு → பாம்பு → தவளை → புல்" },
+        { "en": "Grass → Frog → Snake → Eagle", "hi": "घास → मेंढक → सांप → चील", "ta": "புல் → தவளை → பாம்பு → கழுகு" },
+        { "en": "Snake → Grass → Eagle → Frog", "hi": "सांप → घास → चील → मेंढक", "ta": "பாம்பு → புல் → கழுகு → தவளை" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-science-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which gas do plants release during photosynthesis?",
+        "hi": "प्रकाश संश्लेषण के दौरान पौधे कौन सी गैस छोड़ते हैं?",
+        "ta": "ஒளிச்சேர்க்கையின் போது தாவரங்கள் எந்த வாயுவை வெளியிடுகின்றன?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Carbon dioxide", "hi": "कार्बन डाइऑक्साइड", "ta": "கார்பன் டைஆக்சைடு" },
+        { "en": "Nitrogen", "hi": "नाइट्रोजन", "ta": "நைட்ரஜன்" },
+        { "en": "Oxygen", "hi": "ऑक्सीजन", "ta": "ஆக்சிஜன்" },
+        { "en": "Hydrogen", "hi": "हाइड्रोजन", "ta": "ஹைட்ரஜன்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "4-science-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which material is a good conductor of electricity?",
+        "hi": "कौन सी सामग्री बिजली की अच्छी चालक है?",
+        "ta": "எந்த பொருள் மின்சாரத்தின் நல்ல கடத்தி?"
+      },
+      "visual": "🔬",
+      "choices": [
+        { "en": "Wood", "hi": "लकड़ी", "ta": "மரம்" },
+        { "en": "Rubber", "hi": "रबर", "ta": "ரப்பர்" },
+        { "en": "Plastic", "hi": "प्लास्टिक", "ta": "பிளாஸ்டிக்" },
+        { "en": "Copper", "hi": "तांबा", "ta": "தாமிரம்" }
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

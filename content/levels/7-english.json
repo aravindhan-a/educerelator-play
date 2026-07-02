@@ -1,0 +1,176 @@
+{
+  "class": 7,
+  "subject": "english",
+  "questions": [
+    {
+      "id": "7-english-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Identify the figure of speech: 'The wind whispered through the trees.'",
+        "hi": "अलंकार पहचानें: 'The wind whispered through the trees.'",
+        "ta": "அலங்காரத்தை அடையாளம் காணுங்கள்: 'The wind whispered through the trees.'"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Simile", "hi": "उपमा", "ta": "உவமை" },
+        { "en": "Personification", "hi": "मानवीकरण", "ta": "உருவகம்" },
+        { "en": "Metaphor", "hi": "रूपक", "ta": "உருவகம் (metaphor)" },
+        { "en": "Alliteration", "hi": "अनुप्रास", "ta": "எழுத்தொற்றுமை" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is in the present perfect tense?",
+        "hi": "निम्नलिखित में से कौन सा वर्तमान पूर्ण काल में है?",
+        "ta": "பின்வருவனவற்றில் எது நிகழ் முற்று காலத்தில் உள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "She went to school.", "hi": "वह स्कूल गई।", "ta": "அவள் பள்ளிக்கு சென்றாள்." },
+        { "en": "She has gone to school.", "hi": "वह स्कूल जा चुकी है।", "ta": "அவள் பள்ளிக்கு சென்றிருக்கிறாள்." },
+        { "en": "She goes to school.", "hi": "वह स्कूल जाती है।", "ta": "அவள் பள்ளிக்கு போகிறாள்." },
+        { "en": "She is going to school.", "hi": "वह स्कूल जा रही है।", "ta": "அவள் பள்ளிக்கு போகிறாள்." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is a 'topic sentence' in a paragraph?",
+        "hi": "अनुच्छेद में 'विषय वाक्य' क्या होता है?",
+        "ta": "ஒரு பத்தியில் 'தலைப்பு வாக்கியம்' என்றால் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "The last sentence of a paragraph", "hi": "अनुच्छेद का अंतिम वाक्य", "ta": "பத்தியின் கடைசி வாக்கியம்" },
+        { "en": "A sentence that introduces the main idea", "hi": "मुख्य विचार प्रस्तुत करने वाला वाक्य", "ta": "முக்கிய கருத்தை அறிமுகப்படுத்தும் வாக்கியம்" },
+        { "en": "A question in the paragraph", "hi": "अनुच्छेद में प्रश्न", "ta": "பத்தியில் உள்ள கேள்வி" },
+        { "en": "A supporting detail", "hi": "समर्थन विवरण", "ta": "துணை விவரம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sentence uses the word 'since' correctly?",
+        "hi": "किस वाक्य में 'since' का सही प्रयोग हुआ है?",
+        "ta": "'since' சொல்லை சரியாகப் பயன்படுத்திய வாக்கியம் எது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "I have lived here since 5 years.", "hi": "मैं यहाँ 5 साल से रह रहा हूँ।", "ta": "நான் 5 வருடமாக இங்கே வாழ்கிறேன்." },
+        { "en": "I have lived here since 2019.", "hi": "मैं 2019 से यहाँ रह रहा हूँ।", "ta": "நான் 2019 முதல் இங்கே வாழ்கிறேன்." },
+        { "en": "I lived here since 2019.", "hi": "मैं 2019 में यहाँ रहा था।", "ta": "நான் 2019 ல் இங்கே வாழ்ந்தேன்." },
+        { "en": "I live here since 2019.", "hi": "मैं 2019 से यहाँ रहता हूँ।", "ta": "நான் 2019 முதல் இங்கே வாழ்கிறேன்." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "What does the idiom 'break the ice' mean?",
+        "hi": "'break the ice' मुहावरे का अर्थ क्या है?",
+        "ta": "'break the ice' என்ற சொற்றொடரின் பொருள் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "To physically break ice", "hi": "वास्तव में बर्फ तोड़ना", "ta": "பனியை உடைப்பது" },
+        { "en": "To start a conversation in an awkward situation", "hi": "अजीब स्थिति में बातचीत शुरू करना", "ta": "கடினமான சூழ்நிலையில் உரையாடலை தொடங்குவது" },
+        { "en": "To win a competition", "hi": "प्रतिस्पर्धा जीतना", "ta": "போட்டியில் வெல்வது" },
+        { "en": "To feel cold", "hi": "ठंड महसूस करना", "ta": "குளிராக உணர்வது" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the correct passive voice: 'Riya ate the cake.'",
+        "hi": "सही passive voice चुनें: 'Riya ate the cake.'",
+        "ta": "சரியான passive voice தேர்ந்தெடுங்கள்: 'Riya ate the cake.'"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "The cake was eaten by Riya.", "hi": "केक रिया द्वारा खाया गया।", "ta": "கேக் ரியாவால் சாப்பிடப்பட்டது." },
+        { "en": "The cake is eaten by Riya.", "hi": "केक रिया द्वारा खाया जाता है।", "ta": "கேக் ரியாவால் சாப்பிடப்படுகிறது." },
+        { "en": "The cake has been eaten by Riya.", "hi": "केक रिया द्वारा खाया जा चुका है।", "ta": "கேக் ரியாவால் சாப்பிடப்பட்டிருக்கிறது." },
+        { "en": "The cake will be eaten by Riya.", "hi": "केक रिया द्वारा खाया जाएगा।", "ta": "கேக் ரியாவால் சாப்பிடப்படும்." }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word is a homophone of 'write'?",
+        "hi": "'write' का समध्वनि शब्द कौन सा है?",
+        "ta": "'write' இன் ஒலி ஒத்த சொல் எது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "right", "hi": "right", "ta": "right" },
+        { "en": "ride", "hi": "ride", "ta": "ride" },
+        { "en": "rice", "hi": "rice", "ta": "rice" },
+        { "en": "rite", "hi": "rite", "ta": "rite" }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "A short story that teaches a moral lesson is called?",
+        "hi": "एक छोटी कहानी जो नैतिक शिक्षा देती है, क्या कहलाती है?",
+        "ta": "ஒரு நீதிக் கருத்தை கற்பிக்கும் சிறு கதை என்று அழைக்கப்படுகிறது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Novel", "hi": "उपन्यास", "ta": "நாவல்" },
+        { "en": "Fable", "hi": "नीति कथा", "ta": "கற்பனைக் கதை (நீதிக்கதை)" },
+        { "en": "Biography", "hi": "जीवनी", "ta": "சுயசரிதை" },
+        { "en": "Drama", "hi": "नाटक", "ta": "நாடகம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following contains a simile?",
+        "hi": "निम्नलिखित में से किसमें उपमा अलंकार है?",
+        "ta": "பின்வருவனவற்றில் எதில் உவமை உள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "The stars danced in the sky.", "hi": "तारे आकाश में नाचे।", "ta": "நட்சத்திரங்கள் வானில் நடனமாடின." },
+        { "en": "He runs as fast as a cheetah.", "hi": "वह चीते जितना तेज दौड़ता है।", "ta": "அவன் சிறுத்தையைப் போல வேகமாக ஓடுகிறான்." },
+        { "en": "Life is a journey.", "hi": "जीवन एक यात्रा है।", "ta": "வாழ்க்கை ஒரு பயணம்." },
+        { "en": "The river sang a song.", "hi": "नदी ने एक गाना गाया।", "ta": "நதி ஒரு பாட்டு பாடியது." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the meaning of the prefix 'un-' in the word 'unhappy'?",
+        "hi": "'unhappy' शब्द में उपसर्ग 'un-' का अर्थ क्या है?",
+        "ta": "'unhappy' சொல்லில் 'un-' என்ற முன்னொட்டின் பொருள் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Very", "hi": "बहुत", "ta": "மிகவும்" },
+        { "en": "Not", "hi": "नहीं", "ta": "இல்லை" },
+        { "en": "Again", "hi": "फिर से", "ta": "மீண்டும்" },
+        { "en": "Before", "hi": "पहले", "ta": "முன்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

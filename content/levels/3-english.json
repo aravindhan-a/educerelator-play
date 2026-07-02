@@ -1,0 +1,176 @@
+{
+  "class": 3,
+  "subject": "english",
+  "questions": [
+    {
+      "id": "3-english-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word is a noun?",
+        "hi": "कौन सा शब्द एक संज्ञा है?",
+        "ta": "எந்த சொல் ஒரு பெயர்ச்சொல்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Run", "hi": "Run", "ta": "Run" },
+        { "en": "Quickly", "hi": "Quickly", "ta": "Quickly" },
+        { "en": "Garden", "hi": "Garden", "ta": "Garden" },
+        { "en": "Happy", "hi": "Happy", "ta": "Happy" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-english-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word is a verb?",
+        "hi": "कौन सा शब्द एक क्रिया है?",
+        "ta": "எந்த சொல் ஒரு வினைச்சொல்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Beautiful", "hi": "Beautiful", "ta": "Beautiful" },
+        { "en": "Climb", "hi": "Climb", "ta": "Climb" },
+        { "en": "Mountain", "hi": "Mountain", "ta": "Mountain" },
+        { "en": "Slowly", "hi": "Slowly", "ta": "Slowly" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-english-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Read: 'The bird flew over the tall tree.' What did the bird do?",
+        "hi": "पढ़ें: 'The bird flew over the tall tree.' चिड़िया ने क्या किया?",
+        "ta": "படியுங்கள்: 'The bird flew over the tall tree.' பறவை என்ன செய்தது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "It sat on the tree.", "hi": "It sat on the tree.", "ta": "It sat on the tree." },
+        { "en": "It flew over the tree.", "hi": "It flew over the tree.", "ta": "It flew over the tree." },
+        { "en": "It ate the tree.", "hi": "It ate the tree.", "ta": "It ate the tree." },
+        { "en": "It hid under the tree.", "hi": "It hid under the tree.", "ta": "It hid under the tree." }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-english-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which sentence uses the correct punctuation?",
+        "hi": "किस वाक्य में सही विराम चिह्न का उपयोग किया गया है?",
+        "ta": "எந்த வாக்கியத்தில் சரியான நிறுத்தற்குறி பயன்படுத்தப்பட்டுள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "what is your name", "hi": "what is your name", "ta": "what is your name" },
+        { "en": "What is your name?", "hi": "What is your name?", "ta": "What is your name?" },
+        { "en": "What is your name.", "hi": "What is your name.", "ta": "What is your name." },
+        { "en": "what is your name?", "hi": "what is your name?", "ta": "what is your name?" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-english-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the synonym of 'happy'?",
+        "hi": "'happy' का समानार्थी शब्द क्या है?",
+        "ta": "'happy'-இன் ஒத்த சொல் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Sad", "hi": "Sad", "ta": "Sad" },
+        { "en": "Angry", "hi": "Angry", "ta": "Angry" },
+        { "en": "Joyful", "hi": "Joyful", "ta": "Joyful" },
+        { "en": "Tired", "hi": "Tired", "ta": "Tired" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-english-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Fill in the blank: She ___ a letter yesterday.",
+        "hi": "रिक्त स्थान भरें: She ___ a letter yesterday.",
+        "ta": "இடைவெளியை நிரப்புங்கள்: She ___ a letter yesterday."
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "write", "hi": "write", "ta": "write" },
+        { "en": "writes", "hi": "writes", "ta": "writes" },
+        { "en": "written", "hi": "written", "ta": "written" },
+        { "en": "wrote", "hi": "wrote", "ta": "wrote" }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "3-english-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of these is an adjective?",
+        "hi": "इनमें से कौन सा एक विशेषण है?",
+        "ta": "இவற்றில் எது ஒரு உரிச்சொல்?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Run", "hi": "Run", "ta": "Run" },
+        { "en": "Bright", "hi": "Bright", "ta": "Bright" },
+        { "en": "School", "hi": "School", "ta": "School" },
+        { "en": "Quickly", "hi": "Quickly", "ta": "Quickly" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "3-english-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of 'go'?",
+        "hi": "'go' का भूतकाल क्या है?",
+        "ta": "'go'-இன் இறந்த காலம் என்ன?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Goes", "hi": "Goes", "ta": "Goes" },
+        { "en": "Going", "hi": "Going", "ta": "Going" },
+        { "en": "Went", "hi": "Went", "ta": "Went" },
+        { "en": "Gone", "hi": "Gone", "ta": "Gone" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-english-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word is spelled correctly?",
+        "hi": "कौन सा शब्द सही तरह से लिखा गया है?",
+        "ta": "எந்த சொல் சரியாக எழுதப்பட்டுள்ளது?"
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "Freind", "hi": "Freind", "ta": "Freind" },
+        { "en": "Frend", "hi": "Frend", "ta": "Frend" },
+        { "en": "Friend", "hi": "Friend", "ta": "Friend" },
+        { "en": "Freiend", "hi": "Freiend", "ta": "Freiend" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "3-english-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "Choose the correct article: I saw ___ elephant at the zoo.",
+        "hi": "सही article चुनें: I saw ___ elephant at the zoo.",
+        "ta": "சரியான article தேர்ந்தெடுங்கள்: I saw ___ elephant at the zoo."
+      },
+      "visual": "📖",
+      "choices": [
+        { "en": "a", "hi": "a", "ta": "a" },
+        { "en": "an", "hi": "an", "ta": "an" },
+        { "en": "the", "hi": "the", "ta": "the" },
+        { "en": "some", "hi": "some", "ta": "some" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

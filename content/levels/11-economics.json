@@ -1,0 +1,176 @@
+{
+  "class": 11,
+  "subject": "economics",
+  "questions": [
+    {
+      "id": "11-economics-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "Microeconomics studies the economic behaviour of:",
+        "hi": "सूक्ष्मअर्थशास्त्र किसके आर्थिक व्यवहार का अध्ययन करता है?",
+        "ta": "நுண் பொருளியல் எதன் பொருளாதார நடவடிக்கையை ஆய்வு செய்கிறது?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "The entire economy", "hi": "पूरी अर्थव्यवस्था", "ta": "முழு பொருளாதாரம்" },
+        { "en": "Individual units like households and firms", "hi": "व्यक्तिगत इकाइयाँ जैसे परिवार और फर्म", "ta": "குடும்பங்கள் மற்றும் நிறுவனங்கள் போன்ற தனிப்பட்ட அலகுகள்" },
+        { "en": "National income", "hi": "राष्ट्रीय आय", "ta": "தேசிய வருமானம்" },
+        { "en": "Government spending", "hi": "सरकारी व्यय", "ta": "அரசு செலவினம்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-economics-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "The law of demand states that, other things being equal, as price increases:",
+        "hi": "मांग का नियम कहता है कि, अन्य बातें समान रहने पर, जैसे-जैसे कीमत बढ़ती है:",
+        "ta": "தேவை விதி கூறுகிறது, மற்ற விஷயங்கள் சமம் என்றால், விலை உயரும்போது:"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Demand increases", "hi": "मांग बढ़ती है", "ta": "தேவை அதிகரிக்கும்" },
+        { "en": "Demand decreases", "hi": "मांग घटती है", "ta": "தேவை குறையும்" },
+        { "en": "Demand stays constant", "hi": "मांग स्थिर रहती है", "ta": "தேவை மாறாமல் இருக்கும்" },
+        { "en": "Supply decreases", "hi": "आपूर्ति घटती है", "ta": "விநியோகம் குறையும்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-economics-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "Statistics in economics is primarily used for:",
+        "hi": "अर्थशास्त्र में सांख्यिकी का उपयोग मुख्यतः किसके लिए किया जाता है?",
+        "ta": "பொருளியலில் புள்ளியியல் முதன்மையாக எதற்கு பயன்படுத்தப்படுகிறது?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Literary analysis", "hi": "साहित्यिक विश्लेषण", "ta": "இலக்கிய பகுப்பாய்வு" },
+        { "en": "Collecting and interpreting economic data", "hi": "आर्थिक आंकड़ों का संग्रह और व्याख्या", "ta": "பொருளாதார தரவுகளை சேகரித்து விளக்குதல்" },
+        { "en": "Writing government policies", "hi": "सरकारी नीतियाँ लिखना", "ta": "அரசு கொள்கைகளை எழுதுதல்" },
+        { "en": "Predicting weather patterns", "hi": "मौसम पैटर्न की भविष्यवाणी", "ta": "வானிலை நிலைகளை கணிக்கும்" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-economics-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "The central problem of economics arises because of:",
+        "hi": "अर्थशास्त्र की केंद्रीय समस्या किसके कारण उत्पन्न होती है?",
+        "ta": "பொருளியலின் மைய சிக்கல் எதனால் எழுகிறது?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Unlimited resources", "hi": "असीमित संसाधन", "ta": "வரம்பற்ற வளங்கள்" },
+        { "en": "Scarcity of resources", "hi": "संसाधनों की कमी", "ta": "வளங்களின் பற்றாக்குறை" },
+        { "en": "Lack of government regulation", "hi": "सरकारी नियमन का अभाव", "ta": "அரசு கட்டுப்பாட்டு இல்லாமை" },
+        { "en": "Overproduction of goods", "hi": "वस्तुओं का अति उत्पादन", "ta": "பொருட்களின் மிகை உற்பத்தி" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-economics-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "A perfectly competitive market has:",
+        "hi": "एक पूर्ण प्रतिस्पर्धी बाजार में होता है:",
+        "ta": "ஒரு முழுமையான போட்டி சந்தையில்:"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "One seller", "hi": "एक विक्रेता", "ta": "ஒரு விற்பவர்" },
+        { "en": "Few buyers and sellers", "hi": "कुछ क्रेता और विक्रेता", "ta": "சில வாங்குவோர் மற்றும் விற்பவர்கள்" },
+        { "en": "Many buyers and sellers with homogeneous products", "hi": "सजातीय उत्पादों के साथ कई क्रेता और विक्रेता", "ta": "ஒரே மாதிரியான பொருட்களுடன் பல வாங்குவோர் மற்றும் விற்பவர்கள்" },
+        { "en": "Government-controlled prices", "hi": "सरकार द्वारा नियंत्रित कीमतें", "ta": "அரசு கட்டுப்படுத்திய விலைகள்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-economics-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "Mean of the data set {4, 8, 6, 10, 2} is:",
+        "hi": "डेटा सेट {4, 8, 6, 10, 2} का माध्य है:",
+        "ta": "{4, 8, 6, 10, 2} என்ற தரவு தொகுப்பின் சராசரி:"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "5", "hi": "5", "ta": "5" },
+        { "en": "6", "hi": "6", "ta": "6" },
+        { "en": "7", "hi": "7", "ta": "7" },
+        { "en": "8", "hi": "8", "ta": "8" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-economics-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "Opportunity cost is defined as:",
+        "hi": "अवसर लागत को किस रूप में परिभाषित किया जाता है?",
+        "ta": "வாய்ப்பு செலவு என்பது:"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "The cost of production", "hi": "उत्पादन की लागत", "ta": "உற்பத்தி செலவு" },
+        { "en": "The value of the next best alternative foregone", "hi": "अगले सर्वोत्तम विकल्प की त्याग की गई कीमत", "ta": "அடுத்த சிறந்த மாற்று வழியை இழந்த மதிப்பு" },
+        { "en": "The price of a good in the market", "hi": "बाजार में किसी वस्तु की कीमत", "ta": "சந்தையில் ஒரு பொருளின் விலை" },
+        { "en": "Total expenditure on goods", "hi": "वस्तुओं पर कुल व्यय", "ta": "பொருட்களுக்கான மொத்த செலவு" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-economics-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which of the following is NOT a factor of production?",
+        "hi": "निम्नलिखित में से कौन उत्पादन का कारक नहीं है?",
+        "ta": "பின்வருவனவற்றில் எது உற்பத்தி காரணி அல்ல?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Land", "hi": "भूमि", "ta": "நிலம்" },
+        { "en": "Labour", "hi": "श्रम", "ta": "உழைப்பு" },
+        { "en": "Money", "hi": "पैसा", "ta": "பணம்" },
+        { "en": "Capital", "hi": "पूंजी", "ta": "மூலதனம்" }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "11-economics-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "The median of the data {3, 5, 7, 9, 11} is:",
+        "hi": "डेटा {3, 5, 7, 9, 11} का मध्यिका है:",
+        "ta": "{3, 5, 7, 9, 11} என்ற தரவின் நடுநிலை மதிப்பு:"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "5", "hi": "5", "ta": "5" },
+        { "en": "7", "hi": "7", "ta": "7" },
+        { "en": "9", "hi": "9", "ta": "9" },
+        { "en": "6", "hi": "6", "ta": "6" }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "11-economics-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "When supply exceeds demand, the market price tends to:",
+        "hi": "जब आपूर्ति मांग से अधिक होती है, तो बाजार मूल्य की प्रवृत्ति होती है:",
+        "ta": "விநியோகம் தேவையை விட அதிகமாக இருக்கும்போது, சந்தை விலை எப்படி இருக்கும்?"
+      },
+      "visual": "📊",
+      "choices": [
+        { "en": "Rise", "hi": "बढ़ना", "ta": "உயரும்" },
+        { "en": "Fall", "hi": "घटना", "ta": "குறையும்" },
+        { "en": "Remain the same", "hi": "समान रहना", "ta": "மாறாமல் இருக்கும்" },
+        { "en": "Double", "hi": "दोगुना होना", "ta": "இரட்டிப்பாகும்" }
+      ],
+      "answerIndex": 1
+    }
+  ]
+}
