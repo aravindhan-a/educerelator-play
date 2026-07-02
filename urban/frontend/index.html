@@ -32,8 +32,9 @@
   <div class="topbar-right">
     <span id="streak-display" class="streak-display hidden">🔥 <span id="streak-count">0</span></span>
     <div id="user-info" class="user-info hidden">
-      <span id="user-name" class="user-name"></span>
-      <button id="signout-btn" class="signout-btn">Sign Out</button>
+      <button id="user-avatar-btn" class="user-avatar-btn" aria-label="My Profile">
+        <span id="user-initials"></span>
+      </button>
     </div>
     <select id="lang-switcher" aria-label="Language">
       <option value="en">English</option>
@@ -126,6 +127,58 @@
     <div id="confetti-layer" class="confetti-layer"></div>
   </section>
 
+  <!-- ── Profile / Dashboard Screen ── -->
+  <section id="profile-screen" class="screen hidden">
+    <div class="picker-toprow">
+      <button id="back-from-profile" class="back-btn" aria-label="Back">⬅</button>
+      <span class="class-badge">📊 My Progress</span>
+    </div>
+
+    <div class="profile-header">
+      <div class="profile-avatar-lg" id="profile-avatar-lg"></div>
+      <div class="profile-identity">
+        <div class="profile-name" id="profile-fullname">—</div>
+        <div class="profile-email" id="profile-useremail">—</div>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value" id="stat-day-streak">0</div>
+        <div class="stat-label">🔥 Day Streak</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-total-q">0</div>
+        <div class="stat-label">📝 Questions</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="stat-accuracy">—</div>
+        <div class="stat-label">🎯 Accuracy</div>
+      </div>
+    </div>
+
+    <div class="stat-row">
+      <span>⏱️ Screen time</span>
+      <strong id="stat-screen-time">0 min</strong>
+    </div>
+    <div class="stat-row">
+      <span>🏆 Longest streak</span>
+      <strong id="stat-longest-streak">0 days</strong>
+    </div>
+
+    <div class="profile-section-title">Last 7 Days</div>
+    <div class="calendar-week" id="profile-calendar"></div>
+
+    <div class="profile-section-title">Subject Breakdown</div>
+    <div id="profile-subjects" class="subject-breakdown"></div>
+
+    <div class="profile-actions">
+      <button class="btn-share-score" id="profile-share-score">📤 Share My Progress</button>
+      <button class="btn-share-app" id="profile-share-app">🔗 Share EC Play</button>
+      <button class="signout-profile-btn" id="signout-btn">Sign Out</button>
+    </div>
+  </section>
+
   <!-- Session Complete Screen -->
   <section id="session-complete" class="screen hidden">
     <div class="complete-card">
@@ -135,6 +188,7 @@
       <div class="complete-actions">
         <button id="play-again-btn" class="btn-secondary-action">Play Again</button>
         <button id="new-subject-btn" class="btn-secondary-action">New Subject</button>
+        <button id="share-score-btn" class="btn-share-inline">📤 Share</button>
       </div>
       <div class="upgrade-strip" id="upgrade-strip">
         <div class="upgrade-strip-inner">
