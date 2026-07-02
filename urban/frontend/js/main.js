@@ -5,6 +5,7 @@ import { checkPremium, isPremiumCached, openRazorpayCheckout } from "./premium.j
 import { recordResult } from "./progress.js";
 import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration } from "./stats.js";
 import { playCorrectChime, playWrongBuzz } from "./sound-fx.js";
+import { drawSessionCard, drawStreakCard, drawReportCard, shareCard } from "./share-cards.js";
 import { playAudio } from "../../../shared-lib/audio-player.js";
 import {
   createAdaptiveState,
@@ -68,6 +69,8 @@ let sessionCombo   = 0;
 let sessionHearts  = 3;
 let sessionAnswers = []; // true/false per question answered
 let comboBannerTimer = null;
+let lastSessionStars  = 1;   // for the share card
+let lastSessionRecord = false;
 
 // ── runtime state ──
 let guestMode       = localStorage.getItem(GUEST_KEY) === "1";
@@ -795,6 +798,20 @@ function showSessionComplete() {
   const isNew  = sessionScore > prevHs;
   if (isNew) localStorage.setItem(hsKey, sessionScore);
   if (newRecordBadgeEl) newRecordBadgeEl.classList.toggle("hidden", !isNew);
+  lastSessionStars  = stars;
+  lastSessionRecord = isNew;
+
+  // Streak milestone celebration — the share moment that works
+  const MILESTONES = [3, 7, 14, 30, 50, 100, 200, 365];
+  const sNow = loadStats();
+  const milestoneStrip = document.getElementById("milestone-strip");
+  const hitMilestone = MILESTONES.includes(sNow.dayStreak)
+    && localStorage.getItem("ecplay_milestone_done") !== String(sNow.dayStreak);
+  if (hitMilestone) {
+    document.getElementById("milestone-text").textContent = `🔥 ${sNow.dayStreak}-day streak!`;
+    localStorage.setItem("ecplay_milestone_done", String(sNow.dayStreak));
+  }
+  milestoneStrip.classList.toggle("hidden", !hitMilestone);
 
   // Animate in order: confetti → stars → score count-up → badge
   launchEndConfetti();
@@ -822,15 +839,45 @@ async function shareContent(text) {
   window.open(`https://wa.me/?text=${encodeURIComponent(text + "\n" + url)}`, "_blank", "noopener");
 }
 
-function shareScore() {
+// ── Share cards (image-first, Duolingo-style) ──
+async function shareSessionCard() {
   const s   = loadStats();
   const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : 0;
-  shareContent(
-    `I just scored ${sessionScore.toLocaleString()} pts (${sessionCorrect}/${SESSION_TOTAL}) on EC Play! 🎯\n` +
-    `Class ${currentClass} ${currentSubject} — playing in my language 🌏\n` +
-    `Total: ${s.totalAnswered} questions, ${pct}% accuracy · ${s.dayStreak} day streak 🔥\n` +
-    `Free for all Indian students →`
-  );
+  const canvas = await drawSessionCard({
+    score:      sessionScore,
+    correct:    sessionCorrect,
+    total:      SESSION_TOTAL,
+    stars:      lastSessionStars,
+    badgeLabel: playBadgeEl.textContent,
+    streak:     s.dayStreak || 0,
+    accuracy:   pct,
+    newRecord:  lastSessionRecord,
+  });
+  await shareCard(canvas,
+    `I scored ${sessionScore.toLocaleString()} pts (${sessionCorrect}/${SESSION_TOTAL}) on EC Play! 🎯 Can you beat me?`,
+    "ecplay-score.png");
+}
+
+async function shareStreakCard() {
+  const s = loadStats();
+  const canvas = await drawStreakCard({ streak: s.dayStreak || 0 });
+  await shareCard(canvas,
+    `🔥 ${s.dayStreak}-day learning streak on EC Play! Learning every single day.`,
+    "ecplay-streak.png");
+}
+
+async function shareReportCard() {
+  const s   = loadStats();
+  const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : 0;
+  const canvas = await drawReportCard({
+    totalAnswered: s.totalAnswered || 0,
+    accuracy:      pct,
+    dayStreak:     s.dayStreak || 0,
+    longestStreak: s.longestDayStreak || 0,
+  });
+  await shareCard(canvas,
+    `My EC Play report card 📋 ${s.totalAnswered} questions · ${pct}% accuracy · ${s.dayStreak}-day streak!`,
+    "ecplay-report-card.png");
 }
 
 function shareApp() {
@@ -840,7 +887,8 @@ function shareApp() {
   );
 }
 
-document.getElementById("share-score-btn").addEventListener("click", shareScore);
+document.getElementById("share-score-btn").addEventListener("click", shareSessionCard);
+document.getElementById("milestone-share").addEventListener("click", shareStreakCard);
 
 // ── Profile Screen ──
 function openProfileScreen() {
@@ -912,7 +960,7 @@ function renderProfileScreen() {
 
 userAvatarBtn.addEventListener("click", openProfileScreen);
 backFromProfile.addEventListener("click", closeProfileScreen);
-document.getElementById("profile-share-score").addEventListener("click", shareScore);
+document.getElementById("profile-share-score").addEventListener("click", shareReportCard);
 document.getElementById("profile-share-app").addEventListener("click", shareApp);
 
 playAgainBtn.addEventListener("click", () => startPlay(currentSubject));
