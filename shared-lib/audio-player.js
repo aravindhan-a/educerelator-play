@@ -19,6 +19,7 @@ function speak(text, lang) {
   if (!("speechSynthesis" in window)) return;
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = TTS_LANG_CODES[lang] || "en-IN";
+  utterance.rate = 0.8;
   window.speechSynthesis.speak(utterance);
 }
 

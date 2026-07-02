@@ -55,7 +55,7 @@ async function topUp(classNum, subject, curriculum, difficulty, bank) {
   saveBank(classNum, subject, curriculum, difficulty, bank);
 }
 
-export async function getNextQuestion(classNum, subject, curriculum, difficulty) {
+export async function getNextQuestion(classNum, subject, curriculum, difficulty, sessionSeenIds = new Set()) {
   const bank   = loadBank(classNum, subject, curriculum, difficulty);
   const unused = bank.questions.filter((q) => !bank.usedIds.includes(q.id));
 
@@ -63,12 +63,21 @@ export async function getNextQuestion(classNum, subject, curriculum, difficulty)
     await topUp(classNum, subject, curriculum, difficulty, bank);
   }
 
-  let pool = bank.questions.filter((q) => !bank.usedIds.includes(q.id));
+  // Prefer questions not yet seen this session, regardless of which difficulty bank they came from
+  let pool = bank.questions.filter(
+    (q) => !sessionSeenIds.has(q.id) && !bank.usedIds.includes(q.id)
+  );
 
+  // Fall back to all unseen-in-bank if session filter exhausts pool
+  if (pool.length === 0) {
+    pool = bank.questions.filter((q) => !sessionSeenIds.has(q.id));
+  }
+
+  // Last resort: reset bank usedIds and use everything not seen this session
   if (pool.length === 0) {
     bank.usedIds = [];
     saveBank(classNum, subject, curriculum, difficulty, bank);
-    pool = bank.questions;
+    pool = bank.questions.filter((q) => !sessionSeenIds.has(q.id));
   }
 
   if (pool.length === 0) {
