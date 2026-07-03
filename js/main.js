@@ -57,6 +57,7 @@ const LANG_KEY     = "lang";
 const CURR_KEY     = "curriculum";
 const GUEST_KEY    = "ecplay_guest";
 const REGION_KEY   = "region";
+const SOUND_KEY    = "ecplay_sound";
 
 // ── session progress ──
 const SESSION_TOTAL = 10;
@@ -78,6 +79,7 @@ let guestMode       = localStorage.getItem(GUEST_KEY) === "1";
 let lang            = localStorage.getItem(LANG_KEY) || "en";
 let curriculum      = localStorage.getItem(CURR_KEY) || "cbse";
 let region          = localStorage.getItem(REGION_KEY) || "all";
+let soundOn         = localStorage.getItem(SOUND_KEY) !== "0"; // default on
 let adaptiveState   = loadJSON(ADAPTIVE_KEY, createAdaptiveState);
 let currentClass    = null;
 let currentSubject  = null;
@@ -585,9 +587,25 @@ document.addEventListener("keydown", (e) => {
 backToClassBtn.addEventListener("click", showClassPicker);
 backToSubjectsBtn.addEventListener("click", () => showSubjectPicker(currentClass));
 
+// ── sound toggle (gates auto-narration + effects; repeat stays available) ──
+const soundToggleEl = document.getElementById("sound-toggle");
+function renderSoundToggle() {
+  soundToggleEl.textContent = soundOn ? "🔊" : "🔇";
+  soundToggleEl.setAttribute("aria-label", soundOn ? "Turn sound off" : "Turn sound on");
+  soundToggleEl.setAttribute("aria-pressed", String(soundOn));
+}
+renderSoundToggle();
+soundToggleEl.addEventListener("click", () => {
+  soundOn = !soundOn;
+  localStorage.setItem(SOUND_KEY, soundOn ? "1" : "0");
+  if (!soundOn) window.speechSynthesis?.cancel();
+  renderSoundToggle();
+});
+
 // ── repeat audio ──
 repeatAudioBtn.addEventListener("click", () => {
-  if (currentQuestion) speakPrompt(currentQuestion);
+  // explicit request: speak even when the sound toggle is off
+  if (currentQuestion) speakPrompt(currentQuestion, true);
 });
 
 // ── navigation ──
@@ -717,7 +735,8 @@ function renderQuestion(question) {
   speakPrompt(question);
 }
 
-function speakPrompt(question) {
+function speakPrompt(question, force = false) {
+  if (!soundOn && !force) return;
   playAudio({
     id:   question.audioId || question.id,
     lang,
@@ -768,10 +787,10 @@ function handleAnswer(selectedIndex, selectedBtn) {
   mascotPlay.classList.remove("celebrate", "oops");
   if (correct) {
     burstConfetti();
-    playCorrectChime();
+    if (soundOn) playCorrectChime();
     mascotPlay.classList.add("celebrate");
   } else {
-    playWrongBuzz();
+    if (soundOn) playWrongBuzz();
     mascotPlay.classList.add("oops");
   }
 

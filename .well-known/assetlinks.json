@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.educerelator.ecplay",
+    "sha256_cert_fingerprints": ["98:3D:B2:5A:72:D0:CA:CC:C1:ED:F8:FE:FE:9A:0D:20:0C:6F:7E:4A:36:8A:E2:89:E2:3B:FC:33:65:38:A3:4E"]
+  }
+}]
