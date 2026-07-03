@@ -700,10 +700,16 @@ function renderQuestion(question) {
     [displayOrder[i], displayOrder[j]] = [displayOrder[j], displayOrder[i]];
   }
 
-  displayOrder.forEach((origIndex) => {
+  const labels = displayOrder.map(
+    (i) => question.choices[i][lang] || question.choices[i].en
+  );
+  // sentence-length answers stack full-width instead of cramping into columns
+  choicesEl.classList.toggle("choices-long", labels.some((l) => l.length > 24));
+
+  displayOrder.forEach((origIndex, pos) => {
     const btn = document.createElement("button");
     btn.className = "choice-btn";
-    btn.textContent = question.choices[origIndex][lang] || question.choices[origIndex].en;
+    btn.textContent = labels[pos];
     btn.addEventListener("click", () => handleAnswer(origIndex, btn));
     choicesEl.appendChild(btn);
   });
