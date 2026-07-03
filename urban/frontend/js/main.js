@@ -69,6 +69,7 @@ let sessionCombo   = 0;
 let sessionHearts  = 3;
 let sessionAnswers = []; // true/false per question answered
 let comboBannerTimer = null;
+let advanceTimer     = null; // pending next-question timer (cancelled on navigation)
 let lastSessionStars  = 1;   // for the share card
 let lastSessionRecord = false;
 
@@ -591,7 +592,10 @@ repeatAudioBtn.addEventListener("click", () => {
 
 // ── navigation ──
 function showClassPicker() {
+  clearTimeout(advanceTimer);           // leaving mid-session: no ghost next question
+  window.speechSynthesis?.cancel();
   document.body.classList.remove("focus-mode");
+  window.scrollTo(0, 0);
   classPickerEl.classList.remove("hidden");
   subjectPickerEl.classList.add("hidden");
   playScreenEl.classList.add("hidden");
@@ -604,7 +608,10 @@ function showClassPicker() {
 document.getElementById("topbar-brand").addEventListener("click", showClassPicker);
 
 function showSubjectPicker(classNum) {
+  clearTimeout(advanceTimer);
+  window.speechSynthesis?.cancel();
   document.body.classList.remove("focus-mode");
+  window.scrollTo(0, 0);
   currentClass = classNum;
   const subjects = getSubjectsForClass(classNum);
 
@@ -766,9 +773,11 @@ function handleAnswer(selectedIndex, selectedBtn) {
   saveAdaptiveState();
 
   if (sessionCount >= SESSION_TOTAL) {
+    // Completion always fires — it saves the high score and shows the
+    // (exclusive) score screen even if the student taps away meanwhile.
     setTimeout(showSessionComplete, 1400);
   } else {
-    setTimeout(loadNextQuestion, 1400);
+    advanceTimer = setTimeout(loadNextQuestion, 1400);
   }
 }
 
@@ -782,8 +791,15 @@ function showSessionComplete() {
     sessionStartedAt = null;
   }
 
+  // Exclusive screen: the student may have tapped home/back during the
+  // 1.4 s celebration delay — hide everything else so the score is never
+  // stacked below another screen.
+  classPickerEl.classList.add("hidden");
+  subjectPickerEl.classList.add("hidden");
+  profileScreenEl.classList.add("hidden");
   playScreenEl.classList.add("hidden");
   sessionCompleteEl.classList.remove("hidden");
+  window.scrollTo(0, 0);
   updateWelcomeBanner();
 
   // Stars: 3 = ≥8/10, 2 = ≥5/10, 1 = below
