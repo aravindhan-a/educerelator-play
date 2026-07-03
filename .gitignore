@@ -3,3 +3,15 @@ node_modules/
 .env.local
 .vercel
 .DS_Store
+# Android signing secrets — never commit
+android-app/android.keystore
+android-app/SIGNING-KEYS.txt
+android-app/app/
+android-app/gradle*
+android-app/build/
+android-app/.gradle/
+android-app/*.apk
+android-app/*.aab
+android-app/*.idsig
+android-app/store_icon.png
+android-app/manifest-checksum.txt

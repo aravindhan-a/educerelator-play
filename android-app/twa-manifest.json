@@ -1,0 +1,43 @@
+{
+  "packageId": "com.educerelator.ecplay",
+  "host": "educerelator.com",
+  "name": "EC Play — Learning Games",
+  "launcherName": "EC Play",
+  "display": "standalone",
+  "themeColor": "#FF5E7E",
+  "themeColorDark": "#7C3AED",
+  "navigationColor": "#FF5E7E",
+  "navigationColorDark": "#7C3AED",
+  "navigationDividerColor": "#FF5E7E",
+  "navigationDividerColorDark": "#7C3AED",
+  "backgroundColor": "#FDFCF7",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://educerelator.com/icon-512.png",
+  "maskableIconUrl": "https://educerelator.com/icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "ecplay"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://educerelator.com/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://educerelator.com/",
+  "minSdkVersion": 21,
+  "orientation": "portrait",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "appVersion": "1.0.0"
+}

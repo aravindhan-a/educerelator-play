@@ -26,6 +26,8 @@ jobs:
           cp urban/frontend/og-image.png deploy/
           cp urban/frontend/icon-192.png deploy/
           cp urban/frontend/icon-512.png deploy/
+          mkdir -p deploy/.well-known
+          cp urban/frontend/.well-known/assetlinks.json deploy/.well-known/
           cp urban/frontend/manifest.json deploy/
           cp urban/frontend/robots.txt deploy/
           cp urban/frontend/sitemap.xml deploy/

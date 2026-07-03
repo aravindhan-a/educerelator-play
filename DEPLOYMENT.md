@@ -80,19 +80,62 @@ The error alert shows the HTTP status — map it here:
 | Popup opens but payment fails | Normal payment declines | Nothing to fix server-side |
 | Paid but not premium | `verify-payment` and webhook both failed | Vercel logs → `grantPremium failed`; webhook misconfigured secret shows `Invalid signature` |
 
-## 6. Mobile app path (Play Store)
+## 6. Android app (BUILT 3 Jul 2026 — ready for Play Store)
 
-EC Play is an installable PWA today: Android Chrome shows an "Install app" prompt (real icons + manifest shipped 2 Jul 2026); iOS installs via Share → *Add to Home Screen*. Both launch full-screen with the owl icon.
+The app is a Trusted Web Activity: the production site runs inside it, so every
+content update ships instantly with no app-store review. Project lives in
+`android-app/`; artifacts are built and signed:
 
-To ship a real **Play Store listing** without rewriting anything, wrap the PWA as a Trusted Web Activity — the same production URL runs inside the app (this is the standard route; the app IS the website, so every content update ships instantly with no app-store review):
+- **`android-app/app-release-signed.apk`** — install directly on any Android phone
+  (send via WhatsApp/USB, enable "install from unknown sources")
+- **`android-app/app-release-bundle.aab`** — upload this one to Play Store
+- Package id: `com.educerelator.ecplay` (permanent — never change)
+- `https://educerelator.com/.well-known/assetlinks.json` links site↔app so the app
+  runs fullscreen without a browser bar (shipped via the deploy workflow)
 
-1. `npm i -g @bubblewrap/cli && bubblewrap init --manifest https://educerelator.com/manifest.json`
-2. It generates an Android project + signing key → `bubblewrap build` → `app-release-bundle.aab`
-3. Host the digital asset link it prints at `https://educerelator.com/.well-known/assetlinks.json` (add to the deploy workflow) — this removes the browser bar inside the app
-4. Google Play Console: one-time $25 developer fee → create app → upload the `.aab` → declare the *Designed for Families* / Teacher-approved program if targeting under-13s (stricter review, worth it for discoverability)
-5. Each store update is only needed when the icon/name changes — content updates flow through the website
+⚠️ **`android-app/android.keystore` + `android-app/SIGNING-KEYS.txt` are the app's
+permanent identity.** Both are gitignored. Back them up NOW (password manager +
+offline copy). Lost keystore = you can never update the app on Play Store.
 
-iOS App Store later requires a thin WebView wrapper (Capacitor) + $99/yr — defer until Android traction justifies it. Android is ~95% of the Indian student market.
+### Uploading to Google Play (one-time, ~1 hour + review wait)
+
+1. **Developer account**: [play.google.com/console](https://play.google.com/console/signup)
+   → personal account, one-time **$25** fee, identity verification (1–2 days).
+2. **Create app**: *All apps → Create app* — name "EC Play — Learning Games",
+   default language English (India), App (not game… or Education game — either is
+   fine), Free.
+3. **Store listing**: short + full description (honest claims: 700+ questions,
+   13 languages, Class 1–12, free); screenshots (phone: take 4–6 from the app);
+   app icon 512×512 (`urban/frontend/icon-512.png`); feature graphic 1024×500
+   (crop `og-image.png`).
+4. **App content declarations** (Policy → App content): privacy policy URL
+   `https://educerelator.com/privacy.html`; ads: NO; target audience: select the
+   child age brackets → this enters **Designed for Families** review (stricter,
+   but unlocks kids-category discoverability; our no-ads/no-tracking posture is
+   exactly what it wants); data safety form: account data (name/email) collected,
+   not sold, deletable on request.
+5. **Upload**: *Production → Create new release* → upload
+   `app-release-bundle.aab` → let Google manage the signing key when prompted
+   (Play App Signing) → release notes → *Review and roll out*.
+6. **Review**: typically 1–7 days (longer for family programs). Fix-and-resubmit
+   is normal; nothing is lost.
+
+### Updating the app later
+
+Only needed if the icon/name/package changes or Chrome requires a new TWA
+version — the CONTENT always updates through the website automatically.
+
+```bash
+cd android-app
+# bump appVersionCode (+1) and appVersionName in twa-manifest.json, then:
+npx @bubblewrap/cli update --skipVersionUpgrade
+PW=$(grep storepass SIGNING-KEYS.txt | awk '{print $2}')
+BUBBLEWRAP_KEYSTORE_PASSWORD="$PW" BUBBLEWRAP_KEY_PASSWORD="$PW" \
+  npx @bubblewrap/cli build --skipPwaValidation
+```
+
+iOS later: thin Capacitor wrapper + $99/yr — defer until Android traction
+justifies it (Android is ~95% of the Indian student market).
 
 ## 7. Pre-launch checklist
 
