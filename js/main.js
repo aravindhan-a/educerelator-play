@@ -3,7 +3,7 @@ import { STATES, UNION_TERRITORIES } from "../../../content/regions.js";
 import { getNextQuestion } from "./question-bank.js";
 import { checkPremium, isPremiumCached, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
-import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration } from "./stats.js";
+import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration, effectiveDayStreak } from "./stats.js";
 import { playCorrectChime, playWrongBuzz } from "./sound-fx.js";
 import { drawSessionCard, drawStreakCard, drawReportCard, shareCard } from "./share-cards.js";
 import { playAudio } from "../../../shared-lib/audio-player.js";
@@ -300,7 +300,7 @@ function updateWelcomeBanner() {
 
   const s   = loadStats();
   const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : null;
-  document.getElementById("home-streak").textContent  = s.dayStreak   || 0;
+  document.getElementById("home-streak").textContent  = effectiveDayStreak(s);
   document.getElementById("home-stars").textContent   = s.totalAnswered || 0;
   document.getElementById("home-accuracy").textContent = pct !== null ? `${pct}%` : "—";
   document.getElementById("home-stats").classList.toggle("hidden", s.totalAnswered === 0);
@@ -849,7 +849,7 @@ async function shareSessionCard() {
     total:      SESSION_TOTAL,
     stars:      lastSessionStars,
     badgeLabel: playBadgeEl.textContent,
-    streak:     s.dayStreak || 0,
+    streak:     effectiveDayStreak(s),
     accuracy:   pct,
     newRecord:  lastSessionRecord,
   });
@@ -860,9 +860,10 @@ async function shareSessionCard() {
 
 async function shareStreakCard() {
   const s = loadStats();
-  const canvas = await drawStreakCard({ streak: s.dayStreak || 0 });
+  const streakNow = effectiveDayStreak(s);
+  const canvas = await drawStreakCard({ streak: streakNow });
   await shareCard(canvas,
-    `🔥 ${s.dayStreak}-day learning streak on EC Play! Learning every single day.`,
+    `🔥 ${streakNow}-day learning streak on EC Play! Learning every single day.`,
     "ecplay-streak.png");
 }
 
@@ -872,11 +873,11 @@ async function shareReportCard() {
   const canvas = await drawReportCard({
     totalAnswered: s.totalAnswered || 0,
     accuracy:      pct,
-    dayStreak:     s.dayStreak || 0,
+    dayStreak:     effectiveDayStreak(s),
     longestStreak: s.longestDayStreak || 0,
   });
   await shareCard(canvas,
-    `My EC Play report card 📋 ${s.totalAnswered} questions · ${pct}% accuracy · ${s.dayStreak}-day streak!`,
+    `My EC Play report card 📋 ${s.totalAnswered} questions · ${pct}% accuracy · ${effectiveDayStreak(s)}-day streak!`,
     "ecplay-report-card.png");
 }
 
@@ -916,7 +917,7 @@ function renderProfileScreen() {
 
   const s   = loadStats();
   const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : 0;
-  document.getElementById("stat-day-streak").textContent    = s.dayStreak || 0;
+  document.getElementById("stat-day-streak").textContent    = effectiveDayStreak(s);
   document.getElementById("stat-total-q").textContent       = s.totalAnswered || 0;
   document.getElementById("stat-accuracy").textContent      = s.totalAnswered > 0 ? `${pct}%` : "—";
   document.getElementById("stat-screen-time").textContent   = formatDuration(s.screenTimeMs || 0);
