@@ -40,3 +40,20 @@ export const REGION_LABELS = {
   "lakshadweep":       "Lakshadweep",
   "puducherry":        "Puducherry",
 };
+
+// ISO 3166-2:IN subdivision code → our region id. Used to turn the geo
+// headers a CDN attaches to a request (e.g. Vercel's x-vercel-ip-country-region)
+// into a region we have content for. Includes a few legacy/alias codes.
+export const ISO_TO_REGION = {
+  AP: "andhra-pradesh", AR: "arunachal-pradesh", AS: "assam", BR: "bihar",
+  CT: "chhattisgarh", CG: "chhattisgarh", GA: "goa", GJ: "gujarat",
+  HR: "haryana", HP: "himachal-pradesh", JH: "jharkhand", KA: "karnataka",
+  KL: "kerala", MP: "madhya-pradesh", MH: "maharashtra", MN: "manipur",
+  ML: "meghalaya", MZ: "mizoram", NL: "nagaland", OR: "odisha", OD: "odisha",
+  PB: "punjab", RJ: "rajasthan", SK: "sikkim", TN: "tamil-nadu",
+  TG: "telangana", TS: "telangana", TR: "tripura", UP: "uttar-pradesh",
+  UT: "uttarakhand", UK: "uttarakhand", WB: "west-bengal",
+  AN: "andaman-nicobar", CH: "chandigarh", DH: "dnh-daman-diu",
+  DN: "dnh-daman-diu", DD: "dnh-daman-diu", DL: "delhi", JK: "jammu-kashmir",
+  LA: "ladakh", LD: "lakshadweep", PY: "puducherry",
+};

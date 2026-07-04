@@ -13,7 +13,10 @@ educerelator-backend.vercel.app (Vercel serverless, deploy manually)
   ├─ /api/create-order         creates Razorpay order (₹149 monthly / ₹999 yearly)
   ├─ /api/verify-payment       instant premium activation after checkout
   ├─ /api/payment-webhook      backstop activation if the tab closed mid-payment
-  └─ /api/check-premium        premium status for the frontend cache
+  ├─ /api/check-premium        premium status for the frontend cache
+  └─ /api/detect-region        maps the caller's IP → Indian state (Vercel geo
+                               headers) so questions are locally contextual; no
+                               prompt, no stored IP, falls back to all-India
 
 Firebase: Auth (Google + email) · Firestore users/{uid} holds
   { premium, premiumPlan, premiumExpiry, lastPaymentId, aiUsage }
