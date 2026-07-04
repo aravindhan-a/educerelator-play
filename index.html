@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>EC Play – Free CBSE Practice Questions for Class 1 to 12 | 13 Indian Languages</title>
 <meta name="description" content="Free adaptive quiz games for Indian students, Class 1 to 12. Practice Maths, Science and English in 13 languages — Hindi, Telugu, Tamil, Bengali, Gujarati and more. No ads, 100% free." />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="author" content="Educerelator" />
+<meta name="publisher" content="Educerelator" />
+<meta name="keywords" content="CBSE practice questions, NCERT questions, free learning app India, Class 10 maths practice, learning games India, quiz app for students, study in Hindi, Tamil learning app, Telugu learning app, Class 1 to 12 practice" />
 <meta name="theme-color" content="#ff5e7e" />
 <link rel="canonical" href="https://educerelator.com/" />
 
@@ -16,14 +20,28 @@
 <meta property="og:image"       content="https://educerelator.com/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
+<meta property="og:image:alt"   content="EC Play by Educerelator — free learning games for Class 1 to 12 in 13 Indian languages" />
 <meta property="og:site_name"   content="EC Play by Educerelator" />
 <meta property="og:locale"      content="en_IN" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="bn_IN" />
+<meta property="og:locale:alternate" content="te_IN" />
+<meta property="og:locale:alternate" content="mr_IN" />
+<meta property="og:locale:alternate" content="ta_IN" />
+<meta property="og:locale:alternate" content="gu_IN" />
+<meta property="og:locale:alternate" content="kn_IN" />
+<meta property="og:locale:alternate" content="ml_IN" />
+<meta property="og:locale:alternate" content="or_IN" />
+<meta property="og:locale:alternate" content="pa_IN" />
+<meta property="og:locale:alternate" content="ur_IN" />
+<meta property="og:locale:alternate" content="ne_NP" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card"        content="summary_large_image" />
 <meta name="twitter:title"       content="EC Play – Free Learning Games for Class 1–12 India" />
 <meta name="twitter:description" content="Practice Maths, Science & English in 13 Indian languages. Free adaptive games for CBSE students, no ads." />
 <meta name="twitter:image"       content="https://educerelator.com/og-image.png" />
+<meta name="twitter:image:alt"   content="EC Play by Educerelator — free learning games for Class 1 to 12 in 13 Indian languages" />
 
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -31,7 +49,49 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "EducationalOrganization",
+      "@id": "https://educerelator.com/#organization",
+      "name": "Educerelator",
+      "alternateName": "EC Play",
+      "url": "https://educerelator.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://educerelator.com/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://educerelator.com/og-image.png",
+      "description": "Educerelator builds free, adaptive learning tools for Indian students from Class 1 to Class 12, in 13 Indian languages and aligned with the CBSE and NCERT curriculum.",
+      "slogan": "Free adaptive learning for every Indian student, in every Indian language.",
+      "email": "hello@educerelator.com",
+      "areaServed": { "@type": "Country", "name": "India" },
+      "knowsLanguage": ["en","hi","bn","te","mr","ta","gu","kn","ml","or","pa","ur","ne"],
+      "founder": {
+        "@type": "Person",
+        "name": "Aravindhan Anbazhagan",
+        "jobTitle": "Founder",
+        "sameAs": "https://www.ted.com/talks/aravindhan_anbazhagan_contextual_education_system_for_india"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@educerelator.com",
+        "contactType": "customer support",
+        "areaServed": "IN",
+        "availableLanguage": ["English","Hindi","Tamil","Telugu","Bengali"]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://educerelator.com/#website",
+      "url": "https://educerelator.com/",
+      "name": "EC Play by Educerelator",
+      "description": "Free adaptive learning games and CBSE/NCERT practice questions for Indian students, Class 1 to 12, in 13 Indian languages.",
+      "publisher": { "@id": "https://educerelator.com/#organization" },
+      "inLanguage": ["en","hi","bn","te","mr","ta","gu","kn","ml","or","pa","ur","ne"]
+    },
+    {
       "@type": "WebApplication",
+      "@id": "https://educerelator.com/#webapp",
       "name": "EC Play",
       "alternateName": "Educerelator Play",
       "url": "https://educerelator.com/",
@@ -40,6 +100,15 @@
       "operatingSystem": "Any",
       "browserRequirements": "Requires JavaScript",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+      "featureList": [
+        "Adaptive difficulty that adjusts to each student",
+        "700+ practice questions for Class 1 to 12",
+        "13 Indian languages",
+        "CBSE and NCERT aligned",
+        "Locally contextual questions by state",
+        "Streaks, scores and progress tracking",
+        "No ads, works offline as a PWA"
+      ],
       "audience": {
         "@type": "EducationalAudience",
         "educationalRole": "student",
@@ -48,7 +117,8 @@
       "inLanguage": ["en","hi","bn","te","mr","ta","gu","kn","ml","or","pa","ur","ne"],
       "educationalLevel": "Grade 1 through Grade 12",
       "about": { "@type": "Thing", "name": "CBSE and NCERT Curriculum" },
-      "provider": { "@type": "Organization", "name": "Educerelator", "url": "https://educerelator.com" }
+      "isPartOf": { "@id": "https://educerelator.com/#website" },
+      "provider": { "@id": "https://educerelator.com/#organization" }
     },
     {
       "@type": "FAQPage",
@@ -83,13 +153,9 @@
           "name": "Do I need to download an app to use EC Play?",
           "acceptedAnswer": { "@type": "Answer", "text": "No download needed. Open educerelator.com in any mobile or desktop browser and start playing immediately. EC Play works on Android, iPhone, tablets and computers." }
         }
-      ]
-    },
-    {
-      "@type": "Organization",
-      "name": "Educerelator",
-      "url": "https://educerelator.com",
-      "description": "Building free adaptive learning tools for Indian students in every Indian language"
+      ],
+      "isPartOf": { "@id": "https://educerelator.com/#website" },
+      "inLanguage": "en"
     }
   ]
 }
@@ -100,6 +166,8 @@
 <link rel="manifest" href="manifest.json" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="dns-prefetch" href="https://www.gstatic.com" />
+<link rel="dns-prefetch" href="https://firestore.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -195,10 +263,7 @@
     </div>
     <p class="curriculum-note">Free questions follow the CBSE/NCERT syllabus. Board-specific questions are AI-generated for Premium members.</p>
 
-    <div class="region-row">
-      <span class="region-pin" aria-hidden="true">📍</span>
-      <select id="region-picker" aria-label="Your state or union territory"></select>
-    </div>
+    <p id="region-label" class="region-label hidden" aria-live="polite"></p>
 
     <h2 class="screen-title">Choose a subject</h2>
     <div class="subject-grid" id="subject-grid">
@@ -518,6 +583,13 @@
       <summary>Is EC Play good for competitive exam preparation?</summary>
       <p>EC Play builds a strong conceptual foundation that helps with competitive exams. The adaptive difficulty and subject-wise question bank are particularly useful for students preparing for Class 10 boards, NTSE, and Class 12 board examinations.</p>
     </details>
+
+    <h3>Explore EC Play</h3>
+    <nav class="seo-links" aria-label="Popular pages">
+      <a href="/cbse-practice-questions.html">Free CBSE Practice Questions (Class 1–12)</a>
+      <a href="/online-learning-games-india.html">Online Learning Games for Indian Students</a>
+      <a href="/learn-in-hindi.html">हिंदी में पढ़ें — Learn in Hindi</a>
+    </nav>
 
     <p class="seo-cta-text">Ready to start? <a href="https://educerelator.com">Play free at educerelator.com</a> — no sign-up required to try.</p>
   </div>

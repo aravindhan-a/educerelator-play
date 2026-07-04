@@ -1,5 +1,5 @@
 import { ALL_CLASSES, CURRICULA, getSubjectsForClass } from "../../../content/curriculum.js";
-import { STATES, UNION_TERRITORIES } from "../../../content/regions.js";
+import { getRegionLabel } from "../../../content/regions.js";
 import { getNextQuestion } from "./question-bank.js";
 import { checkPremium, isPremiumCached, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
@@ -56,8 +56,10 @@ const ADAPTIVE_KEY = "adaptiveState";
 const LANG_KEY     = "lang";
 const CURR_KEY     = "curriculum";
 const GUEST_KEY    = "ecplay_guest";
-const REGION_KEY   = "region";
+const REGION_KEY   = "ecplay_region";   // cached auto-detected region { id, ts }
 const SOUND_KEY    = "ecplay_sound";
+const API_BASE     = "https://educerelator-backend.vercel.app";
+const REGION_TTL   = 7 * 24 * 60 * 60 * 1000; // re-detect at most weekly
 
 // ── session progress ──
 const SESSION_TOTAL = 10;
@@ -78,7 +80,7 @@ let lastSessionRecord = false;
 let guestMode       = localStorage.getItem(GUEST_KEY) === "1";
 let lang            = localStorage.getItem(LANG_KEY) || "en";
 let curriculum      = localStorage.getItem(CURR_KEY) || "cbse";
-let region          = localStorage.getItem(REGION_KEY) || "all";
+let region          = "all"; // resolved from the user's location by detectRegion()
 let soundOn         = localStorage.getItem(SOUND_KEY) !== "0"; // default on
 let adaptiveState   = loadJSON(ADAPTIVE_KEY, createAdaptiveState);
 let currentClass    = null;
@@ -530,31 +532,43 @@ document.getElementById("continue-btn").addEventListener("click", () => {
   if (last) startPlayFromContinue(last.classNum, last.subject);
 });
 
-// ── region picker ──
-const regionPickerEl = document.getElementById("region-picker");
-{
-  const allOpt = document.createElement("option");
-  allOpt.value = "all";
-  allOpt.textContent = "🇮🇳 All India";
-  regionPickerEl.appendChild(allOpt);
-  const groups = [["States", STATES], ["Union Territories", UNION_TERRITORIES]];
-  groups.forEach(([label, list]) => {
-    const og = document.createElement("optgroup");
-    og.label = label;
-    list.forEach(({ id, label: name }) => {
-      const opt = document.createElement("option");
-      opt.value = id;
-      opt.textContent = name;
-      og.appendChild(opt);
-    });
-    regionPickerEl.appendChild(og);
-  });
-  regionPickerEl.value = region;
+// ── region (auto-detected from the user's location, never chosen) ──
+const regionLabelEl = document.getElementById("region-label");
+
+function showRegionLabel() {
+  if (!regionLabelEl) return;
+  if (region && region !== "all") {
+    regionLabelEl.textContent = `📍 Local questions for ${getRegionLabel(region)}`;
+    regionLabelEl.classList.remove("hidden");
+  } else {
+    regionLabelEl.classList.add("hidden");
+  }
 }
-regionPickerEl.addEventListener("change", () => {
-  region = regionPickerEl.value;
-  localStorage.setItem(REGION_KEY, region);
-});
+
+async function detectRegion() {
+  // Reuse a recent detection so we don't hit the network on every visit.
+  try {
+    const cached = JSON.parse(localStorage.getItem(REGION_KEY) || "null");
+    if (cached && cached.id && Date.now() - cached.ts < REGION_TTL) {
+      region = cached.id;
+      showRegionLabel();
+      return;
+    }
+  } catch { /* ignore malformed cache */ }
+
+  try {
+    const res = await fetch(`${API_BASE}/api/detect-region`);
+    if (res.ok) {
+      const data = await res.json();
+      region = data.region || "all";
+      localStorage.setItem(REGION_KEY, JSON.stringify({ id: region, ts: Date.now() }));
+    }
+  } catch {
+    region = "all"; // offline or backend unreachable → generic all-India content
+  }
+  showRegionLabel();
+}
+detectRegion();
 
 // ── curriculum tabs ──
 currTabsEl.querySelectorAll(".curr-tab").forEach((tab) => {
