@@ -71,6 +71,20 @@ async function speak(text, lang) {
   window.speechSynthesis.speak(utterance);
 }
 
+// Many browsers only allow speechSynthesis after it has been invoked inside a
+// user gesture. Call this from the first tap so later auto-narration (which
+// fires after an async question fetch, outside the gesture) is allowed to play.
+// The primer utterance is muted, so nothing is heard.
+export function unlockSpeech() {
+  if (!("speechSynthesis" in window)) return;
+  try {
+    window.speechSynthesis.resume();
+    const u = new SpeechSynthesisUtterance(" ");
+    u.volume = 0;
+    window.speechSynthesis.speak(u);
+  } catch { /* ignore */ }
+}
+
 export function playAudio({ id, lang, text }) {
   if (!HAS_RECORDED_CLIPS) {
     speak(text, lang);

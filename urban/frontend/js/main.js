@@ -4,9 +4,9 @@ import { getNextQuestion } from "./question-bank.js";
 import { checkPremium, isPremiumCached, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
 import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration, effectiveDayStreak } from "./stats.js";
-import { playCorrectChime, playWrongBuzz } from "./sound-fx.js";
+import { playCorrectChime, playWrongBuzz, playToggleBlip, unlockAudio } from "./sound-fx.js";
 import { drawSessionCard, drawStreakCard, drawReportCard, shareCard } from "./share-cards.js";
-import { playAudio } from "../../../shared-lib/audio-player.js";
+import { playAudio, unlockSpeech } from "../../../shared-lib/audio-player.js";
 import {
   createAdaptiveState,
   recordAttempt,
@@ -612,9 +612,23 @@ renderSoundToggle();
 soundToggleEl.addEventListener("click", () => {
   soundOn = !soundOn;
   localStorage.setItem(SOUND_KEY, soundOn ? "1" : "0");
-  if (!soundOn) window.speechSynthesis?.cancel();
   renderSoundToggle();
+  if (soundOn) {
+    unlockSpeech();       // allow narration to play later this session
+    playToggleBlip();     // immediate audible confirmation the switch worked
+    // if a question is on screen, read it now so the effect is obvious
+    if (currentQuestion) speakPrompt(currentQuestion, true);
+  } else {
+    window.speechSynthesis?.cancel();
+  }
 });
+
+// Unlock audio + speech on the very first tap anywhere, so chimes and narration
+// are allowed to play during the session (browsers gate both behind a gesture).
+document.addEventListener("pointerdown", () => {
+  unlockAudio();
+  unlockSpeech();
+}, { once: true });
 
 // ── repeat audio ──
 repeatAudioBtn.addEventListener("click", () => {
