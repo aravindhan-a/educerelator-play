@@ -7,7 +7,22 @@ function getCtx() {
   if (!audioCtx) {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   }
+  // Browsers create the context "suspended" until a user gesture; resume it so
+  // sound actually plays. Safe to call every time — a no-op once running.
+  if (audioCtx.state === "suspended") audioCtx.resume();
   return audioCtx;
+}
+
+// Call from the first user gesture to unlock Web Audio for the session.
+export function unlockAudio() {
+  try { getCtx(); } catch { /* Web Audio unavailable */ }
+}
+
+// Short rising "on" confirmation, so turning sound on is immediately audible.
+export function playToggleBlip() {
+  const ctx = getCtx();
+  const now = ctx.currentTime;
+  [587.33, 880].forEach((f, i) => tone(f, now + i * 0.09, 0.18, ctx, 0.18));
 }
 
 function tone(freq, startTime, duration, ctx, gainPeak = 0.2) {
