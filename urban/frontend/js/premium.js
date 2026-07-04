@@ -9,6 +9,15 @@ export function isPremiumCached() {
   } catch { return false; }
 }
 
+// Cached premium details for display (status + expiry). Null if never checked.
+export function getPremiumInfo() {
+  try {
+    const c = JSON.parse(localStorage.getItem(CACHE_KEY) || "null");
+    if (!c) return null;
+    return { premium: !!c.premium, expiresAt: c.expiresAt || 0 };
+  } catch { return null; }
+}
+
 export async function checkPremium(user) {
   if (!user) return false;
   try {

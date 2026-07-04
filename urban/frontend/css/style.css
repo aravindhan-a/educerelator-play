@@ -436,6 +436,24 @@ body {
 }
 .btn-upgrade:hover { background: #f3e8ff; }
 
+/* ── Premium card inside the account / profile screen ── */
+.profile-premium { margin: 0 0 18px; }
+.premium-offer-card,
+.premium-active-card {
+  display: flex; align-items: center; gap: 12px;
+  border-radius: 16px; padding: 16px; color: white; text-align: left;
+}
+.premium-offer-card { background: linear-gradient(135deg, #7c3aed, #a855f7); flex-wrap: wrap; }
+.premium-active-card { background: linear-gradient(135deg, #f59e0b, #f97316); }
+.premium-card-icon { font-size: 1.6rem; flex-shrink: 0; }
+.premium-card-text { flex: 1; min-width: 150px; }
+.premium-card-text strong { font-size: 1.05rem; display: block; }
+.premium-card-text p { font-size: 0.85rem; opacity: 0.9; margin: 2px 0 0; }
+.premium-offer-card .btn-upgrade { width: auto; padding: 10px 18px; font-size: 0.95rem; }
+@media (max-width: 420px) {
+  .premium-offer-card .btn-upgrade { width: 100%; }
+}
+
 /* ── Premium Modal ── */
 .premium-card { text-align: center; padding: 2rem; }
 .premium-header { font-size: 1.6rem; font-weight: 800; color: #7c3aed; margin-bottom: 0.25rem; }
