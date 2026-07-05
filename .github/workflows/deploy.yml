@@ -17,6 +17,7 @@ jobs:
         run: |
           mkdir -p deploy
           cp urban/frontend/index.html deploy/
+          cp urban/frontend/admin.html deploy/
           cp urban/frontend/privacy.html deploy/
           cp urban/frontend/terms.html deploy/
           cp urban/frontend/cbse-practice-questions.html deploy/
