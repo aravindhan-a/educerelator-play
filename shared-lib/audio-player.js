@@ -56,19 +56,52 @@ function pickVoice(voices, langCode) {
   );
 }
 
+// Math notation reads terribly symbol-by-symbol ("open paren minus fifteen…"),
+// so turn it into words for the spoken version. The on-screen prompt is
+// unchanged; this only affects what the voice says.
+function speakableText(text) {
+  return String(text)
+    .replace(/\s*=\s*\?\s*$/, " equals what?")
+    .replace(/√/g, " square root of ")
+    .replace(/∛/g, " cube root of ")
+    .replace(/²/g, " squared ")
+    .replace(/³/g, " cubed ")
+    .replace(/\bLCM\b/g, "L C M")
+    .replace(/\bHCF\b/g, "H C F")
+    .replace(/(\d)\s*\^\s*(\d)/g, "$1 to the power $2")
+    .replace(/(\d)\s*\/\s*(\d)/g, "$1 over $2")
+    .replace(/×/g, " times ")
+    .replace(/÷/g, " divided by ")
+    .replace(/\+/g, " plus ")
+    .replace(/[−–]/g, " minus ")          // math minus signs (U+2212 / en-dash)
+    .replace(/(^|\s)-(\d)/g, "$1 minus $2") // a leading "-5"
+    .replace(/%/g, " percent ")
+    .replace(/[()]/g, " ")                 // parens just add noise when spoken
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 async function speak(text, lang) {
-  if (!("speechSynthesis" in window)) return;
+  const ss = window.speechSynthesis;
+  if (!ss) return;
   const langCode = TTS_LANG_CODES[lang] || "en-IN";
   const voices = await getVoices();
   const voice = pickVoice(voices, langCode);
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
+  // Only cancel when something is actually in flight — a cancel() immediately
+  // followed by speak() with nothing playing drops the new utterance on Chrome.
+  if (ss.speaking || ss.pending) ss.cancel();
+  const utterance = new SpeechSynthesisUtterance(speakableText(text));
   utterance.lang = langCode;
   // Only assign a same-language voice; forcing an English voice onto Tamil text
   // produces gibberish, so we'd rather let the engine try than mispronounce.
   if (voice) utterance.voice = voice;
-  utterance.rate = 0.85;
-  window.speechSynthesis.speak(utterance);
+  utterance.rate = 0.9;
+  utterance.pitch = 1;
+  utterance.volume = 1;
+  // Chrome can leave the queue paused; resume before and just after speaking.
+  if (ss.paused) ss.resume();
+  ss.speak(utterance);
+  setTimeout(() => { try { if (ss.paused) ss.resume(); } catch {} }, 150);
 }
 
 // Many browsers only allow speechSynthesis after it has been invoked inside a
