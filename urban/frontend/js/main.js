@@ -1,5 +1,6 @@
 import { ALL_CLASSES, CURRICULA, getSubjectsForClass } from "../../../content/curriculum.js";
 import { getRegionLabel } from "../../../content/regions.js";
+import { EXAMS, topicLabel } from "../../../content/exams.js";
 import { getNextQuestion } from "./question-bank.js";
 import { checkPremium, isPremiumCached, getPremiumInfo, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
@@ -526,6 +527,188 @@ ALL_CLASSES.forEach(({ num, groupLabel, colorClass }) => {
   classGridEl.appendChild(btn);
 });
 
+// ── NEET / JEE / UPSC revision (in-app, parallel to the K-12 loop) ──
+const examGridEl   = document.getElementById("exam-grid");
+const examScreenEl  = document.getElementById("exam-screen");
+const examBadgeEl   = document.getElementById("exam-badge");
+const examBodyEl    = document.getElementById("exam-body");
+const EXAM_REVIEW_KEY = "ecplay_pyq_review";
+const EXAM_DAY = 86400000;
+const EXAM_INTERVALS = [0, 1, 3, 7, 16]; // Leitner box → days
+let exState = { id: null, subject: null, bank: [], queue: [], idx: 0, answered: false, right: 0, total: 0, mode: "all" };
+
+EXAMS.forEach((ex) => {
+  const btn = document.createElement("button");
+  btn.className = "class-btn exam-btn";
+  btn.innerHTML = `<span class="class-emoji">${ex.emoji}</span><span class="class-num">${ex.label}</span><span class="class-label">Previous Years</span>`;
+  btn.addEventListener("click", () => openExam(ex.id));
+  examGridEl.appendChild(btn);
+});
+
+const exLoadReview = () => { try { return JSON.parse(localStorage.getItem(EXAM_REVIEW_KEY) || "{}"); } catch { return {}; } };
+const exSaveReview = (r) => localStorage.setItem(EXAM_REVIEW_KEY, JSON.stringify(r));
+const exReviewIds  = () => Object.keys(exLoadReview());
+function exMarkWrong(id) {
+  const r = exLoadReview(); const e = r[id] || { misses: 0, box: 0 };
+  e.misses++; e.box = 1; e.lastSeen = Date.now(); e.nextReview = Date.now() + EXAM_INTERVALS[1] * EXAM_DAY;
+  r[id] = e; exSaveReview(r);
+}
+function exMarkRight(id) {
+  const r = exLoadReview(); if (!r[id]) return;
+  r[id].box = Math.min(r[id].box + 1, EXAM_INTERVALS.length - 1);
+  if (r[id].box >= EXAM_INTERVALS.length - 1) delete r[id];
+  else r[id].nextReview = Date.now() + EXAM_INTERVALS[r[id].box] * EXAM_DAY;
+  exSaveReview(r);
+}
+const exShuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const exT = (obj) => (obj && (obj[lang] || obj.en)) || "";
+
+function showExamScreen() {
+  clearTimeout(advanceTimer);
+  window.speechSynthesis?.cancel();
+  document.body.classList.remove("focus-mode");
+  window.scrollTo(0, 0);
+  classPickerEl.classList.add("hidden");
+  subjectPickerEl.classList.add("hidden");
+  playScreenEl.classList.add("hidden");
+  sessionCompleteEl.classList.add("hidden");
+  profileScreenEl.classList.add("hidden");
+  streakDisplay.classList.add("hidden");
+  examScreenEl.classList.remove("hidden");
+}
+
+function openExam(id) {
+  exState.id = id;
+  const exam = EXAMS.find((e) => e.id === id);
+  examBadgeEl.textContent = exam.label;
+  showExamScreen();
+  examBodyEl.innerHTML =
+    `<h2 class="screen-title">${exam.label} · choose a subject</h2><div class="subject-grid" id="exam-subjects"></div>`;
+  const grid = examBodyEl.querySelector("#exam-subjects");
+  exam.subjects.forEach((s) => {
+    const b = document.createElement("button");
+    b.className = "subject-btn";
+    b.innerHTML = `<span class="subject-emoji">${s.emoji}</span>${s.label}`;
+    b.addEventListener("click", () => openExamSubject(id, s));
+    grid.appendChild(b);
+  });
+}
+
+async function openExamSubject(examId, subj) {
+  exState.subject = subj.id;
+  let data = null;
+  try {
+    const res = await fetch(`../../content/exams/${examId}/${subj.id}.json`);
+    if (res.ok) data = await res.json();
+  } catch { /* offline / missing */ }
+  if (!data || !(data.questions || []).length) {
+    examBodyEl.innerHTML =
+      `<div class="exam-empty"><div class="exam-empty-emoji">📚</div>
+        <strong>${subj.label} questions are coming soon.</strong>
+        <p>NEET · Biology is available now to try the revision experience.</p>
+        <button class="mode-btn" id="exam-empty-back">← Back</button></div>`;
+    examBodyEl.querySelector("#exam-empty-back").addEventListener("click", () => openExam(examId));
+    return;
+  }
+  exState.bank = data.questions;
+  renderExamHome();
+}
+
+function renderExamHome() {
+  const exam = EXAMS.find((e) => e.id === exState.id);
+  const subj = exam.subjects.find((s) => s.id === exState.subject);
+  const due = exReviewIds().length;
+  const counts = {}; exState.bank.forEach((q) => (counts[q.topic] = (counts[q.topic] || 0) + 1));
+  const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  const max = Math.max(...rows.map((r) => r[1]), 1);
+  examBodyEl.innerHTML =
+    `<div class="exam-note">📄 Sample previous-year questions — real sourced PYQs coming soon.</div>
+     <div class="exam-modes">
+       <button class="mode-btn primary" data-m="all">Practice all questions <b>${exState.bank.length}</b></button>
+       <button class="mode-btn" data-m="review">🔁 Revise my mistakes ${due ? `<b class="ex-badge">${due}</b>` : '<span class="ex-muted">none yet</span>'}</button>
+       <button class="mode-btn" id="exam-subj-back">← Other subjects</button>
+     </div>
+     <h3 class="exam-hy-title">High-yield topics</h3>
+     ${rows.map(([t, n]) => `<div class="exam-hy-row"><span>${topicLabel(t)}</span><span>${n}</span></div><div class="exam-hy-bar" style="width:${Math.round(n / max * 100)}%"></div>`).join("")}`;
+  examBadgeEl.textContent = `${exam.label} · ${subj.label}`;
+  examBodyEl.querySelector("#exam-subj-back").addEventListener("click", () => openExam(exState.id));
+  examBodyEl.querySelectorAll(".mode-btn[data-m]").forEach((b) => b.addEventListener("click", () => startExamSession(b.dataset.m)));
+}
+
+function startExamSession(mode) {
+  exState.mode = mode;
+  if (mode === "review") {
+    const ids = new Set(exReviewIds());
+    exState.queue = exShuffle(exState.bank.filter((q) => ids.has(q.id)));
+    if (!exState.queue.length) return;
+  } else {
+    exState.queue = exShuffle(exState.bank);
+  }
+  exState.idx = 0; exState.right = 0; exState.total = 0;
+  renderExamQuestion();
+}
+
+function renderExamQuestion() {
+  const q = exState.queue[exState.idx];
+  exState.answered = false;
+  const order = exShuffle(q.choices.map((_, i) => i));
+  examBodyEl.innerHTML =
+    `<div class="exam-qmeta">
+       <span class="tag">${topicLabel(q.topic)}</span><span class="tag">${q.source || "PYQ"}</span>
+       <span class="tag">Q ${exState.idx + 1} / ${exState.queue.length}</span>
+     </div>
+     <div class="exam-prompt">${exT(q.prompt)}</div>
+     <div id="exam-choices">${order.map((oi) => `<button class="exam-choice" data-oi="${oi}">${exT(q.choices[oi])}</button>`).join("")}</div>
+     <div id="exam-sol" class="exam-solution hidden"></div>
+     <div class="exam-row"><span class="ex-muted" id="exam-score">Score: <b>0</b> / 0</span><button class="mode-btn primary hidden" id="exam-next" style="width:auto">Next →</button></div>`;
+  examBodyEl.querySelectorAll(".exam-choice").forEach((b) => b.addEventListener("click", () => examAnswer(parseInt(b.dataset.oi, 10), b)));
+  examBodyEl.querySelector("#exam-next").addEventListener("click", () => {
+    exState.idx++;
+    (exState.idx >= exState.queue.length) ? renderExamSummary() : renderExamQuestion();
+  });
+}
+
+function examAnswer(oi, btn) {
+  if (exState.answered) return;
+  exState.answered = true;
+  const q = exState.queue[exState.idx];
+  const correct = oi === q.answerIndex;
+  exState.total++;
+  examBodyEl.querySelectorAll(".exam-choice").forEach((b) => {
+    b.disabled = true;
+    const i = parseInt(b.dataset.oi, 10);
+    if (i === q.answerIndex) b.classList.add("correct");
+    else if (b === btn) b.classList.add("wrong");
+  });
+  if (correct) { exState.right++; if (exState.mode === "review") exMarkRight(q.id); }
+  else exMarkWrong(q.id);
+  examBodyEl.querySelector("#exam-score").innerHTML = `Score: <b>${exState.right}</b> / ${exState.total}`;
+  const sol = examBodyEl.querySelector("#exam-sol");
+  sol.innerHTML = `<div class="exam-sol-h">${correct ? "✅ Correct" : "❌ " + exT(q.choices[q.answerIndex]) + " is correct"}</div>${exT(q.solution)}`;
+  sol.classList.remove("hidden");
+  examBodyEl.querySelector("#exam-next").classList.remove("hidden");
+}
+
+function renderExamSummary() {
+  const pct = exState.total ? Math.round(exState.right / exState.total * 100) : 0;
+  const due = exReviewIds().length;
+  examBodyEl.innerHTML =
+    `<div class="exam-summary">
+       <div class="exam-big">${exState.right} / ${exState.total}</div>
+       <p class="ex-muted">${pct}% correct</p>
+       ${due ? `<p>📒 <b>${due}</b> question${due > 1 ? "s" : ""} in your revision notebook.</p>` : `<p>🎉 Nothing to revise — clean run!</p>`}
+       <div class="exam-modes">
+         ${due ? `<button class="mode-btn primary" id="exam-rev">🔁 Revise my mistakes now <b class="ex-badge">${due}</b></button>` : ""}
+         <button class="mode-btn" id="exam-again">← Back to ${EXAMS.find((e) => e.id === exState.id)?.label} subjects</button>
+       </div>
+     </div>`;
+  const rev = examBodyEl.querySelector("#exam-rev");
+  if (rev) rev.addEventListener("click", () => startExamSession("review"));
+  examBodyEl.querySelector("#exam-again").addEventListener("click", () => openExam(exState.id));
+}
+
+document.getElementById("exam-back").addEventListener("click", showClassPicker);
+
 // ── continue button ──
 document.getElementById("continue-btn").addEventListener("click", () => {
   const last = loadJSON("lastPlayed", () => null);
@@ -647,6 +830,7 @@ function showClassPicker() {
   playScreenEl.classList.add("hidden");
   sessionCompleteEl.classList.add("hidden");
   profileScreenEl.classList.add("hidden");
+  examScreenEl.classList.add("hidden");
   streakDisplay.classList.add("hidden");
   updateWelcomeBanner();
 }

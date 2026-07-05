@@ -268,6 +268,42 @@ body {
 }
 .region-label.hidden { display: none; }
 
+/* ── NEET / JEE / UPSC tiles + in-app revision player ── */
+.exam-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 720px; margin: 16px auto 0; }
+.exam-btn { background: linear-gradient(135deg, #7c3aed, #a855f7) !important; color: #fff !important; box-shadow: 0 4px 14px rgba(124,58,237,0.35); }
+.exam-btn .class-num { font-size: 1.15rem; letter-spacing: 0.5px; }
+.exam-btn .class-label { opacity: 0.92; }
+#exam-body { max-width: 640px; margin: 0 auto; }
+.exam-note { background: rgba(255,255,255,0.92); color: #7c3aed; font-weight: 700; font-size: 0.82rem; border-radius: 12px; padding: 10px 14px; margin: 0 0 14px; }
+.exam-modes { display: grid; gap: 10px; margin: 8px 0 20px; }
+.mode-btn { font-family: inherit; font-weight: 700; font-size: 1rem; text-align: left; background: #fff; color: var(--text); border: none; border-radius: 14px; padding: 15px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
+.mode-btn.primary { background: linear-gradient(135deg,#7c3aed,#a855f7); color: #fff; }
+.ex-badge { background: #fee2e2; color: #b91c1c; border-radius: 999px; padding: 2px 9px; font-size: 0.8rem; font-weight: 800; }
+.ex-muted { color: #6b7280; font-size: 0.85rem; }
+#exam-score { color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
+.exam-hy-title { color: #fff; font-size: 1rem; margin: 6px 0 8px; text-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+.exam-hy-row { display: flex; justify-content: space-between; color: #fff; font-size: 0.85rem; padding: 5px 2px 2px; text-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+.exam-hy-bar { height: 6px; background: rgba(255,255,255,0.85); border-radius: 3px; margin-bottom: 6px; }
+.exam-qmeta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.exam-qmeta .tag { background: rgba(255,255,255,0.92); color: #475569; font-size: 0.72rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
+.exam-prompt { background: #fff; border-radius: 16px; padding: 20px; font-size: 1.15rem; font-weight: 700; line-height: 1.5; margin-bottom: 14px; box-shadow: 0 3px 12px rgba(0,0,0,0.08); }
+.exam-choice { display: block; width: 100%; text-align: left; font-family: inherit; font-size: 1rem; padding: 14px 16px; margin-bottom: 10px; border: 2px solid transparent; border-radius: 14px; background: #fff; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: border-color .15s; }
+.exam-choice:hover:not(:disabled) { border-color: #a855f7; }
+.exam-choice:disabled { cursor: default; }
+.exam-choice.correct { border-color: #16a34a; background: #f0fdf4; }
+.exam-choice.wrong { border-color: #dc2626; background: #fef2f2; }
+.exam-solution { background: #faf5ff; border: 1px solid #e9d5ff; border-radius: 14px; padding: 15px 17px; font-size: 0.95rem; line-height: 1.55; color: #3b0764; margin-top: 4px; }
+.exam-solution.hidden { display: none; }
+.exam-sol-h { font-weight: 800; color: #7c3aed; margin-bottom: 5px; }
+.exam-row { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; }
+.exam-summary { background: #fff; border-radius: 18px; padding: 26px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+.exam-big { font-size: 2.6rem; font-weight: 800; color: #7c3aed; }
+.exam-empty { background: #fff; border-radius: 18px; padding: 30px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+.exam-empty-emoji { font-size: 2.4rem; }
+.exam-empty strong { display: block; margin: 8px 0; }
+.exam-empty p { color: #6b7280; font-size: 0.9rem; margin: 0 0 16px; }
+@media (max-width: 420px) { .exam-btn .class-num { font-size: 0.98rem; } }
+
 /* subject grid */
 .subject-grid {
   display: grid;
