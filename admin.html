@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>EC Play — Admin Dashboard</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<style>
+  :root { --accent:#7c3aed; --accent2:#a855f7; --pink:#ff5e7e; --ink:#2d2d2d; --muted:#6b7280; --line:#e5e7eb; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"Segoe UI",system-ui,-apple-system,sans-serif; color:var(--ink); background:#f6f7fb; }
+  header { background:linear-gradient(135deg,var(--accent),var(--pink)); color:#fff; padding:18px 24px; display:flex; align-items:center; justify-content:space-between; }
+  header h1 { font-size:1.2rem; margin:0; font-weight:800; }
+  header .who { font-size:0.85rem; opacity:0.95; display:flex; gap:12px; align-items:center; }
+  header button { font:inherit; font-size:0.8rem; font-weight:700; background:rgba(255,255,255,0.9); color:var(--accent); border:none; border-radius:999px; padding:6px 14px; cursor:pointer; }
+  main { max-width:1100px; margin:0 auto; padding:24px; }
+  .center { max-width:380px; margin:8vh auto; background:#fff; border-radius:16px; padding:28px; box-shadow:0 8px 30px rgba(0,0,0,0.08); }
+  .center h2 { margin:0 0 6px; }
+  .center p { color:var(--muted); font-size:0.9rem; margin:0 0 18px; }
+  input { width:100%; font:inherit; padding:11px 13px; border:1px solid var(--line); border-radius:10px; margin-bottom:10px; }
+  .btn { width:100%; font:inherit; font-weight:700; background:var(--accent); color:#fff; border:none; border-radius:10px; padding:12px; cursor:pointer; margin-top:4px; }
+  .btn.ghost { background:#fff; color:var(--accent); border:1px solid var(--accent); }
+  .err { color:#dc2626; font-size:0.85rem; min-height:1.1em; margin:6px 0; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin-bottom:22px; }
+  .card { background:#fff; border-radius:14px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
+  .card .n { font-size:2rem; font-weight:800; color:var(--accent); line-height:1; }
+  .card .l { font-size:0.8rem; color:var(--muted); margin-top:6px; }
+  .tablewrap { background:#fff; border-radius:14px; box-shadow:0 2px 10px rgba(0,0,0,0.05); overflow:auto; }
+  table { width:100%; border-collapse:collapse; font-size:0.85rem; }
+  th,td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th { background:#faf9ff; color:var(--muted); font-weight:700; position:sticky; top:0; }
+  tr:hover td { background:#faf9ff; }
+  .pill { display:inline-block; font-size:0.72rem; font-weight:700; padding:2px 8px; border-radius:999px; }
+  .pill.free { background:#f1f5f9; color:#64748b; }
+  .pill.premium { background:#fef3c7; color:#b45309; }
+  .muted { color:var(--muted); }
+  .toolbar { display:flex; gap:10px; align-items:center; margin-bottom:14px; flex-wrap:wrap; }
+  .toolbar input { width:auto; flex:1; min-width:200px; margin:0; }
+  .hidden { display:none !important; }
+  .loading { text-align:center; padding:40px; color:var(--muted); }
+</style>
+</head>
+<body>
+
+<div id="signin-view" class="hidden">
+  <div class="center">
+    <h2>Admin sign in</h2>
+    <p>Sign in with your admin account to view the dashboard.</p>
+    <button id="google-btn" class="btn ghost">Continue with Google</button>
+    <div style="text-align:center;color:#9ca3af;font-size:0.8rem;margin:12px 0">or</div>
+    <input id="email" type="email" placeholder="Email" autocomplete="username" />
+    <input id="password" type="password" placeholder="Password" autocomplete="current-password" />
+    <div id="signin-err" class="err"></div>
+    <button id="email-btn" class="btn">Sign in</button>
+  </div>
+</div>
+
+<div id="dash-view" class="hidden">
+  <header>
+    <h1>🦉 EC Play — Admin</h1>
+    <div class="who"><span id="who-email"></span><button id="signout-btn">Sign out</button></div>
+  </header>
+  <main>
+    <div id="loading" class="loading">Loading dashboard…</div>
+    <div id="content" class="hidden">
+      <div class="cards" id="cards"></div>
+      <div class="toolbar">
+        <strong>Users</strong>
+        <input id="search" type="text" placeholder="Search name or email…" />
+        <span class="muted" id="count"></span>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr>
+            <th>Name</th><th>Email</th><th>Sign-in</th><th>Joined</th>
+            <th>Last active</th><th>Questions</th><th>Accuracy</th><th>Classes</th><th>Plan</th>
+          </tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:0.75rem;margin-top:14px" id="footnote"></p>
+    </div>
+    <div id="denied" class="center hidden">
+      <h2>Not authorized</h2>
+      <p>This account isn't on the admin list. Sign in with an admin account, or ask for your email to be added to <code>ADMIN_EMAILS</code>.</p>
+      <button id="denied-signout" class="btn ghost">Sign out</button>
+    </div>
+  </main>
+</div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {
+  getAuth, onAuthStateChanged, signInWithEmailAndPassword,
+  signInWithPopup, GoogleAuthProvider, signOut,
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { FIREBASE_CONFIG } from "./js/firebase-config.js";
+
+const API_BASE = "https://educerelator-backend.vercel.app";
+const app  = initializeApp(FIREBASE_CONFIG);
+const auth = getAuth(app);
+const google = new GoogleAuthProvider();
+
+const $ = (id) => document.getElementById(id);
+const show = (el) => el.classList.remove("hidden");
+const hide = (el) => el.classList.add("hidden");
+let allUsers = [];
+
+onAuthStateChanged(auth, (user) => {
+  if (user) { hide($("signin-view")); show($("dash-view")); $("who-email").textContent = user.email || ""; loadDashboard(user); }
+  else { show($("signin-view")); hide($("dash-view")); }
+});
+
+$("email-btn").addEventListener("click", async () => {
+  $("signin-err").textContent = "";
+  try { await signInWithEmailAndPassword(auth, $("email").value.trim(), $("password").value); }
+  catch (e) { $("signin-err").textContent = "Sign in failed. Check your email and password."; }
+});
+$("google-btn").addEventListener("click", () => signInWithPopup(auth, google).catch(() => {
+  $("signin-err").textContent = "Google sign-in failed or was cancelled.";
+}));
+$("signout-btn").addEventListener("click", () => signOut(auth));
+$("denied-signout").addEventListener("click", () => signOut(auth));
+
+async function loadDashboard(user) {
+  show($("loading")); hide($("content")); hide($("denied"));
+  let res;
+  try {
+    const token = await user.getIdToken();
+    res = await fetch(`${API_BASE}/api/admin-users`, { headers: { Authorization: `Bearer ${token}` } });
+  } catch { $("loading").textContent = "Could not reach the server. Try again."; return; }
+
+  if (res.status === 403) { hide($("loading")); show($("denied")); return; }
+  if (!res.ok) {
+    let msg = `Error ${res.status}`;
+    try { msg = (await res.json()).error || msg; } catch {}
+    $("loading").textContent = msg + (res.status === 503 ? " (ask the dev to set ADMIN_EMAILS in Vercel)" : "");
+    return;
+  }
+  const data = await res.json();
+  allUsers = data.users || [];
+  renderCards(data.summary);
+  renderRows(allUsers);
+  $("footnote").textContent =
+    `${allUsers.length} accounts · data as of ${new Date(data.generatedAt).toLocaleString("en-IN")}`;
+  hide($("loading")); show($("content"));
+}
+
+function renderCards(s) {
+  const cards = [
+    ["Total users", s.totalUsers],
+    ["Active (7d)", s.activeLast7Days],
+    ["New (7d)", s.newLast7Days],
+    ["Have progress", s.withProgress],
+    ["Questions answered", s.totalQuestions.toLocaleString("en-IN")],
+    ["Premium", s.premiumUsers],
+  ];
+  $("cards").innerHTML = cards.map(([l, n]) =>
+    `<div class="card"><div class="n">${n}</div><div class="l">${l}</div></div>`).join("");
+}
+
+const fmtDate = (v) => v ? new Date(v).toLocaleDateString("en-IN", { day:"numeric", month:"short", year:"numeric" }) : "—";
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+
+function renderRows(users) {
+  $("count").textContent = `${users.length} shown`;
+  $("rows").innerHTML = users.map((u) => `
+    <tr>
+      <td>${esc(u.name) || '<span class="muted">—</span>'}</td>
+      <td>${esc(u.email)}</td>
+      <td class="muted">${u.provider === "google.com" ? "Google" : "Email"}</td>
+      <td>${fmtDate(u.createdAt)}</td>
+      <td>${fmtDate(u.lastActive || u.lastSignIn)}</td>
+      <td>${u.totalAnswered || 0}</td>
+      <td>${u.accuracy != null ? u.accuracy + "%" : '<span class="muted">—</span>'}</td>
+      <td class="muted">${u.classes.length ? esc(u.classes.join(", ")) : "—"}</td>
+      <td>${u.premium ? '<span class="pill premium">Premium</span>' : '<span class="pill free">Free</span>'}</td>
+    </tr>`).join("") || `<tr><td colspan="9" class="muted" style="text-align:center;padding:24px">No users yet.</td></tr>`;
+}
+
+$("search").addEventListener("input", (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  renderRows(!q ? allUsers : allUsers.filter((u) =>
+    (u.name || "").toLowerCase().includes(q) || (u.email || "").toLowerCase().includes(q)));
+});
+</script>
+</body>
+</html>

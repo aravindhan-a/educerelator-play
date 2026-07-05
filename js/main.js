@@ -1,7 +1,7 @@
 import { ALL_CLASSES, CURRICULA, getSubjectsForClass } from "../../../content/curriculum.js";
 import { getRegionLabel } from "../../../content/regions.js";
 import { getNextQuestion } from "./question-bank.js";
-import { checkPremium, isPremiumCached, openRazorpayCheckout } from "./premium.js";
+import { checkPremium, isPremiumCached, getPremiumInfo, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
 import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration, effectiveDayStreak } from "./stats.js";
 import { playCorrectChime, playWrongBuzz, playToggleBlip, unlockAudio } from "./sound-fx.js";
@@ -975,6 +975,39 @@ function closeProfileScreen() {
   (profilePrevScreen || classPickerEl).classList.remove("hidden");
 }
 
+// Premium status / upgrade option shown inside the account (profile) screen.
+function renderProfilePremium() {
+  const el = document.getElementById("profile-premium");
+  if (!el) return;
+  const info = getPremiumInfo();
+  const active = info && info.premium && info.expiresAt > Date.now();
+  if (active) {
+    const dateStr = new Date(info.expiresAt).toLocaleDateString("en-IN", {
+      day: "numeric", month: "short", year: "numeric",
+    });
+    el.innerHTML =
+      `<div class="premium-active-card">` +
+        `<span class="premium-card-icon">⚡</span>` +
+        `<div class="premium-card-text">` +
+          `<strong>Premium is active</strong>` +
+          `<p>Fresh AI questions unlocked · valid till ${dateStr}</p>` +
+        `</div>` +
+      `</div>`;
+  } else {
+    el.innerHTML =
+      `<div class="premium-offer-card">` +
+        `<span class="premium-card-icon">⚡</span>` +
+        `<div class="premium-card-text">` +
+          `<strong>Go Premium</strong>` +
+          `<p>Fresh AI-generated questions every day, tuned to your level.</p>` +
+        `</div>` +
+        `<button id="profile-upgrade-btn" class="btn-upgrade">Upgrade · ₹149/mo</button>` +
+      `</div>`;
+    const btn = document.getElementById("profile-upgrade-btn");
+    if (btn) btn.addEventListener("click", openPremiumModal);
+  }
+}
+
 function renderProfileScreen() {
   if (!currentUser) return;
   const name = currentUser.displayName || currentUser.email.split("@")[0];
@@ -983,6 +1016,10 @@ function renderProfileScreen() {
   document.getElementById("profile-avatar-lg").textContent   = initials;
   document.getElementById("profile-fullname").textContent    = name;
   document.getElementById("profile-useremail").textContent   = currentUser.email || "";
+
+  renderProfilePremium();
+  // Refresh premium status from the server, then re-render if it changed.
+  checkPremium(currentUser).then(() => renderProfilePremium()).catch(() => {});
 
   const s   = loadStats();
   const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : 0;
