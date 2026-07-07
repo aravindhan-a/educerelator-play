@@ -1,0 +1,30 @@
+{
+  "exam": "cbse-12", "subject": "chemistry", "draft": true,
+  "note": "SAMPLE Class 12 board-pattern questions (source 'Sample (CBSE Class 12)'). Replace with verified real CBSE board PYQs + SME solutions + 13-language translations before shipping.",
+  "questions": [
+    { "id": "cbse-12-chemistry-sample-001", "type": "mcq", "exam": "cbse-12", "subject": "chemistry", "year": null, "topic": "solutions", "difficulty": 2, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "The number of moles of solute dissolved per litre of solution is called:" },
+      "choices": [ { "en": "Molality" }, { "en": "Molarity" }, { "en": "Normality" }, { "en": "Mole fraction" } ], "answerIndex": 1,
+      "solution": { "en": "Molarity (M) = moles of solute per litre of solution. Molality is moles of solute per kilogram of solvent." } },
+    { "id": "cbse-12-chemistry-sample-002", "type": "mcq", "exam": "cbse-12", "subject": "chemistry", "year": null, "topic": "organic-chemistry", "difficulty": 1, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "The functional group present in carboxylic acids is:" },
+      "choices": [ { "en": "–OH" }, { "en": "–CHO" }, { "en": "–COOH" }, { "en": "–NH₂" } ], "answerIndex": 2,
+      "solution": { "en": "Carboxylic acids contain the carboxyl group –COOH. –OH is alcohol, –CHO is aldehyde, and –NH₂ is amine." } },
+    { "id": "cbse-12-chemistry-sample-003", "type": "mcq", "exam": "cbse-12", "subject": "chemistry", "year": null, "topic": "electrochemistry", "difficulty": 2, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "The process of coating iron with a layer of zinc to protect it from rusting is called:" },
+      "choices": [ { "en": "Galvanisation" }, { "en": "Vulcanisation" }, { "en": "Electrolysis" }, { "en": "Annealing" } ], "answerIndex": 0,
+      "solution": { "en": "Galvanisation is coating iron/steel with zinc; the zinc corrodes preferentially (sacrificial protection), shielding the iron. Vulcanisation is a process for rubber." } },
+    { "id": "cbse-12-chemistry-sample-004", "type": "mcq", "exam": "cbse-12", "subject": "chemistry", "year": null, "topic": "equilibrium", "difficulty": 2, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "The pH of a 0.001 M (10⁻³ M) HCl solution is:" },
+      "choices": [ { "en": "1" }, { "en": "2" }, { "en": "3" }, { "en": "11" } ], "answerIndex": 2,
+      "solution": { "en": "HCl is a strong acid that fully ionises, so [H⁺] = 10⁻³ M. pH = −log[H⁺] = −log(10⁻³) = 3." } },
+    { "id": "cbse-12-chemistry-sample-005", "type": "mcq", "exam": "cbse-12", "subject": "chemistry", "year": null, "topic": "equilibrium", "difficulty": 1, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "Which of the following is a strong acid?" },
+      "choices": [ { "en": "Acetic acid" }, { "en": "Carbonic acid" }, { "en": "Hydrochloric acid" }, { "en": "Citric acid" } ], "answerIndex": 2,
+      "solution": { "en": "Hydrochloric acid (HCl) ionises completely in water and is a strong acid. Acetic, carbonic and citric acids ionise only partially and are weak acids." } },
+    { "id": "cbse-12-chemistry-sample-006", "type": "mcq", "exam": "cbse-12", "subject": "chemistry", "year": null, "topic": "redox", "difficulty": 2, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "The oxidation state of oxygen in most of its compounds is:" },
+      "choices": [ { "en": "+2" }, { "en": "−2" }, { "en": "−1" }, { "en": "0" } ], "answerIndex": 1,
+      "solution": { "en": "Oxygen usually has an oxidation state of −2 (as in H₂O, CO₂). Exceptions include peroxides (−1, as in H₂O₂) and compounds with fluorine." } }
+  ]
+}
