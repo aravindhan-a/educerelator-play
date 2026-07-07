@@ -1,0 +1,56 @@
+{
+  "exam": "upsc",
+  "subject": "history",
+  "draft": true,
+  "note": "SAMPLE questions demonstrating the UPSC track. Facts are correct and syllabus-relevant; source = 'Sample (UPSC pattern)'. Replace with verified real PYQs + SME solutions + 13-language translations before shipping; then remove the draft flag.",
+  "questions": [
+    {
+      "id": "upsc-history-sample-001", "type": "mcq", "exam": "upsc", "subject": "history", "year": null,
+      "topic": "freedom-struggle", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Quit India Movement was launched in the year:" },
+      "choices": [ { "en": "1930" }, { "en": "1942" }, { "en": "1919" }, { "en": "1947" } ],
+      "answerIndex": 1,
+      "solution": { "en": "The Quit India Movement was launched by Mahatma Gandhi on 8 August 1942 at the Bombay session of the Congress. 1930 was the Civil Disobedience/Salt Movement and 1919 the Rowlatt/Jallianwala Bagh events." }
+    },
+    {
+      "id": "upsc-history-sample-002", "type": "mcq", "exam": "upsc", "subject": "history", "year": null,
+      "topic": "modern-history", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "Who was the first Governor-General of independent India?" },
+      "choices": [ { "en": "C. Rajagopalachari" }, { "en": "Lord Mountbatten" }, { "en": "Lord Canning" }, { "en": "Dr. Rajendra Prasad" } ],
+      "answerIndex": 1,
+      "solution": { "en": "Lord Mountbatten was the first Governor-General of independent India (1947–48). C. Rajagopalachari was the first and only Indian to hold the post, who succeeded him." }
+    },
+    {
+      "id": "upsc-history-sample-003", "type": "mcq", "exam": "upsc", "subject": "history", "year": null,
+      "topic": "freedom-struggle", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Indian National Congress was founded in the year:" },
+      "choices": [ { "en": "1857" }, { "en": "1885" }, { "en": "1905" }, { "en": "1919" } ],
+      "answerIndex": 1,
+      "solution": { "en": "The Indian National Congress was founded in 1885, with A. O. Hume playing a key role and W. C. Bonnerjee as its first president. 1857 was the Revolt; 1905 the Partition of Bengal." }
+    },
+    {
+      "id": "upsc-history-sample-004", "type": "mcq", "exam": "upsc", "subject": "history", "year": null,
+      "topic": "modern-history", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Battle of Plassey, which paved the way for British rule in Bengal, was fought in:" },
+      "choices": [ { "en": "1757" }, { "en": "1764" }, { "en": "1857" }, { "en": "1707" } ],
+      "answerIndex": 0,
+      "solution": { "en": "The Battle of Plassey (1757) was won by Robert Clive against Siraj-ud-Daulah. The Battle of Buxar followed in 1764; the Revolt of 1857 came a century later." }
+    },
+    {
+      "id": "upsc-history-sample-005", "type": "mcq", "exam": "upsc", "subject": "history", "year": null,
+      "topic": "freedom-struggle", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "Who gave the famous call 'Do or Die' during the Quit India Movement?" },
+      "choices": [ { "en": "Subhas Chandra Bose" }, { "en": "Jawaharlal Nehru" }, { "en": "Mahatma Gandhi" }, { "en": "Bhagat Singh" } ],
+      "answerIndex": 2,
+      "solution": { "en": "Mahatma Gandhi gave the 'Do or Die' call in his Quit India speech of August 1942. (Subhas Chandra Bose's slogan was 'Give me blood and I will give you freedom'.)" }
+    },
+    {
+      "id": "upsc-history-sample-006", "type": "mcq", "exam": "upsc", "subject": "history", "year": null,
+      "topic": "ancient-history", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Indus Valley (Harappan) Civilisation is especially noted for its:" },
+      "choices": [ { "en": "Iron weapons" }, { "en": "Planned towns and drainage" }, { "en": "Cave paintings" }, { "en": "Coinage of gold" } ],
+      "answerIndex": 1,
+      "solution": { "en": "The Harappan Civilisation is famous for its well-planned towns, grid street layout, and advanced drainage/sanitation. It was a Bronze Age culture (iron was not yet in use)." }
+    }
+  ]
+}
