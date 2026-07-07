@@ -1,0 +1,30 @@
+{
+  "exam": "upsc", "subject": "economy", "draft": true,
+  "note": "SAMPLE questions (source 'Sample (UPSC pattern)'). Replace with verified real PYQs + SME solutions + 13-language translations before shipping.",
+  "questions": [
+    { "id": "upsc-economy-sample-001", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "banking", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Reserve Bank of India (RBI), the country's central bank, was established in the year:" },
+      "choices": [ { "en": "1935" }, { "en": "1947" }, { "en": "1950" }, { "en": "1969" } ], "answerIndex": 0,
+      "solution": { "en": "The RBI was established on 1 April 1935 under the RBI Act, 1934, and was nationalised in 1949. 1969 was the year of the first bank nationalisation." } },
+    { "id": "upsc-economy-sample-002", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "planning", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The body that replaced the Planning Commission of India in 2015 is:" },
+      "choices": [ { "en": "The Finance Commission" }, { "en": "NITI Aayog" }, { "en": "The RBI" }, { "en": "SEBI" } ], "answerIndex": 1,
+      "solution": { "en": "NITI Aayog (National Institution for Transforming India) replaced the Planning Commission on 1 January 2015 as the government's policy think-tank." } },
+    { "id": "upsc-economy-sample-003", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "economy", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "In economics, 'GDP' stands for:" },
+      "choices": [ { "en": "Gross Domestic Product" }, { "en": "General Domestic Produce" }, { "en": "Gross Development Programme" }, { "en": "Global Domestic Product" } ], "answerIndex": 0,
+      "solution": { "en": "GDP is Gross Domestic Product — the total monetary value of all final goods and services produced within a country's borders in a given period." } },
+    { "id": "upsc-economy-sample-004", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "economy", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Goods and Services Tax (GST) came into effect in India in the year:" },
+      "choices": [ { "en": "2014" }, { "en": "2016" }, { "en": "2017" }, { "en": "2019" } ], "answerIndex": 2,
+      "solution": { "en": "GST was launched on 1 July 2017, replacing many indirect taxes with a single unified tax under the slogan 'One Nation, One Tax'." } },
+    { "id": "upsc-economy-sample-005", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "banking", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "Which institution has the sole authority to issue currency notes in India (except one-rupee notes)?" },
+      "choices": [ { "en": "State Bank of India" }, { "en": "Ministry of Finance" }, { "en": "Reserve Bank of India" }, { "en": "NABARD" } ], "answerIndex": 2,
+      "solution": { "en": "The RBI is the sole issuer of banknotes in India (the one-rupee note and coins are issued by the Government of India, though circulated by the RBI)." } },
+    { "id": "upsc-economy-sample-006", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "economy", "difficulty": 3, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The 'fiscal deficit' of a government is the excess of its:" },
+      "choices": [ { "en": "Total expenditure over total receipts excluding borrowings" }, { "en": "Revenue over expenditure" }, { "en": "Exports over imports" }, { "en": "Imports over exports" } ], "answerIndex": 0,
+      "solution": { "en": "The fiscal deficit is the amount by which the government's total expenditure exceeds its total receipts excluding borrowings — i.e. how much it needs to borrow. The gap between exports and imports is the trade deficit." } }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "exam": "cbse-10", "subject": "social-science", "draft": true,
+  "note": "SAMPLE Class 10 board-pattern questions (source 'Sample (CBSE Class 10)'). Replace with verified real CBSE board PYQs + SME solutions + 13-language translations before shipping.",
+  "questions": [
+    { "id": "cbse-10-social-science-sample-001", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "nationalism-in-india", "difficulty": 2, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "The Indian National Congress adopted the resolution of 'Poorna Swaraj' (complete independence) at its 1929 session held in:" },
+      "choices": [ { "en": "Lahore" }, { "en": "Surat" }, { "en": "Lucknow" }, { "en": "Karachi" } ], "answerIndex": 0,
+      "solution": { "en": "At the Lahore session of 1929 (presided over by Jawaharlal Nehru), the Congress adopted the goal of Poorna Swaraj; 26 January 1930 was observed as the first Independence Day." } },
+    { "id": "cbse-10-social-science-sample-002", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "agriculture", "difficulty": 2, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "Which type of soil is best suited for the cultivation of cotton?" },
+      "choices": [ { "en": "Alluvial soil" }, { "en": "Black soil" }, { "en": "Laterite soil" }, { "en": "Red soil" } ], "answerIndex": 1,
+      "solution": { "en": "Black soil (regur), rich in clay and retaining moisture well, is ideal for cotton — hence its other name, 'black cotton soil'." } },
+    { "id": "cbse-10-social-science-sample-003", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "democratic-politics", "difficulty": 1, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "In India, the right to vote in elections is given to every citizen who has attained the age of:" },
+      "choices": [ { "en": "16 years" }, { "en": "18 years" }, { "en": "21 years" }, { "en": "25 years" } ], "answerIndex": 1,
+      "solution": { "en": "The voting age in India is 18 years, lowered from 21 by the 61st Constitutional Amendment (1988). 25 is the minimum age to contest a Lok Sabha election." } },
+    { "id": "cbse-10-social-science-sample-004", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "agriculture", "difficulty": 2, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "Which of the following is a Kharif (monsoon-season) crop?" },
+      "choices": [ { "en": "Wheat" }, { "en": "Rice" }, { "en": "Mustard" }, { "en": "Gram" } ], "answerIndex": 1,
+      "solution": { "en": "Rice (paddy) is a Kharif crop, sown with the monsoon (June–July) and harvested in autumn. Wheat, mustard and gram are Rabi (winter) crops." } },
+    { "id": "cbse-10-social-science-sample-005", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "money-and-credit", "difficulty": 1, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "The headquarters of the Reserve Bank of India is located in:" },
+      "choices": [ { "en": "New Delhi" }, { "en": "Kolkata" }, { "en": "Mumbai" }, { "en": "Chennai" } ], "answerIndex": 2,
+      "solution": { "en": "The Reserve Bank of India is headquartered in Mumbai, Maharashtra." } },
+    { "id": "cbse-10-social-science-sample-006", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "national-symbols", "difficulty": 1, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "The Ashoka Chakra at the centre of the Indian national flag has how many spokes?" },
+      "choices": [ { "en": "12" }, { "en": "16" }, { "en": "24" }, { "en": "32" } ], "answerIndex": 2,
+      "solution": { "en": "The Ashoka Chakra (wheel of law) on the tricolour has 24 spokes, adapted from the Lion Capital of Ashoka at Sarnath." } }
+  ]
+}

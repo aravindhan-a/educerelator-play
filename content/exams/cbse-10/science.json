@@ -1,0 +1,30 @@
+{
+  "exam": "cbse-10", "subject": "science", "draft": true,
+  "note": "SAMPLE Class 10 board-pattern questions (source 'Sample (CBSE Class 10)'). Replace with verified real CBSE board PYQs + SME solutions + 13-language translations before shipping.",
+  "questions": [
+    { "id": "cbse-10-science-sample-001", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "electricity", "difficulty": 1, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "The SI unit of electric resistance is the:" },
+      "choices": [ { "en": "Volt" }, { "en": "Ampere" }, { "en": "Ohm" }, { "en": "Watt" } ], "answerIndex": 2,
+      "solution": { "en": "Resistance is measured in ohms (Ω). The volt is potential difference, the ampere is current, and the watt is power." } },
+    { "id": "cbse-10-science-sample-002", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "chemical-reactions", "difficulty": 2, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "The common name of sodium hydrogencarbonate (NaHCO₃) is:" },
+      "choices": [ { "en": "Washing soda" }, { "en": "Baking soda" }, { "en": "Common salt" }, { "en": "Bleaching powder" } ], "answerIndex": 1,
+      "solution": { "en": "NaHCO₃ is baking soda (sodium bicarbonate). Washing soda is Na₂CO₃·10H₂O, common salt is NaCl, and bleaching powder is CaOCl₂." } },
+    { "id": "cbse-10-science-sample-003", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "human-eye", "difficulty": 1, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "The coloured part of the human eye that controls the size of the pupil is the:" },
+      "choices": [ { "en": "Cornea" }, { "en": "Retina" }, { "en": "Iris" }, { "en": "Lens" } ], "answerIndex": 2,
+      "solution": { "en": "The iris is the coloured, muscular diaphragm that adjusts the size of the pupil to control how much light enters. The retina is the light-sensitive screen at the back of the eye." } },
+    { "id": "cbse-10-science-sample-004", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "life-processes", "difficulty": 1, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "The process by which green plants prepare their own food using sunlight is called:" },
+      "choices": [ { "en": "Respiration" }, { "en": "Transpiration" }, { "en": "Photosynthesis" }, { "en": "Digestion" } ], "answerIndex": 2,
+      "solution": { "en": "Photosynthesis uses sunlight, carbon dioxide and water in the chlorophyll of leaves to make glucose and release oxygen. Respiration is the reverse process that releases energy." } },
+    { "id": "cbse-10-science-sample-005", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "human-eye", "difficulty": 2, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "The image formed on the retina of a normal human eye is:" },
+      "choices": [ { "en": "Real and inverted" }, { "en": "Virtual and erect" }, { "en": "Real and erect" }, { "en": "Virtual and inverted" } ], "answerIndex": 0,
+      "solution": { "en": "The convex lens of the eye forms a real, inverted, diminished image on the retina. The brain interprets it as upright." } },
+    { "id": "cbse-10-science-sample-006", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "life-processes", "difficulty": 2, "source": "Sample (CBSE Class 10)",
+      "prompt": { "en": "During respiration, glucose is broken down mainly to release:" },
+      "choices": [ { "en": "Chlorophyll" }, { "en": "Energy" }, { "en": "Proteins" }, { "en": "Sunlight" } ], "answerIndex": 1,
+      "solution": { "en": "Respiration breaks down glucose (usually with oxygen) to release energy stored as ATP, along with carbon dioxide and water." } }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "exam": "olympiad", "subject": "science", "draft": true,
+  "note": "SAMPLE Olympiad-style questions (source 'Sample (Olympiad)'). Replace with verified real Olympiad PYQs + SME solutions + 13-language translations before shipping.",
+  "questions": [
+    { "id": "olympiad-science-sample-001", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "astronomy", "difficulty": 1, "source": "Sample (Olympiad)",
+      "prompt": { "en": "Which planet is known as the 'Red Planet'?" },
+      "choices": [ { "en": "Venus" }, { "en": "Mars" }, { "en": "Jupiter" }, { "en": "Mercury" } ], "answerIndex": 1,
+      "solution": { "en": "Mars is called the Red Planet because iron-oxide (rust) on its surface gives it a reddish colour." } },
+    { "id": "olympiad-science-sample-002", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "human-body", "difficulty": 2, "source": "Sample (Olympiad)",
+      "prompt": { "en": "The number of bones in the adult human body is:" },
+      "choices": [ { "en": "201" }, { "en": "206" }, { "en": "212" }, { "en": "300" } ], "answerIndex": 1,
+      "solution": { "en": "An adult human has 206 bones. A newborn baby has around 300, some of which fuse together during growth." } },
+    { "id": "olympiad-science-sample-003", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "general-science", "difficulty": 1, "source": "Sample (Olympiad)",
+      "prompt": { "en": "The hardest naturally occurring substance is:" },
+      "choices": [ { "en": "Gold" }, { "en": "Iron" }, { "en": "Diamond" }, { "en": "Quartz" } ], "answerIndex": 2,
+      "solution": { "en": "Diamond, a form of carbon, is the hardest naturally occurring substance (10 on the Mohs scale)." } },
+    { "id": "olympiad-science-sample-004", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "human-body", "difficulty": 1, "source": "Sample (Olympiad)",
+      "prompt": { "en": "The 'powerhouse of the cell', where energy is produced, is the:" },
+      "choices": [ { "en": "Nucleus" }, { "en": "Ribosome" }, { "en": "Mitochondrion" }, { "en": "Chloroplast" } ], "answerIndex": 2,
+      "solution": { "en": "The mitochondrion is called the powerhouse of the cell because it produces most of the cell's energy (ATP) through respiration." } },
+    { "id": "olympiad-science-sample-005", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "general-science", "difficulty": 1, "source": "Sample (Olympiad)",
+      "prompt": { "en": "At sea level, pure water boils at a temperature of:" },
+      "choices": [ { "en": "50 °C" }, { "en": "90 °C" }, { "en": "100 °C" }, { "en": "120 °C" } ], "answerIndex": 2,
+      "solution": { "en": "At sea level (1 atmosphere pressure), pure water boils at 100 °C and freezes at 0 °C." } },
+    { "id": "olympiad-science-sample-006", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "general-science", "difficulty": 1, "source": "Sample (Olympiad)",
+      "prompt": { "en": "The gas essential for human respiration, taken in when we breathe, is:" },
+      "choices": [ { "en": "Carbon dioxide" }, { "en": "Nitrogen" }, { "en": "Oxygen" }, { "en": "Hydrogen" } ], "answerIndex": 2,
+      "solution": { "en": "We breathe in oxygen, which cells use in respiration to release energy, and breathe out carbon dioxide as a waste product." } }
+  ]
+}

@@ -50,6 +50,33 @@ export const EXAMS = [
       { id: "current-affairs", label: "Current Affairs", emoji: "🗞️", topics: [] },
     ],
   },
+  {
+    id: "olympiad", label: "Olympiad", emoji: "🏅", category: "competitive",
+    subjects: [
+      { id: "mathematics", label: "Mathematics", emoji: "📐", topics: [] },
+      { id: "science",     label: "Science",     emoji: "🔬", topics: [] },
+      { id: "english",     label: "English",     emoji: "📖", topics: [] },
+    ],
+  },
+  {
+    id: "cbse-10", label: "Class 10 Boards", emoji: "🎓", category: "board",
+    subjects: [
+      { id: "mathematics",    label: "Mathematics",    emoji: "🔢", topics: [] },
+      { id: "science",        label: "Science",        emoji: "🔬", topics: [] },
+      { id: "social-science", label: "Social Science", emoji: "🗺️", topics: [] },
+      { id: "english",        label: "English",        emoji: "📖", topics: [] },
+    ],
+  },
+  {
+    id: "cbse-12", label: "Class 12 Boards", emoji: "🎓", category: "board",
+    subjects: [
+      { id: "physics",     label: "Physics",     emoji: "⚛️", topics: [] },
+      { id: "chemistry",   label: "Chemistry",   emoji: "🧪", topics: [] },
+      { id: "biology",     label: "Biology",     emoji: "🧬", topics: [] },
+      { id: "mathematics", label: "Mathematics", emoji: "📐", topics: [] },
+      { id: "english",     label: "English",     emoji: "📖", topics: [] },
+    ],
+  },
 ];
 
 const TOPIC_LABELS = {
@@ -91,6 +118,35 @@ const TOPIC_LABELS = {
   "indian-geography":          "Indian Geography",
   "physical-geography":        "Physical Geography",
   "world-geography":           "World Geography",
+  "banking":                   "Banking & Finance",
+  "planning":                  "Economic Planning",
+  "economy":                   "Indian Economy",
+  "conservation":              "Conservation",
+  // CBSE Class 10 / 12 boards
+  "chemical-reactions":        "Chemical Reactions",
+  "human-eye":                 "The Human Eye",
+  "life-processes":            "Life Processes",
+  "nationalism-in-india":      "Nationalism in India",
+  "agriculture":               "Agriculture",
+  "democratic-politics":       "Democratic Politics",
+  "money-and-credit":          "Money & Credit",
+  "national-symbols":          "National Symbols",
+  "electrostatics":            "Electrostatics",
+  "electromagnetic-induction": "Electromagnetic Induction",
+  "alternating-current":       "Alternating Current",
+  "electromagnetic-waves":     "Electromagnetic Waves",
+  "solutions":                 "Solutions",
+  "electrochemistry":          "Electrochemistry",
+  "equilibrium":               "Equilibrium",
+  "redox":                     "Redox Reactions",
+  // Olympiad
+  "number-series":             "Number Series",
+  "number-theory":             "Number Theory",
+  "geometry":                  "Geometry",
+  "arithmetic":                "Arithmetic",
+  "astronomy":                 "Astronomy",
+  "human-body":                "Human Body",
+  "general-science":           "General Science",
 };
 
 export function getExam(id) {

@@ -1,0 +1,30 @@
+{
+  "exam": "upsc", "subject": "environment", "draft": true,
+  "note": "SAMPLE questions (source 'Sample (UPSC pattern)'). Replace with verified real PYQs + SME solutions + 13-language translations before shipping.",
+  "questions": [
+    { "id": "upsc-environment-sample-001", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "ecology", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "Which rainforest is often called the 'lungs of the Earth'?" },
+      "choices": [ { "en": "The Sundarbans" }, { "en": "The Amazon rainforest" }, { "en": "The Western Ghats" }, { "en": "The Taiga" } ], "answerIndex": 1,
+      "solution": { "en": "The Amazon rainforest is called the 'lungs of the Earth' because it produces a large share of the world's oxygen and absorbs vast amounts of carbon dioxide." } },
+    { "id": "upsc-environment-sample-002", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "conservation", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "'Project Tiger', India's tiger-conservation programme, was launched in the year:" },
+      "choices": [ { "en": "1973" }, { "en": "1985" }, { "en": "1992" }, { "en": "2005" } ], "answerIndex": 0,
+      "solution": { "en": "Project Tiger was launched in 1973 to protect the Bengal tiger and its habitat through a network of tiger reserves." } },
+    { "id": "upsc-environment-sample-003", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "ecology", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The main greenhouse gas responsible for global warming, released by burning fossil fuels, is:" },
+      "choices": [ { "en": "Oxygen" }, { "en": "Nitrogen" }, { "en": "Carbon dioxide" }, { "en": "Argon" } ], "answerIndex": 2,
+      "solution": { "en": "Carbon dioxide (CO₂) is the principal greenhouse gas from fossil-fuel combustion. Oxygen, nitrogen and argon are not significant greenhouse gases." } },
+    { "id": "upsc-environment-sample-004", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "ecology", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "Depletion of the ozone layer in the stratosphere is caused mainly by:" },
+      "choices": [ { "en": "Carbon dioxide" }, { "en": "Chlorofluorocarbons (CFCs)" }, { "en": "Methane" }, { "en": "Oxygen" } ], "answerIndex": 1,
+      "solution": { "en": "Chlorofluorocarbons (CFCs) release chlorine atoms that destroy ozone molecules, thinning the protective ozone layer. Their use is phased out under the Montreal Protocol." } },
+    { "id": "upsc-environment-sample-005", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "conservation", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The national park in Assam famous for protecting the one-horned rhinoceros is:" },
+      "choices": [ { "en": "Gir National Park" }, { "en": "Jim Corbett National Park" }, { "en": "Kaziranga National Park" }, { "en": "Ranthambore National Park" } ], "answerIndex": 2,
+      "solution": { "en": "Kaziranga National Park in Assam is a UNESCO World Heritage Site home to about two-thirds of the world's one-horned rhinoceroses. Gir is known for the Asiatic lion; Corbett and Ranthambore for tigers." } },
+    { "id": "upsc-environment-sample-006", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "ecology", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "A community of living organisms together with their physical environment, interacting as a system, is called a(n):" },
+      "choices": [ { "en": "Population" }, { "en": "Ecosystem" }, { "en": "Biome only" }, { "en": "Atmosphere" } ], "answerIndex": 1,
+      "solution": { "en": "An ecosystem is a community of interacting organisms (biotic) together with their non-living surroundings (abiotic), through which energy flows and nutrients cycle." } }
+  ]
+}

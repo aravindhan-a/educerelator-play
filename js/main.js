@@ -529,6 +529,7 @@ ALL_CLASSES.forEach(({ num, groupLabel, colorClass }) => {
 
 // ── NEET / JEE / UPSC revision (in-app, parallel to the K-12 loop) ──
 const examGridEl   = document.getElementById("exam-grid");
+const boardGridEl   = document.getElementById("board-grid");
 const examScreenEl  = document.getElementById("exam-screen");
 const examBadgeEl   = document.getElementById("exam-badge");
 const examBodyEl    = document.getElementById("exam-body");
@@ -538,11 +539,12 @@ const EXAM_INTERVALS = [0, 1, 3, 7, 16]; // Leitner box → days
 let exState = { id: null, subject: null, bank: [], queue: [], idx: 0, answered: false, right: 0, total: 0, mode: "all" };
 
 EXAMS.forEach((ex) => {
+  const isBoard = ex.category === "board";
   const btn = document.createElement("button");
-  btn.className = "class-btn exam-btn";
+  btn.className = isBoard ? "class-btn exam-btn board-btn" : "class-btn exam-btn";
   btn.innerHTML = `<span class="class-emoji">${ex.emoji}</span><span class="class-num">${ex.label}</span><span class="class-label">Previous Years</span>`;
   btn.addEventListener("click", () => openExam(ex.id));
-  examGridEl.appendChild(btn);
+  (isBoard ? boardGridEl : examGridEl).appendChild(btn);
 });
 
 const exLoadReview = () => { try { return JSON.parse(localStorage.getItem(EXAM_REVIEW_KEY) || "{}"); } catch { return {}; } };

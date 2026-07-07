@@ -1,0 +1,30 @@
+{
+  "exam": "neet", "subject": "physics", "draft": true,
+  "note": "SAMPLE foundation-level questions (source 'Sample (NEET pattern)'). Replace with verified real PYQs + SME solutions + 13-language translations before shipping.",
+  "questions": [
+    { "id": "neet-physics-sample-001", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "units-measurement", "difficulty": 1, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "The SI unit of power is the:" },
+      "choices": [ { "en": "Joule" }, { "en": "Newton" }, { "en": "Watt" }, { "en": "Pascal" } ], "answerIndex": 2,
+      "solution": { "en": "Power is the rate of doing work, measured in watts (W), where 1 W = 1 J/s. The joule is energy, the newton is force, and the pascal is pressure." } },
+    { "id": "neet-physics-sample-002", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "mechanics", "difficulty": 2, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "A body moving with constant velocity has an acceleration that is:" },
+      "choices": [ { "en": "Zero" }, { "en": "Constant but non-zero" }, { "en": "Continuously increasing" }, { "en": "Equal to g" } ], "answerIndex": 0,
+      "solution": { "en": "Acceleration is the rate of change of velocity. If the velocity is constant, it is not changing, so the acceleration is zero." } },
+    { "id": "neet-physics-sample-003", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "optics", "difficulty": 1, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "The bending of light as it passes from one transparent medium into another is called:" },
+      "choices": [ { "en": "Reflection" }, { "en": "Refraction" }, { "en": "Dispersion" }, { "en": "Diffraction" } ], "answerIndex": 1,
+      "solution": { "en": "Refraction is the change in direction of light when it moves between media of different optical densities (e.g. air to glass), due to a change in its speed." } },
+    { "id": "neet-physics-sample-004", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "electricity", "difficulty": 2, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "Ohm's law relates potential difference (V), current (I) and resistance (R) as:" },
+      "choices": [ { "en": "V = I / R" }, { "en": "V = R / I" }, { "en": "V = I × R" }, { "en": "I = V × R" } ], "answerIndex": 2,
+      "solution": { "en": "Ohm's law states V = IR: the potential difference across a conductor equals the current through it times its resistance (at constant temperature)." } },
+    { "id": "neet-physics-sample-005", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "mechanics", "difficulty": 1, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "The energy possessed by a body because of its motion is called:" },
+      "choices": [ { "en": "Potential energy" }, { "en": "Kinetic energy" }, { "en": "Chemical energy" }, { "en": "Thermal energy" } ], "answerIndex": 1,
+      "solution": { "en": "Kinetic energy is the energy of motion, given by ½mv². Potential energy is energy due to position or configuration." } },
+    { "id": "neet-physics-sample-006", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "mechanics", "difficulty": 2, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "In a vacuum, a feather and a coin dropped from the same height will reach the ground with the same:" },
+      "choices": [ { "en": "Momentum" }, { "en": "Kinetic energy" }, { "en": "Acceleration" }, { "en": "Mass" } ], "answerIndex": 2,
+      "solution": { "en": "In a vacuum there is no air resistance, so all objects fall with the same acceleration (g), regardless of mass, and take the same time to fall. Their momentum and kinetic energy differ because their masses differ." } }
+  ]
+}

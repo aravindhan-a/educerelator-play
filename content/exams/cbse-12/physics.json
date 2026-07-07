@@ -1,0 +1,30 @@
+{
+  "exam": "cbse-12", "subject": "physics", "draft": true,
+  "note": "SAMPLE Class 12 board-pattern questions (source 'Sample (CBSE Class 12)'). Replace with verified real CBSE board PYQs + SME solutions + 13-language translations before shipping.",
+  "questions": [
+    { "id": "cbse-12-physics-sample-001", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "electrostatics", "difficulty": 1, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "The SI unit of electric charge is the:" },
+      "choices": [ { "en": "Ampere" }, { "en": "Coulomb" }, { "en": "Volt" }, { "en": "Farad" } ], "answerIndex": 1,
+      "solution": { "en": "Electric charge is measured in coulombs (C), where 1 C = 1 A·s. The ampere is current, the volt is potential difference, and the farad is capacitance." } },
+    { "id": "cbse-12-physics-sample-002", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "electromagnetic-induction", "difficulty": 2, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "The production of an induced EMF in a coil due to a changing magnetic flux through it is called:" },
+      "choices": [ { "en": "Refraction" }, { "en": "Resonance" }, { "en": "Electromagnetic induction" }, { "en": "Polarisation" } ], "answerIndex": 2,
+      "solution": { "en": "Faraday's law describes electromagnetic induction: a changing magnetic flux through a circuit induces an EMF proportional to the rate of change of flux." } },
+    { "id": "cbse-12-physics-sample-003", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "alternating-current", "difficulty": 1, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "A device used to step up or step down an alternating (AC) voltage is a:" },
+      "choices": [ { "en": "Transformer" }, { "en": "Rectifier" }, { "en": "Capacitor" }, { "en": "Resistor" } ], "answerIndex": 0,
+      "solution": { "en": "A transformer changes AC voltage using electromagnetic induction between two coils. A rectifier converts AC to DC; it cannot step voltage up or down." } },
+    { "id": "cbse-12-physics-sample-004", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "electromagnetic-waves", "difficulty": 2, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "In the electromagnetic spectrum, which of these has the longest wavelength?" },
+      "choices": [ { "en": "Gamma rays" }, { "en": "X-rays" }, { "en": "Visible light" }, { "en": "Radio waves" } ], "answerIndex": 3,
+      "solution": { "en": "Radio waves have the longest wavelength (and lowest frequency). Gamma rays have the shortest wavelength and highest frequency." } },
+    { "id": "cbse-12-physics-sample-005", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "electrostatics", "difficulty": 2, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "According to Coulomb's law, the electrostatic force between two point charges is inversely proportional to the:" },
+      "choices": [ { "en": "Distance between them" }, { "en": "Square of the distance between them" }, { "en": "Cube of the distance between them" }, { "en": "Product of the charges" } ], "answerIndex": 1,
+      "solution": { "en": "Coulomb's law: F = kq₁q₂/r². The force is directly proportional to the product of the charges and inversely proportional to the square of the distance r between them." } },
+    { "id": "cbse-12-physics-sample-006", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "optics", "difficulty": 2, "source": "Sample (CBSE Class 12)",
+      "prompt": { "en": "The type of lens used to correct myopia (short-sightedness) is a:" },
+      "choices": [ { "en": "Convex lens" }, { "en": "Concave lens" }, { "en": "Cylindrical lens" }, { "en": "Bifocal lens" } ], "answerIndex": 1,
+      "solution": { "en": "Myopia (short-sightedness) is corrected with a concave (diverging) lens, which moves the image back onto the retina. Hypermetropia is corrected with a convex lens." } }
+  ]
+}

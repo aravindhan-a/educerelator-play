@@ -1,0 +1,30 @@
+{
+  "exam": "neet", "subject": "chemistry", "draft": true,
+  "note": "SAMPLE foundation-level questions (source 'Sample (NEET pattern)'). Replace with verified real PYQs + SME solutions + 13-language translations before shipping.",
+  "questions": [
+    { "id": "neet-chemistry-sample-001", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "periodic-table", "difficulty": 1, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "The number of protons in the nucleus of an atom is called its:" },
+      "choices": [ { "en": "Mass number" }, { "en": "Atomic number" }, { "en": "Valency" }, { "en": "Atomic mass" } ], "answerIndex": 1,
+      "solution": { "en": "The atomic number equals the number of protons and defines the element. The mass number is protons + neutrons." } },
+    { "id": "neet-chemistry-sample-002", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "inorganic-chemistry", "difficulty": 1, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "Which of the following is a noble (inert) gas?" },
+      "choices": [ { "en": "Oxygen" }, { "en": "Chlorine" }, { "en": "Argon" }, { "en": "Nitrogen" } ], "answerIndex": 2,
+      "solution": { "en": "Argon is a noble gas (Group 18) with a full outer electron shell, making it chemically inert. Oxygen, chlorine and nitrogen are reactive non-metals." } },
+    { "id": "neet-chemistry-sample-003", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "chemical-bonding", "difficulty": 1, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "The valency of carbon is:" },
+      "choices": [ { "en": "2" }, { "en": "3" }, { "en": "4" }, { "en": "6" } ], "answerIndex": 2,
+      "solution": { "en": "Carbon has 4 electrons in its outer shell and forms 4 covalent bonds, so its valency is 4. (6 is its atomic number, a different quantity.)" } },
+    { "id": "neet-chemistry-sample-004", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "physical-chemistry", "difficulty": 1, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "An acid turns blue litmus paper:" },
+      "choices": [ { "en": "Red" }, { "en": "Green" }, { "en": "Yellow" }, { "en": "Blue (no change)" } ], "answerIndex": 0,
+      "solution": { "en": "Acids turn blue litmus red. Bases turn red litmus blue. Litmus is a common acid–base indicator." } },
+    { "id": "neet-chemistry-sample-005", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "periodic-table", "difficulty": 2, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "The most electronegative element in the periodic table is:" },
+      "choices": [ { "en": "Oxygen" }, { "en": "Chlorine" }, { "en": "Fluorine" }, { "en": "Nitrogen" } ], "answerIndex": 2,
+      "solution": { "en": "Fluorine is the most electronegative element (about 4.0 on the Pauling scale), i.e. it attracts bonding electrons most strongly." } },
+    { "id": "neet-chemistry-sample-006", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "inorganic-chemistry", "difficulty": 1, "source": "Sample (NEET pattern)",
+      "prompt": { "en": "The chemical formula of water is:" },
+      "choices": [ { "en": "H₂O₂" }, { "en": "H₂O" }, { "en": "CO₂" }, { "en": "HO" } ], "answerIndex": 1,
+      "solution": { "en": "Water is H₂O — two hydrogen atoms bonded to one oxygen atom. H₂O₂ is hydrogen peroxide and CO₂ is carbon dioxide." } }
+  ]
+}
