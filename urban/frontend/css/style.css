@@ -269,7 +269,10 @@ body {
 .region-label.hidden { display: none; }
 
 /* ── NEET / JEE / UPSC tiles + in-app revision player ── */
-.exam-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 720px; margin: 16px auto 0; }
+.exam-section { max-width: 720px; margin: 32px auto 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.4); padding-top: 22px; }
+.exam-section-title { margin: 0; }
+.exam-section-sub { color: rgba(255,255,255,0.9); font-size: 0.85rem; font-weight: 600; margin: 4px 0 0; text-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+.exam-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; max-width: 720px; margin: 14px auto 0; }
 .exam-btn { background: linear-gradient(135deg, #7c3aed, #a855f7) !important; color: #fff !important; box-shadow: 0 4px 14px rgba(124,58,237,0.35); }
 .exam-btn .class-num { font-size: 1.15rem; letter-spacing: 0.5px; }
 .exam-btn .class-label { opacity: 0.92; }
