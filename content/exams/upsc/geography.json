@@ -1,0 +1,56 @@
+{
+  "exam": "upsc",
+  "subject": "geography",
+  "draft": true,
+  "note": "SAMPLE questions demonstrating the UPSC track. Facts are correct and syllabus-relevant; source = 'Sample (UPSC pattern)'. Replace with verified real PYQs + SME solutions + 13-language translations before shipping; then remove the draft flag.",
+  "questions": [
+    {
+      "id": "upsc-geography-sample-001", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
+      "topic": "indian-geography", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Standard Meridian of India passes through which longitude?" },
+      "choices": [ { "en": "82°30′ E" }, { "en": "77° E" }, { "en": "90° E" }, { "en": "0° (Prime Meridian)" } ],
+      "answerIndex": 0,
+      "solution": { "en": "India's Standard Meridian is 82°30′ E, passing near Mirzapur (Uttar Pradesh); Indian Standard Time is based on it, 5 hours 30 minutes ahead of GMT." }
+    },
+    {
+      "id": "upsc-geography-sample-002", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
+      "topic": "indian-geography", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The longest river in India is the:" },
+      "choices": [ { "en": "Godavari" }, { "en": "Ganga" }, { "en": "Brahmaputra" }, { "en": "Yamuna" } ],
+      "answerIndex": 1,
+      "solution": { "en": "The Ganga is the longest river within India (about 2,525 km). The Godavari is the longest river of peninsular (South) India, sometimes called the 'Dakshina Ganga'." }
+    },
+    {
+      "id": "upsc-geography-sample-003", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
+      "topic": "indian-geography", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The largest state of India by area is:" },
+      "choices": [ { "en": "Madhya Pradesh" }, { "en": "Maharashtra" }, { "en": "Rajasthan" }, { "en": "Uttar Pradesh" } ],
+      "answerIndex": 2,
+      "solution": { "en": "Rajasthan is the largest Indian state by area. Madhya Pradesh is second; Uttar Pradesh is the most populous state, not the largest by area." }
+    },
+    {
+      "id": "upsc-geography-sample-004", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
+      "topic": "indian-geography", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The southernmost tip of the Indian mainland is:" },
+      "choices": [ { "en": "Indira Point" }, { "en": "Kanyakumari" }, { "en": "Rameswaram" }, { "en": "Point Calimere" } ],
+      "answerIndex": 1,
+      "solution": { "en": "Kanyakumari (Cape Comorin) is the southernmost tip of the Indian mainland. Indira Point, in the Andaman & Nicobar Islands, is the southernmost point of the whole of India's territory." }
+    },
+    {
+      "id": "upsc-geography-sample-005", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
+      "topic": "physical-geography", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Himalayas are an example of which type of mountains?" },
+      "choices": [ { "en": "Block mountains" }, { "en": "Volcanic mountains" }, { "en": "Fold mountains" }, { "en": "Residual mountains" } ],
+      "answerIndex": 2,
+      "solution": { "en": "The Himalayas are young fold mountains, formed by the collision of the Indian and Eurasian plates. Block mountains form by faulting; volcanic mountains from lava; residual mountains by erosion of older highlands." }
+    },
+    {
+      "id": "upsc-geography-sample-006", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
+      "topic": "world-geography", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The largest ocean on Earth is the:" },
+      "choices": [ { "en": "Atlantic Ocean" }, { "en": "Indian Ocean" }, { "en": "Arctic Ocean" }, { "en": "Pacific Ocean" } ],
+      "answerIndex": 3,
+      "solution": { "en": "The Pacific Ocean is the largest and deepest ocean, covering about a third of the Earth's surface. The Atlantic is the second largest." }
+    }
+  ]
+}

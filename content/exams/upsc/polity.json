@@ -1,0 +1,56 @@
+{
+  "exam": "upsc",
+  "subject": "polity",
+  "draft": true,
+  "note": "SAMPLE questions demonstrating the UPSC track. Facts are correct and syllabus-relevant; source = 'Sample (UPSC pattern)'. Replace with verified real PYQs + SME solutions + 13-language translations before shipping; then remove the draft flag.",
+  "questions": [
+    {
+      "id": "upsc-polity-sample-001", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
+      "topic": "executive", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The minimum age to be eligible for election as President of India is:" },
+      "choices": [ { "en": "25 years" }, { "en": "30 years" }, { "en": "35 years" }, { "en": "40 years" } ],
+      "answerIndex": 2,
+      "solution": { "en": "A person must have completed 35 years of age to be eligible for the office of President (Article 58). 25 is the minimum for the Lok Sabha, 30 for the Rajya Sabha." }
+    },
+    {
+      "id": "upsc-polity-sample-002", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
+      "topic": "fundamental-rights", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "Which Article of the Constitution of India guarantees 'equality before the law'?" },
+      "choices": [ { "en": "Article 14" }, { "en": "Article 19" }, { "en": "Article 21" }, { "en": "Article 32" } ],
+      "answerIndex": 0,
+      "solution": { "en": "Article 14 guarantees equality before the law and equal protection of the laws. Article 19 covers freedoms, Article 21 the right to life and liberty, and Article 32 the right to constitutional remedies." }
+    },
+    {
+      "id": "upsc-polity-sample-003", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
+      "topic": "fundamental-rights", "difficulty": 2, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "How many Fundamental Rights are currently guaranteed by the Constitution of India?" },
+      "choices": [ { "en": "5" }, { "en": "6" }, { "en": "7" }, { "en": "9" } ],
+      "answerIndex": 1,
+      "solution": { "en": "There are currently 6 Fundamental Rights. Originally there were 7; the Right to Property was removed as a Fundamental Right by the 44th Amendment (1978) and made a legal right under Article 300A." }
+    },
+    {
+      "id": "upsc-polity-sample-004", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
+      "topic": "parliament", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Rajya Sabha is also known as the:" },
+      "choices": [ { "en": "House of the People" }, { "en": "Council of States" }, { "en": "Lower House" }, { "en": "Legislative Assembly" } ],
+      "answerIndex": 1,
+      "solution": { "en": "The Rajya Sabha is the Council of States (the Upper House). The Lok Sabha is the House of the People (the Lower House)." }
+    },
+    {
+      "id": "upsc-polity-sample-005", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
+      "topic": "judiciary", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The Supreme Court of India is located in:" },
+      "choices": [ { "en": "Mumbai" }, { "en": "Kolkata" }, { "en": "New Delhi" }, { "en": "Prayagraj" } ],
+      "answerIndex": 2,
+      "solution": { "en": "The Supreme Court of India sits in New Delhi. (High Courts sit in various state capitals — for example, the Allahabad High Court is in Prayagraj.)" }
+    },
+    {
+      "id": "upsc-polity-sample-006", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
+      "topic": "parliament", "difficulty": 1, "source": "Sample (UPSC pattern)",
+      "prompt": { "en": "The normal term of the Lok Sabha is:" },
+      "choices": [ { "en": "4 years" }, { "en": "5 years" }, { "en": "6 years" }, { "en": "7 years" } ],
+      "answerIndex": 1,
+      "solution": { "en": "The Lok Sabha's normal term is 5 years from the date of its first sitting, unless dissolved earlier. Rajya Sabha members serve 6-year terms and it is a permanent House." }
+    }
+  ]
+}

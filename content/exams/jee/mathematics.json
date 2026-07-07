@@ -1,0 +1,56 @@
+{
+  "exam": "jee",
+  "subject": "mathematics",
+  "draft": true,
+  "note": "SAMPLE foundation-level questions demonstrating the JEE track. Answers are verifiable and syllabus-relevant; source = 'Sample (JEE pattern)'. Replace with verified real PYQs + SME solutions + 13-language translations before shipping; then remove the draft flag.",
+  "questions": [
+    {
+      "id": "jee-mathematics-sample-001", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
+      "topic": "calculus", "difficulty": 1, "source": "Sample (JEE pattern)",
+      "prompt": { "en": "The derivative of sin x with respect to x is:" },
+      "choices": [ { "en": "cos x" }, { "en": "−cos x" }, { "en": "−sin x" }, { "en": "tan x" } ],
+      "answerIndex": 0,
+      "solution": { "en": "d/dx (sin x) = cos x. (For reference, d/dx (cos x) = −sin x.)" }
+    },
+    {
+      "id": "jee-mathematics-sample-002", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
+      "topic": "trigonometry", "difficulty": 1, "source": "Sample (JEE pattern)",
+      "prompt": { "en": "The value of sin 90° is:" },
+      "choices": [ { "en": "0" }, { "en": "1/2" }, { "en": "1" }, { "en": "√3/2" } ],
+      "answerIndex": 2,
+      "solution": { "en": "sin 90° = 1, its maximum value. (sin 0° = 0, sin 30° = 1/2, sin 60° = √3/2.)" }
+    },
+    {
+      "id": "jee-mathematics-sample-003", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
+      "topic": "algebra", "difficulty": 2, "source": "Sample (JEE pattern)",
+      "prompt": { "en": "How many real roots does the equation x² + 1 = 0 have?" },
+      "choices": [ { "en": "2" }, { "en": "1" }, { "en": "0" }, { "en": "Infinitely many" } ],
+      "answerIndex": 2,
+      "solution": { "en": "x² + 1 = 0 gives x² = −1, which has no real solution (a real square is never negative). Its two roots are imaginary: x = ±i." }
+    },
+    {
+      "id": "jee-mathematics-sample-004", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
+      "topic": "calculus", "difficulty": 1, "source": "Sample (JEE pattern)",
+      "prompt": { "en": "The derivative of a constant (for example, of the number 7) is:" },
+      "choices": [ { "en": "0" }, { "en": "1" }, { "en": "7" }, { "en": "x" } ],
+      "answerIndex": 0,
+      "solution": { "en": "The derivative of any constant is 0, because a constant does not change as x changes (its graph is a flat horizontal line with zero slope)." }
+    },
+    {
+      "id": "jee-mathematics-sample-005", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
+      "topic": "coordinate-geometry", "difficulty": 1, "source": "Sample (JEE pattern)",
+      "prompt": { "en": "The slope of the straight line y = 2x + 3 is:" },
+      "choices": [ { "en": "3" }, { "en": "2" }, { "en": "5" }, { "en": "2/3" } ],
+      "answerIndex": 1,
+      "solution": { "en": "For a line in the form y = mx + c, the slope is m. Here m = 2, so the slope is 2 (and 3 is the y-intercept)." }
+    },
+    {
+      "id": "jee-mathematics-sample-006", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
+      "topic": "algebra", "difficulty": 2, "source": "Sample (JEE pattern)",
+      "prompt": { "en": "The sum of the first n natural numbers (1 + 2 + … + n) is:" },
+      "choices": [ { "en": "n(n+1)/2" }, { "en": "n(n−1)/2" }, { "en": "n²" }, { "en": "n(n+1)" } ],
+      "answerIndex": 0,
+      "solution": { "en": "The sum 1 + 2 + … + n equals n(n+1)/2. For example, 1+2+3+4 = 4·5/2 = 10." }
+    }
+  ]
+}
