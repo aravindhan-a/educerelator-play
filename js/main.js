@@ -59,6 +59,10 @@ const CURR_KEY     = "curriculum";
 const GUEST_KEY    = "ecplay_guest";
 const REGION_KEY   = "ecplay_region";   // cached auto-detected region { id, ts }
 const SOUND_KEY    = "ecplay_sound";
+// Payments are OFF until company compliance + GST registration are complete.
+// Flip to true to restore the premium upsell, modal and checkout — no other
+// code changes needed. (Backend endpoints stay deployed but unused.)
+const PAYMENTS_ENABLED = false;
 const API_BASE     = "https://educerelator-backend.vercel.app";
 const REGION_TTL   = 7 * 24 * 60 * 60 * 1000; // re-detect at most weekly
 
@@ -1077,7 +1081,8 @@ function showSessionComplete() {
   // never while a student is struggling.
   const UPSELL_KEY = "ecplay_upsell_last";
   const lastUpsell = parseInt(localStorage.getItem(UPSELL_KEY) || "0");
-  const showUpsell = !isPremiumCached()
+  const showUpsell = PAYMENTS_ENABLED
+    && !isPremiumCached()
     && sessionCorrect >= 5
     && Date.now() - lastUpsell > 24 * 60 * 60 * 1000;
   if (showUpsell) localStorage.setItem(UPSELL_KEY, Date.now());
@@ -1165,6 +1170,18 @@ function closeProfileScreen() {
 function renderProfilePremium() {
   const el = document.getElementById("profile-premium");
   if (!el) return;
+  if (!PAYMENTS_ENABLED) {
+    // Payments paused (compliance + GST pending): no upsell anywhere.
+    el.innerHTML =
+      `<div class="premium-active-card free-card">` +
+        `<span class="premium-card-icon">🎉</span>` +
+        `<div class="premium-card-text">` +
+          `<strong>EC Play is completely free right now</strong>` +
+          `<p>Every class, every subject, every language — no payment needed.</p>` +
+        `</div>` +
+      `</div>`;
+    return;
+  }
   const info = getPremiumInfo();
   const active = info && info.premium && info.expiresAt > Date.now();
   if (active) {
@@ -1265,6 +1282,7 @@ upgradeFromSessionBtn.addEventListener("click", openPremiumModal);
 
 // ── Premium Modal ──
 function openPremiumModal() {
+  if (!PAYMENTS_ENABLED) return; // payments paused until compliance + GST
   if (!currentUser) {
     authModalEl.classList.remove("hidden");
     return;
