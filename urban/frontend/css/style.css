@@ -492,6 +492,7 @@ body {
 }
 .premium-offer-card { background: linear-gradient(135deg, #7c3aed, #a855f7); flex-wrap: wrap; }
 .premium-active-card { background: linear-gradient(135deg, #f59e0b, #f97316); }
+.premium-active-card.free-card { background: linear-gradient(135deg, #10b981, #059669); }
 .premium-card-icon { font-size: 1.6rem; flex-shrink: 0; }
 .premium-card-text { flex: 1; min-width: 150px; }
 .premium-card-text strong { font-size: 1.05rem; display: block; }

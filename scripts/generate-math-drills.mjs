@@ -216,6 +216,7 @@ const TEMPLATES = {
     (r) => { const base=[2,3,5,10][ri(r,0,3)], e = ri(r,2,5); const argn = Math.pow(base,e); return { prompt:`log${sub(base)}(${argn}) = ?`, correct:e, distractors:intDistractors(e,r,{pool:[e+1,e-1,base,argn/base]}) }; },
     (r) => { const keys=Object.keys(IPOW); const k=keys[ri(r,0,keys.length-1)]; const corr=IPOW[k]; return { prompt:`${k} = ?`, correct:corr, distractors:strDistractors(corr, Object.values(IPOW).concat(["i",`${M}i`,"1",`${M}1`]), r) }; },
     (r) => { const a = ri(r,1,5), q = ri(r,2,3), n = ri(r,4,8); const c = a*Math.pow(q,n-1); return { prompt:`GP: ${a}, ${a*q}, ${a*q*q}, … → a${sub(n)} = ?`, correct:c, distractors:intDistractors(c,r,{pool:[a*Math.pow(q,n),a*Math.pow(q,n-2),c+q]}) }; },
+    (r) => { const a = ri(r,2,15), d = ri(r,3,12), n = ri(r,10,20); const c = a+(n-1)*d; return { prompt:`AP: ${a}, ${a+d}, ${a+2*d}, … → a${sub(n)} = ?`, correct:c, distractors:intDistractors(c,r,{pool:[a+n*d,a+(n-2)*d,c+d,c-d]}) }; },
   ],
   12: [ // derivatives, integrals, definite integrals, determinants, limits
     (r) => { const keys=Object.keys(DERIV); const k=keys[ri(r,0,keys.length-1)]; const corr=DERIV[k]; return { prompt:`d/dx(${k}) = ?`, correct:corr, distractors:strDistractors(corr, Object.values(DERIV), r) }; },
