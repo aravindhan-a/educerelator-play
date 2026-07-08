@@ -135,7 +135,8 @@ const TEMPLATES = {
   1: [ // numbers to 20 — addition, subtraction, counting patterns
     (r) => { const a = ri(r,1,10), b = ri(r,1,10); const c = a+b; return { prompt:`${a} + ${b} = ?`, correct:c, distractors:intDistractors(c,r,{pool:[c+1,c-1,a,b]}) }; },
     (r) => { const a = ri(r,2,20), b = ri(r,1,a-1); const c = a-b; return { prompt:`${a} ${M} ${b} = ?`, correct:c, distractors:intDistractors(c,r,{pool:[c+1,c-1,a,b]}) }; },
-    (r) => { const d = ri(r,1,2), a = ri(r,1,6); const s=[a,a+d,a+2*d]; const c=a+3*d; return { prompt:`${s.join(", ")}, ?`, correct:c, distractors:intDistractors(c,r,{pool:[c+1,c-1,c+d]}) }; },
+    (r) => { const a = ri(r,1,6), b = ri(r,1,6), c2 = ri(r,1,6); const s = a+b+c2; return { prompt:`${a} + ${b} + ${c2} = ?`, correct:s, distractors:intDistractors(s,r,{pool:[s+1,s-1,s+2]}) }; },
+    (r) => { const d = ri(r,1,3), a = ri(r,1,8); const s=[a,a+d,a+2*d]; const c=a+3*d; return { prompt:`${s.join(", ")}, ?`, correct:c, distractors:intDistractors(c,r,{pool:[c+1,c-1,c+d]}) }; },
   ],
   2: [ // numbers to 100 — carrying, tables, halves, skip counting
     (r) => { const a = ri(r,11,89), b = ri(r,10,99-a); const c = a+b; return { prompt:`${a} + ${b} = ?`, correct:c, distractors:intDistractors(c,r,{pool:[c+10,c-10,c+1]}) }; },
@@ -270,8 +271,13 @@ for (const cls of CLASSES) {
   grandNew += added.length;
   report.push(`class ${cls}: +${added.length} -> ${existing.length + added.length} total (answer positions ${posCounter.join("/")})`);
   if (!DRY && added.length) {
-    if (data.levels) data.levels.push({ level: `class${cls}-math-drills`, questions: added });
-    else data.questions = existing.concat(added);
+    if (data.levels) {
+      let gen = data.levels.find((l) => l.level === `class${cls}-math-drills`);
+      if (!gen) { gen = { level: `class${cls}-math-drills`, questions: [] }; data.levels.push(gen); }
+      gen.questions.push(...added);
+    } else {
+      data.questions = existing.concat(added);
+    }
     fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
   }
 }
