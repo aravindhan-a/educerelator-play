@@ -161,6 +161,12 @@ body {
   backdrop-filter: blur(4px);
 }
 .home-stat-icon  { font-size: 1rem; }
+/* the streak chip is a real button (tap to share) — keep it looking like a chip */
+button.home-stat-share {
+  font-family: inherit; font-size: inherit; color: inherit; cursor: pointer;
+  transition: transform 0.15s;
+}
+button.home-stat-share:hover { transform: scale(1.05); background: rgba(255,255,255,0.3); }
 .home-stat-value { font-size: 1rem; font-weight: 900; color: #fff; }
 .home-stat-label { font-size: 0.72rem; font-weight: 700; color: rgba(255,255,255,0.75); }
 
@@ -893,6 +899,12 @@ body {
   color: white; border: none; border-radius: 14px;
   padding: 14px 20px; font-weight: 800; font-size: 1rem; cursor: pointer; width: 100%;
   font-family: inherit; box-shadow: 0 4px 12px rgba(5,150,105,0.3);
+}
+.btn-share-streak {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: white; border: none; border-radius: 14px;
+  padding: 14px 20px; font-weight: 800; font-size: 1rem; cursor: pointer; width: 100%;
+  font-family: inherit; box-shadow: 0 4px 12px rgba(245,158,11,0.35);
 }
 .btn-share-app {
   background: rgba(255,255,255,0.9); color: #7c3aed;

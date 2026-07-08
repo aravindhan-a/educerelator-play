@@ -220,20 +220,20 @@
       <p id="time-greeting" class="time-greeting"></p>
       <h2 id="welcome-name" class="welcome-name">Welcome!</h2>
       <div class="home-stats" id="home-stats">
-        <div class="home-stat-chip">
+        <button class="home-stat-chip home-stat-share" id="home-streak-chip" aria-label="Share your day streak">
           <span class="home-stat-icon">🔥</span>
           <span id="home-streak" class="home-stat-value">0</span>
-          <span class="home-stat-label">day streak</span>
-        </div>
+          <span class="home-stat-label">day streak 📤</span>
+        </button>
         <div class="home-stat-chip">
           <span class="home-stat-icon">📝</span>
           <span id="home-stars" class="home-stat-value">0</span>
           <span class="home-stat-label">questions</span>
         </div>
         <div class="home-stat-chip">
-          <span class="home-stat-icon">🎯</span>
-          <span id="home-accuracy" class="home-stat-value">—</span>
-          <span class="home-stat-label">accuracy</span>
+          <span class="home-stat-icon">🏆</span>
+          <span id="home-best-streak" class="home-stat-value">0</span>
+          <span class="home-stat-label">best streak</span>
         </div>
       </div>
     </div>
@@ -346,8 +346,8 @@
         <div class="stat-label">📝 Questions</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value" id="stat-accuracy">—</div>
-        <div class="stat-label">🎯 Accuracy</div>
+        <div class="stat-value" id="stat-best-streak">0</div>
+        <div class="stat-label">🏆 Best Streak</div>
       </div>
     </div>
 
@@ -356,8 +356,8 @@
       <strong id="stat-screen-time">0 min</strong>
     </div>
     <div class="stat-row">
-      <span>🏆 Longest streak</span>
-      <strong id="stat-longest-streak">0 days</strong>
+      <span>🎯 Accuracy</span>
+      <strong id="stat-accuracy">—</strong>
     </div>
 
     <div class="profile-section-title">Last 7 Days</div>
@@ -367,6 +367,7 @@
     <div id="profile-subjects" class="subject-breakdown"></div>
 
     <div class="profile-actions">
+      <button class="btn-share-streak" id="profile-share-streak">🔥 Share My Streak</button>
       <button class="btn-share-score" id="profile-share-score">📤 Share My Progress</button>
       <button class="btn-share-app" id="profile-share-app">🔗 Share EC Play</button>
       <button class="signout-profile-btn" id="signout-btn">Sign Out</button>
