@@ -4,7 +4,7 @@ import { EXAMS, topicLabel } from "../../../content/exams.js";
 import { getNextQuestion } from "./question-bank.js";
 import { checkPremium, isPremiumCached, getPremiumInfo, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
-import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration, effectiveDayStreak } from "./stats.js";
+import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration, effectiveDayStreak, adoptStats } from "./stats.js";
 import { playCorrectChime, playWrongBuzz, playToggleBlip, unlockAudio } from "./sound-fx.js";
 import { drawSessionCard, drawStreakCard, drawReportCard, shareCard } from "./share-cards.js";
 import { playAudio, unlockSpeech } from "../../../shared-lib/audio-player.js";
@@ -308,11 +308,12 @@ function updateWelcomeBanner() {
   document.getElementById("welcome-name").textContent =
     name ? `Hi, ${name.split(" ")[0]}! 👋` : "Welcome! 👋";
 
-  const s   = loadStats();
-  const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : null;
-  document.getElementById("home-streak").textContent  = effectiveDayStreak(s);
-  document.getElementById("home-stars").textContent   = s.totalAnswered || 0;
-  document.getElementById("home-accuracy").textContent = pct !== null ? `${pct}%` : "—";
+  // Deliberately no accuracy here — the home screen celebrates showing up and
+  // playing (streaks, volume), never how often a student is wrong.
+  const s = loadStats();
+  document.getElementById("home-streak").textContent      = effectiveDayStreak(s);
+  document.getElementById("home-stars").textContent       = s.totalAnswered || 0;
+  document.getElementById("home-best-streak").textContent = s.longestDayStreak || 0;
   document.getElementById("home-stats").classList.toggle("hidden", s.totalAnswered === 0);
 
   // Continue bar
@@ -337,6 +338,9 @@ async function startPlayFromContinue(classNum, subject) {
 function syncProgress() {
   if (!currentUser) return;
   const prog = JSON.parse(localStorage.getItem("progress") || '{"skills":{}}');
+  // Stats (streak, totals) ride inside the synced progress object so they
+  // follow the account across devices — Firestore rules already allow it.
+  prog.stats = loadStats();
   saveUserProgress(currentUser.uid, prog);
 }
 
@@ -468,9 +472,16 @@ onAuthChange(async (user) => {
       const hasServerData  = serverProgress && Object.keys(serverProgress.skills || {}).length > 0;
       const local          = loadJSON("progress", () => null);
       const hasLocalData   = local && Object.keys(local.skills || {}).length > 0;
+      // Streak/stats follow the account: adopt the cloud snapshot when it has
+      // seen more play than this device (fresh phone, reinstall, new browser).
+      const cloudStats = serverProgress && serverProgress.stats;
+      if (cloudStats && (cloudStats.totalAnswered || 0) > (loadStats().totalAnswered || 0)) {
+        adoptStats(cloudStats);
+      }
       if (hasServerData) {
         localStorage.setItem("progress", JSON.stringify(serverProgress));
       } else if (hasLocalData) {
+        local.stats = loadStats();
         saveUserProgress(user.uid, local);
       }
     } catch { /* offline */ }
@@ -839,6 +850,7 @@ repeatAudioBtn.addEventListener("click", () => {
 function showClassPicker() {
   clearTimeout(advanceTimer);           // leaving mid-session: no ghost next question
   window.speechSynthesis?.cancel();
+  recordAbandonedScreenTime();
   document.body.classList.remove("focus-mode");
   window.scrollTo(0, 0);
   classPickerEl.classList.remove("hidden");
@@ -853,9 +865,20 @@ function showClassPicker() {
 
 document.getElementById("topbar-brand").addEventListener("click", showClassPicker);
 
+// A student who leaves mid-session still spent that time learning — count it.
+// (Session completion records and nulls sessionStartedAt itself, so this can
+// never double-count.)
+function recordAbandonedScreenTime() {
+  if (sessionStartedAt && !playScreenEl.classList.contains("hidden")) {
+    recordScreenTime(Date.now() - sessionStartedAt);
+    sessionStartedAt = null;
+  }
+}
+
 function showSubjectPicker(classNum) {
   clearTimeout(advanceTimer);
   window.speechSynthesis?.cancel();
+  recordAbandonedScreenTime();
   document.body.classList.remove("focus-mode");
   window.scrollTo(0, 0);
   currentClass = classNum;
@@ -1149,6 +1172,10 @@ async function shareSessionCard() {
 async function shareStreakCard() {
   const s = loadStats();
   const streakNow = effectiveDayStreak(s);
+  if (streakNow === 0) {
+    alert("Play one session today to light your streak 🔥 — then share it!");
+    return;
+  }
   const canvas = await drawStreakCard({ streak: streakNow });
   await shareCard(canvas,
     `🔥 ${streakNow}-day learning streak on EC Play! Learning every single day.`,
@@ -1171,13 +1198,16 @@ async function shareReportCard() {
 
 function shareApp() {
   shareContent(
-    `🌟 EC Play — Free adaptive learning games for Indian students, Class 1–12!\n` +
-    `Questions in 13 languages · Completely FREE →`
+    `🌟 EC Play — adaptive learning games for Indian students, Class 1–12!\n` +
+    `Questions in 13 languages · Free to play →`
   );
 }
 
 document.getElementById("share-score-btn").addEventListener("click", shareSessionCard);
 document.getElementById("milestone-share").addEventListener("click", shareStreakCard);
+// Streak sharing is first-class: from the home chip and the profile, any day.
+document.getElementById("home-streak-chip").addEventListener("click", shareStreakCard);
+document.getElementById("profile-share-streak").addEventListener("click", shareStreakCard);
 
 // ── Profile Screen ──
 function openProfileScreen() {
@@ -1252,13 +1282,15 @@ function renderProfileScreen() {
   // Refresh premium status from the server, then re-render if it changed.
   checkPremium(currentUser).then(() => renderProfilePremium()).catch(() => {});
 
+  // Streaks and volume lead; accuracy is demoted to a small row below —
+  // the founder wants students encouraged to play and try, not graded.
   const s   = loadStats();
   const pct = s.totalAnswered > 0 ? Math.round(s.totalCorrect / s.totalAnswered * 100) : 0;
-  document.getElementById("stat-day-streak").textContent    = effectiveDayStreak(s);
-  document.getElementById("stat-total-q").textContent       = s.totalAnswered || 0;
-  document.getElementById("stat-accuracy").textContent      = s.totalAnswered > 0 ? `${pct}%` : "—";
-  document.getElementById("stat-screen-time").textContent   = formatDuration(s.screenTimeMs || 0);
-  document.getElementById("stat-longest-streak").textContent = `${s.longestDayStreak || 0} days`;
+  document.getElementById("stat-day-streak").textContent  = effectiveDayStreak(s);
+  document.getElementById("stat-total-q").textContent     = s.totalAnswered || 0;
+  document.getElementById("stat-best-streak").textContent = s.longestDayStreak || 0;
+  document.getElementById("stat-screen-time").textContent = formatDuration(s.screenTimeMs || 0);
+  document.getElementById("stat-accuracy").textContent    = s.totalAnswered > 0 ? `${pct}%` : "—";
 
   // 7-day calendar
   const calEl = document.getElementById("profile-calendar");

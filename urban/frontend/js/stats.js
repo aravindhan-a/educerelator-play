@@ -72,6 +72,13 @@ export function recordAnswer({ correct, subject }) {
   return s;
 }
 
+// Adopt a stats snapshot synced from the cloud (see main.js: stats ride inside
+// the synced progress object so streaks follow the account across devices).
+export function adoptStats(snapshot) {
+  if (!snapshot || typeof snapshot !== "object") return;
+  saveStats({ ...defaultStats(), ...snapshot });
+}
+
 export function recordScreenTime(ms) {
   if (ms > 0) {
     const s = loadStats();
