@@ -25,6 +25,22 @@
     { "id": "olympiad-mathematics-sample-006", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "geometry", "difficulty": 1, "source": "Sample (Olympiad)",
       "prompt": { "en": "The sum of the interior angles of a triangle is:" },
       "choices": [ { "en": "90°" }, { "en": "180°" }, { "en": "270°" }, { "en": "360°" } ], "answerIndex": 1,
-      "solution": { "en": "The interior angles of any triangle always add up to 180°." } }
+      "solution": { "en": "The interior angles of any triangle always add up to 180°." } },
+    { "id": "olympiad-mathematics-sample-007", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "geometry", "difficulty": 1, "source": "Sample (Olympiad)",
+      "prompt": { "en": "How many sides does a hexagon have?" },
+      "choices": [ { "en": "5" }, { "en": "6" }, { "en": "7" }, { "en": "8" } ], "answerIndex": 1,
+      "solution": { "en": "A hexagon has 6 sides ('hex' means six). A pentagon has 5, a heptagon 7, and an octagon 8." } },
+    { "id": "olympiad-mathematics-sample-008", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "number-theory", "difficulty": 2, "source": "Sample (Olympiad)",
+      "prompt": { "en": "What is the next prime number after 7?" },
+      "choices": [ { "en": "9" }, { "en": "10" }, { "en": "11" }, { "en": "13" } ], "answerIndex": 2,
+      "solution": { "en": "After 7, the numbers 8, 9 and 10 are all composite; the next prime is 11. (13 is prime too, but it is not the next one.)" } },
+    { "id": "olympiad-mathematics-sample-009", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "arithmetic", "difficulty": 1, "source": "Sample (Olympiad)",
+      "prompt": { "en": "12 × 12 = ?" },
+      "choices": [ { "en": "124" }, { "en": "134" }, { "en": "144" }, { "en": "154" } ], "answerIndex": 2,
+      "solution": { "en": "12 × 12 = 144. This is 12 squared, a perfect square worth memorising." } },
+    { "id": "olympiad-mathematics-sample-010", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "geometry", "difficulty": 2, "source": "Sample (Olympiad)",
+      "prompt": { "en": "The perimeter of a square with side 6 cm is:" },
+      "choices": [ { "en": "12 cm" }, { "en": "24 cm" }, { "en": "30 cm" }, { "en": "36 cm" } ], "answerIndex": 1,
+      "solution": { "en": "Perimeter of a square = 4 × side = 4 × 6 = 24 cm. (36 cm² would be its area, not perimeter.)" } }
   ]
 }
