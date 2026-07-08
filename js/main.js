@@ -533,23 +533,25 @@ ALL_CLASSES.forEach(({ num, groupLabel, colorClass }) => {
 
 // ── NEET / JEE / UPSC revision (in-app, parallel to the K-12 loop) ──
 const examGridEl   = document.getElementById("exam-grid");
-const boardGridEl   = document.getElementById("board-grid");
 const examScreenEl  = document.getElementById("exam-screen");
 const examBadgeEl   = document.getElementById("exam-badge");
 const examBodyEl    = document.getElementById("exam-body");
 const EXAM_REVIEW_KEY = "ecplay_pyq_review";
 const EXAM_DAY = 86400000;
 const EXAM_INTERVALS = [0, 1, 3, 7, 16]; // Leitner box → days
-let exState = { id: null, subject: null, bank: [], queue: [], idx: 0, answered: false, right: 0, total: 0, mode: "all" };
+let exState = { id: null, subject: null, bank: [], queue: [], idx: 0, answered: false, right: 0, total: 0, mode: "all", returnClass: null };
 
+// Board-exam tracks (cbse-10 / cbse-12) live INSIDE their class's subject
+// picker, not on the home screen — only competitive exams get home tiles.
 EXAMS.forEach((ex) => {
-  const isBoard = ex.category === "board";
+  if (ex.category === "board") return;
   const btn = document.createElement("button");
-  btn.className = isBoard ? "class-btn exam-btn board-btn" : "class-btn exam-btn";
+  btn.className = "class-btn exam-btn";
   btn.innerHTML = `<span class="class-emoji">${ex.emoji}</span><span class="class-num">${ex.label}</span><span class="class-label">Previous Years</span>`;
-  btn.addEventListener("click", () => openExam(ex.id));
-  (isBoard ? boardGridEl : examGridEl).appendChild(btn);
+  btn.addEventListener("click", () => openExam(ex.id, null));
+  examGridEl.appendChild(btn);
 });
+const BOARD_EXAM_BY_CLASS = { 10: "cbse-10", 12: "cbse-12" };
 
 const exLoadReview = () => { try { return JSON.parse(localStorage.getItem(EXAM_REVIEW_KEY) || "{}"); } catch { return {}; } };
 const exSaveReview = (r) => localStorage.setItem(EXAM_REVIEW_KEY, JSON.stringify(r));
@@ -583,7 +585,12 @@ function showExamScreen() {
   examScreenEl.classList.remove("hidden");
 }
 
-function openExam(id) {
+// returnClass: when a board track is opened from inside a class's subject
+// picker, Back returns there instead of the home screen. Passing undefined
+// (internal navigation) keeps the current returnClass.
+function openExam(id, returnClass) {
+  if (returnClass !== undefined) exState.returnClass = returnClass;
+  else if (exState.id !== id) exState.returnClass = null;
   exState.id = id;
   const exam = EXAMS.find((e) => e.id === id);
   examBadgeEl.textContent = exam.label;
@@ -713,7 +720,10 @@ function renderExamSummary() {
   examBodyEl.querySelector("#exam-again").addEventListener("click", () => openExam(exState.id));
 }
 
-document.getElementById("exam-back").addEventListener("click", showClassPicker);
+document.getElementById("exam-back").addEventListener("click", () => {
+  if (exState.returnClass) showSubjectPicker(exState.returnClass);
+  else showClassPicker();
+});
 
 // ── continue button ──
 document.getElementById("continue-btn").addEventListener("click", () => {
@@ -860,6 +870,16 @@ function showSubjectPicker(classNum) {
     btn.addEventListener("click", () => startPlay(id));
     subjectGridEl.appendChild(btn);
   });
+
+  // Board-exam revision lives inside its class, alongside the subjects.
+  const boardExamId = BOARD_EXAM_BY_CLASS[classNum];
+  if (boardExamId) {
+    const btn = document.createElement("button");
+    btn.className = "subject-btn board-subject-btn";
+    btn.innerHTML = `<span class="subject-emoji">🎓</span>Board Exam PYQs`;
+    btn.addEventListener("click", () => openExam(boardExamId, classNum));
+    subjectGridEl.appendChild(btn);
+  }
 
   classPickerEl.classList.add("hidden");
   subjectPickerEl.classList.remove("hidden");
@@ -1081,12 +1101,20 @@ function showSessionComplete() {
   // never while a student is struggling.
   const UPSELL_KEY = "ecplay_upsell_last";
   const lastUpsell = parseInt(localStorage.getItem(UPSELL_KEY) || "0");
-  const showUpsell = PAYMENTS_ENABLED
-    && !isPremiumCached()
+  const showUpsell = !isPremiumCached()
     && sessionCorrect >= 5
     && Date.now() - lastUpsell > 24 * 60 * 60 * 1000;
   if (showUpsell) localStorage.setItem(UPSELL_KEY, Date.now());
   upgradeStripEl.classList.toggle("hidden", !showUpsell);
+  if (!PAYMENTS_ENABLED) {
+    // Payments paused: same respectful once-a-day slot, but as an expectation-
+    // setting teaser — no checkout button until compliance + GST are done.
+    const head = upgradeStripEl.querySelector("strong");
+    const body = upgradeStripEl.querySelector("p");
+    if (head) head.textContent = "Premium is coming soon ⚡";
+    if (body) body.textContent = "Fresh AI-generated questions tuned to your level — launching soon. What you play today stays free.";
+    upgradeFromSessionBtn.classList.add("hidden");
+  }
 }
 
 // ── Social Share ──
@@ -1171,13 +1199,13 @@ function renderProfilePremium() {
   const el = document.getElementById("profile-premium");
   if (!el) return;
   if (!PAYMENTS_ENABLED) {
-    // Payments paused (compliance + GST pending): no upsell anywhere.
+    // Payments paused (compliance + GST pending): set expectations, no checkout.
     el.innerHTML =
       `<div class="premium-active-card free-card">` +
-        `<span class="premium-card-icon">🎉</span>` +
+        `<span class="premium-card-icon">⚡</span>` +
         `<div class="premium-card-text">` +
-          `<strong>EC Play is completely free right now</strong>` +
-          `<p>Every class, every subject, every language — no payment needed.</p>` +
+          `<strong>Premium is coming soon</strong>` +
+          `<p>Fresh AI-generated questions, tuned to your level. Everything you use today is free during our launch.</p>` +
         `</div>` +
       `</div>`;
     return;

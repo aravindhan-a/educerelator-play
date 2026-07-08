@@ -275,6 +275,8 @@ body {
 .exam-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 720px; margin: 14px auto 0; }
 .board-grid { grid-template-columns: repeat(2, 1fr); max-width: 380px; }
 .exam-btn.board-btn { background: linear-gradient(135deg, #0ea5e9, #0891b2) !important; box-shadow: 0 4px 14px rgba(14,165,233,0.35); }
+/* board-exam entry inside the class 10/12 subject picker */
+.subject-btn.board-subject-btn { background: linear-gradient(135deg, #0ea5e9, #0891b2); color: #fff; }
 .board-btn .class-num { font-size: 0.92rem; line-height: 1.15; }
 .exam-btn { background: linear-gradient(135deg, #7c3aed, #a855f7) !important; color: #fff !important; box-shadow: 0 4px 14px rgba(124,58,237,0.35); }
 .exam-btn .class-num { font-size: 1.15rem; letter-spacing: 0.5px; }

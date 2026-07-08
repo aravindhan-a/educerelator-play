@@ -25,6 +25,22 @@
     { "id": "olympiad-science-sample-006", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "general-science", "difficulty": 1, "source": "Sample (Olympiad)",
       "prompt": { "en": "The gas essential for human respiration, taken in when we breathe, is:" },
       "choices": [ { "en": "Carbon dioxide" }, { "en": "Nitrogen" }, { "en": "Oxygen" }, { "en": "Hydrogen" } ], "answerIndex": 2,
-      "solution": { "en": "We breathe in oxygen, which cells use in respiration to release energy, and breathe out carbon dioxide as a waste product." } }
+      "solution": { "en": "We breathe in oxygen, which cells use in respiration to release energy, and breathe out carbon dioxide as a waste product." } },
+    { "id": "olympiad-science-sample-007", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "astronomy", "difficulty": 1, "source": "Sample (Olympiad)",
+      "prompt": { "en": "The Sun rises in the:" },
+      "choices": [ { "en": "North" }, { "en": "South" }, { "en": "East" }, { "en": "West" } ], "answerIndex": 2,
+      "solution": { "en": "Because the Earth rotates from west to east, the Sun appears to rise in the east and set in the west." } },
+    { "id": "olympiad-science-sample-008", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "human-body", "difficulty": 1, "source": "Sample (Olympiad)",
+      "prompt": { "en": "Which organ pumps blood around the human body?" },
+      "choices": [ { "en": "Lungs" }, { "en": "Heart" }, { "en": "Brain" }, { "en": "Liver" } ], "answerIndex": 1,
+      "solution": { "en": "The heart is a muscular pump that circulates blood through the body. The lungs add oxygen to the blood, but the heart does the pumping." } },
+    { "id": "olympiad-science-sample-009", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "astronomy", "difficulty": 2, "source": "Sample (Olympiad)",
+      "prompt": { "en": "The largest planet in our solar system is:" },
+      "choices": [ { "en": "Earth" }, { "en": "Saturn" }, { "en": "Jupiter" }, { "en": "Neptune" } ], "answerIndex": 2,
+      "solution": { "en": "Jupiter is the largest planet — more than 1,300 Earths could fit inside it. Saturn is the second largest." } },
+    { "id": "olympiad-science-sample-010", "type": "mcq", "exam": "olympiad", "subject": "science", "year": null, "topic": "general-science", "difficulty": 2, "source": "Sample (Olympiad)",
+      "prompt": { "en": "Which of these materials is attracted by a magnet?" },
+      "choices": [ { "en": "Wood" }, { "en": "Plastic" }, { "en": "Iron" }, { "en": "Glass" } ], "answerIndex": 2,
+      "solution": { "en": "Iron is a magnetic material and is strongly attracted by magnets. Wood, plastic and glass are non-magnetic." } }
   ]
 }
