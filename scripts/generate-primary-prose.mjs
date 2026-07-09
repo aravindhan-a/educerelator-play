@@ -22,11 +22,11 @@ const args = process.argv.slice(2);
 const DRY = args.includes("--dry");
 const TARGET = (() => { const i = args.indexOf("--target"); return i >= 0 ? parseInt(args[i + 1]) : 55; })();
 
-const LANGS = ["en", "hi", "ta", "te", "bn", "mr", "gu", "kn", "ml", "pa", "ur", "or", "ne"];
+export const LANGS = ["en", "hi", "ta", "te", "bn", "mr", "gu", "kn", "ml", "pa", "ur", "or", "ne"];
 
 // ── Curated vocabulary: en + emoji + category + 12-language translations ──
 const V = (en, emoji, cat, tr) => ({ en, emoji, cat, tr });
-const VOCAB = [
+export const VOCAB = [
   // animals
   V("Dog", "🐶", "animal", { hi:"कुत्ता", ta:"நாய்", te:"కుక్క", bn:"কুকুর", mr:"कुत्रा", gu:"કૂતરો", kn:"ನಾಯಿ", ml:"നായ", pa:"ਕੁੱਤਾ", ur:"کتا", or:"କୁକୁର", ne:"कुकुर" }),
   V("Cat", "🐱", "animal", { hi:"बिल्ली", ta:"பூனை", te:"పిల్లి", bn:"বিড়াল", mr:"मांजर", gu:"બિલાડી", kn:"ಬೆಕ್ಕು", ml:"പൂച്ച", pa:"ਬਿੱਲੀ", ur:"بلی", or:"ବିଲେଇ", ne:"बिरालो" }),
@@ -97,7 +97,7 @@ const catPrompt = (cat) => {
 function rng(seed) { return function () { seed |= 0; seed = (seed + 0x6D2B79F5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
 const pick = (r, arr) => arr[Math.floor(r() * arr.length)];
 
-function trObj(word) { const o = { en: word.en }; for (const l of LANGS) if (l !== "en" && word.tr[l]) o[l] = word.tr[l]; return o; }
+export function trObj(word) { const o = { en: word.en }; for (const l of LANGS) if (l !== "en" && word.tr[l]) o[l] = word.tr[l]; return o; }
 
 // place the answer at a rotating index and fill other slots with distractors
 function assemble(correct, distractors, slot) {
@@ -161,6 +161,12 @@ const TASKS = [
   { file: "content/levels/1-evs.json",     cats: ["animal","fruit","body","nature","object"],                    category: true,  prefix: "1-evs-gen" },
 ];
 
+// Only generate when run directly (`node scripts/generate-primary-prose.mjs`);
+// importing this module for its VOCAB has no side effects.
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMain) runClass1();
+
+function runClass1() {
 let grand = 0;
 for (const task of TASKS) {
   const full = path.join(ROOT, task.file);
@@ -181,3 +187,4 @@ for (const task of TASKS) {
 }
 console.log(`\n${DRY ? "[dry] " : ""}Total generated this run: ${grand}`);
 console.log("Verify: node scripts/verify-primary-prose.mjs");
+}
