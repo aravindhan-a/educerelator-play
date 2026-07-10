@@ -19,7 +19,7 @@ const DRY = process.argv.slice(2).includes("--dry");
 
 const V = (en, emoji, cat, tr) => ({ en, emoji, cat, tr });
 // Extra Class-2 vocabulary (kept local so Class 1 output is unaffected).
-const EXTRA = [
+export const EXTRA = [
   V("Parrot", "🦜", "animal", { hi:"तोता", ta:"கிளி", te:"చిలుక", bn:"তোতা", mr:"पोपट", gu:"પોપટ", kn:"ಗಿಳಿ", ml:"തത്ത", pa:"ਤੋਤਾ", ur:"طوطا", or:"ଶୁଆ", ne:"सुगा" }),
   V("Duck", "🦆", "animal", { hi:"बत्तख", ta:"வாத்து", te:"బాతు", bn:"হাঁস", mr:"बदक", gu:"બતક", kn:"ಬಾತುಕೋಳಿ", ml:"താറാവ്", pa:"ਬੱਤਖ", ur:"بطخ", or:"ହଂସ", ne:"हाँस" }),
   V("Frog", "🐸", "animal", { hi:"मेंढक", ta:"தவளை", te:"కప్ప", bn:"ব্যাঙ", mr:"बेडूक", gu:"દેડકો", kn:"ಕಪ್ಪೆ", ml:"തവള", pa:"ਡੱਡੂ", ur:"مینڈک", or:"ବେଙ୍ଗ", ne:"भ्यागुतो" }),
@@ -198,6 +198,9 @@ const TASKS = [
   { file: "content/levels/2-evs.json",     build: buildEvs,     prefix: "2-evs-gen" },
 ];
 
+// Run-guard: importing this module (for EXTRA) must not regenerate Class 2.
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMain) {
 let grand = 0;
 for (const task of TASKS) {
   const full = path.join(ROOT, task.file);
@@ -212,3 +215,4 @@ for (const task of TASKS) {
 }
 console.log(`\n${DRY ? "[dry] " : ""}Total generated: ${grand}`);
 console.log("Verify: node scripts/verify-class2-prose.mjs");
+}
