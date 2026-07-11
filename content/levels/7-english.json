@@ -831,6 +831,1026 @@
         }
       ],
       "answerIndex": 1
+    },
+    {
+      "id": "7-english-gen-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of \"cactus\"?",
+        "hi": "\"cactus\" का बहुवचन क्या है?",
+        "ta": "\"cactus\" இன் பன்மை என்ன?",
+        "te": "\"cactus\" యొక్క బహువచనం ఏమిటి?",
+        "bn": "\"cactus\" এর বহুবচন কী?",
+        "mr": "\"cactus\" चे अनेकवचन काय आहे?",
+        "gu": "\"cactus\" નું બહુવચન શું છે?",
+        "kn": "\"cactus\" ದ ಬಹುವಚನ ಯಾವುದು?",
+        "ml": "\"cactus\" ന്റെ ബഹുവചനം എന്ത്?",
+        "pa": "\"cactus\" ਦਾ ਬਹੁਵਚਨ ਕੀ ਹੈ?",
+        "ur": "\"cactus\" کی جمع کیا ہے؟",
+        "or": "\"cactus\" ର ବହୁବଚନ କ'ଣ?",
+        "ne": "\"cactus\" को बहुवचन के हो?"
+      },
+      "choices": [
+        {
+          "en": "cacti"
+        },
+        {
+          "en": "cactuses"
+        },
+        {
+          "en": "cactii"
+        },
+        {
+          "en": "cactus'"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-gen-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of \"fungus\"?",
+        "hi": "\"fungus\" का बहुवचन क्या है?",
+        "ta": "\"fungus\" இன் பன்மை என்ன?",
+        "te": "\"fungus\" యొక్క బహువచనం ఏమిటి?",
+        "bn": "\"fungus\" এর বহুবচন কী?",
+        "mr": "\"fungus\" चे अनेकवचन काय आहे?",
+        "gu": "\"fungus\" નું બહુવચન શું છે?",
+        "kn": "\"fungus\" ದ ಬಹುವಚನ ಯಾವುದು?",
+        "ml": "\"fungus\" ന്റെ ബഹുവചനം എന്ത്?",
+        "pa": "\"fungus\" ਦਾ ਬਹੁਵਚਨ ਕੀ ਹੈ?",
+        "ur": "\"fungus\" کی جمع کیا ہے؟",
+        "or": "\"fungus\" ର ବହୁବଚନ କ'ଣ?",
+        "ne": "\"fungus\" को बहुवचन के हो?"
+      },
+      "choices": [
+        {
+          "en": "funguses"
+        },
+        {
+          "en": "fungi"
+        },
+        {
+          "en": "fungies"
+        },
+        {
+          "en": "fungus'"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-gen-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of \"radius\"?",
+        "hi": "\"radius\" का बहुवचन क्या है?",
+        "ta": "\"radius\" இன் பன்மை என்ன?",
+        "te": "\"radius\" యొక్క బహువచనం ఏమిటి?",
+        "bn": "\"radius\" এর বহুবচন কী?",
+        "mr": "\"radius\" चे अनेकवचन काय आहे?",
+        "gu": "\"radius\" નું બહુવચન શું છે?",
+        "kn": "\"radius\" ದ ಬಹುವಚನ ಯಾವುದು?",
+        "ml": "\"radius\" ന്റെ ബഹുവചനം എന്ത്?",
+        "pa": "\"radius\" ਦਾ ਬਹੁਵਚਨ ਕੀ ਹੈ?",
+        "ur": "\"radius\" کی جمع کیا ہے؟",
+        "or": "\"radius\" ର ବହୁବଚନ କ'ଣ?",
+        "ne": "\"radius\" को बहुवचन के हो?"
+      },
+      "choices": [
+        {
+          "en": "radiuses"
+        },
+        {
+          "en": "radiusi"
+        },
+        {
+          "en": "radii"
+        },
+        {
+          "en": "radius'"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-english-gen-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of \"nucleus\"?",
+        "hi": "\"nucleus\" का बहुवचन क्या है?",
+        "ta": "\"nucleus\" இன் பன்மை என்ன?",
+        "te": "\"nucleus\" యొక్క బహువచనం ఏమిటి?",
+        "bn": "\"nucleus\" এর বহুবচন কী?",
+        "mr": "\"nucleus\" चे अनेकवचन काय आहे?",
+        "gu": "\"nucleus\" નું બહુવચન શું છે?",
+        "kn": "\"nucleus\" ದ ಬಹುವಚನ ಯಾವುದು?",
+        "ml": "\"nucleus\" ന്റെ ബഹുവചനം എന്ത്?",
+        "pa": "\"nucleus\" ਦਾ ਬਹੁਵਚਨ ਕੀ ਹੈ?",
+        "ur": "\"nucleus\" کی جمع کیا ہے؟",
+        "or": "\"nucleus\" ର ବହୁବଚନ କ'ଣ?",
+        "ne": "\"nucleus\" को बहुवचन के हो?"
+      },
+      "choices": [
+        {
+          "en": "nucleuses"
+        },
+        {
+          "en": "nucleii"
+        },
+        {
+          "en": "nucleus'"
+        },
+        {
+          "en": "nuclei"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "7-english-gen-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"freeze\"?",
+        "hi": "\"freeze\" का भूतकाल क्या है?",
+        "ta": "\"freeze\" இன் இறந்த காலம் என்ன?",
+        "te": "\"freeze\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"freeze\" এর অতীত কাল কী?",
+        "mr": "\"freeze\" चा भूतकाळ काय आहे?",
+        "gu": "\"freeze\" નો ભૂતકાળ શું છે?",
+        "kn": "\"freeze\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"freeze\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"freeze\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"freeze\" کا ماضی کیا ہے؟",
+        "or": "\"freeze\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"freeze\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "froze"
+        },
+        {
+          "en": "freezed"
+        },
+        {
+          "en": "frozen"
+        },
+        {
+          "en": "freezes"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-gen-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"steal\"?",
+        "hi": "\"steal\" का भूतकाल क्या है?",
+        "ta": "\"steal\" இன் இறந்த காலம் என்ன?",
+        "te": "\"steal\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"steal\" এর অতীত কাল কী?",
+        "mr": "\"steal\" चा भूतकाळ काय आहे?",
+        "gu": "\"steal\" નો ભૂતકાળ શું છે?",
+        "kn": "\"steal\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"steal\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"steal\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"steal\" کا ماضی کیا ہے؟",
+        "or": "\"steal\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"steal\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "stealed"
+        },
+        {
+          "en": "stole"
+        },
+        {
+          "en": "stolen"
+        },
+        {
+          "en": "steals"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-gen-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"wear\"?",
+        "hi": "\"wear\" का भूतकाल क्या है?",
+        "ta": "\"wear\" இன் இறந்த காலம் என்ன?",
+        "te": "\"wear\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"wear\" এর অতীত কাল কী?",
+        "mr": "\"wear\" चा भूतकाळ काय आहे?",
+        "gu": "\"wear\" નો ભૂતકાળ શું છે?",
+        "kn": "\"wear\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"wear\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"wear\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"wear\" کا ماضی کیا ہے؟",
+        "or": "\"wear\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"wear\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "weared"
+        },
+        {
+          "en": "worn"
+        },
+        {
+          "en": "wore"
+        },
+        {
+          "en": "wears"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-english-gen-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"throw\"?",
+        "hi": "\"throw\" का भूतकाल क्या है?",
+        "ta": "\"throw\" இன் இறந்த காலம் என்ன?",
+        "te": "\"throw\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"throw\" এর অতীত কাল কী?",
+        "mr": "\"throw\" चा भूतकाळ काय आहे?",
+        "gu": "\"throw\" નો ભૂતકાળ શું છે?",
+        "kn": "\"throw\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"throw\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"throw\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"throw\" کا ماضی کیا ہے؟",
+        "or": "\"throw\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"throw\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "throwed"
+        },
+        {
+          "en": "thrown"
+        },
+        {
+          "en": "throws"
+        },
+        {
+          "en": "threw"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "7-english-gen-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"draw\"?",
+        "hi": "\"draw\" का भूतकाल क्या है?",
+        "ta": "\"draw\" இன் இறந்த காலம் என்ன?",
+        "te": "\"draw\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"draw\" এর অতীত কাল কী?",
+        "mr": "\"draw\" चा भूतकाळ काय आहे?",
+        "gu": "\"draw\" નો ભૂતકાળ શું છે?",
+        "kn": "\"draw\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"draw\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"draw\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"draw\" کا ماضی کیا ہے؟",
+        "or": "\"draw\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"draw\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "drew"
+        },
+        {
+          "en": "drawed"
+        },
+        {
+          "en": "drawn"
+        },
+        {
+          "en": "draws"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-gen-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"bite\"?",
+        "hi": "\"bite\" का भूतकाल क्या है?",
+        "ta": "\"bite\" இன் இறந்த காலம் என்ன?",
+        "te": "\"bite\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"bite\" এর অতীত কাল কী?",
+        "mr": "\"bite\" चा भूतकाळ काय आहे?",
+        "gu": "\"bite\" નો ભૂતકાળ શું છે?",
+        "kn": "\"bite\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"bite\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"bite\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"bite\" کا ماضی کیا ہے؟",
+        "or": "\"bite\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"bite\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "bited"
+        },
+        {
+          "en": "bit"
+        },
+        {
+          "en": "bitten"
+        },
+        {
+          "en": "bites"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-gen-011",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"generous\"?",
+        "hi": "\"generous\" का विलोम क्या है?",
+        "ta": "\"generous\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"generous\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"generous\" এর বিপরীত শব্দ কী?",
+        "mr": "\"generous\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"generous\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"generous\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"generous\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"generous\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"generous\" کا متضاد کیا ہے؟",
+        "or": "\"generous\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"generous\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "humble"
+        },
+        {
+          "en": "fertile"
+        },
+        {
+          "en": "selfish"
+        },
+        {
+          "en": "supply"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-english-gen-012",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"humble\"?",
+        "hi": "\"humble\" का विलोम क्या है?",
+        "ta": "\"humble\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"humble\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"humble\" এর বিপরীত শব্দ কী?",
+        "mr": "\"humble\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"humble\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"humble\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"humble\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"humble\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"humble\" کا متضاد کیا ہے؟",
+        "or": "\"humble\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"humble\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "fertile"
+        },
+        {
+          "en": "urban"
+        },
+        {
+          "en": "profit"
+        },
+        {
+          "en": "proud"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "7-english-gen-013",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"transparent\"?",
+        "hi": "\"transparent\" का विलोम क्या है?",
+        "ta": "\"transparent\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"transparent\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"transparent\" এর বিপরীত শব্দ কী?",
+        "mr": "\"transparent\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"transparent\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"transparent\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"transparent\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"transparent\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"transparent\" کا متضاد کیا ہے؟",
+        "or": "\"transparent\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"transparent\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "opaque"
+        },
+        {
+          "en": "urban"
+        },
+        {
+          "en": "generous"
+        },
+        {
+          "en": "import"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-gen-014",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"vertical\"?",
+        "hi": "\"vertical\" का विलोम क्या है?",
+        "ta": "\"vertical\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"vertical\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"vertical\" এর বিপরীত শব্দ কী?",
+        "mr": "\"vertical\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"vertical\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"vertical\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"vertical\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"vertical\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"vertical\" کا متضاد کیا ہے؟",
+        "or": "\"vertical\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"vertical\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "liquid"
+        },
+        {
+          "en": "horizontal"
+        },
+        {
+          "en": "profit"
+        },
+        {
+          "en": "transparent"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-gen-015",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"fertile\"?",
+        "hi": "\"fertile\" का विलोम क्या है?",
+        "ta": "\"fertile\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"fertile\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"fertile\" এর বিপরীত শব্দ কী?",
+        "mr": "\"fertile\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"fertile\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"fertile\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"fertile\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"fertile\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"fertile\" کا متضاد کیا ہے؟",
+        "or": "\"fertile\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"fertile\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "humble"
+        },
+        {
+          "en": "rural"
+        },
+        {
+          "en": "barren"
+        },
+        {
+          "en": "horizontal"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-english-gen-016",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"liquid\"?",
+        "hi": "\"liquid\" का विलोम क्या है?",
+        "ta": "\"liquid\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"liquid\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"liquid\" এর বিপরীত শব্দ কী?",
+        "mr": "\"liquid\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"liquid\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"liquid\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"liquid\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"liquid\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"liquid\" کا متضاد کیا ہے؟",
+        "or": "\"liquid\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"liquid\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "transparent"
+        },
+        {
+          "en": "proud"
+        },
+        {
+          "en": "demand"
+        },
+        {
+          "en": "solid"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "7-english-gen-017",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"urban\"?",
+        "hi": "\"urban\" का विलोम क्या है?",
+        "ta": "\"urban\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"urban\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"urban\" এর বিপরীত শব্দ কী?",
+        "mr": "\"urban\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"urban\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"urban\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"urban\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"urban\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"urban\" کا متضاد کیا ہے؟",
+        "or": "\"urban\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"urban\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "rural"
+        },
+        {
+          "en": "generous"
+        },
+        {
+          "en": "solid"
+        },
+        {
+          "en": "loss"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-gen-018",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"import\"?",
+        "hi": "\"import\" का विलोम क्या है?",
+        "ta": "\"import\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"import\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"import\" এর বিপরীত শব্দ কী?",
+        "mr": "\"import\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"import\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"import\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"import\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"import\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"import\" کا متضاد کیا ہے؟",
+        "or": "\"import\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"import\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "demand"
+        },
+        {
+          "en": "export"
+        },
+        {
+          "en": "opaque"
+        },
+        {
+          "en": "generous"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-gen-019",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"profit\"?",
+        "hi": "\"profit\" का विलोम क्या है?",
+        "ta": "\"profit\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"profit\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"profit\" এর বিপরীত শব্দ কী?",
+        "mr": "\"profit\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"profit\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"profit\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"profit\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"profit\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"profit\" کا متضاد کیا ہے؟",
+        "or": "\"profit\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"profit\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "generous"
+        },
+        {
+          "en": "transparent"
+        },
+        {
+          "en": "loss"
+        },
+        {
+          "en": "rural"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-english-gen-020",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"demand\"?",
+        "hi": "\"demand\" का विलोम क्या है?",
+        "ta": "\"demand\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"demand\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"demand\" এর বিপরীত শব্দ কী?",
+        "mr": "\"demand\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"demand\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"demand\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"demand\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"demand\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"demand\" کا متضاد کیا ہے؟",
+        "or": "\"demand\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"demand\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "humble"
+        },
+        {
+          "en": "opaque"
+        },
+        {
+          "en": "loss"
+        },
+        {
+          "en": "supply"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "7-english-gen-021",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"brave\"?",
+        "hi": "कौन सा शब्द \"brave\" के समान अर्थ रखता है?",
+        "ta": "\"brave\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"brave\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"brave\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"brave\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"brave\" જેવો છે?",
+        "kn": "\"brave\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"brave\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"brave\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"brave\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"brave\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"brave\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "valiant"
+        },
+        {
+          "en": "ancient"
+        },
+        {
+          "en": "important"
+        },
+        {
+          "en": "honest"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-gen-022",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"honest\"?",
+        "hi": "कौन सा शब्द \"honest\" के समान अर्थ रखता है?",
+        "ta": "\"honest\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"honest\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"honest\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"honest\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"honest\" જેવો છે?",
+        "kn": "\"honest\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"honest\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"honest\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"honest\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"honest\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"honest\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "famous"
+        },
+        {
+          "en": "truthful"
+        },
+        {
+          "en": "ancient"
+        },
+        {
+          "en": "fast"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-gen-023",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"ancient\"?",
+        "hi": "कौन सा शब्द \"ancient\" के समान अर्थ रखता है?",
+        "ta": "\"ancient\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"ancient\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"ancient\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"ancient\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"ancient\" જેવો છે?",
+        "kn": "\"ancient\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"ancient\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"ancient\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"ancient\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"ancient\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"ancient\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "famous"
+        },
+        {
+          "en": "strange"
+        },
+        {
+          "en": "antique"
+        },
+        {
+          "en": "fast"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-english-gen-024",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"famous\"?",
+        "hi": "कौन सा शब्द \"famous\" के समान अर्थ रखता है?",
+        "ta": "\"famous\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"famous\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"famous\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"famous\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"famous\" જેવો છે?",
+        "kn": "\"famous\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"famous\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"famous\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"famous\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"famous\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"famous\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "important"
+        },
+        {
+          "en": "strange"
+        },
+        {
+          "en": "difficult"
+        },
+        {
+          "en": "renowned"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "7-english-gen-025",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"difficult\"?",
+        "hi": "कौन सा शब्द \"difficult\" के समान अर्थ रखता है?",
+        "ta": "\"difficult\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"difficult\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"difficult\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"difficult\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"difficult\" જેવો છે?",
+        "kn": "\"difficult\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"difficult\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"difficult\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"difficult\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"difficult\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"difficult\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "challenging"
+        },
+        {
+          "en": "strong"
+        },
+        {
+          "en": "honest"
+        },
+        {
+          "en": "brave"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-gen-026",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"strange\"?",
+        "hi": "कौन सा शब्द \"strange\" के समान अर्थ रखता है?",
+        "ta": "\"strange\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"strange\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"strange\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"strange\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"strange\" જેવો છે?",
+        "kn": "\"strange\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"strange\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"strange\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"strange\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"strange\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"strange\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "difficult"
+        },
+        {
+          "en": "peculiar"
+        },
+        {
+          "en": "strong"
+        },
+        {
+          "en": "brave"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "7-english-gen-027",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"important\"?",
+        "hi": "कौन सा शब्द \"important\" के समान अर्थ रखता है?",
+        "ta": "\"important\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"important\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"important\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"important\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"important\" જેવો છે?",
+        "kn": "\"important\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"important\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"important\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"important\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"important\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"important\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "famous"
+        },
+        {
+          "en": "fast"
+        },
+        {
+          "en": "significant"
+        },
+        {
+          "en": "ancient"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "7-english-gen-028",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"strong\"?",
+        "hi": "कौन सा शब्द \"strong\" के समान अर्थ रखता है?",
+        "ta": "\"strong\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"strong\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"strong\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"strong\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"strong\" જેવો છે?",
+        "kn": "\"strong\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"strong\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"strong\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"strong\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"strong\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"strong\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "difficult"
+        },
+        {
+          "en": "brave"
+        },
+        {
+          "en": "strange"
+        },
+        {
+          "en": "powerful"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "7-english-gen-029",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"fast\"?",
+        "hi": "कौन सा शब्द \"fast\" के समान अर्थ रखता है?",
+        "ta": "\"fast\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"fast\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"fast\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"fast\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"fast\" જેવો છે?",
+        "kn": "\"fast\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"fast\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"fast\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"fast\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"fast\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"fast\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "swift"
+        },
+        {
+          "en": "strong"
+        },
+        {
+          "en": "famous"
+        },
+        {
+          "en": "brave"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "7-english-gen-030",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"kind\"?",
+        "hi": "कौन सा शब्द \"kind\" के समान अर्थ रखता है?",
+        "ta": "\"kind\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"kind\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"kind\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"kind\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"kind\" જેવો છે?",
+        "kn": "\"kind\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"kind\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"kind\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"kind\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"kind\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"kind\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "honest"
+        },
+        {
+          "en": "compassionate"
+        },
+        {
+          "en": "ancient"
+        },
+        {
+          "en": "famous"
+        }
+      ],
+      "answerIndex": 1
     }
   ]
 }

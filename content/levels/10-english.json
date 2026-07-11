@@ -831,6 +831,1026 @@
         }
       ],
       "answerIndex": 3
+    },
+    {
+      "id": "10-english-gen-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"bear\"?",
+        "hi": "\"bear\" का भूतकाल क्या है?",
+        "ta": "\"bear\" இன் இறந்த காலம் என்ன?",
+        "te": "\"bear\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"bear\" এর অতীত কাল কী?",
+        "mr": "\"bear\" चा भूतकाळ काय आहे?",
+        "gu": "\"bear\" નો ભૂતકાળ શું છે?",
+        "kn": "\"bear\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"bear\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"bear\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"bear\" کا ماضی کیا ہے؟",
+        "or": "\"bear\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"bear\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "bore"
+        },
+        {
+          "en": "beared"
+        },
+        {
+          "en": "borne"
+        },
+        {
+          "en": "bears"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-english-gen-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"tear\"?",
+        "hi": "\"tear\" का भूतकाल क्या है?",
+        "ta": "\"tear\" இன் இறந்த காலம் என்ன?",
+        "te": "\"tear\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"tear\" এর অতীত কাল কী?",
+        "mr": "\"tear\" चा भूतकाळ काय आहे?",
+        "gu": "\"tear\" નો ભૂતકાળ શું છે?",
+        "kn": "\"tear\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"tear\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"tear\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"tear\" کا ماضی کیا ہے؟",
+        "or": "\"tear\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"tear\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "teared"
+        },
+        {
+          "en": "tore"
+        },
+        {
+          "en": "torn"
+        },
+        {
+          "en": "tears"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-gen-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"weave\"?",
+        "hi": "\"weave\" का भूतकाल क्या है?",
+        "ta": "\"weave\" இன் இறந்த காலம் என்ன?",
+        "te": "\"weave\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"weave\" এর অতীত কাল কী?",
+        "mr": "\"weave\" चा भूतकाळ काय आहे?",
+        "gu": "\"weave\" નો ભૂતકાળ શું છે?",
+        "kn": "\"weave\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"weave\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"weave\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"weave\" کا ماضی کیا ہے؟",
+        "or": "\"weave\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"weave\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "weaved"
+        },
+        {
+          "en": "woven"
+        },
+        {
+          "en": "wove"
+        },
+        {
+          "en": "weaves"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-english-gen-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"tread\"?",
+        "hi": "\"tread\" का भूतकाल क्या है?",
+        "ta": "\"tread\" இன் இறந்த காலம் என்ன?",
+        "te": "\"tread\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"tread\" এর অতীত কাল কী?",
+        "mr": "\"tread\" चा भूतकाळ काय आहे?",
+        "gu": "\"tread\" નો ભૂતકાળ શું છે?",
+        "kn": "\"tread\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"tread\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"tread\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"tread\" کا ماضی کیا ہے؟",
+        "or": "\"tread\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"tread\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "treaded"
+        },
+        {
+          "en": "trodden"
+        },
+        {
+          "en": "treads"
+        },
+        {
+          "en": "trod"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "10-english-gen-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"forbid\"?",
+        "hi": "\"forbid\" का भूतकाल क्या है?",
+        "ta": "\"forbid\" இன் இறந்த காலம் என்ன?",
+        "te": "\"forbid\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"forbid\" এর অতীত কাল কী?",
+        "mr": "\"forbid\" चा भूतकाळ काय आहे?",
+        "gu": "\"forbid\" નો ભૂતકાળ શું છે?",
+        "kn": "\"forbid\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"forbid\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"forbid\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"forbid\" کا ماضی کیا ہے؟",
+        "or": "\"forbid\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"forbid\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "forbade"
+        },
+        {
+          "en": "forbidded"
+        },
+        {
+          "en": "forbidden"
+        },
+        {
+          "en": "forbids"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-english-gen-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the past tense of \"slay\"?",
+        "hi": "\"slay\" का भूतकाल क्या है?",
+        "ta": "\"slay\" இன் இறந்த காலம் என்ன?",
+        "te": "\"slay\" యొక్క భూతకాలం ఏమిటి?",
+        "bn": "\"slay\" এর অতীত কাল কী?",
+        "mr": "\"slay\" चा भूतकाळ काय आहे?",
+        "gu": "\"slay\" નો ભૂતકાળ શું છે?",
+        "kn": "\"slay\" ದ ಭೂತಕಾಲ ಯಾವುದು?",
+        "ml": "\"slay\" ന്റെ ഭൂതകാലം എന്ത്?",
+        "pa": "\"slay\" ਦਾ ਭੂਤਕਾਲ ਕੀ ਹੈ?",
+        "ur": "\"slay\" کا ماضی کیا ہے؟",
+        "or": "\"slay\" ର ଅତୀତ କାଳ କ'ଣ?",
+        "ne": "\"slay\" को भूतकाल के हो?"
+      },
+      "choices": [
+        {
+          "en": "slayed"
+        },
+        {
+          "en": "slew"
+        },
+        {
+          "en": "slain"
+        },
+        {
+          "en": "slays"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-gen-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"candid\"?",
+        "hi": "\"candid\" का विलोम क्या है?",
+        "ta": "\"candid\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"candid\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"candid\" এর বিপরীত শব্দ কী?",
+        "mr": "\"candid\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"candid\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"candid\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"candid\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"candid\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"candid\" کا متضاد کیا ہے؟",
+        "or": "\"candid\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"candid\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "accept"
+        },
+        {
+          "en": "lucid"
+        },
+        {
+          "en": "evasive"
+        },
+        {
+          "en": "prosperity"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-english-gen-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"diligent\"?",
+        "hi": "\"diligent\" का विलोम क्या है?",
+        "ta": "\"diligent\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"diligent\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"diligent\" এর বিপরীত শব্দ কী?",
+        "mr": "\"diligent\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"diligent\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"diligent\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"diligent\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"diligent\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"diligent\" کا متضاد کیا ہے؟",
+        "or": "\"diligent\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"diligent\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "virtue"
+        },
+        {
+          "en": "pessimism"
+        },
+        {
+          "en": "adversity"
+        },
+        {
+          "en": "lazy"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "10-english-gen-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"humane\"?",
+        "hi": "\"humane\" का विलोम क्या है?",
+        "ta": "\"humane\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"humane\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"humane\" এর বিপরীত শব্দ কী?",
+        "mr": "\"humane\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"humane\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"humane\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"humane\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"humane\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"humane\" کا متضاد کیا ہے؟",
+        "or": "\"humane\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"humane\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "cruel"
+        },
+        {
+          "en": "candid"
+        },
+        {
+          "en": "evasive"
+        },
+        {
+          "en": "accept"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-english-gen-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"lucid\"?",
+        "hi": "\"lucid\" का विलोम क्या है?",
+        "ta": "\"lucid\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"lucid\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"lucid\" এর বিপরীত শব্দ কী?",
+        "mr": "\"lucid\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"lucid\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"lucid\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"lucid\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"lucid\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"lucid\" کا متضاد کیا ہے؟",
+        "or": "\"lucid\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"lucid\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "candid"
+        },
+        {
+          "en": "obscure"
+        },
+        {
+          "en": "cruel"
+        },
+        {
+          "en": "compress"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-gen-011",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"prosperity\"?",
+        "hi": "\"prosperity\" का विलोम क्या है?",
+        "ta": "\"prosperity\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"prosperity\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"prosperity\" এর বিপরীত শব্দ কী?",
+        "mr": "\"prosperity\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"prosperity\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"prosperity\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"prosperity\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"prosperity\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"prosperity\" کا متضاد کیا ہے؟",
+        "or": "\"prosperity\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"prosperity\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "cruel"
+        },
+        {
+          "en": "decline"
+        },
+        {
+          "en": "adversity"
+        },
+        {
+          "en": "lucid"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-english-gen-012",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"virtue\"?",
+        "hi": "\"virtue\" का विलोम क्या है?",
+        "ta": "\"virtue\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"virtue\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"virtue\" এর বিপরীত শব্দ কী?",
+        "mr": "\"virtue\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"virtue\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"virtue\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"virtue\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"virtue\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"virtue\" کا متضاد کیا ہے؟",
+        "or": "\"virtue\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"virtue\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "candid"
+        },
+        {
+          "en": "evasive"
+        },
+        {
+          "en": "diligent"
+        },
+        {
+          "en": "vice"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "10-english-gen-013",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"optimism\"?",
+        "hi": "\"optimism\" का विलोम क्या है?",
+        "ta": "\"optimism\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"optimism\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"optimism\" এর বিপরীত শব্দ কী?",
+        "mr": "\"optimism\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"optimism\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"optimism\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"optimism\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"optimism\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"optimism\" کا متضاد کیا ہے؟",
+        "or": "\"optimism\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"optimism\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "pessimism"
+        },
+        {
+          "en": "virtue"
+        },
+        {
+          "en": "ally"
+        },
+        {
+          "en": "accept"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-english-gen-014",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"expand\"?",
+        "hi": "\"expand\" का विलोम क्या है?",
+        "ta": "\"expand\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"expand\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"expand\" এর বিপরীত শব্দ কী?",
+        "mr": "\"expand\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"expand\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"expand\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"expand\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"expand\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"expand\" کا متضاد کیا ہے؟",
+        "or": "\"expand\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"expand\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "diligent"
+        },
+        {
+          "en": "compress"
+        },
+        {
+          "en": "accept"
+        },
+        {
+          "en": "cruel"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-gen-015",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"accept\"?",
+        "hi": "\"accept\" का विलोम क्या है?",
+        "ta": "\"accept\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"accept\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"accept\" এর বিপরীত শব্দ কী?",
+        "mr": "\"accept\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"accept\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"accept\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"accept\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"accept\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"accept\" کا متضاد کیا ہے؟",
+        "or": "\"accept\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"accept\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "cruel"
+        },
+        {
+          "en": "adversity"
+        },
+        {
+          "en": "decline"
+        },
+        {
+          "en": "pessimism"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-english-gen-016",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"ally\"?",
+        "hi": "\"ally\" का विलोम क्या है?",
+        "ta": "\"ally\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"ally\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"ally\" এর বিপরীত শব্দ কী?",
+        "mr": "\"ally\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"ally\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"ally\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"ally\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"ally\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"ally\" کا متضاد کیا ہے؟",
+        "or": "\"ally\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"ally\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "evasive"
+        },
+        {
+          "en": "vice"
+        },
+        {
+          "en": "cruel"
+        },
+        {
+          "en": "enemy"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "10-english-gen-017",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"adversary\"?",
+        "hi": "कौन सा शब्द \"adversary\" के समान अर्थ रखता है?",
+        "ta": "\"adversary\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"adversary\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"adversary\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"adversary\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"adversary\" જેવો છે?",
+        "kn": "\"adversary\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"adversary\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"adversary\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"adversary\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"adversary\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"adversary\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "opponent"
+        },
+        {
+          "en": "abundant"
+        },
+        {
+          "en": "novice"
+        },
+        {
+          "en": "meticulous"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-english-gen-018",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"candid\"?",
+        "hi": "कौन सा शब्द \"candid\" के समान अर्थ रखता है?",
+        "ta": "\"candid\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"candid\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"candid\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"candid\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"candid\" જેવો છે?",
+        "kn": "\"candid\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"candid\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"candid\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"candid\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"candid\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"candid\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "lucid"
+        },
+        {
+          "en": "frank"
+        },
+        {
+          "en": "adversary"
+        },
+        {
+          "en": "prudent"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-gen-019",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"frugal\"?",
+        "hi": "कौन सा शब्द \"frugal\" के समान अर्थ रखता है?",
+        "ta": "\"frugal\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"frugal\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"frugal\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"frugal\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"frugal\" જેવો છે?",
+        "kn": "\"frugal\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"frugal\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"frugal\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"frugal\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"frugal\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"frugal\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "resilient"
+        },
+        {
+          "en": "prudent"
+        },
+        {
+          "en": "thrifty"
+        },
+        {
+          "en": "novice"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-english-gen-020",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"meticulous\"?",
+        "hi": "कौन सा शब्द \"meticulous\" के समान अर्थ रखता है?",
+        "ta": "\"meticulous\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"meticulous\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"meticulous\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"meticulous\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"meticulous\" જેવો છે?",
+        "kn": "\"meticulous\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"meticulous\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"meticulous\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"meticulous\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"meticulous\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"meticulous\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "lucid"
+        },
+        {
+          "en": "frugal"
+        },
+        {
+          "en": "novice"
+        },
+        {
+          "en": "careful"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "10-english-gen-021",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"novice\"?",
+        "hi": "कौन सा शब्द \"novice\" के समान अर्थ रखता है?",
+        "ta": "\"novice\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"novice\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"novice\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"novice\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"novice\" જેવો છે?",
+        "kn": "\"novice\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"novice\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"novice\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"novice\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"novice\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"novice\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "beginner"
+        },
+        {
+          "en": "obstinate"
+        },
+        {
+          "en": "meticulous"
+        },
+        {
+          "en": "frugal"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-english-gen-022",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"obstinate\"?",
+        "hi": "कौन सा शब्द \"obstinate\" के समान अर्थ रखता है?",
+        "ta": "\"obstinate\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"obstinate\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"obstinate\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"obstinate\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"obstinate\" જેવો છે?",
+        "kn": "\"obstinate\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"obstinate\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"obstinate\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"obstinate\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"obstinate\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"obstinate\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "frugal"
+        },
+        {
+          "en": "stubborn"
+        },
+        {
+          "en": "abundant"
+        },
+        {
+          "en": "adversary"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-gen-023",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"prudent\"?",
+        "hi": "कौन सा शब्द \"prudent\" के समान अर्थ रखता है?",
+        "ta": "\"prudent\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"prudent\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"prudent\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"prudent\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"prudent\" જેવો છે?",
+        "kn": "\"prudent\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"prudent\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"prudent\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"prudent\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"prudent\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"prudent\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "lucid"
+        },
+        {
+          "en": "novice"
+        },
+        {
+          "en": "wise"
+        },
+        {
+          "en": "meticulous"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-english-gen-024",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"resilient\"?",
+        "hi": "कौन सा शब्द \"resilient\" के समान अर्थ रखता है?",
+        "ta": "\"resilient\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"resilient\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"resilient\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"resilient\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"resilient\" જેવો છે?",
+        "kn": "\"resilient\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"resilient\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"resilient\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"resilient\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"resilient\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"resilient\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "adversary"
+        },
+        {
+          "en": "obstinate"
+        },
+        {
+          "en": "candid"
+        },
+        {
+          "en": "tough"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "10-english-gen-025",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"lucid\"?",
+        "hi": "कौन सा शब्द \"lucid\" के समान अर्थ रखता है?",
+        "ta": "\"lucid\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"lucid\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"lucid\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"lucid\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"lucid\" જેવો છે?",
+        "kn": "\"lucid\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"lucid\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"lucid\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"lucid\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"lucid\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"lucid\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "clear"
+        },
+        {
+          "en": "frugal"
+        },
+        {
+          "en": "candid"
+        },
+        {
+          "en": "resilient"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-english-gen-026",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"abundant\"?",
+        "hi": "कौन सा शब्द \"abundant\" के समान अर्थ रखता है?",
+        "ta": "\"abundant\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"abundant\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"abundant\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"abundant\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"abundant\" જેવો છે?",
+        "kn": "\"abundant\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"abundant\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"abundant\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"abundant\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"abundant\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"abundant\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "adversary"
+        },
+        {
+          "en": "ample"
+        },
+        {
+          "en": "prudent"
+        },
+        {
+          "en": "candid"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "10-english-gen-027",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used: a direct comparison using 'like' or 'as'?",
+        "hi": "'like' या 'as' का उपयोग करते हुए सीधी तुलना कौन सा अलंकार है?",
+        "ta": "'like' அல்லது 'as' பயன்படுத்தி நேரடி ஒப்பீடு எந்த அணி?",
+        "te": "'like' లేదా 'as' ఉపయోగించి నేరుగా పోల్చడం ఏ అలంకారం?",
+        "bn": "'like' বা 'as' ব্যবহার করে সরাসরি তুলনা কোন অলঙ্কার?",
+        "mr": "'like' किंवा 'as' वापरून थेट तुलना कोणता अलंकार आहे?",
+        "gu": "'like' અથવા 'as' વાપરીને સીધી સરખામણી કયો અલંકાર છે?",
+        "kn": "'like' ಅಥವಾ 'as' ಬಳಸಿ ನೇರ ಹೋಲಿಕೆ ಯಾವ ಅಲಂಕಾರ?",
+        "ml": "'like' അല്ലെങ്കിൽ 'as' ഉപയോഗിച്ചുള്ള നേരിട്ടുള്ള താരതമ്യം ഏത് അലങ്കാരം?",
+        "pa": "'like' ਜਾਂ 'as' ਵਰਤ ਕੇ ਸਿੱਧੀ ਤੁਲਨਾ ਕਿਹੜਾ ਅਲੰਕਾਰ ਹੈ?",
+        "ur": "'like' یا 'as' استعمال کر کے براہ راست تشبیہ کون سا صنعت ہے؟",
+        "or": "'like' କିମ୍ବା 'as' ବ୍ୟବହାର କରି ସିଧା ତୁଳନା କେଉଁ ଅଳଙ୍କାର?",
+        "ne": "'like' वा 'as' प्रयोग गरी सीधा तुलना कुन अलंकार हो?"
+      },
+      "choices": [
+        {
+          "en": "Alliteration"
+        },
+        {
+          "en": "Personification"
+        },
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Metaphor"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "10-english-gen-028",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used: a direct comparison using 'like' or 'as'?",
+        "hi": "'like' या 'as' का उपयोग करते हुए सीधी तुलना कौन सा अलंकार है?",
+        "ta": "'like' அல்லது 'as' பயன்படுத்தி நேரடி ஒப்பீடு எந்த அணி?",
+        "te": "'like' లేదా 'as' ఉపయోగించి నేరుగా పోల్చడం ఏ అలంకారం?",
+        "bn": "'like' বা 'as' ব্যবহার করে সরাসরি তুলনা কোন অলঙ্কার?",
+        "mr": "'like' किंवा 'as' वापरून थेट तुलना कोणता अलंकार आहे?",
+        "gu": "'like' અથવા 'as' વાપરીને સીધી સરખામણી કયો અલંકાર છે?",
+        "kn": "'like' ಅಥವಾ 'as' ಬಳಸಿ ನೇರ ಹೋಲಿಕೆ ಯಾವ ಅಲಂಕಾರ?",
+        "ml": "'like' അല്ലെങ്കിൽ 'as' ഉപയോഗിച്ചുള്ള നേരിട്ടുള്ള താരതമ്യം ഏത് അലങ്കാരം?",
+        "pa": "'like' ਜਾਂ 'as' ਵਰਤ ਕੇ ਸਿੱਧੀ ਤੁਲਨਾ ਕਿਹੜਾ ਅਲੰਕਾਰ ਹੈ?",
+        "ur": "'like' یا 'as' استعمال کر کے براہ راست تشبیہ کون سا صنعت ہے؟",
+        "or": "'like' କିମ୍ବା 'as' ବ୍ୟବହାର କରି ସିଧା ତୁଳନା କେଉଁ ଅଳଙ୍କାର?",
+        "ne": "'like' वा 'as' प्रयोग गरी सीधा तुलना कुन अलंकार हो?"
+      },
+      "choices": [
+        {
+          "en": "Personification"
+        },
+        {
+          "en": "Alliteration"
+        },
+        {
+          "en": "Hyperbole"
+        },
+        {
+          "en": "Simile"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "10-english-gen-029",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used: a direct comparison using 'like' or 'as'?",
+        "hi": "'like' या 'as' का उपयोग करते हुए सीधी तुलना कौन सा अलंकार है?",
+        "ta": "'like' அல்லது 'as' பயன்படுத்தி நேரடி ஒப்பீடு எந்த அணி?",
+        "te": "'like' లేదా 'as' ఉపయోగించి నేరుగా పోల్చడం ఏ అలంకారం?",
+        "bn": "'like' বা 'as' ব্যবহার করে সরাসরি তুলনা কোন অলঙ্কার?",
+        "mr": "'like' किंवा 'as' वापरून थेट तुलना कोणता अलंकार आहे?",
+        "gu": "'like' અથવા 'as' વાપરીને સીધી સરખામણી કયો અલંકાર છે?",
+        "kn": "'like' ಅಥವಾ 'as' ಬಳಸಿ ನೇರ ಹೋಲಿಕೆ ಯಾವ ಅಲಂಕಾರ?",
+        "ml": "'like' അല്ലെങ്കിൽ 'as' ഉപയോഗിച്ചുള്ള നേരിട്ടുള്ള താരതമ്യം ഏത് അലങ്കാരം?",
+        "pa": "'like' ਜਾਂ 'as' ਵਰਤ ਕੇ ਸਿੱਧੀ ਤੁਲਨਾ ਕਿਹੜਾ ਅਲੰਕਾਰ ਹੈ?",
+        "ur": "'like' یا 'as' استعمال کر کے براہ راست تشبیہ کون سا صنعت ہے؟",
+        "or": "'like' କିମ୍ବା 'as' ବ୍ୟବହାର କରି ସିଧା ତୁଳନା କେଉଁ ଅଳଙ୍କାର?",
+        "ne": "'like' वा 'as' प्रयोग गरी सीधा तुलना कुन अलंकार हो?"
+      },
+      "choices": [
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Alliteration"
+        },
+        {
+          "en": "Personification"
+        },
+        {
+          "en": "Onomatopoeia"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "10-english-gen-030",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used: a direct comparison using 'like' or 'as'?",
+        "hi": "'like' या 'as' का उपयोग करते हुए सीधी तुलना कौन सा अलंकार है?",
+        "ta": "'like' அல்லது 'as' பயன்படுத்தி நேரடி ஒப்பீடு எந்த அணி?",
+        "te": "'like' లేదా 'as' ఉపయోగించి నేరుగా పోల్చడం ఏ అలంకారం?",
+        "bn": "'like' বা 'as' ব্যবহার করে সরাসরি তুলনা কোন অলঙ্কার?",
+        "mr": "'like' किंवा 'as' वापरून थेट तुलना कोणता अलंकार आहे?",
+        "gu": "'like' અથવા 'as' વાપરીને સીધી સરખામણી કયો અલંકાર છે?",
+        "kn": "'like' ಅಥವಾ 'as' ಬಳಸಿ ನೇರ ಹೋಲಿಕೆ ಯಾವ ಅಲಂಕಾರ?",
+        "ml": "'like' അല്ലെങ്കിൽ 'as' ഉപയോഗിച്ചുള്ള നേരിട്ടുള്ള താരതമ്യം ഏത് അലങ്കാരം?",
+        "pa": "'like' ਜਾਂ 'as' ਵਰਤ ਕੇ ਸਿੱਧੀ ਤੁਲਨਾ ਕਿਹੜਾ ਅਲੰਕਾਰ ਹੈ?",
+        "ur": "'like' یا 'as' استعمال کر کے براہ راست تشبیہ کون سا صنعت ہے؟",
+        "or": "'like' କିମ୍ବା 'as' ବ୍ୟବହାର କରି ସିଧା ତୁଳନା କେଉଁ ଅଳଙ୍କାର?",
+        "ne": "'like' वा 'as' प्रयोग गरी सीधा तुलना कुन अलंकार हो?"
+      },
+      "choices": [
+        {
+          "en": "Alliteration"
+        },
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Hyperbole"
+        },
+        {
+          "en": "Onomatopoeia"
+        }
+      ],
+      "answerIndex": 1
     }
   ]
 }
