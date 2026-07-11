@@ -831,6 +831,958 @@
         }
       ],
       "answerIndex": 0
+    },
+    {
+      "id": "8-english-gen-001",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of \"crisis\"?",
+        "hi": "\"crisis\" का बहुवचन क्या है?",
+        "ta": "\"crisis\" இன் பன்மை என்ன?",
+        "te": "\"crisis\" యొక్క బహువచనం ఏమిటి?",
+        "bn": "\"crisis\" এর বহুবচন কী?",
+        "mr": "\"crisis\" चे अनेकवचन काय आहे?",
+        "gu": "\"crisis\" નું બહુવચન શું છે?",
+        "kn": "\"crisis\" ದ ಬಹುವಚನ ಯಾವುದು?",
+        "ml": "\"crisis\" ന്റെ ബഹുവചനം എന്ത്?",
+        "pa": "\"crisis\" ਦਾ ਬਹੁਵਚਨ ਕੀ ਹੈ?",
+        "ur": "\"crisis\" کی جمع کیا ہے؟",
+        "or": "\"crisis\" ର ବହୁବଚନ କ'ଣ?",
+        "ne": "\"crisis\" को बहुवचन के हो?"
+      },
+      "choices": [
+        {
+          "en": "crises"
+        },
+        {
+          "en": "crisises"
+        },
+        {
+          "en": "crisi"
+        },
+        {
+          "en": "crisez"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "8-english-gen-002",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of \"analysis\"?",
+        "hi": "\"analysis\" का बहुवचन क्या है?",
+        "ta": "\"analysis\" இன் பன்மை என்ன?",
+        "te": "\"analysis\" యొక్క బహువచనం ఏమిటి?",
+        "bn": "\"analysis\" এর বহুবচন কী?",
+        "mr": "\"analysis\" चे अनेकवचन काय आहे?",
+        "gu": "\"analysis\" નું બહુવચન શું છે?",
+        "kn": "\"analysis\" ದ ಬಹುವಚನ ಯಾವುದು?",
+        "ml": "\"analysis\" ന്റെ ബഹുവചനം എന്ത്?",
+        "pa": "\"analysis\" ਦਾ ਬਹੁਵਚਨ ਕੀ ਹੈ?",
+        "ur": "\"analysis\" کی جمع کیا ہے؟",
+        "or": "\"analysis\" ର ବହୁବଚନ କ'ଣ?",
+        "ne": "\"analysis\" को बहुवचन के हो?"
+      },
+      "choices": [
+        {
+          "en": "analysises"
+        },
+        {
+          "en": "analyses"
+        },
+        {
+          "en": "analysis'"
+        },
+        {
+          "en": "analysi"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-gen-003",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of \"phenomenon\"?",
+        "hi": "\"phenomenon\" का बहुवचन क्या है?",
+        "ta": "\"phenomenon\" இன் பன்மை என்ன?",
+        "te": "\"phenomenon\" యొక్క బహువచనం ఏమిటి?",
+        "bn": "\"phenomenon\" এর বহুবচন কী?",
+        "mr": "\"phenomenon\" चे अनेकवचन काय आहे?",
+        "gu": "\"phenomenon\" નું બહુવચન શું છે?",
+        "kn": "\"phenomenon\" ದ ಬಹುವಚನ ಯಾವುದು?",
+        "ml": "\"phenomenon\" ന്റെ ബഹുവചനം എന്ത്?",
+        "pa": "\"phenomenon\" ਦਾ ਬਹੁਵਚਨ ਕੀ ਹੈ?",
+        "ur": "\"phenomenon\" کی جمع کیا ہے؟",
+        "or": "\"phenomenon\" ର ବହୁବଚନ କ'ଣ?",
+        "ne": "\"phenomenon\" को बहुवचन के हो?"
+      },
+      "choices": [
+        {
+          "en": "phenomenons"
+        },
+        {
+          "en": "phenomenona"
+        },
+        {
+          "en": "phenomena"
+        },
+        {
+          "en": "phenomenoi"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-english-gen-004",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the plural of \"criterion\"?",
+        "hi": "\"criterion\" का बहुवचन क्या है?",
+        "ta": "\"criterion\" இன் பன்மை என்ன?",
+        "te": "\"criterion\" యొక్క బహువచనం ఏమిటి?",
+        "bn": "\"criterion\" এর বহুবচন কী?",
+        "mr": "\"criterion\" चे अनेकवचन काय आहे?",
+        "gu": "\"criterion\" નું બહુવચન શું છે?",
+        "kn": "\"criterion\" ದ ಬಹುವಚನ ಯಾವುದು?",
+        "ml": "\"criterion\" ന്റെ ബഹുവചനം എന്ത്?",
+        "pa": "\"criterion\" ਦਾ ਬਹੁਵਚਨ ਕੀ ਹੈ?",
+        "ur": "\"criterion\" کی جمع کیا ہے؟",
+        "or": "\"criterion\" ର ବହୁବଚନ କ'ଣ?",
+        "ne": "\"criterion\" को बहुवचन के हो?"
+      },
+      "choices": [
+        {
+          "en": "criterions"
+        },
+        {
+          "en": "criterias"
+        },
+        {
+          "en": "criterioi"
+        },
+        {
+          "en": "criteria"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "8-english-gen-005",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"optimist\"?",
+        "hi": "\"optimist\" का विलोम क्या है?",
+        "ta": "\"optimist\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"optimist\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"optimist\" এর বিপরীত শব্দ কী?",
+        "mr": "\"optimist\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"optimist\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"optimist\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"optimist\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"optimist\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"optimist\" کا متضاد کیا ہے؟",
+        "or": "\"optimist\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"optimist\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "pessimist"
+        },
+        {
+          "en": "expand"
+        },
+        {
+          "en": "contract"
+        },
+        {
+          "en": "visible"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "8-english-gen-006",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"expand\"?",
+        "hi": "\"expand\" का विलोम क्या है?",
+        "ta": "\"expand\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"expand\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"expand\" এর বিপরীত শব্দ কী?",
+        "mr": "\"expand\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"expand\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"expand\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"expand\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"expand\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"expand\" کا متضاد کیا ہے؟",
+        "or": "\"expand\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"expand\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "irrational"
+        },
+        {
+          "en": "contract"
+        },
+        {
+          "en": "literate"
+        },
+        {
+          "en": "immortal"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-gen-007",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"include\"?",
+        "hi": "\"include\" का विलोम क्या है?",
+        "ta": "\"include\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"include\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"include\" এর বিপরীত শব্দ কী?",
+        "mr": "\"include\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"include\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"include\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"include\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"include\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"include\" کا متضاد کیا ہے؟",
+        "or": "\"include\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"include\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "optimist"
+        },
+        {
+          "en": "rational"
+        },
+        {
+          "en": "exclude"
+        },
+        {
+          "en": "visible"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-english-gen-008",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"ascent\"?",
+        "hi": "\"ascent\" का विलोम क्या है?",
+        "ta": "\"ascent\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"ascent\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"ascent\" এর বিপরীত শব্দ কী?",
+        "mr": "\"ascent\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"ascent\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"ascent\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"ascent\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"ascent\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"ascent\" کا متضاد کیا ہے؟",
+        "or": "\"ascent\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"ascent\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "immortal"
+        },
+        {
+          "en": "optimist"
+        },
+        {
+          "en": "literate"
+        },
+        {
+          "en": "descent"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "8-english-gen-009",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"visible\"?",
+        "hi": "\"visible\" का विलोम क्या है?",
+        "ta": "\"visible\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"visible\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"visible\" এর বিপরীত শব্দ কী?",
+        "mr": "\"visible\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"visible\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"visible\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"visible\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"visible\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"visible\" کا متضاد کیا ہے؟",
+        "or": "\"visible\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"visible\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "invisible"
+        },
+        {
+          "en": "illiterate"
+        },
+        {
+          "en": "pessimist"
+        },
+        {
+          "en": "expand"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "8-english-gen-010",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"mortal\"?",
+        "hi": "\"mortal\" का विलोम क्या है?",
+        "ta": "\"mortal\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"mortal\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"mortal\" এর বিপরীত শব্দ কী?",
+        "mr": "\"mortal\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"mortal\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"mortal\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"mortal\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"mortal\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"mortal\" کا متضاد کیا ہے؟",
+        "or": "\"mortal\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"mortal\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "contract"
+        },
+        {
+          "en": "immortal"
+        },
+        {
+          "en": "illiterate"
+        },
+        {
+          "en": "descent"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-gen-011",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"literate\"?",
+        "hi": "\"literate\" का विलोम क्या है?",
+        "ta": "\"literate\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"literate\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"literate\" এর বিপরীত শব্দ কী?",
+        "mr": "\"literate\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"literate\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"literate\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"literate\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"literate\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"literate\" کا متضاد کیا ہے؟",
+        "or": "\"literate\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"literate\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "descent"
+        },
+        {
+          "en": "contract"
+        },
+        {
+          "en": "illiterate"
+        },
+        {
+          "en": "rational"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-english-gen-012",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"rational\"?",
+        "hi": "\"rational\" का विलोम क्या है?",
+        "ta": "\"rational\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"rational\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"rational\" এর বিপরীত শব্দ কী?",
+        "mr": "\"rational\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"rational\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"rational\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"rational\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"rational\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"rational\" کا متضاد کیا ہے؟",
+        "or": "\"rational\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"rational\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "descent"
+        },
+        {
+          "en": "superior"
+        },
+        {
+          "en": "ascent"
+        },
+        {
+          "en": "irrational"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "8-english-gen-013",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"voluntary\"?",
+        "hi": "\"voluntary\" का विलोम क्या है?",
+        "ta": "\"voluntary\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"voluntary\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"voluntary\" এর বিপরীত শব্দ কী?",
+        "mr": "\"voluntary\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"voluntary\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"voluntary\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"voluntary\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"voluntary\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"voluntary\" کا متضاد کیا ہے؟",
+        "or": "\"voluntary\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"voluntary\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "compulsory"
+        },
+        {
+          "en": "descent"
+        },
+        {
+          "en": "mortal"
+        },
+        {
+          "en": "visible"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "8-english-gen-014",
+      "type": "mcq",
+      "prompt": {
+        "en": "What is the opposite of \"superior\"?",
+        "hi": "\"superior\" का विलोम क्या है?",
+        "ta": "\"superior\" இன் எதிர்ச்சொல் என்ன?",
+        "te": "\"superior\" కి వ్యతిరేక పదం ఏమిటి?",
+        "bn": "\"superior\" এর বিপরীত শব্দ কী?",
+        "mr": "\"superior\" चा विरुद्धार्थी शब्द कोणता?",
+        "gu": "\"superior\" નો વિરોધી શબ્દ કયો છે?",
+        "kn": "\"superior\" ದ ವಿರುದ್ಧ ಪದ ಯಾವುದು?",
+        "ml": "\"superior\" ന്റെ വിപരീത പദം എന്ത്?",
+        "pa": "\"superior\" ਦਾ ਉਲਟ ਸ਼ਬਦ ਕੀ ਹੈ?",
+        "ur": "\"superior\" کا متضاد کیا ہے؟",
+        "or": "\"superior\" ର ବିପରୀତ ଶବ୍ଦ କ'ଣ?",
+        "ne": "\"superior\" को विपरीत शब्द के हो?"
+      },
+      "choices": [
+        {
+          "en": "contract"
+        },
+        {
+          "en": "inferior"
+        },
+        {
+          "en": "expand"
+        },
+        {
+          "en": "irrational"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-gen-015",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"abundant\"?",
+        "hi": "कौन सा शब्द \"abundant\" के समान अर्थ रखता है?",
+        "ta": "\"abundant\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"abundant\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"abundant\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"abundant\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"abundant\" જેવો છે?",
+        "kn": "\"abundant\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"abundant\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"abundant\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"abundant\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"abundant\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"abundant\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "courteous"
+        },
+        {
+          "en": "fragile"
+        },
+        {
+          "en": "plentiful"
+        },
+        {
+          "en": "obvious"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-english-gen-016",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"reluctant\"?",
+        "hi": "कौन सा शब्द \"reluctant\" के समान अर्थ रखता है?",
+        "ta": "\"reluctant\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"reluctant\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"reluctant\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"reluctant\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"reluctant\" જેવો છે?",
+        "kn": "\"reluctant\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"reluctant\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"reluctant\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"reluctant\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"reluctant\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"reluctant\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "diligent"
+        },
+        {
+          "en": "genuine"
+        },
+        {
+          "en": "accurate"
+        },
+        {
+          "en": "unwilling"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "8-english-gen-017",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"diligent\"?",
+        "hi": "कौन सा शब्द \"diligent\" के समान अर्थ रखता है?",
+        "ta": "\"diligent\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"diligent\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"diligent\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"diligent\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"diligent\" જેવો છે?",
+        "kn": "\"diligent\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"diligent\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"diligent\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"diligent\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"diligent\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"diligent\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "hardworking"
+        },
+        {
+          "en": "abundant"
+        },
+        {
+          "en": "reluctant"
+        },
+        {
+          "en": "courteous"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "8-english-gen-018",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"fragile\"?",
+        "hi": "कौन सा शब्द \"fragile\" के समान अर्थ रखता है?",
+        "ta": "\"fragile\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"fragile\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"fragile\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"fragile\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"fragile\" જેવો છે?",
+        "kn": "\"fragile\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"fragile\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"fragile\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"fragile\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"fragile\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"fragile\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "genuine"
+        },
+        {
+          "en": "delicate"
+        },
+        {
+          "en": "courteous"
+        },
+        {
+          "en": "vast"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-gen-019",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"genuine\"?",
+        "hi": "कौन सा शब्द \"genuine\" के समान अर्थ रखता है?",
+        "ta": "\"genuine\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"genuine\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"genuine\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"genuine\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"genuine\" જેવો છે?",
+        "kn": "\"genuine\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"genuine\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"genuine\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"genuine\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"genuine\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"genuine\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "vast"
+        },
+        {
+          "en": "abundant"
+        },
+        {
+          "en": "authentic"
+        },
+        {
+          "en": "reluctant"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-english-gen-020",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"vast\"?",
+        "hi": "कौन सा शब्द \"vast\" के समान अर्थ रखता है?",
+        "ta": "\"vast\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"vast\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"vast\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"vast\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"vast\" જેવો છે?",
+        "kn": "\"vast\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"vast\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"vast\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"vast\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"vast\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"vast\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "courteous"
+        },
+        {
+          "en": "essential"
+        },
+        {
+          "en": "abundant"
+        },
+        {
+          "en": "immense"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "8-english-gen-021",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"obvious\"?",
+        "hi": "कौन सा शब्द \"obvious\" के समान अर्थ रखता है?",
+        "ta": "\"obvious\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"obvious\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"obvious\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"obvious\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"obvious\" જેવો છે?",
+        "kn": "\"obvious\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"obvious\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"obvious\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"obvious\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"obvious\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"obvious\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "evident"
+        },
+        {
+          "en": "courteous"
+        },
+        {
+          "en": "vast"
+        },
+        {
+          "en": "diligent"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "8-english-gen-022",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"essential\"?",
+        "hi": "कौन सा शब्द \"essential\" के समान अर्थ रखता है?",
+        "ta": "\"essential\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"essential\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"essential\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"essential\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"essential\" જેવો છે?",
+        "kn": "\"essential\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"essential\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"essential\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"essential\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"essential\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"essential\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "vast"
+        },
+        {
+          "en": "vital"
+        },
+        {
+          "en": "genuine"
+        },
+        {
+          "en": "fragile"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-gen-023",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"courteous\"?",
+        "hi": "कौन सा शब्द \"courteous\" के समान अर्थ रखता है?",
+        "ta": "\"courteous\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"courteous\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"courteous\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"courteous\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"courteous\" જેવો છે?",
+        "kn": "\"courteous\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"courteous\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"courteous\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"courteous\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"courteous\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"courteous\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "essential"
+        },
+        {
+          "en": "fragile"
+        },
+        {
+          "en": "polite"
+        },
+        {
+          "en": "diligent"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-english-gen-024",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which word means the same as \"accurate\"?",
+        "hi": "कौन सा शब्द \"accurate\" के समान अर्थ रखता है?",
+        "ta": "\"accurate\" போன்ற பொருள் கொண்ட சொல் எது?",
+        "te": "\"accurate\" తో సమాన అర్థం గల పదం ఏది?",
+        "bn": "কোন শব্দের অর্থ \"accurate\" এর মতো?",
+        "mr": "कोणत्या शब्दाचा अर्थ \"accurate\" सारखा आहे?",
+        "gu": "કયા શબ્દનો અર્થ \"accurate\" જેવો છે?",
+        "kn": "\"accurate\" ದಂತೆಯೇ ಅರ್ಥವಿರುವ ಪದ ಯಾವುದು?",
+        "ml": "\"accurate\" ന്റെ അതേ അർത്ഥമുള്ള വാക്ക് ഏത്?",
+        "pa": "ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਅਰਥ \"accurate\" ਵਰਗਾ ਹੈ?",
+        "ur": "کون سا لفظ \"accurate\" جیسا معنی رکھتا ہے؟",
+        "or": "କେଉଁ ଶବ୍ଦର ଅର୍ଥ \"accurate\" ପରି?",
+        "ne": "कुन शब्दको अर्थ \"accurate\" जस्तै हो?"
+      },
+      "choices": [
+        {
+          "en": "fragile"
+        },
+        {
+          "en": "vast"
+        },
+        {
+          "en": "diligent"
+        },
+        {
+          "en": "precise"
+        }
+      ],
+      "answerIndex": 3
+    },
+    {
+      "id": "8-english-gen-025",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used: a direct comparison using 'like' or 'as'?",
+        "hi": "'like' या 'as' का उपयोग करते हुए सीधी तुलना कौन सा अलंकार है?",
+        "ta": "'like' அல்லது 'as' பயன்படுத்தி நேரடி ஒப்பீடு எந்த அணி?",
+        "te": "'like' లేదా 'as' ఉపయోగించి నేరుగా పోల్చడం ఏ అలంకారం?",
+        "bn": "'like' বা 'as' ব্যবহার করে সরাসরি তুলনা কোন অলঙ্কার?",
+        "mr": "'like' किंवा 'as' वापरून थेट तुलना कोणता अलंकार आहे?",
+        "gu": "'like' અથવા 'as' વાપરીને સીધી સરખામણી કયો અલંકાર છે?",
+        "kn": "'like' ಅಥವಾ 'as' ಬಳಸಿ ನೇರ ಹೋಲಿಕೆ ಯಾವ ಅಲಂಕಾರ?",
+        "ml": "'like' അല്ലെങ്കിൽ 'as' ഉപയോഗിച്ചുള്ള നേരിട്ടുള്ള താരതമ്യം ഏത് അലങ്കാരം?",
+        "pa": "'like' ਜਾਂ 'as' ਵਰਤ ਕੇ ਸਿੱਧੀ ਤੁਲਨਾ ਕਿਹੜਾ ਅਲੰਕਾਰ ਹੈ?",
+        "ur": "'like' یا 'as' استعمال کر کے براہ راست تشبیہ کون سا صنعت ہے؟",
+        "or": "'like' କିମ୍ବା 'as' ବ୍ୟବହାର କରି ସିଧା ତୁଳନା କେଉଁ ଅଳଙ୍କାର?",
+        "ne": "'like' वा 'as' प्रयोग गरी सीधा तुलना कुन अलंकार हो?"
+      },
+      "choices": [
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Hyperbole"
+        },
+        {
+          "en": "Metaphor"
+        },
+        {
+          "en": "Onomatopoeia"
+        }
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "8-english-gen-026",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used: a direct comparison using 'like' or 'as'?",
+        "hi": "'like' या 'as' का उपयोग करते हुए सीधी तुलना कौन सा अलंकार है?",
+        "ta": "'like' அல்லது 'as' பயன்படுத்தி நேரடி ஒப்பீடு எந்த அணி?",
+        "te": "'like' లేదా 'as' ఉపయోగించి నేరుగా పోల్చడం ఏ అలంకారం?",
+        "bn": "'like' বা 'as' ব্যবহার করে সরাসরি তুলনা কোন অলঙ্কার?",
+        "mr": "'like' किंवा 'as' वापरून थेट तुलना कोणता अलंकार आहे?",
+        "gu": "'like' અથવા 'as' વાપરીને સીધી સરખામણી કયો અલંકાર છે?",
+        "kn": "'like' ಅಥವಾ 'as' ಬಳಸಿ ನೇರ ಹೋಲಿಕೆ ಯಾವ ಅಲಂಕಾರ?",
+        "ml": "'like' അല്ലെങ്കിൽ 'as' ഉപയോഗിച്ചുള്ള നേരിട്ടുള്ള താരതമ്യം ഏത് അലങ്കാരം?",
+        "pa": "'like' ਜਾਂ 'as' ਵਰਤ ਕੇ ਸਿੱਧੀ ਤੁਲਨਾ ਕਿਹੜਾ ਅਲੰਕਾਰ ਹੈ?",
+        "ur": "'like' یا 'as' استعمال کر کے براہ راست تشبیہ کون سا صنعت ہے؟",
+        "or": "'like' କିମ୍ବା 'as' ବ୍ୟବହାର କରି ସିଧା ତୁଳନା କେଉଁ ଅଳଙ୍କାର?",
+        "ne": "'like' वा 'as' प्रयोग गरी सीधा तुलना कुन अलंकार हो?"
+      },
+      "choices": [
+        {
+          "en": "Alliteration"
+        },
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Onomatopoeia"
+        },
+        {
+          "en": "Hyperbole"
+        }
+      ],
+      "answerIndex": 1
+    },
+    {
+      "id": "8-english-gen-027",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used: a direct comparison using 'like' or 'as'?",
+        "hi": "'like' या 'as' का उपयोग करते हुए सीधी तुलना कौन सा अलंकार है?",
+        "ta": "'like' அல்லது 'as' பயன்படுத்தி நேரடி ஒப்பீடு எந்த அணி?",
+        "te": "'like' లేదా 'as' ఉపయోగించి నేరుగా పోల్చడం ఏ అలంకారం?",
+        "bn": "'like' বা 'as' ব্যবহার করে সরাসরি তুলনা কোন অলঙ্কার?",
+        "mr": "'like' किंवा 'as' वापरून थेट तुलना कोणता अलंकार आहे?",
+        "gu": "'like' અથવા 'as' વાપરીને સીધી સરખામણી કયો અલંકાર છે?",
+        "kn": "'like' ಅಥವಾ 'as' ಬಳಸಿ ನೇರ ಹೋಲಿಕೆ ಯಾವ ಅಲಂಕಾರ?",
+        "ml": "'like' അല്ലെങ്കിൽ 'as' ഉപയോഗിച്ചുള്ള നേരിട്ടുള്ള താരതമ്യം ഏത് അലങ്കാരം?",
+        "pa": "'like' ਜਾਂ 'as' ਵਰਤ ਕੇ ਸਿੱਧੀ ਤੁਲਨਾ ਕਿਹੜਾ ਅਲੰਕਾਰ ਹੈ?",
+        "ur": "'like' یا 'as' استعمال کر کے براہ راست تشبیہ کون سا صنعت ہے؟",
+        "or": "'like' କିମ୍ବା 'as' ବ୍ୟବହାର କରି ସିଧା ତୁଳନା କେଉଁ ଅଳଙ୍କାର?",
+        "ne": "'like' वा 'as' प्रयोग गरी सीधा तुलना कुन अलंकार हो?"
+      },
+      "choices": [
+        {
+          "en": "Alliteration"
+        },
+        {
+          "en": "Onomatopoeia"
+        },
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Metaphor"
+        }
+      ],
+      "answerIndex": 2
+    },
+    {
+      "id": "8-english-gen-028",
+      "type": "mcq",
+      "prompt": {
+        "en": "Which figure of speech is used: a direct comparison using 'like' or 'as'?",
+        "hi": "'like' या 'as' का उपयोग करते हुए सीधी तुलना कौन सा अलंकार है?",
+        "ta": "'like' அல்லது 'as' பயன்படுத்தி நேரடி ஒப்பீடு எந்த அணி?",
+        "te": "'like' లేదా 'as' ఉపయోగించి నేరుగా పోల్చడం ఏ అలంకారం?",
+        "bn": "'like' বা 'as' ব্যবহার করে সরাসরি তুলনা কোন অলঙ্কার?",
+        "mr": "'like' किंवा 'as' वापरून थेट तुलना कोणता अलंकार आहे?",
+        "gu": "'like' અથવા 'as' વાપરીને સીધી સરખામણી કયો અલંકાર છે?",
+        "kn": "'like' ಅಥವಾ 'as' ಬಳಸಿ ನೇರ ಹೋಲಿಕೆ ಯಾವ ಅಲಂಕಾರ?",
+        "ml": "'like' അല്ലെങ്കിൽ 'as' ഉപയോഗിച്ചുള്ള നേരിട്ടുള്ള താരതമ്യം ഏത് അലങ്കാരം?",
+        "pa": "'like' ਜਾਂ 'as' ਵਰਤ ਕੇ ਸਿੱਧੀ ਤੁਲਨਾ ਕਿਹੜਾ ਅਲੰਕਾਰ ਹੈ?",
+        "ur": "'like' یا 'as' استعمال کر کے براہ راست تشبیہ کون سا صنعت ہے؟",
+        "or": "'like' କିମ୍ବା 'as' ବ୍ୟବହାର କରି ସିଧା ତୁଳନା କେଉଁ ଅଳଙ୍କାର?",
+        "ne": "'like' वा 'as' प्रयोग गरी सीधा तुलना कुन अलंकार हो?"
+      },
+      "choices": [
+        {
+          "en": "Hyperbole"
+        },
+        {
+          "en": "Metaphor"
+        },
+        {
+          "en": "Alliteration"
+        },
+        {
+          "en": "Simile"
+        }
+      ],
+      "answerIndex": 3
     }
   ]
 }
