@@ -63,6 +63,20 @@ const SOUND_KEY    = "ecplay_sound";
 // Flip to true to restore the premium upsell, modal and checkout — no other
 // code changes needed. (Backend endpoints stay deployed but unused.)
 const PAYMENTS_ENABLED = false;
+// Prices live here, NOT in the static HTML, so no ₹ pricing is ever shipped in
+// the crawlable markup while payments are paused (compliance + clean SEO — a
+// search engine can't pull "₹149" into a snippet). When PAYMENTS_ENABLED flips
+// to true, applyPricingUI() injects them into the pre-built (hidden) UI.
+const PRICES = { monthly: "₹149", yearly: "₹999" };
+function applyPricingUI() {
+  if (!PAYMENTS_ENABLED) return;
+  document.querySelectorAll("[data-plan-price]").forEach((el) => {
+    el.textContent = PRICES[el.dataset.planPrice] || "";
+  });
+  const sb = document.getElementById("upgrade-from-session");
+  if (sb) sb.textContent = `Upgrade · ${PRICES.monthly}/mo`;
+}
+applyPricingUI();
 const API_BASE     = "https://educerelator-backend.vercel.app";
 const REGION_TTL   = 7 * 24 * 60 * 60 * 1000; // re-detect at most weekly
 
@@ -1262,7 +1276,7 @@ function renderProfilePremium() {
           `<strong>Go Premium</strong>` +
           `<p>Fresh AI-generated questions every day, tuned to your level.</p>` +
         `</div>` +
-        `<button id="profile-upgrade-btn" class="btn-upgrade">Upgrade · ₹149/mo</button>` +
+        `<button id="profile-upgrade-btn" class="btn-upgrade">Upgrade · ${PRICES.monthly}/mo</button>` +
       `</div>`;
     const btn = document.getElementById("profile-upgrade-btn");
     if (btn) btn.addEventListener("click", openPremiumModal);
@@ -1359,8 +1373,8 @@ document.querySelectorAll(".plan-card").forEach(card => {
     card.classList.add("selected");
     selectedPlan = card.dataset.plan;
     checkoutBtn.textContent = selectedPlan === "yearly"
-      ? "Pay ₹999 / year"
-      : "Pay ₹149 / month";
+      ? `Pay ${PRICES.yearly} / year`
+      : `Pay ${PRICES.monthly} / month`;
     checkoutBtn.disabled = false;
   });
 });
@@ -1375,7 +1389,7 @@ checkoutBtn.addEventListener("click", async () => {
     alert("Welcome to EC Play Premium! 🎉 Fresh AI questions are now unlocked for you.");
   });
   checkoutBtn.disabled = false;
-  checkoutBtn.textContent = selectedPlan === "yearly" ? "Pay ₹999 / year" : "Pay ₹149 / month";
+  checkoutBtn.textContent = selectedPlan === "yearly" ? `Pay ${PRICES.yearly} / year` : `Pay ${PRICES.monthly} / month`;
 });
 
 function burstConfetti() {
