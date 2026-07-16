@@ -904,7 +904,7 @@ function showSubjectPicker(classNum) {
     const btn = document.createElement("button");
     btn.className = "subject-btn";
     btn.innerHTML = `<span class="subject-emoji">${emoji}</span>${label}`;
-    btn.addEventListener("click", () => startPlay(id));
+    btn.addEventListener("click", () => gameMode === "battle" ? startBattle(id) : startPlay(id));
     subjectGridEl.appendChild(btn);
   });
 
@@ -1406,3 +1406,260 @@ function burstConfetti() {
     piece.addEventListener("animationend", () => piece.remove());
   }
 }
+
+// ══════════════════ ⚔️ Monster Battle (game mode) ══════════════════
+// A game-first layer over the SAME verified question bank: correct answers
+// attack a monster, wrong answers cost a heart. Reuses getNextQuestion so no
+// content is duplicated. State (coins, caught creatures, best stage) persists
+// locally; it's pure play — no payments, no accounts required.
+let gameMode = "learn";
+const battleScreenEl = document.getElementById("battle-screen");
+const MONSTERS = [
+  { name: "Goblin", emoji: "👾", hp: 3 },
+  { name: "Slime", emoji: "🟢", hp: 4 },
+  { name: "Bat Swarm", emoji: "🦇", hp: 4 },
+  { name: "Spooky Ghost", emoji: "👻", hp: 5 },
+  { name: "Rock Golem", emoji: "🗿", hp: 5 },
+  { name: "Robo-Beast", emoji: "🤖", hp: 6 },
+  { name: "Kraken", emoji: "🐙", hp: 6 },
+  { name: "Fire Dragon", emoji: "🐉", hp: 7 },
+  { name: "Demon King", emoji: "😈", hp: 8 },
+];
+const CREATURES = ["🐣","🦄","🐲","🦊","🐨","🐼","🦁","🐯","🐧","🦉","🐢","🦕"];
+
+function battleStore() {
+  return {
+    coins: parseInt(localStorage.getItem("ecplay_coins") || "0"),
+    creatures: JSON.parse(localStorage.getItem("ecplay_creatures") || "[]"),
+    bestStage: parseInt(localStorage.getItem("ecplay_best_stage") || "0"),
+  };
+}
+function battleStoreSave(s) {
+  localStorage.setItem("ecplay_coins", String(s.coins));
+  localStorage.setItem("ecplay_creatures", JSON.stringify(s.creatures));
+  localStorage.setItem("ecplay_best_stage", String(s.bestStage));
+}
+
+let battle = null;
+const bEl = (id) => document.getElementById(id);
+
+// mode toggle on the home screen
+function setGameMode(mode) {
+  gameMode = mode;
+  bEl("mode-learn").classList.toggle("active", mode === "learn");
+  bEl("mode-battle").classList.toggle("active", mode === "battle");
+  bEl("mode-learn").setAttribute("aria-selected", mode === "learn");
+  bEl("mode-battle").setAttribute("aria-selected", mode === "battle");
+  bEl("battle-cta").classList.toggle("hidden", mode !== "battle");
+  bEl("pick-title").textContent = mode === "battle" ? "Choose a class to battle" : "Choose your class";
+  // exams stay classic-quiz only, so hide their tiles in battle mode
+  document.querySelectorAll(".exam-section, #exam-grid").forEach((e) => e.classList.toggle("hidden", mode === "battle"));
+}
+bEl("mode-learn").addEventListener("click", () => setGameMode("learn"));
+bEl("mode-battle").addEventListener("click", () => setGameMode("battle"));
+
+async function startBattle(subject) {
+  currentSubject = subject;
+  const store = battleStore();
+  battle = {
+    stage: 1, heroMax: 3, heroHP: 3, combo: 0, seen: new Set(),
+    coins: store.coins, creatures: store.creatures, bestStage: store.bestStage,
+    answering: false, monster: null, monsterHP: 0, monsterMax: 0,
+  };
+  document.body.classList.add("focus-mode");
+  [classPickerEl, subjectPickerEl, playScreenEl].forEach((s) => s.classList.add("hidden"));
+  bEl("battle-victory").classList.add("hidden");
+  bEl("battle-defeat").classList.add("hidden");
+  battleScreenEl.classList.remove("hidden");
+  window.scrollTo(0, 0);
+  spawnMonster();
+  await battleNextQuestion();
+}
+
+function spawnMonster() {
+  const base = MONSTERS[Math.min(battle.stage - 1, MONSTERS.length - 1)];
+  const extra = Math.floor((battle.stage - 1) / MONSTERS.length) * 2; // loop harder
+  battle.monster = base;
+  battle.monsterMax = base.hp + extra;
+  battle.monsterHP = battle.monsterMax;
+  bEl("monster-avatar").textContent = base.emoji;
+  bEl("monster-name").textContent = base.name;
+  bEl("fighter-monster").classList.remove("faint");
+  bEl("battle-stage").textContent = `Stage ${battle.stage}`;
+  renderBattleHUD();
+}
+
+function renderBattleHUD() {
+  bEl("hero-hp").style.width = `${(battle.heroHP / battle.heroMax) * 100}%`;
+  bEl("monster-hp").style.width = `${(battle.monsterHP / battle.monsterMax) * 100}%`;
+  bEl("hero-hearts").textContent = "❤️".repeat(battle.heroHP) + "🖤".repeat(battle.heroMax - battle.heroHP);
+  bEl("battle-coins").textContent = `🪙 ${battle.coins}`;
+}
+
+async function battleNextQuestion() {
+  battle.answering = false;
+  bEl("battle-combo").textContent = battle.combo >= 2 ? `🔥 Combo ×${battle.combo}` : "";
+  bEl("battle-prompt").textContent = "…";
+  bEl("battle-visual").textContent = "";
+  bEl("battle-choices").innerHTML = "";
+  const key = adaptiveKey(currentClass, currentSubject);
+  const difficulty = getDifficulty(adaptiveState, key, 1);
+  let q;
+  try {
+    q = await getNextQuestion(currentClass, currentSubject, curriculum, difficulty, battle.seen, null, region);
+  } catch {
+    bEl("battle-prompt").textContent = "Couldn't load a question. Tap quit and try again.";
+    return;
+  }
+  battle.seen.add(q.id);
+  battle.current = q;
+  bEl("battle-prompt").textContent = q.prompt[lang] || q.prompt.en;
+  bEl("battle-visual").textContent = q.visual || "";
+  const order = q.choices.map((_, i) => i);
+  for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+  order.forEach((origIndex) => {
+    const btn = document.createElement("button");
+    btn.className = "battle-choice";
+    btn.textContent = q.choices[origIndex][lang] || q.choices[origIndex].en;
+    btn.addEventListener("click", () => battleAnswer(origIndex, btn));
+    bEl("battle-choices").appendChild(btn);
+  });
+  if (soundOn) speakPrompt(q);
+}
+
+function battleFx(projectile, fromHero) {
+  const arena = bEl("battle-fx");
+  const el = document.createElement("span");
+  el.className = "projectile proj-fly";
+  el.textContent = projectile;
+  el.style.left = fromHero ? "22%" : "70%";
+  el.style.top = "38%";
+  el.style.setProperty("--dx", fromHero ? "150px" : "-150px");
+  el.style.setProperty("--dy", "-6px");
+  arena.appendChild(el);
+  setTimeout(() => el.remove(), 460);
+}
+function dmgPop(text, crit, atMonster) {
+  const arena = bEl("battle-fx");
+  const el = document.createElement("span");
+  el.className = "dmg-pop" + (crit ? " crit" : "");
+  el.textContent = text;
+  el.style.left = atMonster ? "70%" : "22%";
+  el.style.top = "30%";
+  arena.appendChild(el);
+  setTimeout(() => el.remove(), 820);
+}
+
+function battleAnswer(origIndex, btn) {
+  if (battle.answering) return;
+  battle.answering = true;
+  const q = battle.current;
+  const correct = origIndex === q.answerIndex;
+  const correctText = q.choices[q.answerIndex][lang] || q.choices[q.answerIndex].en;
+  [...bEl("battle-choices").children].forEach((b) => {
+    b.disabled = true;
+    if (b.textContent === correctText) b.classList.add("correct");
+  });
+  if (!correct) btn.classList.add("wrong");
+
+  recordAnswer({ correct, subject: currentSubject });
+  const key = adaptiveKey(currentClass, currentSubject);
+  recordResult(key, correct);
+
+  if (correct) {
+    battle.combo++;
+    const crit = battle.combo >= 3;
+    const dmg = crit ? 2 : 1;
+    bEl("fighter-hero").classList.add("attack");
+    battleFx(crit ? "⚡" : "⭐", true);
+    if (soundOn) playCorrectChime();
+    setTimeout(() => {
+      bEl("fighter-hero").classList.remove("attack");
+      bEl("fighter-monster").classList.add("hit");
+      battle.monsterHP = Math.max(0, battle.monsterHP - dmg);
+      dmgPop(crit ? `CRIT! -${dmg}` : `-${dmg}`, crit, true);
+      renderBattleHUD();
+      setTimeout(() => bEl("fighter-monster").classList.remove("hit"), 380);
+      if (battle.monsterHP <= 0) { setTimeout(battleVictory, 500); }
+      else { setTimeout(battleNextQuestion, 850); }
+    }, 240);
+  } else {
+    battle.combo = 0;
+    bEl("fighter-monster").classList.add("attack");
+    battleFx("💥", false);
+    if (soundOn) playWrongBuzz();
+    setTimeout(() => {
+      bEl("fighter-monster").classList.remove("attack");
+      bEl("fighter-hero").classList.add("hit");
+      battle.heroHP = Math.max(0, battle.heroHP - 1);
+      dmgPop("-1", false, false);
+      renderBattleHUD();
+      setTimeout(() => bEl("fighter-hero").classList.remove("hit"), 380);
+      if (battle.heroHP <= 0) { setTimeout(battleDefeat, 500); }
+      else { setTimeout(battleNextQuestion, 900); }
+    }, 240);
+  }
+}
+
+function battleVictory() {
+  bEl("fighter-monster").classList.add("faint");
+  const reward = 20 + battle.stage * 5;
+  battle.coins += reward;
+  // catch a new creature if any remain uncaught
+  const uncaught = CREATURES.filter((c) => !battle.creatures.includes(c));
+  let caught = null;
+  if (uncaught.length) { caught = uncaught[0]; battle.creatures.push(caught); }
+  battle.bestStage = Math.max(battle.bestStage, battle.stage);
+  battleStoreSave(battle);
+  burstConfetti();
+  bEl("reward-creature").textContent = caught || battle.monster.emoji;
+  bEl("reward-line").textContent = caught ? "You caught a new creature! 🎉" : "Victory! Your collection is complete 🏆";
+  bEl("reward-coins").textContent = `🪙 +${reward}`;
+  setTimeout(() => bEl("battle-victory").classList.remove("hidden"), 650);
+}
+function battleDefeat() {
+  bEl("fighter-hero").classList.add("faint");
+  battle.bestStage = Math.max(battle.bestStage, battle.stage);
+  battleStoreSave(battle);
+  bEl("defeat-line").textContent = `You reached Stage ${battle.stage}. Best: Stage ${battle.bestStage}.`;
+  setTimeout(() => bEl("battle-defeat").classList.remove("hidden"), 650);
+}
+
+bEl("battle-next").addEventListener("click", async () => {
+  bEl("battle-victory").classList.add("hidden");
+  bEl("fighter-hero").classList.remove("faint");
+  battle.stage++;
+  battle.heroHP = Math.min(battle.heroMax, battle.heroHP + 1); // heal 1 as reward
+  spawnMonster();
+  await battleNextQuestion();
+});
+bEl("battle-retry").addEventListener("click", () => { bEl("battle-defeat").classList.add("hidden"); startBattle(currentSubject); });
+bEl("battle-home").addEventListener("click", () => { bEl("battle-defeat").classList.add("hidden"); quitBattle(); });
+bEl("battle-quit").addEventListener("click", quitBattle);
+function quitBattle() {
+  window.speechSynthesis?.cancel();
+  document.body.classList.remove("focus-mode");
+  battleScreenEl.classList.add("hidden");
+  bEl("battle-victory").classList.add("hidden");
+  bEl("battle-defeat").classList.add("hidden");
+  bEl("fighter-hero").classList.remove("faint");
+  showClassPicker();
+}
+
+// collection overlay
+function openCollection() {
+  const store = battleStore();
+  const grid = bEl("collection-grid");
+  grid.innerHTML = "";
+  CREATURES.forEach((c) => {
+    const cell = document.createElement("div");
+    const caught = store.creatures.includes(c);
+    cell.className = "collection-cell " + (caught ? "caught" : "locked");
+    cell.textContent = caught ? c : "❓";
+    grid.appendChild(cell);
+  });
+  bEl("collection-count").textContent = `${store.creatures.length} of ${CREATURES.length} caught · 🪙 ${store.coins}`;
+  bEl("collection-modal").classList.remove("hidden");
+}
+bEl("battle-collection-open").addEventListener("click", openCollection);
+bEl("collection-close").addEventListener("click", () => bEl("collection-modal").classList.add("hidden"));
