@@ -1218,7 +1218,7 @@ body.focus-mode .bg-shape { display: none; }
 .fighter-hp { width: 90%; height: 12px; background: rgba(0,0,0,0.18); border-radius: 999px; overflow: hidden; border: 2px solid rgba(255,255,255,0.7); }
 .fighter-hp-fill { height: 100%; width: 100%; border-radius: 999px; transition: width 0.4s cubic-bezier(.22,1,.36,1); }
 .hero-hp-fill { background: linear-gradient(90deg, #22c55e, #4ade80); }
-.monster-hp-fill { background: linear-gradient(90deg, #ef4444, #f87171); }
+.monster-hp-fill { background: linear-gradient(90deg, #f472b6, #fbbf24); } /* friendship bond */
 .fighter-hearts { font-size: 0.8rem; letter-spacing: 1px; height: 1rem; }
 
 /* attack + hit animations */

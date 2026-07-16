@@ -44,8 +44,15 @@ const UI_STRINGS = {
 };
 function t(key) { return (UI_STRINGS[lang] || UI_STRINGS.en)[key] || UI_STRINGS.en[key]; }
 
+// current home-screen mode ("battle" = Friend Quest, "learn" = classic quiz);
+// declared early because applyUIStrings consults it. Set properly at init.
+let gameMode = "learn";
+
 function applyUIStrings() {
-  document.querySelectorAll(".pick-title").forEach(el => { el.textContent = t("pickClass"); });
+  // quest mode owns the pick-title copy (setGameMode); don't clobber it
+  if (gameMode !== "battle") {
+    document.querySelectorAll(".pick-title").forEach(el => { el.textContent = t("pickClass"); });
+  }
   const subjectTitle = document.querySelector("#subject-picker .screen-title");
   if (subjectTitle) subjectTitle.textContent = t("pickSubject");
   const contLabel = document.querySelector(".continue-label");
@@ -1407,25 +1414,32 @@ function burstConfetti() {
   }
 }
 
-// ══════════════════ ⚔️ Monster Battle (game mode) ══════════════════
-// A game-first layer over the SAME verified question bank: correct answers
-// attack a monster, wrong answers cost a heart. Reuses getNextQuestion so no
-// content is duplicated. State (coins, caught creatures, best stage) persists
-// locally; it's pure play — no payments, no accounts required.
-let gameMode = "learn";
+// ══════════════════ 🐾 Friend Quest (game mode) ══════════════════
+// A game-first layer over the SAME verified question bank — and deliberately
+// non-violent: knowledge TAMES, it never harms. Each stage is a shy wild
+// creature; correct answers toss it knowledge sparks that fill a friendship
+// meter, wrong answers startle it and cost the player a heart of patience.
+// Befriend the creature and IT joins the collection (the creature you play
+// with is the one you win — no kill-then-catch disconnect). Reuses
+// getNextQuestion so no content is duplicated. State (coins, friends, best
+// stage) persists locally; pure play — no payments, no accounts required.
+// (gameMode itself is declared near the top of the file.)
 const battleScreenEl = document.getElementById("battle-screen");
-const MONSTERS = [
-  { name: "Goblin", emoji: "👾", hp: 3 },
-  { name: "Slime", emoji: "🟢", hp: 4 },
-  { name: "Bat Swarm", emoji: "🦇", hp: 4 },
-  { name: "Spooky Ghost", emoji: "👻", hp: 5 },
-  { name: "Rock Golem", emoji: "🗿", hp: 5 },
-  { name: "Robo-Beast", emoji: "🤖", hp: 6 },
-  { name: "Kraken", emoji: "🐙", hp: 6 },
-  { name: "Fire Dragon", emoji: "🐉", hp: 7 },
-  { name: "Demon King", emoji: "😈", hp: 8 },
+// the ladder: each creature needs more sparks (correct answers) than the last
+const WILD = [
+  { name: "Sleepy Turtle",    emoji: "🐢", need: 3 },
+  { name: "Shy Bunny",        emoji: "🐰", need: 3 },
+  { name: "Lost Penguin",     emoji: "🐧", need: 4 },
+  { name: "Clever Fox",       emoji: "🦊", need: 4 },
+  { name: "Grumpy Koala",     emoji: "🐨", need: 5 },
+  { name: "Hungry Panda",     emoji: "🐼", need: 5 },
+  { name: "Wary Unicorn",     emoji: "🦄", need: 6 },
+  { name: "Proud Tiger",      emoji: "🐯", need: 6 },
+  { name: "Brave Lion",       emoji: "🦁", need: 7 },
+  { name: "Tangled Octopus",  emoji: "🐙", need: 7 },
+  { name: "Ancient Dino",     emoji: "🦕", need: 8 },
+  { name: "Legendary Dragon", emoji: "🐲", need: 8 },
 ];
-const CREATURES = ["🐣","🦄","🐲","🦊","🐨","🐼","🦁","🐯","🐧","🦉","🐢","🦕"];
 
 function battleStore() {
   return {
@@ -1451,12 +1465,13 @@ function setGameMode(mode) {
   bEl("mode-learn").setAttribute("aria-selected", mode === "learn");
   bEl("mode-battle").setAttribute("aria-selected", mode === "battle");
   bEl("battle-cta").classList.toggle("hidden", mode !== "battle");
-  bEl("pick-title").textContent = mode === "battle" ? "Choose a class to battle" : "Choose your class";
-  // exams stay classic-quiz only, so hide their tiles in battle mode
+  bEl("pick-title").textContent = mode === "battle" ? "Choose a class to play" : "Choose your class";
+  // exams stay classic-quiz only, so hide their tiles in quest mode
   document.querySelectorAll(".exam-section, #exam-grid").forEach((e) => e.classList.toggle("hidden", mode === "battle"));
 }
 bEl("mode-learn").addEventListener("click", () => setGameMode("learn"));
 bEl("mode-battle").addEventListener("click", () => setGameMode("battle"));
+setGameMode("battle"); // Friend Quest is the mainstream default; Learn is one tap away
 
 async function startBattle(subject) {
   currentSubject = subject;
@@ -1472,26 +1487,28 @@ async function startBattle(subject) {
   bEl("battle-defeat").classList.add("hidden");
   battleScreenEl.classList.remove("hidden");
   window.scrollTo(0, 0);
-  spawnMonster();
+  spawnCreature();
   await battleNextQuestion();
 }
 
-function spawnMonster() {
-  const base = MONSTERS[Math.min(battle.stage - 1, MONSTERS.length - 1)];
-  const extra = Math.floor((battle.stage - 1) / MONSTERS.length) * 2; // loop harder
+function spawnCreature() {
+  const base = WILD[(battle.stage - 1) % WILD.length];
+  const extra = Math.floor((battle.stage - 1) / WILD.length) * 2; // repeat visits are shyer
   battle.monster = base;
-  battle.monsterMax = base.hp + extra;
-  battle.monsterHP = battle.monsterMax;
+  battle.monsterMax = base.need + extra;
+  battle.monsterHP = battle.monsterMax; // sparks still needed; bar renders as friendship gained
   bEl("monster-avatar").textContent = base.emoji;
   bEl("monster-name").textContent = base.name;
   bEl("fighter-monster").classList.remove("faint");
-  bEl("battle-stage").textContent = `Stage ${battle.stage}`;
+  bEl("battle-stage").textContent = `Friend ${((battle.stage - 1) % WILD.length) + 1} of ${WILD.length}`;
   renderBattleHUD();
 }
 
 function renderBattleHUD() {
   bEl("hero-hp").style.width = `${(battle.heroHP / battle.heroMax) * 100}%`;
-  bEl("monster-hp").style.width = `${(battle.monsterHP / battle.monsterMax) * 100}%`;
+  const bond = battle.monsterMax - battle.monsterHP; // friendship fills UP
+  bEl("monster-hp").style.width = `${(bond / battle.monsterMax) * 100}%`;
+  bEl("monster-hp").title = `Friendship ${bond}/${battle.monsterMax}`;
   bEl("hero-hearts").textContent = "❤️".repeat(battle.heroHP) + "🖤".repeat(battle.heroMax - battle.heroHP);
   bEl("battle-coins").textContent = `🪙 ${battle.coins}`;
 }
@@ -1567,32 +1584,34 @@ function battleAnswer(origIndex, btn) {
   recordResult(key, correct);
 
   if (correct) {
+    // toss a knowledge spark — a kindness streak throws a golden one (double bond)
     battle.combo++;
     const crit = battle.combo >= 3;
-    const dmg = crit ? 2 : 1;
+    const bond = crit ? 2 : 1;
     bEl("fighter-hero").classList.add("attack");
-    battleFx(crit ? "⚡" : "⭐", true);
+    battleFx(crit ? "🌟" : "✨", true);
     if (soundOn) playCorrectChime();
     setTimeout(() => {
       bEl("fighter-hero").classList.remove("attack");
-      bEl("fighter-monster").classList.add("hit");
-      battle.monsterHP = Math.max(0, battle.monsterHP - dmg);
-      dmgPop(crit ? `CRIT! -${dmg}` : `-${dmg}`, crit, true);
+      bEl("fighter-monster").classList.add("hit"); // excited wiggle
+      battle.monsterHP = Math.max(0, battle.monsterHP - bond);
+      dmgPop(crit ? `SUPER! +${bond} 💖` : `+${bond} 💖`, crit, true);
       renderBattleHUD();
       setTimeout(() => bEl("fighter-monster").classList.remove("hit"), 380);
       if (battle.monsterHP <= 0) { setTimeout(battleVictory, 500); }
       else { setTimeout(battleNextQuestion, 850); }
     }, 240);
   } else {
+    // the creature never retaliates — it just gets startled, and your patience dips
     battle.combo = 0;
-    bEl("fighter-monster").classList.add("attack");
-    battleFx("💥", false);
+    bEl("fighter-monster").classList.add("hit"); // startled tremble
+    dmgPop("💨", false, true);
     if (soundOn) playWrongBuzz();
     setTimeout(() => {
-      bEl("fighter-monster").classList.remove("attack");
+      bEl("fighter-monster").classList.remove("hit");
       bEl("fighter-hero").classList.add("hit");
       battle.heroHP = Math.max(0, battle.heroHP - 1);
-      dmgPop("-1", false, false);
+      dmgPop("😟 -1", false, false);
       renderBattleHUD();
       setTimeout(() => bEl("fighter-hero").classList.remove("hit"), 380);
       if (battle.heroHP <= 0) { setTimeout(battleDefeat, 500); }
@@ -1602,26 +1621,28 @@ function battleAnswer(origIndex, btn) {
 }
 
 function battleVictory() {
-  bEl("fighter-monster").classList.add("faint");
+  // friendship won: THIS creature joins the collection (no kill-then-catch)
+  bEl("fighter-monster").classList.add("attack"); // happy hop
+  setTimeout(() => bEl("fighter-monster").classList.remove("attack"), 500);
   const reward = 20 + battle.stage * 5;
   battle.coins += reward;
-  // catch a new creature if any remain uncaught
-  const uncaught = CREATURES.filter((c) => !battle.creatures.includes(c));
-  let caught = null;
-  if (uncaught.length) { caught = uncaught[0]; battle.creatures.push(caught); }
+  const isNew = !battle.creatures.includes(battle.monster.emoji);
+  if (isNew) battle.creatures.push(battle.monster.emoji);
   battle.bestStage = Math.max(battle.bestStage, battle.stage);
   battleStoreSave(battle);
   burstConfetti();
-  bEl("reward-creature").textContent = caught || battle.monster.emoji;
-  bEl("reward-line").textContent = caught ? "You caught a new creature! 🎉" : "Victory! Your collection is complete 🏆";
+  bEl("reward-creature").textContent = battle.monster.emoji;
+  bEl("reward-line").textContent = isNew
+    ? `${battle.monster.name} is your friend now! 🎉`
+    : `${battle.monster.name} loves learning with you! 💖`;
   bEl("reward-coins").textContent = `🪙 +${reward}`;
   setTimeout(() => bEl("battle-victory").classList.remove("hidden"), 650);
 }
 function battleDefeat() {
-  bEl("fighter-hero").classList.add("faint");
+  bEl("fighter-monster").classList.add("faint"); // it shyly slips away
   battle.bestStage = Math.max(battle.bestStage, battle.stage);
   battleStoreSave(battle);
-  bEl("defeat-line").textContent = `You reached Stage ${battle.stage}. Best: Stage ${battle.bestStage}.`;
+  bEl("defeat-line").textContent = `${battle.monster.name} slipped away shyly… You befriended ${battle.creatures.length} of ${WILD.length}. Try again!`;
   setTimeout(() => bEl("battle-defeat").classList.remove("hidden"), 650);
 }
 
@@ -1629,8 +1650,8 @@ bEl("battle-next").addEventListener("click", async () => {
   bEl("battle-victory").classList.add("hidden");
   bEl("fighter-hero").classList.remove("faint");
   battle.stage++;
-  battle.heroHP = Math.min(battle.heroMax, battle.heroHP + 1); // heal 1 as reward
-  spawnMonster();
+  battle.heroHP = Math.min(battle.heroMax, battle.heroHP + 1); // new friends restore patience
+  spawnCreature();
   await battleNextQuestion();
 });
 bEl("battle-retry").addEventListener("click", () => { bEl("battle-defeat").classList.add("hidden"); startBattle(currentSubject); });
@@ -1651,14 +1672,16 @@ function openCollection() {
   const store = battleStore();
   const grid = bEl("collection-grid");
   grid.innerHTML = "";
-  CREATURES.forEach((c) => {
+  WILD.forEach((w) => {
     const cell = document.createElement("div");
-    const caught = store.creatures.includes(c);
-    cell.className = "collection-cell " + (caught ? "caught" : "locked");
-    cell.textContent = caught ? c : "❓";
+    const friend = store.creatures.includes(w.emoji);
+    cell.className = "collection-cell " + (friend ? "caught" : "locked");
+    cell.textContent = friend ? w.emoji : "❓";
+    cell.title = friend ? w.name : "Not befriended yet";
     grid.appendChild(cell);
   });
-  bEl("collection-count").textContent = `${store.creatures.length} of ${CREATURES.length} caught · 🪙 ${store.coins}`;
+  const friends = WILD.filter((w) => store.creatures.includes(w.emoji)).length;
+  bEl("collection-count").textContent = `${friends} of ${WILD.length} friends · 🪙 ${store.coins}`;
   bEl("collection-modal").classList.remove("hidden");
 }
 bEl("battle-collection-open").addEventListener("click", openCollection);
