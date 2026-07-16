@@ -13,6 +13,10 @@
 <link rel="canonical" href="https://educerelator.com/" />
 <link rel="alternate" hreflang="en-IN" href="https://educerelator.com/" />
 <link rel="alternate" hreflang="hi-IN" href="https://educerelator.com/learn-in-hindi.html" />
+<link rel="alternate" hreflang="ta-IN" href="https://educerelator.com/learn-in-tamil.html" />
+<link rel="alternate" hreflang="te-IN" href="https://educerelator.com/learn-in-telugu.html" />
+<link rel="alternate" hreflang="bn-IN" href="https://educerelator.com/learn-in-bengali.html" />
+<link rel="alternate" hreflang="mr-IN" href="https://educerelator.com/learn-in-marathi.html" />
 <link rel="alternate" hreflang="x-default" href="https://educerelator.com/" />
 
 <!-- Open Graph -->
@@ -167,11 +171,9 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="apple-touch-icon" href="icon-192.png" />
 <link rel="manifest" href="manifest.json" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="dns-prefetch" href="https://www.gstatic.com" />
 <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet" />
+<link rel="preload" href="fonts/baloo2-var.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="css/style.css?v=game1" />
 </head>
 <body>
@@ -626,6 +628,13 @@
 </div>
 
 <script type="module" src="js/main.js?v=game1"></script>
+<script>
+// PWA: register the service worker from the site root (scope "/"). Skipped on
+// localhost file previews where the root path differs.
+if ("serviceWorker" in navigator && location.pathname === "/") {
+  window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+}
+</script>
 
 <!-- Static content for search engine crawlers — visible but below the app -->
 <section class="seo-section" aria-label="About EC Play">
@@ -694,6 +703,11 @@
       <a href="/cbse-practice-questions.html">Free CBSE Practice Questions (Class 1–12)</a>
       <a href="/online-learning-games-india.html">Online Learning Games for Indian Students</a>
       <a href="/learn-in-hindi.html">हिंदी में पढ़ें — Learn in Hindi</a>
+      <a href="/learn-in-tamil.html">தமிழில் படியுங்கள் — Learn in Tamil</a>
+      <a href="/learn-in-telugu.html">తెలుగులో చదవండి — Learn in Telugu</a>
+      <a href="/learn-in-bengali.html">বাংলায় পড়ুন — Learn in Bengali</a>
+      <a href="/learn-in-marathi.html">मराठीत शिका — Learn in Marathi</a>
+      <a href="/about.html">About Educerelator &amp; our founder</a>
     </nav>
 
     <p class="seo-cta-text">Ready to start? <a href="https://educerelator.com">Play free at educerelator.com</a> — no sign-up required to try.</p>

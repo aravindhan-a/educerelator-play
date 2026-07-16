@@ -189,6 +189,11 @@ const core = [
   { loc: `${SITE}/cbse-practice-questions.html`, pri: "0.9", freq: "monthly" },
   { loc: `${SITE}/online-learning-games-india.html`, pri: "0.9", freq: "monthly" },
   { loc: `${SITE}/learn-in-hindi.html`, pri: "0.9", freq: "monthly" },
+  { loc: `${SITE}/learn-in-tamil.html`, pri: "0.9", freq: "monthly" },
+  { loc: `${SITE}/learn-in-telugu.html`, pri: "0.9", freq: "monthly" },
+  { loc: `${SITE}/learn-in-bengali.html`, pri: "0.9", freq: "monthly" },
+  { loc: `${SITE}/learn-in-marathi.html`, pri: "0.9", freq: "monthly" },
+  { loc: `${SITE}/about.html`, pri: "0.6", freq: "yearly" },
   { loc: `${SITE}/practice/`, pri: "0.9", freq: "weekly" },
 ];
 const urls = core.concat(pages.map((p) => ({ loc: `${SITE}/practice/${p.file}`, pri: "0.8", freq: "monthly" })));

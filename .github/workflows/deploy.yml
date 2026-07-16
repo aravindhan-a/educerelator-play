@@ -22,6 +22,12 @@ jobs:
           cp urban/frontend/terms.html deploy/
           cp urban/frontend/cbse-practice-questions.html deploy/
           cp urban/frontend/learn-in-hindi.html deploy/
+          cp urban/frontend/learn-in-tamil.html deploy/
+          cp urban/frontend/learn-in-telugu.html deploy/
+          cp urban/frontend/learn-in-bengali.html deploy/
+          cp urban/frontend/learn-in-marathi.html deploy/
+          cp urban/frontend/about.html deploy/
+          cp urban/frontend/sw.js deploy/
           cp urban/frontend/online-learning-games-india.html deploy/
           cp urban/frontend/favicon.svg deploy/
           cp urban/frontend/og-image.png deploy/
@@ -35,6 +41,7 @@ jobs:
           cp -r urban/frontend/css deploy/
           cp -r urban/frontend/js deploy/
           cp -r urban/frontend/practice deploy/
+          cp -r urban/frontend/fonts deploy/
           cp -r content deploy/
           cp -r shared-lib deploy/
 

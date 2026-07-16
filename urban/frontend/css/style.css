@@ -1,3 +1,12 @@
+/* Self-hosted Baloo 2 (variable, latin) — removes render-blocking Google
+   Fonts round-trips from the LCP path. Indic scripts fall back to system fonts. */
+@font-face {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url("../fonts/baloo2-var.woff2") format("woff2");
+}
 :root {
   --card-bg: #ffffff;
   --accent: #ff5e7e;
