@@ -1089,6 +1089,7 @@ button.home-stat-share:hover { transform: scale(1.05); background: rgba(255,255,
   margin: 0 auto;
   font-family: "Baloo 2", system-ui, sans-serif;
 }
+.seo-inner > h1,
 .seo-inner h2 {
   font-size: 1.6rem;
   font-weight: 900;
@@ -1131,7 +1132,7 @@ button.home-stat-share:hover { transform: scale(1.05); background: rgba(255,255,
 .seo-cta-text { margin-top: 32px !important; font-weight: 700; color: #fff; }
 @media (max-width: 600px) {
   .seo-grid { grid-template-columns: 1fr; }
-  .seo-inner h2 { font-size: 1.3rem; }
+  .seo-inner > h1, .seo-inner h2 { font-size: 1.3rem; }
 }
 
 /* ── streak milestone strip (session complete) ── */

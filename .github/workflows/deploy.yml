@@ -34,6 +34,7 @@ jobs:
           cp urban/frontend/sitemap.xml deploy/
           cp -r urban/frontend/css deploy/
           cp -r urban/frontend/js deploy/
+          cp -r urban/frontend/practice deploy/
           cp -r content deploy/
           cp -r shared-lib deploy/
 
