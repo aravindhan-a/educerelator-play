@@ -57,26 +57,48 @@ function pickVoice(voices, langCode) {
 }
 
 // Math notation reads terribly symbol-by-symbol ("open paren minus fifteen…"),
-// so turn it into words for the spoken version. The on-screen prompt is
-// unchanged; this only affects what the voice says.
-function speakableText(text) {
+// so turn it into WORDS for the spoken version — and in the reader's OWN
+// language, so a Tamil voice doesn't jarringly say "plus"/"equals" in English
+// mid-sentence. The on-screen prompt is unchanged; this only affects the voice.
+// Digits themselves are read in-language automatically by the locale voice, so
+// only the operators/symbols need translating.
+const MATH_WORDS = {
+  en: { plus:"plus", minus:"minus", times:"times", div:"divided by", eq:"equals", eqQ:"equals what?", sqrt:"square root of", cbrt:"cube root of", sq:"squared", cube:"cubed", pow:"to the power", over:"over", pct:"percent" },
+  hi: { plus:"जमा", minus:"घटा", times:"गुणा", div:"बटा", eq:"बराबर", eqQ:"बराबर कितना?", sqrt:"वर्गमूल", cbrt:"घनमूल", sq:"का वर्ग", cube:"का घन", pow:"की घात", over:"बटा", pct:"प्रतिशत" },
+  ta: { plus:"கூட்டல்", minus:"கழித்தல்", times:"பெருக்கல்", div:"வகுத்தல்", eq:"சமம்", eqQ:"சமம் எவ்வளவு?", sqrt:"வர்க்கமூலம்", cbrt:"கனமூலம்", sq:"வர்க்கம்", cube:"கனம்", pow:"அடுக்கு", over:"வகுத்தல்", pct:"சதவீதம்" },
+  te: { plus:"కూడిక", minus:"తీసివేత", times:"గుణకారం", div:"భాగహారం", eq:"సమానం", eqQ:"సమానం ఎంత?", sqrt:"వర్గమూలం", cbrt:"ఘనమూలం", sq:"వర్గం", cube:"ఘనం", pow:"ఘాతం", over:"భాగా", pct:"శాతం" },
+  bn: { plus:"যোগ", minus:"বিয়োগ", times:"গুণ", div:"ভাগ", eq:"সমান", eqQ:"সমান কত?", sqrt:"বর্গমূল", cbrt:"ঘনমূল", sq:"বর্গ", cube:"ঘন", pow:"ঘাত", over:"ভাগ", pct:"শতাংশ" },
+  mr: { plus:"अधिक", minus:"वजा", times:"गुणिले", div:"भागिले", eq:"बरोबर", eqQ:"बरोबर किती?", sqrt:"वर्गमूळ", cbrt:"घनमूळ", sq:"चा वर्ग", cube:"चा घन", pow:"घात", over:"भागिले", pct:"टक्के" },
+  gu: { plus:"વત્તા", minus:"ઓછા", times:"ગુણ્યા", div:"ભાગ્યા", eq:"બરાબર", eqQ:"બરાબર કેટલા?", sqrt:"વર્ગમૂળ", cbrt:"ઘનમૂળ", sq:"નો વર્ગ", cube:"નો ઘન", pow:"ઘાત", over:"ભાગ્યા", pct:"ટકા" },
+  kn: { plus:"ಕೂಡಿಸಿ", minus:"ಕಳೆ", times:"ಗುಣಿಸಿ", div:"ಭಾಗಿಸಿ", eq:"ಸಮ", eqQ:"ಸಮ ಎಷ್ಟು?", sqrt:"ವರ್ಗಮೂಲ", cbrt:"ಘನಮೂಲ", sq:"ವರ್ಗ", cube:"ಘನ", pow:"ಘಾತ", over:"ಭಾಗಿಸಿ", pct:"ಶೇಕಡ" },
+  ml: { plus:"കൂട്ടൽ", minus:"കുറയ്ക്കൽ", times:"ഗുണനം", div:"ഹരണം", eq:"സമം", eqQ:"സമം എത്ര?", sqrt:"വർഗമൂലം", cbrt:"ഘനമൂലം", sq:"വർഗം", cube:"ഘനം", pow:"കൃതി", over:"ഹരണം", pct:"ശതമാനം" },
+  pa: { plus:"ਜਮ੍ਹਾਂ", minus:"ਘਟਾਓ", times:"ਗੁਣਾ", div:"ਭਾਗ", eq:"ਬਰਾਬਰ", eqQ:"ਬਰਾਬਰ ਕਿੰਨਾ?", sqrt:"ਵਰਗਮੂਲ", cbrt:"ਘਣਮੂਲ", sq:"ਦਾ ਵਰਗ", cube:"ਦਾ ਘਣ", pow:"ਘਾਤ", over:"ਭਾਗ", pct:"ਪ੍ਰਤੀਸ਼ਤ" },
+  ur: { plus:"جمع", minus:"منفی", times:"ضرب", div:"تقسیم", eq:"برابر", eqQ:"برابر کتنا؟", sqrt:"جذر", cbrt:"مکعب جذر", sq:"کا مربع", cube:"کا مکعب", pow:"کی طاقت", over:"تقسیم", pct:"فیصد" },
+  or: { plus:"ଯୋଗ", minus:"ବିୟୋଗ", times:"ଗୁଣନ", div:"ଭାଗ", eq:"ସମାନ", eqQ:"ସମାନ କେତେ?", sqrt:"ବର୍ଗମୂଳ", cbrt:"ଘନମୂଳ", sq:"ବର୍ଗ", cube:"ଘନ", pow:"ଘାତ", over:"ଭାଗ", pct:"ପ୍ରତିଶତ" },
+  ne: { plus:"जोड", minus:"घटाउ", times:"गुणन", div:"भाग", eq:"बराबर", eqQ:"बराबर कति?", sqrt:"वर्गमूल", cbrt:"घनमूल", sq:"को वर्ग", cube:"को घन", pow:"घात", over:"भाग", pct:"प्रतिशत" },
+};
+
+function speakableText(text, lang = "en") {
+  const w = MATH_WORDS[lang] || MATH_WORDS.en;
+  const pad = (s) => ` ${s} `;
   return String(text)
-    .replace(/\s*=\s*\?\s*$/, " equals what?")
-    .replace(/√/g, " square root of ")
-    .replace(/∛/g, " cube root of ")
-    .replace(/²/g, " squared ")
-    .replace(/³/g, " cubed ")
+    .replace(/\s*=\s*\?\s*$/, pad(w.eqQ))
+    .replace(/√/g, pad(w.sqrt))
+    .replace(/∛/g, pad(w.cbrt))
+    .replace(/²/g, pad(w.sq))
+    .replace(/³/g, pad(w.cube))
     .replace(/\bLCM\b/g, "L C M")
     .replace(/\bHCF\b/g, "H C F")
-    .replace(/(\d)\s*\^\s*(\d)/g, "$1 to the power $2")
-    .replace(/(\d)\s*\/\s*(\d)/g, "$1 over $2")
-    .replace(/×/g, " times ")
-    .replace(/÷/g, " divided by ")
-    .replace(/\+/g, " plus ")
-    .replace(/[−–]/g, " minus ")          // math minus signs (U+2212 / en-dash)
-    .replace(/(^|\s)-(\d)/g, "$1 minus $2") // a leading "-5"
-    .replace(/%/g, " percent ")
-    .replace(/[()]/g, " ")                 // parens just add noise when spoken
+    .replace(/(\d)\s*\^\s*(\d)/g, `$1 ${w.pow} $2`)
+    .replace(/(\d)\s*\/\s*(\d)/g, `$1 ${w.over} $2`)
+    .replace(/×/g, pad(w.times))
+    .replace(/÷/g, pad(w.div))
+    .replace(/\+/g, pad(w.plus))
+    .replace(/[−–]/g, pad(w.minus))         // math minus signs (U+2212 / en-dash)
+    .replace(/(^|\s)-(\d)/g, `$1 ${w.minus} $2`) // a leading "-5"
+    .replace(/=/g, pad(w.eq))               // any remaining equals
+    .replace(/%/g, pad(w.pct))
+    .replace(/[()]/g, " ")                  // parens just add noise when spoken
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -90,7 +112,7 @@ async function speak(text, lang) {
   // Only cancel when something is actually in flight — a cancel() immediately
   // followed by speak() with nothing playing drops the new utterance on Chrome.
   if (ss.speaking || ss.pending) ss.cancel();
-  const utterance = new SpeechSynthesisUtterance(speakableText(text));
+  const utterance = new SpeechSynthesisUtterance(speakableText(text, lang));
   utterance.lang = langCode;
   // Only assign a same-language voice; forcing an English voice onto Tamil text
   // produces gibberish, so we'd rather let the engine try than mispronounce.
