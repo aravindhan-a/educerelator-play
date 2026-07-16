@@ -174,7 +174,7 @@
 <link rel="dns-prefetch" href="https://www.gstatic.com" />
 <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
 <link rel="preload" href="fonts/baloo2-var.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="css/style.css?v=game1" />
+<link rel="stylesheet" href="css/style.css?v=game2" />
 </head>
 <body>
 
@@ -248,16 +248,16 @@
       <button id="continue-btn" class="continue-btn"></button>
     </div>
 
-    <!-- Game mode toggle: Learn (classic quiz) vs Battle (monster game) -->
+    <!-- Game mode toggle: Friend Quest (befriend creatures) vs Learn (classic quiz) -->
     <div class="mode-switch" id="mode-switch" role="tablist" aria-label="Play mode">
       <button class="mode-tab active" id="mode-learn" role="tab" aria-selected="true">📚 Learn</button>
-      <button class="mode-tab" id="mode-battle" role="tab" aria-selected="false">⚔️ Battle</button>
+      <button class="mode-tab" id="mode-battle" role="tab" aria-selected="false">🐾 Friend Quest</button>
     </div>
     <div class="battle-cta hidden" id="battle-cta">
-      <div class="battle-cta-mons">🐉</div>
+      <div class="battle-cta-mons">🐼</div>
       <div class="battle-cta-text">
-        <strong>Monster Battle!</strong>
-        <p>Pick a class &amp; subject, then defeat monsters with your answers. Collect creatures, earn coins!</p>
+        <strong>Friend Quest!</strong>
+        <p>Shy wild creatures are waiting. Answer questions to toss knowledge sparks ✨ and win their friendship. Befriend all 12!</p>
       </div>
     </div>
 
@@ -395,7 +395,7 @@
   <!-- ── ⚔️ Monster Battle (game mode) ── -->
   <section id="battle-screen" class="screen hidden">
     <div class="battle-topbar">
-      <button id="battle-quit" class="battle-quit" aria-label="Quit battle">✕</button>
+      <button id="battle-quit" class="battle-quit" aria-label="Quit quest">✕</button>
       <span id="battle-stage" class="battle-stage">Stage 1</span>
       <span id="battle-coins" class="battle-coins">🪙 0</span>
     </div>
@@ -425,13 +425,13 @@
     <!-- victory overlay -->
     <div class="battle-overlay hidden" id="battle-victory">
       <div class="battle-overlay-card">
-        <div class="battle-overlay-title">Monster defeated! 🎉</div>
+        <div class="battle-overlay-title">You made a new friend! 🎉</div>
         <div class="reward-creature" id="reward-creature">🐣</div>
-        <div class="reward-line" id="reward-line">You caught a new creature!</div>
+        <div class="reward-line" id="reward-line">Friendship won!</div>
         <div class="reward-coins" id="reward-coins">🪙 +20</div>
         <div class="battle-overlay-actions">
-          <button class="battle-next-btn" id="battle-next">Next monster →</button>
-          <button class="battle-collection-btn" id="battle-collection-open">🎒 Collection</button>
+          <button class="battle-next-btn" id="battle-next">Meet the next creature →</button>
+          <button class="battle-collection-btn" id="battle-collection-open">🫶 My Friends</button>
         </div>
       </div>
     </div>
@@ -439,8 +439,8 @@
     <!-- defeat overlay -->
     <div class="battle-overlay hidden" id="battle-defeat">
       <div class="battle-overlay-card">
-        <div class="battle-overlay-title">You were defeated 💫</div>
-        <div class="reward-creature">😵</div>
+        <div class="battle-overlay-title">Oh no — it wandered off 💨</div>
+        <div class="reward-creature">🍃</div>
         <div class="reward-line" id="defeat-line">Reached Stage 1. Try again!</div>
         <div class="battle-overlay-actions">
           <button class="battle-next-btn" id="battle-retry">↻ Try again</button>
@@ -454,8 +454,8 @@
   <div class="modal-overlay hidden" id="collection-modal">
     <div class="modal-card collection-card">
       <button id="collection-close" class="modal-close" aria-label="Close">✕</button>
-      <div class="collection-title">🎒 My Creatures</div>
-      <div class="collection-sub" id="collection-count">0 of 12 caught</div>
+      <div class="collection-title">🫶 My Friends</div>
+      <div class="collection-sub" id="collection-count">0 of 12 friends</div>
       <div class="collection-grid" id="collection-grid"></div>
     </div>
   </div>
@@ -627,7 +627,7 @@
 
 </div>
 
-<script type="module" src="js/main.js?v=game1"></script>
+<script type="module" src="js/main.js?v=game2"></script>
 <script>
 // PWA: register the service worker from the site root (scope "/"). Skipped on
 // localhost file previews where the root path differs.
