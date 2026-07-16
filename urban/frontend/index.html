@@ -169,7 +169,7 @@
 <link rel="dns-prefetch" href="https://www.gstatic.com" />
 <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style.css?v=game1" />
 </head>
 <body>
 
@@ -243,7 +243,20 @@
       <button id="continue-btn" class="continue-btn"></button>
     </div>
 
-    <h2 class="screen-title pick-title">Choose your class</h2>
+    <!-- Game mode toggle: Learn (classic quiz) vs Battle (monster game) -->
+    <div class="mode-switch" id="mode-switch" role="tablist" aria-label="Play mode">
+      <button class="mode-tab active" id="mode-learn" role="tab" aria-selected="true">📚 Learn</button>
+      <button class="mode-tab" id="mode-battle" role="tab" aria-selected="false">⚔️ Battle</button>
+    </div>
+    <div class="battle-cta hidden" id="battle-cta">
+      <div class="battle-cta-mons">🐉</div>
+      <div class="battle-cta-text">
+        <strong>Monster Battle!</strong>
+        <p>Pick a class &amp; subject, then defeat monsters with your answers. Collect creatures, earn coins!</p>
+      </div>
+    </div>
+
+    <h2 class="screen-title pick-title" id="pick-title">Choose your class</h2>
     <div class="class-grid" id="class-grid">
       <!-- populated by JS -->
     </div>
@@ -373,6 +386,74 @@
       <button class="signout-profile-btn" id="signout-btn">Sign Out</button>
     </div>
   </section>
+
+  <!-- ── ⚔️ Monster Battle (game mode) ── -->
+  <section id="battle-screen" class="screen hidden">
+    <div class="battle-topbar">
+      <button id="battle-quit" class="battle-quit" aria-label="Quit battle">✕</button>
+      <span id="battle-stage" class="battle-stage">Stage 1</span>
+      <span id="battle-coins" class="battle-coins">🪙 0</span>
+    </div>
+
+    <div class="battle-arena" id="battle-arena">
+      <div class="fighter fighter-hero" id="fighter-hero">
+        <div class="fighter-hp"><div class="fighter-hp-fill hero-hp-fill" id="hero-hp"></div></div>
+        <div class="fighter-hearts" id="hero-hearts"></div>
+        <div class="fighter-avatar" id="hero-avatar">🦉</div>
+        <div class="fighter-name">You</div>
+      </div>
+      <div class="battle-fx-layer" id="battle-fx"></div>
+      <div class="fighter fighter-monster" id="fighter-monster">
+        <div class="fighter-hp"><div class="fighter-hp-fill monster-hp-fill" id="monster-hp"></div></div>
+        <div class="fighter-avatar" id="monster-avatar">👾</div>
+        <div class="fighter-name" id="monster-name">Goblin</div>
+      </div>
+    </div>
+
+    <div class="battle-panel">
+      <div class="battle-combo" id="battle-combo" aria-live="polite"></div>
+      <p class="battle-prompt" id="battle-prompt">…</p>
+      <div class="battle-visual" id="battle-visual"></div>
+      <div class="battle-choices" id="battle-choices"></div>
+    </div>
+
+    <!-- victory overlay -->
+    <div class="battle-overlay hidden" id="battle-victory">
+      <div class="battle-overlay-card">
+        <div class="battle-overlay-title">Monster defeated! 🎉</div>
+        <div class="reward-creature" id="reward-creature">🐣</div>
+        <div class="reward-line" id="reward-line">You caught a new creature!</div>
+        <div class="reward-coins" id="reward-coins">🪙 +20</div>
+        <div class="battle-overlay-actions">
+          <button class="battle-next-btn" id="battle-next">Next monster →</button>
+          <button class="battle-collection-btn" id="battle-collection-open">🎒 Collection</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- defeat overlay -->
+    <div class="battle-overlay hidden" id="battle-defeat">
+      <div class="battle-overlay-card">
+        <div class="battle-overlay-title">You were defeated 💫</div>
+        <div class="reward-creature">😵</div>
+        <div class="reward-line" id="defeat-line">Reached Stage 1. Try again!</div>
+        <div class="battle-overlay-actions">
+          <button class="battle-next-btn" id="battle-retry">↻ Try again</button>
+          <button class="battle-collection-btn" id="battle-home">🏠 Home</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection overlay -->
+  <div class="modal-overlay hidden" id="collection-modal">
+    <div class="modal-card collection-card">
+      <button id="collection-close" class="modal-close" aria-label="Close">✕</button>
+      <div class="collection-title">🎒 My Creatures</div>
+      <div class="collection-sub" id="collection-count">0 of 12 caught</div>
+      <div class="collection-grid" id="collection-grid"></div>
+    </div>
+  </div>
 
   <!-- Session Complete Screen -->
   <section id="session-complete" class="screen hidden">
@@ -541,7 +622,7 @@
 
 </div>
 
-<script type="module" src="js/main.js"></script>
+<script type="module" src="js/main.js?v=game1"></script>
 
 <!-- Static content for search engine crawlers — visible but below the app -->
 <section class="seo-section" aria-label="About EC Play">
