@@ -5,52 +5,686 @@
   "note": "SAMPLE questions demonstrating the UPSC track. Facts are correct and syllabus-relevant; source = 'Sample (UPSC pattern)'. Replace with verified real PYQs + SME solutions + 13-language translations before shipping; then remove the draft flag.",
   "questions": [
     {
-      "id": "upsc-geography-sample-001", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
-      "topic": "indian-geography", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The Standard Meridian of India passes through which longitude?" },
-      "choices": [ { "en": "82°30′ E" }, { "en": "77° E" }, { "en": "90° E" }, { "en": "0° (Prime Meridian)" } ],
+      "id": "upsc-geography-sample-001",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-geography",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Standard Meridian of India passes through which longitude?"
+      },
+      "choices": [
+        {
+          "en": "82°30′ E"
+        },
+        {
+          "en": "77° E"
+        },
+        {
+          "en": "90° E"
+        },
+        {
+          "en": "0° (Prime Meridian)"
+        }
+      ],
       "answerIndex": 0,
-      "solution": { "en": "India's Standard Meridian is 82°30′ E, passing near Mirzapur (Uttar Pradesh); Indian Standard Time is based on it, 5 hours 30 minutes ahead of GMT." }
+      "solution": {
+        "en": "India's Standard Meridian is 82°30′ E, passing near Mirzapur (Uttar Pradesh); Indian Standard Time is based on it, 5 hours 30 minutes ahead of GMT."
+      }
     },
     {
-      "id": "upsc-geography-sample-002", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
-      "topic": "indian-geography", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The longest river in India is the:" },
-      "choices": [ { "en": "Godavari" }, { "en": "Ganga" }, { "en": "Brahmaputra" }, { "en": "Yamuna" } ],
+      "id": "upsc-geography-sample-002",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-geography",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The longest river in India is the:"
+      },
+      "choices": [
+        {
+          "en": "Godavari"
+        },
+        {
+          "en": "Ganga"
+        },
+        {
+          "en": "Brahmaputra"
+        },
+        {
+          "en": "Yamuna"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "The Ganga is the longest river within India (about 2,525 km). The Godavari is the longest river of peninsular (South) India, sometimes called the 'Dakshina Ganga'." }
+      "solution": {
+        "en": "The Ganga is the longest river within India (about 2,525 km). The Godavari is the longest river of peninsular (South) India, sometimes called the 'Dakshina Ganga'."
+      }
     },
     {
-      "id": "upsc-geography-sample-003", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
-      "topic": "indian-geography", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The largest state of India by area is:" },
-      "choices": [ { "en": "Madhya Pradesh" }, { "en": "Maharashtra" }, { "en": "Rajasthan" }, { "en": "Uttar Pradesh" } ],
+      "id": "upsc-geography-sample-003",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-geography",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The largest state of India by area is:"
+      },
+      "choices": [
+        {
+          "en": "Madhya Pradesh"
+        },
+        {
+          "en": "Maharashtra"
+        },
+        {
+          "en": "Rajasthan"
+        },
+        {
+          "en": "Uttar Pradesh"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "Rajasthan is the largest Indian state by area. Madhya Pradesh is second; Uttar Pradesh is the most populous state, not the largest by area." }
+      "solution": {
+        "en": "Rajasthan is the largest Indian state by area. Madhya Pradesh is second; Uttar Pradesh is the most populous state, not the largest by area."
+      }
     },
     {
-      "id": "upsc-geography-sample-004", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
-      "topic": "indian-geography", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The southernmost tip of the Indian mainland is:" },
-      "choices": [ { "en": "Indira Point" }, { "en": "Kanyakumari" }, { "en": "Rameswaram" }, { "en": "Point Calimere" } ],
+      "id": "upsc-geography-sample-004",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-geography",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The southernmost tip of the Indian mainland is:"
+      },
+      "choices": [
+        {
+          "en": "Indira Point"
+        },
+        {
+          "en": "Kanyakumari"
+        },
+        {
+          "en": "Rameswaram"
+        },
+        {
+          "en": "Point Calimere"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "Kanyakumari (Cape Comorin) is the southernmost tip of the Indian mainland. Indira Point, in the Andaman & Nicobar Islands, is the southernmost point of the whole of India's territory." }
+      "solution": {
+        "en": "Kanyakumari (Cape Comorin) is the southernmost tip of the Indian mainland. Indira Point, in the Andaman & Nicobar Islands, is the southernmost point of the whole of India's territory."
+      }
     },
     {
-      "id": "upsc-geography-sample-005", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
-      "topic": "physical-geography", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The Himalayas are an example of which type of mountains?" },
-      "choices": [ { "en": "Block mountains" }, { "en": "Volcanic mountains" }, { "en": "Fold mountains" }, { "en": "Residual mountains" } ],
+      "id": "upsc-geography-sample-005",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "physical-geography",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Himalayas are an example of which type of mountains?"
+      },
+      "choices": [
+        {
+          "en": "Block mountains"
+        },
+        {
+          "en": "Volcanic mountains"
+        },
+        {
+          "en": "Fold mountains"
+        },
+        {
+          "en": "Residual mountains"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "The Himalayas are young fold mountains, formed by the collision of the Indian and Eurasian plates. Block mountains form by faulting; volcanic mountains from lava; residual mountains by erosion of older highlands." }
+      "solution": {
+        "en": "The Himalayas are young fold mountains, formed by the collision of the Indian and Eurasian plates. Block mountains form by faulting; volcanic mountains from lava; residual mountains by erosion of older highlands."
+      }
     },
     {
-      "id": "upsc-geography-sample-006", "type": "mcq", "exam": "upsc", "subject": "geography", "year": null,
-      "topic": "world-geography", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The largest ocean on Earth is the:" },
-      "choices": [ { "en": "Atlantic Ocean" }, { "en": "Indian Ocean" }, { "en": "Arctic Ocean" }, { "en": "Pacific Ocean" } ],
+      "id": "upsc-geography-sample-006",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "world-geography",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The largest ocean on Earth is the:"
+      },
+      "choices": [
+        {
+          "en": "Atlantic Ocean"
+        },
+        {
+          "en": "Indian Ocean"
+        },
+        {
+          "en": "Arctic Ocean"
+        },
+        {
+          "en": "Pacific Ocean"
+        }
+      ],
       "answerIndex": 3,
-      "solution": { "en": "The Pacific Ocean is the largest and deepest ocean, covering about a third of the Earth's surface. The Atlantic is the second largest." }
+      "solution": {
+        "en": "The Pacific Ocean is the largest and deepest ocean, covering about a third of the Earth's surface. The Atlantic is the second largest."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-007",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-geography-location",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Tropic of Cancer passes through how many Indian states?"
+      },
+      "choices": [
+        {
+          "en": "Six"
+        },
+        {
+          "en": "Seven"
+        },
+        {
+          "en": "Eight"
+        },
+        {
+          "en": "Nine"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The Tropic of Cancer (23.5°N) crosses eight states: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-008",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-soils",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which soil type, formed from weathered basaltic lava of the Deccan, is considered most suitable for cotton cultivation?"
+      },
+      "choices": [
+        {
+          "en": "Alluvial soil"
+        },
+        {
+          "en": "Red soil"
+        },
+        {
+          "en": "Black soil"
+        },
+        {
+          "en": "Laterite soil"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Black soil (regur), rich in clay and highly moisture-retentive, developed over the Deccan Trap basalt and is ideal for cotton, hence its name 'black cotton soil'."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-009",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-physiography",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Western Ghats and the Eastern Ghats meet at which range of hills?"
+      },
+      "choices": [
+        {
+          "en": "Anaimalai Hills"
+        },
+        {
+          "en": "Nilgiri Hills"
+        },
+        {
+          "en": "Cardamom Hills"
+        },
+        {
+          "en": "Palni Hills"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Western and Eastern Ghats converge at the Nilgiri Hills in the south, where Doddabetta is the highest peak of the Nilgiris."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-010",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-climate-local-winds",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The hot, dry, dust-laden wind that blows over the northern plains of India during the afternoons of summer is called the:"
+      },
+      "choices": [
+        {
+          "en": "Kalbaisakhi"
+        },
+        {
+          "en": "Loo"
+        },
+        {
+          "en": "Mango shower"
+        },
+        {
+          "en": "Norwester"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The 'Loo' is a strong, hot and dry wind that blows over the north Indian plains from the west in May and June and can cause heat strokes."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-011",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "oceanography-currents",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which of the following is a cold ocean current?"
+      },
+      "choices": [
+        {
+          "en": "Gulf Stream"
+        },
+        {
+          "en": "Kuroshio Current"
+        },
+        {
+          "en": "Labrador Current"
+        },
+        {
+          "en": "Brazil Current"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The Labrador Current flows southward from the Arctic along the coast of Canada, carrying cold water; the Gulf Stream, Kuroshio and Brazil currents are all warm currents."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-012",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-physiography",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Anamudi, the highest peak of peninsular India, is located in which range?"
+      },
+      "choices": [
+        {
+          "en": "Nilgiri Hills"
+        },
+        {
+          "en": "Aravalli Range"
+        },
+        {
+          "en": "Western Ghats"
+        },
+        {
+          "en": "Satpura Range"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Anamudi (about 2,695 m) lies in the Western Ghats in Kerala and is the highest peak in India south of the Himalayas."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-013",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "climatology-earth-motion",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In the Northern Hemisphere, the Coriolis force deflects moving winds and currents towards their:"
+      },
+      "choices": [
+        {
+          "en": "Left"
+        },
+        {
+          "en": "Right"
+        },
+        {
+          "en": "Centre"
+        },
+        {
+          "en": "Point of origin"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Due to the Earth's rotation, the Coriolis force deflects freely moving objects to the right in the Northern Hemisphere and to the left in the Southern Hemisphere (Ferrel's law)."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-014",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-lakes",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which of the following is the largest inland saltwater (saline) lake in India?"
+      },
+      "choices": [
+        {
+          "en": "Chilika Lake"
+        },
+        {
+          "en": "Wular Lake"
+        },
+        {
+          "en": "Vembanad Lake"
+        },
+        {
+          "en": "Sambhar Lake"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Sambhar Lake in Rajasthan is India's largest inland saline lake. Wular is the largest freshwater lake, Chilika the largest brackish lagoon, and Vembanad the longest lake."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-015",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "world-physical-geography",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which water body separates India from Sri Lanka?"
+      },
+      "choices": [
+        {
+          "en": "Palk Strait"
+        },
+        {
+          "en": "Bering Strait"
+        },
+        {
+          "en": "Strait of Malacca"
+        },
+        {
+          "en": "Strait of Hormuz"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The Palk Strait (with the Gulf of Mannar to its south) separates the Indian mainland from the island of Sri Lanka."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-016",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "climatology-pressure-belts",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The belt of low pressure near the equator, where the trade winds converge and winds are generally calm, is known as the:"
+      },
+      "choices": [
+        {
+          "en": "Horse latitudes"
+        },
+        {
+          "en": "Doldrums"
+        },
+        {
+          "en": "Roaring forties"
+        },
+        {
+          "en": "Polar high"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The equatorial low-pressure belt is called the doldrums; intense heating causes rising air and calm surface conditions where the trade winds meet at the ITCZ."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-017",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-rivers",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Godavari, the largest river of peninsular India, originates near which place?"
+      },
+      "choices": [
+        {
+          "en": "Amarkantak"
+        },
+        {
+          "en": "Mahabaleshwar"
+        },
+        {
+          "en": "Trimbakeshwar"
+        },
+        {
+          "en": "Yamunotri"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The Godavari rises near Trimbakeshwar in the Western Ghats of Maharashtra. Amarkantak is the source of the Narmada and Son, and Mahabaleshwar of the Krishna."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-018",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "climatology-precipitation",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Rainfall caused when moisture-laden winds are forced to rise over a mountain barrier is classified as:"
+      },
+      "choices": [
+        {
+          "en": "Convectional rainfall"
+        },
+        {
+          "en": "Orographic rainfall"
+        },
+        {
+          "en": "Cyclonic rainfall"
+        },
+        {
+          "en": "Frontal rainfall"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Orographic (relief) rainfall occurs when air rising over mountains cools, condenses and precipitates on the windward side, leaving a rain shadow on the leeward side."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-019",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "oceanography-relief",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The deepest known point in the world's oceans, the Challenger Deep, lies in which trench?"
+      },
+      "choices": [
+        {
+          "en": "Puerto Rico Trench"
+        },
+        {
+          "en": "Mariana Trench"
+        },
+        {
+          "en": "Sunda Trench"
+        },
+        {
+          "en": "Tonga Trench"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Mariana Trench in the western Pacific contains the Challenger Deep, the deepest point of the world's oceans at roughly 11,000 metres."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-020",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "world-political-geography",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which continent contains the largest number of countries?"
+      },
+      "choices": [
+        {
+          "en": "Asia"
+        },
+        {
+          "en": "Europe"
+        },
+        {
+          "en": "Africa"
+        },
+        {
+          "en": "South America"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Africa has 54 sovereign countries, the most of any continent, more than Asia's 48 or Europe's roughly 44."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-021",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "world-geography-time",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The International Date Line approximately follows which meridian of longitude?"
+      },
+      "choices": [
+        {
+          "en": "0°"
+        },
+        {
+          "en": "90° East"
+        },
+        {
+          "en": "180°"
+        },
+        {
+          "en": "82°30' East"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The International Date Line runs approximately along the 180° meridian (with deviations to avoid landmasses), where the calendar date changes by one day."
+      }
+    },
+    {
+      "id": "upsc-geography-sample-022",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "geography",
+      "year": null,
+      "topic": "indian-rivers",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Majuli, the largest river island in the world, is situated in which river?"
+      },
+      "choices": [
+        {
+          "en": "Brahmaputra"
+        },
+        {
+          "en": "Ganga"
+        },
+        {
+          "en": "Godavari"
+        },
+        {
+          "en": "Mahanadi"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Majuli, in Assam, is the world's largest river island and lies in the Brahmaputra river; it is also a notable centre of Assamese Vaishnavite culture."
+      }
     }
   ]
 }

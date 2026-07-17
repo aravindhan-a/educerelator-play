@@ -1,46 +1,814 @@
 {
-  "exam": "cbse-12", "subject": "biology", "draft": true,
+  "exam": "cbse-12",
+  "subject": "biology",
+  "draft": true,
   "note": "SAMPLE CBSE Class 12 / NEET-foundation questions (source 'Sample (CBSE 12)'). Replace with verified board/NEET PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "cbse-12-biology-sample-001", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "human-physiology", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The structural and functional unit of the kidney is the:" },
-      "choices": [ { "en": "Neuron" }, { "en": "Nephron" }, { "en": "Alveolus" }, { "en": "Villus" } ], "answerIndex": 1,
-      "solution": { "en": "The nephron is the functional unit of the kidney; each kidney has about a million nephrons that filter blood and form urine." } },
-    { "id": "cbse-12-biology-sample-002", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "reproduction", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "In humans, fertilisation normally takes place in the:" },
-      "choices": [ { "en": "Uterus" }, { "en": "Ovary" }, { "en": "Fallopian tube (oviduct)" }, { "en": "Vagina" } ], "answerIndex": 2,
-      "solution": { "en": "Fertilisation of the ovum by the sperm occurs in the ampulla of the fallopian tube (oviduct); the embryo then implants in the uterus." } },
-    { "id": "cbse-12-biology-sample-003", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "genetics", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Who proposed the double-helix model of DNA?" },
-      "choices": [ { "en": "Watson and Crick" }, { "en": "Mendel and Morgan" }, { "en": "Darwin and Wallace" }, { "en": "Hooke and Schleiden" } ], "answerIndex": 0,
-      "solution": { "en": "James Watson and Francis Crick proposed the double-helix structure of DNA in 1953, using X-ray data from Rosalind Franklin." } },
-    { "id": "cbse-12-biology-sample-004", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "genetics", "difficulty": 3, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Mendel's Law of Segregation states that:" },
-      "choices": [ { "en": "Genes are always linked together" }, { "en": "Alleles of a gene separate during gamete formation" }, { "en": "Acquired traits are inherited" }, { "en": "Only dominant traits are passed on" } ], "answerIndex": 1,
-      "solution": { "en": "The Law of Segregation: the two alleles of a gene separate during gamete formation, so each gamete carries only one allele." } },
-    { "id": "cbse-12-biology-sample-005", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "cell-biology", "difficulty": 1, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Which type of cell division produces gametes and halves the chromosome number?" },
-      "choices": [ { "en": "Mitosis" }, { "en": "Meiosis" }, { "en": "Binary fission" }, { "en": "Budding" } ], "answerIndex": 1,
-      "solution": { "en": "Meiosis produces four haploid gametes from one diploid cell, halving the chromosome number; mitosis keeps the number the same." } },
-    { "id": "cbse-12-biology-sample-006", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "human-physiology", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Which hormone lowers blood glucose levels?" },
-      "choices": [ { "en": "Glucagon" }, { "en": "Insulin" }, { "en": "Adrenaline" }, { "en": "Thyroxine" } ], "answerIndex": 1,
-      "solution": { "en": "Insulin, secreted by the β-cells of the pancreas, lowers blood glucose. Glucagon does the opposite (raises it)." } },
-    { "id": "cbse-12-biology-sample-007", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "evolution", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The theory of natural selection was proposed by:" },
-      "choices": [ { "en": "Gregor Mendel" }, { "en": "Charles Darwin" }, { "en": "Louis Pasteur" }, { "en": "Jean-Baptiste Lamarck" } ], "answerIndex": 1,
-      "solution": { "en": "Charles Darwin proposed evolution by natural selection in 'On the Origin of Species' (1859)." } },
-    { "id": "cbse-12-biology-sample-008", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "biotechnology", "difficulty": 3, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "A test cross is a cross between an organism with a dominant phenotype and one that is:" },
-      "choices": [ { "en": "Homozygous dominant" }, { "en": "Homozygous recessive" }, { "en": "Heterozygous" }, { "en": "A different species" } ], "answerIndex": 1,
-      "solution": { "en": "A test cross pairs the unknown genotype with a homozygous recessive individual to reveal whether it is homozygous or heterozygous." } },
-    { "id": "cbse-12-biology-sample-009", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "human-physiology", "difficulty": 1, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The largest gland in the human body is the:" },
-      "choices": [ { "en": "Pancreas" }, { "en": "Liver" }, { "en": "Thyroid" }, { "en": "Salivary gland" } ], "answerIndex": 1,
-      "solution": { "en": "The liver is the largest gland (and largest internal organ) in the human body." } },
-    { "id": "cbse-12-biology-sample-010", "type": "mcq", "exam": "cbse-12", "subject": "biology", "year": null, "topic": "ecology", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "In a food chain, green plants are called:" },
-      "choices": [ { "en": "Producers" }, { "en": "Primary consumers" }, { "en": "Decomposers" }, { "en": "Secondary consumers" } ], "answerIndex": 0,
-      "solution": { "en": "Green plants make their own food by photosynthesis and form the base of the food chain, so they are producers (autotrophs)." } }
+    {
+      "id": "cbse-12-biology-sample-001",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-physiology",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The structural and functional unit of the kidney is the:"
+      },
+      "choices": [
+        {
+          "en": "Neuron"
+        },
+        {
+          "en": "Nephron"
+        },
+        {
+          "en": "Alveolus"
+        },
+        {
+          "en": "Villus"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The nephron is the functional unit of the kidney; each kidney has about a million nephrons that filter blood and form urine."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-002",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "reproduction",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "In humans, fertilisation normally takes place in the:"
+      },
+      "choices": [
+        {
+          "en": "Uterus"
+        },
+        {
+          "en": "Ovary"
+        },
+        {
+          "en": "Fallopian tube (oviduct)"
+        },
+        {
+          "en": "Vagina"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Fertilisation of the ovum by the sperm occurs in the ampulla of the fallopian tube (oviduct); the embryo then implants in the uterus."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-003",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "genetics",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Who proposed the double-helix model of DNA?"
+      },
+      "choices": [
+        {
+          "en": "Watson and Crick"
+        },
+        {
+          "en": "Mendel and Morgan"
+        },
+        {
+          "en": "Darwin and Wallace"
+        },
+        {
+          "en": "Hooke and Schleiden"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "James Watson and Francis Crick proposed the double-helix structure of DNA in 1953, using X-ray data from Rosalind Franklin."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-004",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "genetics",
+      "difficulty": 3,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Mendel's Law of Segregation states that:"
+      },
+      "choices": [
+        {
+          "en": "Genes are always linked together"
+        },
+        {
+          "en": "Alleles of a gene separate during gamete formation"
+        },
+        {
+          "en": "Acquired traits are inherited"
+        },
+        {
+          "en": "Only dominant traits are passed on"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Law of Segregation: the two alleles of a gene separate during gamete formation, so each gamete carries only one allele."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-005",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "cell-biology",
+      "difficulty": 1,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Which type of cell division produces gametes and halves the chromosome number?"
+      },
+      "choices": [
+        {
+          "en": "Mitosis"
+        },
+        {
+          "en": "Meiosis"
+        },
+        {
+          "en": "Binary fission"
+        },
+        {
+          "en": "Budding"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Meiosis produces four haploid gametes from one diploid cell, halving the chromosome number; mitosis keeps the number the same."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-006",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-physiology",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Which hormone lowers blood glucose levels?"
+      },
+      "choices": [
+        {
+          "en": "Glucagon"
+        },
+        {
+          "en": "Insulin"
+        },
+        {
+          "en": "Adrenaline"
+        },
+        {
+          "en": "Thyroxine"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Insulin, secreted by the β-cells of the pancreas, lowers blood glucose. Glucagon does the opposite (raises it)."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-007",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "evolution",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The theory of natural selection was proposed by:"
+      },
+      "choices": [
+        {
+          "en": "Gregor Mendel"
+        },
+        {
+          "en": "Charles Darwin"
+        },
+        {
+          "en": "Louis Pasteur"
+        },
+        {
+          "en": "Jean-Baptiste Lamarck"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Charles Darwin proposed evolution by natural selection in 'On the Origin of Species' (1859)."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-008",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "biotechnology",
+      "difficulty": 3,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "A test cross is a cross between an organism with a dominant phenotype and one that is:"
+      },
+      "choices": [
+        {
+          "en": "Homozygous dominant"
+        },
+        {
+          "en": "Homozygous recessive"
+        },
+        {
+          "en": "Heterozygous"
+        },
+        {
+          "en": "A different species"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A test cross pairs the unknown genotype with a homozygous recessive individual to reveal whether it is homozygous or heterozygous."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-009",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-physiology",
+      "difficulty": 1,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The largest gland in the human body is the:"
+      },
+      "choices": [
+        {
+          "en": "Pancreas"
+        },
+        {
+          "en": "Liver"
+        },
+        {
+          "en": "Thyroid"
+        },
+        {
+          "en": "Salivary gland"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The liver is the largest gland (and largest internal organ) in the human body."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-010",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "ecology",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "In a food chain, green plants are called:"
+      },
+      "choices": [
+        {
+          "en": "Producers"
+        },
+        {
+          "en": "Primary consumers"
+        },
+        {
+          "en": "Decomposers"
+        },
+        {
+          "en": "Secondary consumers"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Green plants make their own food by photosynthesis and form the base of the food chain, so they are producers (autotrophs)."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-011",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "sexual-reproduction-flowering-plants",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The entry of a pollen tube into the ovule through the micropyle is called:"
+      },
+      "choices": [
+        {
+          "en": "Porogamy"
+        },
+        {
+          "en": "Chalazogamy"
+        },
+        {
+          "en": "Mesogamy"
+        },
+        {
+          "en": "Apogamy"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Porogamy is pollen-tube entry via the micropyle; chalazogamy is through the chalaza and mesogamy through the integuments."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-012",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "sexual-reproduction-flowering-plants",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In a typical angiosperm embryo sac, the primary endosperm nucleus (PEN) formed during double fertilisation is:"
+      },
+      "choices": [
+        {
+          "en": "Haploid"
+        },
+        {
+          "en": "Diploid"
+        },
+        {
+          "en": "Triploid"
+        },
+        {
+          "en": "Tetraploid"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "One haploid male gamete fuses with the two haploid polar nuclei (triple fusion), giving a triploid (3n) primary endosperm nucleus."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-013",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-reproduction",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Ovulation in the human menstrual cycle is triggered by a rapid mid-cycle surge of:"
+      },
+      "choices": [
+        {
+          "en": "Follicle stimulating hormone"
+        },
+        {
+          "en": "Progesterone"
+        },
+        {
+          "en": "Relaxin"
+        },
+        {
+          "en": "Luteinizing hormone"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "A sharp mid-cycle LH surge induces rupture of the Graafian follicle and release of the ovum (ovulation)."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-014",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "reproductive-health",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Copper-releasing intrauterine devices (such as Cu-T) prevent conception mainly by:"
+      },
+      "choices": [
+        {
+          "en": "Suppressing ovulation the way oral pills do"
+        },
+        {
+          "en": "Releasing Cu ions that reduce sperm motility and fertilising capacity"
+        },
+        {
+          "en": "Permanently blocking the fallopian tubes"
+        },
+        {
+          "en": "Stopping the pituitary from secreting gonadotropins"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Copper ions released by Cu-IUDs are spermicidal, suppressing sperm motility and their fertilising capacity; they do not primarily block ovulation or the tubes."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-015",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "principles-of-inheritance",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In snapdragon, a cross between red-flowered and white-flowered plants produces pink F1 plants. The F2 phenotypic ratio will be:"
+      },
+      "choices": [
+        {
+          "en": "3 red : 1 white"
+        },
+        {
+          "en": "1 red : 2 pink : 1 white"
+        },
+        {
+          "en": "9 : 3 : 3 : 1"
+        },
+        {
+          "en": "2 red : 1 white"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "This is incomplete dominance; heterozygotes are pink, so the F2 genotypic and phenotypic ratios are both 1:2:1 (red : pink : white)."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-016",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "principles-of-inheritance",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The AB blood group in humans, in which both A and B antigens are fully expressed on the red cells, is an example of:"
+      },
+      "choices": [
+        {
+          "en": "Incomplete dominance"
+        },
+        {
+          "en": "Epistasis"
+        },
+        {
+          "en": "Pleiotropy"
+        },
+        {
+          "en": "Codominance"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Alleles I^A and I^B are codominant: in genotype I^A I^B both antigens appear together rather than blending, which is codominance."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-017",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "chromosomal-disorders",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Down's syndrome in humans results from the presence of an extra copy of:"
+      },
+      "choices": [
+        {
+          "en": "Chromosome 18"
+        },
+        {
+          "en": "The X chromosome"
+        },
+        {
+          "en": "Chromosome 21"
+        },
+        {
+          "en": "The Y chromosome"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Down's syndrome is trisomy 21, an additional copy of chromosome 21 usually caused by non-disjunction during gamete formation."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-018",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "molecular-basis-of-inheritance",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "During DNA replication, the discontinuously synthesised Okazaki fragments are produced on the:"
+      },
+      "choices": [
+        {
+          "en": "Lagging strand"
+        },
+        {
+          "en": "Leading strand"
+        },
+        {
+          "en": "Template strand only"
+        },
+        {
+          "en": "Both strands equally"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Because DNA polymerase works only 5'-to-3', the lagging strand is made in short Okazaki fragments that are later joined by ligase; the leading strand is continuous."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-019",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "molecular-basis-of-inheritance",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Because most amino acids are specified by more than one codon, the genetic code is described as:"
+      },
+      "choices": [
+        {
+          "en": "Degenerate"
+        },
+        {
+          "en": "Ambiguous"
+        },
+        {
+          "en": "Overlapping"
+        },
+        {
+          "en": "Non-universal"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Degeneracy means several codons can code for the same amino acid; the code is unambiguous (each codon specifies only one amino acid) and largely universal."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-020",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "evolution",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The wings of a bird and the wings of an insect perform the same function but differ in structure and origin. They are best described as:"
+      },
+      "choices": [
+        {
+          "en": "Homologous organs showing divergent evolution"
+        },
+        {
+          "en": "Analogous organs showing convergent evolution"
+        },
+        {
+          "en": "Vestigial organs"
+        },
+        {
+          "en": "Homologous organs showing convergent evolution"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Different structures adapted for a similar function are analogous and arise by convergent evolution, unlike homologous organs which share a common ancestral plan."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-021",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "evolution",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "According to the Hardy-Weinberg principle, allele frequencies in a population stay constant across generations provided that:"
+      },
+      "choices": [
+        {
+          "en": "No mutation, migration, selection or drift acts and mating is random"
+        },
+        {
+          "en": "Natural selection is strong"
+        },
+        {
+          "en": "Genetic drift occurs frequently"
+        },
+        {
+          "en": "Gene migration into the population is high"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Genetic equilibrium requires no mutation, no gene migration, no selection, no genetic drift, and random mating; any of these forces changes allele frequencies (evolution)."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-022",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-health-and-disease",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The transfer of antibodies from a mother to her foetus across the placenta gives the newborn:"
+      },
+      "choices": [
+        {
+          "en": "Active natural immunity"
+        },
+        {
+          "en": "Active artificial immunity"
+        },
+        {
+          "en": "Passive natural immunity"
+        },
+        {
+          "en": "Passive artificial immunity"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Ready-made antibodies are received without the infant's own immune system responding, so it is passive; because it occurs naturally through the placenta, it is passive natural immunity."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-023",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-health-and-disease",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The stage of Plasmodium transmitted to a human through the bite of an infected female Anopheles mosquito is the:"
+      },
+      "choices": [
+        {
+          "en": "Merozoite"
+        },
+        {
+          "en": "Sporozoite"
+        },
+        {
+          "en": "Gametocyte"
+        },
+        {
+          "en": "Trophozoite"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Infective sporozoites present in the mosquito's saliva enter the human bloodstream during the bite and then infect liver cells."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-024",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "microbes-in-human-welfare",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Biogas (gobar gas) obtained from cattle dung is produced mainly by the activity of:"
+      },
+      "choices": [
+        {
+          "en": "Methanogens"
+        },
+        {
+          "en": "Lactobacillus"
+        },
+        {
+          "en": "Rhizobium"
+        },
+        {
+          "en": "Nitrosomonas"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Methanogens (e.g., Methanobacterium) in anaerobic sludge break down organic matter and produce methane-rich biogas."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-025",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "biotechnology-principles",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Restriction endonucleases cut DNA at palindromic recognition sites in a staggered fashion, generating:"
+      },
+      "choices": [
+        {
+          "en": "Blunt ends"
+        },
+        {
+          "en": "Single nucleotides"
+        },
+        {
+          "en": "RNA primers"
+        },
+        {
+          "en": "Sticky (cohesive) ends"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Staggered cuts leave short single-stranded overhangs (sticky ends) whose complementary sequences allow foreign DNA to be joined into a vector."
+      }
+    },
+    {
+      "id": "cbse-12-biology-sample-026",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "biology",
+      "year": null,
+      "topic": "biotechnology-principles",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The thermostable DNA polymerase used in PCR, which withstands the high denaturation temperature, is isolated from:"
+      },
+      "choices": [
+        {
+          "en": "Escherichia coli"
+        },
+        {
+          "en": "Bacillus thuringiensis"
+        },
+        {
+          "en": "Thermus aquaticus"
+        },
+        {
+          "en": "Agrobacterium tumefaciens"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Taq polymerase from the thermophilic bacterium Thermus aquaticus remains active at ~90 degrees C, so it need not be replenished after each denaturation step."
+      }
+    }
   ]
 }

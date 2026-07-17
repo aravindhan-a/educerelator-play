@@ -5,52 +5,686 @@
   "note": "SAMPLE foundation-level questions demonstrating the JEE track. Answers are verifiable and syllabus-relevant; source = 'Sample (JEE pattern)'. Replace with verified real PYQs + SME solutions + 13-language translations before shipping; then remove the draft flag.",
   "questions": [
     {
-      "id": "jee-mathematics-sample-001", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
-      "topic": "calculus", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The derivative of sin x with respect to x is:" },
-      "choices": [ { "en": "cos x" }, { "en": "−cos x" }, { "en": "−sin x" }, { "en": "tan x" } ],
+      "id": "jee-mathematics-sample-001",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "calculus",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The derivative of sin x with respect to x is:"
+      },
+      "choices": [
+        {
+          "en": "cos x"
+        },
+        {
+          "en": "−cos x"
+        },
+        {
+          "en": "−sin x"
+        },
+        {
+          "en": "tan x"
+        }
+      ],
       "answerIndex": 0,
-      "solution": { "en": "d/dx (sin x) = cos x. (For reference, d/dx (cos x) = −sin x.)" }
+      "solution": {
+        "en": "d/dx (sin x) = cos x. (For reference, d/dx (cos x) = −sin x.)"
+      }
     },
     {
-      "id": "jee-mathematics-sample-002", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
-      "topic": "trigonometry", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The value of sin 90° is:" },
-      "choices": [ { "en": "0" }, { "en": "1/2" }, { "en": "1" }, { "en": "√3/2" } ],
+      "id": "jee-mathematics-sample-002",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "trigonometry",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The value of sin 90° is:"
+      },
+      "choices": [
+        {
+          "en": "0"
+        },
+        {
+          "en": "1/2"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "√3/2"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "sin 90° = 1, its maximum value. (sin 0° = 0, sin 30° = 1/2, sin 60° = √3/2.)" }
+      "solution": {
+        "en": "sin 90° = 1, its maximum value. (sin 0° = 0, sin 30° = 1/2, sin 60° = √3/2.)"
+      }
     },
     {
-      "id": "jee-mathematics-sample-003", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
-      "topic": "algebra", "difficulty": 2, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "How many real roots does the equation x² + 1 = 0 have?" },
-      "choices": [ { "en": "2" }, { "en": "1" }, { "en": "0" }, { "en": "Infinitely many" } ],
+      "id": "jee-mathematics-sample-003",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "algebra",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "How many real roots does the equation x² + 1 = 0 have?"
+      },
+      "choices": [
+        {
+          "en": "2"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "0"
+        },
+        {
+          "en": "Infinitely many"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "x² + 1 = 0 gives x² = −1, which has no real solution (a real square is never negative). Its two roots are imaginary: x = ±i." }
+      "solution": {
+        "en": "x² + 1 = 0 gives x² = −1, which has no real solution (a real square is never negative). Its two roots are imaginary: x = ±i."
+      }
     },
     {
-      "id": "jee-mathematics-sample-004", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
-      "topic": "calculus", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The derivative of a constant (for example, of the number 7) is:" },
-      "choices": [ { "en": "0" }, { "en": "1" }, { "en": "7" }, { "en": "x" } ],
+      "id": "jee-mathematics-sample-004",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "calculus",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The derivative of a constant (for example, of the number 7) is:"
+      },
+      "choices": [
+        {
+          "en": "0"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "7"
+        },
+        {
+          "en": "x"
+        }
+      ],
       "answerIndex": 0,
-      "solution": { "en": "The derivative of any constant is 0, because a constant does not change as x changes (its graph is a flat horizontal line with zero slope)." }
+      "solution": {
+        "en": "The derivative of any constant is 0, because a constant does not change as x changes (its graph is a flat horizontal line with zero slope)."
+      }
     },
     {
-      "id": "jee-mathematics-sample-005", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
-      "topic": "coordinate-geometry", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The slope of the straight line y = 2x + 3 is:" },
-      "choices": [ { "en": "3" }, { "en": "2" }, { "en": "5" }, { "en": "2/3" } ],
+      "id": "jee-mathematics-sample-005",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "coordinate-geometry",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The slope of the straight line y = 2x + 3 is:"
+      },
+      "choices": [
+        {
+          "en": "3"
+        },
+        {
+          "en": "2"
+        },
+        {
+          "en": "5"
+        },
+        {
+          "en": "2/3"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "For a line in the form y = mx + c, the slope is m. Here m = 2, so the slope is 2 (and 3 is the y-intercept)." }
+      "solution": {
+        "en": "For a line in the form y = mx + c, the slope is m. Here m = 2, so the slope is 2 (and 3 is the y-intercept)."
+      }
     },
     {
-      "id": "jee-mathematics-sample-006", "type": "mcq", "exam": "jee", "subject": "mathematics", "year": null,
-      "topic": "algebra", "difficulty": 2, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The sum of the first n natural numbers (1 + 2 + … + n) is:" },
-      "choices": [ { "en": "n(n+1)/2" }, { "en": "n(n−1)/2" }, { "en": "n²" }, { "en": "n(n+1)" } ],
+      "id": "jee-mathematics-sample-006",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "algebra",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The sum of the first n natural numbers (1 + 2 + … + n) is:"
+      },
+      "choices": [
+        {
+          "en": "n(n+1)/2"
+        },
+        {
+          "en": "n(n−1)/2"
+        },
+        {
+          "en": "n²"
+        },
+        {
+          "en": "n(n+1)"
+        }
+      ],
       "answerIndex": 0,
-      "solution": { "en": "The sum 1 + 2 + … + n equals n(n+1)/2. For example, 1+2+3+4 = 4·5/2 = 10." }
+      "solution": {
+        "en": "The sum 1 + 2 + … + n equals n(n+1)/2. For example, 1+2+3+4 = 4·5/2 = 10."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-007",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "quadratic-equations",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "For the quadratic equation 2x^2 - 5x + 3 = 0, the sum of its roots is:"
+      },
+      "choices": [
+        {
+          "en": "-5/2"
+        },
+        {
+          "en": "3/2"
+        },
+        {
+          "en": "5/2"
+        },
+        {
+          "en": "-3/2"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "For ax^2 + bx + c = 0, the sum of roots is -b/a = -(-5)/2 = 5/2. (Note: 3/2 is the product of the roots.)"
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-008",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "coordinate-geometry",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The distance between the points (1, 2) and (4, 6) in the coordinate plane is:"
+      },
+      "choices": [
+        {
+          "en": "sqrt(7)"
+        },
+        {
+          "en": "7"
+        },
+        {
+          "en": "5"
+        },
+        {
+          "en": "25"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Distance = sqrt((4-1)^2 + (6-2)^2) = sqrt(9 + 16) = sqrt(25) = 5."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-009",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "differentiation",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "If f(x) = x^3, then the value of f'(x) at x = 2 is:"
+      },
+      "choices": [
+        {
+          "en": "6"
+        },
+        {
+          "en": "8"
+        },
+        {
+          "en": "24"
+        },
+        {
+          "en": "12"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "f'(x) = 3x^2, so f'(2) = 3(2)^2 = 3 x 4 = 12. (8 = 2^3 mistakenly uses the original function.)"
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-010",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "limits",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The value of the limit as x -> 0 of sin(3x)/x is:"
+      },
+      "choices": [
+        {
+          "en": "0"
+        },
+        {
+          "en": "1/3"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "3"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "sin(3x)/x = 3 * sin(3x)/(3x), and sin(3x)/(3x) -> 1 as x -> 0, so the limit is 3."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-011",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "probability",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "Two fair dice are rolled together. The probability that the sum of the numbers shown is 7 is:"
+      },
+      "choices": [
+        {
+          "en": "1/6"
+        },
+        {
+          "en": "1/9"
+        },
+        {
+          "en": "5/36"
+        },
+        {
+          "en": "1/12"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "There are 6 favourable outcomes (1-6, 2-5, 3-4, 4-3, 5-2, 6-1) out of 36 equally likely outcomes, giving 6/36 = 1/6."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-012",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "binomial-theorem",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "In the binomial expansion of (1 + x)^4, the coefficient of x^2 is:"
+      },
+      "choices": [
+        {
+          "en": "6"
+        },
+        {
+          "en": "4"
+        },
+        {
+          "en": "8"
+        },
+        {
+          "en": "12"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The coefficient of x^2 is C(4,2) = 4!/(2!2!) = 6."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-013",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "sequences-and-series",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The 10th term of the arithmetic progression 3, 7, 11, 15, ... is:"
+      },
+      "choices": [
+        {
+          "en": "36"
+        },
+        {
+          "en": "39"
+        },
+        {
+          "en": "43"
+        },
+        {
+          "en": "40"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "First term a = 3, common difference d = 4. The 10th term = a + 9d = 3 + 9(4) = 39."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-014",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "geometric-progression",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The sum to infinity of the geometric series 1 + 1/2 + 1/4 + 1/8 + ... is:"
+      },
+      "choices": [
+        {
+          "en": "3/2"
+        },
+        {
+          "en": "2"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "infinite (does not exist)"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "With first term a = 1 and ratio r = 1/2 (|r| < 1), the sum is a/(1 - r) = 1/(1 - 1/2) = 2."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-015",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "complex-numbers",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The modulus of the complex number 3 + 4i is:"
+      },
+      "choices": [
+        {
+          "en": "5"
+        },
+        {
+          "en": "7"
+        },
+        {
+          "en": "sqrt(7)"
+        },
+        {
+          "en": "25"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "|a + bi| = sqrt(a^2 + b^2) = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-016",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "vectors",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The magnitude of the vector 2i + 3j + 6k is:"
+      },
+      "choices": [
+        {
+          "en": "6"
+        },
+        {
+          "en": "11"
+        },
+        {
+          "en": "7"
+        },
+        {
+          "en": "49"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Magnitude = sqrt(2^2 + 3^2 + 6^2) = sqrt(4 + 9 + 36) = sqrt(49) = 7."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-017",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "permutations-and-combinations",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The number of distinct arrangements of all the letters of the word MATH is:"
+      },
+      "choices": [
+        {
+          "en": "12"
+        },
+        {
+          "en": "16"
+        },
+        {
+          "en": "256"
+        },
+        {
+          "en": "24"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "All four letters are distinct, so the number of arrangements is 4! = 24. (256 = 4^4 wrongly allows repetition.)"
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-018",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "logarithms",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The value of log base 2 of 32 is:"
+      },
+      "choices": [
+        {
+          "en": "4"
+        },
+        {
+          "en": "6"
+        },
+        {
+          "en": "5"
+        },
+        {
+          "en": "16"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "log_2(32) asks for the power of 2 that gives 32. Since 2^5 = 32, the value is 5."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-019",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "matrices-and-determinants",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The determinant of the matrix [[2, 1], [3, 4]] is:"
+      },
+      "choices": [
+        {
+          "en": "8"
+        },
+        {
+          "en": "11"
+        },
+        {
+          "en": "5"
+        },
+        {
+          "en": "14"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "For [[a, b], [c, d]] the determinant is ad - bc = (2)(4) - (1)(3) = 8 - 3 = 5."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-020",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "trigonometry",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The value of sin 30 degrees + cos 60 degrees is:"
+      },
+      "choices": [
+        {
+          "en": "1"
+        },
+        {
+          "en": "1/2"
+        },
+        {
+          "en": "sqrt(3)/2"
+        },
+        {
+          "en": "0"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "sin 30 = 1/2 and cos 60 = 1/2, so their sum is 1/2 + 1/2 = 1."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-021",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "sets",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "If a set A has exactly 3 elements, the total number of subsets of A is:"
+      },
+      "choices": [
+        {
+          "en": "6"
+        },
+        {
+          "en": "8"
+        },
+        {
+          "en": "3"
+        },
+        {
+          "en": "9"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A set with n elements has 2^n subsets. Here n = 3, so 2^3 = 8 subsets (including the empty set and A itself)."
+      }
+    },
+    {
+      "id": "jee-mathematics-sample-022",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "straight-lines",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The slope of any line perpendicular to the line y = 3x + 2 is:"
+      },
+      "choices": [
+        {
+          "en": "3"
+        },
+        {
+          "en": "-1/3"
+        },
+        {
+          "en": "-3"
+        },
+        {
+          "en": "1/3"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The given line has slope 3. A perpendicular line has slope equal to the negative reciprocal, which is -1/3 (since 3 x -1/3 = -1)."
+      }
     }
   ]
 }

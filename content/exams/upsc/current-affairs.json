@@ -1,46 +1,814 @@
 {
-  "exam": "upsc", "subject": "current-affairs", "draft": true,
+  "exam": "upsc",
+  "subject": "current-affairs",
+  "draft": true,
   "note": "SAMPLE UPSC static-GK questions (stable facts, source 'Sample (UPSC static GK)'). Replace with verified current-affairs PYQs + SME solutions + 13-language translations before shipping. Kept to non-expiring facts to avoid staleness.",
   "questions": [
-    { "id": "upsc-current-affairs-sample-001", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "polity", "difficulty": 2, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "Which body is responsible for conducting elections in India?" },
-      "choices": [ { "en": "The Supreme Court" }, { "en": "The Election Commission of India" }, { "en": "The Reserve Bank of India" }, { "en": "The Parliament" } ], "answerIndex": 1,
-      "solution": { "en": "The Election Commission of India (ECI), a permanent constitutional body under Article 324, conducts elections to Parliament, State Legislatures, and the offices of the President and Vice-President." } },
-    { "id": "upsc-current-affairs-sample-002", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "economy", "difficulty": 2, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "In which year was the Reserve Bank of India established?" },
-      "choices": [ { "en": "1935" }, { "en": "1947" }, { "en": "1950" }, { "en": "1969" } ], "answerIndex": 0,
-      "solution": { "en": "The RBI was established on 1 April 1935 under the RBI Act, 1934. It was nationalised in 1949." } },
-    { "id": "upsc-current-affairs-sample-003", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "international", "difficulty": 1, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "Where are the headquarters of the United Nations located?" },
-      "choices": [ { "en": "Geneva" }, { "en": "New York" }, { "en": "Paris" }, { "en": "Vienna" } ], "answerIndex": 1,
-      "solution": { "en": "The UN headquarters is in New York City, USA. Geneva, Vienna and Nairobi host major UN offices, and UNESCO is headquartered in Paris." } },
-    { "id": "upsc-current-affairs-sample-004", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "polity", "difficulty": 2, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "Which body did the NITI Aayog replace in 2015?" },
-      "choices": [ { "en": "The Finance Commission" }, { "en": "The Planning Commission" }, { "en": "The Union Public Service Commission" }, { "en": "The Election Commission" } ], "answerIndex": 1,
-      "solution": { "en": "NITI Aayog (National Institution for Transforming India) replaced the Planning Commission on 1 January 2015 as the government's premier policy think-tank." } },
-    { "id": "upsc-current-affairs-sample-005", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "constitution", "difficulty": 3, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "The Fundamental Duties were added to the Constitution by which amendment?" },
-      "choices": [ { "en": "42nd Amendment" }, { "en": "44th Amendment" }, { "en": "1st Amendment" }, { "en": "73rd Amendment" } ], "answerIndex": 0,
-      "solution": { "en": "The Fundamental Duties (Article 51A) were added by the 42nd Amendment Act, 1976, on the recommendation of the Swaran Singh Committee." } },
-    { "id": "upsc-current-affairs-sample-006", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "economy", "difficulty": 2, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "In which year was the Goods and Services Tax (GST) introduced in India?" },
-      "choices": [ { "en": "2014" }, { "en": "2016" }, { "en": "2017" }, { "en": "2019" } ], "answerIndex": 2,
-      "solution": { "en": "GST came into effect on 1 July 2017, subsuming most indirect taxes into a single unified tax under the 101st Constitutional Amendment." } },
-    { "id": "upsc-current-affairs-sample-007", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "polity", "difficulty": 2, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "Who appoints the Comptroller and Auditor General (CAG) of India?" },
-      "choices": [ { "en": "The Prime Minister" }, { "en": "The President" }, { "en": "The Chief Justice" }, { "en": "The Parliament" } ], "answerIndex": 1,
-      "solution": { "en": "The CAG is appointed by the President of India under Article 148 and audits the accounts of the Union and the States." } },
-    { "id": "upsc-current-affairs-sample-008", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "environment", "difficulty": 2, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "The international agreement on climate change adopted in 2015 is known as the:" },
-      "choices": [ { "en": "Kyoto Protocol" }, { "en": "Paris Agreement" }, { "en": "Montreal Protocol" }, { "en": "Rio Declaration" } ], "answerIndex": 1,
-      "solution": { "en": "The Paris Agreement was adopted at COP21 in 2015 to limit global warming to well below 2°C above pre-industrial levels." } },
-    { "id": "upsc-current-affairs-sample-009", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "polity", "difficulty": 3, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "The National Human Rights Commission (NHRC) of India was established in which year?" },
-      "choices": [ { "en": "1993" }, { "en": "1985" }, { "en": "2000" }, { "en": "1976" } ], "answerIndex": 0,
-      "solution": { "en": "The NHRC was established on 12 October 1993 under the Protection of Human Rights Act, 1993." } },
-    { "id": "upsc-current-affairs-sample-010", "type": "mcq", "exam": "upsc", "subject": "current-affairs", "year": null, "topic": "international", "difficulty": 2, "source": "Sample (UPSC static GK)",
-      "prompt": { "en": "The World Health Organization (WHO) is headquartered in which city?" },
-      "choices": [ { "en": "New York" }, { "en": "Geneva" }, { "en": "Rome" }, { "en": "Washington D.C." } ], "answerIndex": 1,
-      "solution": { "en": "The WHO, a specialised agency of the UN responsible for international public health, is headquartered in Geneva, Switzerland." } }
+    {
+      "id": "upsc-current-affairs-sample-001",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "polity",
+      "difficulty": 2,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "Which body is responsible for conducting elections in India?"
+      },
+      "choices": [
+        {
+          "en": "The Supreme Court"
+        },
+        {
+          "en": "The Election Commission of India"
+        },
+        {
+          "en": "The Reserve Bank of India"
+        },
+        {
+          "en": "The Parliament"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Election Commission of India (ECI), a permanent constitutional body under Article 324, conducts elections to Parliament, State Legislatures, and the offices of the President and Vice-President."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-002",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "economy",
+      "difficulty": 2,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "In which year was the Reserve Bank of India established?"
+      },
+      "choices": [
+        {
+          "en": "1935"
+        },
+        {
+          "en": "1947"
+        },
+        {
+          "en": "1950"
+        },
+        {
+          "en": "1969"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The RBI was established on 1 April 1935 under the RBI Act, 1934. It was nationalised in 1949."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-003",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "international",
+      "difficulty": 1,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "Where are the headquarters of the United Nations located?"
+      },
+      "choices": [
+        {
+          "en": "Geneva"
+        },
+        {
+          "en": "New York"
+        },
+        {
+          "en": "Paris"
+        },
+        {
+          "en": "Vienna"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The UN headquarters is in New York City, USA. Geneva, Vienna and Nairobi host major UN offices, and UNESCO is headquartered in Paris."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-004",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "polity",
+      "difficulty": 2,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "Which body did the NITI Aayog replace in 2015?"
+      },
+      "choices": [
+        {
+          "en": "The Finance Commission"
+        },
+        {
+          "en": "The Planning Commission"
+        },
+        {
+          "en": "The Union Public Service Commission"
+        },
+        {
+          "en": "The Election Commission"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "NITI Aayog (National Institution for Transforming India) replaced the Planning Commission on 1 January 2015 as the government's premier policy think-tank."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-005",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "constitution",
+      "difficulty": 3,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "The Fundamental Duties were added to the Constitution by which amendment?"
+      },
+      "choices": [
+        {
+          "en": "42nd Amendment"
+        },
+        {
+          "en": "44th Amendment"
+        },
+        {
+          "en": "1st Amendment"
+        },
+        {
+          "en": "73rd Amendment"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The Fundamental Duties (Article 51A) were added by the 42nd Amendment Act, 1976, on the recommendation of the Swaran Singh Committee."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-006",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "economy",
+      "difficulty": 2,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "In which year was the Goods and Services Tax (GST) introduced in India?"
+      },
+      "choices": [
+        {
+          "en": "2014"
+        },
+        {
+          "en": "2016"
+        },
+        {
+          "en": "2017"
+        },
+        {
+          "en": "2019"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "GST came into effect on 1 July 2017, subsuming most indirect taxes into a single unified tax under the 101st Constitutional Amendment."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-007",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "polity",
+      "difficulty": 2,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "Who appoints the Comptroller and Auditor General (CAG) of India?"
+      },
+      "choices": [
+        {
+          "en": "The Prime Minister"
+        },
+        {
+          "en": "The President"
+        },
+        {
+          "en": "The Chief Justice"
+        },
+        {
+          "en": "The Parliament"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The CAG is appointed by the President of India under Article 148 and audits the accounts of the Union and the States."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-008",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "environment",
+      "difficulty": 2,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "The international agreement on climate change adopted in 2015 is known as the:"
+      },
+      "choices": [
+        {
+          "en": "Kyoto Protocol"
+        },
+        {
+          "en": "Paris Agreement"
+        },
+        {
+          "en": "Montreal Protocol"
+        },
+        {
+          "en": "Rio Declaration"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Paris Agreement was adopted at COP21 in 2015 to limit global warming to well below 2°C above pre-industrial levels."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-009",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "polity",
+      "difficulty": 3,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "The National Human Rights Commission (NHRC) of India was established in which year?"
+      },
+      "choices": [
+        {
+          "en": "1993"
+        },
+        {
+          "en": "1985"
+        },
+        {
+          "en": "2000"
+        },
+        {
+          "en": "1976"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The NHRC was established on 12 October 1993 under the Protection of Human Rights Act, 1993."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-010",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "international",
+      "difficulty": 2,
+      "source": "Sample (UPSC static GK)",
+      "prompt": {
+        "en": "The World Health Organization (WHO) is headquartered in which city?"
+      },
+      "choices": [
+        {
+          "en": "New York"
+        },
+        {
+          "en": "Geneva"
+        },
+        {
+          "en": "Rome"
+        },
+        {
+          "en": "Washington D.C."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The WHO, a specialised agency of the UN responsible for international public health, is headquartered in Geneva, Switzerland."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-011",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "international-organisations",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In which city is the headquarters of the International Monetary Fund (IMF) located?"
+      },
+      "choices": [
+        {
+          "en": "Geneva"
+        },
+        {
+          "en": "Washington, D.C."
+        },
+        {
+          "en": "New York"
+        },
+        {
+          "en": "Paris"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The IMF, one of the Bretton Woods institutions, is headquartered in Washington, D.C., close to the World Bank."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-012",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "environment-conservation",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which organisation compiles and maintains the 'Red List' of Threatened Species?"
+      },
+      "choices": [
+        {
+          "en": "World Wide Fund for Nature (WWF)"
+        },
+        {
+          "en": "United Nations Environment Programme (UNEP)"
+        },
+        {
+          "en": "International Union for Conservation of Nature (IUCN)"
+        },
+        {
+          "en": "Convention on International Trade in Endangered Species (CITES)"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The IUCN Red List is the world's most comprehensive inventory of the global conservation status of species, classifying them from 'Least Concern' to 'Extinct'."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-013",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "environment-conventions",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Ramsar Convention is an international treaty for the conservation of which type of ecosystem?"
+      },
+      "choices": [
+        {
+          "en": "Wetlands"
+        },
+        {
+          "en": "Tropical forests"
+        },
+        {
+          "en": "Coral reefs"
+        },
+        {
+          "en": "Desert ecosystems"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Signed in Ramsar, Iran, the convention provides the framework for the conservation and wise use of wetlands and their resources."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-014",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "international-development",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "How many goals are there in the United Nations Sustainable Development Goals (SDGs)?"
+      },
+      "choices": [
+        {
+          "en": "8"
+        },
+        {
+          "en": "17"
+        },
+        {
+          "en": "15"
+        },
+        {
+          "en": "20"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The SDGs, adopted in 2015 as successors to the eight Millennium Development Goals, comprise 17 goals covering issues from poverty to climate action."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-015",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "environment-conventions",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Montreal Protocol is an international agreement aimed primarily at:"
+      },
+      "choices": [
+        {
+          "en": "Reducing greenhouse gas emissions"
+        },
+        {
+          "en": "Protecting the ozone layer"
+        },
+        {
+          "en": "Conserving biological diversity"
+        },
+        {
+          "en": "Managing hazardous waste"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Montreal Protocol phases out the production of ozone-depleting substances such as chlorofluorocarbons (CFCs) to protect the stratospheric ozone layer."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-016",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "economy-regulators",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which statutory body is responsible for regulating the securities (share) markets in India?"
+      },
+      "choices": [
+        {
+          "en": "Reserve Bank of India"
+        },
+        {
+          "en": "Insurance Regulatory and Development Authority"
+        },
+        {
+          "en": "NABARD"
+        },
+        {
+          "en": "Securities and Exchange Board of India"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The Securities and Exchange Board of India (SEBI) is the regulator for the securities and commodity markets, protecting investor interests."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-017",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "polity-amendments",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The 73rd Constitutional Amendment Act is chiefly associated with which of the following?"
+      },
+      "choices": [
+        {
+          "en": "Urban municipalities"
+        },
+        {
+          "en": "The anti-defection law"
+        },
+        {
+          "en": "Fundamental Duties"
+        },
+        {
+          "en": "Panchayati Raj institutions"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The 73rd Amendment (1992) gave constitutional status to Panchayati Raj institutions, adding Part IX and the Eleventh Schedule; the 74th dealt with municipalities."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-018",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "polity-parliament",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Who is the ex-officio Chairman of the Rajya Sabha?"
+      },
+      "choices": [
+        {
+          "en": "President of India"
+        },
+        {
+          "en": "Vice President of India"
+        },
+        {
+          "en": "Prime Minister"
+        },
+        {
+          "en": "Speaker of the Lok Sabha"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Under Article 89, the Vice President of India is the ex-officio Chairman of the Rajya Sabha and presides over its sittings."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-019",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "international-organisations",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The headquarters of the World Trade Organization (WTO) is located in which city?"
+      },
+      "choices": [
+        {
+          "en": "Geneva"
+        },
+        {
+          "en": "New York"
+        },
+        {
+          "en": "Vienna"
+        },
+        {
+          "en": "Rome"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The WTO, which regulates international trade among member nations, is headquartered in Geneva, Switzerland."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-020",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "polity-constitutional-bodies",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Under which Article of the Indian Constitution is the Finance Commission constituted?"
+      },
+      "choices": [
+        {
+          "en": "Article 148"
+        },
+        {
+          "en": "Article 356"
+        },
+        {
+          "en": "Article 280"
+        },
+        {
+          "en": "Article 370"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Article 280 provides for a Finance Commission, constituted by the President every fifth year, to recommend the distribution of taxes between the Union and States."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-021",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "polity-constitution-schedules",
+      "difficulty": 3,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Tenth Schedule of the Indian Constitution contains provisions relating to:"
+      },
+      "choices": [
+        {
+          "en": "Disqualification on grounds of defection"
+        },
+        {
+          "en": "Allocation of Rajya Sabha seats to States"
+        },
+        {
+          "en": "Languages recognised by the Constitution"
+        },
+        {
+          "en": "Forms of oaths and affirmations"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The Tenth Schedule, added by the 52nd Amendment (1985), lays down the anti-defection law disqualifying members who defect from their party."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-022",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "international-organisations",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Human Development Index (HDI) is published annually by which organisation?"
+      },
+      "choices": [
+        {
+          "en": "World Bank"
+        },
+        {
+          "en": "World Economic Forum"
+        },
+        {
+          "en": "International Monetary Fund"
+        },
+        {
+          "en": "United Nations Development Programme (UNDP)"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The UNDP publishes the HDI in its Human Development Report, combining indicators of life expectancy, education, and per-capita income."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-023",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "science-institutions",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In which city is the headquarters of the Indian Space Research Organisation (ISRO) located?"
+      },
+      "choices": [
+        {
+          "en": "Sriharikota"
+        },
+        {
+          "en": "Thiruvananthapuram"
+        },
+        {
+          "en": "Bengaluru"
+        },
+        {
+          "en": "Hyderabad"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "ISRO is headquartered in Bengaluru, Karnataka; Sriharikota hosts the launch site, while Thiruvananthapuram houses the VSSC rocket centre."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-024",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "economy-monetary-policy",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In India, the 'repo rate' is determined by which of the following?"
+      },
+      "choices": [
+        {
+          "en": "Ministry of Finance"
+        },
+        {
+          "en": "Securities and Exchange Board of India"
+        },
+        {
+          "en": "NITI Aayog"
+        },
+        {
+          "en": "Reserve Bank of India"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The repo rate, at which the central bank lends to commercial banks, is set by the RBI's Monetary Policy Committee as a key monetary policy tool."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-025",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "environment-conventions",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Kyoto Protocol is primarily concerned with which of the following?"
+      },
+      "choices": [
+        {
+          "en": "Protection of the ozone layer"
+        },
+        {
+          "en": "Conservation of wetlands"
+        },
+        {
+          "en": "Control of transboundary movement of hazardous wastes"
+        },
+        {
+          "en": "Reduction of greenhouse gas emissions"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The Kyoto Protocol, adopted under the UNFCCC, committed industrialised nations to binding targets for reducing greenhouse gas emissions."
+      }
+    },
+    {
+      "id": "upsc-current-affairs-sample-026",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "current-affairs",
+      "year": null,
+      "topic": "economy-fiscal-policy",
+      "difficulty": 3,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In the context of the Union Budget, the term 'fiscal deficit' is best defined as:"
+      },
+      "choices": [
+        {
+          "en": "The excess of revenue expenditure over revenue receipts"
+        },
+        {
+          "en": "The difference between a country's exports and imports"
+        },
+        {
+          "en": "The excess of total expenditure over total receipts excluding borrowings"
+        },
+        {
+          "en": "The excess of total expenditure over total receipts including borrowings"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Fiscal deficit is total government expenditure minus total receipts excluding borrowings; it indicates the total borrowing the government needs to meet its expenditure."
+      }
+    }
   ]
 }

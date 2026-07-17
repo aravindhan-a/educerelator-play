@@ -1,30 +1,690 @@
 {
-  "exam": "neet", "subject": "physics", "draft": true,
+  "exam": "neet",
+  "subject": "physics",
+  "draft": true,
   "note": "SAMPLE foundation-level questions (source 'Sample (NEET pattern)'). Replace with verified real PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "neet-physics-sample-001", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "units-measurement", "difficulty": 1, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "The SI unit of power is the:" },
-      "choices": [ { "en": "Joule" }, { "en": "Newton" }, { "en": "Watt" }, { "en": "Pascal" } ], "answerIndex": 2,
-      "solution": { "en": "Power is the rate of doing work, measured in watts (W), where 1 W = 1 J/s. The joule is energy, the newton is force, and the pascal is pressure." } },
-    { "id": "neet-physics-sample-002", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "mechanics", "difficulty": 2, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "A body moving with constant velocity has an acceleration that is:" },
-      "choices": [ { "en": "Zero" }, { "en": "Constant but non-zero" }, { "en": "Continuously increasing" }, { "en": "Equal to g" } ], "answerIndex": 0,
-      "solution": { "en": "Acceleration is the rate of change of velocity. If the velocity is constant, it is not changing, so the acceleration is zero." } },
-    { "id": "neet-physics-sample-003", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "optics", "difficulty": 1, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "The bending of light as it passes from one transparent medium into another is called:" },
-      "choices": [ { "en": "Reflection" }, { "en": "Refraction" }, { "en": "Dispersion" }, { "en": "Diffraction" } ], "answerIndex": 1,
-      "solution": { "en": "Refraction is the change in direction of light when it moves between media of different optical densities (e.g. air to glass), due to a change in its speed." } },
-    { "id": "neet-physics-sample-004", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "electricity", "difficulty": 2, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "Ohm's law relates potential difference (V), current (I) and resistance (R) as:" },
-      "choices": [ { "en": "V = I / R" }, { "en": "V = R / I" }, { "en": "V = I × R" }, { "en": "I = V × R" } ], "answerIndex": 2,
-      "solution": { "en": "Ohm's law states V = IR: the potential difference across a conductor equals the current through it times its resistance (at constant temperature)." } },
-    { "id": "neet-physics-sample-005", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "mechanics", "difficulty": 1, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "The energy possessed by a body because of its motion is called:" },
-      "choices": [ { "en": "Potential energy" }, { "en": "Kinetic energy" }, { "en": "Chemical energy" }, { "en": "Thermal energy" } ], "answerIndex": 1,
-      "solution": { "en": "Kinetic energy is the energy of motion, given by ½mv². Potential energy is energy due to position or configuration." } },
-    { "id": "neet-physics-sample-006", "type": "mcq", "exam": "neet", "subject": "physics", "year": null, "topic": "mechanics", "difficulty": 2, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "In a vacuum, a feather and a coin dropped from the same height will reach the ground with the same:" },
-      "choices": [ { "en": "Momentum" }, { "en": "Kinetic energy" }, { "en": "Acceleration" }, { "en": "Mass" } ], "answerIndex": 2,
-      "solution": { "en": "In a vacuum there is no air resistance, so all objects fall with the same acceleration (g), regardless of mass, and take the same time to fall. Their momentum and kinetic energy differ because their masses differ." } }
+    {
+      "id": "neet-physics-sample-001",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "units-measurement",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The SI unit of power is the:"
+      },
+      "choices": [
+        {
+          "en": "Joule"
+        },
+        {
+          "en": "Newton"
+        },
+        {
+          "en": "Watt"
+        },
+        {
+          "en": "Pascal"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Power is the rate of doing work, measured in watts (W), where 1 W = 1 J/s. The joule is energy, the newton is force, and the pascal is pressure."
+      }
+    },
+    {
+      "id": "neet-physics-sample-002",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "mechanics",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A body moving with constant velocity has an acceleration that is:"
+      },
+      "choices": [
+        {
+          "en": "Zero"
+        },
+        {
+          "en": "Constant but non-zero"
+        },
+        {
+          "en": "Continuously increasing"
+        },
+        {
+          "en": "Equal to g"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Acceleration is the rate of change of velocity. If the velocity is constant, it is not changing, so the acceleration is zero."
+      }
+    },
+    {
+      "id": "neet-physics-sample-003",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "optics",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The bending of light as it passes from one transparent medium into another is called:"
+      },
+      "choices": [
+        {
+          "en": "Reflection"
+        },
+        {
+          "en": "Refraction"
+        },
+        {
+          "en": "Dispersion"
+        },
+        {
+          "en": "Diffraction"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Refraction is the change in direction of light when it moves between media of different optical densities (e.g. air to glass), due to a change in its speed."
+      }
+    },
+    {
+      "id": "neet-physics-sample-004",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "electricity",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Ohm's law relates potential difference (V), current (I) and resistance (R) as:"
+      },
+      "choices": [
+        {
+          "en": "V = I / R"
+        },
+        {
+          "en": "V = R / I"
+        },
+        {
+          "en": "V = I × R"
+        },
+        {
+          "en": "I = V × R"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Ohm's law states V = IR: the potential difference across a conductor equals the current through it times its resistance (at constant temperature)."
+      }
+    },
+    {
+      "id": "neet-physics-sample-005",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "mechanics",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The energy possessed by a body because of its motion is called:"
+      },
+      "choices": [
+        {
+          "en": "Potential energy"
+        },
+        {
+          "en": "Kinetic energy"
+        },
+        {
+          "en": "Chemical energy"
+        },
+        {
+          "en": "Thermal energy"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Kinetic energy is the energy of motion, given by ½mv². Potential energy is energy due to position or configuration."
+      }
+    },
+    {
+      "id": "neet-physics-sample-006",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "mechanics",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "In a vacuum, a feather and a coin dropped from the same height will reach the ground with the same:"
+      },
+      "choices": [
+        {
+          "en": "Momentum"
+        },
+        {
+          "en": "Kinetic energy"
+        },
+        {
+          "en": "Acceleration"
+        },
+        {
+          "en": "Mass"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "In a vacuum there is no air resistance, so all objects fall with the same acceleration (g), regardless of mass, and take the same time to fall. Their momentum and kinetic energy differ because their masses differ."
+      }
+    },
+    {
+      "id": "neet-physics-sample-007",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "projectile-motion",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Two projectiles are launched from the ground with the same initial speed, one at 30° above the horizontal and the other at 60°. Neglecting air resistance, which quantity is the same for both?"
+      },
+      "choices": [
+        {
+          "en": "Horizontal range"
+        },
+        {
+          "en": "Maximum height reached"
+        },
+        {
+          "en": "Time of flight"
+        },
+        {
+          "en": "Speed at the highest point of the path"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Complementary launch angles (30° and 60°) give identical horizontal range since R ∝ sin2θ and sin60° = sin120°. Height, time of flight, and speed at the apex all differ."
+      }
+    },
+    {
+      "id": "neet-physics-sample-008",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "circular-motion",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A car of mass m moves on a flat (unbanked) circular track of radius r, where the coefficient of friction between tyres and road is μ. The maximum speed at which it can turn without skidding is:"
+      },
+      "choices": [
+        {
+          "en": "μrg"
+        },
+        {
+          "en": "√(μr/g)"
+        },
+        {
+          "en": "√(μrg)"
+        },
+        {
+          "en": "√(rg/μ)"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Friction supplies the centripetal force: μmg = mv²/r, so v_max = √(μrg). Mass cancels out."
+      }
+    },
+    {
+      "id": "neet-physics-sample-009",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "simple-harmonic-motion",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A particle executes simple harmonic motion with amplitude 0.05 m and time period π seconds. Its maximum speed is:"
+      },
+      "choices": [
+        {
+          "en": "0.05 m/s"
+        },
+        {
+          "en": "0.1 m/s"
+        },
+        {
+          "en": "0.2 m/s"
+        },
+        {
+          "en": "0.025 m/s"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Angular frequency ω = 2π/T = 2π/π = 2 rad/s. Maximum speed v_max = Aω = 0.05 × 2 = 0.1 m/s."
+      }
+    },
+    {
+      "id": "neet-physics-sample-010",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "gravitation",
+      "difficulty": 3,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The escape velocity from Earth's surface is about 11 km/s. A hypothetical planet has the same mean density as Earth but twice its radius. The escape velocity from this planet's surface is approximately:"
+      },
+      "choices": [
+        {
+          "en": "11 km/s"
+        },
+        {
+          "en": "5.5 km/s"
+        },
+        {
+          "en": "22 km/s"
+        },
+        {
+          "en": "44 km/s"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Escape velocity v = √(2GM/R) = R√(8πGρ/3), so for fixed density v ∝ R. Doubling the radius doubles the escape velocity to about 22 km/s."
+      }
+    },
+    {
+      "id": "neet-physics-sample-011",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "current-electricity",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A uniform wire of resistance R is stretched (at constant volume) to twice its original length. Its new resistance is:"
+      },
+      "choices": [
+        {
+          "en": "R/4"
+        },
+        {
+          "en": "R/2"
+        },
+        {
+          "en": "2R"
+        },
+        {
+          "en": "4R"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "At constant volume, doubling the length halves the cross-section, and R ∝ L/A ∝ L². Length ×2 gives resistance ×4, i.e. 4R."
+      }
+    },
+    {
+      "id": "neet-physics-sample-012",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "capacitance",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Two capacitors of 2 μF and 4 μF are connected in series. The equivalent capacitance of the combination is:"
+      },
+      "choices": [
+        {
+          "en": "6 μF"
+        },
+        {
+          "en": "1.33 μF"
+        },
+        {
+          "en": "3 μF"
+        },
+        {
+          "en": "8 μF"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "For series capacitors 1/C = 1/2 + 1/4 = 3/4, so C = 4/3 ≈ 1.33 μF, which is less than the smaller capacitor."
+      }
+    },
+    {
+      "id": "neet-physics-sample-013",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "photoelectric-effect",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "In the photoelectric effect, if the frequency of incident light is kept fixed (above threshold) and the intensity is increased, this increases the:"
+      },
+      "choices": [
+        {
+          "en": "Maximum kinetic energy of emitted electrons"
+        },
+        {
+          "en": "Threshold frequency of the metal"
+        },
+        {
+          "en": "Work function of the metal"
+        },
+        {
+          "en": "Number of photoelectrons emitted per second"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Intensity determines the number of incident photons and hence the photocurrent (electrons per second). Maximum kinetic energy depends only on frequency; work function and threshold frequency are properties of the metal."
+      }
+    },
+    {
+      "id": "neet-physics-sample-014",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "ray-optics",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A convex lens has a focal length of 25 cm. Its power is:"
+      },
+      "choices": [
+        {
+          "en": "+4 D"
+        },
+        {
+          "en": "+2.5 D"
+        },
+        {
+          "en": "+0.25 D"
+        },
+        {
+          "en": "-4 D"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Power P = 1/f (in metres) = 1/0.25 = +4 dioptres. It is positive because the lens is converging."
+      }
+    },
+    {
+      "id": "neet-physics-sample-015",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "thermodynamics",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A gas is compressed adiabatically. Which statement is correct for this process?"
+      },
+      "choices": [
+        {
+          "en": "Its temperature remains constant"
+        },
+        {
+          "en": "Its internal energy remains constant"
+        },
+        {
+          "en": "No heat is exchanged with the surroundings"
+        },
+        {
+          "en": "Its pressure remains constant"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "An adiabatic process is defined by zero heat exchange (Q = 0). During adiabatic compression, work done on the gas raises its internal energy and temperature."
+      }
+    },
+    {
+      "id": "neet-physics-sample-016",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "kinetic-theory",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The root-mean-square speed of the molecules of an ideal gas is v at absolute temperature T. To make the rms speed equal to 2v, the temperature must be changed to:"
+      },
+      "choices": [
+        {
+          "en": "2T"
+        },
+        {
+          "en": "4T"
+        },
+        {
+          "en": "√2 T"
+        },
+        {
+          "en": "T/2"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Since v_rms ∝ √T, doubling the speed requires the temperature to increase by a factor of 4, giving 4T."
+      }
+    },
+    {
+      "id": "neet-physics-sample-017",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "electromagnetic-induction",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "An ideal transformer has 100 turns in its primary coil and 500 turns in its secondary coil. If 220 V AC is applied to the primary, the secondary voltage is:"
+      },
+      "choices": [
+        {
+          "en": "44 V"
+        },
+        {
+          "en": "110 V"
+        },
+        {
+          "en": "550 V"
+        },
+        {
+          "en": "1100 V"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "For an ideal transformer V_s/V_p = N_s/N_p = 500/100 = 5, so V_s = 5 × 220 = 1100 V (a step-up transformer)."
+      }
+    },
+    {
+      "id": "neet-physics-sample-018",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "dual-nature-matter",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The de Broglie wavelength associated with a moving particle is inversely proportional to:"
+      },
+      "choices": [
+        {
+          "en": "Its momentum"
+        },
+        {
+          "en": "Its electric charge"
+        },
+        {
+          "en": "Its temperature"
+        },
+        {
+          "en": "The frequency of light illuminating it"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The de Broglie relation is λ = h/p, so wavelength is inversely proportional to the particle's momentum p."
+      }
+    },
+    {
+      "id": "neet-physics-sample-019",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "waves-doppler-effect",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "As a source of sound moves toward a stationary observer, the frequency heard by the observer is ___ the frequency emitted by the source."
+      },
+      "choices": [
+        {
+          "en": "Lower than"
+        },
+        {
+          "en": "Equal to"
+        },
+        {
+          "en": "Higher than"
+        },
+        {
+          "en": "Exactly double"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "When the source approaches, successive wavefronts are compressed (shorter effective wavelength), so the observed frequency is higher than the emitted frequency (Doppler effect)."
+      }
+    },
+    {
+      "id": "neet-physics-sample-020",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "semiconductor-devices",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "When a p-n junction diode is forward biased:"
+      },
+      "choices": [
+        {
+          "en": "The depletion region width increases"
+        },
+        {
+          "en": "The depletion region width decreases"
+        },
+        {
+          "en": "No current can flow through it"
+        },
+        {
+          "en": "It conducts only in the reverse direction"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Forward bias opposes the built-in potential, narrowing the depletion region and lowering the barrier so that a large forward current flows."
+      }
+    },
+    {
+      "id": "neet-physics-sample-021",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "magnetic-effects-of-current",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A charged particle enters a uniform magnetic field with its velocity directed exactly parallel to the field. The magnetic force acting on the particle is:"
+      },
+      "choices": [
+        {
+          "en": "Maximum and equal to qvB"
+        },
+        {
+          "en": "Directed along the field"
+        },
+        {
+          "en": "Equal to mv²/r"
+        },
+        {
+          "en": "Zero"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The magnetic force is F = qvB sinθ. When v is parallel to B, θ = 0°, so sinθ = 0 and the force is zero; the particle moves undeflected."
+      }
+    },
+    {
+      "id": "neet-physics-sample-022",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "physics",
+      "year": null,
+      "topic": "ray-optics",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Total internal reflection of light can occur only when light travels from:"
+      },
+      "choices": [
+        {
+          "en": "A rarer medium to a denser medium at any angle"
+        },
+        {
+          "en": "A denser medium to a rarer medium at an angle greater than the critical angle"
+        },
+        {
+          "en": "Any medium at normal incidence"
+        },
+        {
+          "en": "Vacuum into glass at grazing incidence"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Total internal reflection requires light to travel from a denser to a rarer medium with the angle of incidence exceeding the critical angle, so that no refracted ray emerges."
+      }
+    }
   ]
 }

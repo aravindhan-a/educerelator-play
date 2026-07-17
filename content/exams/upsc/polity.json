@@ -5,52 +5,686 @@
   "note": "SAMPLE questions demonstrating the UPSC track. Facts are correct and syllabus-relevant; source = 'Sample (UPSC pattern)'. Replace with verified real PYQs + SME solutions + 13-language translations before shipping; then remove the draft flag.",
   "questions": [
     {
-      "id": "upsc-polity-sample-001", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
-      "topic": "executive", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The minimum age to be eligible for election as President of India is:" },
-      "choices": [ { "en": "25 years" }, { "en": "30 years" }, { "en": "35 years" }, { "en": "40 years" } ],
+      "id": "upsc-polity-sample-001",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "executive",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The minimum age to be eligible for election as President of India is:"
+      },
+      "choices": [
+        {
+          "en": "25 years"
+        },
+        {
+          "en": "30 years"
+        },
+        {
+          "en": "35 years"
+        },
+        {
+          "en": "40 years"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "A person must have completed 35 years of age to be eligible for the office of President (Article 58). 25 is the minimum for the Lok Sabha, 30 for the Rajya Sabha." }
+      "solution": {
+        "en": "A person must have completed 35 years of age to be eligible for the office of President (Article 58). 25 is the minimum for the Lok Sabha, 30 for the Rajya Sabha."
+      }
     },
     {
-      "id": "upsc-polity-sample-002", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
-      "topic": "fundamental-rights", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "Which Article of the Constitution of India guarantees 'equality before the law'?" },
-      "choices": [ { "en": "Article 14" }, { "en": "Article 19" }, { "en": "Article 21" }, { "en": "Article 32" } ],
+      "id": "upsc-polity-sample-002",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "fundamental-rights",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which Article of the Constitution of India guarantees 'equality before the law'?"
+      },
+      "choices": [
+        {
+          "en": "Article 14"
+        },
+        {
+          "en": "Article 19"
+        },
+        {
+          "en": "Article 21"
+        },
+        {
+          "en": "Article 32"
+        }
+      ],
       "answerIndex": 0,
-      "solution": { "en": "Article 14 guarantees equality before the law and equal protection of the laws. Article 19 covers freedoms, Article 21 the right to life and liberty, and Article 32 the right to constitutional remedies." }
+      "solution": {
+        "en": "Article 14 guarantees equality before the law and equal protection of the laws. Article 19 covers freedoms, Article 21 the right to life and liberty, and Article 32 the right to constitutional remedies."
+      }
     },
     {
-      "id": "upsc-polity-sample-003", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
-      "topic": "fundamental-rights", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "How many Fundamental Rights are currently guaranteed by the Constitution of India?" },
-      "choices": [ { "en": "5" }, { "en": "6" }, { "en": "7" }, { "en": "9" } ],
+      "id": "upsc-polity-sample-003",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "fundamental-rights",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "How many Fundamental Rights are currently guaranteed by the Constitution of India?"
+      },
+      "choices": [
+        {
+          "en": "5"
+        },
+        {
+          "en": "6"
+        },
+        {
+          "en": "7"
+        },
+        {
+          "en": "9"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "There are currently 6 Fundamental Rights. Originally there were 7; the Right to Property was removed as a Fundamental Right by the 44th Amendment (1978) and made a legal right under Article 300A." }
+      "solution": {
+        "en": "There are currently 6 Fundamental Rights. Originally there were 7; the Right to Property was removed as a Fundamental Right by the 44th Amendment (1978) and made a legal right under Article 300A."
+      }
     },
     {
-      "id": "upsc-polity-sample-004", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
-      "topic": "parliament", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The Rajya Sabha is also known as the:" },
-      "choices": [ { "en": "House of the People" }, { "en": "Council of States" }, { "en": "Lower House" }, { "en": "Legislative Assembly" } ],
+      "id": "upsc-polity-sample-004",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "parliament",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Rajya Sabha is also known as the:"
+      },
+      "choices": [
+        {
+          "en": "House of the People"
+        },
+        {
+          "en": "Council of States"
+        },
+        {
+          "en": "Lower House"
+        },
+        {
+          "en": "Legislative Assembly"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "The Rajya Sabha is the Council of States (the Upper House). The Lok Sabha is the House of the People (the Lower House)." }
+      "solution": {
+        "en": "The Rajya Sabha is the Council of States (the Upper House). The Lok Sabha is the House of the People (the Lower House)."
+      }
     },
     {
-      "id": "upsc-polity-sample-005", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
-      "topic": "judiciary", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The Supreme Court of India is located in:" },
-      "choices": [ { "en": "Mumbai" }, { "en": "Kolkata" }, { "en": "New Delhi" }, { "en": "Prayagraj" } ],
+      "id": "upsc-polity-sample-005",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "judiciary",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Supreme Court of India is located in:"
+      },
+      "choices": [
+        {
+          "en": "Mumbai"
+        },
+        {
+          "en": "Kolkata"
+        },
+        {
+          "en": "New Delhi"
+        },
+        {
+          "en": "Prayagraj"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "The Supreme Court of India sits in New Delhi. (High Courts sit in various state capitals — for example, the Allahabad High Court is in Prayagraj.)" }
+      "solution": {
+        "en": "The Supreme Court of India sits in New Delhi. (High Courts sit in various state capitals — for example, the Allahabad High Court is in Prayagraj.)"
+      }
     },
     {
-      "id": "upsc-polity-sample-006", "type": "mcq", "exam": "upsc", "subject": "polity", "year": null,
-      "topic": "parliament", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The normal term of the Lok Sabha is:" },
-      "choices": [ { "en": "4 years" }, { "en": "5 years" }, { "en": "6 years" }, { "en": "7 years" } ],
+      "id": "upsc-polity-sample-006",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "parliament",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The normal term of the Lok Sabha is:"
+      },
+      "choices": [
+        {
+          "en": "4 years"
+        },
+        {
+          "en": "5 years"
+        },
+        {
+          "en": "6 years"
+        },
+        {
+          "en": "7 years"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "The Lok Sabha's normal term is 5 years from the date of its first sitting, unless dissolved earlier. Rajya Sabha members serve 6-year terms and it is a permanent House." }
+      "solution": {
+        "en": "The Lok Sabha's normal term is 5 years from the date of its first sitting, unless dissolved earlier. Rajya Sabha members serve 6-year terms and it is a permanent House."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-007",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "directive-principles",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which part of the Constitution of India deals with the Directive Principles of State Policy?"
+      },
+      "choices": [
+        {
+          "en": "Part III"
+        },
+        {
+          "en": "Part IV"
+        },
+        {
+          "en": "Part IVA"
+        },
+        {
+          "en": "Part V"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Part IV (Articles 36 to 51) contains the Directive Principles of State Policy. Part III covers Fundamental Rights, and Part IVA (Article 51A) covers Fundamental Duties."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-008",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "constitutional-borrowings",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The idea of incorporating a 'Preamble' in the Constitution of India was borrowed from the Constitution of which country?"
+      },
+      "choices": [
+        {
+          "en": "United Kingdom"
+        },
+        {
+          "en": "Ireland"
+        },
+        {
+          "en": "United States of America"
+        },
+        {
+          "en": "Canada"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The concept of a Preamble was borrowed from the Constitution of the United States. Ireland gave India the Directive Principles, and Canada gave the model of a strong Centre."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-009",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "executive-ordinance",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Under the Constitution, who has the power to promulgate an Ordinance when Parliament is not in session?"
+      },
+      "choices": [
+        {
+          "en": "The Prime Minister"
+        },
+        {
+          "en": "The President"
+        },
+        {
+          "en": "The Speaker of the Lok Sabha"
+        },
+        {
+          "en": "The Attorney General"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Under Article 123, the President can promulgate ordinances when either House of Parliament is not in session. Such an ordinance has the same force as an Act of Parliament but must be laid before Parliament."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-010",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "judicial-doctrines",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The 'Basic Structure' doctrine of the Constitution was propounded by the Supreme Court primarily in which case?"
+      },
+      "choices": [
+        {
+          "en": "Golaknath case (1967)"
+        },
+        {
+          "en": "Kesavananda Bharati case (1973)"
+        },
+        {
+          "en": "Minerva Mills case (1980)"
+        },
+        {
+          "en": "Maneka Gandhi case (1978)"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Basic Structure doctrine was established in the Kesavananda Bharati v. State of Kerala case (1973), which held that Parliament cannot amend the basic structure of the Constitution."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-011",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "writs",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which of the following writs is issued to a lower court or authority to prevent it from exceeding its jurisdiction?"
+      },
+      "choices": [
+        {
+          "en": "Mandamus"
+        },
+        {
+          "en": "Prohibition"
+        },
+        {
+          "en": "Quo Warranto"
+        },
+        {
+          "en": "Habeas Corpus"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The writ of Prohibition is issued by a higher court to a lower court or tribunal to stop it from proceeding beyond its jurisdiction. Mandamus commands performance of a duty, and Habeas Corpus deals with unlawful detention."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-012",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "centre-state-relations",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Concurrent List of the Seventh Schedule, on which both the Union and the States can legislate, was adopted from the constitutional practice of which country?"
+      },
+      "choices": [
+        {
+          "en": "United States"
+        },
+        {
+          "en": "Australia"
+        },
+        {
+          "en": "Ireland"
+        },
+        {
+          "en": "South Africa"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The scheme of the Concurrent List was borrowed from the Constitution of Australia. In case of a conflict between Union and State law on a Concurrent subject, the Union law generally prevails."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-013",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "legislative-procedure",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "A Money Bill can be introduced in Parliament only in which House and only on the recommendation of whom?"
+      },
+      "choices": [
+        {
+          "en": "Rajya Sabha, on the recommendation of the President"
+        },
+        {
+          "en": "Lok Sabha, on the recommendation of the President"
+        },
+        {
+          "en": "Lok Sabha, on the recommendation of the Speaker"
+        },
+        {
+          "en": "Either House, on the recommendation of the Finance Minister"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Under Article 110, a Money Bill can be introduced only in the Lok Sabha and only on the recommendation of the President. The Rajya Sabha can only make recommendations, which the Lok Sabha may accept or reject."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-014",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "constitutional-bodies",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Who among the following is the constitutional head of the Union Public Service Commission's counterpart at the State level and appoints the members of the State Public Service Commission?"
+      },
+      "choices": [
+        {
+          "en": "The Chief Minister"
+        },
+        {
+          "en": "The Governor"
+        },
+        {
+          "en": "The President"
+        },
+        {
+          "en": "The State Chief Justice"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Governor appoints the Chairman and members of a State Public Service Commission (Article 316), though they can be removed only by the President. UPSC members, by contrast, are appointed by the President."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-015",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "constitutional-amendments",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Fundamental Duties were added to the Constitution of India by which Amendment Act, based on the recommendations of the Swaran Singh Committee?"
+      },
+      "choices": [
+        {
+          "en": "42nd Amendment Act, 1976"
+        },
+        {
+          "en": "44th Amendment Act, 1978"
+        },
+        {
+          "en": "24th Amendment Act, 1971"
+        },
+        {
+          "en": "52nd Amendment Act, 1985"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The 42nd Amendment Act, 1976 added Fundamental Duties (Part IVA, Article 51A) on the recommendation of the Swaran Singh Committee. The 44th Amendment later added the duty to compensate; originally there were ten duties."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-016",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "emergency-provisions",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which article of the Constitution empowers the President to declare a National Emergency on grounds of war, external aggression, or armed rebellion?"
+      },
+      "choices": [
+        {
+          "en": "Article 352"
+        },
+        {
+          "en": "Article 356"
+        },
+        {
+          "en": "Article 360"
+        },
+        {
+          "en": "Article 365"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Article 352 provides for the proclamation of a National Emergency. Article 356 deals with President's Rule in states, and Article 360 deals with Financial Emergency."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-017",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "union-executive",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Under the Constitution, the Vice-President of India is the ex-officio Chairman of which body?"
+      },
+      "choices": [
+        {
+          "en": "The Lok Sabha"
+        },
+        {
+          "en": "The Rajya Sabha"
+        },
+        {
+          "en": "The Planning Commission"
+        },
+        {
+          "en": "The National Development Council"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Under Article 64, the Vice-President is the ex-officio Chairman of the Rajya Sabha and presides over its sittings. The Speaker, who is elected from among its members, presides over the Lok Sabha."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-018",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "judiciary",
+      "difficulty": 3,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The power of the Supreme Court to review its own judgment or order is provided for under which article?"
+      },
+      "choices": [
+        {
+          "en": "Article 32"
+        },
+        {
+          "en": "Article 137"
+        },
+        {
+          "en": "Article 143"
+        },
+        {
+          "en": "Article 226"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Article 137 grants the Supreme Court the power to review any judgment pronounced or order made by it. Article 143 deals with the advisory jurisdiction, and Article 32 is the right to constitutional remedies."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-019",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "schedules",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Seventh Schedule of the Constitution deals with which of the following?"
+      },
+      "choices": [
+        {
+          "en": "Allocation of seats in the Rajya Sabha"
+        },
+        {
+          "en": "Division of powers between the Union and States through three lists"
+        },
+        {
+          "en": "Languages recognized by the Constitution"
+        },
+        {
+          "en": "Forms of oaths and affirmations"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Seventh Schedule contains the Union List, State List, and Concurrent List, dividing legislative powers between the Union and the States. The Fourth Schedule allocates Rajya Sabha seats, and the Eighth Schedule lists languages."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-020",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "parliament",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which constitutional provision requires that a person shall not be a member of both Houses of Parliament at the same time?"
+      },
+      "choices": [
+        {
+          "en": "It is permitted with the Speaker's consent"
+        },
+        {
+          "en": "The Constitution prohibits dual membership of Parliament"
+        },
+        {
+          "en": "It is allowed only for nominated members"
+        },
+        {
+          "en": "It is decided by the Election Commission case by case"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Article 101 prohibits a person from being a member of both Houses simultaneously; if elected to both, the seat in one House must be vacated. This maintains the distinct composition of each House."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-021",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "anti-defection",
+      "difficulty": 3,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Under the anti-defection law contained in the Tenth Schedule, who decides questions regarding the disqualification of a member on the ground of defection?"
+      },
+      "choices": [
+        {
+          "en": "The President or Governor"
+        },
+        {
+          "en": "The presiding officer of the House (Speaker or Chairman)"
+        },
+        {
+          "en": "The Election Commission"
+        },
+        {
+          "en": "The Supreme Court directly"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Under the Tenth Schedule, the presiding officer (Speaker of the Lok Sabha or Chairman of the Rajya Sabha, and their counterparts in states) decides disqualification on grounds of defection, subject to judicial review."
+      }
+    },
+    {
+      "id": "upsc-polity-sample-022",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "polity",
+      "year": null,
+      "topic": "judiciary",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The provision for a single, integrated judiciary with the Supreme Court at the apex and subordinate courts below it is a feature that reflects which principle?"
+      },
+      "choices": [
+        {
+          "en": "Dual polity with separate court systems"
+        },
+        {
+          "en": "A single integrated judicial system"
+        },
+        {
+          "en": "Complete separation of judiciary from executive with no appeals"
+        },
+        {
+          "en": "Judicial primacy over Parliament"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "India has a single integrated judicial system in which the Supreme Court stands at the top, followed by High Courts and subordinate courts, enforcing both central and state laws. This differs from the dual court system of the United States."
+      }
     }
   ]
 }

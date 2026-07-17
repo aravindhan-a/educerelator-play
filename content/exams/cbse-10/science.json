@@ -1,30 +1,690 @@
 {
-  "exam": "cbse-10", "subject": "science", "draft": true,
+  "exam": "cbse-10",
+  "subject": "science",
+  "draft": true,
   "note": "SAMPLE Class 10 board-pattern questions (source 'Sample (CBSE Class 10)'). Replace with verified real CBSE board PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "cbse-10-science-sample-001", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "electricity", "difficulty": 1, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "The SI unit of electric resistance is the:" },
-      "choices": [ { "en": "Volt" }, { "en": "Ampere" }, { "en": "Ohm" }, { "en": "Watt" } ], "answerIndex": 2,
-      "solution": { "en": "Resistance is measured in ohms (Ω). The volt is potential difference, the ampere is current, and the watt is power." } },
-    { "id": "cbse-10-science-sample-002", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "chemical-reactions", "difficulty": 2, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "The common name of sodium hydrogencarbonate (NaHCO₃) is:" },
-      "choices": [ { "en": "Washing soda" }, { "en": "Baking soda" }, { "en": "Common salt" }, { "en": "Bleaching powder" } ], "answerIndex": 1,
-      "solution": { "en": "NaHCO₃ is baking soda (sodium bicarbonate). Washing soda is Na₂CO₃·10H₂O, common salt is NaCl, and bleaching powder is CaOCl₂." } },
-    { "id": "cbse-10-science-sample-003", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "human-eye", "difficulty": 1, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "The coloured part of the human eye that controls the size of the pupil is the:" },
-      "choices": [ { "en": "Cornea" }, { "en": "Retina" }, { "en": "Iris" }, { "en": "Lens" } ], "answerIndex": 2,
-      "solution": { "en": "The iris is the coloured, muscular diaphragm that adjusts the size of the pupil to control how much light enters. The retina is the light-sensitive screen at the back of the eye." } },
-    { "id": "cbse-10-science-sample-004", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "life-processes", "difficulty": 1, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "The process by which green plants prepare their own food using sunlight is called:" },
-      "choices": [ { "en": "Respiration" }, { "en": "Transpiration" }, { "en": "Photosynthesis" }, { "en": "Digestion" } ], "answerIndex": 2,
-      "solution": { "en": "Photosynthesis uses sunlight, carbon dioxide and water in the chlorophyll of leaves to make glucose and release oxygen. Respiration is the reverse process that releases energy." } },
-    { "id": "cbse-10-science-sample-005", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "human-eye", "difficulty": 2, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "The image formed on the retina of a normal human eye is:" },
-      "choices": [ { "en": "Real and inverted" }, { "en": "Virtual and erect" }, { "en": "Real and erect" }, { "en": "Virtual and inverted" } ], "answerIndex": 0,
-      "solution": { "en": "The convex lens of the eye forms a real, inverted, diminished image on the retina. The brain interprets it as upright." } },
-    { "id": "cbse-10-science-sample-006", "type": "mcq", "exam": "cbse-10", "subject": "science", "year": null, "topic": "life-processes", "difficulty": 2, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "During respiration, glucose is broken down mainly to release:" },
-      "choices": [ { "en": "Chlorophyll" }, { "en": "Energy" }, { "en": "Proteins" }, { "en": "Sunlight" } ], "answerIndex": 1,
-      "solution": { "en": "Respiration breaks down glucose (usually with oxygen) to release energy stored as ATP, along with carbon dioxide and water." } }
+    {
+      "id": "cbse-10-science-sample-001",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "electricity",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The SI unit of electric resistance is the:"
+      },
+      "choices": [
+        {
+          "en": "Volt"
+        },
+        {
+          "en": "Ampere"
+        },
+        {
+          "en": "Ohm"
+        },
+        {
+          "en": "Watt"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Resistance is measured in ohms (Ω). The volt is potential difference, the ampere is current, and the watt is power."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-002",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "chemical-reactions",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The common name of sodium hydrogencarbonate (NaHCO₃) is:"
+      },
+      "choices": [
+        {
+          "en": "Washing soda"
+        },
+        {
+          "en": "Baking soda"
+        },
+        {
+          "en": "Common salt"
+        },
+        {
+          "en": "Bleaching powder"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "NaHCO₃ is baking soda (sodium bicarbonate). Washing soda is Na₂CO₃·10H₂O, common salt is NaCl, and bleaching powder is CaOCl₂."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-003",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "human-eye",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The coloured part of the human eye that controls the size of the pupil is the:"
+      },
+      "choices": [
+        {
+          "en": "Cornea"
+        },
+        {
+          "en": "Retina"
+        },
+        {
+          "en": "Iris"
+        },
+        {
+          "en": "Lens"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The iris is the coloured, muscular diaphragm that adjusts the size of the pupil to control how much light enters. The retina is the light-sensitive screen at the back of the eye."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-004",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "life-processes",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The process by which green plants prepare their own food using sunlight is called:"
+      },
+      "choices": [
+        {
+          "en": "Respiration"
+        },
+        {
+          "en": "Transpiration"
+        },
+        {
+          "en": "Photosynthesis"
+        },
+        {
+          "en": "Digestion"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Photosynthesis uses sunlight, carbon dioxide and water in the chlorophyll of leaves to make glucose and release oxygen. Respiration is the reverse process that releases energy."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-005",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "human-eye",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The image formed on the retina of a normal human eye is:"
+      },
+      "choices": [
+        {
+          "en": "Real and inverted"
+        },
+        {
+          "en": "Virtual and erect"
+        },
+        {
+          "en": "Real and erect"
+        },
+        {
+          "en": "Virtual and inverted"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The convex lens of the eye forms a real, inverted, diminished image on the retina. The brain interprets it as upright."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-006",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "life-processes",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "During respiration, glucose is broken down mainly to release:"
+      },
+      "choices": [
+        {
+          "en": "Chlorophyll"
+        },
+        {
+          "en": "Energy"
+        },
+        {
+          "en": "Proteins"
+        },
+        {
+          "en": "Sunlight"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Respiration breaks down glucose (usually with oxygen) to release energy stored as ATP, along with carbon dioxide and water."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-007",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "chemical-reactions-and-equations",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "A chemical reaction in which a single reactant breaks down into two or more simpler products is best classified as a:"
+      },
+      "choices": [
+        {
+          "en": "Combination reaction"
+        },
+        {
+          "en": "Decomposition reaction"
+        },
+        {
+          "en": "Displacement reaction"
+        },
+        {
+          "en": "Double displacement reaction"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "In a decomposition reaction one compound splits into simpler substances, often on heating, exposure to light, or passing electricity."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-008",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "acids-bases-and-salts",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which of the following solutions has a pH value greater than 7?"
+      },
+      "choices": [
+        {
+          "en": "Lemon juice"
+        },
+        {
+          "en": "Vinegar"
+        },
+        {
+          "en": "Milk of magnesia"
+        },
+        {
+          "en": "Gastric juice"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Milk of magnesia is a suspension of magnesium hydroxide, a base, so its pH is above 7; the other three are acidic (pH below 7)."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-009",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "metals-and-non-metals",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which metal, when added to an aqueous solution of copper sulphate, will displace copper from it?"
+      },
+      "choices": [
+        {
+          "en": "Silver"
+        },
+        {
+          "en": "Gold"
+        },
+        {
+          "en": "Mercury"
+        },
+        {
+          "en": "Iron"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Iron lies above copper in the reactivity series, so it is more reactive and displaces copper; silver, gold and mercury are less reactive than copper."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-010",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "carbon-and-its-compounds",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The functional group present in ethanoic acid (acetic acid) is the:"
+      },
+      "choices": [
+        {
+          "en": "Hydroxyl group (-OH)"
+        },
+        {
+          "en": "Aldehyde group (-CHO)"
+        },
+        {
+          "en": "Carboxylic acid group (-COOH)"
+        },
+        {
+          "en": "Ketone group (>C=O)"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Ethanoic acid, CH3COOH, contains the -COOH carboxylic acid functional group, which gives it its acidic character."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-011",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "chemical-reactions-and-equations",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which of the following is an endothermic reaction?"
+      },
+      "choices": [
+        {
+          "en": "Burning of natural gas"
+        },
+        {
+          "en": "Respiration in living cells"
+        },
+        {
+          "en": "Neutralisation of an acid by a base"
+        },
+        {
+          "en": "Thermal decomposition of calcium carbonate"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Heating calcium carbonate to form calcium oxide and carbon dioxide absorbs heat, making it endothermic; combustion, respiration and neutralisation all release heat."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-012",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "life-processes",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "In the human respiratory system, the exchange of gases between the blood and the air takes place in the:"
+      },
+      "choices": [
+        {
+          "en": "Alveoli"
+        },
+        {
+          "en": "Bronchi"
+        },
+        {
+          "en": "Trachea"
+        },
+        {
+          "en": "Larynx"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The alveoli are thin-walled, balloon-like air sacs with a rich blood supply, providing a large surface for oxygen and carbon dioxide exchange."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-013",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "control-and-coordination",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which endocrine gland secretes the hormone insulin?"
+      },
+      "choices": [
+        {
+          "en": "Thyroid"
+        },
+        {
+          "en": "Pancreas"
+        },
+        {
+          "en": "Adrenal"
+        },
+        {
+          "en": "Pituitary"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Insulin is produced by the pancreas and lowers blood glucose; its deficiency causes diabetes."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-014",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "control-and-coordination",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Reflex actions in the human body, such as pulling the hand away from a hot object, are controlled mainly by the:"
+      },
+      "choices": [
+        {
+          "en": "Cerebrum"
+        },
+        {
+          "en": "Cerebellum"
+        },
+        {
+          "en": "Spinal cord"
+        },
+        {
+          "en": "Medulla"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Reflex arcs are completed through the spinal cord, allowing a rapid response without waiting for the brain to process the signal."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-015",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "how-do-organisms-reproduce",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which of the following organisms reproduces asexually by budding?"
+      },
+      "choices": [
+        {
+          "en": "Amoeba"
+        },
+        {
+          "en": "Planaria"
+        },
+        {
+          "en": "Hydra"
+        },
+        {
+          "en": "Plasmodium"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Hydra reproduces by budding, where a small outgrowth develops into a new individual; Amoeba uses binary fission, Plasmodium multiple fission, and Planaria regeneration."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-016",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "heredity",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "When two pea plants heterozygous for height (Tt) are crossed, the ratio of tall to dwarf plants obtained in the offspring is:"
+      },
+      "choices": [
+        {
+          "en": "3 : 1"
+        },
+        {
+          "en": "1 : 1"
+        },
+        {
+          "en": "1 : 2 : 1"
+        },
+        {
+          "en": "9 : 3 : 3 : 1"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "A Tt x Tt cross gives genotypes 1 TT : 2 Tt : 1 tt, but since T is dominant the visible (phenotypic) ratio of tall to dwarf is 3 : 1."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-017",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "heredity-and-evolution",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The forelimb of a human and the wing of a bird have a similar basic structure but perform different functions. Such organs are called:"
+      },
+      "choices": [
+        {
+          "en": "Analogous organs"
+        },
+        {
+          "en": "Homologous organs"
+        },
+        {
+          "en": "Vestigial organs"
+        },
+        {
+          "en": "Acquired characters"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Homologous organs share the same fundamental structure and origin but may be adapted for different functions, indicating common ancestry."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-018",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "human-eye-and-colourful-world",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "A person who cannot see distant objects clearly suffers from myopia. This defect is corrected by using spectacles with a:"
+      },
+      "choices": [
+        {
+          "en": "Concave lens"
+        },
+        {
+          "en": "Convex lens"
+        },
+        {
+          "en": "Cylindrical lens"
+        },
+        {
+          "en": "Plano-convex lens"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Myopia is corrected with a concave (diverging) lens of suitable power, which moves the image back onto the retina."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-019",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "light-reflection-and-refraction",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The power of a convex lens whose focal length is 50 cm is:"
+      },
+      "choices": [
+        {
+          "en": "+0.5 D"
+        },
+        {
+          "en": "+5 D"
+        },
+        {
+          "en": "+50 D"
+        },
+        {
+          "en": "+2 D"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Power = 1/f (in metres) = 1/0.5 = +2 dioptres for a converging lens."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-020",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "electricity",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Two resistors of 2 ohm and 3 ohm are connected in series. The equivalent resistance of the combination is:"
+      },
+      "choices": [
+        {
+          "en": "1.2 ohm"
+        },
+        {
+          "en": "5 ohm"
+        },
+        {
+          "en": "6 ohm"
+        },
+        {
+          "en": "0.6 ohm"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "In series, resistances add up: 2 + 3 = 5 ohm. (1.2 ohm would be the parallel combination.)"
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-021",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "magnetic-effects-of-electric-current",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The magnetic field lines inside a long current-carrying solenoid are:"
+      },
+      "choices": [
+        {
+          "en": "Circular"
+        },
+        {
+          "en": "Radially outward"
+        },
+        {
+          "en": "Concentric circles"
+        },
+        {
+          "en": "Parallel straight lines"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Inside a solenoid the magnetic field is nearly uniform, shown by parallel straight field lines, similar to the field of a bar magnet outside it."
+      }
+    },
+    {
+      "id": "cbse-10-science-sample-022",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "science",
+      "year": null,
+      "topic": "our-environment",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "In a food chain, the approximate percentage of energy transferred from one trophic level to the next is:"
+      },
+      "choices": [
+        {
+          "en": "1%"
+        },
+        {
+          "en": "100%"
+        },
+        {
+          "en": "10%"
+        },
+        {
+          "en": "50%"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "According to the ten percent law, only about 10% of the energy at one trophic level is passed on to the next; the rest is lost mainly as heat."
+      }
+    }
   ]
 }

@@ -1,30 +1,690 @@
 {
-  "exam": "cbse-12", "subject": "physics", "draft": true,
+  "exam": "cbse-12",
+  "subject": "physics",
+  "draft": true,
   "note": "SAMPLE Class 12 board-pattern questions (source 'Sample (CBSE Class 12)'). Replace with verified real CBSE board PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "cbse-12-physics-sample-001", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "electrostatics", "difficulty": 1, "source": "Sample (CBSE Class 12)",
-      "prompt": { "en": "The SI unit of electric charge is the:" },
-      "choices": [ { "en": "Ampere" }, { "en": "Coulomb" }, { "en": "Volt" }, { "en": "Farad" } ], "answerIndex": 1,
-      "solution": { "en": "Electric charge is measured in coulombs (C), where 1 C = 1 A·s. The ampere is current, the volt is potential difference, and the farad is capacitance." } },
-    { "id": "cbse-12-physics-sample-002", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "electromagnetic-induction", "difficulty": 2, "source": "Sample (CBSE Class 12)",
-      "prompt": { "en": "The production of an induced EMF in a coil due to a changing magnetic flux through it is called:" },
-      "choices": [ { "en": "Refraction" }, { "en": "Resonance" }, { "en": "Electromagnetic induction" }, { "en": "Polarisation" } ], "answerIndex": 2,
-      "solution": { "en": "Faraday's law describes electromagnetic induction: a changing magnetic flux through a circuit induces an EMF proportional to the rate of change of flux." } },
-    { "id": "cbse-12-physics-sample-003", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "alternating-current", "difficulty": 1, "source": "Sample (CBSE Class 12)",
-      "prompt": { "en": "A device used to step up or step down an alternating (AC) voltage is a:" },
-      "choices": [ { "en": "Transformer" }, { "en": "Rectifier" }, { "en": "Capacitor" }, { "en": "Resistor" } ], "answerIndex": 0,
-      "solution": { "en": "A transformer changes AC voltage using electromagnetic induction between two coils. A rectifier converts AC to DC; it cannot step voltage up or down." } },
-    { "id": "cbse-12-physics-sample-004", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "electromagnetic-waves", "difficulty": 2, "source": "Sample (CBSE Class 12)",
-      "prompt": { "en": "In the electromagnetic spectrum, which of these has the longest wavelength?" },
-      "choices": [ { "en": "Gamma rays" }, { "en": "X-rays" }, { "en": "Visible light" }, { "en": "Radio waves" } ], "answerIndex": 3,
-      "solution": { "en": "Radio waves have the longest wavelength (and lowest frequency). Gamma rays have the shortest wavelength and highest frequency." } },
-    { "id": "cbse-12-physics-sample-005", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "electrostatics", "difficulty": 2, "source": "Sample (CBSE Class 12)",
-      "prompt": { "en": "According to Coulomb's law, the electrostatic force between two point charges is inversely proportional to the:" },
-      "choices": [ { "en": "Distance between them" }, { "en": "Square of the distance between them" }, { "en": "Cube of the distance between them" }, { "en": "Product of the charges" } ], "answerIndex": 1,
-      "solution": { "en": "Coulomb's law: F = kq₁q₂/r². The force is directly proportional to the product of the charges and inversely proportional to the square of the distance r between them." } },
-    { "id": "cbse-12-physics-sample-006", "type": "mcq", "exam": "cbse-12", "subject": "physics", "year": null, "topic": "optics", "difficulty": 2, "source": "Sample (CBSE Class 12)",
-      "prompt": { "en": "The type of lens used to correct myopia (short-sightedness) is a:" },
-      "choices": [ { "en": "Convex lens" }, { "en": "Concave lens" }, { "en": "Cylindrical lens" }, { "en": "Bifocal lens" } ], "answerIndex": 1,
-      "solution": { "en": "Myopia (short-sightedness) is corrected with a concave (diverging) lens, which moves the image back onto the retina. Hypermetropia is corrected with a convex lens." } }
+    {
+      "id": "cbse-12-physics-sample-001",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "electrostatics",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The SI unit of electric charge is the:"
+      },
+      "choices": [
+        {
+          "en": "Ampere"
+        },
+        {
+          "en": "Coulomb"
+        },
+        {
+          "en": "Volt"
+        },
+        {
+          "en": "Farad"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Electric charge is measured in coulombs (C), where 1 C = 1 A·s. The ampere is current, the volt is potential difference, and the farad is capacitance."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-002",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "electromagnetic-induction",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The production of an induced EMF in a coil due to a changing magnetic flux through it is called:"
+      },
+      "choices": [
+        {
+          "en": "Refraction"
+        },
+        {
+          "en": "Resonance"
+        },
+        {
+          "en": "Electromagnetic induction"
+        },
+        {
+          "en": "Polarisation"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Faraday's law describes electromagnetic induction: a changing magnetic flux through a circuit induces an EMF proportional to the rate of change of flux."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-003",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "alternating-current",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "A device used to step up or step down an alternating (AC) voltage is a:"
+      },
+      "choices": [
+        {
+          "en": "Transformer"
+        },
+        {
+          "en": "Rectifier"
+        },
+        {
+          "en": "Capacitor"
+        },
+        {
+          "en": "Resistor"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "A transformer changes AC voltage using electromagnetic induction between two coils. A rectifier converts AC to DC; it cannot step voltage up or down."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-004",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "electromagnetic-waves",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In the electromagnetic spectrum, which of these has the longest wavelength?"
+      },
+      "choices": [
+        {
+          "en": "Gamma rays"
+        },
+        {
+          "en": "X-rays"
+        },
+        {
+          "en": "Visible light"
+        },
+        {
+          "en": "Radio waves"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Radio waves have the longest wavelength (and lowest frequency). Gamma rays have the shortest wavelength and highest frequency."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-005",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "electrostatics",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "According to Coulomb's law, the electrostatic force between two point charges is inversely proportional to the:"
+      },
+      "choices": [
+        {
+          "en": "Distance between them"
+        },
+        {
+          "en": "Square of the distance between them"
+        },
+        {
+          "en": "Cube of the distance between them"
+        },
+        {
+          "en": "Product of the charges"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Coulomb's law: F = kq₁q₂/r². The force is directly proportional to the product of the charges and inversely proportional to the square of the distance r between them."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-006",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "optics",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The type of lens used to correct myopia (short-sightedness) is a:"
+      },
+      "choices": [
+        {
+          "en": "Convex lens"
+        },
+        {
+          "en": "Concave lens"
+        },
+        {
+          "en": "Cylindrical lens"
+        },
+        {
+          "en": "Bifocal lens"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Myopia (short-sightedness) is corrected with a concave (diverging) lens, which moves the image back onto the retina. Hypermetropia is corrected with a convex lens."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-007",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "electrostatics-conductors",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The electric field just inside a charged, isolated conductor in electrostatic equilibrium is:"
+      },
+      "choices": [
+        {
+          "en": "Zero everywhere inside"
+        },
+        {
+          "en": "Maximum at the centre"
+        },
+        {
+          "en": "Equal to the field just outside"
+        },
+        {
+          "en": "Directed towards the surface"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "In electrostatic equilibrium, charges reside on the surface of a conductor and the net electric field everywhere inside the conductor material is zero."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-008",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "capacitance-dielectrics",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "When a dielectric slab is inserted to completely fill the gap between the plates of an isolated (disconnected from any battery) charged parallel-plate capacitor, the potential difference across the plates:"
+      },
+      "choices": [
+        {
+          "en": "Increases"
+        },
+        {
+          "en": "Decreases"
+        },
+        {
+          "en": "Remains unchanged"
+        },
+        {
+          "en": "Becomes zero"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "For an isolated capacitor the charge Q is fixed. Inserting a dielectric increases capacitance C, and since V = Q/C, the potential difference decreases."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-009",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "current-electricity-drift",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The drift velocity of free electrons in a metallic conductor carrying a steady current is typically of the order of:"
+      },
+      "choices": [
+        {
+          "en": "10^8 m/s"
+        },
+        {
+          "en": "10^6 m/s"
+        },
+        {
+          "en": "10^3 m/s"
+        },
+        {
+          "en": "10^-4 m/s"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Although electrons move randomly at high speeds, the net drift velocity in the direction of the field is very small, of the order of 10^-4 m/s (a fraction of a mm per second)."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-010",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "magnetism-lorentz-force",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "A charged particle moving with velocity v enters a uniform magnetic field B such that v is exactly parallel to B. The magnetic force on the particle is:"
+      },
+      "choices": [
+        {
+          "en": "Maximum and along v"
+        },
+        {
+          "en": "Zero"
+        },
+        {
+          "en": "Maximum and perpendicular to v"
+        },
+        {
+          "en": "Equal to qvB directed along B"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The magnetic force is F = qv×B = qvB sinθ. When v is parallel to B, θ = 0, so sinθ = 0 and the force is zero."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-011",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "magnetism-materials",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "A material that is weakly repelled by an external magnetic field and has a relative permeability slightly less than 1 is classified as:"
+      },
+      "choices": [
+        {
+          "en": "Ferromagnetic"
+        },
+        {
+          "en": "Paramagnetic"
+        },
+        {
+          "en": "Diamagnetic"
+        },
+        {
+          "en": "Ferrimagnetic"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Diamagnetic materials are weakly repelled by magnetic fields and have relative permeability slightly less than 1 (magnetic susceptibility small and negative)."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-012",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "emi-lenz-law",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "According to Lenz's law, the direction of an induced current in a circuit is always such that it:"
+      },
+      "choices": [
+        {
+          "en": "Aids the change in magnetic flux that produces it"
+        },
+        {
+          "en": "Opposes the change in magnetic flux that produces it"
+        },
+        {
+          "en": "Is independent of the change in flux"
+        },
+        {
+          "en": "Is always clockwise when viewed from the source"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Lenz's law states the induced current opposes the change in magnetic flux causing it, which is a consequence of conservation of energy."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-013",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "ac-resonance",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In a series LCR circuit driven at its resonant frequency, the power factor of the circuit is:"
+      },
+      "choices": [
+        {
+          "en": "Zero"
+        },
+        {
+          "en": "0.5"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "Between 0 and 0.5"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "At resonance the inductive and capacitive reactances cancel, the impedance is purely resistive, current and voltage are in phase, so the power factor cosφ = 1."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-014",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "em-waves-structure",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In an electromagnetic wave travelling through vacuum, the electric field vector E and the magnetic field vector B are oriented such that they are:"
+      },
+      "choices": [
+        {
+          "en": "Parallel to each other and to the direction of propagation"
+        },
+        {
+          "en": "Mutually perpendicular and both perpendicular to the direction of propagation"
+        },
+        {
+          "en": "Perpendicular to each other but parallel to the direction of propagation"
+        },
+        {
+          "en": "Antiparallel to each other"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "In an EM wave, E and B are perpendicular to each other and each is perpendicular to the direction of propagation, making it a transverse wave."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-015",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "ray-optics-tir",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Total internal reflection of light can occur only when light travels from:"
+      },
+      "choices": [
+        {
+          "en": "A rarer medium to a denser medium at any angle"
+        },
+        {
+          "en": "A denser medium to a rarer medium at an angle greater than the critical angle"
+        },
+        {
+          "en": "A rarer medium to a denser medium at the critical angle"
+        },
+        {
+          "en": "A denser medium to a rarer medium at an angle less than the critical angle"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Total internal reflection requires light going from a denser to a rarer medium with the angle of incidence exceeding the critical angle, so no refracted ray escapes."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-016",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "wave-optics-interference",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In Young's double-slit experiment, if the separation between the two slits is increased while all else is kept constant, the fringe width of the interference pattern:"
+      },
+      "choices": [
+        {
+          "en": "Increases"
+        },
+        {
+          "en": "Decreases"
+        },
+        {
+          "en": "Remains the same"
+        },
+        {
+          "en": "First increases then decreases"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Fringe width β = λD/d is inversely proportional to the slit separation d, so increasing d decreases the fringe width."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-017",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "dual-nature-photoelectric",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In the photoelectric effect, increasing the intensity of incident light (while keeping its frequency above the threshold) increases:"
+      },
+      "choices": [
+        {
+          "en": "The maximum kinetic energy of emitted electrons"
+        },
+        {
+          "en": "The number of electrons emitted per second"
+        },
+        {
+          "en": "The threshold frequency of the metal"
+        },
+        {
+          "en": "The stopping potential"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Higher intensity means more photons per second, so more electrons are ejected per second (larger photocurrent). Maximum kinetic energy and stopping potential depend only on frequency, not intensity."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-018",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "atoms-bohr-model",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The energy of the electron in the second orbit (n = 2) of a hydrogen atom, given the ground-state energy is -13.6 eV, is:"
+      },
+      "choices": [
+        {
+          "en": "-13.6 eV"
+        },
+        {
+          "en": "-6.8 eV"
+        },
+        {
+          "en": "-3.4 eV"
+        },
+        {
+          "en": "-1.51 eV"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "In the Bohr model E_n = -13.6/n^2 eV. For n = 2, E = -13.6/4 = -3.4 eV."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-019",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "nuclei-binding-energy",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The binding energy per nucleon is greatest for nuclei with mass number around 56 (iron region). This implies that these nuclei are:"
+      },
+      "choices": [
+        {
+          "en": "The most unstable of all nuclei"
+        },
+        {
+          "en": "The most stable, being hardest to break apart per nucleon"
+        },
+        {
+          "en": "Radioactive with the shortest half-lives"
+        },
+        {
+          "en": "Capable of neither fusion nor fission"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A higher binding energy per nucleon means the nucleons are more tightly bound, so nuclei near iron (A≈56) are the most stable."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-020",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "semiconductors-pn-junction",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In a p-n junction diode, the depletion region is a layer near the junction that is:"
+      },
+      "choices": [
+        {
+          "en": "Rich in free charge carriers"
+        },
+        {
+          "en": "Depleted of free charge carriers and contains immobile ions"
+        },
+        {
+          "en": "A perfect conductor"
+        },
+        {
+          "en": "Made only of free electrons"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Diffusion of carriers across the junction leaves behind immobile charged ions and removes free carriers, forming a depletion region with an associated potential barrier."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-021",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "ray-optics-lens-combination",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "A thin convex lens of power +5 D is placed in contact with a thin concave lens of power -2 D. The focal length of the combination is:"
+      },
+      "choices": [
+        {
+          "en": "+33.3 cm (converging)"
+        },
+        {
+          "en": "-33.3 cm (diverging)"
+        },
+        {
+          "en": "+14.3 cm (converging)"
+        },
+        {
+          "en": "+50 cm (converging)"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "For thin lenses in contact, net power P = P1 + P2 = 5 + (-2) = +3 D. Focal length f = 1/P = 1/3 m ≈ +33.3 cm, and being positive it is converging."
+      }
+    },
+    {
+      "id": "cbse-12-physics-sample-022",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "physics",
+      "year": null,
+      "topic": "electrostatics-potential",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The work done in moving a test charge between two points that lie on the same equipotential surface is:"
+      },
+      "choices": [
+        {
+          "en": "Maximum"
+        },
+        {
+          "en": "Zero"
+        },
+        {
+          "en": "Negative"
+        },
+        {
+          "en": "Equal to the charge times the field"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "On an equipotential surface the potential difference between any two points is zero, so W = qΔV = 0; no work is done in moving a charge along it."
+      }
+    }
   ]
 }

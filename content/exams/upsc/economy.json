@@ -1,30 +1,690 @@
 {
-  "exam": "upsc", "subject": "economy", "draft": true,
+  "exam": "upsc",
+  "subject": "economy",
+  "draft": true,
   "note": "SAMPLE questions (source 'Sample (UPSC pattern)'). Replace with verified real PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "upsc-economy-sample-001", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "banking", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The Reserve Bank of India (RBI), the country's central bank, was established in the year:" },
-      "choices": [ { "en": "1935" }, { "en": "1947" }, { "en": "1950" }, { "en": "1969" } ], "answerIndex": 0,
-      "solution": { "en": "The RBI was established on 1 April 1935 under the RBI Act, 1934, and was nationalised in 1949. 1969 was the year of the first bank nationalisation." } },
-    { "id": "upsc-economy-sample-002", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "planning", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The body that replaced the Planning Commission of India in 2015 is:" },
-      "choices": [ { "en": "The Finance Commission" }, { "en": "NITI Aayog" }, { "en": "The RBI" }, { "en": "SEBI" } ], "answerIndex": 1,
-      "solution": { "en": "NITI Aayog (National Institution for Transforming India) replaced the Planning Commission on 1 January 2015 as the government's policy think-tank." } },
-    { "id": "upsc-economy-sample-003", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "economy", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "In economics, 'GDP' stands for:" },
-      "choices": [ { "en": "Gross Domestic Product" }, { "en": "General Domestic Produce" }, { "en": "Gross Development Programme" }, { "en": "Global Domestic Product" } ], "answerIndex": 0,
-      "solution": { "en": "GDP is Gross Domestic Product — the total monetary value of all final goods and services produced within a country's borders in a given period." } },
-    { "id": "upsc-economy-sample-004", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "economy", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The Goods and Services Tax (GST) came into effect in India in the year:" },
-      "choices": [ { "en": "2014" }, { "en": "2016" }, { "en": "2017" }, { "en": "2019" } ], "answerIndex": 2,
-      "solution": { "en": "GST was launched on 1 July 2017, replacing many indirect taxes with a single unified tax under the slogan 'One Nation, One Tax'." } },
-    { "id": "upsc-economy-sample-005", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "banking", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "Which institution has the sole authority to issue currency notes in India (except one-rupee notes)?" },
-      "choices": [ { "en": "State Bank of India" }, { "en": "Ministry of Finance" }, { "en": "Reserve Bank of India" }, { "en": "NABARD" } ], "answerIndex": 2,
-      "solution": { "en": "The RBI is the sole issuer of banknotes in India (the one-rupee note and coins are issued by the Government of India, though circulated by the RBI)." } },
-    { "id": "upsc-economy-sample-006", "type": "mcq", "exam": "upsc", "subject": "economy", "year": null, "topic": "economy", "difficulty": 3, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The 'fiscal deficit' of a government is the excess of its:" },
-      "choices": [ { "en": "Total expenditure over total receipts excluding borrowings" }, { "en": "Revenue over expenditure" }, { "en": "Exports over imports" }, { "en": "Imports over exports" } ], "answerIndex": 0,
-      "solution": { "en": "The fiscal deficit is the amount by which the government's total expenditure exceeds its total receipts excluding borrowings — i.e. how much it needs to borrow. The gap between exports and imports is the trade deficit." } }
+    {
+      "id": "upsc-economy-sample-001",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "banking",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Reserve Bank of India (RBI), the country's central bank, was established in the year:"
+      },
+      "choices": [
+        {
+          "en": "1935"
+        },
+        {
+          "en": "1947"
+        },
+        {
+          "en": "1950"
+        },
+        {
+          "en": "1969"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The RBI was established on 1 April 1935 under the RBI Act, 1934, and was nationalised in 1949. 1969 was the year of the first bank nationalisation."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-002",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "planning",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The body that replaced the Planning Commission of India in 2015 is:"
+      },
+      "choices": [
+        {
+          "en": "The Finance Commission"
+        },
+        {
+          "en": "NITI Aayog"
+        },
+        {
+          "en": "The RBI"
+        },
+        {
+          "en": "SEBI"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "NITI Aayog (National Institution for Transforming India) replaced the Planning Commission on 1 January 2015 as the government's policy think-tank."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-003",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "economy",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In economics, 'GDP' stands for:"
+      },
+      "choices": [
+        {
+          "en": "Gross Domestic Product"
+        },
+        {
+          "en": "General Domestic Produce"
+        },
+        {
+          "en": "Gross Development Programme"
+        },
+        {
+          "en": "Global Domestic Product"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "GDP is Gross Domestic Product — the total monetary value of all final goods and services produced within a country's borders in a given period."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-004",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "economy",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Goods and Services Tax (GST) came into effect in India in the year:"
+      },
+      "choices": [
+        {
+          "en": "2014"
+        },
+        {
+          "en": "2016"
+        },
+        {
+          "en": "2017"
+        },
+        {
+          "en": "2019"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "GST was launched on 1 July 2017, replacing many indirect taxes with a single unified tax under the slogan 'One Nation, One Tax'."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-005",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "banking",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which institution has the sole authority to issue currency notes in India (except one-rupee notes)?"
+      },
+      "choices": [
+        {
+          "en": "State Bank of India"
+        },
+        {
+          "en": "Ministry of Finance"
+        },
+        {
+          "en": "Reserve Bank of India"
+        },
+        {
+          "en": "NABARD"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The RBI is the sole issuer of banknotes in India (the one-rupee note and coins are issued by the Government of India, though circulated by the RBI)."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-006",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "economy",
+      "difficulty": 3,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The 'fiscal deficit' of a government is the excess of its:"
+      },
+      "choices": [
+        {
+          "en": "Total expenditure over total receipts excluding borrowings"
+        },
+        {
+          "en": "Revenue over expenditure"
+        },
+        {
+          "en": "Exports over imports"
+        },
+        {
+          "en": "Imports over exports"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The fiscal deficit is the amount by which the government's total expenditure exceeds its total receipts excluding borrowings — i.e. how much it needs to borrow. The gap between exports and imports is the trade deficit."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-007",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "national-income-accounting",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The difference between a country's Gross National Product (GNP) and its Gross Domestic Product (GDP) is accounted for by:"
+      },
+      "choices": [
+        {
+          "en": "Net indirect taxes"
+        },
+        {
+          "en": "Depreciation of capital"
+        },
+        {
+          "en": "Net factor income from abroad"
+        },
+        {
+          "en": "Subsidies on production"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "GNP = GDP + Net Factor Income from Abroad (income earned by residents abroad minus income earned by foreigners domestically), so NFIA is exactly what separates the two aggregates."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-008",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "monetary-policy",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "An increase in the repo rate by the Reserve Bank of India is generally intended to:"
+      },
+      "choices": [
+        {
+          "en": "Increase liquidity and boost growth"
+        },
+        {
+          "en": "Reduce liquidity in the system and help control inflation"
+        },
+        {
+          "en": "Directly finance the government's fiscal deficit"
+        },
+        {
+          "en": "Guarantee an appreciation of the rupee"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A higher repo rate makes RBI borrowing costlier for banks, raising lending rates and squeezing liquidity, which dampens demand and helps contain inflation."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-009",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "monetary-policy",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which of the following best describes the Cash Reserve Ratio (CRR)?"
+      },
+      "choices": [
+        {
+          "en": "The rate at which the RBI lends to commercial banks"
+        },
+        {
+          "en": "The share of deposits banks must invest in government securities"
+        },
+        {
+          "en": "The minimum ratio of a bank's capital to its risk-weighted assets"
+        },
+        {
+          "en": "The share of net demand and time liabilities banks must hold as cash reserves with the RBI"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "CRR is the fraction of net demand and time liabilities (NDTL) that banks must keep as cash reserves with the RBI; the other options describe the repo rate, the SLR concept, and the capital adequacy ratio."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-010",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "inflation-measurement",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "India's flexible inflation targeting framework requires the RBI to keep inflation, measured by which index, within a specified band?"
+      },
+      "choices": [
+        {
+          "en": "Consumer Price Index (Combined)"
+        },
+        {
+          "en": "Wholesale Price Index"
+        },
+        {
+          "en": "GDP deflator"
+        },
+        {
+          "en": "Index of Industrial Production"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The monetary policy framework anchors the inflation target on the Consumer Price Index (Combined), not the WPI or the GDP deflator; the IIP measures industrial output, not prices."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-011",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "fiscal-policy",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Primary deficit in the Union Budget is defined as:"
+      },
+      "choices": [
+        {
+          "en": "Fiscal deficit plus interest payments"
+        },
+        {
+          "en": "Revenue deficit minus grants for capital assets"
+        },
+        {
+          "en": "Fiscal deficit minus interest payments"
+        },
+        {
+          "en": "Total expenditure minus total receipts including borrowings"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Primary deficit equals fiscal deficit minus interest payments; it isolates the current year's borrowing need after removing the burden of past debt servicing."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-012",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "taxation",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which of the following is a direct tax?"
+      },
+      "choices": [
+        {
+          "en": "Goods and Services Tax"
+        },
+        {
+          "en": "Customs duty"
+        },
+        {
+          "en": "Union excise duty"
+        },
+        {
+          "en": "Corporation tax"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Corporation tax is levied directly on company profits and its burden cannot be shifted, making it a direct tax; GST, customs, and excise are indirect taxes on goods and services."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-013",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "money-supply",
+      "difficulty": 3,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In India, narrow money (M1) consists of:"
+      },
+      "choices": [
+        {
+          "en": "Currency with the public plus time deposits with banks"
+        },
+        {
+          "en": "Currency with the public plus demand deposits with the banking system plus other deposits with the RBI"
+        },
+        {
+          "en": "Demand deposits plus time deposits with banks"
+        },
+        {
+          "en": "Currency with the public plus total bank deposits"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "M1 (narrow money) = currency with the public + demand deposits with the banking system + other deposits with the RBI. Time deposits are added only in the broader aggregate M3."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-014",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "balance-of-payments",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which of the following transactions is recorded in the current account of India's balance of payments?"
+      },
+      "choices": [
+        {
+          "en": "Import of crude oil"
+        },
+        {
+          "en": "Foreign direct investment inflow"
+        },
+        {
+          "en": "External commercial borrowing"
+        },
+        {
+          "en": "Repayment of foreign loan principal"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Merchandise trade such as the import of crude oil is a current account item, whereas FDI, external commercial borrowing, and loan repayments are capital/financial account transactions."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-015",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "banking",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Under RBI norms, which of the following is classified as 'priority sector' lending?"
+      },
+      "choices": [
+        {
+          "en": "Loans to large corporate houses"
+        },
+        {
+          "en": "Personal loans for luxury consumption"
+        },
+        {
+          "en": "Agriculture and allied activities"
+        },
+        {
+          "en": "Speculative real estate purchases"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Priority sector lending covers areas such as agriculture, micro and small enterprises, education, and weaker sections that need adequate credit; large corporate and speculative loans are excluded."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-016",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "financial-institutions",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Securities and Exchange Board of India (SEBI) is primarily responsible for:"
+      },
+      "choices": [
+        {
+          "en": "Managing the country's foreign exchange reserves"
+        },
+        {
+          "en": "Regulating the securities (stock) market"
+        },
+        {
+          "en": "Setting the policy repo rate"
+        },
+        {
+          "en": "Regulating the insurance industry"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "SEBI is the statutory regulator of the securities market, protecting investors and overseeing exchanges. Forex reserves and the repo rate fall to the RBI, and insurance is regulated by IRDAI."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-017",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "inequality-poverty",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Gini coefficient is used as a measure of:"
+      },
+      "choices": [
+        {
+          "en": "The rate of inflation"
+        },
+        {
+          "en": "The level of unemployment"
+        },
+        {
+          "en": "The rate of economic growth"
+        },
+        {
+          "en": "Inequality in the distribution of income or wealth"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The Gini coefficient ranges from 0 (perfect equality) to 1 (perfect inequality) and quantifies how unequally income or wealth is distributed across a population."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-018",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "agriculture-economics",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In India, the Minimum Support Prices (MSP) for major crops are recommended by:"
+      },
+      "choices": [
+        {
+          "en": "Commission for Agricultural Costs and Prices (CACP)"
+        },
+        {
+          "en": "Food Corporation of India"
+        },
+        {
+          "en": "NITI Aayog"
+        },
+        {
+          "en": "Reserve Bank of India"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The CACP recommends MSPs to the government based on cost of production and other factors; the FCI handles procurement and storage, not price recommendation."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-019",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "exchange-rate",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Other things remaining equal, a depreciation of the Indian rupee against the US dollar tends to make:"
+      },
+      "choices": [
+        {
+          "en": "Both Indian exports and imports cheaper"
+        },
+        {
+          "en": "Indian exports costlier and imports cheaper"
+        },
+        {
+          "en": "Indian exports cheaper and imports costlier"
+        },
+        {
+          "en": "No change in the prices of exports or imports"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "When the rupee depreciates, foreign buyers pay less in their currency for Indian goods (exports cheaper), while Indians pay more rupees for foreign goods (imports costlier)."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-020",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "planning-history",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The strategy of rapid industrialization based on heavy industries in India's Second Five Year Plan was associated with the model developed by:"
+      },
+      "choices": [
+        {
+          "en": "Amartya Sen"
+        },
+        {
+          "en": "P. C. Mahalanobis"
+        },
+        {
+          "en": "Jagdish Bhagwati"
+        },
+        {
+          "en": "Manmohan Singh"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Second Five Year Plan followed the Mahalanobis model, emphasizing investment in heavy and capital-goods industries to build a self-reliant industrial base."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-021",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "money-market",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Treasury Bills issued by the Government of India are:"
+      },
+      "choices": [
+        {
+          "en": "Short-term instruments with a maturity of less than one year"
+        },
+        {
+          "en": "Long-term bonds maturing after ten years"
+        },
+        {
+          "en": "Equity shares issued by public sector banks"
+        },
+        {
+          "en": "Instruments that can be purchased only by foreign investors"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Treasury Bills are short-term money-market instruments issued at a discount with maturities of up to one year (91, 182, and 364 days); they are debt, not equity."
+      }
+    },
+    {
+      "id": "upsc-economy-sample-022",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "economy",
+      "year": null,
+      "topic": "public-finance",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which of the following is an example of capital expenditure in the Union Budget?"
+      },
+      "choices": [
+        {
+          "en": "Payment of salaries to government employees"
+        },
+        {
+          "en": "Interest payments on public debt"
+        },
+        {
+          "en": "Food and fertilizer subsidies"
+        },
+        {
+          "en": "Construction of a new national highway"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Building a highway creates a physical asset, so it is capital expenditure; salaries, interest payments, and subsidies are recurring revenue expenditures that create no lasting asset."
+      }
+    }
   ]
 }

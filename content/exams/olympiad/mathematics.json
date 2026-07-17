@@ -1,46 +1,814 @@
 {
-  "exam": "olympiad", "subject": "mathematics", "draft": true,
+  "exam": "olympiad",
+  "subject": "mathematics",
+  "draft": true,
   "note": "SAMPLE Olympiad-style questions (source 'Sample (Olympiad)'). Replace with verified real Olympiad PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "olympiad-mathematics-sample-001", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "number-series", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "What is the next number in the series: 2, 4, 8, 16, __ ?" },
-      "choices": [ { "en": "20" }, { "en": "24" }, { "en": "32" }, { "en": "30" } ], "answerIndex": 2,
-      "solution": { "en": "Each term is double the previous one (×2): 16 × 2 = 32." } },
-    { "id": "olympiad-mathematics-sample-002", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "number-theory", "difficulty": 2, "source": "Sample (Olympiad)",
-      "prompt": { "en": "The sum of the first five prime numbers (2, 3, 5, 7, 11) is:" },
-      "choices": [ { "en": "26" }, { "en": "28" }, { "en": "30" }, { "en": "18" } ], "answerIndex": 1,
-      "solution": { "en": "2 + 3 + 5 + 7 + 11 = 28. (Remember 1 is not a prime number.)" } },
-    { "id": "olympiad-mathematics-sample-003", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "geometry", "difficulty": 2, "source": "Sample (Olympiad)",
-      "prompt": { "en": "At exactly 3 o'clock, the angle between the hour hand and the minute hand of a clock is:" },
-      "choices": [ { "en": "30°" }, { "en": "60°" }, { "en": "90°" }, { "en": "180°" } ], "answerIndex": 2,
-      "solution": { "en": "At 3:00 the minute hand points at 12 and the hour hand at 3. Each hour mark is 30° apart, and 3 marks = 90°, a right angle." } },
-    { "id": "olympiad-mathematics-sample-004", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "arithmetic", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "The value of 3² + 4² is:" },
-      "choices": [ { "en": "12" }, { "en": "14" }, { "en": "25" }, { "en": "49" } ], "answerIndex": 2,
-      "solution": { "en": "3² + 4² = 9 + 16 = 25. (Interestingly, 3, 4, 5 form a right-angled triangle, since 3² + 4² = 5².)" } },
-    { "id": "olympiad-mathematics-sample-005", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "number-theory", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "The smallest prime number is:" },
-      "choices": [ { "en": "0" }, { "en": "1" }, { "en": "2" }, { "en": "3" } ], "answerIndex": 2,
-      "solution": { "en": "2 is the smallest prime number, and the only even prime. 1 is not prime (a prime has exactly two distinct factors: 1 and itself)." } },
-    { "id": "olympiad-mathematics-sample-006", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "geometry", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "The sum of the interior angles of a triangle is:" },
-      "choices": [ { "en": "90°" }, { "en": "180°" }, { "en": "270°" }, { "en": "360°" } ], "answerIndex": 1,
-      "solution": { "en": "The interior angles of any triangle always add up to 180°." } },
-    { "id": "olympiad-mathematics-sample-007", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "geometry", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "How many sides does a hexagon have?" },
-      "choices": [ { "en": "5" }, { "en": "6" }, { "en": "7" }, { "en": "8" } ], "answerIndex": 1,
-      "solution": { "en": "A hexagon has 6 sides ('hex' means six). A pentagon has 5, a heptagon 7, and an octagon 8." } },
-    { "id": "olympiad-mathematics-sample-008", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "number-theory", "difficulty": 2, "source": "Sample (Olympiad)",
-      "prompt": { "en": "What is the next prime number after 7?" },
-      "choices": [ { "en": "9" }, { "en": "10" }, { "en": "11" }, { "en": "13" } ], "answerIndex": 2,
-      "solution": { "en": "After 7, the numbers 8, 9 and 10 are all composite; the next prime is 11. (13 is prime too, but it is not the next one.)" } },
-    { "id": "olympiad-mathematics-sample-009", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "arithmetic", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "12 × 12 = ?" },
-      "choices": [ { "en": "124" }, { "en": "134" }, { "en": "144" }, { "en": "154" } ], "answerIndex": 2,
-      "solution": { "en": "12 × 12 = 144. This is 12 squared, a perfect square worth memorising." } },
-    { "id": "olympiad-mathematics-sample-010", "type": "mcq", "exam": "olympiad", "subject": "mathematics", "year": null, "topic": "geometry", "difficulty": 2, "source": "Sample (Olympiad)",
-      "prompt": { "en": "The perimeter of a square with side 6 cm is:" },
-      "choices": [ { "en": "12 cm" }, { "en": "24 cm" }, { "en": "30 cm" }, { "en": "36 cm" } ], "answerIndex": 1,
-      "solution": { "en": "Perimeter of a square = 4 × side = 4 × 6 = 24 cm. (36 cm² would be its area, not perimeter.)" } }
+    {
+      "id": "olympiad-mathematics-sample-001",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "number-series",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the next number in the series: 2, 4, 8, 16, __ ?"
+      },
+      "choices": [
+        {
+          "en": "20"
+        },
+        {
+          "en": "24"
+        },
+        {
+          "en": "32"
+        },
+        {
+          "en": "30"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Each term is double the previous one (×2): 16 × 2 = 32."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-002",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "number-theory",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "The sum of the first five prime numbers (2, 3, 5, 7, 11) is:"
+      },
+      "choices": [
+        {
+          "en": "26"
+        },
+        {
+          "en": "28"
+        },
+        {
+          "en": "30"
+        },
+        {
+          "en": "18"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "2 + 3 + 5 + 7 + 11 = 28. (Remember 1 is not a prime number.)"
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-003",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "geometry",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "At exactly 3 o'clock, the angle between the hour hand and the minute hand of a clock is:"
+      },
+      "choices": [
+        {
+          "en": "30°"
+        },
+        {
+          "en": "60°"
+        },
+        {
+          "en": "90°"
+        },
+        {
+          "en": "180°"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "At 3:00 the minute hand points at 12 and the hour hand at 3. Each hour mark is 30° apart, and 3 marks = 90°, a right angle."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-004",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "arithmetic",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "The value of 3² + 4² is:"
+      },
+      "choices": [
+        {
+          "en": "12"
+        },
+        {
+          "en": "14"
+        },
+        {
+          "en": "25"
+        },
+        {
+          "en": "49"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "3² + 4² = 9 + 16 = 25. (Interestingly, 3, 4, 5 form a right-angled triangle, since 3² + 4² = 5².)"
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-005",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "number-theory",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "The smallest prime number is:"
+      },
+      "choices": [
+        {
+          "en": "0"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "2"
+        },
+        {
+          "en": "3"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "2 is the smallest prime number, and the only even prime. 1 is not prime (a prime has exactly two distinct factors: 1 and itself)."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-006",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "geometry",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "The sum of the interior angles of a triangle is:"
+      },
+      "choices": [
+        {
+          "en": "90°"
+        },
+        {
+          "en": "180°"
+        },
+        {
+          "en": "270°"
+        },
+        {
+          "en": "360°"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The interior angles of any triangle always add up to 180°."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-007",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "geometry",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "How many sides does a hexagon have?"
+      },
+      "choices": [
+        {
+          "en": "5"
+        },
+        {
+          "en": "6"
+        },
+        {
+          "en": "7"
+        },
+        {
+          "en": "8"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A hexagon has 6 sides ('hex' means six). A pentagon has 5, a heptagon 7, and an octagon 8."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-008",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "number-theory",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the next prime number after 7?"
+      },
+      "choices": [
+        {
+          "en": "9"
+        },
+        {
+          "en": "10"
+        },
+        {
+          "en": "11"
+        },
+        {
+          "en": "13"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "After 7, the numbers 8, 9 and 10 are all composite; the next prime is 11. (13 is prime too, but it is not the next one.)"
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-009",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "arithmetic",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "12 × 12 = ?"
+      },
+      "choices": [
+        {
+          "en": "124"
+        },
+        {
+          "en": "134"
+        },
+        {
+          "en": "144"
+        },
+        {
+          "en": "154"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "12 × 12 = 144. This is 12 squared, a perfect square worth memorising."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-010",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "geometry",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "The perimeter of a square with side 6 cm is:"
+      },
+      "choices": [
+        {
+          "en": "12 cm"
+        },
+        {
+          "en": "24 cm"
+        },
+        {
+          "en": "30 cm"
+        },
+        {
+          "en": "36 cm"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Perimeter of a square = 4 × side = 4 × 6 = 24 cm. (36 cm² would be its area, not perimeter.)"
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-011",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "factors-and-multiples",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "How many different factors (divisors) does the number 12 have?"
+      },
+      "choices": [
+        {
+          "en": "4"
+        },
+        {
+          "en": "5"
+        },
+        {
+          "en": "8"
+        },
+        {
+          "en": "6"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The factors of 12 are 1, 2, 3, 4, 6 and 12 — six factors in total."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-012",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "lcm",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the smallest number that is a multiple of both 6 and 8?"
+      },
+      "choices": [
+        {
+          "en": "24"
+        },
+        {
+          "en": "14"
+        },
+        {
+          "en": "48"
+        },
+        {
+          "en": "12"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The LCM of 6 and 8 is 24, the least number divisible by both."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-013",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "comparing-fractions",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which of these fractions is the largest?"
+      },
+      "choices": [
+        {
+          "en": "3/5"
+        },
+        {
+          "en": "5/8"
+        },
+        {
+          "en": "2/3"
+        },
+        {
+          "en": "1/2"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "As decimals: 3/5=0.60, 5/8=0.625, 2/3≈0.667, 1/2=0.50. So 2/3 is largest."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-014",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "percentage",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is 20% of 150?"
+      },
+      "choices": [
+        {
+          "en": "30"
+        },
+        {
+          "en": "25"
+        },
+        {
+          "en": "35"
+        },
+        {
+          "en": "300"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "20% means 20/100 = 1/5, and one-fifth of 150 is 30."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-015",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "ratio",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "If ₹60 is shared between two people in the ratio 2 : 3, how much does the person with the larger share get?"
+      },
+      "choices": [
+        {
+          "en": "24"
+        },
+        {
+          "en": "30"
+        },
+        {
+          "en": "36"
+        },
+        {
+          "en": "40"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Total parts = 2+3 = 5, so one part = 60/5 = 12. The larger share is 3 parts = 3×12 = 36."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-016",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "average",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the average (mean) of 10, 20, 30 and 40?"
+      },
+      "choices": [
+        {
+          "en": "100"
+        },
+        {
+          "en": "30"
+        },
+        {
+          "en": "25"
+        },
+        {
+          "en": "20"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Sum = 100 and there are 4 numbers, so the mean is 100/4 = 25."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-017",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "area",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "A rectangle is 8 cm long and 3 cm wide. What is its area?"
+      },
+      "choices": [
+        {
+          "en": "22 cm²"
+        },
+        {
+          "en": "48 cm²"
+        },
+        {
+          "en": "11 cm²"
+        },
+        {
+          "en": "24 cm²"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Area of a rectangle = length × width = 8 × 3 = 24 cm²."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-018",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "polygons",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "How many diagonals can be drawn inside a quadrilateral?"
+      },
+      "choices": [
+        {
+          "en": "2"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "4"
+        },
+        {
+          "en": "3"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "A quadrilateral has 4 vertices; joining opposite corners gives exactly 2 diagonals."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-019",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "angles",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the complement of an angle of 35°?"
+      },
+      "choices": [
+        {
+          "en": "145°"
+        },
+        {
+          "en": "65°"
+        },
+        {
+          "en": "55°"
+        },
+        {
+          "en": "35°"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Complementary angles add up to 90°, so the complement is 90° − 35° = 55°."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-020",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "angles",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the supplement of an angle of 110°?"
+      },
+      "choices": [
+        {
+          "en": "70°"
+        },
+        {
+          "en": "80°"
+        },
+        {
+          "en": "90°"
+        },
+        {
+          "en": "250°"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Supplementary angles add up to 180°, so the supplement is 180° − 110° = 70°."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-021",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "divisibility-rules",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which of these numbers is divisible by 9?"
+      },
+      "choices": [
+        {
+          "en": "124"
+        },
+        {
+          "en": "341"
+        },
+        {
+          "en": "512"
+        },
+        {
+          "en": "234"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "A number is divisible by 9 if its digit sum is. For 234, 2+3+4 = 9, which is divisible by 9."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-022",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "place-value",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "In the number 4567, which digit is in the hundreds place?"
+      },
+      "choices": [
+        {
+          "en": "4"
+        },
+        {
+          "en": "5"
+        },
+        {
+          "en": "6"
+        },
+        {
+          "en": "7"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Reading from the right: 7 units, 6 tens, 5 hundreds, 4 thousands. So 5 is in the hundreds place."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-023",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "squares-and-roots",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the square root of 169?"
+      },
+      "choices": [
+        {
+          "en": "11"
+        },
+        {
+          "en": "12"
+        },
+        {
+          "en": "13"
+        },
+        {
+          "en": "14"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Since 13 × 13 = 169, the square root of 169 is 13."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-024",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "number-patterns",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "The pattern 1, 4, 9, 16, ... is made of perfect squares. What is the next number?"
+      },
+      "choices": [
+        {
+          "en": "20"
+        },
+        {
+          "en": "25"
+        },
+        {
+          "en": "24"
+        },
+        {
+          "en": "36"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "These are 1², 2², 3², 4², so the next term is 5² = 25."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-025",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "speed-distance-time",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "A car travels 120 km in 2 hours at a steady speed. What is its speed?"
+      },
+      "choices": [
+        {
+          "en": "40 km/h"
+        },
+        {
+          "en": "60 km/h"
+        },
+        {
+          "en": "120 km/h"
+        },
+        {
+          "en": "240 km/h"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Speed = distance ÷ time = 120 ÷ 2 = 60 km/h."
+      }
+    },
+    {
+      "id": "olympiad-mathematics-sample-026",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "symmetry",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "How many lines of symmetry does a square have?"
+      },
+      "choices": [
+        {
+          "en": "2"
+        },
+        {
+          "en": "4"
+        },
+        {
+          "en": "8"
+        },
+        {
+          "en": "1"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A square has 4 lines of symmetry: two through the midpoints of opposite sides and two along the diagonals."
+      }
+    }
   ]
 }
