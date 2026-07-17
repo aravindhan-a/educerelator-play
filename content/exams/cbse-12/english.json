@@ -1,46 +1,814 @@
 {
-  "exam": "cbse-12", "subject": "english", "draft": true,
+  "exam": "cbse-12",
+  "subject": "english",
+  "draft": true,
   "note": "SAMPLE CBSE Class 12 board-pattern questions (source 'Sample (CBSE 12)'). Replace with verified board PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "cbse-12-english-sample-001", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "literary-devices", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Identify the figure of speech: 'The classroom was a zoo.'" },
-      "choices": [ { "en": "Simile" }, { "en": "Metaphor" }, { "en": "Hyperbole" }, { "en": "Alliteration" } ], "answerIndex": 1,
-      "solution": { "en": "It is a metaphor — a direct comparison WITHOUT 'like' or 'as' (the classroom is called a zoo)." } },
-    { "id": "cbse-12-english-sample-002", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "vocabulary", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Choose the antonym of 'optimist':" },
-      "choices": [ { "en": "dreamer" }, { "en": "pessimist" }, { "en": "realist" }, { "en": "idealist" } ], "answerIndex": 1,
-      "solution": { "en": "An optimist expects good outcomes; the opposite is a pessimist, who expects the worst." } },
-    { "id": "cbse-12-english-sample-003", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "grammar", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "A word that describes or modifies a verb is called a/an:" },
-      "choices": [ { "en": "Adjective" }, { "en": "Adverb" }, { "en": "Noun" }, { "en": "Pronoun" } ], "answerIndex": 1,
-      "solution": { "en": "An adverb modifies a verb, adjective, or another adverb (e.g. 'ran quickly'). An adjective modifies a noun." } },
-    { "id": "cbse-12-english-sample-004", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "vocabulary", "difficulty": 3, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Choose the synonym of 'diligent':" },
-      "choices": [ { "en": "lazy" }, { "en": "hardworking" }, { "en": "careless" }, { "en": "slow" } ], "answerIndex": 1,
-      "solution": { "en": "'Diligent' means showing careful and persistent effort — that is, hardworking." } },
-    { "id": "cbse-12-english-sample-005", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "grammar", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Choose the correct reported speech: She said, 'I will call you tomorrow.'" },
-      "choices": [ { "en": "She said that she would call me the next day." }, { "en": "She said that I will call you tomorrow." }, { "en": "She says she will call me tomorrow." }, { "en": "She said that she will call me tomorrow." } ], "answerIndex": 0,
-      "solution": { "en": "In reported speech 'will' → 'would' and 'tomorrow' → 'the next day', with pronouns adjusted: 'She said that she would call me the next day.'" } },
-    { "id": "cbse-12-english-sample-006", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "literary-devices", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Identify the figure of speech: 'Peter Piper picked a peck of pickled peppers.'" },
-      "choices": [ { "en": "Alliteration" }, { "en": "Metaphor" }, { "en": "Simile" }, { "en": "Personification" } ], "answerIndex": 0,
-      "solution": { "en": "The repetition of the initial 'p' sound in nearby words is alliteration." } },
-    { "id": "cbse-12-english-sample-007", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "vocabulary", "difficulty": 3, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The word 'meticulous' most nearly means:" },
-      "choices": [ { "en": "careless" }, { "en": "very careful and precise" }, { "en": "generous" }, { "en": "confused" } ], "answerIndex": 1,
-      "solution": { "en": "'Meticulous' means showing great attention to detail — very careful and precise." } },
-    { "id": "cbse-12-english-sample-008", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "grammar", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Choose the correct passive form: 'They will complete the project.'" },
-      "choices": [ { "en": "The project will be completed by them." }, { "en": "The project is completed by them." }, { "en": "The project was completed by them." }, { "en": "They will be completed the project." } ], "answerIndex": 0,
-      "solution": { "en": "Future simple passive is 'will be + past participle': 'The project will be completed by them.'" } },
-    { "id": "cbse-12-english-sample-009", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "literary-devices", "difficulty": 3, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "'I have told you a million times' is an example of:" },
-      "choices": [ { "en": "Hyperbole" }, { "en": "Simile" }, { "en": "Irony" }, { "en": "Metaphor" } ], "answerIndex": 0,
-      "solution": { "en": "It is a deliberate exaggeration for emphasis — hyperbole (you have not literally said it a million times)." } },
-    { "id": "cbse-12-english-sample-010", "type": "mcq", "exam": "cbse-12", "subject": "english", "year": null, "topic": "grammar", "difficulty": 1, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "Which word is a conjunction in: 'She was tired but she kept working.'?" },
-      "choices": [ { "en": "tired" }, { "en": "but" }, { "en": "working" }, { "en": "she" } ], "answerIndex": 1,
-      "solution": { "en": "'But' joins the two clauses, so it is the conjunction. Conjunctions connect words, phrases or clauses." } }
+    {
+      "id": "cbse-12-english-sample-001",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "literary-devices",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Identify the figure of speech: 'The classroom was a zoo.'"
+      },
+      "choices": [
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Metaphor"
+        },
+        {
+          "en": "Hyperbole"
+        },
+        {
+          "en": "Alliteration"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "It is a metaphor — a direct comparison WITHOUT 'like' or 'as' (the classroom is called a zoo)."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-002",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Choose the antonym of 'optimist':"
+      },
+      "choices": [
+        {
+          "en": "dreamer"
+        },
+        {
+          "en": "pessimist"
+        },
+        {
+          "en": "realist"
+        },
+        {
+          "en": "idealist"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "An optimist expects good outcomes; the opposite is a pessimist, who expects the worst."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-003",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "A word that describes or modifies a verb is called a/an:"
+      },
+      "choices": [
+        {
+          "en": "Adjective"
+        },
+        {
+          "en": "Adverb"
+        },
+        {
+          "en": "Noun"
+        },
+        {
+          "en": "Pronoun"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "An adverb modifies a verb, adjective, or another adverb (e.g. 'ran quickly'). An adjective modifies a noun."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-004",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary",
+      "difficulty": 3,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Choose the synonym of 'diligent':"
+      },
+      "choices": [
+        {
+          "en": "lazy"
+        },
+        {
+          "en": "hardworking"
+        },
+        {
+          "en": "careless"
+        },
+        {
+          "en": "slow"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Diligent' means showing careful and persistent effort — that is, hardworking."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-005",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Choose the correct reported speech: She said, 'I will call you tomorrow.'"
+      },
+      "choices": [
+        {
+          "en": "She said that she would call me the next day."
+        },
+        {
+          "en": "She said that I will call you tomorrow."
+        },
+        {
+          "en": "She says she will call me tomorrow."
+        },
+        {
+          "en": "She said that she will call me tomorrow."
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "In reported speech 'will' → 'would' and 'tomorrow' → 'the next day', with pronouns adjusted: 'She said that she would call me the next day.'"
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-006",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "literary-devices",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Identify the figure of speech: 'Peter Piper picked a peck of pickled peppers.'"
+      },
+      "choices": [
+        {
+          "en": "Alliteration"
+        },
+        {
+          "en": "Metaphor"
+        },
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Personification"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The repetition of the initial 'p' sound in nearby words is alliteration."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-007",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary",
+      "difficulty": 3,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The word 'meticulous' most nearly means:"
+      },
+      "choices": [
+        {
+          "en": "careless"
+        },
+        {
+          "en": "very careful and precise"
+        },
+        {
+          "en": "generous"
+        },
+        {
+          "en": "confused"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Meticulous' means showing great attention to detail — very careful and precise."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-008",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Choose the correct passive form: 'They will complete the project.'"
+      },
+      "choices": [
+        {
+          "en": "The project will be completed by them."
+        },
+        {
+          "en": "The project is completed by them."
+        },
+        {
+          "en": "The project was completed by them."
+        },
+        {
+          "en": "They will be completed the project."
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Future simple passive is 'will be + past participle': 'The project will be completed by them.'"
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-009",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "literary-devices",
+      "difficulty": 3,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "'I have told you a million times' is an example of:"
+      },
+      "choices": [
+        {
+          "en": "Hyperbole"
+        },
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Irony"
+        },
+        {
+          "en": "Metaphor"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "It is a deliberate exaggeration for emphasis — hyperbole (you have not literally said it a million times)."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-010",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 1,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "Which word is a conjunction in: 'She was tired but she kept working.'?"
+      },
+      "choices": [
+        {
+          "en": "tired"
+        },
+        {
+          "en": "but"
+        },
+        {
+          "en": "working"
+        },
+        {
+          "en": "she"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'But' joins the two clauses, so it is the conjunction. Conjunctions connect words, phrases or clauses."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-011",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "reported-speech",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Choose the correct indirect (reported) speech: She said to him, \"Do you like coffee?\""
+      },
+      "choices": [
+        {
+          "en": "She asked him if he liked coffee."
+        },
+        {
+          "en": "She asked him do you like coffee."
+        },
+        {
+          "en": "She said him that he likes coffee."
+        },
+        {
+          "en": "She asked him that did he like coffee."
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "A yes/no question in reported speech is introduced by 'if/whether', the tense is back-shifted (like → liked), and the question mark and question word-order are dropped."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-012",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "active-passive-voice",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Choose the correct passive form of: \"Someone has stolen my watch.\""
+      },
+      "choices": [
+        {
+          "en": "My watch was stolen by someone."
+        },
+        {
+          "en": "My watch has stolen."
+        },
+        {
+          "en": "My watch is being stolen."
+        },
+        {
+          "en": "My watch has been stolen."
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The present perfect active 'has stolen' becomes 'has been + past participle' in the passive; the indefinite agent 'by someone' is normally omitted."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-013",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary-synonyms",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Choose the word that is the SYNONYM of 'candid'."
+      },
+      "choices": [
+        {
+          "en": "frank"
+        },
+        {
+          "en": "secretive"
+        },
+        {
+          "en": "careless"
+        },
+        {
+          "en": "hostile"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "'Candid' means open and truthful, so 'frank' is the closest synonym; 'secretive' is its opposite."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-014",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary-antonyms",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Choose the word that is the ANTONYM of 'scarce'."
+      },
+      "choices": [
+        {
+          "en": "rare"
+        },
+        {
+          "en": "meagre"
+        },
+        {
+          "en": "abundant"
+        },
+        {
+          "en": "limited"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "'Scarce' means in short supply; its opposite is 'abundant' (plentiful). The other options are near-synonyms of scarce."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-015",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "figures-of-speech",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Identify the figure of speech: \"The flowers danced in the breeze.\""
+      },
+      "choices": [
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Metaphor"
+        },
+        {
+          "en": "Personification"
+        },
+        {
+          "en": "Hyperbole"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Flowers are given the human action of 'dancing', so a non-human thing is described as having human qualities — that is personification."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-016",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "idioms",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "What does the idiom 'to bury the hatchet' mean?"
+      },
+      "choices": [
+        {
+          "en": "To dig a deep hole"
+        },
+        {
+          "en": "To hide a weapon"
+        },
+        {
+          "en": "To start a fresh quarrel"
+        },
+        {
+          "en": "To make peace and end a quarrel"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "'To bury the hatchet' means to settle a dispute and become friendly again, i.e., to make peace."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-017",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "determiners",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Fill in the blank with the correct determiner: \"There is very ____ water left in the bottle.\""
+      },
+      "choices": [
+        {
+          "en": "few"
+        },
+        {
+          "en": "little"
+        },
+        {
+          "en": "many"
+        },
+        {
+          "en": "fewer"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Water' is an uncountable noun, so the quantifier 'little' is used; 'few/many/fewer' are used only with countable nouns."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-018",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "modals",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Choose the modal that best expresses strong obligation: \"You ____ wear a helmet while riding a motorcycle; it is the law.\""
+      },
+      "choices": [
+        {
+          "en": "may"
+        },
+        {
+          "en": "might"
+        },
+        {
+          "en": "could"
+        },
+        {
+          "en": "must"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "'Must' expresses strong necessity or obligation, which suits a legal requirement; 'may/might/could' express possibility or permission, not obligation."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-019",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "prepositions",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Fill in the correct preposition: \"She has been living in Delhi ____ 2015.\""
+      },
+      "choices": [
+        {
+          "en": "since"
+        },
+        {
+          "en": "for"
+        },
+        {
+          "en": "from"
+        },
+        {
+          "en": "by"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "With the present perfect continuous, 'since' is used before a specific point of time (2015), while 'for' is used with a length of time."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-020",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "tenses",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Choose the correct verb form: \"By the time we reached the platform, the train ____.\""
+      },
+      "choices": [
+        {
+          "en": "has already left"
+        },
+        {
+          "en": "was already leaving"
+        },
+        {
+          "en": "had already left"
+        },
+        {
+          "en": "have already left"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The past perfect 'had already left' shows an action completed before another past action (reaching the platform)."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-021",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "conjunctions",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Choose the correct conjunction: \"____ it was raining heavily, they continued the match.\""
+      },
+      "choices": [
+        {
+          "en": "Although"
+        },
+        {
+          "en": "Because"
+        },
+        {
+          "en": "So"
+        },
+        {
+          "en": "Unless"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The two clauses express a contrast, so the concessive conjunction 'although' is correct; 'because' and 'so' show cause/effect and 'unless' shows condition."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-022",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "flamingo-poetry",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The line \"A thing of beauty is a joy for ever\" opens a poem in Flamingo written by which poet?"
+      },
+      "choices": [
+        {
+          "en": "Pablo Neruda"
+        },
+        {
+          "en": "Robert Frost"
+        },
+        {
+          "en": "Adrienne Rich"
+        },
+        {
+          "en": "John Keats"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The poem 'A Thing of Beauty' is an extract from John Keats's 'Endymion'."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-023",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "flamingo-prose",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In 'The Last Lesson', the villagers and students are ordered to learn which language in place of French?"
+      },
+      "choices": [
+        {
+          "en": "English"
+        },
+        {
+          "en": "Latin"
+        },
+        {
+          "en": "German"
+        },
+        {
+          "en": "Italian"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "After Prussia occupied Alsace and Lorraine, an order came that only German, not French, would be taught in the schools."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-024",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "flamingo-poetry",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In Adrienne Rich's 'Aunt Jennifer's Tigers', the tigers chiefly symbolise:"
+      },
+      "choices": [
+        {
+          "en": "Aunt Jennifer's fear of animals"
+        },
+        {
+          "en": "Her husband's wealth"
+        },
+        {
+          "en": "The fearless freedom that Aunt Jennifer herself lacks"
+        },
+        {
+          "en": "The passage of time"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The 'prancing, proud and unafraid' tigers embody the fearlessness and freedom denied to the oppressed Aunt Jennifer in her constrained married life."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-025",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "writing-skills-notice",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Which of the following is an essential feature of the format of a formal NOTICE?"
+      },
+      "choices": [
+        {
+          "en": "A complimentary close such as 'Yours sincerely'"
+        },
+        {
+          "en": "The heading 'NOTICE', the date, and the name of the issuing authority"
+        },
+        {
+          "en": "A fixed word limit of exactly 200 words"
+        },
+        {
+          "en": "A salutation such as 'Respected Sir'"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A notice must carry the word 'NOTICE', the date of issue, and the signature/name of the issuing authority; salutations and complimentary closes belong to letters, not notices."
+      }
+    },
+    {
+      "id": "cbse-12-english-sample-026",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "english",
+      "year": null,
+      "topic": "figures-of-speech",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Identify the figure of speech: \"Life is a journey with many turns.\""
+      },
+      "choices": [
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Personification"
+        },
+        {
+          "en": "Alliteration"
+        },
+        {
+          "en": "Metaphor"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Life is directly called a journey without using 'like' or 'as', so it is a metaphor; a simile would require an explicit comparison word."
+      }
+    }
   ]
 }

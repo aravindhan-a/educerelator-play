@@ -1,30 +1,690 @@
 {
-  "exam": "neet", "subject": "chemistry", "draft": true,
+  "exam": "neet",
+  "subject": "chemistry",
+  "draft": true,
   "note": "SAMPLE foundation-level questions (source 'Sample (NEET pattern)'). Replace with verified real PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "neet-chemistry-sample-001", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "periodic-table", "difficulty": 1, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "The number of protons in the nucleus of an atom is called its:" },
-      "choices": [ { "en": "Mass number" }, { "en": "Atomic number" }, { "en": "Valency" }, { "en": "Atomic mass" } ], "answerIndex": 1,
-      "solution": { "en": "The atomic number equals the number of protons and defines the element. The mass number is protons + neutrons." } },
-    { "id": "neet-chemistry-sample-002", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "inorganic-chemistry", "difficulty": 1, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "Which of the following is a noble (inert) gas?" },
-      "choices": [ { "en": "Oxygen" }, { "en": "Chlorine" }, { "en": "Argon" }, { "en": "Nitrogen" } ], "answerIndex": 2,
-      "solution": { "en": "Argon is a noble gas (Group 18) with a full outer electron shell, making it chemically inert. Oxygen, chlorine and nitrogen are reactive non-metals." } },
-    { "id": "neet-chemistry-sample-003", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "chemical-bonding", "difficulty": 1, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "The valency of carbon is:" },
-      "choices": [ { "en": "2" }, { "en": "3" }, { "en": "4" }, { "en": "6" } ], "answerIndex": 2,
-      "solution": { "en": "Carbon has 4 electrons in its outer shell and forms 4 covalent bonds, so its valency is 4. (6 is its atomic number, a different quantity.)" } },
-    { "id": "neet-chemistry-sample-004", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "physical-chemistry", "difficulty": 1, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "An acid turns blue litmus paper:" },
-      "choices": [ { "en": "Red" }, { "en": "Green" }, { "en": "Yellow" }, { "en": "Blue (no change)" } ], "answerIndex": 0,
-      "solution": { "en": "Acids turn blue litmus red. Bases turn red litmus blue. Litmus is a common acid–base indicator." } },
-    { "id": "neet-chemistry-sample-005", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "periodic-table", "difficulty": 2, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "The most electronegative element in the periodic table is:" },
-      "choices": [ { "en": "Oxygen" }, { "en": "Chlorine" }, { "en": "Fluorine" }, { "en": "Nitrogen" } ], "answerIndex": 2,
-      "solution": { "en": "Fluorine is the most electronegative element (about 4.0 on the Pauling scale), i.e. it attracts bonding electrons most strongly." } },
-    { "id": "neet-chemistry-sample-006", "type": "mcq", "exam": "neet", "subject": "chemistry", "year": null, "topic": "inorganic-chemistry", "difficulty": 1, "source": "Sample (NEET pattern)",
-      "prompt": { "en": "The chemical formula of water is:" },
-      "choices": [ { "en": "H₂O₂" }, { "en": "H₂O" }, { "en": "CO₂" }, { "en": "HO" } ], "answerIndex": 1,
-      "solution": { "en": "Water is H₂O — two hydrogen atoms bonded to one oxygen atom. H₂O₂ is hydrogen peroxide and CO₂ is carbon dioxide." } }
+    {
+      "id": "neet-chemistry-sample-001",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "periodic-table",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The number of protons in the nucleus of an atom is called its:"
+      },
+      "choices": [
+        {
+          "en": "Mass number"
+        },
+        {
+          "en": "Atomic number"
+        },
+        {
+          "en": "Valency"
+        },
+        {
+          "en": "Atomic mass"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The atomic number equals the number of protons and defines the element. The mass number is protons + neutrons."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-002",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "inorganic-chemistry",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which of the following is a noble (inert) gas?"
+      },
+      "choices": [
+        {
+          "en": "Oxygen"
+        },
+        {
+          "en": "Chlorine"
+        },
+        {
+          "en": "Argon"
+        },
+        {
+          "en": "Nitrogen"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Argon is a noble gas (Group 18) with a full outer electron shell, making it chemically inert. Oxygen, chlorine and nitrogen are reactive non-metals."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-003",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "chemical-bonding",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The valency of carbon is:"
+      },
+      "choices": [
+        {
+          "en": "2"
+        },
+        {
+          "en": "3"
+        },
+        {
+          "en": "4"
+        },
+        {
+          "en": "6"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Carbon has 4 electrons in its outer shell and forms 4 covalent bonds, so its valency is 4. (6 is its atomic number, a different quantity.)"
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-004",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "physical-chemistry",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "An acid turns blue litmus paper:"
+      },
+      "choices": [
+        {
+          "en": "Red"
+        },
+        {
+          "en": "Green"
+        },
+        {
+          "en": "Yellow"
+        },
+        {
+          "en": "Blue (no change)"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Acids turn blue litmus red. Bases turn red litmus blue. Litmus is a common acid–base indicator."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-005",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "periodic-table",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The most electronegative element in the periodic table is:"
+      },
+      "choices": [
+        {
+          "en": "Oxygen"
+        },
+        {
+          "en": "Chlorine"
+        },
+        {
+          "en": "Fluorine"
+        },
+        {
+          "en": "Nitrogen"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Fluorine is the most electronegative element (about 4.0 on the Pauling scale), i.e. it attracts bonding electrons most strongly."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-006",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "inorganic-chemistry",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The chemical formula of water is:"
+      },
+      "choices": [
+        {
+          "en": "H₂O₂"
+        },
+        {
+          "en": "H₂O"
+        },
+        {
+          "en": "CO₂"
+        },
+        {
+          "en": "HO"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Water is H₂O — two hydrogen atoms bonded to one oxygen atom. H₂O₂ is hydrogen peroxide and CO₂ is carbon dioxide."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-007",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "mole-concept",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "How many oxygen atoms are present in 0.5 mol of carbon dioxide (CO2)? (N_A = Avogadro's number)"
+      },
+      "choices": [
+        {
+          "en": "N_A"
+        },
+        {
+          "en": "0.5 N_A"
+        },
+        {
+          "en": "2 N_A"
+        },
+        {
+          "en": "3 N_A"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Each CO2 molecule has 2 oxygen atoms, so 0.5 mol CO2 contains 0.5 x 2 = 1 mol of O atoms = N_A oxygen atoms."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-008",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "atomic-structure",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which of the following sets of quantum numbers (n, l, m, s) is NOT permissible for an electron?"
+      },
+      "choices": [
+        {
+          "en": "n=3, l=2, m=-1, s=+1/2"
+        },
+        {
+          "en": "n=2, l=1, m=0, s=-1/2"
+        },
+        {
+          "en": "n=1, l=1, m=0, s=+1/2"
+        },
+        {
+          "en": "n=4, l=3, m=+2, s=-1/2"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "For a given n, l can only take values from 0 to (n-1). With n=1, l must be 0, so l=1 is not allowed."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-009",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "periodic-properties",
+      "difficulty": 3,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which of the following elements has the highest first ionization enthalpy?"
+      },
+      "choices": [
+        {
+          "en": "Boron"
+        },
+        {
+          "en": "Carbon"
+        },
+        {
+          "en": "Oxygen"
+        },
+        {
+          "en": "Nitrogen"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Nitrogen has a half-filled 2p3 configuration, which is extra stable, so removing an electron is harder; hence IE1 of N is greater than that of O (which lies to its right)."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-010",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "chemical-bonding",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The hybridization of the central atom and the molecular shape of XeF4 are respectively:"
+      },
+      "choices": [
+        {
+          "en": "sp3d and see-saw"
+        },
+        {
+          "en": "sp3d2 and square planar"
+        },
+        {
+          "en": "sp3 and tetrahedral"
+        },
+        {
+          "en": "sp3d2 and octahedral"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Xe in XeF4 has 4 bond pairs and 2 lone pairs (6 electron domains), giving sp3d2 hybridization; the two lone pairs occupy axial positions, leaving a square planar shape."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-011",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "thermodynamics",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "For a chemical reaction to be spontaneous at all temperatures, the signs of the enthalpy change (ΔH) and entropy change (ΔS) should be:"
+      },
+      "choices": [
+        {
+          "en": "ΔH negative, ΔS positive"
+        },
+        {
+          "en": "ΔH positive, ΔS negative"
+        },
+        {
+          "en": "ΔH negative, ΔS negative"
+        },
+        {
+          "en": "ΔH positive, ΔS positive"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "ΔG = ΔH - TΔS. When ΔH is negative and ΔS is positive, ΔG is negative at every temperature, so the reaction is spontaneous at all temperatures."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-012",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "ionic-equilibrium",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The pH of a 0.001 M aqueous solution of HCl (a strong acid) is:"
+      },
+      "choices": [
+        {
+          "en": "2"
+        },
+        {
+          "en": "3"
+        },
+        {
+          "en": "4"
+        },
+        {
+          "en": "11"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "HCl fully dissociates, so [H+] = 0.001 = 10^-3 M, and pH = -log(10^-3) = 3."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-013",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "redox-reactions",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The oxidation number of chromium in potassium dichromate (K2Cr2O7) is:"
+      },
+      "choices": [
+        {
+          "en": "+3"
+        },
+        {
+          "en": "+7"
+        },
+        {
+          "en": "+6"
+        },
+        {
+          "en": "+2"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Let Cr be x: 2(+1) + 2x + 7(-2) = 0, giving 2x = 12, so x = +6."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-014",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "chemical-kinetics",
+      "difficulty": 3,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The half-life of a first-order reaction is independent of the:"
+      },
+      "choices": [
+        {
+          "en": "rate constant"
+        },
+        {
+          "en": "temperature"
+        },
+        {
+          "en": "activation energy"
+        },
+        {
+          "en": "initial concentration of reactant"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "For a first-order reaction, t(1/2) = 0.693/k, which does not contain the initial concentration; hence half-life is independent of initial concentration (but depends on k, which varies with temperature and activation energy)."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-015",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "solutions-colligative",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Among the following 0.1 molal aqueous solutions, which one shows the highest boiling point elevation?"
+      },
+      "choices": [
+        {
+          "en": "Glucose"
+        },
+        {
+          "en": "Sodium chloride"
+        },
+        {
+          "en": "Calcium chloride"
+        },
+        {
+          "en": "Urea"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Boiling point elevation is proportional to the van't Hoff factor i. CaCl2 dissociates into 3 ions (i≈3), more than NaCl (i≈2) or the non-electrolytes glucose and urea (i=1), so it gives the greatest elevation."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-016",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "coordination-compounds",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The oxidation state of iron in potassium ferrocyanide, K4[Fe(CN)6], is:"
+      },
+      "choices": [
+        {
+          "en": "+2"
+        },
+        {
+          "en": "+3"
+        },
+        {
+          "en": "+4"
+        },
+        {
+          "en": "0"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Each K is +1 (total +4) and each CN is -1 (total -6). For neutrality: 4 + x + (-6) = 0, so x = +2."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-017",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "p-block-elements",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which of the following is the strongest acid?"
+      },
+      "choices": [
+        {
+          "en": "HClO"
+        },
+        {
+          "en": "HClO2"
+        },
+        {
+          "en": "HClO3"
+        },
+        {
+          "en": "HClO4"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "As the oxidation state of chlorine and the number of oxygen atoms increase, the conjugate base is more stabilized by charge delocalization, so acid strength increases: HClO4 is the strongest of these oxoacids."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-018",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "d-block-elements",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which of the following ions is colourless in aqueous solution?"
+      },
+      "choices": [
+        {
+          "en": "Cu2+"
+        },
+        {
+          "en": "Sc3+"
+        },
+        {
+          "en": "Fe2+"
+        },
+        {
+          "en": "Ni2+"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Colour in transition-metal ions arises from d-d transitions. Sc3+ has a d0 configuration (empty d subshell), so no d-d transition is possible and it is colourless."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-019",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "general-organic-chemistry",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which of the following carbocations is the most stable?"
+      },
+      "choices": [
+        {
+          "en": "CH3+ (methyl)"
+        },
+        {
+          "en": "CH3CH2+ (ethyl)"
+        },
+        {
+          "en": "(CH3)2CH+ (isopropyl)"
+        },
+        {
+          "en": "(CH3)3C+ (tert-butyl)"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "More alkyl groups attached to the positive carbon donate electron density through +I effect and hyperconjugation, stabilizing the cation. The tertiary tert-butyl cation is the most stable."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-020",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "hydrocarbons-isomerism",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The number of possible structural (chain) isomers of pentane, C5H12, is:"
+      },
+      "choices": [
+        {
+          "en": "2"
+        },
+        {
+          "en": "3"
+        },
+        {
+          "en": "4"
+        },
+        {
+          "en": "5"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "C5H12 has three chain isomers: n-pentane, isopentane (2-methylbutane), and neopentane (2,2-dimethylpropane)."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-021",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "aldehydes-ketones",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which of the following compounds gives a positive Tollens' (silver mirror) test?"
+      },
+      "choices": [
+        {
+          "en": "Ethanal (CH3CHO)"
+        },
+        {
+          "en": "Propanone (acetone)"
+        },
+        {
+          "en": "Ethanol"
+        },
+        {
+          "en": "Diethyl ether"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Tollens' reagent is reduced by aldehydes, which are oxidized to carboxylate ions, depositing a silver mirror. Ethanal is an aldehyde; ketones, alcohols, and ethers do not respond."
+      }
+    },
+    {
+      "id": "neet-chemistry-sample-022",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "biomolecules",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which of the following carbohydrates is a non-reducing sugar?"
+      },
+      "choices": [
+        {
+          "en": "Glucose"
+        },
+        {
+          "en": "Maltose"
+        },
+        {
+          "en": "Sucrose"
+        },
+        {
+          "en": "Fructose"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "In sucrose the anomeric carbons of glucose and fructose are joined by the glycosidic linkage, leaving no free anomeric (hemiacetal) group, so it cannot reduce Tollens'/Fehling's reagent and is non-reducing."
+      }
+    }
   ]
 }

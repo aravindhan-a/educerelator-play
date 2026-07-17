@@ -5,52 +5,686 @@
   "note": "SAMPLE foundation-level questions demonstrating the JEE track. Facts are correct and syllabus-relevant; source = 'Sample (JEE pattern)'. Replace with verified real PYQs + SME solutions + 13-language translations before shipping; then remove the draft flag.",
   "questions": [
     {
-      "id": "jee-chemistry-sample-001", "type": "mcq", "exam": "jee", "subject": "chemistry", "year": null,
-      "topic": "periodic-table", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The atomic number of carbon is:" },
-      "choices": [ { "en": "12" }, { "en": "6" }, { "en": "8" }, { "en": "14" } ],
+      "id": "jee-chemistry-sample-001",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "periodic-table",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The atomic number of carbon is:"
+      },
+      "choices": [
+        {
+          "en": "12"
+        },
+        {
+          "en": "6"
+        },
+        {
+          "en": "8"
+        },
+        {
+          "en": "14"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "Carbon has 6 protons, so its atomic number is 6. Its most common isotope has mass number 12 (6 protons + 6 neutrons), which is a different quantity." }
+      "solution": {
+        "en": "Carbon has 6 protons, so its atomic number is 6. Its most common isotope has mass number 12 (6 protons + 6 neutrons), which is a different quantity."
+      }
     },
     {
-      "id": "jee-chemistry-sample-002", "type": "mcq", "exam": "jee", "subject": "chemistry", "year": null,
-      "topic": "physical-chemistry", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The pH of a neutral aqueous solution at 25 °C is:" },
-      "choices": [ { "en": "0" }, { "en": "14" }, { "en": "7" }, { "en": "1" } ],
+      "id": "jee-chemistry-sample-002",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "physical-chemistry",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The pH of a neutral aqueous solution at 25 °C is:"
+      },
+      "choices": [
+        {
+          "en": "0"
+        },
+        {
+          "en": "14"
+        },
+        {
+          "en": "7"
+        },
+        {
+          "en": "1"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "At 25 °C a neutral solution has pH 7, where [H⁺] = [OH⁻] = 10⁻⁷ M. Below 7 is acidic, above 7 is basic." }
+      "solution": {
+        "en": "At 25 °C a neutral solution has pH 7, where [H⁺] = [OH⁻] = 10⁻⁷ M. Below 7 is acidic, above 7 is basic."
+      }
     },
     {
-      "id": "jee-chemistry-sample-003", "type": "mcq", "exam": "jee", "subject": "chemistry", "year": null,
-      "topic": "inorganic-chemistry", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The most abundant gas in the Earth's atmosphere is:" },
-      "choices": [ { "en": "Oxygen" }, { "en": "Carbon dioxide" }, { "en": "Nitrogen" }, { "en": "Hydrogen" } ],
+      "id": "jee-chemistry-sample-003",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "inorganic-chemistry",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The most abundant gas in the Earth's atmosphere is:"
+      },
+      "choices": [
+        {
+          "en": "Oxygen"
+        },
+        {
+          "en": "Carbon dioxide"
+        },
+        {
+          "en": "Nitrogen"
+        },
+        {
+          "en": "Hydrogen"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "Nitrogen makes up about 78% of the atmosphere by volume, with oxygen about 21%. Carbon dioxide is only about 0.04%." }
+      "solution": {
+        "en": "Nitrogen makes up about 78% of the atmosphere by volume, with oxygen about 21%. Carbon dioxide is only about 0.04%."
+      }
     },
     {
-      "id": "jee-chemistry-sample-004", "type": "mcq", "exam": "jee", "subject": "chemistry", "year": null,
-      "topic": "chemical-bonding", "difficulty": 2, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "A chemical bond formed by the sharing of electron pairs between atoms is called a:" },
-      "choices": [ { "en": "Ionic bond" }, { "en": "Covalent bond" }, { "en": "Metallic bond" }, { "en": "Hydrogen bond" } ],
+      "id": "jee-chemistry-sample-004",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "chemical-bonding",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A chemical bond formed by the sharing of electron pairs between atoms is called a:"
+      },
+      "choices": [
+        {
+          "en": "Ionic bond"
+        },
+        {
+          "en": "Covalent bond"
+        },
+        {
+          "en": "Metallic bond"
+        },
+        {
+          "en": "Hydrogen bond"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "A covalent bond forms when atoms share electron pairs. An ionic bond involves transfer of electrons; a metallic bond is a 'sea' of delocalised electrons; a hydrogen bond is a weak intermolecular attraction." }
+      "solution": {
+        "en": "A covalent bond forms when atoms share electron pairs. An ionic bond involves transfer of electrons; a metallic bond is a 'sea' of delocalised electrons; a hydrogen bond is a weak intermolecular attraction."
+      }
     },
     {
-      "id": "jee-chemistry-sample-005", "type": "mcq", "exam": "jee", "subject": "chemistry", "year": null,
-      "topic": "periodic-table", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The lightest element in the periodic table is:" },
-      "choices": [ { "en": "Helium" }, { "en": "Hydrogen" }, { "en": "Lithium" }, { "en": "Carbon" } ],
+      "id": "jee-chemistry-sample-005",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "periodic-table",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The lightest element in the periodic table is:"
+      },
+      "choices": [
+        {
+          "en": "Helium"
+        },
+        {
+          "en": "Hydrogen"
+        },
+        {
+          "en": "Lithium"
+        },
+        {
+          "en": "Carbon"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "Hydrogen (atomic number 1) is the lightest element. Helium is second; lithium and carbon are heavier still." }
+      "solution": {
+        "en": "Hydrogen (atomic number 1) is the lightest element. Helium is second; lithium and carbon are heavier still."
+      }
     },
     {
-      "id": "jee-chemistry-sample-006", "type": "mcq", "exam": "jee", "subject": "chemistry", "year": null,
-      "topic": "organic-chemistry", "difficulty": 2, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The functional group –OH is characteristic of:" },
-      "choices": [ { "en": "Aldehydes" }, { "en": "Carboxylic acids" }, { "en": "Alcohols" }, { "en": "Ketones" } ],
+      "id": "jee-chemistry-sample-006",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "organic-chemistry",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The functional group –OH is characteristic of:"
+      },
+      "choices": [
+        {
+          "en": "Aldehydes"
+        },
+        {
+          "en": "Carboxylic acids"
+        },
+        {
+          "en": "Alcohols"
+        },
+        {
+          "en": "Ketones"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "The hydroxyl group –OH characterises alcohols. Aldehydes have –CHO, ketones have C=O within the chain, and carboxylic acids have –COOH." }
+      "solution": {
+        "en": "The hydroxyl group –OH characterises alcohols. Aldehydes have –CHO, ketones have C=O within the chain, and carboxylic acids have –COOH."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-007",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Mole concept (Physical)",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "How many moles are present in 11 g of carbon dioxide (molar mass = 44 g/mol)?"
+      },
+      "choices": [
+        {
+          "en": "0.25 mol"
+        },
+        {
+          "en": "0.5 mol"
+        },
+        {
+          "en": "0.75 mol"
+        },
+        {
+          "en": "1.0 mol"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Moles = mass / molar mass = 11 / 44 = 0.25 mol."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-008",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Organic functional groups",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The functional group -CHO is characteristic of which class of organic compounds?"
+      },
+      "choices": [
+        {
+          "en": "Alcohols"
+        },
+        {
+          "en": "Ketones"
+        },
+        {
+          "en": "Aldehydes"
+        },
+        {
+          "en": "Ethers"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The formyl group -CHO defines the aldehyde class."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-009",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Electronic configuration (Inorganic)",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "An element has the ground-state electronic configuration 1s2 2s2 2p6 3s1. The element is:"
+      },
+      "choices": [
+        {
+          "en": "Sodium (Na)"
+        },
+        {
+          "en": "Magnesium (Mg)"
+        },
+        {
+          "en": "Potassium (K)"
+        },
+        {
+          "en": "Lithium (Li)"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The configuration accounts for 11 electrons, so the element is sodium (Z = 11)."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-010",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Gas laws (Physical)",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "At constant temperature, if the pressure on a fixed mass of an ideal gas is doubled, its volume becomes:"
+      },
+      "choices": [
+        {
+          "en": "Double the original"
+        },
+        {
+          "en": "Half the original"
+        },
+        {
+          "en": "Unchanged"
+        },
+        {
+          "en": "Four times the original"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "By Boyle's law V is proportional to 1/P, so doubling P halves the volume."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-011",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Oxidation states (Inorganic)",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The oxidation state of manganese in potassium permanganate (KMnO4) is:"
+      },
+      "choices": [
+        {
+          "en": "+2"
+        },
+        {
+          "en": "+4"
+        },
+        {
+          "en": "+6"
+        },
+        {
+          "en": "+7"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "(+1) + Mn + 4(-2) = 0 gives Mn = +7."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-012",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Hybridization (Organic)",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The hybridization of each carbon atom in ethyne (C2H2) is:"
+      },
+      "choices": [
+        {
+          "en": "sp3"
+        },
+        {
+          "en": "sp2"
+        },
+        {
+          "en": "sp"
+        },
+        {
+          "en": "sp3d"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Each carbon forms a triple bond and is therefore sp hybridized."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-013",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Thermodynamics (Physical)",
+      "difficulty": 3,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "For the isothermal expansion of an ideal gas, the change in internal energy (ΔU) is:"
+      },
+      "choices": [
+        {
+          "en": "Always positive"
+        },
+        {
+          "en": "Always negative"
+        },
+        {
+          "en": "Cannot be determined"
+        },
+        {
+          "en": "Zero"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Internal energy of an ideal gas depends only on temperature; ΔT = 0 makes ΔU = 0."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-014",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Chemical bonding (Inorganic)",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The bonding in solid sodium chloride (NaCl) is predominantly:"
+      },
+      "choices": [
+        {
+          "en": "Covalent"
+        },
+        {
+          "en": "Ionic"
+        },
+        {
+          "en": "Metallic"
+        },
+        {
+          "en": "Hydrogen bonding"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Electron transfer from Na to Cl gives an ionic lattice."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-015",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Atomic structure (Physical)",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The maximum number of electrons that can be accommodated in the shell with principal quantum number n = 3 is:"
+      },
+      "choices": [
+        {
+          "en": "2"
+        },
+        {
+          "en": "8"
+        },
+        {
+          "en": "32"
+        },
+        {
+          "en": "18"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Maximum electrons = 2n^2 = 2(3)^2 = 18."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-016",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Aromatic hydrocarbons (Organic)",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The molecular formula of benzene is:"
+      },
+      "choices": [
+        {
+          "en": "C6H6"
+        },
+        {
+          "en": "C6H12"
+        },
+        {
+          "en": "C6H14"
+        },
+        {
+          "en": "C5H10"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Benzene is the six-carbon aromatic ring C6H6."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-017",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Solutions and concentration (Physical)",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A 1 molar (1 M) aqueous solution contains 1 mole of solute dissolved in:"
+      },
+      "choices": [
+        {
+          "en": "1 litre of solvent"
+        },
+        {
+          "en": "1 kilogram of solvent"
+        },
+        {
+          "en": "1 litre of solution"
+        },
+        {
+          "en": "1 mole of solvent"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Molarity is moles of solute per litre of solution, not solvent."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-018",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Periodic trends (Inorganic)",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "On moving from left to right across a period in the periodic table, the atomic radius generally:"
+      },
+      "choices": [
+        {
+          "en": "Increases"
+        },
+        {
+          "en": "Decreases"
+        },
+        {
+          "en": "Remains constant"
+        },
+        {
+          "en": "Doubles"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Increasing nuclear charge across a period pulls electrons inward, so radius decreases."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-019",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Ionic equilibrium / pH (Physical)",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "At 25°C, an aqueous solution has [H+] = 1×10^-3 M. Its pH is:"
+      },
+      "choices": [
+        {
+          "en": "3"
+        },
+        {
+          "en": "11"
+        },
+        {
+          "en": "7"
+        },
+        {
+          "en": "6"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "pH = -log[H+] = -log(10^-3) = 3."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-020",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Organic reactions",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "Catalytic hydrogenation of an alkene (addition of H2) produces the corresponding:"
+      },
+      "choices": [
+        {
+          "en": "Alkyne"
+        },
+        {
+          "en": "Alcohol"
+        },
+        {
+          "en": "Alkyl halide"
+        },
+        {
+          "en": "Alkane"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Adding H2 across the C=C double bond saturates it to an alkane."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-021",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "s-block elements (Inorganic)",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "Which of the following elements is an alkaline earth metal?"
+      },
+      "choices": [
+        {
+          "en": "Sodium (Na)"
+        },
+        {
+          "en": "Calcium (Ca)"
+        },
+        {
+          "en": "Aluminium (Al)"
+        },
+        {
+          "en": "Iron (Fe)"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Alkaline earth metals are Group 2 elements; calcium belongs to Group 2."
+      }
+    },
+    {
+      "id": "jee-chemistry-sample-022",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "chemistry",
+      "year": null,
+      "topic": "Chemical kinetics (Physical)",
+      "difficulty": 3,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The SI unit of the rate constant for a first-order reaction is:"
+      },
+      "choices": [
+        {
+          "en": "mol L^-1 s^-1"
+        },
+        {
+          "en": "L mol^-1 s^-1"
+        },
+        {
+          "en": "mol^-1 s"
+        },
+        {
+          "en": "s^-1"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "For first order, rate = k[A], so k carries units of time^-1, i.e. s^-1."
+      }
     }
   ]
 }

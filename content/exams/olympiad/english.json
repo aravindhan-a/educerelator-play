@@ -1,38 +1,752 @@
 {
-  "exam": "olympiad", "subject": "english", "draft": true,
+  "exam": "olympiad",
+  "subject": "english",
+  "draft": true,
   "note": "SAMPLE Olympiad-style questions (source 'Sample (Olympiad)'). Replace with verified real Olympiad PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "olympiad-english-sample-001", "type": "mcq", "exam": "olympiad", "subject": "english", "year": null, "topic": "spelling", "difficulty": 2, "source": "Sample (Olympiad)",
-      "prompt": { "en": "Which of the following is the correct spelling?" },
-      "choices": [ { "en": "Neccessary" }, { "en": "Necessary" }, { "en": "Necessery" }, { "en": "Necassary" } ], "answerIndex": 1,
-      "solution": { "en": "The correct spelling is 'necessary' — one c, double s. A common memory trick: a shirt has one collar (c) and two sleeves (ss)." } },
-    { "id": "olympiad-english-sample-002", "type": "mcq", "exam": "olympiad", "subject": "english", "year": null, "topic": "vocabulary", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "Which word is a synonym of 'happy'?" },
-      "choices": [ { "en": "Angry" }, { "en": "Sleepy" }, { "en": "Joyful" }, { "en": "Hungry" } ], "answerIndex": 2,
-      "solution": { "en": "'Joyful' means full of joy — the same meaning as 'happy'. The other options describe different feelings or states." } },
-    { "id": "olympiad-english-sample-003", "type": "mcq", "exam": "olympiad", "subject": "english", "year": null, "topic": "vocabulary", "difficulty": 2, "source": "Sample (Olympiad)",
-      "prompt": { "en": "Which word is the antonym (opposite) of 'ancient'?" },
-      "choices": [ { "en": "Old" }, { "en": "Modern" }, { "en": "Antique" }, { "en": "Historic" } ], "answerIndex": 1,
-      "solution": { "en": "'Ancient' means very old, so its opposite is 'modern' (belonging to the present time). 'Old', 'antique' and 'historic' are close in meaning to 'ancient', not opposite." } },
-    { "id": "olympiad-english-sample-004", "type": "mcq", "exam": "olympiad", "subject": "english", "year": null, "topic": "grammar", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "What is the plural of 'child'?" },
-      "choices": [ { "en": "Childs" }, { "en": "Childes" }, { "en": "Children" }, { "en": "Childrens" } ], "answerIndex": 2,
-      "solution": { "en": "'Child' has an irregular plural: 'children'. Adding -s or -es (childs, childes) is incorrect, and 'childrens' double-pluralises it." } },
-    { "id": "olympiad-english-sample-005", "type": "mcq", "exam": "olympiad", "subject": "english", "year": null, "topic": "grammar", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "Which of these words is a verb?" },
-      "choices": [ { "en": "Table" }, { "en": "Sing" }, { "en": "Green" }, { "en": "Beauty" } ], "answerIndex": 1,
-      "solution": { "en": "'Sing' is an action word — a verb. 'Table' is a noun, 'green' is an adjective, and 'beauty' is a noun." } },
-    { "id": "olympiad-english-sample-006", "type": "mcq", "exam": "olympiad", "subject": "english", "year": null, "topic": "grammar", "difficulty": 1, "source": "Sample (Olympiad)",
-      "prompt": { "en": "What is the past tense of 'go'?" },
-      "choices": [ { "en": "Goed" }, { "en": "Gone" }, { "en": "Went" }, { "en": "Going" } ], "answerIndex": 2,
-      "solution": { "en": "'Go' is an irregular verb: its simple past is 'went' (I went home). 'Gone' is the past participle (I have gone), and 'going' is the present participle." } },
-    { "id": "olympiad-english-sample-007", "type": "mcq", "exam": "olympiad", "subject": "english", "year": null, "topic": "grammar", "difficulty": 2, "source": "Sample (Olympiad)",
-      "prompt": { "en": "Choose the correct word: \"She ___ to school every day.\"" },
-      "choices": [ { "en": "go" }, { "en": "goes" }, { "en": "gone" }, { "en": "going" } ], "answerIndex": 1,
-      "solution": { "en": "With a third-person singular subject ('she') in the simple present, the verb takes -es: 'She goes to school every day.'" } },
-    { "id": "olympiad-english-sample-008", "type": "mcq", "exam": "olympiad", "subject": "english", "year": null, "topic": "vocabulary", "difficulty": 2, "source": "Sample (Olympiad)",
-      "prompt": { "en": "Which word is the opposite of 'victory'?" },
-      "choices": [ { "en": "Defeat" }, { "en": "Success" }, { "en": "Triumph" }, { "en": "Win" } ], "answerIndex": 0,
-      "solution": { "en": "'Victory' means winning, so its opposite is 'defeat'. 'Success', 'triumph' and 'win' are all synonyms of victory." } }
+    {
+      "id": "olympiad-english-sample-001",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "spelling",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which of the following is the correct spelling?"
+      },
+      "choices": [
+        {
+          "en": "Neccessary"
+        },
+        {
+          "en": "Necessary"
+        },
+        {
+          "en": "Necessery"
+        },
+        {
+          "en": "Necassary"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The correct spelling is 'necessary' — one c, double s. A common memory trick: a shirt has one collar (c) and two sleeves (ss)."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-002",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which word is a synonym of 'happy'?"
+      },
+      "choices": [
+        {
+          "en": "Angry"
+        },
+        {
+          "en": "Sleepy"
+        },
+        {
+          "en": "Joyful"
+        },
+        {
+          "en": "Hungry"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "'Joyful' means full of joy — the same meaning as 'happy'. The other options describe different feelings or states."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-003",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which word is the antonym (opposite) of 'ancient'?"
+      },
+      "choices": [
+        {
+          "en": "Old"
+        },
+        {
+          "en": "Modern"
+        },
+        {
+          "en": "Antique"
+        },
+        {
+          "en": "Historic"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Ancient' means very old, so its opposite is 'modern' (belonging to the present time). 'Old', 'antique' and 'historic' are close in meaning to 'ancient', not opposite."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-004",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the plural of 'child'?"
+      },
+      "choices": [
+        {
+          "en": "Childs"
+        },
+        {
+          "en": "Childes"
+        },
+        {
+          "en": "Children"
+        },
+        {
+          "en": "Childrens"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "'Child' has an irregular plural: 'children'. Adding -s or -es (childs, childes) is incorrect, and 'childrens' double-pluralises it."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-005",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which of these words is a verb?"
+      },
+      "choices": [
+        {
+          "en": "Table"
+        },
+        {
+          "en": "Sing"
+        },
+        {
+          "en": "Green"
+        },
+        {
+          "en": "Beauty"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Sing' is an action word — a verb. 'Table' is a noun, 'green' is an adjective, and 'beauty' is a noun."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-006",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the past tense of 'go'?"
+      },
+      "choices": [
+        {
+          "en": "Goed"
+        },
+        {
+          "en": "Gone"
+        },
+        {
+          "en": "Went"
+        },
+        {
+          "en": "Going"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "'Go' is an irregular verb: its simple past is 'went' (I went home). 'Gone' is the past participle (I have gone), and 'going' is the present participle."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-007",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Choose the correct word: \"She ___ to school every day.\""
+      },
+      "choices": [
+        {
+          "en": "go"
+        },
+        {
+          "en": "goes"
+        },
+        {
+          "en": "gone"
+        },
+        {
+          "en": "going"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "With a third-person singular subject ('she') in the simple present, the verb takes -es: 'She goes to school every day.'"
+      }
+    },
+    {
+      "id": "olympiad-english-sample-008",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which word is the opposite of 'victory'?"
+      },
+      "choices": [
+        {
+          "en": "Defeat"
+        },
+        {
+          "en": "Success"
+        },
+        {
+          "en": "Triumph"
+        },
+        {
+          "en": "Win"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "'Victory' means winning, so its opposite is 'defeat'. 'Success', 'triumph' and 'win' are all synonyms of victory."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-009",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "subject-verb-agreement",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Choose the correct sentence."
+      },
+      "choices": [
+        {
+          "en": "Neither of the boys have finished their homework."
+        },
+        {
+          "en": "Neither of the boys has finished his homework."
+        },
+        {
+          "en": "Neither of the boys have finished his homework."
+        },
+        {
+          "en": "Neither of the boys has finished their homeworks."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Neither' is singular, so it takes the singular verb 'has' and the singular pronoun 'his'; 'homework' is uncountable and has no plural."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-010",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "parts-of-speech",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which word is an ADVERB in the sentence: 'The runner quickly crossed the finish line.'?"
+      },
+      "choices": [
+        {
+          "en": "runner"
+        },
+        {
+          "en": "quickly"
+        },
+        {
+          "en": "crossed"
+        },
+        {
+          "en": "line"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Quickly' describes how the action 'crossed' was done, so it is an adverb modifying the verb."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-011",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "question-tags",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Pick the correct question tag: 'You have finished your project, ____?'"
+      },
+      "choices": [
+        {
+          "en": "haven't you"
+        },
+        {
+          "en": "have you"
+        },
+        {
+          "en": "didn't you"
+        },
+        {
+          "en": "don't you"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "A positive statement with 'have finished' takes a negative tag using the same auxiliary, giving 'haven't you'."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-012",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "idioms",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What does the idiom 'to let the cat out of the bag' mean?"
+      },
+      "choices": [
+        {
+          "en": "To buy a pet"
+        },
+        {
+          "en": "To reveal a secret"
+        },
+        {
+          "en": "To make a mess"
+        },
+        {
+          "en": "To run away quickly"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'To let the cat out of the bag' means to accidentally reveal a secret."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-013",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "spelling",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Choose the word that is spelt correctly."
+      },
+      "choices": [
+        {
+          "en": "mischevous"
+        },
+        {
+          "en": "mischievous"
+        },
+        {
+          "en": "mischievious"
+        },
+        {
+          "en": "mischevious"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The correct spelling is 'mischievous' — note there is no extra 'i' before the final 'ous'."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-014",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "punctuation",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which sentence uses the apostrophe correctly?"
+      },
+      "choices": [
+        {
+          "en": "The childrens' toys are new."
+        },
+        {
+          "en": "The children's toys are new."
+        },
+        {
+          "en": "The childrens toys' are new."
+        },
+        {
+          "en": "The childrens's toys are new."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Children' is already plural, so the possessive is formed by adding 's, giving 'children's'."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-015",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "prepositions",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Fill in the blank with the correct preposition: 'She is very good ____ mathematics.'"
+      },
+      "choices": [
+        {
+          "en": "in"
+        },
+        {
+          "en": "at"
+        },
+        {
+          "en": "on"
+        },
+        {
+          "en": "with"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The fixed expression is 'good at' a subject or skill, so 'at' is correct."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-016",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "collective-nouns",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which word is the correct COLLECTIVE NOUN for a group of wolves?"
+      },
+      "choices": [
+        {
+          "en": "pack"
+        },
+        {
+          "en": "flock"
+        },
+        {
+          "en": "swarm"
+        },
+        {
+          "en": "herd"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "A group of wolves is called a 'pack'; 'flock' is for birds/sheep, 'swarm' for insects, and 'herd' for cattle."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-017",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "reported-speech",
+      "difficulty": 3,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Change to reported speech: She said, 'I am reading a book.'"
+      },
+      "choices": [
+        {
+          "en": "She said that she is reading a book."
+        },
+        {
+          "en": "She said that she was reading a book."
+        },
+        {
+          "en": "She said that I was reading a book."
+        },
+        {
+          "en": "She said that she has read a book."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "In reported speech the present continuous 'am reading' shifts to past continuous 'was reading', and 'I' becomes 'she'."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-018",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "homophones",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Choose the pair of words that are HOMOPHONES (sound the same)."
+      },
+      "choices": [
+        {
+          "en": "big — large"
+        },
+        {
+          "en": "flower — flour"
+        },
+        {
+          "en": "hot — cold"
+        },
+        {
+          "en": "run — running"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Flower' and 'flour' are pronounced the same but have different meanings and spellings, making them homophones."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-019",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "nouns",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Identify the ABSTRACT NOUN in the sentence: 'Her honesty impressed the teacher.'"
+      },
+      "choices": [
+        {
+          "en": "Her"
+        },
+        {
+          "en": "honesty"
+        },
+        {
+          "en": "impressed"
+        },
+        {
+          "en": "teacher"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Honesty' names a quality that cannot be touched or seen, so it is an abstract noun."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-020",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "active-passive-voice",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which sentence is in the PASSIVE voice?"
+      },
+      "choices": [
+        {
+          "en": "The gardener waters the plants."
+        },
+        {
+          "en": "The plants are watered by the gardener."
+        },
+        {
+          "en": "The gardener is watering the plants."
+        },
+        {
+          "en": "The gardener will water the plants."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "In 'The plants are watered by the gardener', the object receives the action and the doer follows 'by', which marks the passive voice."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-021",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "degrees-of-comparison",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Choose the correct comparative form: 'This box is ____ than that one.'"
+      },
+      "choices": [
+        {
+          "en": "heavier"
+        },
+        {
+          "en": "more heavy"
+        },
+        {
+          "en": "heaviest"
+        },
+        {
+          "en": "most heavy"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "For a two-syllable adjective ending in 'y', the comparative is formed by changing 'y' to 'i' and adding 'er', giving 'heavier'."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-022",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "prefixes-suffixes",
+      "difficulty": 1,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "What is the meaning of the prefix 're-' in the word 'rewrite'?"
+      },
+      "choices": [
+        {
+          "en": "not"
+        },
+        {
+          "en": "before"
+        },
+        {
+          "en": "again"
+        },
+        {
+          "en": "wrongly"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The prefix 're-' means 'again', so 'rewrite' means to write again."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-023",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "articles",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Choose the correct article: 'He is ____ honest man.'"
+      },
+      "choices": [
+        {
+          "en": "a"
+        },
+        {
+          "en": "an"
+        },
+        {
+          "en": "the"
+        },
+        {
+          "en": "no article"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Honest' begins with a silent 'h', so it starts with a vowel sound and takes the article 'an'."
+      }
+    },
+    {
+      "id": "olympiad-english-sample-024",
+      "type": "mcq",
+      "exam": "olympiad",
+      "subject": "english",
+      "year": null,
+      "topic": "conditionals",
+      "difficulty": 2,
+      "source": "Sample (Olympiad)",
+      "prompt": {
+        "en": "Which word correctly completes the sentence: 'If it rains tomorrow, we ____ stay at home.'?"
+      },
+      "choices": [
+        {
+          "en": "will"
+        },
+        {
+          "en": "would"
+        },
+        {
+          "en": "have"
+        },
+        {
+          "en": "are"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "This is a first conditional about a likely future event, so the main clause uses 'will' + base verb."
+      }
+    }
   ]
 }

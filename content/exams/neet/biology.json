@@ -7,130 +7,746 @@
     {
       "id": "neet-biology-sample-001",
       "type": "mcq",
-      "exam": "neet", "subject": "biology", "year": null,
-      "topic": "cell-structure-function", "difficulty": 2,
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "cell-structure-function",
+      "difficulty": 2,
       "source": "Sample (NEET pattern)",
-      "prompt": { "en": "In a eukaryotic cell, the Krebs (citric acid) cycle takes place in the:" },
+      "prompt": {
+        "en": "In a eukaryotic cell, the Krebs (citric acid) cycle takes place in the:"
+      },
       "choices": [
-        { "en": "Cytoplasm" },
-        { "en": "Mitochondrial matrix" },
-        { "en": "Chloroplast stroma" },
-        { "en": "Nucleus" }
+        {
+          "en": "Cytoplasm"
+        },
+        {
+          "en": "Mitochondrial matrix"
+        },
+        {
+          "en": "Chloroplast stroma"
+        },
+        {
+          "en": "Nucleus"
+        }
       ],
       "answerIndex": 1,
-      "solution": { "en": "The Krebs cycle occurs in the mitochondrial matrix. Glycolysis happens in the cytoplasm, and the light-independent reactions of photosynthesis occur in the chloroplast stroma — so those options are incorrect." }
+      "solution": {
+        "en": "The Krebs cycle occurs in the mitochondrial matrix. Glycolysis happens in the cytoplasm, and the light-independent reactions of photosynthesis occur in the chloroplast stroma — so those options are incorrect."
+      }
     },
     {
       "id": "neet-biology-sample-002",
       "type": "mcq",
-      "exam": "neet", "subject": "biology", "year": null,
-      "topic": "human-physiology", "difficulty": 2,
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-physiology",
+      "difficulty": 2,
       "source": "Sample (NEET pattern)",
-      "prompt": { "en": "The natural pacemaker of the human heart is the:" },
+      "prompt": {
+        "en": "The natural pacemaker of the human heart is the:"
+      },
       "choices": [
-        { "en": "Atrioventricular (AV) node" },
-        { "en": "Bundle of His" },
-        { "en": "Sinoatrial (SA) node" },
-        { "en": "Purkinje fibres" }
+        {
+          "en": "Atrioventricular (AV) node"
+        },
+        {
+          "en": "Bundle of His"
+        },
+        {
+          "en": "Sinoatrial (SA) node"
+        },
+        {
+          "en": "Purkinje fibres"
+        }
       ],
       "answerIndex": 2,
-      "solution": { "en": "The sinoatrial (SA) node in the wall of the right atrium generates the impulses that set the heart's rhythm, so it is called the pacemaker. The AV node, bundle of His and Purkinje fibres conduct that impulse onward to the ventricles." }
+      "solution": {
+        "en": "The sinoatrial (SA) node in the wall of the right atrium generates the impulses that set the heart's rhythm, so it is called the pacemaker. The AV node, bundle of His and Purkinje fibres conduct that impulse onward to the ventricles."
+      }
     },
     {
       "id": "neet-biology-sample-003",
       "type": "mcq",
-      "exam": "neet", "subject": "biology", "year": null,
-      "topic": "human-physiology", "difficulty": 1,
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-physiology",
+      "difficulty": 1,
       "source": "Sample (NEET pattern)",
-      "prompt": { "en": "The structural and functional unit of the human kidney is the:" },
+      "prompt": {
+        "en": "The structural and functional unit of the human kidney is the:"
+      },
       "choices": [
-        { "en": "Nephron" },
-        { "en": "Neuron" },
-        { "en": "Alveolus" },
-        { "en": "Villus" }
+        {
+          "en": "Nephron"
+        },
+        {
+          "en": "Neuron"
+        },
+        {
+          "en": "Alveolus"
+        },
+        {
+          "en": "Villus"
+        }
       ],
       "answerIndex": 0,
-      "solution": { "en": "Each kidney contains about a million nephrons, which filter blood and form urine. A neuron is a nerve cell, an alveolus is an air sac in the lung, and a villus is a projection of the intestinal lining." }
+      "solution": {
+        "en": "Each kidney contains about a million nephrons, which filter blood and form urine. A neuron is a nerve cell, an alveolus is an air sac in the lung, and a villus is a projection of the intestinal lining."
+      }
     },
     {
       "id": "neet-biology-sample-004",
       "type": "mcq",
-      "exam": "neet", "subject": "biology", "year": null,
-      "topic": "genetics-evolution", "difficulty": 2,
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "genetics-evolution",
+      "difficulty": 2,
       "source": "Sample (NEET pattern)",
-      "prompt": { "en": "Which nitrogenous base is present in RNA but absent in DNA?" },
+      "prompt": {
+        "en": "Which nitrogenous base is present in RNA but absent in DNA?"
+      },
       "choices": [
-        { "en": "Thymine" },
-        { "en": "Adenine" },
-        { "en": "Guanine" },
-        { "en": "Uracil" }
+        {
+          "en": "Thymine"
+        },
+        {
+          "en": "Adenine"
+        },
+        {
+          "en": "Guanine"
+        },
+        {
+          "en": "Uracil"
+        }
       ],
       "answerIndex": 3,
-      "solution": { "en": "RNA contains uracil in place of the thymine found in DNA. Adenine and guanine are purines present in both DNA and RNA, so they are not the answer." }
+      "solution": {
+        "en": "RNA contains uracil in place of the thymine found in DNA. Adenine and guanine are purines present in both DNA and RNA, so they are not the answer."
+      }
     },
     {
       "id": "neet-biology-sample-005",
       "type": "mcq",
-      "exam": "neet", "subject": "biology", "year": null,
-      "topic": "plant-physiology", "difficulty": 1,
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "plant-physiology",
+      "difficulty": 1,
       "source": "Sample (NEET pattern)",
-      "prompt": { "en": "In vascular plants, water and dissolved minerals are conducted upward from the roots mainly by the:" },
+      "prompt": {
+        "en": "In vascular plants, water and dissolved minerals are conducted upward from the roots mainly by the:"
+      },
       "choices": [
-        { "en": "Phloem" },
-        { "en": "Xylem" },
-        { "en": "Cambium" },
-        { "en": "Epidermis" }
+        {
+          "en": "Phloem"
+        },
+        {
+          "en": "Xylem"
+        },
+        {
+          "en": "Cambium"
+        },
+        {
+          "en": "Epidermis"
+        }
       ],
       "answerIndex": 1,
-      "solution": { "en": "Xylem conducts water and minerals upward from the roots to the rest of the plant. Phloem translocates the sugars made in photosynthesis; the cambium is a meristem; the epidermis is a protective covering." }
+      "solution": {
+        "en": "Xylem conducts water and minerals upward from the roots to the rest of the plant. Phloem translocates the sugars made in photosynthesis; the cambium is a meristem; the epidermis is a protective covering."
+      }
     },
     {
       "id": "neet-biology-sample-006",
       "type": "mcq",
-      "exam": "neet", "subject": "biology", "year": null,
-      "topic": "human-physiology", "difficulty": 2,
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-physiology",
+      "difficulty": 2,
       "source": "Sample (NEET pattern)",
-      "prompt": { "en": "Insulin, the hormone that lowers blood glucose, is secreted by the:" },
+      "prompt": {
+        "en": "Insulin, the hormone that lowers blood glucose, is secreted by the:"
+      },
       "choices": [
-        { "en": "Alpha cells of the islets of Langerhans" },
-        { "en": "Adrenal cortex" },
-        { "en": "Beta cells of the islets of Langerhans" },
-        { "en": "Thyroid gland" }
+        {
+          "en": "Alpha cells of the islets of Langerhans"
+        },
+        {
+          "en": "Adrenal cortex"
+        },
+        {
+          "en": "Beta cells of the islets of Langerhans"
+        },
+        {
+          "en": "Thyroid gland"
+        }
       ],
       "answerIndex": 2,
-      "solution": { "en": "The beta cells of the islets of Langerhans in the pancreas secrete insulin, which lowers blood glucose. The alpha cells secrete glucagon, which raises blood glucose — the opposite effect." }
+      "solution": {
+        "en": "The beta cells of the islets of Langerhans in the pancreas secrete insulin, which lowers blood glucose. The alpha cells secrete glucagon, which raises blood glucose — the opposite effect."
+      }
     },
     {
       "id": "neet-biology-sample-007",
       "type": "mcq",
-      "exam": "neet", "subject": "biology", "year": null,
-      "topic": "cell-structure-function", "difficulty": 1,
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "cell-structure-function",
+      "difficulty": 1,
       "source": "Sample (NEET pattern)",
-      "prompt": { "en": "Ribosomes in a cell are the site of:" },
+      "prompt": {
+        "en": "Ribosomes in a cell are the site of:"
+      },
       "choices": [
-        { "en": "DNA replication" },
-        { "en": "Protein synthesis" },
-        { "en": "Photosynthesis" },
-        { "en": "Lipid synthesis" }
+        {
+          "en": "DNA replication"
+        },
+        {
+          "en": "Protein synthesis"
+        },
+        {
+          "en": "Photosynthesis"
+        },
+        {
+          "en": "Lipid synthesis"
+        }
       ],
       "answerIndex": 1,
-      "solution": { "en": "Ribosomes translate mRNA into polypeptides, so they are the site of protein synthesis. DNA replication occurs in the nucleus in eukaryotes; photosynthesis occurs in chloroplasts." }
+      "solution": {
+        "en": "Ribosomes translate mRNA into polypeptides, so they are the site of protein synthesis. DNA replication occurs in the nucleus in eukaryotes; photosynthesis occurs in chloroplasts."
+      }
     },
     {
       "id": "neet-biology-sample-008",
       "type": "mcq",
-      "exam": "neet", "subject": "biology", "year": null,
-      "topic": "reproduction", "difficulty": 3,
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "reproduction",
+      "difficulty": 3,
       "source": "Sample (NEET pattern)",
-      "prompt": { "en": "Double fertilisation — one male gamete fusing with the egg and the other with the polar nuclei — is a characteristic feature of:" },
+      "prompt": {
+        "en": "Double fertilisation — one male gamete fusing with the egg and the other with the polar nuclei — is a characteristic feature of:"
+      },
       "choices": [
-        { "en": "Gymnosperms" },
-        { "en": "Pteridophytes" },
-        { "en": "Bryophytes" },
-        { "en": "Angiosperms" }
+        {
+          "en": "Gymnosperms"
+        },
+        {
+          "en": "Pteridophytes"
+        },
+        {
+          "en": "Bryophytes"
+        },
+        {
+          "en": "Angiosperms"
+        }
       ],
       "answerIndex": 3,
-      "solution": { "en": "Double fertilisation — syngamy (male gamete + egg → zygote) plus triple fusion (male gamete + two polar nuclei → endosperm) — occurs only in angiosperms (flowering plants). Gymnosperms show single fertilisation." }
+      "solution": {
+        "en": "Double fertilisation — syngamy (male gamete + egg → zygote) plus triple fusion (male gamete + two polar nuclei → endosperm) — occurs only in angiosperms (flowering plants). Gymnosperms show single fertilisation."
+      }
+    },
+    {
+      "id": "neet-biology-sample-009",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "cell-organelles",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which of the following cell organelles is bounded by only a single membrane?"
+      },
+      "choices": [
+        {
+          "en": "Lysosome"
+        },
+        {
+          "en": "Mitochondrion"
+        },
+        {
+          "en": "Chloroplast"
+        },
+        {
+          "en": "Nucleus"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Lysosomes are surrounded by a single unit membrane, whereas mitochondria, chloroplasts and the nucleus are each enclosed by a double membrane (envelope)."
+      }
+    },
+    {
+      "id": "neet-biology-sample-010",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "mendelian-genetics",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A heterozygous tall pea plant (Tt) is crossed with a homozygous dwarf plant (tt). The expected phenotypic ratio of tall to dwarf offspring is:"
+      },
+      "choices": [
+        {
+          "en": "3 : 1"
+        },
+        {
+          "en": "1 : 1"
+        },
+        {
+          "en": "1 : 2 : 1"
+        },
+        {
+          "en": "9 : 7"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "This is a test cross (Tt x tt). It yields half Tt (tall) and half tt (dwarf), giving a 1 : 1 phenotypic ratio."
+      }
+    },
+    {
+      "id": "neet-biology-sample-011",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "dna-replication",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "During DNA replication, Okazaki fragments are synthesised discontinuously on the:"
+      },
+      "choices": [
+        {
+          "en": "Leading strand"
+        },
+        {
+          "en": "Lagging strand"
+        },
+        {
+          "en": "Both strands equally"
+        },
+        {
+          "en": "RNA primer only"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Because DNA polymerase works only 5' to 3', the strand oriented opposite to the replication fork movement (the lagging strand) is made as short Okazaki fragments that are later joined by ligase."
+      }
+    },
+    {
+      "id": "neet-biology-sample-012",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "digestion-absorption",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Bile secreted by the liver aids fat digestion mainly by:"
+      },
+      "choices": [
+        {
+          "en": "Emulsifying large fat globules into smaller droplets"
+        },
+        {
+          "en": "Hydrolysing fats into fatty acids and glycerol"
+        },
+        {
+          "en": "Converting pepsinogen into active pepsin"
+        },
+        {
+          "en": "Directly absorbing fatty acids across the intestinal wall"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Bile contains no digestive enzymes; its salts emulsify fats into fine droplets, increasing the surface area for pancreatic lipase to act on."
+      }
+    },
+    {
+      "id": "neet-biology-sample-013",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "breathing-gas-transport",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The largest fraction of carbon dioxide is transported in human blood in the form of:"
+      },
+      "choices": [
+        {
+          "en": "CO2 dissolved in plasma"
+        },
+        {
+          "en": "Carbaminohaemoglobin"
+        },
+        {
+          "en": "Bicarbonate ions"
+        },
+        {
+          "en": "CO2 bound to plasma albumin"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "About 70% of CO2 is carried as bicarbonate (HCO3-) ions formed in RBCs by carbonic anhydrase; roughly 20-25% is carbaminohaemoglobin and only about 7% is dissolved in plasma."
+      }
+    },
+    {
+      "id": "neet-biology-sample-014",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "neural-control",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The rising (depolarisation) phase of an action potential in a neuron is caused mainly by the rapid influx of:"
+      },
+      "choices": [
+        {
+          "en": "Potassium ions"
+        },
+        {
+          "en": "Chloride ions"
+        },
+        {
+          "en": "Calcium ions"
+        },
+        {
+          "en": "Sodium ions"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "When a threshold stimulus opens voltage-gated Na+ channels, Na+ rushes in and reverses the membrane polarity, producing the depolarisation (rising) phase of the action potential."
+      }
+    },
+    {
+      "id": "neet-biology-sample-015",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "photosynthesis",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "In the light reactions of photosynthesis, the photolysis (splitting) of water is closely associated with:"
+      },
+      "choices": [
+        {
+          "en": "Photosystem II"
+        },
+        {
+          "en": "Photosystem I"
+        },
+        {
+          "en": "ATP synthase"
+        },
+        {
+          "en": "The terminal cytochrome complex"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Water is split on the inner thylakoid side in association with Photosystem II, releasing electrons (to replace those lost by P680), protons, and O2."
+      }
+    },
+    {
+      "id": "neet-biology-sample-016",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "ecosystem-energy-flow",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "According to Lindeman's ten percent law, roughly 10% of the energy at one trophic level is:"
+      },
+      "choices": [
+        {
+          "en": "Lost as heat during respiration"
+        },
+        {
+          "en": "Stored permanently as detritus"
+        },
+        {
+          "en": "Transferred to the next higher trophic level"
+        },
+        {
+          "en": "Returned to the producers"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The ten percent law states that only about 10% of the energy captured at one trophic level is passed on to (and stored by) organisms at the next higher trophic level; the rest is lost mainly as heat."
+      }
+    },
+    {
+      "id": "neet-biology-sample-017",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "biotechnology-tools",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The DNA sequences recognised by restriction endonucleases used in genetic engineering are usually:"
+      },
+      "choices": [
+        {
+          "en": "Rich only in G-C base pairs"
+        },
+        {
+          "en": "Palindromic sequences"
+        },
+        {
+          "en": "Single-stranded regions"
+        },
+        {
+          "en": "Long tandem repeats"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Restriction enzymes recognise specific palindromic sequences (reading the same 5' to 3' on both strands) and cut within or near them, often producing sticky ends."
+      }
+    },
+    {
+      "id": "neet-biology-sample-018",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "human-reproduction",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A mid-cycle surge of which hormone directly triggers ovulation in the human female?"
+      },
+      "choices": [
+        {
+          "en": "Luteinising hormone (LH)"
+        },
+        {
+          "en": "Follicle-stimulating hormone (FSH)"
+        },
+        {
+          "en": "Progesterone"
+        },
+        {
+          "en": "Oestrogen"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "A sharp rise (surge) in LH around mid-cycle induces rupture of the mature Graafian follicle and release of the ovum (ovulation)."
+      }
+    },
+    {
+      "id": "neet-biology-sample-019",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "evolution-evidences",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The wings of a butterfly and the wings of a bird are best described as:"
+      },
+      "choices": [
+        {
+          "en": "Homologous organs"
+        },
+        {
+          "en": "Analogous organs"
+        },
+        {
+          "en": "Vestigial organs"
+        },
+        {
+          "en": "Atavistic structures"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Both perform the same function (flight) but differ in structure and origin, making them analogous organs, an example of convergent evolution."
+      }
+    },
+    {
+      "id": "neet-biology-sample-020",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "enzymes",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A competitive inhibitor decreases the rate of an enzyme-catalysed reaction because it:"
+      },
+      "choices": [
+        {
+          "en": "Binds the enzyme at a site away from the active site"
+        },
+        {
+          "en": "Structurally resembles the substrate and competes for the active site"
+        },
+        {
+          "en": "Permanently denatures the enzyme protein"
+        },
+        {
+          "en": "Increases the enzyme's affinity for its true substrate"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A competitive inhibitor closely resembles the substrate and occupies the active site, blocking substrate binding; its effect can be overcome by raising substrate concentration."
+      }
+    },
+    {
+      "id": "neet-biology-sample-021",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "plant-anatomy",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Mature sieve tube elements of angiosperm phloem lack a nucleus yet stay functional because their activities are controlled by adjacent:"
+      },
+      "choices": [
+        {
+          "en": "Pericycle cells"
+        },
+        {
+          "en": "Xylem parenchyma"
+        },
+        {
+          "en": "Companion cells"
+        },
+        {
+          "en": "Tracheids"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Each enucleate sieve tube element is connected through plasmodesmata to a nucleated companion cell, which maintains the sieve tube's metabolic functions."
+      }
+    },
+    {
+      "id": "neet-biology-sample-022",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "animal-kingdom",
+      "difficulty": 1,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "A water vascular system with tube feet used for locomotion is a distinctive feature of the phylum:"
+      },
+      "choices": [
+        {
+          "en": "Arthropoda"
+        },
+        {
+          "en": "Annelida"
+        },
+        {
+          "en": "Mollusca"
+        },
+        {
+          "en": "Echinodermata"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Echinoderms (e.g., starfish) possess a unique water vascular system with tube feet used for locomotion, food capture and respiration."
+      }
+    },
+    {
+      "id": "neet-biology-sample-023",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "immunity",
+      "difficulty": 3,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "The antibody present in a mother's colostrum that provides passive immunity to the breastfed newborn is:"
+      },
+      "choices": [
+        {
+          "en": "IgG"
+        },
+        {
+          "en": "IgM"
+        },
+        {
+          "en": "IgE"
+        },
+        {
+          "en": "IgA"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Colostrum, the early milk, is rich in secretory IgA, which protects the infant's gut mucosa and confers passive immunity."
+      }
+    },
+    {
+      "id": "neet-biology-sample-024",
+      "type": "mcq",
+      "exam": "neet",
+      "subject": "biology",
+      "year": null,
+      "topic": "endocrine-system",
+      "difficulty": 2,
+      "source": "Sample (NEET pattern)",
+      "prompt": {
+        "en": "Which hormone raises blood calcium levels chiefly by stimulating resorption of calcium from bone?"
+      },
+      "choices": [
+        {
+          "en": "Calcitonin"
+        },
+        {
+          "en": "Thyroxine"
+        },
+        {
+          "en": "Parathyroid hormone"
+        },
+        {
+          "en": "Insulin"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Parathyroid hormone (parathormone) increases blood Ca2+ by promoting bone resorption and renal reabsorption of calcium; calcitonin has the opposite (calcium-lowering) effect."
+      }
     }
   ]
 }

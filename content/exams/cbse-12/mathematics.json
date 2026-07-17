@@ -1,46 +1,814 @@
 {
-  "exam": "cbse-12", "subject": "mathematics", "draft": true,
+  "exam": "cbse-12",
+  "subject": "mathematics",
+  "draft": true,
   "note": "SAMPLE CBSE Class 12 board-pattern questions (source 'Sample (CBSE 12)'). Replace with verified board PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "cbse-12-mathematics-sample-001", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "calculus", "difficulty": 1, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The derivative of sin x with respect to x is:" },
-      "choices": [ { "en": "cos x" }, { "en": "−cos x" }, { "en": "−sin x" }, { "en": "tan x" } ], "answerIndex": 0,
-      "solution": { "en": "d/dx (sin x) = cos x." } },
-    { "id": "cbse-12-mathematics-sample-002", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "calculus", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The value of ∫ cos x dx is:" },
-      "choices": [ { "en": "sin x + C" }, { "en": "−sin x + C" }, { "en": "cos x + C" }, { "en": "tan x + C" } ], "answerIndex": 0,
-      "solution": { "en": "∫ cos x dx = sin x + C, since the derivative of sin x is cos x." } },
-    { "id": "cbse-12-mathematics-sample-003", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "calculus", "difficulty": 1, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The derivative of eˣ with respect to x is:" },
-      "choices": [ { "en": "x eˣ⁻¹" }, { "en": "eˣ" }, { "en": "1" }, { "en": "ln x" } ], "answerIndex": 1,
-      "solution": { "en": "The exponential function is its own derivative: d/dx (eˣ) = eˣ." } },
-    { "id": "cbse-12-mathematics-sample-004", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "matrices", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The order of a matrix with 2 rows and 3 columns is:" },
-      "choices": [ { "en": "3 × 2" }, { "en": "2 × 3" }, { "en": "6" }, { "en": "5" } ], "answerIndex": 1,
-      "solution": { "en": "Order is written as (rows × columns), so a matrix with 2 rows and 3 columns is of order 2 × 3." } },
-    { "id": "cbse-12-mathematics-sample-005", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "calculus", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The value of ∫ (1/x) dx is:" },
-      "choices": [ { "en": "x + C" }, { "en": "ln|x| + C" }, { "en": "−1/x² + C" }, { "en": "1/x² + C" } ], "answerIndex": 1,
-      "solution": { "en": "∫ (1/x) dx = ln|x| + C." } },
-    { "id": "cbse-12-mathematics-sample-006", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "calculus", "difficulty": 1, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The derivative of any constant function is:" },
-      "choices": [ { "en": "1" }, { "en": "0" }, { "en": "the constant itself" }, { "en": "x" } ], "answerIndex": 1,
-      "solution": { "en": "The derivative of a constant is 0, because a constant function does not change." } },
-    { "id": "cbse-12-mathematics-sample-007", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "limits", "difficulty": 3, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The value of lim (x→0) (sin x)/x is:" },
-      "choices": [ { "en": "0" }, { "en": "1" }, { "en": "∞" }, { "en": "Undefined" } ], "answerIndex": 1,
-      "solution": { "en": "This is a standard limit: lim (x→0) (sin x)/x = 1." } },
-    { "id": "cbse-12-mathematics-sample-008", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "determinants", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The determinant of the 2×2 identity matrix is:" },
-      "choices": [ { "en": "0" }, { "en": "1" }, { "en": "2" }, { "en": "−1" } ], "answerIndex": 1,
-      "solution": { "en": "The identity matrix [[1,0],[0,1]] has determinant (1)(1) − (0)(0) = 1." } },
-    { "id": "cbse-12-mathematics-sample-009", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "calculus", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "The derivative of x³ with respect to x is:" },
-      "choices": [ { "en": "3x²" }, { "en": "x²" }, { "en": "3x" }, { "en": "x⁴/4" } ], "answerIndex": 0,
-      "solution": { "en": "By the power rule, d/dx (xⁿ) = n·xⁿ⁻¹, so d/dx (x³) = 3x²." } },
-    { "id": "cbse-12-mathematics-sample-010", "type": "mcq", "exam": "cbse-12", "subject": "mathematics", "year": null, "topic": "probability", "difficulty": 2, "source": "Sample (CBSE 12)",
-      "prompt": { "en": "If P(A) = 0.6, then the probability of 'not A' is:" },
-      "choices": [ { "en": "0.6" }, { "en": "0.4" }, { "en": "1.6" }, { "en": "0" } ], "answerIndex": 1,
-      "solution": { "en": "P(not A) = 1 − P(A) = 1 − 0.6 = 0.4." } }
+    {
+      "id": "cbse-12-mathematics-sample-001",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "calculus",
+      "difficulty": 1,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The derivative of sin x with respect to x is:"
+      },
+      "choices": [
+        {
+          "en": "cos x"
+        },
+        {
+          "en": "−cos x"
+        },
+        {
+          "en": "−sin x"
+        },
+        {
+          "en": "tan x"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "d/dx (sin x) = cos x."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-002",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "calculus",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The value of ∫ cos x dx is:"
+      },
+      "choices": [
+        {
+          "en": "sin x + C"
+        },
+        {
+          "en": "−sin x + C"
+        },
+        {
+          "en": "cos x + C"
+        },
+        {
+          "en": "tan x + C"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "∫ cos x dx = sin x + C, since the derivative of sin x is cos x."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-003",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "calculus",
+      "difficulty": 1,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The derivative of eˣ with respect to x is:"
+      },
+      "choices": [
+        {
+          "en": "x eˣ⁻¹"
+        },
+        {
+          "en": "eˣ"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "ln x"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The exponential function is its own derivative: d/dx (eˣ) = eˣ."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-004",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "matrices",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The order of a matrix with 2 rows and 3 columns is:"
+      },
+      "choices": [
+        {
+          "en": "3 × 2"
+        },
+        {
+          "en": "2 × 3"
+        },
+        {
+          "en": "6"
+        },
+        {
+          "en": "5"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Order is written as (rows × columns), so a matrix with 2 rows and 3 columns is of order 2 × 3."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-005",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "calculus",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The value of ∫ (1/x) dx is:"
+      },
+      "choices": [
+        {
+          "en": "x + C"
+        },
+        {
+          "en": "ln|x| + C"
+        },
+        {
+          "en": "−1/x² + C"
+        },
+        {
+          "en": "1/x² + C"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "∫ (1/x) dx = ln|x| + C."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-006",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "calculus",
+      "difficulty": 1,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The derivative of any constant function is:"
+      },
+      "choices": [
+        {
+          "en": "1"
+        },
+        {
+          "en": "0"
+        },
+        {
+          "en": "the constant itself"
+        },
+        {
+          "en": "x"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The derivative of a constant is 0, because a constant function does not change."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-007",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "limits",
+      "difficulty": 3,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The value of lim (x→0) (sin x)/x is:"
+      },
+      "choices": [
+        {
+          "en": "0"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "∞"
+        },
+        {
+          "en": "Undefined"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "This is a standard limit: lim (x→0) (sin x)/x = 1."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-008",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "determinants",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The determinant of the 2×2 identity matrix is:"
+      },
+      "choices": [
+        {
+          "en": "0"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "2"
+        },
+        {
+          "en": "−1"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The identity matrix [[1,0],[0,1]] has determinant (1)(1) − (0)(0) = 1."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-009",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "calculus",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "The derivative of x³ with respect to x is:"
+      },
+      "choices": [
+        {
+          "en": "3x²"
+        },
+        {
+          "en": "x²"
+        },
+        {
+          "en": "3x"
+        },
+        {
+          "en": "x⁴/4"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "By the power rule, d/dx (xⁿ) = n·xⁿ⁻¹, so d/dx (x³) = 3x²."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-010",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "probability",
+      "difficulty": 2,
+      "source": "Sample (CBSE 12)",
+      "prompt": {
+        "en": "If P(A) = 0.6, then the probability of 'not A' is:"
+      },
+      "choices": [
+        {
+          "en": "0.6"
+        },
+        {
+          "en": "0.4"
+        },
+        {
+          "en": "1.6"
+        },
+        {
+          "en": "0"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "P(not A) = 1 − P(A) = 1 − 0.6 = 0.4."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-011",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "relations-and-functions",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The function f: R → R defined by f(x) = x² is:"
+      },
+      "choices": [
+        {
+          "en": "one-one and onto"
+        },
+        {
+          "en": "one-one but not onto"
+        },
+        {
+          "en": "onto but not one-one"
+        },
+        {
+          "en": "neither one-one nor onto"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Since f(1) = f(-1) = 1, f is not one-one; and no negative real number is an output, so with codomain R it is not onto. Hence it is neither one-one nor onto."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-012",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "inverse-trigonometric-functions",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The principal value of sin⁻¹(sin(2π/3)) is:"
+      },
+      "choices": [
+        {
+          "en": "2π/3"
+        },
+        {
+          "en": "π/6"
+        },
+        {
+          "en": "π/3"
+        },
+        {
+          "en": "-π/3"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Since 2π/3 lies outside [-π/2, π/2], use sin(2π/3) = sin(π - 2π/3) = sin(π/3) = √3/2. Thus sin⁻¹(√3/2) = π/3."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-013",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "matrices",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "Every element on the main diagonal of a skew-symmetric matrix is equal to:"
+      },
+      "choices": [
+        {
+          "en": "1"
+        },
+        {
+          "en": "equal to its trace"
+        },
+        {
+          "en": "0"
+        },
+        {
+          "en": "undefined"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "A skew-symmetric matrix satisfies aᵢⱼ = -aⱼᵢ. For diagonal entries aᵢᵢ = -aᵢᵢ, giving 2aᵢᵢ = 0, so every diagonal element is 0."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-014",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "determinants",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "If A is a 3 × 3 matrix with |A| = 5, then the value of |2A| is:"
+      },
+      "choices": [
+        {
+          "en": "10"
+        },
+        {
+          "en": "20"
+        },
+        {
+          "en": "30"
+        },
+        {
+          "en": "40"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "For an n × n matrix, |kA| = kⁿ|A|. Here n = 3, so |2A| = 2³ × 5 = 8 × 5 = 40."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-015",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "continuity-and-differentiability",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The function f(x) = |x| is:"
+      },
+      "choices": [
+        {
+          "en": "continuous everywhere but not differentiable at x = 0"
+        },
+        {
+          "en": "differentiable everywhere"
+        },
+        {
+          "en": "discontinuous at x = 0"
+        },
+        {
+          "en": "neither continuous nor differentiable at x = 0"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "|x| is continuous for all real x, but at x = 0 the left-hand derivative (-1) and right-hand derivative (+1) differ, so it is not differentiable there."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-016",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "application-of-derivatives",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The function f(x) = x² - 4x + 3 has a local minimum at x =:"
+      },
+      "choices": [
+        {
+          "en": "-2"
+        },
+        {
+          "en": "2"
+        },
+        {
+          "en": "0"
+        },
+        {
+          "en": "4"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "f'(x) = 2x - 4 = 0 gives x = 2, and f''(x) = 2 > 0, confirming a minimum at x = 2."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-017",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "integrals",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "∫ sec²x dx equals:"
+      },
+      "choices": [
+        {
+          "en": "tan x + C"
+        },
+        {
+          "en": "-cot x + C"
+        },
+        {
+          "en": "sec x tan x + C"
+        },
+        {
+          "en": "cot x + C"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Since d/dx(tan x) = sec²x, the integral of sec²x is tan x + C."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-018",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "application-of-integrals",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The area of the region bounded by the line y = x, the x-axis, and the lines x = 0 and x = 2 is:"
+      },
+      "choices": [
+        {
+          "en": "1"
+        },
+        {
+          "en": "4"
+        },
+        {
+          "en": "8"
+        },
+        {
+          "en": "2"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "The area = ∫₀² x dx = [x²/2]₀² = 4/2 = 2 (equivalently, a right triangle of base 2 and height 2)."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-019",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "differential-equations",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The order of the differential equation d²y/dx² + 3(dy/dx)³ + y = 0 is:"
+      },
+      "choices": [
+        {
+          "en": "2"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "3"
+        },
+        {
+          "en": "0"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Order is the highest derivative present. Here the highest is d²y/dx², so the order is 2 (the cube affects degree, not order)."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-020",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "vector-algebra",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "If a and b are two non-zero vectors such that a · b = 0, then a and b are:"
+      },
+      "choices": [
+        {
+          "en": "parallel"
+        },
+        {
+          "en": "perpendicular"
+        },
+        {
+          "en": "equal"
+        },
+        {
+          "en": "anti-parallel"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "a · b = |a||b|cosθ. Since a and b are non-zero, a · b = 0 forces cosθ = 0, i.e. θ = 90°, so the vectors are perpendicular."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-021",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "three-dimensional-geometry",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The direction cosines of the y-axis are:"
+      },
+      "choices": [
+        {
+          "en": "(0, 1, 0)"
+        },
+        {
+          "en": "(1, 0, 0)"
+        },
+        {
+          "en": "(0, 0, 1)"
+        },
+        {
+          "en": "(1, 1, 1)"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The y-axis makes 90°, 0°, 90° with the x, y, z axes respectively, giving direction cosines (cos90°, cos0°, cos90°) = (0, 1, 0)."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-022",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "linear-programming",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "In a linear programming problem, the feasible region is always:"
+      },
+      "choices": [
+        {
+          "en": "a circle"
+        },
+        {
+          "en": "always unbounded"
+        },
+        {
+          "en": "a convex set"
+        },
+        {
+          "en": "a single point"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The feasible region is the intersection of half-planes defined by linear constraints, and such an intersection is always a convex set."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-023",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "probability",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "If A and B are independent events with P(A) = 0.5 and P(B) = 0.4, then P(A ∪ B) equals:"
+      },
+      "choices": [
+        {
+          "en": "0.9"
+        },
+        {
+          "en": "0.7"
+        },
+        {
+          "en": "0.2"
+        },
+        {
+          "en": "0.1"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "For independent events P(A ∩ B) = P(A)P(B) = 0.2, so P(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 0.5 + 0.4 - 0.2 = 0.7."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-024",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "probability",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "If P(A ∩ B) = 0.2 and P(B) = 0.5, then the conditional probability P(A | B) is:"
+      },
+      "choices": [
+        {
+          "en": "0.4"
+        },
+        {
+          "en": "0.1"
+        },
+        {
+          "en": "0.7"
+        },
+        {
+          "en": "1.0"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "P(A | B) = P(A ∩ B) / P(B) = 0.2 / 0.5 = 0.4."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-025",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "integrals",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "∫ 1/(1 + x²) dx equals:"
+      },
+      "choices": [
+        {
+          "en": "sin⁻¹x + C"
+        },
+        {
+          "en": "tan⁻¹x + C"
+        },
+        {
+          "en": "log|1 + x²| + C"
+        },
+        {
+          "en": "sec⁻¹x + C"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The standard result is ∫ dx/(1 + x²) = tan⁻¹x + C, since d/dx(tan⁻¹x) = 1/(1 + x²)."
+      }
+    },
+    {
+      "id": "cbse-12-mathematics-sample-026",
+      "type": "mcq",
+      "exam": "cbse-12",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "continuity-and-differentiability",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 12)",
+      "prompt": {
+        "en": "The derivative of tan x with respect to x is:"
+      },
+      "choices": [
+        {
+          "en": "sec x tan x"
+        },
+        {
+          "en": "sec²x"
+        },
+        {
+          "en": "-cosec²x"
+        },
+        {
+          "en": "-sin x"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Writing tan x = sin x / cos x and applying the quotient rule gives d/dx(tan x) = sec²x."
+      }
+    }
   ]
 }

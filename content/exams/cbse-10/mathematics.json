@@ -1,46 +1,814 @@
 {
-  "exam": "cbse-10", "subject": "mathematics", "draft": true,
+  "exam": "cbse-10",
+  "subject": "mathematics",
+  "draft": true,
   "note": "SAMPLE CBSE Class 10 board-pattern questions (source 'Sample (CBSE 10)'). Replace with verified board PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "cbse-10-mathematics-sample-001", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "real-numbers", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "For two positive integers, HCF × LCM equals:" },
-      "choices": [ { "en": "The sum of the two numbers" }, { "en": "The product of the two numbers" }, { "en": "The larger number" }, { "en": "The difference of the numbers" } ], "answerIndex": 1,
-      "solution": { "en": "For any two positive integers a and b, HCF(a,b) × LCM(a,b) = a × b." } },
-    { "id": "cbse-10-mathematics-sample-002", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "quadratic-equations", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "The roots of the quadratic equation x² − 5x + 6 = 0 are:" },
-      "choices": [ { "en": "2 and 3" }, { "en": "1 and 6" }, { "en": "−2 and −3" }, { "en": "5 and 6" } ], "answerIndex": 0,
-      "solution": { "en": "x² − 5x + 6 = (x−2)(x−3) = 0, so x = 2 or x = 3. They add to 5 and multiply to 6, matching the equation." } },
-    { "id": "cbse-10-mathematics-sample-003", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "coordinate-geometry", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "The distance between the points (0, 0) and (3, 4) is:" },
-      "choices": [ { "en": "5" }, { "en": "7" }, { "en": "12" }, { "en": "25" } ], "answerIndex": 0,
-      "solution": { "en": "Distance = √((3−0)² + (4−0)²) = √(9 + 16) = √25 = 5." } },
-    { "id": "cbse-10-mathematics-sample-004", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "trigonometry", "difficulty": 1, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "The value of sin 30° is:" },
-      "choices": [ { "en": "1" }, { "en": "1/2" }, { "en": "√3/2" }, { "en": "0" } ], "answerIndex": 1,
-      "solution": { "en": "sin 30° = 1/2. (cos 30° = √3/2 and tan 30° = 1/√3.)" } },
-    { "id": "cbse-10-mathematics-sample-005", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "arithmetic-progressions", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "In an AP with first term a and common difference d, the nth term is:" },
-      "choices": [ { "en": "a + nd" }, { "en": "a + (n − 1)d" }, { "en": "a − (n − 1)d" }, { "en": "na + d" } ], "answerIndex": 1,
-      "solution": { "en": "The nth term of an arithmetic progression is aₙ = a + (n − 1)d." } },
-    { "id": "cbse-10-mathematics-sample-006", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "probability", "difficulty": 1, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "The probability of getting a head when a fair coin is tossed once is:" },
-      "choices": [ { "en": "1" }, { "en": "0" }, { "en": "1/2" }, { "en": "2" } ], "answerIndex": 2,
-      "solution": { "en": "There are 2 equally likely outcomes (head, tail), so P(head) = 1/2." } },
-    { "id": "cbse-10-mathematics-sample-007", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "circles", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "The area of a circle of radius 7 cm (take π = 22/7) is:" },
-      "choices": [ { "en": "44 cm²" }, { "en": "154 cm²" }, { "en": "22 cm²" }, { "en": "49 cm²" } ], "answerIndex": 1,
-      "solution": { "en": "Area = πr² = (22/7) × 7 × 7 = 22 × 7 = 154 cm²." } },
-    { "id": "cbse-10-mathematics-sample-008", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "quadratic-equations", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "The discriminant of the quadratic equation ax² + bx + c = 0 is:" },
-      "choices": [ { "en": "b² − 4ac" }, { "en": "b² + 4ac" }, { "en": "2a + b" }, { "en": "√(b² − 4ac)" } ], "answerIndex": 0,
-      "solution": { "en": "The discriminant is D = b² − 4ac. It decides the nature of the roots: real & distinct (D>0), equal (D=0), or no real roots (D<0)." } },
-    { "id": "cbse-10-mathematics-sample-009", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "trigonometry", "difficulty": 1, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "The value of tan 45° is:" },
-      "choices": [ { "en": "0" }, { "en": "1" }, { "en": "√3" }, { "en": "1/2" } ], "answerIndex": 1,
-      "solution": { "en": "tan 45° = 1, because sin 45° = cos 45° = 1/√2, so their ratio is 1." } },
-    { "id": "cbse-10-mathematics-sample-010", "type": "mcq", "exam": "cbse-10", "subject": "mathematics", "year": null, "topic": "polynomials", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "The sum of the zeroes of the polynomial x² − 7x + 10 is:" },
-      "choices": [ { "en": "7" }, { "en": "10" }, { "en": "−7" }, { "en": "3" } ], "answerIndex": 0,
-      "solution": { "en": "For ax² + bx + c, the sum of zeroes = −b/a = −(−7)/1 = 7. (The zeroes are 2 and 5.)" } }
+    {
+      "id": "cbse-10-mathematics-sample-001",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "real-numbers",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "For two positive integers, HCF × LCM equals:"
+      },
+      "choices": [
+        {
+          "en": "The sum of the two numbers"
+        },
+        {
+          "en": "The product of the two numbers"
+        },
+        {
+          "en": "The larger number"
+        },
+        {
+          "en": "The difference of the numbers"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "For any two positive integers a and b, HCF(a,b) × LCM(a,b) = a × b."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-002",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "quadratic-equations",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "The roots of the quadratic equation x² − 5x + 6 = 0 are:"
+      },
+      "choices": [
+        {
+          "en": "2 and 3"
+        },
+        {
+          "en": "1 and 6"
+        },
+        {
+          "en": "−2 and −3"
+        },
+        {
+          "en": "5 and 6"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "x² − 5x + 6 = (x−2)(x−3) = 0, so x = 2 or x = 3. They add to 5 and multiply to 6, matching the equation."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-003",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "coordinate-geometry",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "The distance between the points (0, 0) and (3, 4) is:"
+      },
+      "choices": [
+        {
+          "en": "5"
+        },
+        {
+          "en": "7"
+        },
+        {
+          "en": "12"
+        },
+        {
+          "en": "25"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Distance = √((3−0)² + (4−0)²) = √(9 + 16) = √25 = 5."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-004",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "trigonometry",
+      "difficulty": 1,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "The value of sin 30° is:"
+      },
+      "choices": [
+        {
+          "en": "1"
+        },
+        {
+          "en": "1/2"
+        },
+        {
+          "en": "√3/2"
+        },
+        {
+          "en": "0"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "sin 30° = 1/2. (cos 30° = √3/2 and tan 30° = 1/√3.)"
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-005",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "arithmetic-progressions",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "In an AP with first term a and common difference d, the nth term is:"
+      },
+      "choices": [
+        {
+          "en": "a + nd"
+        },
+        {
+          "en": "a + (n − 1)d"
+        },
+        {
+          "en": "a − (n − 1)d"
+        },
+        {
+          "en": "na + d"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The nth term of an arithmetic progression is aₙ = a + (n − 1)d."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-006",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "probability",
+      "difficulty": 1,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "The probability of getting a head when a fair coin is tossed once is:"
+      },
+      "choices": [
+        {
+          "en": "1"
+        },
+        {
+          "en": "0"
+        },
+        {
+          "en": "1/2"
+        },
+        {
+          "en": "2"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "There are 2 equally likely outcomes (head, tail), so P(head) = 1/2."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-007",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "circles",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "The area of a circle of radius 7 cm (take π = 22/7) is:"
+      },
+      "choices": [
+        {
+          "en": "44 cm²"
+        },
+        {
+          "en": "154 cm²"
+        },
+        {
+          "en": "22 cm²"
+        },
+        {
+          "en": "49 cm²"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Area = πr² = (22/7) × 7 × 7 = 22 × 7 = 154 cm²."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-008",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "quadratic-equations",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "The discriminant of the quadratic equation ax² + bx + c = 0 is:"
+      },
+      "choices": [
+        {
+          "en": "b² − 4ac"
+        },
+        {
+          "en": "b² + 4ac"
+        },
+        {
+          "en": "2a + b"
+        },
+        {
+          "en": "√(b² − 4ac)"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The discriminant is D = b² − 4ac. It decides the nature of the roots: real & distinct (D>0), equal (D=0), or no real roots (D<0)."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-009",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "trigonometry",
+      "difficulty": 1,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "The value of tan 45° is:"
+      },
+      "choices": [
+        {
+          "en": "0"
+        },
+        {
+          "en": "1"
+        },
+        {
+          "en": "√3"
+        },
+        {
+          "en": "1/2"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "tan 45° = 1, because sin 45° = cos 45° = 1/√2, so their ratio is 1."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-010",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "polynomials",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "The sum of the zeroes of the polynomial x² − 7x + 10 is:"
+      },
+      "choices": [
+        {
+          "en": "7"
+        },
+        {
+          "en": "10"
+        },
+        {
+          "en": "−7"
+        },
+        {
+          "en": "3"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "For ax² + bx + c, the sum of zeroes = −b/a = −(−7)/1 = 7. (The zeroes are 2 and 5.)"
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-011",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "real-numbers",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The HCF of two numbers is 9 and their LCM is 90. If one of the numbers is 18, the other number is:"
+      },
+      "choices": [
+        {
+          "en": "40"
+        },
+        {
+          "en": "50"
+        },
+        {
+          "en": "45"
+        },
+        {
+          "en": "9"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "For two numbers, product = HCF × LCM = 9 × 90 = 810. The other number = 810 ÷ 18 = 45."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-012",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "real-numbers",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which of the following rational numbers has a terminating decimal expansion?"
+      },
+      "choices": [
+        {
+          "en": "3/8"
+        },
+        {
+          "en": "5/6"
+        },
+        {
+          "en": "7/15"
+        },
+        {
+          "en": "11/12"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "A fraction in lowest terms terminates only if the denominator has prime factors 2 and/or 5. Here 8 = 2³, so 3/8 terminates; the others have factors 3."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-013",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "polynomials",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The product of the zeroes of the quadratic polynomial 2x² − 5x − 3 is:"
+      },
+      "choices": [
+        {
+          "en": "3/2"
+        },
+        {
+          "en": "5/2"
+        },
+        {
+          "en": "-5/2"
+        },
+        {
+          "en": "-3/2"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "For ax² + bx + c, the product of zeroes = c/a = -3/2."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-014",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "polynomials",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "A quadratic polynomial whose zeroes are 3 and −2 is:"
+      },
+      "choices": [
+        {
+          "en": "x² + x − 6"
+        },
+        {
+          "en": "x² − x + 6"
+        },
+        {
+          "en": "x² − x − 6"
+        },
+        {
+          "en": "x² + 5x + 6"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Sum of zeroes = 3 + (−2) = 1, product = 3 × (−2) = −6. The polynomial is x² − (sum)x + product = x² − x − 6."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-015",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "linear-equations",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "For what value of k does the pair of equations 2x + 3y = 7 and 4x + 6y = k have infinitely many solutions?"
+      },
+      "choices": [
+        {
+          "en": "7"
+        },
+        {
+          "en": "10"
+        },
+        {
+          "en": "28"
+        },
+        {
+          "en": "14"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "Infinitely many solutions require a1/a2 = b1/b2 = c1/c2, i.e. 2/4 = 3/6 = 7/k. So 1/2 = 7/k gives k = 14."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-016",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "quadratic-equations",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The nature of the roots of the quadratic equation x² + x + 1 = 0 is:"
+      },
+      "choices": [
+        {
+          "en": "Two distinct real roots"
+        },
+        {
+          "en": "Two equal real roots"
+        },
+        {
+          "en": "No real roots"
+        },
+        {
+          "en": "Exactly one real root"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Discriminant = b² − 4ac = 1 − 4 = −3 < 0, so the equation has no real roots."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-017",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "quadratic-equations",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "For what positive value of k does the equation x² − kx + 9 = 0 have two equal roots?"
+      },
+      "choices": [
+        {
+          "en": "3"
+        },
+        {
+          "en": "6"
+        },
+        {
+          "en": "9"
+        },
+        {
+          "en": "12"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Equal roots need discriminant = 0: k² − 4(9) = 0, so k² = 36 and the positive value is k = 6."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-018",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "arithmetic-progressions",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The sum of the first 10 terms of the AP 2, 4, 6, 8, ... is:"
+      },
+      "choices": [
+        {
+          "en": "90"
+        },
+        {
+          "en": "100"
+        },
+        {
+          "en": "120"
+        },
+        {
+          "en": "110"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "S_n = n/2[2a + (n−1)d] = 10/2[2(2) + 9(2)] = 5[4 + 18] = 5 × 22 = 110."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-019",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "arithmetic-progressions",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "In an AP, the 3rd term is 12 and the 7th term is 24. The common difference is:"
+      },
+      "choices": [
+        {
+          "en": "3"
+        },
+        {
+          "en": "2"
+        },
+        {
+          "en": "4"
+        },
+        {
+          "en": "6"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "a + 2d = 12 and a + 6d = 24. Subtracting gives 4d = 12, so d = 3."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-020",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "triangles",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The areas of two similar triangles are in the ratio 9 : 16. The ratio of their corresponding sides is:"
+      },
+      "choices": [
+        {
+          "en": "9 : 16"
+        },
+        {
+          "en": "3 : 4"
+        },
+        {
+          "en": "81 : 256"
+        },
+        {
+          "en": "3 : 16"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "In similar triangles, the ratio of areas equals the square of the ratio of corresponding sides. So sides are in ratio √9 : √16 = 3 : 4."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-021",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "triangles",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "In triangle ABC, DE is drawn parallel to BC with D on AB and E on AC. If AD = 2 cm, DB = 3 cm and AE = 4 cm, then EC equals:"
+      },
+      "choices": [
+        {
+          "en": "3 cm"
+        },
+        {
+          "en": "5 cm"
+        },
+        {
+          "en": "8 cm"
+        },
+        {
+          "en": "6 cm"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "By the Basic Proportionality Theorem, AD/DB = AE/EC. So 2/3 = 4/EC, giving EC = 6 cm."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-022",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "coordinate-geometry",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The point that divides the line segment joining (1, 2) and (7, 8) internally in the ratio 1 : 2 is:"
+      },
+      "choices": [
+        {
+          "en": "(3, 4)"
+        },
+        {
+          "en": "(5, 6)"
+        },
+        {
+          "en": "(4, 5)"
+        },
+        {
+          "en": "(3, 3)"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Section formula: x = (1·7 + 2·1)/3 = 9/3 = 3, y = (1·8 + 2·2)/3 = 12/3 = 4. The point is (3, 4)."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-023",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "trigonometry",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "If θ is an acute angle and sin θ = cos θ, then θ equals:"
+      },
+      "choices": [
+        {
+          "en": "30°"
+        },
+        {
+          "en": "45°"
+        },
+        {
+          "en": "60°"
+        },
+        {
+          "en": "90°"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "sin θ = cos θ gives tan θ = 1, and the acute angle with tangent 1 is 45°."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-024",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "heights-and-distances",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "When the angle of elevation of the Sun is 45°, a vertical pole casts a shadow 15 m long on the ground. The height of the pole is:"
+      },
+      "choices": [
+        {
+          "en": "7.5 m"
+        },
+        {
+          "en": "15 m"
+        },
+        {
+          "en": "15√3 m"
+        },
+        {
+          "en": "30 m"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "tan 45° = height/shadow = 1, so height = shadow length = 15 m."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-025",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "circles",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The length of the tangent drawn from a point 13 cm away from the centre of a circle of radius 5 cm is:"
+      },
+      "choices": [
+        {
+          "en": "8 cm"
+        },
+        {
+          "en": "12 cm"
+        },
+        {
+          "en": "18 cm"
+        },
+        {
+          "en": "√194 cm"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The tangent is perpendicular to the radius, so tangent length = √(13² − 5²) = √(169 − 25) = √144 = 12 cm."
+      }
+    },
+    {
+      "id": "cbse-10-mathematics-sample-026",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "mathematics",
+      "year": null,
+      "topic": "statistics",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The empirical relationship between the mean, median and mode of a frequency distribution is:"
+      },
+      "choices": [
+        {
+          "en": "Mode = 3 Mean − 2 Median"
+        },
+        {
+          "en": "Mode = 3 Median − 2 Mean"
+        },
+        {
+          "en": "Mode = 2 Median − 3 Mean"
+        },
+        {
+          "en": "Mode = Median − Mean"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The standard empirical relation is Mode = 3 Median − 2 Mean."
+      }
+    }
   ]
 }

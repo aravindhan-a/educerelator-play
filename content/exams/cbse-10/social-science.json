@@ -1,30 +1,690 @@
 {
-  "exam": "cbse-10", "subject": "social-science", "draft": true,
+  "exam": "cbse-10",
+  "subject": "social-science",
+  "draft": true,
   "note": "SAMPLE Class 10 board-pattern questions (source 'Sample (CBSE Class 10)'). Replace with verified real CBSE board PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "cbse-10-social-science-sample-001", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "nationalism-in-india", "difficulty": 2, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "The Indian National Congress adopted the resolution of 'Poorna Swaraj' (complete independence) at its 1929 session held in:" },
-      "choices": [ { "en": "Lahore" }, { "en": "Surat" }, { "en": "Lucknow" }, { "en": "Karachi" } ], "answerIndex": 0,
-      "solution": { "en": "At the Lahore session of 1929 (presided over by Jawaharlal Nehru), the Congress adopted the goal of Poorna Swaraj; 26 January 1930 was observed as the first Independence Day." } },
-    { "id": "cbse-10-social-science-sample-002", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "agriculture", "difficulty": 2, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "Which type of soil is best suited for the cultivation of cotton?" },
-      "choices": [ { "en": "Alluvial soil" }, { "en": "Black soil" }, { "en": "Laterite soil" }, { "en": "Red soil" } ], "answerIndex": 1,
-      "solution": { "en": "Black soil (regur), rich in clay and retaining moisture well, is ideal for cotton — hence its other name, 'black cotton soil'." } },
-    { "id": "cbse-10-social-science-sample-003", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "democratic-politics", "difficulty": 1, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "In India, the right to vote in elections is given to every citizen who has attained the age of:" },
-      "choices": [ { "en": "16 years" }, { "en": "18 years" }, { "en": "21 years" }, { "en": "25 years" } ], "answerIndex": 1,
-      "solution": { "en": "The voting age in India is 18 years, lowered from 21 by the 61st Constitutional Amendment (1988). 25 is the minimum age to contest a Lok Sabha election." } },
-    { "id": "cbse-10-social-science-sample-004", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "agriculture", "difficulty": 2, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "Which of the following is a Kharif (monsoon-season) crop?" },
-      "choices": [ { "en": "Wheat" }, { "en": "Rice" }, { "en": "Mustard" }, { "en": "Gram" } ], "answerIndex": 1,
-      "solution": { "en": "Rice (paddy) is a Kharif crop, sown with the monsoon (June–July) and harvested in autumn. Wheat, mustard and gram are Rabi (winter) crops." } },
-    { "id": "cbse-10-social-science-sample-005", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "money-and-credit", "difficulty": 1, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "The headquarters of the Reserve Bank of India is located in:" },
-      "choices": [ { "en": "New Delhi" }, { "en": "Kolkata" }, { "en": "Mumbai" }, { "en": "Chennai" } ], "answerIndex": 2,
-      "solution": { "en": "The Reserve Bank of India is headquartered in Mumbai, Maharashtra." } },
-    { "id": "cbse-10-social-science-sample-006", "type": "mcq", "exam": "cbse-10", "subject": "social-science", "year": null, "topic": "national-symbols", "difficulty": 1, "source": "Sample (CBSE Class 10)",
-      "prompt": { "en": "The Ashoka Chakra at the centre of the Indian national flag has how many spokes?" },
-      "choices": [ { "en": "12" }, { "en": "16" }, { "en": "24" }, { "en": "32" } ], "answerIndex": 2,
-      "solution": { "en": "The Ashoka Chakra (wheel of law) on the tricolour has 24 spokes, adapted from the Lion Capital of Ashoka at Sarnath." } }
+    {
+      "id": "cbse-10-social-science-sample-001",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "nationalism-in-india",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The Indian National Congress adopted the resolution of 'Poorna Swaraj' (complete independence) at its 1929 session held in:"
+      },
+      "choices": [
+        {
+          "en": "Lahore"
+        },
+        {
+          "en": "Surat"
+        },
+        {
+          "en": "Lucknow"
+        },
+        {
+          "en": "Karachi"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "At the Lahore session of 1929 (presided over by Jawaharlal Nehru), the Congress adopted the goal of Poorna Swaraj; 26 January 1930 was observed as the first Independence Day."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-002",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "agriculture",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which type of soil is best suited for the cultivation of cotton?"
+      },
+      "choices": [
+        {
+          "en": "Alluvial soil"
+        },
+        {
+          "en": "Black soil"
+        },
+        {
+          "en": "Laterite soil"
+        },
+        {
+          "en": "Red soil"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Black soil (regur), rich in clay and retaining moisture well, is ideal for cotton — hence its other name, 'black cotton soil'."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-003",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "democratic-politics",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "In India, the right to vote in elections is given to every citizen who has attained the age of:"
+      },
+      "choices": [
+        {
+          "en": "16 years"
+        },
+        {
+          "en": "18 years"
+        },
+        {
+          "en": "21 years"
+        },
+        {
+          "en": "25 years"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The voting age in India is 18 years, lowered from 21 by the 61st Constitutional Amendment (1988). 25 is the minimum age to contest a Lok Sabha election."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-004",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "agriculture",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which of the following is a Kharif (monsoon-season) crop?"
+      },
+      "choices": [
+        {
+          "en": "Wheat"
+        },
+        {
+          "en": "Rice"
+        },
+        {
+          "en": "Mustard"
+        },
+        {
+          "en": "Gram"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Rice (paddy) is a Kharif crop, sown with the monsoon (June–July) and harvested in autumn. Wheat, mustard and gram are Rabi (winter) crops."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-005",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "money-and-credit",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The headquarters of the Reserve Bank of India is located in:"
+      },
+      "choices": [
+        {
+          "en": "New Delhi"
+        },
+        {
+          "en": "Kolkata"
+        },
+        {
+          "en": "Mumbai"
+        },
+        {
+          "en": "Chennai"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The Reserve Bank of India is headquartered in Mumbai, Maharashtra."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-006",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "national-symbols",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The Ashoka Chakra at the centre of the Indian national flag has how many spokes?"
+      },
+      "choices": [
+        {
+          "en": "12"
+        },
+        {
+          "en": "16"
+        },
+        {
+          "en": "24"
+        },
+        {
+          "en": "32"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The Ashoka Chakra (wheel of law) on the tricolour has 24 spokes, adapted from the Lion Capital of Ashoka at Sarnath."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-007",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "nationalism-in-india",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The Rowlatt Act of 1919 was strongly opposed by Indians primarily because it"
+      },
+      "choices": [
+        {
+          "en": "reserved all government jobs for the British"
+        },
+        {
+          "en": "allowed detention of political prisoners without trial"
+        },
+        {
+          "en": "imposed a heavy tax on salt production"
+        },
+        {
+          "en": "banned the Indian National Congress entirely"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Rowlatt Act gave the government sweeping powers to repress political activities and allowed detention of political prisoners without trial for up to two years, which is why it provoked widespread anger."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-008",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "age-of-industrialisation",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "In the 19th century, the demand for goods like cloth was mainly created by British Manchester manufacturers through"
+      },
+      "choices": [
+        {
+          "en": "lowering the quality of their products"
+        },
+        {
+          "en": "advertisements and appealing labels on their goods"
+        },
+        {
+          "en": "banning the sale of Indian handmade cloth"
+        },
+        {
+          "en": "distributing cloth free of cost to weavers"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Advertisements, images of gods, and labels naming Manchester were used to make products appear desirable and familiar, helping to expand markets and create new demand for factory goods."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-009",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "print-culture-and-the-modern-world",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which of the following best explains why the print revolution encouraged the growth of nationalist sentiment in Europe?"
+      },
+      "choices": [
+        {
+          "en": "It made books more expensive and exclusive"
+        },
+        {
+          "en": "It allowed ideas to circulate widely and be debated publicly"
+        },
+        {
+          "en": "It replaced spoken languages with a single common language"
+        },
+        {
+          "en": "It was controlled entirely by the ruling monarchs"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The spread of print allowed new ideas to reach large numbers of people who could read, discuss and debate them, creating a wider public sphere in which nationalist ideas could grow."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-010",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "resources-and-development",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The Ring of Fire, a zone of high seismic and volcanic activity, is associated with which ocean?"
+      },
+      "choices": [
+        {
+          "en": "Atlantic Ocean"
+        },
+        {
+          "en": "Indian Ocean"
+        },
+        {
+          "en": "Pacific Ocean"
+        },
+        {
+          "en": "Arctic Ocean"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The Ring of Fire encircles the Pacific Ocean, where numerous tectonic plate boundaries produce frequent earthquakes and volcanic eruptions."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-011",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "water-resources",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Rainwater harvesting is promoted mainly because it helps to"
+      },
+      "choices": [
+        {
+          "en": "increase the salinity of the soil"
+        },
+        {
+          "en": "recharge groundwater and conserve water"
+        },
+        {
+          "en": "generate electricity from rainfall"
+        },
+        {
+          "en": "reduce the height of water tables permanently"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Rainwater harvesting stores rainwater or recharges it into the ground, raising groundwater levels and helping conserve water for use during dry periods."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-012",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "minerals-and-energy-resources",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which mineral is described as the 'mother of all industries' because it is fundamental to the manufacture of machinery, tools and other metals?"
+      },
+      "choices": [
+        {
+          "en": "Bauxite"
+        },
+        {
+          "en": "Iron ore"
+        },
+        {
+          "en": "Mica"
+        },
+        {
+          "en": "Limestone"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Iron ore is basic to industrial development; it is used to make iron and steel, which in turn are needed to make machinery and countless other products, making it the backbone of industry."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-013",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "lifelines-of-national-economy",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "On a railway map of India, which physical feature was the greatest obstacle to laying north-south railway lines across the peninsula?"
+      },
+      "choices": [
+        {
+          "en": "The Northern Plains"
+        },
+        {
+          "en": "The Thar Desert"
+        },
+        {
+          "en": "The Western and Eastern Ghats"
+        },
+        {
+          "en": "The Sundarbans delta"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The rugged terrain of the Western and Eastern Ghats made railway construction across the peninsula difficult and costly, requiring tunnels and bridges."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-014",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "power-sharing",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Belgium adopted a special system of power sharing partly because"
+      },
+      "choices": [
+        {
+          "en": "it had no linguistic minorities"
+        },
+        {
+          "en": "the Dutch and French speaking communities were roughly balanced and tensions existed"
+        },
+        {
+          "en": "its people all spoke a single common language"
+        },
+        {
+          "en": "the central government wanted absolute control"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Belgium's leaders designed an innovative arrangement to accommodate the Dutch-speaking, French-speaking and German-speaking communities, respecting feelings and interests of the different groups to avoid conflict."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-015",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "federalism",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which of the following is the best example of a 'coming together' federation?"
+      },
+      "choices": [
+        {
+          "en": "India"
+        },
+        {
+          "en": "Spain"
+        },
+        {
+          "en": "The United States of America"
+        },
+        {
+          "en": "Sri Lanka"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "In a 'coming together' federation, independent states unite to form a larger unit, pooling sovereignty while retaining identity, as the USA did; India is a 'holding together' federation."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-016",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "political-parties",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "A political party is different from a pressure group mainly because a political party"
+      },
+      "choices": [
+        {
+          "en": "works only for one section of society"
+        },
+        {
+          "en": "aims to contest elections and hold political power"
+        },
+        {
+          "en": "never influences government policy"
+        },
+        {
+          "en": "is not allowed to have any ideology"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Parties seek to win elections and control government, whereas pressure groups try to influence policies without themselves contesting elections or seeking to form the government."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-017",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "outcomes-of-democracy",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The practice of designating certain constituencies where only candidates from Scheduled Castes or Scheduled Tribes can stand is meant to"
+      },
+      "choices": [
+        {
+          "en": "reduce the number of voters"
+        },
+        {
+          "en": "give weaker sections fair representation in legislatures"
+        },
+        {
+          "en": "increase the power of the majority community"
+        },
+        {
+          "en": "abolish elections in those areas"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Reserved constituencies ensure that Scheduled Castes and Scheduled Tribes get adequate representation in law-making bodies, an accommodation to help disadvantaged groups."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-018",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "development",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which of the following is the most reliable indicator of a country's overall human development, rather than just its wealth?"
+      },
+      "choices": [
+        {
+          "en": "Total gold reserves"
+        },
+        {
+          "en": "Per capita income alone"
+        },
+        {
+          "en": "A combination of income, education and health"
+        },
+        {
+          "en": "The number of factories"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Human development is measured using several dimensions together income, education and health as in the Human Development Index rather than income alone, which ignores well-being."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-019",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "sectors-of-the-indian-economy",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "In which sector of the economy would the work of a school teacher employed by a private school be counted?"
+      },
+      "choices": [
+        {
+          "en": "Primary sector"
+        },
+        {
+          "en": "Secondary sector"
+        },
+        {
+          "en": "Tertiary sector"
+        },
+        {
+          "en": "Manufacturing sector"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Teaching provides a service rather than producing goods or extracting natural resources, so it belongs to the tertiary (service) sector."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-020",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "money-and-credit",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The main reason banks and cooperatives are preferred over moneylenders for rural credit is that they usually charge"
+      },
+      "choices": [
+        {
+          "en": "higher interest and demand no collateral"
+        },
+        {
+          "en": "lower interest rates on loans"
+        },
+        {
+          "en": "interest only in the form of crops"
+        },
+        {
+          "en": "no interest but seize the borrower's land"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Formal sources such as banks and cooperatives generally charge much lower interest rates than informal moneylenders, reducing the debt burden on borrowers."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-021",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "globalisation-and-the-indian-economy",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "A major disadvantage of globalisation for many small Indian producers has been that they"
+      },
+      "choices": [
+        {
+          "en": "received large subsidies from foreign companies"
+        },
+        {
+          "en": "faced tough competition from cheaper imported goods"
+        },
+        {
+          "en": "were forced to export all their products"
+        },
+        {
+          "en": "gained monopoly control over world markets"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Greater competition from imports and multinational companies hurt many small manufacturers, some of whom could not survive against cheaper or better-marketed foreign products."
+      }
+    },
+    {
+      "id": "cbse-10-social-science-sample-022",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "social-science",
+      "year": null,
+      "topic": "consumer-rights",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "The COPRA (Consumer Protection Act) mechanism allowing a consumer to appeal from a district forum to state and national commissions reflects the consumer's right to"
+      },
+      "choices": [
+        {
+          "en": "be informed about products"
+        },
+        {
+          "en": "seek redressal against unfair trade practices"
+        },
+        {
+          "en": "form consumer organisations"
+        },
+        {
+          "en": "choose between different sellers"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The three-tier judicial machinery under COPRA lets consumers file complaints and appeal to higher levels, giving effect to the right to seek redressal against exploitation or unfair practices."
+      }
+    }
   ]
 }

@@ -1,46 +1,814 @@
 {
-  "exam": "cbse-10", "subject": "english", "draft": true,
+  "exam": "cbse-10",
+  "subject": "english",
+  "draft": true,
   "note": "SAMPLE CBSE Class 10 board-pattern questions (source 'Sample (CBSE 10)'). Replace with verified board PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "cbse-10-english-sample-001", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "grammar", "difficulty": 1, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "What is the past participle of the verb 'write'?" },
-      "choices": [ { "en": "wrote" }, { "en": "written" }, { "en": "writed" }, { "en": "writing" } ], "answerIndex": 1,
-      "solution": { "en": "'Write' is irregular: past tense 'wrote', past participle 'written' (has written)." } },
-    { "id": "cbse-10-english-sample-002", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "literary-devices", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "Identify the figure of speech: 'She sings like a nightingale.'" },
-      "choices": [ { "en": "Metaphor" }, { "en": "Simile" }, { "en": "Personification" }, { "en": "Hyperbole" } ], "answerIndex": 1,
-      "solution": { "en": "It is a simile — a direct comparison using 'like'. A metaphor would omit 'like'/'as' (e.g. 'She is a nightingale')." } },
-    { "id": "cbse-10-english-sample-003", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "vocabulary", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "Choose the antonym of 'ancient':" },
-      "choices": [ { "en": "old" }, { "en": "modern" }, { "en": "historic" }, { "en": "antique" } ], "answerIndex": 1,
-      "solution": { "en": "'Ancient' means very old; its opposite is 'modern'. The other options are near-synonyms of ancient." } },
-    { "id": "cbse-10-english-sample-004", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "grammar", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "Choose the correct passive form: 'The teacher praised the student.'" },
-      "choices": [ { "en": "The student was praised by the teacher." }, { "en": "The student is praising the teacher." }, { "en": "The student praised the teacher." }, { "en": "The teacher was praised by the student." } ], "answerIndex": 0,
-      "solution": { "en": "In the passive voice the object ('the student') becomes the subject and the verb becomes 'was praised': 'The student was praised by the teacher.'" } },
-    { "id": "cbse-10-english-sample-005", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "vocabulary", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "Choose the synonym of 'brave':" },
-      "choices": [ { "en": "timid" }, { "en": "courageous" }, { "en": "weak" }, { "en": "foolish" } ], "answerIndex": 1,
-      "solution": { "en": "'Brave' means showing courage, so 'courageous' is the synonym. 'Timid' and 'weak' are opposites." } },
-    { "id": "cbse-10-english-sample-006", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "grammar", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "Choose the correct reported speech: He said, 'I am tired.'" },
-      "choices": [ { "en": "He said that he was tired." }, { "en": "He said that I am tired." }, { "en": "He says he is tired." }, { "en": "He said that he is tired." } ], "answerIndex": 0,
-      "solution": { "en": "In reported speech the tense shifts back and the pronoun changes: present 'am' → past 'was', 'I' → 'he'. So: 'He said that he was tired.'" } },
-    { "id": "cbse-10-english-sample-007", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "grammar", "difficulty": 1, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "Fill in the blank with the correct article: 'She is ___ honest person.'" },
-      "choices": [ { "en": "a" }, { "en": "an" }, { "en": "the" }, { "en": "no article" } ], "answerIndex": 1,
-      "solution": { "en": "'Honest' begins with a silent 'h', so it starts with a vowel sound and takes 'an': 'an honest person'." } },
-    { "id": "cbse-10-english-sample-008", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "literary-devices", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "Identify the figure of speech: 'The wind whispered through the trees.'" },
-      "choices": [ { "en": "Simile" }, { "en": "Personification" }, { "en": "Metaphor" }, { "en": "Alliteration" } ], "answerIndex": 1,
-      "solution": { "en": "Giving the human action 'whispered' to the non-human 'wind' is personification." } },
-    { "id": "cbse-10-english-sample-009", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "grammar", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "Choose the correctly punctuated sentence:" },
-      "choices": [ { "en": "Where are you going" }, { "en": "Where are you going?" }, { "en": "Where are you going." }, { "en": "where are you going?" } ], "answerIndex": 1,
-      "solution": { "en": "A question needs a capital first letter and a question mark: 'Where are you going?'" } },
-    { "id": "cbse-10-english-sample-010", "type": "mcq", "exam": "cbse-10", "subject": "english", "year": null, "topic": "vocabulary", "difficulty": 2, "source": "Sample (CBSE 10)",
-      "prompt": { "en": "The word 'reluctant' means:" },
-      "choices": [ { "en": "eager" }, { "en": "unwilling" }, { "en": "cheerful" }, { "en": "confident" } ], "answerIndex": 1,
-      "solution": { "en": "'Reluctant' means unwilling or hesitant to do something — the opposite of 'eager'." } }
+    {
+      "id": "cbse-10-english-sample-001",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 1,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "What is the past participle of the verb 'write'?"
+      },
+      "choices": [
+        {
+          "en": "wrote"
+        },
+        {
+          "en": "written"
+        },
+        {
+          "en": "writed"
+        },
+        {
+          "en": "writing"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Write' is irregular: past tense 'wrote', past participle 'written' (has written)."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-002",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "literary-devices",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "Identify the figure of speech: 'She sings like a nightingale.'"
+      },
+      "choices": [
+        {
+          "en": "Metaphor"
+        },
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Personification"
+        },
+        {
+          "en": "Hyperbole"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "It is a simile — a direct comparison using 'like'. A metaphor would omit 'like'/'as' (e.g. 'She is a nightingale')."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-003",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "Choose the antonym of 'ancient':"
+      },
+      "choices": [
+        {
+          "en": "old"
+        },
+        {
+          "en": "modern"
+        },
+        {
+          "en": "historic"
+        },
+        {
+          "en": "antique"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Ancient' means very old; its opposite is 'modern'. The other options are near-synonyms of ancient."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-004",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "Choose the correct passive form: 'The teacher praised the student.'"
+      },
+      "choices": [
+        {
+          "en": "The student was praised by the teacher."
+        },
+        {
+          "en": "The student is praising the teacher."
+        },
+        {
+          "en": "The student praised the teacher."
+        },
+        {
+          "en": "The teacher was praised by the student."
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "In the passive voice the object ('the student') becomes the subject and the verb becomes 'was praised': 'The student was praised by the teacher.'"
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-005",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "Choose the synonym of 'brave':"
+      },
+      "choices": [
+        {
+          "en": "timid"
+        },
+        {
+          "en": "courageous"
+        },
+        {
+          "en": "weak"
+        },
+        {
+          "en": "foolish"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Brave' means showing courage, so 'courageous' is the synonym. 'Timid' and 'weak' are opposites."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-006",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "Choose the correct reported speech: He said, 'I am tired.'"
+      },
+      "choices": [
+        {
+          "en": "He said that he was tired."
+        },
+        {
+          "en": "He said that I am tired."
+        },
+        {
+          "en": "He says he is tired."
+        },
+        {
+          "en": "He said that he is tired."
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "In reported speech the tense shifts back and the pronoun changes: present 'am' → past 'was', 'I' → 'he'. So: 'He said that he was tired.'"
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-007",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 1,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "Fill in the blank with the correct article: 'She is ___ honest person.'"
+      },
+      "choices": [
+        {
+          "en": "a"
+        },
+        {
+          "en": "an"
+        },
+        {
+          "en": "the"
+        },
+        {
+          "en": "no article"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Honest' begins with a silent 'h', so it starts with a vowel sound and takes 'an': 'an honest person'."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-008",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "literary-devices",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "Identify the figure of speech: 'The wind whispered through the trees.'"
+      },
+      "choices": [
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Personification"
+        },
+        {
+          "en": "Metaphor"
+        },
+        {
+          "en": "Alliteration"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Giving the human action 'whispered' to the non-human 'wind' is personification."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-009",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "grammar",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "Choose the correctly punctuated sentence:"
+      },
+      "choices": [
+        {
+          "en": "Where are you going"
+        },
+        {
+          "en": "Where are you going?"
+        },
+        {
+          "en": "Where are you going."
+        },
+        {
+          "en": "where are you going?"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A question needs a capital first letter and a question mark: 'Where are you going?'"
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-010",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary",
+      "difficulty": 2,
+      "source": "Sample (CBSE 10)",
+      "prompt": {
+        "en": "The word 'reluctant' means:"
+      },
+      "choices": [
+        {
+          "en": "eager"
+        },
+        {
+          "en": "unwilling"
+        },
+        {
+          "en": "cheerful"
+        },
+        {
+          "en": "confident"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Reluctant' means unwilling or hesitant to do something — the opposite of 'eager'."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-011",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "tenses-past-perfect",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Choose the option that correctly fills the blank: 'By the time the fire brigade arrived, the old warehouse ___ completely to ashes.'"
+      },
+      "choices": [
+        {
+          "en": "has burnt"
+        },
+        {
+          "en": "had burnt"
+        },
+        {
+          "en": "is burning"
+        },
+        {
+          "en": "burns"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The past perfect 'had burnt' is needed because the burning was completed before another past action (the brigade's arrival)."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-012",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "question-tags",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Identify the correct question tag: 'Neither of the players turned up for practice, ___'"
+      },
+      "choices": [
+        {
+          "en": "did they?"
+        },
+        {
+          "en": "didn't they?"
+        },
+        {
+          "en": "did he?"
+        },
+        {
+          "en": "didn't he?"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "'Neither' makes the statement negative, so the tag is positive; 'players' (plural subject) takes 'they', giving 'did they?'"
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-013",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "modals",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which sentence uses the modal verb to express a strong prohibition?"
+      },
+      "choices": [
+        {
+          "en": "You need not enter the lab."
+        },
+        {
+          "en": "You must not enter the lab."
+        },
+        {
+          "en": "You may not have entered the lab."
+        },
+        {
+          "en": "You could enter the lab."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Must not' expresses a strong prohibition, telling someone that an action is firmly forbidden."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-014",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "reported-speech-imperative",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Report the following in indirect speech: The captain said to the team, 'Play your best today.'"
+      },
+      "choices": [
+        {
+          "en": "The captain told the team that they played their best that day."
+        },
+        {
+          "en": "The captain urged the team to play their best that day."
+        },
+        {
+          "en": "The captain said the team to play their best today."
+        },
+        {
+          "en": "The captain asked the team if they played their best that day."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "An imperative in reported speech uses a reporting verb like 'urged/told' plus a to-infinitive, and 'today' changes to 'that day'."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-015",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "sentence-combination",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Choose the correctly combined sentence: 'The storm was severe. The match was cancelled.'"
+      },
+      "choices": [
+        {
+          "en": "The storm was severe but the match was cancelled."
+        },
+        {
+          "en": "The storm was so severe that the match was cancelled."
+        },
+        {
+          "en": "The storm was severe or the match was cancelled."
+        },
+        {
+          "en": "Though the storm was severe, the match was cancelled."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'So...that' correctly shows that the severity of the storm caused the match to be cancelled, expressing cause and effect."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-016",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "figures-of-speech",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "In the line 'The clouds wept over the silent valley', the figure of speech used is:"
+      },
+      "choices": [
+        {
+          "en": "Simile"
+        },
+        {
+          "en": "Metaphor"
+        },
+        {
+          "en": "Personification"
+        },
+        {
+          "en": "Hyperbole"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Weeping is a human action given to clouds, so the non-human clouds are personified."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-017",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "subject-verb-agreement",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Choose the option with the correct subject-verb agreement: 'Each of the students ___ a separate desk in the examination hall.'"
+      },
+      "choices": [
+        {
+          "en": "have"
+        },
+        {
+          "en": "were having"
+        },
+        {
+          "en": "has"
+        },
+        {
+          "en": "are having"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "'Each of' takes a singular verb, so 'has' is correct."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-018",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "prepositions",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Fill in the blank with the correct preposition: 'The manager congratulated her ___ winning the national award.'"
+      },
+      "choices": [
+        {
+          "en": "for"
+        },
+        {
+          "en": "on"
+        },
+        {
+          "en": "at"
+        },
+        {
+          "en": "with"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The verb 'congratulate' is followed by 'on' when naming the achievement (congratulate someone on something)."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-019",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "error-correction",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Which sentence is grammatically correct?"
+      },
+      "choices": [
+        {
+          "en": "She is one of the best dancer in the group."
+        },
+        {
+          "en": "She is one of the best dancers in the group."
+        },
+        {
+          "en": "She is one of the best dancers in the groups."
+        },
+        {
+          "en": "She is one of the better dancer in the group."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'One of the' must be followed by a plural noun, so 'dancers' is correct."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-020",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "voice-present-perfect",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Choose the correct passive form: 'Someone has stolen my bicycle.'"
+      },
+      "choices": [
+        {
+          "en": "My bicycle was stolen by someone."
+        },
+        {
+          "en": "My bicycle has been stolen."
+        },
+        {
+          "en": "My bicycle is being stolen."
+        },
+        {
+          "en": "My bicycle had been stolen."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The present perfect active 'has stolen' becomes 'has been stolen' in the passive; the vague agent 'someone' is dropped."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-021",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "vocabulary-synonyms",
+      "difficulty": 1,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Choose the word that is the correct synonym of 'abundant':"
+      },
+      "choices": [
+        {
+          "en": "scarce"
+        },
+        {
+          "en": "plentiful"
+        },
+        {
+          "en": "hidden"
+        },
+        {
+          "en": "fragile"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'Abundant' means existing in large quantities, which matches 'plentiful'."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-022",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "clauses",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Identify the clause in bold and its type: 'The book *that you lent me* was fascinating.'"
+      },
+      "choices": [
+        {
+          "en": "Noun clause"
+        },
+        {
+          "en": "Adjective (relative) clause"
+        },
+        {
+          "en": "Adverb clause of reason"
+        },
+        {
+          "en": "Main clause"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "'That you lent me' describes the noun 'book', functioning as an adjective (relative) clause."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-023",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "conditionals",
+      "difficulty": 3,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Choose the correct option to fill the blank: 'If she ___ harder, she would have cleared the exam.'"
+      },
+      "choices": [
+        {
+          "en": "studies"
+        },
+        {
+          "en": "had studied"
+        },
+        {
+          "en": "studied"
+        },
+        {
+          "en": "would study"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The third conditional uses 'had + past participle' in the if-clause with 'would have' in the main clause to describe an unreal past."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-024",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "parts-of-speech",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Choose the sentence in which the underlined word is used as an adverb: 'They arrived _early_ for the ceremony.'"
+      },
+      "choices": [
+        {
+          "en": "The early bird catches the worm."
+        },
+        {
+          "en": "They arrived early for the ceremony."
+        },
+        {
+          "en": "An early start is advisable."
+        },
+        {
+          "en": "We took the early train."
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "In 'arrived early', the word 'early' modifies the verb 'arrived', so it acts as an adverb; the other options use it as an adjective."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-025",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "determiners",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Fill in the blank with the appropriate determiner: 'There is very ___ water left in the bottle, so drink carefully.'"
+      },
+      "choices": [
+        {
+          "en": "few"
+        },
+        {
+          "en": "many"
+        },
+        {
+          "en": "little"
+        },
+        {
+          "en": "several"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "'Water' is an uncountable noun, so the correct quantifier for a small amount is 'little' (not 'few', which is used with countable nouns)."
+      }
+    },
+    {
+      "id": "cbse-10-english-sample-026",
+      "type": "mcq",
+      "exam": "cbse-10",
+      "subject": "english",
+      "year": null,
+      "topic": "phrasal-verbs",
+      "difficulty": 2,
+      "source": "Sample (CBSE Class 10)",
+      "prompt": {
+        "en": "Choose the option that best completes the sentence with a phrasal verb meaning 'to tolerate': 'I cannot ___ his constant complaining any longer.'"
+      },
+      "choices": [
+        {
+          "en": "put up with"
+        },
+        {
+          "en": "put off"
+        },
+        {
+          "en": "put down"
+        },
+        {
+          "en": "put away"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The phrasal verb 'put up with' means to tolerate or endure something unpleasant."
+      }
+    }
   ]
 }

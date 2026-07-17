@@ -5,52 +5,686 @@
   "note": "SAMPLE foundation-level questions demonstrating the JEE track. Facts are correct and syllabus-relevant, but these are NOT sourced from a specific paper (source = 'Sample (JEE pattern)'). Replace with verified real PYQs + SME solutions and 13-language translations before shipping; then remove the draft flag.",
   "questions": [
     {
-      "id": "jee-physics-sample-001", "type": "mcq", "exam": "jee", "subject": "physics", "year": null,
-      "topic": "units-measurement", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The SI unit of force is the:" },
-      "choices": [ { "en": "Joule" }, { "en": "Newton" }, { "en": "Watt" }, { "en": "Pascal" } ],
+      "id": "jee-physics-sample-001",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "units-measurement",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The SI unit of force is the:"
+      },
+      "choices": [
+        {
+          "en": "Joule"
+        },
+        {
+          "en": "Newton"
+        },
+        {
+          "en": "Watt"
+        },
+        {
+          "en": "Pascal"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "Force is measured in newtons (N), where 1 N = 1 kg·m/s². The joule is the unit of energy, the watt of power, and the pascal of pressure." }
+      "solution": {
+        "en": "Force is measured in newtons (N), where 1 N = 1 kg·m/s². The joule is the unit of energy, the watt of power, and the pascal of pressure."
+      }
     },
     {
-      "id": "jee-physics-sample-002", "type": "mcq", "exam": "jee", "subject": "physics", "year": null,
-      "topic": "mechanics", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The acceleration due to gravity near the Earth's surface is approximately:" },
-      "choices": [ { "en": "9.8 m/s²" }, { "en": "98 m/s²" }, { "en": "0.98 m/s²" }, { "en": "3 × 10⁸ m/s²" } ],
+      "id": "jee-physics-sample-002",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "mechanics",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The acceleration due to gravity near the Earth's surface is approximately:"
+      },
+      "choices": [
+        {
+          "en": "9.8 m/s²"
+        },
+        {
+          "en": "98 m/s²"
+        },
+        {
+          "en": "0.98 m/s²"
+        },
+        {
+          "en": "3 × 10⁸ m/s²"
+        }
+      ],
       "answerIndex": 0,
-      "solution": { "en": "Near the Earth's surface, g ≈ 9.8 m/s² (often taken as 9.81 or 10 for estimates). 3 × 10⁸ m/s is the speed of light, not an acceleration." }
+      "solution": {
+        "en": "Near the Earth's surface, g ≈ 9.8 m/s² (often taken as 9.81 or 10 for estimates). 3 × 10⁸ m/s is the speed of light, not an acceleration."
+      }
     },
     {
-      "id": "jee-physics-sample-003", "type": "mcq", "exam": "jee", "subject": "physics", "year": null,
-      "topic": "electricity", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The SI unit of electric current is the:" },
-      "choices": [ { "en": "Volt" }, { "en": "Ohm" }, { "en": "Ampere" }, { "en": "Coulomb" } ],
+      "id": "jee-physics-sample-003",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "electricity",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The SI unit of electric current is the:"
+      },
+      "choices": [
+        {
+          "en": "Volt"
+        },
+        {
+          "en": "Ohm"
+        },
+        {
+          "en": "Ampere"
+        },
+        {
+          "en": "Coulomb"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "Electric current is measured in amperes (A). The volt is the unit of potential difference, the ohm of resistance, and the coulomb of electric charge." }
+      "solution": {
+        "en": "Electric current is measured in amperes (A). The volt is the unit of potential difference, the ohm of resistance, and the coulomb of electric charge."
+      }
     },
     {
-      "id": "jee-physics-sample-004", "type": "mcq", "exam": "jee", "subject": "physics", "year": null,
-      "topic": "optics", "difficulty": 2, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The splitting of white light into its constituent colours by a prism is called:" },
-      "choices": [ { "en": "Reflection" }, { "en": "Diffraction" }, { "en": "Dispersion" }, { "en": "Polarisation" } ],
+      "id": "jee-physics-sample-004",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "optics",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The splitting of white light into its constituent colours by a prism is called:"
+      },
+      "choices": [
+        {
+          "en": "Reflection"
+        },
+        {
+          "en": "Diffraction"
+        },
+        {
+          "en": "Dispersion"
+        },
+        {
+          "en": "Polarisation"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "Dispersion is the separation of white light into colours because different wavelengths refract by different amounts. Reflection is bouncing back; diffraction is bending around obstacles; polarisation restricts the vibration direction." }
+      "solution": {
+        "en": "Dispersion is the separation of white light into colours because different wavelengths refract by different amounts. Reflection is bouncing back; diffraction is bending around obstacles; polarisation restricts the vibration direction."
+      }
     },
     {
-      "id": "jee-physics-sample-005", "type": "mcq", "exam": "jee", "subject": "physics", "year": null,
-      "topic": "modern-physics", "difficulty": 2, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The speed of light in vacuum is approximately:" },
-      "choices": [ { "en": "3 × 10⁶ m/s" }, { "en": "3 × 10⁸ m/s" }, { "en": "3 × 10¹⁰ m/s" }, { "en": "3 × 10⁵ m/s" } ],
+      "id": "jee-physics-sample-005",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "modern-physics",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The speed of light in vacuum is approximately:"
+      },
+      "choices": [
+        {
+          "en": "3 × 10⁶ m/s"
+        },
+        {
+          "en": "3 × 10⁸ m/s"
+        },
+        {
+          "en": "3 × 10¹⁰ m/s"
+        },
+        {
+          "en": "3 × 10⁵ m/s"
+        }
+      ],
       "answerIndex": 1,
-      "solution": { "en": "Light travels at about 3 × 10⁸ m/s (299,792,458 m/s) in vacuum. This is a universal constant, denoted c." }
+      "solution": {
+        "en": "Light travels at about 3 × 10⁸ m/s (299,792,458 m/s) in vacuum. This is a universal constant, denoted c."
+      }
     },
     {
-      "id": "jee-physics-sample-006", "type": "mcq", "exam": "jee", "subject": "physics", "year": null,
-      "topic": "units-measurement", "difficulty": 1, "source": "Sample (JEE pattern)",
-      "prompt": { "en": "The SI unit of work (and energy) is the:" },
-      "choices": [ { "en": "Newton" }, { "en": "Watt" }, { "en": "Joule" }, { "en": "Newton-second" } ],
+      "id": "jee-physics-sample-006",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "units-measurement",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The SI unit of work (and energy) is the:"
+      },
+      "choices": [
+        {
+          "en": "Newton"
+        },
+        {
+          "en": "Watt"
+        },
+        {
+          "en": "Joule"
+        },
+        {
+          "en": "Newton-second"
+        }
+      ],
       "answerIndex": 2,
-      "solution": { "en": "Work and energy share the unit joule (J), where 1 J = 1 N·m. The newton is force, the watt is power (J/s), and the newton-second is impulse/momentum." }
+      "solution": {
+        "en": "Work and energy share the unit joule (J), where 1 J = 1 N·m. The newton is force, the watt is power (J/s), and the newton-second is impulse/momentum."
+      }
+    },
+    {
+      "id": "jee-physics-sample-007",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "kinematics",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A ball is thrown vertically upward with speed 20 m/s from the ground (take g = 10 m/s²). Neglecting air resistance, what is the total time it stays in the air before returning to the ground?"
+      },
+      "choices": [
+        {
+          "en": "2 s"
+        },
+        {
+          "en": "4 s"
+        },
+        {
+          "en": "6 s"
+        },
+        {
+          "en": "1 s"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Time to rise = u/g = 20/10 = 2 s. By symmetry the fall takes an equal 2 s, so total time of flight = 4 s."
+      }
+    },
+    {
+      "id": "jee-physics-sample-008",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "kinematics",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A body moves in a straight line and its velocity–time graph is a straight line passing through the origin with positive slope. Which quantity is constant for this motion?"
+      },
+      "choices": [
+        {
+          "en": "Velocity"
+        },
+        {
+          "en": "Displacement"
+        },
+        {
+          "en": "Acceleration"
+        },
+        {
+          "en": "Kinetic energy"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "A straight v–t graph means velocity changes at a uniform rate, so the acceleration (the slope) is constant. Velocity, displacement and kinetic energy all keep increasing."
+      }
+    },
+    {
+      "id": "jee-physics-sample-009",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "laws-of-motion",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A block of mass 2 kg rests on a horizontal surface with coefficient of static friction 0.4 (g = 10 m/s²). What is the maximum horizontal force that can be applied without the block moving?"
+      },
+      "choices": [
+        {
+          "en": "4 N"
+        },
+        {
+          "en": "8 N"
+        },
+        {
+          "en": "20 N"
+        },
+        {
+          "en": "0.8 N"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Maximum static friction = μmg = 0.4 × 2 × 10 = 8 N. Any applied force up to 8 N is balanced by friction, so the block stays at rest."
+      }
+    },
+    {
+      "id": "jee-physics-sample-010",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "work-energy-momentum",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "Two objects of masses m and 4m have equal kinetic energies. What is the ratio of the magnitudes of their linear momenta (lighter : heavier)?"
+      },
+      "choices": [
+        {
+          "en": "1 : 4"
+        },
+        {
+          "en": "1 : 2"
+        },
+        {
+          "en": "2 : 1"
+        },
+        {
+          "en": "1 : 1"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Since p = √(2mKE) and KE is equal, p ∝ √m. Ratio = √m : √(4m) = 1 : 2."
+      }
+    },
+    {
+      "id": "jee-physics-sample-011",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "gravitation",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A satellite orbits Earth in a circular orbit. If it is moved to a higher circular orbit, its orbital speed:"
+      },
+      "choices": [
+        {
+          "en": "Increases"
+        },
+        {
+          "en": "Decreases"
+        },
+        {
+          "en": "Stays the same"
+        },
+        {
+          "en": "Becomes zero"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Orbital speed v = √(GM/r), which decreases as the orbital radius r increases. A higher orbit therefore has a smaller orbital speed."
+      }
+    },
+    {
+      "id": "jee-physics-sample-012",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "elasticity",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A wire of length L and cross-sectional area A stretches by ΔL under a load F. If a second wire of the same material has twice the length but the same area and load, its extension will be:"
+      },
+      "choices": [
+        {
+          "en": "ΔL/2"
+        },
+        {
+          "en": "ΔL"
+        },
+        {
+          "en": "2ΔL"
+        },
+        {
+          "en": "4ΔL"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "From Y = FL/(AΔL), extension ΔL = FL/(AY) is proportional to length L. Doubling L doubles the extension to 2ΔL."
+      }
+    },
+    {
+      "id": "jee-physics-sample-013",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "surface-tension",
+      "difficulty": 3,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A liquid drop of radius R is broken into 8 identical smaller drops. Compared with the original drop, the total surface area of the smaller drops is:"
+      },
+      "choices": [
+        {
+          "en": "Half"
+        },
+        {
+          "en": "The same"
+        },
+        {
+          "en": "Twice"
+        },
+        {
+          "en": "Four times"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Volume is conserved: 8 × (4/3)πr³ = (4/3)πR³ gives r = R/2. Total area = 8 × 4π(R/2)² = 8πR², which is twice the original 4πR²."
+      }
+    },
+    {
+      "id": "jee-physics-sample-014",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "thermodynamics",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "An ideal gas undergoes a process in which its pressure is doubled while its temperature is kept constant. By what factor does its volume change?"
+      },
+      "choices": [
+        {
+          "en": "Doubles"
+        },
+        {
+          "en": "Halves"
+        },
+        {
+          "en": "Stays the same"
+        },
+        {
+          "en": "Becomes four times"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "At constant temperature, Boyle's law gives PV = constant. Doubling the pressure halves the volume."
+      }
+    },
+    {
+      "id": "jee-physics-sample-015",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "thermodynamics",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "In an adiabatic process for an ideal gas, which of the following is true?"
+      },
+      "choices": [
+        {
+          "en": "No heat is exchanged with the surroundings"
+        },
+        {
+          "en": "Temperature remains constant"
+        },
+        {
+          "en": "Pressure remains constant"
+        },
+        {
+          "en": "Internal energy remains constant"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "An adiabatic process is defined by zero heat exchange (Q = 0). Temperature, pressure and internal energy generally all change during it."
+      }
+    },
+    {
+      "id": "jee-physics-sample-016",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "oscillations",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "The bob of a simple pendulum is given a small displacement and released. If the length of the pendulum is quadrupled, its time period becomes:"
+      },
+      "choices": [
+        {
+          "en": "Half"
+        },
+        {
+          "en": "Twice"
+        },
+        {
+          "en": "Four times"
+        },
+        {
+          "en": "Unchanged"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "For a simple pendulum T = 2π√(L/g), so T ∝ √L. Quadrupling L multiplies the period by √4 = 2."
+      }
+    },
+    {
+      "id": "jee-physics-sample-017",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "waves",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A sound wave travels from air into water. Which property of the wave necessarily remains unchanged?"
+      },
+      "choices": [
+        {
+          "en": "Speed"
+        },
+        {
+          "en": "Wavelength"
+        },
+        {
+          "en": "Frequency"
+        },
+        {
+          "en": "Amplitude"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Frequency is set by the source and does not change when a wave crosses into a new medium. Speed and wavelength both change (and amplitude generally changes too)."
+      }
+    },
+    {
+      "id": "jee-physics-sample-018",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "electrostatics",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "Two point charges of +2 μC and +2 μC are separated by a distance r. If the distance between them is halved, the electrostatic force between them becomes:"
+      },
+      "choices": [
+        {
+          "en": "Half"
+        },
+        {
+          "en": "Double"
+        },
+        {
+          "en": "Four times"
+        },
+        {
+          "en": "One-fourth"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Coulomb's force F ∝ 1/r². Halving the separation multiplies the force by (1/(1/2)²) = 4, so it becomes four times as large."
+      }
+    },
+    {
+      "id": "jee-physics-sample-019",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "current-electricity",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "Three resistors each of 6 Ω are connected in parallel. The equivalent resistance of the combination is:"
+      },
+      "choices": [
+        {
+          "en": "18 Ω"
+        },
+        {
+          "en": "6 Ω"
+        },
+        {
+          "en": "3 Ω"
+        },
+        {
+          "en": "2 Ω"
+        }
+      ],
+      "answerIndex": 3,
+      "solution": {
+        "en": "For equal resistors in parallel, R_eq = R/n = 6/3 = 2 Ω."
+      }
+    },
+    {
+      "id": "jee-physics-sample-020",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "magnetism",
+      "difficulty": 1,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "A straight conductor carries a steady current. The magnetic field at a fixed perpendicular distance from the wire is directly proportional to:"
+      },
+      "choices": [
+        {
+          "en": "The current in the wire"
+        },
+        {
+          "en": "The square of the current"
+        },
+        {
+          "en": "The cross-sectional area of the wire"
+        },
+        {
+          "en": "The resistance of the wire"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "By Ampère's law, B = μ₀I/(2πr) for a long straight wire, so B is directly proportional to the current I."
+      }
+    },
+    {
+      "id": "jee-physics-sample-021",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "optics",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "Light of wavelength 500 nm in vacuum enters a medium of refractive index 1.5. Its wavelength in the medium is approximately:"
+      },
+      "choices": [
+        {
+          "en": "500 nm"
+        },
+        {
+          "en": "750 nm"
+        },
+        {
+          "en": "333 nm"
+        },
+        {
+          "en": "250 nm"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Frequency is unchanged, so wavelength in the medium = λ₀/n = 500/1.5 ≈ 333 nm."
+      }
+    },
+    {
+      "id": "jee-physics-sample-022",
+      "type": "mcq",
+      "exam": "jee",
+      "subject": "physics",
+      "year": null,
+      "topic": "modern-physics",
+      "difficulty": 2,
+      "source": "Sample (JEE pattern)",
+      "prompt": {
+        "en": "In the photoelectric effect, increasing the intensity of incident light (while keeping its frequency fixed above the threshold) increases:"
+      },
+      "choices": [
+        {
+          "en": "The maximum kinetic energy of emitted electrons"
+        },
+        {
+          "en": "The number of emitted electrons per second"
+        },
+        {
+          "en": "The threshold frequency of the metal"
+        },
+        {
+          "en": "The work function of the metal"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Higher intensity means more photons per second, so more electrons are ejected per second (larger photocurrent). Maximum kinetic energy depends on frequency, not intensity; threshold frequency and work function are properties of the metal."
+      }
     }
   ]
 }

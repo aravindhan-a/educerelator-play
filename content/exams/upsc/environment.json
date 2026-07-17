@@ -1,30 +1,690 @@
 {
-  "exam": "upsc", "subject": "environment", "draft": true,
+  "exam": "upsc",
+  "subject": "environment",
+  "draft": true,
   "note": "SAMPLE questions (source 'Sample (UPSC pattern)'). Replace with verified real PYQs + SME solutions + 13-language translations before shipping.",
   "questions": [
-    { "id": "upsc-environment-sample-001", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "ecology", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "Which rainforest is often called the 'lungs of the Earth'?" },
-      "choices": [ { "en": "The Sundarbans" }, { "en": "The Amazon rainforest" }, { "en": "The Western Ghats" }, { "en": "The Taiga" } ], "answerIndex": 1,
-      "solution": { "en": "The Amazon rainforest is called the 'lungs of the Earth' because it produces a large share of the world's oxygen and absorbs vast amounts of carbon dioxide." } },
-    { "id": "upsc-environment-sample-002", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "conservation", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "'Project Tiger', India's tiger-conservation programme, was launched in the year:" },
-      "choices": [ { "en": "1973" }, { "en": "1985" }, { "en": "1992" }, { "en": "2005" } ], "answerIndex": 0,
-      "solution": { "en": "Project Tiger was launched in 1973 to protect the Bengal tiger and its habitat through a network of tiger reserves." } },
-    { "id": "upsc-environment-sample-003", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "ecology", "difficulty": 1, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The main greenhouse gas responsible for global warming, released by burning fossil fuels, is:" },
-      "choices": [ { "en": "Oxygen" }, { "en": "Nitrogen" }, { "en": "Carbon dioxide" }, { "en": "Argon" } ], "answerIndex": 2,
-      "solution": { "en": "Carbon dioxide (CO₂) is the principal greenhouse gas from fossil-fuel combustion. Oxygen, nitrogen and argon are not significant greenhouse gases." } },
-    { "id": "upsc-environment-sample-004", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "ecology", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "Depletion of the ozone layer in the stratosphere is caused mainly by:" },
-      "choices": [ { "en": "Carbon dioxide" }, { "en": "Chlorofluorocarbons (CFCs)" }, { "en": "Methane" }, { "en": "Oxygen" } ], "answerIndex": 1,
-      "solution": { "en": "Chlorofluorocarbons (CFCs) release chlorine atoms that destroy ozone molecules, thinning the protective ozone layer. Their use is phased out under the Montreal Protocol." } },
-    { "id": "upsc-environment-sample-005", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "conservation", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "The national park in Assam famous for protecting the one-horned rhinoceros is:" },
-      "choices": [ { "en": "Gir National Park" }, { "en": "Jim Corbett National Park" }, { "en": "Kaziranga National Park" }, { "en": "Ranthambore National Park" } ], "answerIndex": 2,
-      "solution": { "en": "Kaziranga National Park in Assam is a UNESCO World Heritage Site home to about two-thirds of the world's one-horned rhinoceroses. Gir is known for the Asiatic lion; Corbett and Ranthambore for tigers." } },
-    { "id": "upsc-environment-sample-006", "type": "mcq", "exam": "upsc", "subject": "environment", "year": null, "topic": "ecology", "difficulty": 2, "source": "Sample (UPSC pattern)",
-      "prompt": { "en": "A community of living organisms together with their physical environment, interacting as a system, is called a(n):" },
-      "choices": [ { "en": "Population" }, { "en": "Ecosystem" }, { "en": "Biome only" }, { "en": "Atmosphere" } ], "answerIndex": 1,
-      "solution": { "en": "An ecosystem is a community of interacting organisms (biotic) together with their non-living surroundings (abiotic), through which energy flows and nutrients cycle." } }
+    {
+      "id": "upsc-environment-sample-001",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "ecology",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which rainforest is often called the 'lungs of the Earth'?"
+      },
+      "choices": [
+        {
+          "en": "The Sundarbans"
+        },
+        {
+          "en": "The Amazon rainforest"
+        },
+        {
+          "en": "The Western Ghats"
+        },
+        {
+          "en": "The Taiga"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The Amazon rainforest is called the 'lungs of the Earth' because it produces a large share of the world's oxygen and absorbs vast amounts of carbon dioxide."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-002",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "conservation",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "'Project Tiger', India's tiger-conservation programme, was launched in the year:"
+      },
+      "choices": [
+        {
+          "en": "1973"
+        },
+        {
+          "en": "1985"
+        },
+        {
+          "en": "1992"
+        },
+        {
+          "en": "2005"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Project Tiger was launched in 1973 to protect the Bengal tiger and its habitat through a network of tiger reserves."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-003",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "ecology",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The main greenhouse gas responsible for global warming, released by burning fossil fuels, is:"
+      },
+      "choices": [
+        {
+          "en": "Oxygen"
+        },
+        {
+          "en": "Nitrogen"
+        },
+        {
+          "en": "Carbon dioxide"
+        },
+        {
+          "en": "Argon"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Carbon dioxide (CO₂) is the principal greenhouse gas from fossil-fuel combustion. Oxygen, nitrogen and argon are not significant greenhouse gases."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-004",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "ecology",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Depletion of the ozone layer in the stratosphere is caused mainly by:"
+      },
+      "choices": [
+        {
+          "en": "Carbon dioxide"
+        },
+        {
+          "en": "Chlorofluorocarbons (CFCs)"
+        },
+        {
+          "en": "Methane"
+        },
+        {
+          "en": "Oxygen"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Chlorofluorocarbons (CFCs) release chlorine atoms that destroy ozone molecules, thinning the protective ozone layer. Their use is phased out under the Montreal Protocol."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-005",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "conservation",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The national park in Assam famous for protecting the one-horned rhinoceros is:"
+      },
+      "choices": [
+        {
+          "en": "Gir National Park"
+        },
+        {
+          "en": "Jim Corbett National Park"
+        },
+        {
+          "en": "Kaziranga National Park"
+        },
+        {
+          "en": "Ranthambore National Park"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Kaziranga National Park in Assam is a UNESCO World Heritage Site home to about two-thirds of the world's one-horned rhinoceroses. Gir is known for the Asiatic lion; Corbett and Ranthambore for tigers."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-006",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "ecology",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "A community of living organisms together with their physical environment, interacting as a system, is called a(n):"
+      },
+      "choices": [
+        {
+          "en": "Population"
+        },
+        {
+          "en": "Ecosystem"
+        },
+        {
+          "en": "Biome only"
+        },
+        {
+          "en": "Atmosphere"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "An ecosystem is a community of interacting organisms (biotic) together with their non-living surroundings (abiotic), through which energy flows and nutrients cycle."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-007",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "energy-flow",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In an ecological pyramid, the amount of energy transferred from one trophic level to the next is approximately what fraction of the energy available at the lower level?"
+      },
+      "choices": [
+        {
+          "en": "About 50%"
+        },
+        {
+          "en": "About 10%"
+        },
+        {
+          "en": "About 25%"
+        },
+        {
+          "en": "About 90%"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "By the ten percent law of Lindeman, only about 10% of the energy at one trophic level is passed on to the next; the rest is lost mainly as metabolic heat."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-008",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "biodiversity-concepts",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which of the following best describes a 'keystone species'?"
+      },
+      "choices": [
+        {
+          "en": "The species with the largest population in an ecosystem"
+        },
+        {
+          "en": "A species whose impact on its community is disproportionately large relative to its abundance"
+        },
+        {
+          "en": "Any species introduced from another region"
+        },
+        {
+          "en": "The species occupying the highest trophic level"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "A keystone species exerts an effect on ecosystem structure far greater than its numbers would suggest; its removal can cause major changes or collapse of the community."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-009",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "pollution",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Eutrophication of a water body is most directly caused by the excessive enrichment of which nutrients?"
+      },
+      "choices": [
+        {
+          "en": "Nitrogen and phosphorus"
+        },
+        {
+          "en": "Calcium and magnesium"
+        },
+        {
+          "en": "Sulphur and chlorine"
+        },
+        {
+          "en": "Iron and manganese"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "Nutrient enrichment, chiefly by nitrogen and phosphorus from fertilizers and sewage, triggers algal blooms whose decomposition depletes dissolved oxygen, defining eutrophication."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-010",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "conservation-status",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Under the IUCN Red List, which category indicates the highest risk for a species that still survives in the wild?"
+      },
+      "choices": [
+        {
+          "en": "Vulnerable"
+        },
+        {
+          "en": "Endangered"
+        },
+        {
+          "en": "Critically Endangered"
+        },
+        {
+          "en": "Near Threatened"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Among species still found in the wild, 'Critically Endangered' denotes the highest extinction risk, ranking above Endangered and Vulnerable in the IUCN threat categories."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-011",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "international-conventions",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The Ramsar Convention is an international treaty concerned primarily with the conservation of which type of ecosystem?"
+      },
+      "choices": [
+        {
+          "en": "Coral reefs"
+        },
+        {
+          "en": "Tropical rainforests"
+        },
+        {
+          "en": "Wetlands"
+        },
+        {
+          "en": "Deserts"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "The Ramsar Convention (1971) provides for the conservation and wise use of wetlands and designates Wetlands of International Importance, known as Ramsar sites."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-012",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "biodiversity-hotspots",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "A biodiversity 'hotspot' is defined by two criteria: it must contain a high number of endemic plant species and it must have"
+      },
+      "choices": [
+        {
+          "en": "Lost at least 70% of its original habitat"
+        },
+        {
+          "en": "Been declared a protected area"
+        },
+        {
+          "en": "A high average annual rainfall"
+        },
+        {
+          "en": "At least one large national park"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "A hotspot must have at least 1,500 endemic vascular plant species and have lost 70% or more of its original primary vegetation, marking it as both rich and threatened."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-013",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "climate-change",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which pair of gases from the following contributes most to the greenhouse effect by trapping outgoing longwave (infrared) radiation?"
+      },
+      "choices": [
+        {
+          "en": "Nitrogen and oxygen"
+        },
+        {
+          "en": "Carbon dioxide and methane"
+        },
+        {
+          "en": "Argon and neon"
+        },
+        {
+          "en": "Hydrogen and helium"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Carbon dioxide and methane absorb and re-emit infrared radiation, warming the atmosphere. Nitrogen, oxygen and the noble gases are not effective greenhouse gases."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-014",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "pollution",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The process by which certain persistent toxic substances increase in concentration at successively higher trophic levels of a food chain is called"
+      },
+      "choices": [
+        {
+          "en": "Bioremediation"
+        },
+        {
+          "en": "Biomagnification"
+        },
+        {
+          "en": "Bioaccumulation within a single organism"
+        },
+        {
+          "en": "Eutrophication"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Biomagnification is the increasing concentration of a persistent pollutant, such as DDT or mercury, at each higher trophic level. Bioaccumulation refers to build-up within one organism over time."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-015",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "conservation-methods",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "In situ conservation of biodiversity refers to protecting species"
+      },
+      "choices": [
+        {
+          "en": "In zoos and botanical gardens"
+        },
+        {
+          "en": "In their natural habitats"
+        },
+        {
+          "en": "In gene banks and seed vaults"
+        },
+        {
+          "en": "Through cryopreservation of gametes"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "In situ conservation protects species within their natural habitats, as in national parks and biosphere reserves. Zoos, gene banks and seed vaults are examples of ex situ conservation."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-016",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "ecology-concepts",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The 'edge effect' in ecology refers to the distinctive conditions and species diversity found"
+      },
+      "choices": [
+        {
+          "en": "At the boundary between two different ecosystems"
+        },
+        {
+          "en": "At the peak of an ecological pyramid"
+        },
+        {
+          "en": "In the deepest part of an ocean"
+        },
+        {
+          "en": "At the centre of a large forest"
+        }
+      ],
+      "answerIndex": 0,
+      "solution": {
+        "en": "The transition zone between two ecosystems is an ecotone, and the tendency for greater species richness and density there is termed the edge effect."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-017",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "atmosphere",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which one of the following is a naturally occurring greenhouse gas that also protects life by absorbing harmful ultraviolet radiation in the stratosphere?"
+      },
+      "choices": [
+        {
+          "en": "Methane"
+        },
+        {
+          "en": "Ozone"
+        },
+        {
+          "en": "Nitrous oxide"
+        },
+        {
+          "en": "Carbon dioxide"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Ozone is a greenhouse gas in the troposphere but in the stratosphere it forms a layer that absorbs most of the Sun's harmful ultraviolet radiation, shielding life on Earth."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-018",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "organisms-and-environment",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Organisms that can tolerate a wide range of an environmental factor such as temperature are described as"
+      },
+      "choices": [
+        {
+          "en": "Stenothermal"
+        },
+        {
+          "en": "Eurythermal"
+        },
+        {
+          "en": "Stenohaline"
+        },
+        {
+          "en": "Euryhaline"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "The prefix 'eury' means wide and 'thermal' refers to temperature, so eurythermal organisms tolerate a broad temperature range. 'Steno' denotes a narrow range; 'haline' refers to salinity."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-019",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "ecosystem-dynamics",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "A food web is more stable than a simple food chain primarily because"
+      },
+      "choices": [
+        {
+          "en": "It contains only producers"
+        },
+        {
+          "en": "It has fewer species interactions"
+        },
+        {
+          "en": "It offers alternative feeding pathways when one species declines"
+        },
+        {
+          "en": "It transfers 100% of energy between levels"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "In a food web, consumers can shift to alternative prey if one food source falls, so the network of interconnected chains gives the ecosystem greater resilience than a single linear chain."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-020",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "land-and-soil",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Which of the following soil conservation practices involves planting crops along the natural contour lines of a slope to reduce runoff and erosion?"
+      },
+      "choices": [
+        {
+          "en": "Shifting cultivation"
+        },
+        {
+          "en": "Contour ploughing"
+        },
+        {
+          "en": "Monocropping"
+        },
+        {
+          "en": "Slash-and-burn farming"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Contour ploughing follows the contour lines of a slope so that the ridges slow water flow, reducing surface runoff and soil erosion. The other options tend to increase soil loss."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-021",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "nutrient-cycling",
+      "difficulty": 1,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "The primary ecological role of decomposers such as bacteria and fungi in an ecosystem is to"
+      },
+      "choices": [
+        {
+          "en": "Fix atmospheric nitrogen into the soil directly"
+        },
+        {
+          "en": "Convert solar energy into chemical energy"
+        },
+        {
+          "en": "Break down dead organic matter and recycle nutrients"
+        },
+        {
+          "en": "Occupy the top of the food chain"
+        }
+      ],
+      "answerIndex": 2,
+      "solution": {
+        "en": "Decomposers break down dead plants and animals, releasing nutrients back into the soil and atmosphere so producers can reuse them, thus closing nutrient cycles."
+      }
+    },
+    {
+      "id": "upsc-environment-sample-022",
+      "type": "mcq",
+      "exam": "upsc",
+      "subject": "environment",
+      "year": null,
+      "topic": "wetlands",
+      "difficulty": 2,
+      "source": "Sample (UPSC pattern)",
+      "prompt": {
+        "en": "Wetlands are often called the 'kidneys' of a landscape mainly because they"
+      },
+      "choices": [
+        {
+          "en": "Store the largest share of the world's freshwater"
+        },
+        {
+          "en": "Filter pollutants and purify water passing through them"
+        },
+        {
+          "en": "Are the primary source of atmospheric oxygen"
+        },
+        {
+          "en": "Prevent all forms of coastal erosion"
+        }
+      ],
+      "answerIndex": 1,
+      "solution": {
+        "en": "Wetlands trap sediments and absorb or break down nutrients and pollutants as water flows through them, filtering and purifying it much as kidneys filter blood, hence the nickname."
+      }
+    }
   ]
 }
