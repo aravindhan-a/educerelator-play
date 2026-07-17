@@ -175,7 +175,7 @@
 <link rel="dns-prefetch" href="https://www.gstatic.com" />
 <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
 <link rel="preload" href="fonts/baloo2-var.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="css/style.css?v=game2" />
+<link rel="stylesheet" href="css/style.css?v=game3" />
 </head>
 <body>
 
@@ -247,19 +247,6 @@
     <div id="continue-bar" class="continue-bar hidden">
       <span class="continue-label">Continue where you left off</span>
       <button id="continue-btn" class="continue-btn"></button>
-    </div>
-
-    <!-- Game mode toggle: Friend Quest (befriend creatures) vs Learn (classic quiz) -->
-    <div class="mode-switch" id="mode-switch" role="tablist" aria-label="Play mode">
-      <button class="mode-tab active" id="mode-learn" role="tab" aria-selected="true">📚 Learn</button>
-      <button class="mode-tab" id="mode-battle" role="tab" aria-selected="false">🐾 Friend Quest</button>
-    </div>
-    <div class="battle-cta hidden" id="battle-cta">
-      <div class="battle-cta-mons">🐼</div>
-      <div class="battle-cta-text">
-        <strong>Friend Quest!</strong>
-        <p>Shy wild creatures are waiting. Answer questions to toss knowledge sparks ✨ and win their friendship. Befriend all 12!</p>
-      </div>
     </div>
 
     <h2 class="screen-title pick-title" id="pick-title">Choose your class</h2>
@@ -393,73 +380,6 @@
     </div>
   </section>
 
-  <!-- ── 🐾 Friend Quest (game mode) ── -->
-  <section id="battle-screen" class="screen hidden">
-    <div class="battle-topbar">
-      <button id="battle-quit" class="battle-quit" aria-label="Quit quest">✕</button>
-      <span id="battle-stage" class="battle-stage">Stage 1</span>
-      <span id="battle-coins" class="battle-coins">🪙 0</span>
-    </div>
-
-    <div class="battle-arena" id="battle-arena">
-      <div class="fighter fighter-hero" id="fighter-hero">
-        <div class="fighter-hp"><div class="fighter-hp-fill hero-hp-fill" id="hero-hp"></div></div>
-        <div class="fighter-hearts" id="hero-hearts"></div>
-        <div class="fighter-avatar" id="hero-avatar">🦉</div>
-        <div class="fighter-name">You</div>
-      </div>
-      <div class="battle-fx-layer" id="battle-fx"></div>
-      <div class="fighter fighter-monster" id="fighter-monster">
-        <div class="fighter-hp"><div class="fighter-hp-fill monster-hp-fill" id="monster-hp"></div></div>
-        <div class="fighter-avatar" id="monster-avatar">👾</div>
-        <div class="fighter-name" id="monster-name">Goblin</div>
-      </div>
-    </div>
-
-    <div class="battle-panel">
-      <div class="battle-combo" id="battle-combo" aria-live="polite"></div>
-      <p class="battle-prompt" id="battle-prompt">…</p>
-      <div class="battle-visual" id="battle-visual"></div>
-      <div class="battle-choices" id="battle-choices"></div>
-    </div>
-
-    <!-- victory overlay -->
-    <div class="battle-overlay hidden" id="battle-victory">
-      <div class="battle-overlay-card">
-        <div class="battle-overlay-title">You made a new friend! 🎉</div>
-        <div class="reward-creature" id="reward-creature">🐣</div>
-        <div class="reward-line" id="reward-line">Friendship won!</div>
-        <div class="reward-coins" id="reward-coins">🪙 +20</div>
-        <div class="battle-overlay-actions">
-          <button class="battle-next-btn" id="battle-next">Meet the next creature →</button>
-          <button class="battle-collection-btn" id="battle-collection-open">🫶 My Friends</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- defeat overlay -->
-    <div class="battle-overlay hidden" id="battle-defeat">
-      <div class="battle-overlay-card">
-        <div class="battle-overlay-title">Oh no — it wandered off 💨</div>
-        <div class="reward-creature">🍃</div>
-        <div class="reward-line" id="defeat-line">Reached Stage 1. Try again!</div>
-        <div class="battle-overlay-actions">
-          <button class="battle-next-btn" id="battle-retry">↻ Try again</button>
-          <button class="battle-collection-btn" id="battle-home">🏠 Home</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Collection overlay -->
-  <div class="modal-overlay hidden" id="collection-modal">
-    <div class="modal-card collection-card">
-      <button id="collection-close" class="modal-close" aria-label="Close">✕</button>
-      <div class="collection-title">🫶 My Friends</div>
-      <div class="collection-sub" id="collection-count">0 of 12 friends</div>
-      <div class="collection-grid" id="collection-grid"></div>
-    </div>
-  </div>
 
   <!-- Session Complete Screen -->
   <section id="session-complete" class="screen hidden">
@@ -628,7 +548,7 @@
 
 </div>
 
-<script type="module" src="js/main.js?v=game2"></script>
+<script type="module" src="js/main.js?v=game3"></script>
 <script>
 // PWA: register the service worker from the site root (scope "/"). Skipped on
 // localhost file previews where the root path differs.
