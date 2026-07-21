@@ -45,13 +45,13 @@ function pageHTML({ cls, subj, label, bank, samples, allSubjects }) {
   const slug = slugOf(subj);
   const url = `${SITE}/practice/class-${cls}-${slug}.html`;
   const title = `Class ${cls} ${label} Practice Questions – Free MCQs | EC Play`;
-  const desc = `Free Class ${cls} ${label} practice questions with answers — ${bank.length} CBSE/NCERT-aligned MCQs in 13 Indian languages. Adaptive quiz, no sign-up, no ads.`;
+  const desc = `Free Class ${cls} ${label} practice questions with answers — ${bank.length} school-syllabus MCQs in 13 Indian languages. Adaptive quiz, no sign-up, no ads.`;
   const crumbs = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "EC Play", item: `${SITE}/` },
     { "@type": "ListItem", position: 2, name: "Practice Questions", item: `${SITE}/practice/` },
     { "@type": "ListItem", position: 3, name: `Class ${cls} ${label}` } ] };
   const quiz = { "@context": "https://schema.org", "@type": "Quiz", name: `Class ${cls} ${label} practice quiz`,
-    about: { "@type": "Thing", name: `${label} — CBSE/NCERT Class ${cls}` },
+    about: { "@type": "Thing", name: `${label} — Class ${cls} school syllabus` },
     educationalLevel: `Grade ${cls}`, inLanguage: "en", url,
     hasPart: samples.slice(0, 5).map((q) => ({ "@type": "Question", eduQuestionType: "Multiple choice", name: q.prompt.en,
       suggestedAnswer: q.choices.filter((_, i) => i !== q.answerIndex).slice(0, 1).map((c) => ({ "@type": "Answer", text: c.en }))[0],
@@ -114,7 +114,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 <nav class="topbar"><a href="/">🦉 EC Play</a><div class="topbar-nav"><a href="/">Play Now</a><a href="/practice/">All Practice Sets</a><a href="/cbse-practice-questions.html">CBSE</a></div></nav>
 <div class="hero">
   <h1>Class ${cls} ${esc(label)} Practice Questions</h1>
-  <p>${bank.length} free CBSE/NCERT-aligned MCQs for Class ${cls} ${esc(label)} — playable as an adaptive quiz in English, Hindi, Tamil, Telugu, Bengali and 8 more Indian languages. No sign-up, no ads.</p>
+  <p>${bank.length} free practice MCQs for Class ${cls} ${esc(label)}, following the school syllabus — playable as an adaptive quiz in English, Hindi, Tamil, Telugu, Bengali and 8 more Indian languages. No sign-up, no ads.</p>
   <a class="cta" href="/">Practice all ${bank.length} questions free →</a>
 </div>
 <div class="wrap">
@@ -161,7 +161,7 @@ fs.writeFileSync(path.join(OUT, "index.html"), `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Free Practice Questions by Class &amp; Subject (1–12) | EC Play</title>
-<meta name="description" content="Browse ${total}+ free CBSE/NCERT practice questions by class and subject — Class 1 to 12, every subject, 13 Indian languages. MCQs with answers, no sign-up." />
+<meta name="description" content="Browse ${total}+ free practice questions by class and subject — Class 1 to 12, every subject, 13 Indian languages. MCQs with answers, no sign-up." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="${SITE}/practice/" />
 <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "CollectionPage", name: "EC Play practice question sets", url: `${SITE}/practice/`, isPartOf: { "@id": `${SITE}/#website` } })}</script>
@@ -177,7 +177,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 </head>
 <body>
 <nav class="topbar"><a href="/">🦉 EC Play</a></nav>
-<div class="hero"><h1>Free Practice Questions by Class &amp; Subject</h1><p>${total}+ CBSE/NCERT-aligned MCQs · Class 1–12 · 13 Indian languages · always free</p></div>
+<div class="hero"><h1>Free Practice Questions by Class &amp; Subject</h1><p>${total}+ practice MCQs · Class 1–12 · 13 Indian languages · always free</p></div>
 <div class="wrap">${hubBody}</div>
 <footer>© 2026 Educerelator · <a href="/">Play the full adaptive quiz free →</a></footer>
 </body>
