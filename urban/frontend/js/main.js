@@ -686,6 +686,27 @@ function startExamSession(mode) {
   renderExamQuestion();
 }
 
+// ── report-a-question: opens a prefilled email — the correction loop our
+// Terms promise ("if you find an error, report it"). No backend needed.
+function reportQuestion({ id, context, prompt }) {
+  const subject = encodeURIComponent(`Question report: ${id}`);
+  const body = encodeURIComponent(
+    `I want to report a problem with this question.\n\n` +
+    `Question ID: ${id}\nWhere: ${context}\nLanguage: ${lang}\n` +
+    `Question: ${String(prompt || "").slice(0, 200)}\n\n` +
+    `What seems wrong (wrong answer / confusing wording / translation issue / other):\n`
+  );
+  window.location.href = `mailto:hello@educerelator.com?subject=${subject}&body=${body}`;
+}
+document.getElementById("report-question").addEventListener("click", () => {
+  if (!currentQuestion) return;
+  reportQuestion({
+    id: currentQuestion.id,
+    context: `Class ${currentClass} / ${currentSubject}`,
+    prompt: currentQuestion.prompt.en,
+  });
+});
+
 function renderExamQuestion() {
   const q = exState.queue[exState.idx];
   exState.answered = false;
@@ -698,7 +719,11 @@ function renderExamQuestion() {
      <div class="exam-prompt">${exT(q.prompt)}</div>
      <div id="exam-choices">${order.map((oi) => `<button class="exam-choice" data-oi="${oi}">${exT(q.choices[oi])}</button>`).join("")}</div>
      <div id="exam-sol" class="exam-solution hidden"></div>
-     <div class="exam-row"><span class="ex-muted" id="exam-score">Score: <b>0</b> / 0</span><button class="mode-btn primary hidden" id="exam-next" style="width:auto">Next →</button></div>`;
+     <div class="exam-row"><span class="ex-muted" id="exam-score">Score: <b>0</b> / 0</span><button class="mode-btn primary hidden" id="exam-next" style="width:auto">Next →</button></div>
+     <button class="report-btn" type="button" data-report-exam="1" title="Tell us if something is wrong with this question">⚑ Report this question</button>`;
+  examBodyEl.querySelector('[data-report-exam]').addEventListener("click", () => reportQuestion({
+    id: q.id, context: `${exState.id} / ${exState.subject}`, prompt: q.prompt.en,
+  }));
   examBodyEl.querySelectorAll(".exam-choice").forEach((b) => b.addEventListener("click", () => examAnswer(parseInt(b.dataset.oi, 10), b)));
   examBodyEl.querySelector("#exam-next").addEventListener("click", () => {
     exState.idx++;
