@@ -509,14 +509,15 @@ onAuthChange(async (user) => {
   } else {
     currentUser = null;
     userInfoEl.classList.add("hidden");
-    if (guestMode) {
-      authModalEl.classList.add("hidden");
-      topbarSigninBtn.classList.remove("hidden");
-      applyUIStrings();
-      showClassPicker();
-    } else {
-      authModalEl.classList.remove("hidden");
-    }
+    // Guest-first: a brand-new visitor lands straight in the app — the product
+    // is the landing page. Sign-in stays one tap away in the topbar; the auth
+    // modal opens only on explicit request. (Was: auth wall on first visit —
+    // the single biggest bounce point for organic arrivals.)
+    if (!guestMode) { guestMode = true; localStorage.setItem(GUEST_KEY, "1"); }
+    authModalEl.classList.add("hidden");
+    topbarSigninBtn.classList.remove("hidden");
+    applyUIStrings();
+    showClassPicker();
   }
 });
 
