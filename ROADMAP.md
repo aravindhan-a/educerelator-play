@@ -28,7 +28,7 @@ polished enough to anchor a McGinnis Venture Competition submission.
   never doorway spam.
 
 ## Phase 1 — Portal depth (make the product feel complete)
-- [ ] **A1. Interactive practice pages**: turn all 72 /practice/*.html pages
+- [x] **A1. Interactive practice pages** (`64df083`): turn all 72 /practice/*.html pages
   from static Q&A into tap-to-answer mini-quizzes (instant right/wrong, the
   explanation when wrong, running score, finish banner with CTA into the app).
   Progressive enhancement in generate-practice-pages.mjs: keep crawlable text
