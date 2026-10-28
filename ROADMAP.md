@@ -34,7 +34,7 @@ polished enough to anchor a McGinnis Venture Competition submission.
   Progressive enhancement in generate-practice-pages.mjs: keep crawlable text
   + `<details>` fallback for no-JS; vanilla JS inline, no frameworks.
   Regenerate all pages, verify one page per class band in browser, deploy.
-- [ ] **A2. Classic-mode mistake review**: after a session, "Practice my
+- [x] **A2. Classic-mode mistake review** (`0bf39ce`): after a session, "Practice my
   mistakes" — reuse the exam-mode Leitner queue (exLoadReview/exSaveReview
   pattern in main.js) for level questions; store missed question ids per
   class/subject in localStorage; surface a review entry on the subject screen.
