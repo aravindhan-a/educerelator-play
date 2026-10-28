@@ -64,6 +64,15 @@ async function topUp(classNum, subject, curriculum, difficulty, region, bank, ge
   saveBank(classNum, subject, curriculum, difficulty, region, bank);
 }
 
+// Review mode: resolve a set of previously-missed question ids back to their
+// full question objects from the local bank (plus regional overlay).
+export async function getQuestionsByIds(classNum, subject, ids, region = "all") {
+  const all = await fetchLocalFallback(classNum, subject, region);
+  if (!all) return [];
+  const want = new Set(ids);
+  return all.filter((q) => want.has(q.id));
+}
+
 export async function getNextQuestion(
   classNum, subject, curriculum, difficulty,
   sessionSeenIds = new Set(), getToken = null, region = "all"
