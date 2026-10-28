@@ -1,7 +1,7 @@
 import { ALL_CLASSES, CURRICULA, getSubjectsForClass } from "../../../content/curriculum.js";
 import { getRegionLabel } from "../../../content/regions.js";
 import { EXAMS, topicLabel } from "../../../content/exams.js";
-import { getNextQuestion } from "./question-bank.js";
+import { getNextQuestion, getQuestionsByIds } from "./question-bank.js";
 import { checkPremium, isPremiumCached, getPremiumInfo, openRazorpayCheckout } from "./premium.js";
 import { recordResult } from "./progress.js";
 import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration, effectiveDayStreak, adoptStats } from "./stats.js";
@@ -531,6 +531,11 @@ document.getElementById("guest-btn").addEventListener("click", () => {
   showClassPicker();
 });
 
+document.getElementById("review-mistakes-btn")?.addEventListener("click", () => {
+  sessionCompleteEl.classList.add("hidden");
+  startReview(currentClass);
+});
+
 topbarSigninBtn.addEventListener("click", () => {
   authModalEl.classList.remove("hidden");
 });
@@ -915,12 +920,89 @@ function recordAbandonedScreenTime() {
   }
 }
 
+// ── classic-mode mistake review ──
+// Wrong answers land in a per-class/subject queue (localStorage only; never
+// synced — it's a practice aid, not a report card). Answering the same
+// question correctly later — in review or any normal session — clears it.
+const MISTAKES_KEY = "ecplay_mistakes";
+const MISTAKES_CAP = 40; // per class+subject, oldest evicted first
+const loadMistakes = () => { try { return JSON.parse(localStorage.getItem(MISTAKES_KEY) || "{}"); } catch { return {}; } };
+const saveMistakes = (m) => localStorage.setItem(MISTAKES_KEY, JSON.stringify(m));
+function recordMistake(cls, subj, qid) {
+  const m = loadMistakes(); const k = `${cls}|${subj}`;
+  const bucket = m[k] || {};
+  bucket[qid] = { misses: (bucket[qid]?.misses || 0) + 1, last: Date.now() };
+  const ids = Object.keys(bucket);
+  if (ids.length > MISTAKES_CAP) {
+    ids.sort((a, b) => bucket[a].last - bucket[b].last)
+      .slice(0, ids.length - MISTAKES_CAP)
+      .forEach((id) => delete bucket[id]);
+  }
+  m[k] = bucket; saveMistakes(m);
+}
+function clearMistake(cls, subj, qid) {
+  const m = loadMistakes(); const k = `${cls}|${subj}`;
+  if (!m[k]?.[qid]) return;
+  delete m[k][qid];
+  if (!Object.keys(m[k]).length) delete m[k];
+  saveMistakes(m);
+}
+function classMistakes(cls) {
+  const m = loadMistakes(); const out = [];
+  for (const k of Object.keys(m)) {
+    const [c, subj] = k.split("|");
+    if (+c !== cls) continue;
+    for (const qid of Object.keys(m[k])) out.push({ subj, qid });
+  }
+  return out;
+}
+
+let reviewQueue = null; // non-null while a review session is running
+
+async function startReview(classNum) {
+  const entries = classMistakes(classNum);
+  if (!entries.length) return;
+  const bySubj = {};
+  entries.forEach(({ subj, qid }) => (bySubj[subj] = bySubj[subj] || []).push(qid));
+  let qs = [];
+  for (const subj of Object.keys(bySubj)) {
+    const got = await getQuestionsByIds(classNum, subj, bySubj[subj], region);
+    qs.push(...got.map((q) => ({ ...q, _subj: subj })));
+  }
+  if (!qs.length) return;
+  qs = exShuffle(qs).slice(0, SESSION_TOTAL);
+
+  currentClass   = classNum;
+  currentSubject = qs[0]._subj;
+  reviewQueue    = qs;
+  playBadgeEl.textContent = `Class ${classNum} · 🔁 Review`;
+
+  sessionCount     = 0;
+  sessionCorrect   = 0;
+  sessionSeenIds   = new Set();
+  sessionScore     = 0;
+  sessionCombo     = 0;
+  sessionHearts    = 3;
+  sessionAnswers   = [];
+  sessionStartedAt = Date.now();
+  renderHUD();
+
+  document.body.classList.add("focus-mode");
+  classPickerEl.classList.add("hidden");
+  subjectPickerEl.classList.add("hidden");
+  sessionCompleteEl.classList.add("hidden");
+  playScreenEl.classList.remove("hidden");
+  streakDisplay.classList.remove("hidden");
+  await loadNextQuestion();
+}
+
 function showSubjectPicker(classNum) {
   clearTimeout(advanceTimer);
   window.speechSynthesis?.cancel();
   recordAbandonedScreenTime();
   document.body.classList.remove("focus-mode");
   window.scrollTo(0, 0);
+  reviewQueue = null;
   currentClass = classNum;
   const subjects = getSubjectsForClass(classNum);
 
@@ -944,12 +1026,24 @@ function showSubjectPicker(classNum) {
     subjectGridEl.appendChild(btn);
   }
 
+  // Mistake review appears once there's a real queue (≥3) — a single slip
+  // shouldn't follow a student around.
+  const mistakes = classMistakes(classNum);
+  if (mistakes.length >= 3) {
+    const btn = document.createElement("button");
+    btn.className = "subject-btn review-subject-btn";
+    btn.innerHTML = `<span class="subject-emoji">🔁</span>Practice my mistakes <span class="review-count">${mistakes.length}</span>`;
+    btn.addEventListener("click", () => startReview(classNum));
+    subjectGridEl.appendChild(btn);
+  }
+
   classPickerEl.classList.add("hidden");
   subjectPickerEl.classList.remove("hidden");
   playScreenEl.classList.add("hidden");
 }
 
 async function startPlay(subject) {
+  reviewQueue    = null;
   currentSubject = subject;
   const subjects = getSubjectsForClass(currentClass);
   const meta = subjects.find((s) => s.id === subject);
@@ -976,13 +1070,24 @@ async function startPlay(subject) {
 
 // ── question loop ──
 async function loadNextQuestion() {
-  const key        = adaptiveKey(currentClass, currentSubject);
-  const difficulty = getDifficulty(adaptiveState, key, 1);
-
   feedbackEl.textContent = "";
   feedbackEl.className   = "feedback";
   questionPrompt.textContent = "…";
   choicesEl.innerHTML = "";
+
+  // Review session: serve straight from the mistake queue.
+  if (reviewQueue) {
+    if (!reviewQueue.length) { showSessionComplete(); return; }
+    currentQuestion = reviewQueue.shift();
+    if (currentQuestion._subj) currentSubject = currentQuestion._subj;
+    sessionSeenIds.add(currentQuestion.id);
+    renderQuestion(currentQuestion);
+    questionStartedAt = Date.now();
+    return;
+  }
+
+  const key        = adaptiveKey(currentClass, currentSubject);
+  const difficulty = getDifficulty(adaptiveState, key, 1);
 
   const getToken = (currentUser && isPremiumCached())
     ? () => currentUser.getIdToken()
@@ -1098,7 +1203,12 @@ function handleAnswer(selectedIndex, selectedBtn) {
   recordAttempt(adaptiveState, key, { correct, ms: elapsedMs, startingDifficulty: 1 });
   saveAdaptiveState();
 
-  if (sessionCount >= SESSION_TOTAL) {
+  // Mistake queue: wrong answers enter it; a correct answer to the same
+  // question — here or in a review session — clears it.
+  if (correct) clearMistake(currentClass, currentSubject, currentQuestion.id);
+  else         recordMistake(currentClass, currentSubject, currentQuestion.id);
+
+  if (sessionCount >= SESSION_TOTAL || (reviewQueue && !reviewQueue.length)) {
     // Completion always fires — it saves the high score and shows the
     // (exclusive) score screen even if the student taps away meanwhile.
     setTimeout(showSessionComplete, 1400);
@@ -1109,6 +1219,8 @@ function handleAnswer(selectedIndex, selectedBtn) {
 
 // ── Session Complete ──
 function showSessionComplete() {
+  const wasReview = !!reviewQueue;
+  reviewQueue = null;
   document.body.classList.remove("focus-mode");
   window.speechSynthesis?.cancel();
 
@@ -1134,12 +1246,22 @@ function showSessionComplete() {
   if (completeTitleEl) completeTitleEl.textContent = titles[stars];
   completeScoreEl.textContent = `${sessionCorrect} / ${SESSION_TOTAL} correct`;
 
-  // High score per class+subject
+  // High score per class+subject (review sessions mix subjects, so they
+  // don't compete for a subject's high score)
   const hsKey  = `ecplay_hs_${currentClass}_${currentSubject}`;
   const prevHs = parseInt(localStorage.getItem(hsKey) || "0");
-  const isNew  = sessionScore > prevHs;
+  const isNew  = !wasReview && sessionScore > prevHs;
   if (isNew) localStorage.setItem(hsKey, sessionScore);
   if (newRecordBadgeEl) newRecordBadgeEl.classList.toggle("hidden", !isNew);
+
+  // Offer mistake review when a real queue exists — the kindest moment to
+  // offer it is right after a session, while the misses are fresh.
+  const reviewBtn = document.getElementById("review-mistakes-btn");
+  if (reviewBtn) {
+    const n = classMistakes(currentClass).length;
+    reviewBtn.classList.toggle("hidden", n < 3);
+    reviewBtn.textContent = `🔁 Practice my mistakes (${n})`;
+  }
   lastSessionStars  = stars;
   lastSessionRecord = isNew;
 
