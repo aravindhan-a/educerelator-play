@@ -57,8 +57,11 @@ function pageHTML({ cls, subj, label, bank, samples, allSubjects }) {
       suggestedAnswer: q.choices.filter((_, i) => i !== q.answerIndex).slice(0, 1).map((c) => ({ "@type": "Answer", text: c.en }))[0],
       acceptedAnswer: { "@type": "Answer", text: q.choices[q.answerIndex].en } })) };
 
+  // Progressive enhancement: without JS this is crawlable text with a
+  // <details> answer (what search engines index); with JS the list items
+  // become tap-to-answer buttons with instant feedback and a running score.
   const qBlocks = samples.map((q, i) => `
-    <div class="q">
+    <div class="q" data-answer="${q.answerIndex}">
       <p class="q-prompt"><span class="q-num">Q${i + 1}.</span> ${esc(q.prompt.en)}${q.visual ? ` <span class="q-visual">${esc(q.visual)}</span>` : ""}</p>
       <ol class="q-choices" type="A">${q.choices.map((c) => `<li>${esc(c.en)}</li>`).join("")}</ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -103,6 +106,15 @@ body{font-family:"Segoe UI",system-ui,sans-serif;color:#1a1a2e;background:#faf9f
 .q-choices{margin:10px 0 6px 26px;color:#333}.q-choices li{margin:3px 0}
 .q-answer summary{cursor:pointer;color:#7c3aed;font-weight:700;font-size:.9rem}
 .q-answer p{margin:8px 0 4px;color:#065f46;background:#ecfdf5;padding:8px 12px;border-radius:8px;font-size:.92rem}
+.choice{display:block;width:100%;text-align:left;font:inherit;color:#333;background:#f8f7ff;border:2px solid #e9e4f8;border-radius:10px;padding:9px 12px;cursor:pointer;transition:border-color .15s,background .15s}
+.choice:hover{border-color:#c4b5fd}.q[data-done] .choice{cursor:default;opacity:.85}
+.choice.right{background:#ecfdf5;border-color:#10b981;color:#065f46;font-weight:800;opacity:1!important}
+.choice.wrong{background:#fef2f2;border-color:#f87171;color:#991b1b;opacity:1!important}
+.q.js .q-choices{list-style:none;margin-left:0}.q.js .q-choices li{margin:7px 0}
+.q-reveal{margin:10px 0 4px;color:#065f46;background:#ecfdf5;padding:8px 12px;border-radius:8px;font-size:.92rem}
+.score-pill{position:sticky;top:10px;z-index:5;display:none;width:max-content;margin:0 auto;background:#1e1b4b;color:#fff;font-weight:800;font-size:.9rem;padding:7px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.finish-card{display:none;text-align:center;background:#fff;border:2px solid #e9e4f8;border-radius:16px;padding:26px 18px;margin:18px 0;box-shadow:0 4px 18px rgba(124,58,237,.12)}
+.finish-card .fc-emoji{font-size:2.4rem}.finish-card h3{color:#2d1b4e;margin:6px 0 4px}.finish-card p{color:#555;margin-bottom:14px}
 .links{font-size:.92rem;color:#555;background:#f3e8ff;border-radius:12px;padding:14px 16px;margin-top:26px}
 .links a{color:#6d28d9;font-weight:700;text-decoration:none}
 .band{background:linear-gradient(135deg,#7c3aed,#ff5e7e);text-align:center;color:#fff;padding:38px 20px;margin-top:36px}
@@ -119,7 +131,14 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 </div>
 <div class="wrap">
   <h2>Sample questions with answers</h2>
+  <div class="score-pill" id="score-pill">Score: 0 / ${samples.length}</div>
   ${qBlocks}
+  <div class="finish-card" id="finish-card">
+    <div class="fc-emoji" id="fc-emoji">🎉</div>
+    <h3 id="fc-title">Great practice!</h3>
+    <p id="fc-text"></p>
+    <a class="cta" href="/">Practice all ${bank.length} questions free →</a>
+  </div>
   <div class="links">
     <p><strong>More Class ${cls} practice:</strong> ${sameClass || "—"}</p>
     ${adjacent ? `<p><strong>Same subject, other classes:</strong> ${adjacent}</p>` : ""}
@@ -128,6 +147,51 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 </div>
 <div class="band"><h2>Ready for the full adaptive quiz?</h2><p>Combo scores, streaks and instant feedback — in 13 languages.</p><br/><a class="cta" href="/">Play free on EC Play →</a></div>
 <footer>© 2026 Educerelator · <a href="/">EC Play</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></footer>
+<script>
+(function(){
+  "use strict";
+  var qs = [].slice.call(document.querySelectorAll(".q"));
+  var total = qs.length, done = 0, ok = 0;
+  var pill = document.getElementById("score-pill");
+  if (!qs.length || !pill) return;
+  pill.style.display = "block";
+  qs.forEach(function(q){
+    var ans = +q.dataset.answer;
+    var det = q.querySelector("details");
+    var lis = [].slice.call(q.querySelectorAll(".q-choices li"));
+    q.classList.add("js");
+    if (det) det.style.display = "none";
+    var btns = lis.map(function(li, i){
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "choice";
+      b.innerHTML = String.fromCharCode(65 + i) + ". " + li.innerHTML;
+      li.textContent = ""; li.appendChild(b);
+      return b;
+    });
+    btns.forEach(function(b, i){
+      b.addEventListener("click", function(){
+        if (q.dataset.done) return;
+        q.dataset.done = "1"; done++;
+        if (i === ans) { b.classList.add("right"); ok++; }
+        else { b.classList.add("wrong"); btns[ans].classList.add("right"); }
+        if (det) { var p = det.querySelector("p"); if (p) { p.className = "q-reveal"; q.appendChild(p); } det.remove(); }
+        pill.textContent = "Score: " + ok + " / " + total;
+        if (done === total) finish();
+      });
+    });
+  });
+  function finish(){
+    var card = document.getElementById("finish-card");
+    var em = document.getElementById("fc-emoji"), ti = document.getElementById("fc-title"), tx = document.getElementById("fc-text");
+    var pc = ok / total;
+    if (pc >= 0.8) { em.textContent = "🏆"; ti.textContent = "Outstanding! " + ok + " out of " + total + "!"; tx.textContent = "You are ready for harder questions — the full quiz adapts to you."; }
+    else if (pc >= 0.5) { em.textContent = "🎉"; ti.textContent = "Well done — " + ok + " out of " + total + "!"; tx.textContent = "A little more practice and you will master this. The full quiz has explanations for every mistake."; }
+    else { em.textContent = "🌱"; ti.textContent = "Good start — " + ok + " out of " + total + "."; tx.textContent = "Every expert began exactly here. Try the full quiz — it adjusts to your level so you learn step by step."; }
+    card.style.display = "block";
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+})();
+</script>
 </body>
 </html>`;
 }

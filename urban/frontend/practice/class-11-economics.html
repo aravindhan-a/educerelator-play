@@ -31,6 +31,15 @@ body{font-family:"Segoe UI",system-ui,sans-serif;color:#1a1a2e;background:#faf9f
 .q-choices{margin:10px 0 6px 26px;color:#333}.q-choices li{margin:3px 0}
 .q-answer summary{cursor:pointer;color:#7c3aed;font-weight:700;font-size:.9rem}
 .q-answer p{margin:8px 0 4px;color:#065f46;background:#ecfdf5;padding:8px 12px;border-radius:8px;font-size:.92rem}
+.choice{display:block;width:100%;text-align:left;font:inherit;color:#333;background:#f8f7ff;border:2px solid #e9e4f8;border-radius:10px;padding:9px 12px;cursor:pointer;transition:border-color .15s,background .15s}
+.choice:hover{border-color:#c4b5fd}.q[data-done] .choice{cursor:default;opacity:.85}
+.choice.right{background:#ecfdf5;border-color:#10b981;color:#065f46;font-weight:800;opacity:1!important}
+.choice.wrong{background:#fef2f2;border-color:#f87171;color:#991b1b;opacity:1!important}
+.q.js .q-choices{list-style:none;margin-left:0}.q.js .q-choices li{margin:7px 0}
+.q-reveal{margin:10px 0 4px;color:#065f46;background:#ecfdf5;padding:8px 12px;border-radius:8px;font-size:.92rem}
+.score-pill{position:sticky;top:10px;z-index:5;display:none;width:max-content;margin:0 auto;background:#1e1b4b;color:#fff;font-weight:800;font-size:.9rem;padding:7px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.finish-card{display:none;text-align:center;background:#fff;border:2px solid #e9e4f8;border-radius:16px;padding:26px 18px;margin:18px 0;box-shadow:0 4px 18px rgba(124,58,237,.12)}
+.finish-card .fc-emoji{font-size:2.4rem}.finish-card h3{color:#2d1b4e;margin:6px 0 4px}.finish-card p{color:#555;margin-bottom:14px}
 .links{font-size:.92rem;color:#555;background:#f3e8ff;border-radius:12px;padding:14px 16px;margin-top:26px}
 .links a{color:#6d28d9;font-weight:700;text-decoration:none}
 .band{background:linear-gradient(135deg,#7c3aed,#ff5e7e);text-align:center;color:#fff;padding:38px 20px;margin-top:36px}
@@ -47,8 +56,9 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 </div>
 <div class="wrap">
   <h2>Sample questions with answers</h2>
+  <div class="score-pill" id="score-pill">Score: 0 / 16</div>
   
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q1.</span> Microeconomics studies the economic behaviour of: <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>Individual units like households and firms</li><li>National income</li><li>The entire economy</li><li>Government spending</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -56,7 +66,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q2.</span> The law of demand states that, other things being equal, as price increases: <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>Demand decreases</li><li>Demand stays constant</li><li>Demand increases</li><li>Supply decreases</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -64,7 +74,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q3.</span> Statistics in economics is primarily used for: <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>Collecting and interpreting economic data</li><li>Predicting weather patterns</li><li>Writing government policies</li><li>Literary analysis</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -72,7 +82,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q4.</span> The central problem of economics arises because of: <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>Scarcity of resources</li><li>Lack of government regulation</li><li>Overproduction of goods</li><li>Unlimited resources</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -80,7 +90,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="2">
       <p class="q-prompt"><span class="q-num">Q5.</span> A perfectly competitive market has: <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>One seller</li><li>Few buyers and sellers</li><li>Many buyers and sellers with homogeneous products</li><li>Government-controlled prices</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -88,7 +98,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="2">
       <p class="q-prompt"><span class="q-num">Q6.</span> Mean of the data set {4, 8, 6, 10, 2} is: <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>8</li><li>5</li><li>6</li><li>7</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -96,7 +106,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="1">
       <p class="q-prompt"><span class="q-num">Q7.</span> Opportunity cost is defined as: <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>Total expenditure on goods</li><li>The value of the next best alternative foregone</li><li>The cost of production</li><li>The price of a good in the market</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -104,7 +114,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q8.</span> Which of the following is NOT a factor of production? <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>Money</li><li>Labour</li><li>Land</li><li>Capital</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -112,7 +122,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q9.</span> The median of the data {3, 5, 7, 9, 11} is: <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>7</li><li>9</li><li>6</li><li>5</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -120,7 +130,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="1">
       <p class="q-prompt"><span class="q-num">Q10.</span> When supply exceeds demand, the market price tends to: <span class="q-visual">📊</span></p>
       <ol class="q-choices" type="A"><li>Remain the same</li><li>Fall</li><li>Rise</li><li>Double</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -128,7 +138,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q11.</span> The branch of economics that studies individual units like households and firms is:</p>
       <ol class="q-choices" type="A"><li>Microeconomics</li><li>Macroeconomics</li><li>Statistics</li><li>Accountancy</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -136,7 +146,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="1">
       <p class="q-prompt"><span class="q-num">Q12.</span> A market structure with only one seller is called:</p>
       <ol class="q-choices" type="A"><li>Perfect competition</li><li>Monopoly</li><li>Oligopoly</li><li>Duopoly</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -144,7 +154,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="2">
       <p class="q-prompt"><span class="q-num">Q13.</span> The desire for a good backed by ability and willingness to pay is called:</p>
       <ol class="q-choices" type="A"><li>Supply</li><li>Utility</li><li>Demand</li><li>Cost</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -152,7 +162,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="3">
       <p class="q-prompt"><span class="q-num">Q14.</span> The branch of economics that studies the economy as a whole (GDP, inflation) is:</p>
       <ol class="q-choices" type="A"><li>Microeconomics</li><li>Book-keeping</li><li>Marketing</li><li>Macroeconomics</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -160,7 +170,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q15.</span> The total market value of all final goods and services produced in a country in a year is called:</p>
       <ol class="q-choices" type="A"><li>GDP</li><li>CPI</li><li>EMI</li><li>GST</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -168,13 +178,19 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="1">
       <p class="q-prompt"><span class="q-num">Q16.</span> Which is the central bank of India?</p>
       <ol class="q-choices" type="A"><li>State Bank of India</li><li>Reserve Bank of India</li><li>SEBI</li><li>NABARD</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
         <p><strong>B. Reserve Bank of India</strong></p>
       </details>
     </div>
+  <div class="finish-card" id="finish-card">
+    <div class="fc-emoji" id="fc-emoji">🎉</div>
+    <h3 id="fc-title">Great practice!</h3>
+    <p id="fc-text"></p>
+    <a class="cta" href="/">Practice all 16 questions free →</a>
+  </div>
   <div class="links">
     <p><strong>More Class 11 practice:</strong> <a href="class-11-maths.html">Class 11 Mathematics</a> · <a href="class-11-physics.html">Class 11 Physics</a> · <a href="class-11-chemistry.html">Class 11 Chemistry</a> · <a href="class-11-biology.html">Class 11 Biology</a> · <a href="class-11-english.html">Class 11 English</a> · <a href="class-11-business-studies.html">Class 11 Business Studies</a> · <a href="class-11-history.html">Class 11 History</a> · <a href="class-11-geography.html">Class 11 Geography</a> · <a href="class-11-political-science.html">Class 11 Political Science</a> · <a href="class-11-computer-science.html">Class 11 Computer Science</a> · <a href="class-11-psychology.html">Class 11 Psychology</a> · <a href="class-11-sociology.html">Class 11 Sociology</a></p>
     <p><strong>Same subject, other classes:</strong> <a href="class-12-economics.html">Class 12 Economics</a></p>
@@ -183,5 +199,50 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 </div>
 <div class="band"><h2>Ready for the full adaptive quiz?</h2><p>Combo scores, streaks and instant feedback — in 13 languages.</p><br/><a class="cta" href="/">Play free on EC Play →</a></div>
 <footer>© 2026 Educerelator · <a href="/">EC Play</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></footer>
+<script>
+(function(){
+  "use strict";
+  var qs = [].slice.call(document.querySelectorAll(".q"));
+  var total = qs.length, done = 0, ok = 0;
+  var pill = document.getElementById("score-pill");
+  if (!qs.length || !pill) return;
+  pill.style.display = "block";
+  qs.forEach(function(q){
+    var ans = +q.dataset.answer;
+    var det = q.querySelector("details");
+    var lis = [].slice.call(q.querySelectorAll(".q-choices li"));
+    q.classList.add("js");
+    if (det) det.style.display = "none";
+    var btns = lis.map(function(li, i){
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "choice";
+      b.innerHTML = String.fromCharCode(65 + i) + ". " + li.innerHTML;
+      li.textContent = ""; li.appendChild(b);
+      return b;
+    });
+    btns.forEach(function(b, i){
+      b.addEventListener("click", function(){
+        if (q.dataset.done) return;
+        q.dataset.done = "1"; done++;
+        if (i === ans) { b.classList.add("right"); ok++; }
+        else { b.classList.add("wrong"); btns[ans].classList.add("right"); }
+        if (det) { var p = det.querySelector("p"); if (p) { p.className = "q-reveal"; q.appendChild(p); } det.remove(); }
+        pill.textContent = "Score: " + ok + " / " + total;
+        if (done === total) finish();
+      });
+    });
+  });
+  function finish(){
+    var card = document.getElementById("finish-card");
+    var em = document.getElementById("fc-emoji"), ti = document.getElementById("fc-title"), tx = document.getElementById("fc-text");
+    var pc = ok / total;
+    if (pc >= 0.8) { em.textContent = "🏆"; ti.textContent = "Outstanding! " + ok + " out of " + total + "!"; tx.textContent = "You are ready for harder questions — the full quiz adapts to you."; }
+    else if (pc >= 0.5) { em.textContent = "🎉"; ti.textContent = "Well done — " + ok + " out of " + total + "!"; tx.textContent = "A little more practice and you will master this. The full quiz has explanations for every mistake."; }
+    else { em.textContent = "🌱"; ti.textContent = "Good start — " + ok + " out of " + total + "."; tx.textContent = "Every expert began exactly here. Try the full quiz — it adjusts to your level so you learn step by step."; }
+    card.style.display = "block";
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+})();
+</script>
 </body>
 </html>

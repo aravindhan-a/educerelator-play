@@ -31,6 +31,15 @@ body{font-family:"Segoe UI",system-ui,sans-serif;color:#1a1a2e;background:#faf9f
 .q-choices{margin:10px 0 6px 26px;color:#333}.q-choices li{margin:3px 0}
 .q-answer summary{cursor:pointer;color:#7c3aed;font-weight:700;font-size:.9rem}
 .q-answer p{margin:8px 0 4px;color:#065f46;background:#ecfdf5;padding:8px 12px;border-radius:8px;font-size:.92rem}
+.choice{display:block;width:100%;text-align:left;font:inherit;color:#333;background:#f8f7ff;border:2px solid #e9e4f8;border-radius:10px;padding:9px 12px;cursor:pointer;transition:border-color .15s,background .15s}
+.choice:hover{border-color:#c4b5fd}.q[data-done] .choice{cursor:default;opacity:.85}
+.choice.right{background:#ecfdf5;border-color:#10b981;color:#065f46;font-weight:800;opacity:1!important}
+.choice.wrong{background:#fef2f2;border-color:#f87171;color:#991b1b;opacity:1!important}
+.q.js .q-choices{list-style:none;margin-left:0}.q.js .q-choices li{margin:7px 0}
+.q-reveal{margin:10px 0 4px;color:#065f46;background:#ecfdf5;padding:8px 12px;border-radius:8px;font-size:.92rem}
+.score-pill{position:sticky;top:10px;z-index:5;display:none;width:max-content;margin:0 auto;background:#1e1b4b;color:#fff;font-weight:800;font-size:.9rem;padding:7px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.finish-card{display:none;text-align:center;background:#fff;border:2px solid #e9e4f8;border-radius:16px;padding:26px 18px;margin:18px 0;box-shadow:0 4px 18px rgba(124,58,237,.12)}
+.finish-card .fc-emoji{font-size:2.4rem}.finish-card h3{color:#2d1b4e;margin:6px 0 4px}.finish-card p{color:#555;margin-bottom:14px}
 .links{font-size:.92rem;color:#555;background:#f3e8ff;border-radius:12px;padding:14px 16px;margin-top:26px}
 .links a{color:#6d28d9;font-weight:700;text-decoration:none}
 .band{background:linear-gradient(135deg,#7c3aed,#ff5e7e);text-align:center;color:#fff;padding:38px 20px;margin-top:36px}
@@ -47,8 +56,9 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 </div>
 <div class="wrap">
   <h2>Sample questions with answers</h2>
+  <div class="score-pill" id="score-pill">Score: 0 / 16</div>
   
-    <div class="q">
+    <div class="q" data-answer="1">
       <p class="q-prompt"><span class="q-num">Q1.</span> India gained independence on? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>26 January 1950</li><li>15 August 1947</li><li>30 January 1948</li><li>2 October 1948</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -56,7 +66,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="1">
       <p class="q-prompt"><span class="q-num">Q2.</span> The Non-Cooperation Movement was launched by Mahatma Gandhi in which year? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>1915</li><li>1920</li><li>1905</li><li>1942</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -64,7 +74,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="1">
       <p class="q-prompt"><span class="q-num">Q3.</span> Which country gifted the Statue of Liberty to the United States? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>Germany</li><li>France</li><li>Italy</li><li>Britain</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -72,7 +82,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="2">
       <p class="q-prompt"><span class="q-num">Q4.</span> Which of the following is a mineral resource? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>River</li><li>Forest</li><li>Iron ore</li><li>Soil</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -80,7 +90,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q5.</span> The Quit India Movement was launched in? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>1942</li><li>1930</li><li>1920</li><li>1945</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -88,7 +98,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q6.</span> Which of the following is a Fundamental Right in India? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>Right to equality</li><li>Right to vote</li><li>Right to free education up to age 18</li><li>Right to work</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -96,7 +106,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q7.</span> Which Indian leader was known as 'Iron Man of India'? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>Sardar Vallabhbhai Patel</li><li>B.R. Ambedkar</li><li>Mahatma Gandhi</li><li>Jawaharlal Nehru</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -104,7 +114,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="2">
       <p class="q-prompt"><span class="q-num">Q8.</span> What type of farming is done on steep hillside slopes using step-like fields? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>Commercial farming</li><li>Subsistence farming</li><li>Terrace farming</li><li>Plantation farming</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -112,7 +122,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="3">
       <p class="q-prompt"><span class="q-num">Q9.</span> The Indian Parliament consists of how many houses? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>1</li><li>3</li><li>4</li><li>2</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -120,7 +130,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q10.</span> The Dandi March (Salt March) of 1930 was led by? <span class="q-visual">🗺️</span></p>
       <ol class="q-choices" type="A"><li>Mahatma Gandhi</li><li>Bal Gangadhar Tilak</li><li>Jawaharlal Nehru</li><li>Subhas Chandra Bose</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -128,7 +138,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q11.</span> Who is called the Father of the Nation in India?</p>
       <ol class="q-choices" type="A"><li>Mahatma Gandhi</li><li>Jawaharlal Nehru</li><li>Subhas Chandra Bose</li><li>Rabindranath Tagore</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -136,7 +146,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="1">
       <p class="q-prompt"><span class="q-num">Q12.</span> Who was the first Prime Minister of India?</p>
       <ol class="q-choices" type="A"><li>Mahatma Gandhi</li><li>Jawaharlal Nehru</li><li>Sardar Patel</li><li>Dr. Rajendra Prasad</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -144,7 +154,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="2">
       <p class="q-prompt"><span class="q-num">Q13.</span> Who was the first President of India?</p>
       <ol class="q-choices" type="A"><li>Jawaharlal Nehru</li><li>Mahatma Gandhi</li><li>Dr. Rajendra Prasad</li><li>Dr. B. R. Ambedkar</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -152,7 +162,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="3">
       <p class="q-prompt"><span class="q-num">Q14.</span> Who is known as the chief architect of the Indian Constitution?</p>
       <ol class="q-choices" type="A"><li>Jawaharlal Nehru</li><li>Mahatma Gandhi</li><li>Sardar Patel</li><li>Dr. B. R. Ambedkar</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -160,7 +170,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="0">
       <p class="q-prompt"><span class="q-num">Q15.</span> Who wrote the national anthem of India?</p>
       <ol class="q-choices" type="A"><li>Rabindranath Tagore</li><li>Mahatma Gandhi</li><li>Jawaharlal Nehru</li><li>Subhas Chandra Bose</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
@@ -168,13 +178,19 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
       </details>
     </div>
 
-    <div class="q">
+    <div class="q" data-answer="1">
       <p class="q-prompt"><span class="q-num">Q16.</span> Which is the highest court in India?</p>
       <ol class="q-choices" type="A"><li>High Court</li><li>Supreme Court</li><li>Parliament</li><li>Reserve Bank of India</li></ol>
       <details class="q-answer"><summary>Show answer</summary>
         <p><strong>B. Supreme Court</strong></p>
       </details>
     </div>
+  <div class="finish-card" id="finish-card">
+    <div class="fc-emoji" id="fc-emoji">🎉</div>
+    <h3 id="fc-title">Great practice!</h3>
+    <p id="fc-text"></p>
+    <a class="cta" href="/">Practice all 16 questions free →</a>
+  </div>
   <div class="links">
     <p><strong>More Class 8 practice:</strong> <a href="class-8-maths.html">Class 8 Mathematics</a> · <a href="class-8-science.html">Class 8 Science</a> · <a href="class-8-english.html">Class 8 English</a> · <a href="class-8-hindi.html">Class 8 Hindi</a> · <a href="class-8-tamil.html">Class 8 Tamil</a></p>
     <p><strong>Same subject, other classes:</strong> <a href="class-7-social-studies.html">Class 7 Social Studies</a> · <a href="class-9-social-studies.html">Class 9 Social Studies</a></p>
@@ -183,5 +199,50 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 </div>
 <div class="band"><h2>Ready for the full adaptive quiz?</h2><p>Combo scores, streaks and instant feedback — in 13 languages.</p><br/><a class="cta" href="/">Play free on EC Play →</a></div>
 <footer>© 2026 Educerelator · <a href="/">EC Play</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></footer>
+<script>
+(function(){
+  "use strict";
+  var qs = [].slice.call(document.querySelectorAll(".q"));
+  var total = qs.length, done = 0, ok = 0;
+  var pill = document.getElementById("score-pill");
+  if (!qs.length || !pill) return;
+  pill.style.display = "block";
+  qs.forEach(function(q){
+    var ans = +q.dataset.answer;
+    var det = q.querySelector("details");
+    var lis = [].slice.call(q.querySelectorAll(".q-choices li"));
+    q.classList.add("js");
+    if (det) det.style.display = "none";
+    var btns = lis.map(function(li, i){
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "choice";
+      b.innerHTML = String.fromCharCode(65 + i) + ". " + li.innerHTML;
+      li.textContent = ""; li.appendChild(b);
+      return b;
+    });
+    btns.forEach(function(b, i){
+      b.addEventListener("click", function(){
+        if (q.dataset.done) return;
+        q.dataset.done = "1"; done++;
+        if (i === ans) { b.classList.add("right"); ok++; }
+        else { b.classList.add("wrong"); btns[ans].classList.add("right"); }
+        if (det) { var p = det.querySelector("p"); if (p) { p.className = "q-reveal"; q.appendChild(p); } det.remove(); }
+        pill.textContent = "Score: " + ok + " / " + total;
+        if (done === total) finish();
+      });
+    });
+  });
+  function finish(){
+    var card = document.getElementById("finish-card");
+    var em = document.getElementById("fc-emoji"), ti = document.getElementById("fc-title"), tx = document.getElementById("fc-text");
+    var pc = ok / total;
+    if (pc >= 0.8) { em.textContent = "🏆"; ti.textContent = "Outstanding! " + ok + " out of " + total + "!"; tx.textContent = "You are ready for harder questions — the full quiz adapts to you."; }
+    else if (pc >= 0.5) { em.textContent = "🎉"; ti.textContent = "Well done — " + ok + " out of " + total + "!"; tx.textContent = "A little more practice and you will master this. The full quiz has explanations for every mistake."; }
+    else { em.textContent = "🌱"; ti.textContent = "Good start — " + ok + " out of " + total + "."; tx.textContent = "Every expert began exactly here. Try the full quiz — it adjusts to your level so you learn step by step."; }
+    card.style.display = "block";
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+})();
+</script>
 </body>
 </html>
