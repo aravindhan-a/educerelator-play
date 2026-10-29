@@ -7,12 +7,12 @@
 //  - Static assets (css/js/fonts/icons) + question banks (content/*.json):
 //    stale-while-revalidate — serve from cache instantly, refresh in background.
 // Bump VERSION on breaking changes to purge old caches.
-const VERSION = "v3";
+const VERSION = "v4";
 const CACHE = `ecplay-${VERSION}`;
 const PRECACHE = [
   "/",
-  "/css/style.css?v=game3",
-  "/js/main.js?v=game3",
+  "/css/style.css?v=game4",
+  "/js/main.js?v=game4",
   "/fonts/baloo2-var.woff2",
   "/manifest.json",
   "/icon-192.png",
