@@ -42,7 +42,7 @@ polished enough to anchor a McGinnis Venture Competition submission.
   friendly prompt "What should we call you?" (skippable, stored locally only);
   greet by name on return ("Good morning, Priya! ☀️"); never required, never
   sent to a server for guests.
-- [ ] **A4. Exam-subject landing pages**: generate 24 crawlable practice pages
+- [x] **A4. Exam-subject landing pages** (`88b1cf3`): generate 24 crawlable practice pages
   from content/exams/** (NEET Biology, JEE Physics, UPSC Polity …) with the
   same interactive treatment; add to sitemap + practice hub + hreflang-safe.
 - [ ] **A5. PWA installability**: manifest.json (name, icons from the owl
