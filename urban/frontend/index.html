@@ -175,7 +175,7 @@
 <link rel="dns-prefetch" href="https://www.gstatic.com" />
 <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
 <link rel="preload" href="fonts/baloo2-var.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="css/style.css?v=game4" />
+<link rel="stylesheet" href="css/style.css?v=game5" />
 </head>
 <body>
 
@@ -408,6 +408,15 @@
         <button id="share-score-btn" class="btn-share-inline">📤 Share</button>
       </div>
       <button id="review-mistakes-btn" class="btn-review-mistakes hidden">🔁 Practice my mistakes</button>
+      <div id="name-ask-card" class="name-ask-card hidden">
+        <p class="name-ask-text">Great playing with you! What should we call you?</p>
+        <div class="name-ask-row">
+          <input id="name-ask-input" class="name-ask-input" type="text" maxlength="20" placeholder="Your name (optional)" autocomplete="off" />
+          <button id="name-ask-save" class="btn-name-save">Save</button>
+          <button id="name-ask-skip" class="btn-name-skip">Skip</button>
+        </div>
+        <p class="name-ask-privacy">Stays on this device only — never sent anywhere.</p>
+      </div>
       <div class="upgrade-strip" id="upgrade-strip">
         <div class="upgrade-strip-inner">
           <span class="upgrade-icon">⚡</span>
@@ -550,7 +559,7 @@
 
 </div>
 
-<script type="module" src="js/main.js?v=game4"></script>
+<script type="module" src="js/main.js?v=game5"></script>
 <script>
 // PWA: register the service worker from the site root (scope "/"). Skipped on
 // localhost file previews where the root path differs.
