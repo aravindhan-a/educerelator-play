@@ -307,6 +307,23 @@ function countUpScore(target) {
   }, 30);
 }
 
+// Guest personalization: an optional nickname, stored on this device only —
+// never synced, never sent to a server. Asked once, after the first
+// completed session; skipping is always fine.
+const GUEST_NAME_KEY  = "ecplay_name";
+const NAME_ASKED_KEY  = "ecplay_name_asked";
+function guestName() {
+  const v = (localStorage.getItem(GUEST_NAME_KEY) || "").replace(/\s+/g, " ").trim().slice(0, 20);
+  return v || null;
+}
+function maybeOfferNameAsk() {
+  const card = document.getElementById("name-ask-card");
+  if (!card) return;
+  const show = !currentUser && !guestName() && !localStorage.getItem(NAME_ASKED_KEY);
+  card.classList.toggle("hidden", !show);
+  if (show) document.getElementById("name-ask-input").value = "";
+}
+
 function updateWelcomeBanner() {
   if (!currentUser && !guestMode) return;
   const banner = document.getElementById("welcome-banner");
@@ -318,7 +335,7 @@ function updateWelcomeBanner() {
 
   const name = currentUser
     ? (currentUser.displayName || currentUser.email.split("@")[0])
-    : null;
+    : guestName();
   document.getElementById("welcome-name").textContent =
     name ? `Hi, ${name.split(" ")[0]}! 👋` : "Welcome! 👋";
 
@@ -534,6 +551,33 @@ document.getElementById("guest-btn").addEventListener("click", () => {
 document.getElementById("review-mistakes-btn")?.addEventListener("click", () => {
   sessionCompleteEl.classList.add("hidden");
   startReview(currentClass);
+});
+
+// Name-ask card (guest personalization) — both paths mark it answered so it
+// never nags twice.
+document.getElementById("name-ask-save")?.addEventListener("click", () => {
+  const v = document.getElementById("name-ask-input").value.replace(/\s+/g, " ").trim().slice(0, 20);
+  if (v) localStorage.setItem(GUEST_NAME_KEY, v);
+  localStorage.setItem(NAME_ASKED_KEY, "1");
+  const card = document.getElementById("name-ask-card");
+  if (v) {
+    card.innerHTML = "";
+    const p = document.createElement("p");
+    p.className = "name-ask-text";
+    p.textContent = `Nice to meet you, ${v}! 🎉`;
+    card.appendChild(p);
+    setTimeout(() => card.classList.add("hidden"), 2500);
+  } else {
+    card.classList.add("hidden");
+  }
+  updateWelcomeBanner();
+});
+document.getElementById("name-ask-input")?.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") document.getElementById("name-ask-save").click();
+});
+document.getElementById("name-ask-skip")?.addEventListener("click", () => {
+  localStorage.setItem(NAME_ASKED_KEY, "1");
+  document.getElementById("name-ask-card").classList.add("hidden");
 });
 
 topbarSigninBtn.addEventListener("click", () => {
@@ -1253,6 +1297,8 @@ function showSessionComplete() {
   const isNew  = !wasReview && sessionScore > prevHs;
   if (isNew) localStorage.setItem(hsKey, sessionScore);
   if (newRecordBadgeEl) newRecordBadgeEl.classList.toggle("hidden", !isNew);
+
+  maybeOfferNameAsk();
 
   // Offer mistake review when a real queue exists — the kindest moment to
   // offer it is right after a session, while the misses are fresh.

@@ -302,6 +302,28 @@ button.home-stat-share:hover { transform: scale(1.05); background: rgba(255,255,
 }
 .btn-review-mistakes:hover { transform: translateY(-2px); }
 .btn-review-mistakes:active { transform: translateY(2px); box-shadow: 0 1px 0 #b45309; }
+.name-ask-card {
+  margin: 16px auto 0; max-width: 420px; background: #fff;
+  border: 2px solid #e9e4f8; border-radius: 16px; padding: 16px 18px;
+  box-shadow: 0 4px 18px rgba(124, 58, 237, 0.12); text-align: center;
+}
+.name-ask-text { font-weight: 800; color: #2d1b4e; margin: 0 0 10px; }
+.name-ask-row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.name-ask-input {
+  flex: 1 1 140px; min-width: 0; font: inherit; padding: 10px 14px;
+  border: 2px solid #ddd6fe; border-radius: 999px; outline: none;
+}
+.name-ask-input:focus { border-color: #7c3aed; }
+.btn-name-save {
+  font: inherit; font-weight: 800; color: #fff; border: none; cursor: pointer;
+  background: linear-gradient(135deg, #ff5e7e, #7c3aed);
+  border-radius: 999px; padding: 10px 22px;
+}
+.btn-name-skip {
+  font: inherit; font-weight: 700; color: #8b84a8; background: none;
+  border: none; cursor: pointer; padding: 10px 8px;
+}
+.name-ask-privacy { font-size: 0.78rem; color: #8b84a8; margin: 10px 0 0; }
 .board-btn .class-num { font-size: 0.92rem; line-height: 1.15; }
 .exam-btn { background: linear-gradient(135deg, #7c3aed, #a855f7) !important; color: #fff !important; box-shadow: 0 4px 14px rgba(124,58,237,0.35); }
 .exam-btn .class-num { font-size: 1.15rem; letter-spacing: 0.5px; }
