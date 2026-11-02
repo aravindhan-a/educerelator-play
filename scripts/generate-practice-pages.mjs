@@ -10,12 +10,13 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { ALL_CLASSES, getSubjectsForClass } from "../content/curriculum.js";
+import { EXAMS } from "../content/exams.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const OUT = path.join(ROOT, "urban/frontend/practice");
 const SITE = "https://educerelator.com";
-const TODAY = "2026-07-15";
+const TODAY = "2026-11-02";
 const SAMPLES_PER_PAGE = 18;
 
 const SLUG = { math: "maths" }; // nicer search slug; others use their id
@@ -242,7 +243,10 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 <body>
 <nav class="topbar"><a href="/">🦉 EC Play</a></nav>
 <div class="hero"><h1>Free Practice Questions by Class &amp; Subject</h1><p>${total}+ practice MCQs · Class 1–12 · 13 Indian languages · always free</p></div>
-<div class="wrap">${hubBody}</div>
+<div class="wrap">
+<h2>Preparing for an exam?</h2>
+<ul><li><a href="exams/">NEET · JEE · UPSC · Boards · Olympiad exam-pattern practice sets →</a></li></ul>
+${hubBody}</div>
 <footer>© 2026 Educerelator · <a href="/">Play the full adaptive quiz free →</a></footer>
 </body>
 </html>`);
@@ -259,8 +263,16 @@ const core = [
   { loc: `${SITE}/learn-in-marathi.html`, pri: "0.9", freq: "monthly" },
   { loc: `${SITE}/about.html`, pri: "0.6", freq: "yearly" },
   { loc: `${SITE}/practice/`, pri: "0.9", freq: "weekly" },
+  { loc: `${SITE}/practice/exams/`, pri: "0.9", freq: "weekly" },
 ];
-const urls = core.concat(pages.map((p) => ({ loc: `${SITE}/practice/${p.file}`, pri: "0.8", freq: "monthly" })));
+// exam pages (built by generate-exam-pages.mjs) — enumerate from the same data
+const examPages = EXAMS.flatMap((ex) => ex.subjects
+  .filter((s) => fs.existsSync(path.join(OUT, `exams/${ex.id}-${s.id}.html`)))
+  .map((s) => ({ loc: `${SITE}/practice/exams/${ex.id}-${s.id}.html`, pri: "0.8", freq: "monthly" })));
+const urls = core.concat(
+  pages.map((p) => ({ loc: `${SITE}/practice/${p.file}`, pri: "0.8", freq: "monthly" })),
+  examPages
+);
 fs.writeFileSync(path.join(ROOT, "urban/frontend/sitemap.xml"),
 `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
