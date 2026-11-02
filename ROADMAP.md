@@ -38,7 +38,7 @@ polished enough to anchor a McGinnis Venture Competition submission.
   mistakes" — reuse the exam-mode Leitner queue (exLoadReview/exSaveReview
   pattern in main.js) for level questions; store missed question ids per
   class/subject in localStorage; surface a review entry on the subject screen.
-- [ ] **A3. Guest personalization**: after the first completed session, one
+- [x] **A3. Guest personalization** (`e717985`): after the first completed session, one
   friendly prompt "What should we call you?" (skippable, stored locally only);
   greet by name on return ("Good morning, Priya! ☀️"); never required, never
   sent to a server for guests.
