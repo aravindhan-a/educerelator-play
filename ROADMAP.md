@@ -45,9 +45,14 @@ polished enough to anchor a McGinnis Venture Competition submission.
 - [x] **A4. Exam-subject landing pages** (`88b1cf3`): generate 24 crawlable practice pages
   from content/exams/** (NEET Biology, JEE Physics, UPSC Polity …) with the
   same interactive treatment; add to sitemap + practice hub + hreflang-safe.
-- [ ] **A5. PWA installability**: manifest.json (name, icons from the owl
+- [x] **A5. PWA installability** (`57c9ebc`): manifest.json (name, icons from the owl
   brand kit, theme #7c3aed), apple-touch-icon, "Add to Home Screen" friendly;
   sw.js already exists — extend precache list; verify Lighthouse PWA pass.
+  Shipped: Lighthouse 11 PWA 1.0 (local + live), installable from all ~110
+  public pages, full offline module graph (incl. Firebase cache-first), richer
+  install UI screenshots, honest "Exam Prep" tiles. Deliberately skipped: iOS
+  splash images (25+ device variants to maintain; launch already light) — do
+  not reopen A5 for them.
 - [ ] **A6. Starter-chunk content split**: generate content/levels/starter/
   (first ~30 questions per class-subject); question-bank.js fetches starter
   first (fast first question on 2G/3G), full bank in background; fall back to
