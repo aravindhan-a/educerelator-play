@@ -29,6 +29,13 @@
   footer { text-align: center; padding: 2rem; font-size: 0.85rem; color: #888; border-top: 1px solid #e8dff5; }
   footer a { color: #7c3aed; text-decoration: none; margin: 0 0.5rem; }
 </style>
+<meta name="theme-color" content="#7c3aed" />
+<link rel="manifest" href="/manifest.json" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="EC Play" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 </head>
 <body>
 
@@ -108,5 +115,6 @@
   <br>Built with ❤️ by Educerelator · © 2026 Educerelator. All rights reserved.
 </footer>
 
+<script>if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost")){window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{}))}</script>
 </body>
 </html>

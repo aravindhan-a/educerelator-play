@@ -1,19 +1,25 @@
 {
+  "id": "/",
   "name": "EC Play — Learning Games for Class 1–12",
   "short_name": "EC Play",
   "description": "Free adaptive learning games for Class 1–12 in 13 languages, by Educerelator.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#fdfcf7",
-  "theme_color": "#ff5e7e",
+  "theme_color": "#7c3aed",
   "lang": "en-IN",
+  "dir": "ltr",
   "categories": ["education", "kids", "games"],
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
     { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "screenshots": [
+    { "src": "screenshot-home-narrow.png", "sizes": "1080x1920", "type": "image/png", "form_factor": "narrow", "label": "Pick your class — adaptive practice for Class 1 to 12" },
+    { "src": "screenshot-practice-narrow.png", "sizes": "1080x1920", "type": "image/png", "form_factor": "narrow", "label": "Tap-to-answer practice questions with instant feedback" },
+    { "src": "screenshot-home-wide.png", "sizes": "1920x1080", "type": "image/png", "form_factor": "wide", "label": "EC Play — learning games in 13 Indian languages" }
   ]
 }

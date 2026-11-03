@@ -20,6 +20,18 @@ const ROOT = path.resolve(__dirname, "..");
 const OUT = path.join(ROOT, "urban/frontend/practice/exams");
 const SITE = "https://educerelator.com";
 
+// PWA (A5): every public page carries the manifest + icons and registers the
+// service worker, so installs and offline work from SEO entry pages too.
+const PWA_HEAD = `<meta name="theme-color" content="#7c3aed" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="manifest" href="/manifest.json" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="EC Play" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />`;
+const PWA_SW = `<script>if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost")){window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{}))}</script>`;
+
 // Display metadata per exam track. `name` leads titles/H1s; `conductedBy`
 // feeds the non-affiliation disclaimer; `pattern` is shown as a fact chip.
 const EXAM_META = {
@@ -170,6 +182,7 @@ function pageHTML({ exam, meta, subj, questions, siblings }) {
 <meta property="og:type" content="website" />
 <meta property="og:image" content="${SITE}/og-image.png" />
 <meta property="og:site_name" content="EC Play by Educerelator" />
+${PWA_HEAD}
 <script type="application/ld+json">${JSON.stringify(crumbs)}</script>
 <script type="application/ld+json">${JSON.stringify(quiz)}</script>
 <style>${SHARED_CSS}</style>
@@ -203,6 +216,7 @@ function pageHTML({ exam, meta, subj, questions, siblings }) {
 <footer>© 2026 Educerelator · <a href="/">EC Play</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></footer>
 <script>${PAGE_SCRIPT}
 </script>
+${PWA_SW}
 </body>
 </html>`;
 }
@@ -244,6 +258,7 @@ fs.writeFileSync(path.join(OUT, "index.html"), `<!DOCTYPE html>
 <meta name="description" content="${totalQ}+ free exam-pattern practice questions with step-by-step solutions — NEET, JEE, UPSC Prelims, Class 10 &amp; 12 Boards, Olympiad. No sign-up, no ads." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="${SITE}/practice/exams/" />
+${PWA_HEAD}
 <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "CollectionPage", name: "EC Play exam practice sets", url: `${SITE}/practice/exams/`, isPartOf: { "@id": `${SITE}/#website` } })}</script>
 <style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:"Segoe UI",system-ui,sans-serif;background:#faf9ff;color:#1a1a2e;line-height:1.6}
 .topbar{background:linear-gradient(135deg,#ff5e7e,#7c3aed);padding:14px 24px;display:flex;align-items:center;gap:16px}.topbar a{color:#fff;font-weight:800;text-decoration:none}.topbar-nav{margin-left:auto;display:flex;gap:14px}.topbar-nav a{font-weight:600;font-size:.9rem;color:rgba(255,255,255,.85)}
@@ -268,6 +283,7 @@ ${hubBody}
 </div>
 <p class="disclaimer">EC Play by Educerelator is an independent learning platform. We are not affiliated with, endorsed by, or connected to the NTA, UPSC, CBSE, NCERT, or any examination board or conducting body. Exam names are used only to describe the question pattern and syllabus these practice sets follow.</p>
 <footer>© 2026 Educerelator · <a href="/">Play the full adaptive quiz →</a></footer>
+${PWA_SW}
 </body>
 </html>`);
 

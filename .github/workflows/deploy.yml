@@ -33,6 +33,12 @@ jobs:
           cp urban/frontend/og-image.png deploy/
           cp urban/frontend/icon-192.png deploy/
           cp urban/frontend/icon-512.png deploy/
+          cp urban/frontend/icon-512-maskable.png deploy/
+          cp urban/frontend/apple-touch-icon.png deploy/
+          cp urban/frontend/offline.html deploy/
+          cp urban/frontend/screenshot-home-narrow.png deploy/
+          cp urban/frontend/screenshot-practice-narrow.png deploy/
+          cp urban/frontend/screenshot-home-wide.png deploy/
           mkdir -p deploy/.well-known
           cp urban/frontend/.well-known/assetlinks.json deploy/.well-known/
           cp urban/frontend/manifest.json deploy/

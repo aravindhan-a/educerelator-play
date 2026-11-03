@@ -10,7 +10,7 @@
 <meta name="author" content="Educerelator" />
 <meta name="publisher" content="Educerelator" />
 <meta name="keywords" content="practice questions Class 1 to 12, free learning app India, Class 10 maths practice, learning games India, quiz app for students, study in Hindi, Tamil learning app, Telugu learning app, Class 1 to 12 practice" />
-<meta name="theme-color" content="#ff5e7e" />
+<meta name="theme-color" content="#7c3aed" />
 <link rel="canonical" href="https://educerelator.com/" />
 <link rel="alternate" hreflang="en-IN" href="https://educerelator.com/" />
 <link rel="alternate" hreflang="hi-IN" href="https://educerelator.com/learn-in-hindi.html" />
@@ -170,12 +170,16 @@
 </script>
 
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<link rel="apple-touch-icon" href="icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="manifest.json" />
+<meta name="apple-mobile-web-app-title" content="EC Play" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 <link rel="dns-prefetch" href="https://www.gstatic.com" />
 <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
 <link rel="preload" href="fonts/baloo2-var.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="css/style.css?v=game5" />
+<link rel="stylesheet" href="css/style.css?v=game6" />
 </head>
 <body>
 
@@ -256,7 +260,7 @@
 
     <div class="exam-section">
       <h2 class="screen-title exam-section-title">Competitive Exams</h2>
-      <p class="exam-section-sub">Revise previous-year questions</p>
+      <p class="exam-section-sub">Exam-pattern revision with smart repetition</p>
     </div>
     <div class="exam-grid" id="exam-grid">
       <!-- NEET / JEE / UPSC / Olympiad tiles — populated by JS -->
@@ -559,11 +563,11 @@
 
 </div>
 
-<script type="module" src="js/main.js?v=game5"></script>
+<script type="module" src="js/main.js?v=game6"></script>
 <script>
-// PWA: register the service worker from the site root (scope "/"). Skipped on
-// localhost file previews where the root path differs.
-if ("serviceWorker" in navigator && location.pathname === "/") {
+// PWA: register the service worker from the site root (scope "/") on every
+// page, so SEO-entry visitors get offline + install support too.
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
   window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
 }
 </script>

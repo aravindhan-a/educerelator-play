@@ -14,6 +14,18 @@ const ROOT = path.resolve(__dirname, "..");
 const SITE = "https://educerelator.com";
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+// PWA (A5): every public page carries the manifest + icons and registers the
+// service worker, so installs and offline work from SEO entry pages too.
+const PWA_HEAD = `<meta name="theme-color" content="#7c3aed" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="manifest" href="/manifest.json" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="EC Play" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />`;
+const PWA_SW = `<script>if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost")){window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{}))}</script>`;
+
 // full hreflang cluster shared by every page in the language set
 const CLUSTER = [
   ["en-IN", `${SITE}/`],
@@ -127,6 +139,7 @@ ${clusterTags()}
 <meta property="og:type" content="website" />
 <meta property="og:image" content="${SITE}/og-image.png" />
 <meta property="og:locale" content="${L.code}_IN" />
+${PWA_HEAD}
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -169,6 +182,7 @@ footer{text-align:center;padding:22px;background:#1a1030;color:rgba(255,255,255,
 </div>
 <div class="band"><h2>${esc(L.cta)}</h2><a class="cta-btn" href="/">${esc(L.playBtn)}</a></div>
 <footer>© 2026 Educerelator · <a href="/">EC Play</a> · <a href="/practice/">All practice sets</a></footer>
+${PWA_SW}
 </body>
 </html>`;
   fs.writeFileSync(path.join(ROOT, "urban/frontend", L.file), html);
