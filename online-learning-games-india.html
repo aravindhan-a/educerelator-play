@@ -97,6 +97,14 @@
     .game-features, .stats-row { grid-template-columns: 1fr; }
   }
 </style>
+<meta name="theme-color" content="#7c3aed" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="manifest" href="/manifest.json" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="EC Play" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 </head>
 <body>
 
@@ -260,5 +268,6 @@
   <a href="/terms.html">Terms</a></p>
 </footer>
 
+<script>if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost")){window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{}))}</script>
 </body>
 </html>

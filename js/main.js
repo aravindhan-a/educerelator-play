@@ -622,7 +622,7 @@ EXAMS.forEach((ex) => {
   if (ex.category === "board") return;
   const btn = document.createElement("button");
   btn.className = "class-btn exam-btn";
-  btn.innerHTML = `<span class="class-emoji">${ex.emoji}</span><span class="class-num">${ex.label}</span><span class="class-label">Previous Years</span>`;
+  btn.innerHTML = `<span class="class-emoji">${ex.emoji}</span><span class="class-num">${ex.label}</span><span class="class-label">Exam Prep</span>`;
   btn.addEventListener("click", () => openExam(ex.id, null));
   examGridEl.appendChild(btn);
 });
@@ -710,7 +710,7 @@ function renderExamHome() {
   const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]);
   const max = Math.max(...rows.map((r) => r[1]), 1);
   examBodyEl.innerHTML =
-    `<div class="exam-note">📄 Sample previous-year questions — real sourced PYQs coming soon.</div>
+    `<div class="exam-note">✍️ Original exam-pattern practice questions — not from official past papers.</div>
      <div class="exam-modes">
        <button class="mode-btn primary" data-m="all">Practice all questions <b>${exState.bank.length}</b></button>
        <button class="mode-btn" data-m="review">🔁 Revise my mistakes ${due ? `<b class="ex-badge">${due}</b>` : '<span class="ex-muted">none yet</span>'}</button>
