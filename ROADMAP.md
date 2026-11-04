@@ -53,10 +53,15 @@ polished enough to anchor a McGinnis Venture Competition submission.
   install UI screenshots, honest "Exam Prep" tiles. Deliberately skipped: iOS
   splash images (25+ device variants to maintain; launch already light) — do
   not reopen A5 for them.
-- [ ] **A6. Starter-chunk content split**: generate content/levels/starter/
+- [x] **A6. Starter-chunk content split** (`dc209f7`): content/levels/starter/
   (first ~30 questions per class-subject); question-bank.js fetches starter
   first (fast first question on 2G/3G), full bank in background; fall back to
   full file if starter missing. Idempotent generator + verifier parity check.
+  Shipped for the 12 math banks only (threshold: >= 100 questions) — smaller
+  banks already gzip to a few KB, where a starter would double total transfer
+  to save 1-3 KB; revisit if other banks grow past 100 (D4). First-question
+  transfer ~80 KB gz -> 4-12 KB gz; verifier reconstructs starter bytes from
+  the parent alone and gates every deploy in deploy.yml.
 - [ ] **A7. Classic-mode explanations**: wrong answers in classic mode show a
   one-line WHY. Start with math (generators can emit the explanation
   deterministically — extend each math generator + verifier); prose subjects
