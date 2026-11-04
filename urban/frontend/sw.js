@@ -12,7 +12,7 @@
 // PRECACHE must cover the FULL module-import graph of js/main.js — ES modules
 // fetch each import separately (no ?v= on imports) and one miss rejects the
 // whole graph. Bump VERSION on any precached-asset change.
-const VERSION = "v6";
+const VERSION = "v7";
 const CACHE = `ecplay-${VERSION}`;
 const PRECACHE = [
   "/",
@@ -42,8 +42,12 @@ const PRECACHE = [
 
 self.addEventListener("install", (e) => {
   // No swallow: if any precache entry 404s, install fails loudly and the
-  // previous (complete) service worker keeps serving.
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)));
+  // previous (complete) service worker keeps serving. cache: "no-cache"
+  // revalidates each entry (GitHub Pages serves max-age=600), so a VERSION
+  // bump can never precache the stale copy it was bumped to replace.
+  e.waitUntil(
+    caches.open(CACHE).then((c) => c.addAll(PRECACHE.map((u) => new Request(u, { cache: "no-cache" }))))
+  );
   self.skipWaiting();
 });
 
@@ -92,8 +96,15 @@ self.addEventListener("fetch", (e) => {
     e.respondWith(
       caches.match(e.request).then((cached) => {
         const refresh = fetch(e.request)
-          .then((res) => { if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); } return res; })
+          .then(async (res) => {
+            if (res.ok) { const c = await caches.open(CACHE); await c.put(e.request, res.clone()); }
+            return res;
+          })
           .catch(() => cached || Response.error());
+        // Hold the worker open until the cache write completes, so a big
+        // question-bank download still lands in cache even if the page that
+        // started it (the starter background fill) closes mid-transfer.
+        e.waitUntil(refresh.then(() => undefined, () => undefined));
         return cached || refresh;
       })
     );

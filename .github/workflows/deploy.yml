@@ -13,6 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Starter chunks must stay byte-identical subsets of their parent banks;
+      # a parent edit without regenerating starters must never deploy.
+      - name: Verify starter chunks match their parent banks
+        run: node scripts/verify-starter-chunks.mjs
+
       - name: Assemble deploy folder
         run: |
           mkdir -p deploy
