@@ -88,7 +88,7 @@ polished enough to anchor a McGinnis Venture Competition submission.
   one FAQPage block per page (3 real questions); meta descriptions ≤155 chars.
 
 ## Phase 3 — Credibility & McGinnis readiness
-- [ ] **C1. About/Impact page**: the founder story (TEDx, Teach For India),
+- [x] **C1. About/Impact page** (`692fb0a`): the founder story (TEDx, Teach For India),
   the mission, truthful numbers pulled at build time (question count, language
   count, class coverage); linked from footer; OG image from brand kit.
 - [ ] **C2. Privacy-first usage counters**: anonymous aggregate counters
@@ -96,13 +96,13 @@ polished enough to anchor a McGinnis Venture Competition submission.
   Vercel backend → a tiny JSON endpoint; NO user ids, NO cookies, NO IP
   storage; a /stats view the founder can screenshot for the pitch. Gate
   behind founder review before launch.
-- [ ] **C3. Demo mode**: ?demo=1 seeds a guest with a 7-day streak, stats and
+- [x] **C3. Demo mode** (`692fb0a`): ?demo=1 seeds a guest with a 7-day streak, stats and
   a mid-level profile so live pitches never start from an empty screen;
   clearly watermarked "demo"; never indexable (noindex on the param via JS).
-- [ ] **C4. One-pager for teachers/parents** (printable): what EC Play is,
+- [x] **C4. One-pager for teachers/parents** (`692fb0a`) (printable): what EC Play is,
   how to use it in class, QR code to the site; served as /for-teachers.html
   with print CSS (PDF via browser print).
-- [ ] **C5. Happiness polish** (from the happiness audit): warmer praise
+- [x] **C5. Happiness polish** (`692fb0a`) (from the happiness audit): warmer praise
   variety (rotate 6+ phrases per language), mascot celebration on 3 stars,
   gentle streak-restore message after a missed day, session-complete shows
   "you learned X new things" framing instead of raw score alone.

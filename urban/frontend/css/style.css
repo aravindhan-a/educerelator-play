@@ -1223,3 +1223,21 @@ body.focus-mode .bg-shape { display: none; }
   font-family: inherit; text-decoration: underline dotted; padding: 6px;
 }
 .report-btn:hover { color: #6d28d9; }
+
+/* ── Happiness polish ── */
+.complete-mascot { font-size: 3.4rem; margin: -6px 0 2px; animation: mascotParty 1.1s ease-in-out 3; }
+@keyframes mascotParty {
+  0%, 100% { transform: translateY(0) rotate(0) scale(1); }
+  25%      { transform: translateY(-14px) rotate(-14deg) scale(1.15); }
+  50%      { transform: translateY(0) rotate(0) scale(1); }
+  75%      { transform: translateY(-14px) rotate(14deg) scale(1.15); }
+}
+.complete-learned { margin: 4px auto 0; max-width: 30ch; font-weight: 700; color: #5b3fa8; line-height: 1.45; }
+.complete-learned:empty { display: none; }
+.streak-restore {
+  margin: 8px 0 4px; padding: 10px 14px; border-radius: 14px;
+  background: rgba(255,255,255,.28); color: inherit; font-weight: 700; line-height: 1.4;
+}
+@media (prefers-reduced-motion: reduce) {
+  .complete-mascot { animation: none; }
+}
