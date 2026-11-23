@@ -13,9 +13,12 @@ polished enough to anchor a McGinnis Venture Competition submission.
 - Tick the box (`[x]`), add the commit hash beside it, commit the roadmap edit too.
 
 ## Non-negotiable constraints (apply to every item)
-- **No payments UI** while compliance+GST is pending: `PAYMENTS_ENABLED=false`
-  gates everything; no ₹ prices in static HTML. "Premium coming soon" is the
-  only allowed framing — never "free forever".
+- **EC Play is fully free** (founder decision, Nov 2026): no premium tier, no
+  payments, no upsell anywhere students or parents can see it. Success is
+  measured by impact and advocacy for mother-tongue learning, not revenue.
+  `PAYMENTS_ENABLED=false` keeps the old premium/checkout code dormant; no ₹
+  prices in static HTML; never reintroduce "Premium" copy without a new
+  founder decision and updated Terms/Privacy.
 - **No CBSE/NCERT affiliation claims** — "follows the school syllabus" phrasing
   only; non-affiliation disclaimers stay.
 - **ANTHROPIC_API_KEY stays server-side** (Vercel env / gitignored .env.local);
