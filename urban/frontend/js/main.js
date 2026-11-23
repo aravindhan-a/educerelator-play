@@ -89,9 +89,10 @@ const CURR_KEY     = "curriculum";
 const GUEST_KEY    = "ecplay_guest";
 const REGION_KEY   = "ecplay_region";   // cached auto-detected region { id, ts }
 const SOUND_KEY    = "ecplay_sound";
-// Payments are OFF until company compliance + GST registration are complete.
-// Flip to true to restore the premium upsell, modal and checkout — no other
-// code changes needed. (Backend endpoints stay deployed but unused.)
+// EC Play is fully free (founder decision, Nov 2026): no premium tier, no
+// payments, no upsell. This flag keeps the old premium/checkout code dormant
+// in the repo; do not flip it without a new founder decision and updated
+// Terms and Privacy pages. (Backend endpoints stay deployed but unused.)
 const PAYMENTS_ENABLED = false;
 // Prices live here, NOT in the static HTML, so no ₹ pricing is ever shipped in
 // the crawlable markup while payments are paused (compliance + clean SEO — a
@@ -563,7 +564,7 @@ onAuthChange(async (user) => {
     } catch { /* offline */ }
 
     // Background premium check (non-blocking)
-    checkPremium(user).catch(() => {});
+    if (PAYMENTS_ENABLED) checkPremium(user).catch(() => {});
 
     applyUIStrings();
     showClassPicker();
@@ -1395,23 +1396,17 @@ function showSessionComplete() {
   animateStars(stars);
   setTimeout(() => countUpScore(sessionScore), 400);
 
-  // Respectful upsell: at most once a day, and only after a good session —
-  // never while a student is struggling.
-  const UPSELL_KEY = "ecplay_upsell_last";
-  const lastUpsell = parseInt(localStorage.getItem(UPSELL_KEY) || "0");
-  const showUpsell = !isPremiumCached()
-    && sessionCorrect >= 5
-    && Date.now() - lastUpsell > 24 * 60 * 60 * 1000;
-  if (showUpsell) localStorage.setItem(UPSELL_KEY, Date.now());
-  upgradeStripEl.classList.toggle("hidden", !showUpsell);
-  if (!PAYMENTS_ENABLED) {
-    // Payments paused: same respectful once-a-day slot, but as an expectation-
-    // setting teaser — no checkout button until compliance + GST are done.
-    const head = upgradeStripEl.querySelector("strong");
-    const body = upgradeStripEl.querySelector("p");
-    if (head) head.textContent = "Premium is coming soon ⚡";
-    if (body) body.textContent = "Fresh AI-generated questions tuned to your level — launching soon. What you play today stays free.";
-    upgradeFromSessionBtn.classList.add("hidden");
+  // EC Play is fully free: no upsell is ever shown to students. The strip and
+  // checkout stay in the codebase behind PAYMENTS_ENABLED, switched off.
+  upgradeStripEl.classList.add("hidden");
+  if (PAYMENTS_ENABLED) {
+    const UPSELL_KEY = "ecplay_upsell_last";
+    const lastUpsell = parseInt(localStorage.getItem(UPSELL_KEY) || "0");
+    const showUpsell = !isPremiumCached()
+      && sessionCorrect >= 5
+      && Date.now() - lastUpsell > 24 * 60 * 60 * 1000;
+    if (showUpsell) localStorage.setItem(UPSELL_KEY, Date.now());
+    upgradeStripEl.classList.toggle("hidden", !showUpsell);
   }
 }
 
@@ -1504,15 +1499,8 @@ function renderProfilePremium() {
   const el = document.getElementById("profile-premium");
   if (!el) return;
   if (!PAYMENTS_ENABLED) {
-    // Payments paused (compliance + GST pending): set expectations, no checkout.
-    el.innerHTML =
-      `<div class="premium-active-card free-card">` +
-        `<span class="premium-card-icon">⚡</span>` +
-        `<div class="premium-card-text">` +
-          `<strong>Premium is coming soon</strong>` +
-          `<p>Fresh AI-generated questions, tuned to your level. Everything you use today is free during our launch.</p>` +
-        `</div>` +
-      `</div>`;
+    // EC Play is fully free: nothing to show here.
+    el.innerHTML = "";
     return;
   }
   const info = getPremiumInfo();
@@ -1555,7 +1543,7 @@ function renderProfileScreen() {
 
   renderProfilePremium();
   // Refresh premium status from the server, then re-render if it changed.
-  checkPremium(currentUser).then(() => renderProfilePremium()).catch(() => {});
+  if (PAYMENTS_ENABLED) checkPremium(currentUser).then(() => renderProfilePremium()).catch(() => {});
 
   // Streaks and volume lead; accuracy is demoted to a small row below —
   // the founder wants students encouraged to play and try, not graded.
