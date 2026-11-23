@@ -7,6 +7,86 @@
 <title>EC Play – Free CBSE Practice Questions for Class 1 to 12 | 13 Indian Languages</title>
 <meta name="description" content="Free adaptive quiz games for Indian students, Class 1 to 12. Practice Maths, Science and English in 13 languages — Hindi, Telugu, Tamil, Bengali, Gujarati and more. No ads, 100% free." />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<script>
+/* Demo mode (?demo=1): for live pitches. Swaps localStorage for a tab-only
+   store seeded with a believable mid-level guest (7-day streak, stats,
+   name), so a pitch never opens on an empty screen. The real device's
+   localStorage is never read or written, sign-in sync is skipped in main.js
+   (window.EC_DEMO), and the page is marked noindex. Closing the tab ends it. */
+(function () {
+  try {
+    if (new URLSearchParams(location.search).get("demo") !== "1") return;
+    window.EC_DEMO = true;
+    var KEY = "ecplay_demo_store";
+    var data;
+    try { data = JSON.parse(sessionStorage.getItem(KEY)) || null; } catch (e) { data = null; }
+    if (!data) {
+      var pad = function (n) { return String(n).padStart(2, "0"); };
+      var day = function (offset) {
+        var d = new Date(); d.setDate(d.getDate() - offset);
+        return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+      };
+      var perDay = [14, 22, 9, 18, 25, 12, 20], perDayRight = [11, 18, 8, 14, 21, 10, 17];
+      var activity = {}, answered = 0, correct = 0;
+      for (var i = 0; i < 7; i++) {
+        activity[day(6 - i)] = { answered: perDay[i], correct: perDayRight[i] };
+        answered += perDay[i]; correct += perDayRight[i];
+      }
+      var stats = {
+        totalAnswered: answered, totalCorrect: correct,
+        screenTimeMs: 96 * 60000, dayStreak: 7, longestDayStreak: 9,
+        lastPlayDate: day(0),
+        subjectStats: {
+          math:    { answered: 62, correct: 51 },
+          science: { answered: 38, correct: 31 },
+          english: { answered: 20, correct: 17 }
+        },
+        dailyActivity: activity
+      };
+      data = {
+        ecplay_guest: "1",
+        ecplay_name: "Priya",
+        ecplay_name_asked: "1",
+        ecplay_analytics: JSON.stringify(stats),
+        lastPlayed: JSON.stringify({ classNum: 7, subject: "math" }),
+        ecplay_milestone_done: "7"
+      };
+      // Keep the visitor's chosen language if they already had one.
+      try { var l = window.localStorage.getItem("lang"); if (l) data.lang = l; } catch (e) {}
+    }
+    var save = function () { try { sessionStorage.setItem(KEY, JSON.stringify(data)); } catch (e) {} };
+    save();
+    var store = {
+      getItem: function (k) { k = String(k); return Object.prototype.hasOwnProperty.call(data, k) ? data[k] : null; },
+      setItem: function (k, v) { data[String(k)] = String(v); save(); },
+      removeItem: function (k) { delete data[String(k)]; save(); },
+      clear: function () { data = {}; save(); },
+      key: function (i) { return Object.keys(data)[i] || null; },
+      get length() { return Object.keys(data).length; }
+    };
+    // Object.keys(localStorage) is used by the bank cache; expose keys too.
+    var proxy = new Proxy(store, {
+      ownKeys: function () { return Object.keys(data); },
+      getOwnPropertyDescriptor: function (t, k) {
+        if (Object.prototype.hasOwnProperty.call(data, k)) return { enumerable: true, configurable: true, value: data[k] };
+        return Object.getOwnPropertyDescriptor(t, k);
+      }
+    });
+    Object.defineProperty(window, "localStorage", { configurable: true, get: function () { return proxy; } });
+    document.addEventListener("DOMContentLoaded", function () {
+      var robots = document.querySelector('meta[name="robots"]');
+      if (robots) robots.setAttribute("content", "noindex, nofollow");
+      var tag = document.createElement("div");
+      tag.id = "demo-watermark";
+      tag.setAttribute("role", "note");
+      tag.textContent = "DEMO";
+      tag.title = "Demo mode: sample data, nothing is saved. Close the tab to exit.";
+      tag.style.cssText = "position:fixed;left:12px;bottom:12px;z-index:9999;padding:4px 10px;border-radius:999px;background:#f59e0b;color:#1a1030;font:700 12px/1.4 system-ui,sans-serif;letter-spacing:.08em;box-shadow:0 2px 8px rgba(0,0,0,.25);pointer-events:auto;opacity:.92";
+      document.body.appendChild(tag);
+    });
+  } catch (e) { /* demo mode is best-effort; the real app must never break */ }
+})();
+</script>
 <meta name="author" content="Educerelator" />
 <meta name="publisher" content="Educerelator" />
 <meta name="keywords" content="practice questions Class 1 to 12, free learning app India, Class 10 maths practice, learning games India, quiz app for students, study in Hindi, Tamil learning app, Telugu learning app, Class 1 to 12 practice" />
@@ -179,7 +259,7 @@
 <link rel="dns-prefetch" href="https://www.gstatic.com" />
 <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
 <link rel="preload" href="fonts/baloo2-var.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="css/style.css?v=game6" />
+<link rel="stylesheet" href="css/style.css?v=game7" />
 </head>
 <body>
 
@@ -229,6 +309,7 @@
     <div class="welcome-banner hidden" id="welcome-banner">
       <p id="time-greeting" class="time-greeting"></p>
       <h2 id="welcome-name" class="welcome-name">Welcome!</h2>
+      <p id="streak-restore" class="streak-restore hidden" role="status"></p>
       <div class="home-stats" id="home-stats">
         <button class="home-stat-chip home-stat-share" id="home-streak-chip" aria-label="Share your day streak">
           <span class="home-stat-icon">🔥</span>
@@ -390,6 +471,7 @@
   <section id="session-complete" class="screen hidden">
     <div id="end-confetti" class="end-confetti"></div>
     <div class="complete-card">
+      <div id="complete-mascot" class="mascot complete-mascot hidden" aria-hidden="true">🦉</div>
       <div class="stars-row" id="stars-row">
         <span class="star" id="star1">⭐</span>
         <span class="star" id="star2">⭐</span>
@@ -401,6 +483,7 @@
         <span class="score-reveal-label">pts</span>
       </div>
       <p class="complete-score" id="complete-score">8 / 10 correct</p>
+      <p class="complete-learned" id="complete-learned"></p>
       <div id="new-record-badge" class="new-record-badge hidden">🏆 New High Score!</div>
       <div id="milestone-strip" class="milestone-strip hidden">
         <span id="milestone-text" class="milestone-text">🔥 7-day streak!</span>
@@ -484,6 +567,7 @@
       <li>For students under 13, please have a parent or guardian create the account.</li>
       <li>Have a question or found something wrong? Email <a href="mailto:hello@educerelator.com">hello@educerelator.com</a>.</li>
     </ul>
+    <p class="modal-links"><a href="/about.html">Our story and impact →</a><br><a href="/for-teachers.html">Guide for teachers and parents →</a></p>
   </div>
 </div>
 
@@ -563,7 +647,7 @@
 
 </div>
 
-<script type="module" src="js/main.js?v=game6"></script>
+<script type="module" src="js/main.js?v=game7"></script>
 <script>
 // PWA: register the service worker from the site root (scope "/") on every
 // page, so SEO-entry visitors get offline + install support too.
