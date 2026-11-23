@@ -42,6 +42,36 @@ const UI_STRINGS = {
   ne:  { pickClass:"आफ्नो कक्षा छान्नुहोस्", pickSubject:"एउटा विषय छान्नुहोस्", morning:"शुभ प्रभात! ☀️", afternoon:"शुभ दिउँसो! 🌤️", evening:"शुभ साँझ! 🌙", wellDone:"साबाश! 🎉", tryAgain:"अर्को पटक फेरि कोशिश गर्नुहोस्!", continueLabel:"छाडेकोबाट जारी राख्नुहोस्" },
   sa:  { pickClass:"स्वकक्षां चिनुत", pickSubject:"एकं विषयं चिनुत", morning:"सुप्रभातम्! ☀️", afternoon:"शुभं मध्याह्नम्! 🌤️", evening:"शुभं सायाह्नम्! 🌙", wellDone:"साधु! 🎉", tryAgain:"पुनः प्रयत्नं करोतु!", continueLabel:"यत्र अत्यक्षत तत्र पुनरारभत" },
 };
+// Praise variety (happiness polish): correct answers rotate through short,
+// warm phrases instead of one fixed "Well done!", never repeating the last
+// one. Each language's own wellDone string is always part of its set.
+// Short phrases on purpose; queued for the native-speaker UI audit (D3).
+const PRAISE = {
+  en: ["Brilliant! 🌟", "You got it! ✅", "Super! 🚀", "Great thinking! 🧠", "Spot on! 🎯", "Nailed it! 💪"],
+  hi: ["बहुत बढ़िया! 🌟", "सही जवाब! ✅", "कमाल कर दिया! 🚀", "बहुत अच्छे! 💪", "एकदम सही! 🎯"],
+  ta: ["சூப்பர்! 🌟", "சரியான பதில்! ✅", "அருமை! 🚀", "பிரமாதம்! 💪", "சபாஷ்! 🎯"],
+  bn: ["দারুণ! 🌟", "সঠিক উত্তর! ✅", "অসাধারণ! 🚀", "খুব ভালো! 💪", "একদম ঠিক! 🎯"],
+  gu: ["ખૂબ સરસ! 🌟", "સાચો જવાબ! ✅", "અદ્ભુત! 🚀", "બહુ સારું! 💪", "એકદમ સાચું! 🎯"],
+  kn: ["ತುಂಬಾ ಚೆನ್ನಾಗಿದೆ! 🌟", "ಸರಿಯಾದ ಉತ್ತರ! ✅", "ಅದ್ಭುತ! 🚀", "ಶಭಾಷ್! 💪", "ಸರಿಯಾಗಿದೆ! 🎯"],
+  ml: ["കൊള്ളാം! 🌟", "ശരിയായ ഉത്തരം! ✅", "അടിപൊളി! 🚀", "ഗംഭീരം! 💪", "കൃത്യം! 🎯"],
+  mr: ["खूप छान! 🌟", "बरोबर उत्तर! ✅", "अप्रतिम! 🚀", "मस्तच! 💪", "अगदी बरोबर! 🎯"],
+  pa: ["ਬਹੁਤ ਵਧੀਆ! 🌟", "ਸਹੀ ਜਵਾਬ! ✅", "ਕਮਾਲ ਹੈ! 🚀", "ਬਹੁਤ ਖੂਬ! 💪", "ਬਿਲਕੁਲ ਸਹੀ! 🎯"],
+  te: ["అద్భుతం! 🌟", "సరైన సమాధానం! ✅", "సూపర్! 🚀", "శభాష్! 💪", "చాలా చక్కగా! 🎯"],
+  ur: ["بہت خوب! 🌟", "صحیح جواب! ✅", "کمال کر دیا! 🚀", "بہت اچھے! 💪", "بالکل ٹھیک! 🎯"],
+  as: ["অতি সুন্দৰ! 🌟", "শুদ্ধ উত্তৰ! ✅", "চমৎকাৰ! 🚀", "বহুত ভাল! 💪", "একেবাৰে শুদ্ধ! 🎯"],
+  or: ["ଚମତ୍କାର! 🌟", "ଠିକ୍ ଉତ୍ତର! ✅", "ଅଦ୍ଭୁତ! 🚀", "ସାବାସ୍! 💪", "ଏକଦମ୍ ଠିକ୍! 🎯"],
+  ne: ["धेरै राम्रो! 🌟", "सही उत्तर! ✅", "अद्भुत! 🚀", "कमाल! 💪", "एकदम सही! 🎯"],
+  sa: ["अतिशोभनम्! 🌟", "सम्यक् उत्तरम्! ✅", "उत्तमम्! 🚀", "शोभनम्! 💪", "सुष्ठु! 🎯"],
+};
+let lastPraise = "";
+function pickPraise() {
+  const own = (UI_STRINGS[lang] || UI_STRINGS.en).wellDone || UI_STRINGS.en.wellDone;
+  const set = [own, ...(PRAISE[lang] || PRAISE.en)].filter((p, i, a) => a.indexOf(p) === i);
+  const options = set.filter((p) => p !== lastPraise);
+  lastPraise = options[Math.floor(Math.random() * options.length)] || own;
+  return lastPraise;
+}
+
 function t(key) { return (UI_STRINGS[lang] || UI_STRINGS.en)[key] || UI_STRINGS.en[key]; }
 
 function applyUIStrings() {
@@ -84,6 +114,7 @@ const REGION_TTL   = 7 * 24 * 60 * 60 * 1000; // re-detect at most weekly
 const SESSION_TOTAL = 10;
 let sessionCount   = 0;
 let sessionCorrect = 0;
+let sessionFixed   = 0;   // earlier mistakes answered right this session
 let sessionSeenIds = new Set();
 // ── game state ──
 let sessionScore   = 0;
@@ -347,6 +378,17 @@ function updateWelcomeBanner() {
   document.getElementById("home-best-streak").textContent = s.longestDayStreak || 0;
   document.getElementById("home-stats").classList.toggle("hidden", s.totalAnswered === 0);
 
+  // Gentle streak restore: after a missed day, welcome the student back
+  // instead of silently showing a 0. No guilt, just a fresh start.
+  const restoreEl = document.getElementById("streak-restore");
+  if (restoreEl) {
+    const broken = (s.dayStreak || 0) >= 2 && effectiveDayStreak(s) === 0;
+    restoreEl.textContent = broken
+      ? `Welcome back! 🌱 Your ${s.dayStreak}-day streak took a little rest. One set today starts a fresh one.`
+      : "";
+    restoreEl.classList.toggle("hidden", !broken);
+  }
+
   // Continue bar
   const last = loadJSON("lastPlayed", () => null);
   const continueBar = document.getElementById("continue-bar");
@@ -485,6 +527,9 @@ signoutBtnEl.addEventListener("click", () => logoutUser());
 const topbarSigninBtn = document.getElementById("topbar-signin");
 
 onAuthChange(async (user) => {
+  // Demo mode (?demo=1, see index.html) always runs as a seeded guest, even
+  // on a signed-in device, so pitch data can never sync into a real account.
+  if (window.EC_DEMO) user = null;
   if (user) {
     currentUser = user;
     guestMode = false;
@@ -986,10 +1031,11 @@ function recordMistake(cls, subj, qid) {
 }
 function clearMistake(cls, subj, qid) {
   const m = loadMistakes(); const k = `${cls}|${subj}`;
-  if (!m[k]?.[qid]) return;
+  if (!m[k]?.[qid]) return false;
   delete m[k][qid];
   if (!Object.keys(m[k]).length) delete m[k];
   saveMistakes(m);
+  return true;
 }
 function classMistakes(cls) {
   const m = loadMistakes(); const out = [];
@@ -1023,6 +1069,7 @@ async function startReview(classNum) {
 
   sessionCount     = 0;
   sessionCorrect   = 0;
+  sessionFixed     = 0;
   sessionSeenIds   = new Set();
   sessionScore     = 0;
   sessionCombo     = 0;
@@ -1096,6 +1143,7 @@ async function startPlay(subject) {
 
   sessionCount     = 0;
   sessionCorrect   = 0;
+  sessionFixed     = 0;
   sessionSeenIds   = new Set();
   sessionScore     = 0;
   sessionCombo     = 0;
@@ -1207,7 +1255,7 @@ function handleAnswer(selectedIndex, selectedBtn) {
     else if (origIndex === selectedIndex)          btn.classList.add("wrong");
   });
 
-  feedbackEl.textContent = correct ? t("wellDone") : t("tryAgain");
+  feedbackEl.textContent = correct ? pickPraise() : t("tryAgain");
   feedbackEl.classList.toggle("correct", correct);
   feedbackEl.classList.toggle("wrong",   !correct);
 
@@ -1249,7 +1297,7 @@ function handleAnswer(selectedIndex, selectedBtn) {
 
   // Mistake queue: wrong answers enter it; a correct answer to the same
   // question — here or in a review session — clears it.
-  if (correct) clearMistake(currentClass, currentSubject, currentQuestion.id);
+  if (correct) { if (clearMistake(currentClass, currentSubject, currentQuestion.id)) sessionFixed++; }
   else         recordMistake(currentClass, currentSubject, currentQuestion.id);
 
   if (sessionCount >= SESSION_TOTAL || (reviewQueue && !reviewQueue.length)) {
@@ -1284,11 +1332,30 @@ function showSessionComplete() {
   window.scrollTo(0, 0);
   updateWelcomeBanner();
 
-  // Stars: 3 = ≥8/10, 2 = ≥5/10, 1 = below
-  const stars = sessionCorrect >= 8 ? 3 : sessionCorrect >= 5 ? 2 : 1;
+  // Stars: 3 = ≥80% right, 2 = ≥50%, 1 = below. A share of what was
+  // answered, so a short mistake-review set can earn its 3 stars too.
+  const answered = Math.max(sessionCount, sessionCorrect, 1);
+  const ratio    = sessionCorrect / answered;
+  const stars    = ratio >= 0.8 ? 3 : ratio >= 0.5 ? 2 : 1;
   const titles = { 3: "Brilliant! 🏆", 2: "Well done! 🎉", 1: "Keep going! 💪" };
   if (completeTitleEl) completeTitleEl.textContent = titles[stars];
-  completeScoreEl.textContent = `${sessionCorrect} / ${SESSION_TOTAL} correct`;
+  // Lead with what the student gained, not only the raw score: mistakes
+  // fixed are real learning; misses are framed as saved for practice.
+  const missed   = answered - sessionCorrect;
+  completeScoreEl.textContent = `${sessionCorrect} of ${answered} right`;
+  const learnedEl = document.getElementById("complete-learned");
+  if (learnedEl) {
+    const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+    learnedEl.textContent =
+      sessionFixed > 0 ? `🧠 You learned ${plural(sessionFixed, "new thing")}: earlier mistakes you now get right!`
+      : missed === 0   ? "✨ Every answer right. Wonderful!"
+      : `🌱 ${plural(missed, "question")} saved to practise next. That's how learning grows.`;
+  }
+  const mascotEl = document.getElementById("complete-mascot");
+  if (mascotEl) {
+    mascotEl.classList.toggle("hidden", stars !== 3);
+    if (stars === 3) { mascotEl.style.animation = "none"; void mascotEl.offsetWidth; mascotEl.style.animation = ""; }
+  }
 
   // High score per class+subject (review sessions mix subjects, so they
   // don't compete for a subject's high score)
