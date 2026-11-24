@@ -104,7 +104,9 @@ body {
 #lang-switcher {
   font-family: inherit; font-size: 1rem; padding: 7px 12px;
   border-radius: 12px; border: none; font-weight: 700; cursor: pointer;
+  max-width: 12rem; text-overflow: ellipsis; min-width: 0;
 }
+.streak-display { white-space: nowrap; }
 
 /* Mobile topbar — placed after the base rules so these overrides win the cascade */
 @media (max-width: 420px) {
@@ -114,8 +116,10 @@ body {
   .streak-display { font-size: 1rem; padding: 5px 9px; }
   .sound-toggle { padding: 6px 9px; font-size: 1.05rem; }
   .topbar-signin { padding: 6px 11px; font-size: 0.85rem; }
-  #lang-switcher { font-size: 0.9rem; padding: 6px 7px; }
+  #lang-switcher { font-size: 0.9rem; padding: 6px 7px; max-width: 6.8rem; }
 }
+@media (max-width: 370px) { #lang-switcher { max-width: 5.6rem; } }
+#time-greeting { text-align: left; }
 
 /* ── layout ── */
 .screen { position: relative; z-index: 1; padding: 24px 20px 40px; max-width: 720px; margin: 0 auto; }
@@ -1274,3 +1278,12 @@ body.wp-open { overflow: hidden; }
 @media (max-width: 420px) { .wp-grid { grid-template-columns: repeat(2, 1fr); } .wp-card { padding: 18px 12px 14px; } }
 @media (prefers-reduced-motion: reduce) { .wp-pin circle { transition: none; } }
 .wp-foot a { color: #7c3aed; font-weight: 800; }
+
+/* ── Preview languages (AI-drafted, under native-speaker review) ── */
+.preview-note {
+  max-width: 720px; margin: 10px auto 0; padding: 10px 14px;
+  background: #fff7e6; color: #5b3b00; border: 1px solid #f5d48a; border-radius: 14px;
+  font-size: 0.85rem; line-height: 1.45; text-align: center; position: relative; z-index: 1;
+}
+.preview-note.hidden { display: none; }
+@media (max-width: 760px) { .preview-note { margin: 8px 12px 0; } }

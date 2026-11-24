@@ -23,6 +23,12 @@ jobs:
       - name: Verify Class 1 questions
         run: node scripts/verify-class1-depth.mjs
 
+      # Preview languages (Sinhala, Arabic, Malay, Chinese, Spanish): every
+      # translated Class 1 string present and matching the translation table,
+      # no duplicate options, no answer given away by the translation.
+      - name: Verify preview-language translations
+        run: node scripts/verify-preview-languages.mjs
+
       # About/Impact numbers are counted from content/ on every deploy, so the
       # page can never claim more (or less) than the banks actually hold.
       - name: Refresh About page impact numbers
