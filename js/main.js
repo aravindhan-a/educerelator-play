@@ -10,6 +10,7 @@ import { drawSessionCard, drawStreakCard, drawReportCard, shareCard } from "./sh
 import { playAudio, unlockSpeech } from "../../../shared-lib/audio-player.js";
 import { track, recencyBucket } from "./usage.js";
 import { INDIA, savedCountry, saveCountry, detectCountry } from "../../../content/countries.js";
+import { LANGUAGES, getLanguage, isPreview } from "../../../content/languages.js";
 import { openWorldPicker } from "./world.js";
 import {
   createAdaptiveState,
@@ -43,6 +44,11 @@ const UI_STRINGS = {
   as:  { pickClass:"আপোনাৰ শ্ৰেণী বাছক", pickSubject:"এটা বিষয় বাছক", morning:"শুভ ৰাতিপুৱা! ☀️", afternoon:"শুভ দুপৰীয়া! 🌤️", evening:"শুভ সন্ধিয়া! 🌙", wellDone:"চমৎকাৰ! 🎉", tryAgain:"পৰৱৰ্তী বাৰ আকৌ চেষ্টা কৰক!", continueLabel:"য'ত এৰি থৈছিল তাৰ পৰা আৰম্ভ কৰক" },
   or:  { pickClass:"ଆପଣଙ୍କ ଶ୍ରେଣୀ ବାଛନ୍ତୁ", pickSubject:"ଏକ ବିଷୟ ବାଛନ୍ତୁ", morning:"ଶୁଭ ସକାଳ! ☀️", afternoon:"ଶୁଭ ଅପରାହ୍ନ! 🌤️", evening:"ଶୁଭ ସନ୍ଧ୍ୟା! 🌙", wellDone:"ବଢ଼ିଆ! 🎉", tryAgain:"ପରବର୍ତ୍ତୀ ଥର ଆଉ ଚେଷ୍ଟା କର!", continueLabel:"ଯେଉଁଠୁ ଛାଡ଼ିଥିଲ ସେଠୁ ଜାରି ରଖ" },
   ne:  { pickClass:"आफ्नो कक्षा छान्नुहोस्", pickSubject:"एउटा विषय छान्नुहोस्", morning:"शुभ प्रभात! ☀️", afternoon:"शुभ दिउँसो! 🌤️", evening:"शुभ साँझ! 🌙", wellDone:"साबाश! 🎉", tryAgain:"अर्को पटक फेरि कोशिश गर्नुहोस्!", continueLabel:"छाडेकोबाट जारी राख्नुहोस्" },
+  si:  { pickClass:"ඔබේ ශ්‍රේණිය තෝරන්න", pickSubject:"විෂයයක් තෝරන්න", morning:"සුබ උදෑසනක්! ☀️", afternoon:"සුබ දහවලක්! 🌤️", evening:"සුබ සන්ධ්‍යාවක්! 🌙", wellDone:"ඉතා හොඳයි! 🎉", tryAgain:"ඊළඟ වතාවේ නැවත උත්සාහ කරන්න!", continueLabel:"නතර කළ තැනින් දිගටම කරගෙන යන්න" },
+  ar:  { pickClass:"اختر صفّك", pickSubject:"اختر مادة", morning:"صباح الخير! ☀️", afternoon:"نهارك سعيد! 🌤️", evening:"مساء الخير! 🌙", wellDone:"أحسنت! 🎉", tryAgain:"حاول مرة أخرى في المرة القادمة!", continueLabel:"تابع من حيث توقفت" },
+  ms:  { pickClass:"Pilih kelas anda", pickSubject:"Pilih satu subjek", morning:"Selamat pagi! ☀️", afternoon:"Selamat tengah hari! 🌤️", evening:"Selamat petang! 🌙", wellDone:"Syabas! 🎉", tryAgain:"Cuba lagi lain kali!", continueLabel:"Sambung dari tempat anda berhenti" },
+  zh:  { pickClass:"选择你的年级", pickSubject:"选择一个科目", morning:"早上好！☀️", afternoon:"下午好！🌤️", evening:"晚上好！🌙", wellDone:"做得好！🎉", tryAgain:"下次再试试！", continueLabel:"从上次停下的地方继续" },
+  es:  { pickClass:"Elige tu grado", pickSubject:"Elige una materia", morning:"¡Buenos días! ☀️", afternoon:"¡Buenas tardes! 🌤️", evening:"¡Buenas noches! 🌙", wellDone:"¡Muy bien! 🎉", tryAgain:"¡Inténtalo otra vez la próxima!", continueLabel:"Sigue donde lo dejaste" },
   sa:  { pickClass:"स्वकक्षां चिनुत", pickSubject:"एकं विषयं चिनुत", morning:"सुप्रभातम्! ☀️", afternoon:"शुभं मध्याह्नम्! 🌤️", evening:"शुभं सायाह्नम्! 🌙", wellDone:"साधु! 🎉", tryAgain:"पुनः प्रयत्नं करोतु!", continueLabel:"यत्र अत्यक्षत तत्र पुनरारभत" },
 };
 // Praise variety (happiness polish): correct answers rotate through short,
@@ -64,6 +70,11 @@ const PRAISE = {
   as: ["অতি সুন্দৰ! 🌟", "শুদ্ধ উত্তৰ! ✅", "চমৎকাৰ! 🚀", "বহুত ভাল! 💪", "একেবাৰে শুদ্ধ! 🎯"],
   or: ["ଚମତ୍କାର! 🌟", "ଠିକ୍ ଉତ୍ତର! ✅", "ଅଦ୍ଭୁତ! 🚀", "ସାବାସ୍! 💪", "ଏକଦମ୍ ଠିକ୍! 🎯"],
   ne: ["धेरै राम्रो! 🌟", "सही उत्तर! ✅", "अद्भुत! 🚀", "कमाल! 💪", "एकदम सही! 🎯"],
+  si: ["නියමයි! 🌟", "හරි උත්තරය! ✅", "සුපිරි! 🚀", "ශාබාශ්! 💪", "හරියටම හරි! 🎯"],
+  ar: ["رائع! 🌟", "إجابة صحيحة! ✅", "ممتاز! 🚀", "عمل عظيم! 💪", "تمامًا! 🎯"],
+  ms: ["Hebat! 🌟", "Betul! ✅", "Bagus sekali! 🚀", "Pandai! 💪", "Tepat sekali! 🎯"],
+  zh: ["太棒了！🌟", "答对了！✅", "真厉害！🚀", "好极了！💪", "完全正确！🎯"],
+  es: ["¡Genial! 🌟", "¡Correcto! ✅", "¡Súper! 🚀", "¡Qué bien pensado! 🧠", "¡Exacto! 🎯"],
   sa: ["अतिशोभनम्! 🌟", "सम्यक् उत्तरम्! ✅", "उत्तमम्! 🚀", "शोभनम्! 💪", "सुष्ठु! 🎯"],
 };
 let lastPraise = "";
@@ -378,6 +389,7 @@ function updateWelcomeBanner() {
   const hour = new Date().getHours();
   document.getElementById("time-greeting").textContent =
     hour < 12 ? t("morning") : hour < 17 ? t("afternoon") : t("evening");
+  document.getElementById("time-greeting").dir = "auto"; // Arabic/Urdu punctuation on the right side
 
   const name = currentUser
     ? (currentUser.displayName || currentUser.email.split("@")[0])
@@ -645,12 +657,44 @@ topbarSigninBtn.addEventListener("click", () => {
 });
 
 // ── lang switcher ──
-langSwitcher.value = lang;
+// The country's own languages come first; every other language stays one
+// step away under "More languages". Preview languages (AI-drafted, not yet
+// reviewed by native speakers) say so in the menu and in a note on screen.
+function langOption(l) {
+  const o = document.createElement("option");
+  o.value = l.code;
+  o.textContent = l.status === "preview" ? `${l.native} · Preview` : l.native;
+  return o;
+}
+function renderLangSwitcher() {
+  const own = (country || INDIA).langs || ["en"];
+  langSwitcher.innerHTML = "";
+  const g1 = document.createElement("optgroup");
+  g1.label = `${(country || INDIA).flag} ${(country || INDIA).name}`;
+  own.map(getLanguage).filter(Boolean).forEach((l) => g1.appendChild(langOption(l)));
+  const g2 = document.createElement("optgroup");
+  g2.label = "More languages";
+  LANGUAGES.filter((l) => !own.includes(l.code)).forEach((l) => g2.appendChild(langOption(l)));
+  langSwitcher.append(g1, g2);
+  langSwitcher.value = getLanguage(lang) ? lang : "en";
+}
+function showPreviewNote() {
+  const el = document.getElementById("preview-note");
+  if (!el) return;
+  const l = getLanguage(lang);
+  const on = isPreview(lang);
+  el.classList.toggle("hidden", !on);
+  if (on) el.innerHTML = `<strong>${l.native}</strong> is new. ${l.english} is in <strong>preview</strong>: our translations are being checked by native speakers. Spot a mistake? Tap <strong>⚑ Report this question</strong>.`;
+}
+renderLangSwitcher();
+langSwitcher.value = getLanguage(lang) ? lang : "en";
 document.documentElement.lang = lang;
+showPreviewNote();
 langSwitcher.addEventListener("change", () => {
   lang = langSwitcher.value;
   localStorage.setItem(LANG_KEY, lang);
   document.documentElement.lang = lang;
+  showPreviewNote();
   applyUIStrings();
   updateWelcomeBanner();
   if (currentQuestion) renderQuestion(currentQuestion);
@@ -694,6 +738,7 @@ function setCountry(c, { setLanguage = true } = {}) {
     langSwitcher.value = c.defaultLang;
     langSwitcher.dispatchEvent(new Event("change"));
   }
+  renderLangSwitcher();
   renderClassGrid();
   updateWelcomeBanner();
   if (c.regions) detectRegion(); else { region = "all"; showRegionLabel(); }
@@ -839,12 +884,13 @@ function startExamSession(mode) {
 
 // ── report-a-question: opens a prefilled email — the correction loop our
 // Terms promise ("if you find an error, report it"). No backend needed.
-function reportQuestion({ id, context, prompt }) {
-  const subject = encodeURIComponent(`Question report: ${id}`);
+function reportQuestion({ id, context, prompt, shown }) {
+  const subject = encodeURIComponent(`${isPreview(lang) ? "Translation" : "Question"} report: ${id} (${lang})`);
   const body = encodeURIComponent(
     `I want to report a problem with this question.\n\n` +
-    `Question ID: ${id}\nWhere: ${context}\nLanguage: ${lang}\n` +
-    `Question: ${String(prompt || "").slice(0, 200)}\n\n` +
+    `Question ID: ${id}\nWhere: ${context}\nLanguage: ${lang}${isPreview(lang) ? " (preview)" : ""}\n` +
+    `Question: ${String(prompt || "").slice(0, 200)}\n` +
+    (shown && shown !== prompt ? `As shown: ${String(shown).slice(0, 200)}\n` : "") + `\n` +
     `What seems wrong (wrong answer / confusing wording / translation issue / other):\n`
   );
   window.location.href = `mailto:hello@educerelator.com?subject=${subject}&body=${body}`;
@@ -855,6 +901,7 @@ document.getElementById("report-question").addEventListener("click", () => {
     id: currentQuestion.id,
     context: `Class ${currentClass} / ${currentSubject}`,
     prompt: currentQuestion.prompt.en,
+    shown: [currentQuestion.prompt[lang], ...currentQuestion.choices.map((c) => c[lang])].filter(Boolean).join(" | "),
   });
 });
 
@@ -1263,6 +1310,9 @@ let displayOrder = []; // shuffled original-index per button position
 function renderQuestion(question) {
   questionVisual.textContent = question.visual;
   questionPrompt.textContent = question.prompt[lang] || question.prompt.en;
+  // "auto" lets each line pick its own direction, so Arabic and Urdu read right
+  // to left (question mark included) while English answers stay left to right.
+  questionPrompt.dir = "auto";
   choicesEl.innerHTML = "";
 
   // Shuffle choice order at render time so the correct answer's position
@@ -1282,6 +1332,7 @@ function renderQuestion(question) {
   displayOrder.forEach((origIndex, pos) => {
     const btn = document.createElement("button");
     btn.className = "choice-btn";
+    btn.dir = "auto";
     btn.textContent = labels[pos];
     btn.addEventListener("click", () => handleAnswer(origIndex, btn));
     choicesEl.appendChild(btn);

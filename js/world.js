@@ -6,6 +6,13 @@
 
 import { COUNTRIES, detectCountry } from "../../../content/countries.js";
 import { MAP_W, MAP_H, LAND_PATH, PINS } from "./world-land.js";
+import { getLanguage } from "../../../content/languages.js";
+
+// "Sinhala (preview), Tamil and English"
+function langList(c) {
+  const names = (c.langs || ["en"]).map((code) => { const l = getLanguage(code); return l ? `${l.english}${l.status === "preview" ? " (preview)" : ""}` : code; });
+  return names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names.at(-1)}` : names[0];
+}
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
@@ -61,7 +68,7 @@ export function openWorldPicker({ current, onChoose, onClose } = {}) {
     note.textContent = selected
       ? (selected.code === "IN"
           ? "Every class from 1 to 12, in English and 12 Indian languages."
-          : `${selected.grade(1)} is ready: numbers, letters and sounds, and the world around us. More grades are coming.${selected.note ? " " + selected.note : ""}`)
+          : `${selected.grade(1)} is ready: numbers, letters and sounds, and the world around us. In ${langList(selected)}. More grades are coming.${selected.note ? " " + selected.note : ""}`)
       : "";
   }
 

@@ -13,6 +13,7 @@ const TTS_LANG_CODES = {
   bn: "bn-IN", gu: "gu-IN", kn: "kn-IN", ml: "ml-IN",
   mr: "mr-IN", pa: "pa-IN", te: "te-IN", ur: "ur-IN",
   as: "as-IN", or: "or-IN", ne: "ne-IN", sa: "sa-IN",
+  si: "si-LK", ar: "ar-AE", ms: "ms-MY", zh: "zh-CN", es: "es-US",
   // fallbacks for less-supported locales
   brx: "hi-IN", doi: "hi-IN", kok: "mr-IN", mai: "hi-IN",
   mni: "bn-IN", sat: "hi-IN", sd: "ur-IN", ks: "ur-IN",
@@ -75,6 +76,11 @@ const MATH_WORDS = {
   pa: { plus:"ਜਮ੍ਹਾਂ", minus:"ਘਟਾਓ", times:"ਗੁਣਾ", div:"ਭਾਗ", eq:"ਬਰਾਬਰ", eqQ:"ਬਰਾਬਰ ਕਿੰਨਾ?", sqrt:"ਵਰਗਮੂਲ", cbrt:"ਘਣਮੂਲ", sq:"ਦਾ ਵਰਗ", cube:"ਦਾ ਘਣ", pow:"ਘਾਤ", over:"ਭਾਗ", pct:"ਪ੍ਰਤੀਸ਼ਤ" },
   ur: { plus:"جمع", minus:"منفی", times:"ضرب", div:"تقسیم", eq:"برابر", eqQ:"برابر کتنا؟", sqrt:"جذر", cbrt:"مکعب جذر", sq:"کا مربع", cube:"کا مکعب", pow:"کی طاقت", over:"تقسیم", pct:"فیصد" },
   or: { plus:"ଯୋଗ", minus:"ବିୟୋଗ", times:"ଗୁଣନ", div:"ଭାଗ", eq:"ସମାନ", eqQ:"ସମାନ କେତେ?", sqrt:"ବର୍ଗମୂଳ", cbrt:"ଘନମୂଳ", sq:"ବର୍ଗ", cube:"ଘନ", pow:"ଘାତ", over:"ଭାଗ", pct:"ପ୍ରତିଶତ" },
+  si: { plus:"එකතු", minus:"අඩු", times:"ගුණ", div:"බෙදීම", eq:"සමානයි", eqQ:"සමාන කීයද?", sqrt:"වර්ගමූලය", cbrt:"ඝනමූලය", sq:"වර්ගය", cube:"ඝනය", pow:"බලය", over:"බෙදීම", pct:"ප්‍රතිශතය" },
+  ar: { plus:"زائد", minus:"ناقص", times:"ضرب", div:"قسمة", eq:"يساوي", eqQ:"يساوي كم؟", sqrt:"الجذر التربيعي لـ", cbrt:"الجذر التكعيبي لـ", sq:"تربيع", cube:"تكعيب", pow:"أس", over:"على", pct:"بالمئة" },
+  ms: { plus:"tambah", minus:"tolak", times:"darab", div:"bahagi", eq:"sama dengan", eqQ:"sama dengan berapa?", sqrt:"punca kuasa dua", cbrt:"punca kuasa tiga", sq:"kuasa dua", cube:"kuasa tiga", pow:"kuasa", over:"per", pct:"peratus" },
+  zh: { plus:"加", minus:"减", times:"乘", div:"除以", eq:"等于", eqQ:"等于多少？", sqrt:"根号", cbrt:"立方根", sq:"的平方", cube:"的立方", pow:"的次方", over:"除以", pct:"百分比" },
+  es: { plus:"más", minus:"menos", times:"por", div:"entre", eq:"es igual a", eqQ:"¿es igual a cuánto?", sqrt:"raíz cuadrada de", cbrt:"raíz cúbica de", sq:"al cuadrado", cube:"al cubo", pow:"elevado a", over:"entre", pct:"por ciento" },
   ne: { plus:"जोड", minus:"घटाउ", times:"गुणन", div:"भाग", eq:"बराबर", eqQ:"बराबर कति?", sqrt:"वर्गमूल", cbrt:"घनमूल", sq:"को वर्ग", cube:"को घन", pow:"घात", over:"भाग", pct:"प्रतिशत" },
 };
 

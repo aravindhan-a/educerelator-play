@@ -39,7 +39,7 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 </main>
 <script>
 const API = "https://educerelator-backend.vercel.app/api/track?days=30";
-const LANG = { en:"English", hi:"Hindi", ta:"Tamil", te:"Telugu", bn:"Bengali", mr:"Marathi", gu:"Gujarati", kn:"Kannada", ml:"Malayalam", pa:"Punjabi", ur:"Urdu", or:"Odia", ne:"Nepali", as:"Assamese", sa:"Sanskrit", other:"Other" };
+const LANG = { en:"English", hi:"Hindi", ta:"Tamil", te:"Telugu", bn:"Bengali", mr:"Marathi", gu:"Gujarati", kn:"Kannada", ml:"Malayalam", pa:"Punjabi", ur:"Urdu", or:"Odia", ne:"Nepali", as:"Assamese", sa:"Sanskrit", si:"Sinhala", ar:"Arabic", ms:"Malay", zh:"Chinese", es:"Spanish", other:"Other" };
 const fmt = (n) => Number(n || 0).toLocaleString("en-IN");
 const pct = (a, b) => (b ? Math.round((100 * a) / b) + "%" : "–");
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));

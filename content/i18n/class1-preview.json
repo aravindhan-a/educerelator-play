@@ -1,0 +1,1098 @@
+{
+ "_about": "Class 1 translations for languages in PREVIEW: drafted by Claude (AI) for EC Play in November 2026 and not yet checked by native speakers. The app labels these languages 'Preview' until each is reviewed. Keys are the English strings used in content/levels/1-*.json. Apply with: node scripts/apply-preview-languages.mjs (verified by scripts/verify-preview-languages.mjs). To mark a language reviewed, set its status to 'reviewed' and record who reviewed it.",
+ "languages": {
+  "si": {
+   "name": "Sinhala",
+   "native": "සිංහල",
+   "countries": [
+    "LK"
+   ],
+   "tts": "si-LK",
+   "dir": "ltr",
+   "status": "preview",
+   "reviewedBy": null
+  },
+  "ar": {
+   "name": "Arabic",
+   "native": "العربية",
+   "countries": [
+    "AE"
+   ],
+   "tts": "ar-AE",
+   "dir": "rtl",
+   "status": "preview",
+   "reviewedBy": null
+  },
+  "ms": {
+   "name": "Malay",
+   "native": "Bahasa Melayu",
+   "countries": [
+    "SG"
+   ],
+   "tts": "ms-MY",
+   "dir": "ltr",
+   "status": "preview",
+   "reviewedBy": null
+  },
+  "zh": {
+   "name": "Chinese (Simplified)",
+   "native": "中文",
+   "countries": [
+    "SG"
+   ],
+   "tts": "zh-CN",
+   "dir": "ltr",
+   "status": "preview",
+   "reviewedBy": null
+  },
+  "es": {
+   "name": "Spanish",
+   "native": "Español",
+   "countries": [
+    "US"
+   ],
+   "tts": "es-US",
+   "dir": "ltr",
+   "status": "preview",
+   "reviewedBy": null
+  }
+ },
+ "strings": {
+  "How many apples?": {
+   "si": "ඇපල් කීයක් තිබේද?",
+   "ar": "كم تفاحة؟",
+   "ms": "Berapa biji epal?",
+   "zh": "有几个苹果？",
+   "es": "¿Cuántas manzanas hay?"
+  },
+  "How many balloons?": {
+   "si": "බැලූන් කීයක් තිබේද?",
+   "ar": "كم بالونًا؟",
+   "ms": "Berapa biji belon?",
+   "zh": "有几个气球？",
+   "es": "¿Cuántos globos hay?"
+  },
+  "How many flowers?": {
+   "si": "මල් කීයක් තිබේද?",
+   "ar": "كم زهرة؟",
+   "ms": "Berapa kuntum bunga?",
+   "zh": "有几朵花？",
+   "es": "¿Cuántas flores hay?"
+  },
+  "How many legs does a dog have?": {
+   "si": "බල්ලෙකුට කකුල් කීයක් තිබේද?",
+   "ar": "كم عدد أرجل الكلب؟",
+   "ms": "Berapakah kaki seekor anjing?",
+   "zh": "一只狗有几条腿？",
+   "es": "¿Cuántas patas tiene un perro?"
+  },
+  "How many legs does this animal have?": {
+   "si": "මෙම සතාට කකුල් කීයක් තිබේද?",
+   "ar": "كم عدد أرجل هذا الحيوان؟",
+   "ms": "Berapakah kaki haiwan ini?",
+   "zh": "这只动物有几条腿？",
+   "es": "¿Cuántas patas tiene este animal?"
+  },
+  "How many stars?": {
+   "si": "තරු කීයක් තිබේද?",
+   "ar": "كم نجمة؟",
+   "ms": "Berapa bintang?",
+   "zh": "有几颗星星？",
+   "es": "¿Cuántas estrellas hay?"
+  },
+  "The English word for this picture starts with which letter?": {
+   "si": "මෙම පින්තූරයේ ඉංග්‍රීසි වචනය පටන් ගන්නේ කුමන අකුරෙන්ද?",
+   "ar": "بأي حرف تبدأ الكلمة الإنجليزية لهذه الصورة؟",
+   "ms": "Perkataan Inggeris untuk gambar ini bermula dengan huruf apa?",
+   "zh": "这幅图的英语单词以哪个字母开头？",
+   "es": "¿Con qué letra empieza la palabra en inglés de este dibujo?"
+  },
+  "What color is this?": {
+   "si": "මෙය කුමන පාටද?",
+   "ar": "ما هذا اللون؟",
+   "ms": "Warna apakah ini?",
+   "zh": "这是什么颜色？",
+   "es": "¿De qué color es esto?"
+  },
+  "What comes next?": {
+   "si": "ඊළඟට එන්නේ කුමක්ද?",
+   "ar": "ماذا يأتي بعد ذلك؟",
+   "ms": "Apakah yang seterusnya?",
+   "zh": "下一个是什么？",
+   "es": "¿Qué sigue?"
+  },
+  "What is the opposite of this word?": {
+   "si": "මෙම වචනයේ විරුද්ධ පදය කුමක්ද?",
+   "ar": "ما عكس هذه الكلمة؟",
+   "ms": "Apakah lawan perkataan ini?",
+   "zh": "这个单词的反义词是什么？",
+   "es": "¿Cuál es el contrario de esta palabra?"
+  },
+  "What shape is this?": {
+   "si": "මෙය කුමන හැඩයද?",
+   "ar": "ما هذا الشكل؟",
+   "ms": "Bentuk apakah ini?",
+   "zh": "这是什么形状？",
+   "es": "¿Qué figura es esta?"
+  },
+  "Which English word matches the picture?": {
+   "si": "පින්තූරයට ගැළපෙන ඉංග්‍රීසි වචනය කුමක්ද?",
+   "ar": "ما الكلمة الإنجليزية التي تناسب الصورة؟",
+   "ms": "Perkataan Inggeris manakah yang sepadan dengan gambar?",
+   "zh": "哪个英语单词和图片相配？",
+   "es": "¿Qué palabra en inglés va con el dibujo?"
+  },
+  "Which animal says meow?": {
+   "si": "\"මියාව්\" කියන්නේ කුමන සතාද?",
+   "ar": "أي حيوان يقول \"مياو\"؟",
+   "ms": "Haiwan manakah yang berbunyi \"meow\"?",
+   "zh": "哪种动物会“喵喵”叫？",
+   "es": "¿Qué animal dice \"miau\"?"
+  },
+  "Which body part do we use to hear?": {
+   "si": "ඇසීමට අප භාවිත කරන්නේ ශරීරයේ කුමන කොටසද?",
+   "ar": "أيَّ جزء من الجسم نستخدم لنسمع؟",
+   "ms": "Bahagian badan manakah yang kita guna untuk mendengar?",
+   "zh": "我们用身体的哪个部位听声音？",
+   "es": "¿Qué parte del cuerpo usamos para oír?"
+  },
+  "Which body part do we use to hold things?": {
+   "si": "දේවල් අල්ලා ගැනීමට අප භාවිත කරන්නේ ශරීරයේ කුමන කොටසද?",
+   "ar": "أيَّ جزء من الجسم نستخدم لنمسك الأشياء؟",
+   "ms": "Bahagian badan manakah yang kita guna untuk memegang barang?",
+   "zh": "我们用身体的哪个部位拿东西？",
+   "es": "¿Qué parte del cuerpo usamos para agarrar cosas?"
+  },
+  "Which body part do we use to see?": {
+   "si": "බැලීමට අප භාවිත කරන්නේ ශරීරයේ කුමන කොටසද?",
+   "ar": "أيَّ جزء من الجسم نستخدم لنرى؟",
+   "ms": "Bahagian badan manakah yang kita guna untuk melihat?",
+   "zh": "我们用身体的哪个部位看东西？",
+   "es": "¿Qué parte del cuerpo usamos para ver?"
+  },
+  "Which body part do we use to smell?": {
+   "si": "සුවඳ දැනීමට අප භාවිත කරන්නේ ශරීරයේ කුමන කොටසද?",
+   "ar": "أيَّ جزء من الجسم نستخدم لنشم؟",
+   "ms": "Bahagian badan manakah yang kita guna untuk menghidu?",
+   "zh": "我们用身体的哪个部位闻气味？",
+   "es": "¿Qué parte del cuerpo usamos para oler?"
+  },
+  "Which body part do we use to taste?": {
+   "si": "රස බැලීමට අප භාවිත කරන්නේ ශරීරයේ කුමන කොටසද?",
+   "ar": "أيَّ جزء من الجسم نستخدم لنتذوق؟",
+   "ms": "Bahagian badan manakah yang kita guna untuk merasa?",
+   "zh": "我们用身体的哪个部位尝味道？",
+   "es": "¿Qué parte del cuerpo usamos para saborear?"
+  },
+  "Which body part do we use to walk?": {
+   "si": "ඇවිදීමට අප භාවිත කරන්නේ ශරීරයේ කුමන කොටසද?",
+   "ar": "أيَّ جزء من الجسم نستخدم لنمشي؟",
+   "ms": "Bahagian badan manakah yang kita guna untuk berjalan?",
+   "zh": "我们用身体的哪个部位走路？",
+   "es": "¿Qué parte del cuerpo usamos para caminar?"
+  },
+  "Which capital letter goes with this small letter?": {
+   "si": "මෙම සිම්පල් අකුරට ගැළපෙන කැපිටල් අකුර කුමක්ද?",
+   "ar": "ما الحرف الكبير الذي يناسب هذا الحرف الصغير؟",
+   "ms": "Huruf besar manakah yang sepadan dengan huruf kecil ini?",
+   "zh": "这个小写字母对应哪个大写字母？",
+   "es": "¿Qué letra mayúscula va con esta letra minúscula?"
+  },
+  "Which letter comes next?": {
+   "si": "ඊළඟට එන අකුර කුමක්ද?",
+   "ar": "ما الحرف التالي؟",
+   "ms": "Huruf apakah yang seterusnya?",
+   "zh": "下一个字母是什么？",
+   "es": "¿Qué letra sigue?"
+  },
+  "Which letter is missing?": {
+   "si": "අඩු වී ඇති අකුර කුමක්ද?",
+   "ar": "ما الحرف الناقص؟",
+   "ms": "Huruf apakah yang hilang?",
+   "zh": "缺了哪个字母？",
+   "es": "¿Qué letra falta?"
+  },
+  "Which of these can fly?": {
+   "si": "මේවායින් පියාඹන්න පුළුවන් කාටද?",
+   "ar": "أيٌّ من هذه يستطيع الطيران؟",
+   "ms": "Yang manakah antara ini boleh terbang?",
+   "zh": "下面哪一个会飞？",
+   "es": "¿Cuál de estos puede volar?"
+  },
+  "Which of these do we eat?": {
+   "si": "මේවායින් අප කන්නේ කුමක්ද?",
+   "ar": "أيٌّ من هذه نأكله؟",
+   "ms": "Yang manakah antara ini kita makan?",
+   "zh": "下面哪一个是我们吃的？",
+   "es": "¿Cuál de estos comemos?"
+  },
+  "Which of these do we see in the night sky?": {
+   "si": "රාත්‍රී අහසේ අපට පෙනෙන්නේ මේවායින් කුමක්ද?",
+   "ar": "أيٌّ من هذه نراه في سماء الليل؟",
+   "ms": "Yang manakah antara ini kita lihat di langit malam?",
+   "zh": "晚上我们在天空中能看到下面哪一个？",
+   "es": "¿Cuál de estos vemos en el cielo de noche?"
+  },
+  "Which of these do we sleep on?": {
+   "si": "අප නිදාගන්නේ මේවායින් කුමක් මතද?",
+   "ar": "على أيٍّ من هذه ننام؟",
+   "ms": "Kita tidur di atas yang manakah antara ini?",
+   "zh": "我们睡在下面哪一个上面？",
+   "es": "¿Sobre cuál de estos dormimos?"
+  },
+  "Which of these do we use to brush our teeth?": {
+   "si": "දත් මදින්න අප භාවිත කරන්නේ මේවායින් කුමක්ද?",
+   "ar": "أيٌّ من هذه نستخدمه لتنظيف أسناننا؟",
+   "ms": "Yang manakah antara ini kita guna untuk memberus gigi?",
+   "zh": "我们用下面哪一个刷牙？",
+   "es": "¿Cuál de estos usamos para cepillarnos los dientes?"
+  },
+  "Which of these do we use when it rains?": {
+   "si": "වැස්ස වැටෙන විට අප භාවිත කරන්නේ මේවායින් කුමක්ද?",
+   "ar": "أيٌّ من هذه نستخدمه عندما تمطر؟",
+   "ms": "Yang manakah antara ini kita guna ketika hujan?",
+   "zh": "下雨时我们用下面哪一个？",
+   "es": "¿Cuál de estos usamos cuando llueve?"
+  },
+  "Which of these do we wear?": {
+   "si": "අප අඳින්නේ මේවායින් කුමක්ද?",
+   "ar": "أيٌّ من هذه نلبسه؟",
+   "ms": "Yang manakah antara ini kita pakai?",
+   "zh": "下面哪一个是我们穿的？",
+   "es": "¿Cuál de estos nos ponemos?"
+  },
+  "Which of these gives us eggs?": {
+   "si": "මේවායින් අපට බිත්තර දෙන්නේ කවුද?",
+   "ar": "أيٌّ من هذه يعطينا البيض؟",
+   "ms": "Yang manakah antara ini memberi kita telur?",
+   "zh": "下面哪一个能给我们蛋？",
+   "es": "¿Cuál de estos nos da huevos?"
+  },
+  "Which of these gives us light?": {
+   "si": "අපට එළිය දෙන්නේ මේවායින් කුමක්ද?",
+   "ar": "أيٌّ من هذه يعطينا الضوء؟",
+   "ms": "Yang manakah antara ini memberi kita cahaya?",
+   "zh": "下面哪一个给我们光？",
+   "es": "¿Cuál de estos nos da luz?"
+  },
+  "Which of these gives us milk?": {
+   "si": "මේවායින් අපට කිරි දෙන්නේ කවුද?",
+   "ar": "أيٌّ من هذه يعطينا الحليب؟",
+   "ms": "Yang manakah antara ini memberi kita susu?",
+   "zh": "下面哪一个能给我们奶？",
+   "es": "¿Cuál de estos nos da leche?"
+  },
+  "Which of these grows on a tree?": {
+   "si": "ගසක හැදෙන්නේ මේවායින් කුමක්ද?",
+   "ar": "أيٌّ من هذه ينمو على الشجرة؟",
+   "ms": "Yang manakah antara ini tumbuh di pokok?",
+   "zh": "下面哪一个长在树上？",
+   "es": "¿Cuál de estos crece en un árbol?"
+  },
+  "Which of these helps us keep clean?": {
+   "si": "පිරිසිදුව සිටීමට අපට උදව් වන්නේ මේවායින් කුමක්ද?",
+   "ar": "أيٌّ من هذه يساعدنا على أن نبقى نظيفين؟",
+   "ms": "Yang manakah antara ini membantu kita kekal bersih?",
+   "zh": "下面哪一个帮助我们保持干净？",
+   "es": "¿Cuál de estos nos ayuda a estar limpios?"
+  },
+  "Which of these is a fruit?": {
+   "si": "මේවායින් පලතුරක් කුමක්ද?",
+   "ar": "أيٌّ من هذه فاكهة؟",
+   "ms": "Yang manakah antara ini buah?",
+   "zh": "下面哪一个是水果？",
+   "es": "¿Cuál de estos es una fruta?"
+  },
+  "Which of these is a pet animal?": {
+   "si": "මේවායින් සුරතල් සතෙක් වන්නේ කුමක්ද?",
+   "ar": "أيٌّ من هذه حيوان أليف؟",
+   "ms": "Yang manakah antara ini haiwan peliharaan?",
+   "zh": "下面哪一个是宠物？",
+   "es": "¿Cuál de estos es una mascota?"
+  },
+  "Which of these is a vehicle?": {
+   "si": "මේවායින් වාහනයක් කුමක්ද?",
+   "ar": "أيٌّ من هذه وسيلة نقل؟",
+   "ms": "Yang manakah antara ini kenderaan?",
+   "zh": "下面哪一个是交通工具？",
+   "es": "¿Cuál de estos es un vehículo?"
+  },
+  "Which of these is a wild animal?": {
+   "si": "මේවායින් වන සතෙක් වන්නේ කුමක්ද?",
+   "ar": "أيٌّ من هذه حيوان بري؟",
+   "ms": "Yang manakah antara ini haiwan liar?",
+   "zh": "下面哪一个是野生动物？",
+   "es": "¿Cuál de estos es un animal salvaje?"
+  },
+  "Which of these is an animal?": {
+   "si": "මේවායින් සතෙක් වන්නේ කුමක්ද?",
+   "ar": "أيٌّ من هذه حيوان؟",
+   "ms": "Yang manakah antara ini haiwan?",
+   "zh": "下面哪一个是动物？",
+   "es": "¿Cuál de estos es un animal?"
+  },
+  "Which of these lives in water?": {
+   "si": "මේවායින් වතුරේ ජීවත් වන්නේ කවුද?",
+   "ar": "أيٌّ من هذه يعيش في الماء؟",
+   "ms": "Yang manakah antara ini hidup di dalam air?",
+   "zh": "下面哪一个生活在水里？",
+   "es": "¿Cuál de estos vive en el agua?"
+  },
+  "Which of these moves on the road?": {
+   "si": "පාරේ යන්නේ මේවායින් කුමක්ද?",
+   "ar": "أيٌّ من هذه يسير على الطريق؟",
+   "ms": "Yang manakah antara ini bergerak di jalan raya?",
+   "zh": "下面哪一个在马路上行驶？",
+   "es": "¿Cuál de estos va por la calle?"
+  },
+  "Which of these moves on water?": {
+   "si": "වතුර මත යන්නේ මේවායින් කුමක්ද?",
+   "ar": "أيٌّ من هذه يسير على الماء؟",
+   "ms": "Yang manakah antara ini bergerak di atas air?",
+   "zh": "下面哪一个在水上行驶？",
+   "es": "¿Cuál de estos va por el agua?"
+  },
+  "Which one can fly?": {
+   "si": "පියාඹන්න පුළුවන් කාටද?",
+   "ar": "أيّها يستطيع الطيران؟",
+   "ms": "Yang manakah boleh terbang?",
+   "zh": "哪一个会飞？",
+   "es": "¿Cuál puede volar?"
+  },
+  "Which one gives us milk?": {
+   "si": "අපට කිරි දෙන්නේ කවුද?",
+   "ar": "أيّها يعطينا الحليب؟",
+   "ms": "Yang manakah memberi kita susu?",
+   "zh": "哪一个能给我们奶？",
+   "es": "¿Cuál nos da leche?"
+  },
+  "Which small letter goes with this capital letter?": {
+   "si": "මෙම කැපිටල් අකුරට ගැළපෙන සිම්පල් අකුර කුමක්ද?",
+   "ar": "ما الحرف الصغير الذي يناسب هذا الحرف الكبير؟",
+   "ms": "Huruf kecil manakah yang sepadan dengan huruf besar ini?",
+   "zh": "这个大写字母对应哪个小写字母？",
+   "es": "¿Qué letra minúscula va con esta letra mayúscula?"
+  },
+  "Which word ends with the same sound as this word?": {
+   "si": "මෙම වචනය අවසන් වන ශබ්දයෙන්ම අවසන් වන වචනය කුමක්ද?",
+   "ar": "أي كلمة تنتهي بنفس صوت هذه الكلمة؟",
+   "ms": "Perkataan manakah yang berakhir dengan bunyi yang sama seperti perkataan ini?",
+   "zh": "哪个单词的结尾音和这个单词一样？",
+   "es": "¿Qué palabra termina con el mismo sonido que esta palabra?"
+  },
+  "Which word matches the picture?": {
+   "si": "පින්තූරයට ගැළපෙන වචනය කුමක්ද?",
+   "ar": "ما الكلمة التي تناسب الصورة؟",
+   "ms": "Perkataan manakah yang sepadan dengan gambar?",
+   "zh": "哪个词和图片相配？",
+   "es": "¿Qué palabra va con el dibujo?"
+  },
+  "Which word starts with the same sound as this word?": {
+   "si": "මෙම වචනය පටන් ගන්නා ශබ්දයෙන්ම පටන් ගන්නා වචනය කුමක්ද?",
+   "ar": "أي كلمة تبدأ بنفس صوت هذه الكلمة؟",
+   "ms": "Perkataan manakah yang bermula dengan bunyi yang sama seperti perkataan ini?",
+   "zh": "哪个单词的开头音和这个单词一样？",
+   "es": "¿Qué palabra empieza con el mismo sonido que esta palabra?"
+  },
+  "1": {
+   "si": "1",
+   "ar": "1",
+   "ms": "1",
+   "zh": "1",
+   "es": "1"
+  },
+  "2": {
+   "si": "2",
+   "ar": "2",
+   "ms": "2",
+   "zh": "2",
+   "es": "2"
+  },
+  "3": {
+   "si": "3",
+   "ar": "3",
+   "ms": "3",
+   "zh": "3",
+   "es": "3"
+  },
+  "4": {
+   "si": "4",
+   "ar": "4",
+   "ms": "4",
+   "zh": "4",
+   "es": "4"
+  },
+  "5": {
+   "si": "5",
+   "ar": "5",
+   "ms": "5",
+   "zh": "5",
+   "es": "5"
+  },
+  "6": {
+   "si": "6",
+   "ar": "6",
+   "ms": "6",
+   "zh": "6",
+   "es": "6"
+  },
+  "Aeroplane": {
+   "si": "ගුවන් යානය",
+   "ar": "طائرة",
+   "ms": "Kapal terbang",
+   "zh": "飞机",
+   "es": "Avión"
+  },
+  "Apple": {
+   "si": "ඇපල්",
+   "ar": "تفاحة",
+   "ms": "Epal",
+   "zh": "苹果",
+   "es": "Manzana"
+  },
+  "Ball": {
+   "si": "බෝලය",
+   "ar": "كرة",
+   "ms": "Bola",
+   "zh": "球",
+   "es": "Pelota"
+  },
+  "Banana": {
+   "si": "කෙසෙල්",
+   "ar": "موزة",
+   "ms": "Pisang",
+   "zh": "香蕉",
+   "es": "Plátano"
+  },
+  "Bird": {
+   "si": "කුරුල්ලා",
+   "ar": "طائر",
+   "ms": "Burung",
+   "zh": "鸟",
+   "es": "Pájaro"
+  },
+  "Blue": {
+   "si": "නිල්",
+   "ar": "أزرق",
+   "ms": "Biru",
+   "zh": "蓝色",
+   "es": "Azul"
+  },
+  "Boat": {
+   "si": "බෝට්ටුව",
+   "ar": "قارب",
+   "ms": "Bot",
+   "zh": "小船",
+   "es": "Bote"
+  },
+  "Book": {
+   "si": "පොත",
+   "ar": "كتاب",
+   "ms": "Buku",
+   "zh": "书",
+   "es": "Libro"
+  },
+  "Bus": {
+   "si": "බස් රථය",
+   "ar": "حافلة",
+   "ms": "Bas",
+   "zh": "巴士",
+   "es": "Autobús"
+  },
+  "Car": {
+   "si": "කාරය",
+   "ar": "سيارة",
+   "ms": "Kereta",
+   "zh": "汽车",
+   "es": "Carro"
+  },
+  "Cat": {
+   "si": "පූසා",
+   "ar": "قطة",
+   "ms": "Kucing",
+   "zh": "猫",
+   "es": "Gato"
+  },
+  "Circle": {
+   "si": "රවුම",
+   "ar": "دائرة",
+   "ms": "Bulatan",
+   "zh": "圆形",
+   "es": "Círculo"
+  },
+  "Cow": {
+   "si": "එළදෙන",
+   "ar": "بقرة",
+   "ms": "Lembu",
+   "zh": "牛",
+   "es": "Vaca"
+  },
+  "Dog": {
+   "si": "බල්ලා",
+   "ar": "كلب",
+   "ms": "Anjing",
+   "zh": "狗",
+   "es": "Perro"
+  },
+  "Ear": {
+   "si": "කන",
+   "ar": "أذن",
+   "ms": "Telinga",
+   "zh": "耳朵",
+   "es": "Oreja"
+  },
+  "Elephant": {
+   "si": "අලියා",
+   "ar": "فيل",
+   "ms": "Gajah",
+   "zh": "大象",
+   "es": "Elefante"
+  },
+  "Eye": {
+   "si": "ඇස",
+   "ar": "عين",
+   "ms": "Mata",
+   "zh": "眼睛",
+   "es": "Ojo"
+  },
+  "Fish": {
+   "si": "මාළුවා",
+   "ar": "سمكة",
+   "ms": "Ikan",
+   "zh": "鱼",
+   "es": "Pez"
+  },
+  "Flower": {
+   "si": "මල",
+   "ar": "زهرة",
+   "ms": "Bunga",
+   "zh": "花",
+   "es": "Flor"
+  },
+  "Goat": {
+   "si": "එළුවා",
+   "ar": "ماعز",
+   "ms": "Kambing",
+   "zh": "山羊",
+   "es": "Cabra"
+  },
+  "Grape": {
+   "si": "මිදි",
+   "ar": "عنب",
+   "ms": "Anggur",
+   "zh": "葡萄",
+   "es": "Uva"
+  },
+  "Green": {
+   "si": "කොළ",
+   "ar": "أخضر",
+   "ms": "Hijau",
+   "zh": "绿色",
+   "es": "Verde"
+  },
+  "Hand": {
+   "si": "අත",
+   "ar": "يد",
+   "ms": "Tangan",
+   "zh": "手",
+   "es": "Mano"
+  },
+  "Horse": {
+   "si": "අශ්වයා",
+   "ar": "حصان",
+   "ms": "Kuda",
+   "zh": "马",
+   "es": "Caballo"
+  },
+  "House": {
+   "si": "ගෙදර",
+   "ar": "بيت",
+   "ms": "Rumah",
+   "zh": "房子",
+   "es": "Casa"
+  },
+  "Lion": {
+   "si": "සිංහයා",
+   "ar": "أسد",
+   "ms": "Singa",
+   "zh": "狮子",
+   "es": "León"
+  },
+  "Mango": {
+   "si": "අඹ",
+   "ar": "مانجو",
+   "ms": "Mangga",
+   "zh": "芒果",
+   "es": "Mango"
+  },
+  "Monkey": {
+   "si": "වඳුරා",
+   "ar": "قرد",
+   "ms": "Monyet",
+   "zh": "猴子",
+   "es": "Mono"
+  },
+  "Moon": {
+   "si": "සඳ",
+   "ar": "قمر",
+   "ms": "Bulan",
+   "zh": "月亮",
+   "es": "Luna"
+  },
+  "Nose": {
+   "si": "නාසය",
+   "ar": "أنف",
+   "ms": "Hidung",
+   "zh": "鼻子",
+   "es": "Nariz"
+  },
+  "Orange": {
+   "si": "දොඩම්",
+   "ar": "برتقالة",
+   "ms": "Oren",
+   "zh": "橙子",
+   "es": "Naranja"
+  },
+  "Red": {
+   "si": "රතු",
+   "ar": "أحمر",
+   "ms": "Merah",
+   "zh": "红色",
+   "es": "Rojo"
+  },
+  "Square": {
+   "si": "හතරැස",
+   "ar": "مربع",
+   "ms": "Segi empat sama",
+   "zh": "正方形",
+   "es": "Cuadrado"
+  },
+  "Star": {
+   "si": "තරුව",
+   "ar": "نجمة",
+   "ms": "Bintang",
+   "zh": "星星",
+   "es": "Estrella"
+  },
+  "Sun": {
+   "si": "හිරු",
+   "ar": "شمس",
+   "ms": "Matahari",
+   "zh": "太阳",
+   "es": "Sol"
+  },
+  "Tree": {
+   "si": "ගස",
+   "ar": "شجرة",
+   "ms": "Pokok",
+   "zh": "树",
+   "es": "Árbol"
+  },
+  "Triangle": {
+   "si": "ත්‍රිකෝණය",
+   "ar": "مثلث",
+   "ms": "Segi tiga",
+   "zh": "三角形",
+   "es": "Triángulo"
+  },
+  "Yellow": {
+   "si": "කහ",
+   "ar": "أصفر",
+   "ms": "Kuning",
+   "zh": "黄色",
+   "es": "Amarillo"
+  },
+  "☀️ Sun": {
+   "si": "☀️ හිරු",
+   "ar": "☀️ شمس",
+   "ms": "☀️ Matahari",
+   "zh": "☀️ 太阳",
+   "es": "☀️ Sol"
+  },
+  "☂️ Umbrella": {
+   "si": "☂️ කුඩය",
+   "ar": "☂️ مظلة",
+   "ms": "☂️ Payung",
+   "zh": "☂️ 雨伞",
+   "es": "☂️ Paraguas"
+  },
+  "⚽ Ball": {
+   "si": "⚽ බෝලය",
+   "ar": "⚽ كرة",
+   "ms": "⚽ Bola",
+   "zh": "⚽ 球",
+   "es": "⚽ Pelota"
+  },
+  "⛵ Boat": {
+   "si": "⛵ බෝට්ටුව",
+   "ar": "⛵ قارب",
+   "ms": "⛵ Bot",
+   "zh": "⛵ 小船",
+   "es": "⛵ Bote"
+  },
+  "✈️ Aeroplane": {
+   "si": "✈️ ගුවන් යානය",
+   "ar": "✈️ طائرة",
+   "ms": "✈️ Kapal terbang",
+   "zh": "✈️ 飞机",
+   "es": "✈️ Avión"
+  },
+  "✋ Hand": {
+   "si": "✋ අත",
+   "ar": "✋ يد",
+   "ms": "✋ Tangan",
+   "zh": "✋ 手",
+   "es": "✋ Mano"
+  },
+  "⭐ Star": {
+   "si": "⭐ තරුව",
+   "ar": "⭐ نجمة",
+   "ms": "⭐ Bintang",
+   "zh": "⭐ 星星",
+   "es": "⭐ Estrella"
+  },
+  "🌙 Moon": {
+   "si": "🌙 සඳ",
+   "ar": "🌙 قمر",
+   "ms": "🌙 Bulan",
+   "zh": "🌙 月亮",
+   "es": "🌙 Luna"
+  },
+  "🌳 Tree": {
+   "si": "🌳 ගස",
+   "ar": "🌳 شجرة",
+   "ms": "🌳 Pokok",
+   "zh": "🌳 树",
+   "es": "🌳 Árbol"
+  },
+  "🍇 Grape": {
+   "si": "🍇 මිදි",
+   "ar": "🍇 عنب",
+   "ms": "🍇 Anggur",
+   "zh": "🍇 葡萄",
+   "es": "🍇 Uva"
+  },
+  "🍊 Orange": {
+   "si": "🍊 දොඩම්",
+   "ar": "🍊 برتقالة",
+   "ms": "🍊 Oren",
+   "zh": "🍊 橙子",
+   "es": "🍊 Naranja"
+  },
+  "🍌 Banana": {
+   "si": "🍌 කෙසෙල්",
+   "ar": "🍌 موزة",
+   "ms": "🍌 Pisang",
+   "zh": "🍌 香蕉",
+   "es": "🍌 Plátano"
+  },
+  "🍎 Apple": {
+   "si": "🍎 ඇපල්",
+   "ar": "🍎 تفاحة",
+   "ms": "🍎 Epal",
+   "zh": "🍎 苹果",
+   "es": "🍎 Manzana"
+  },
+  "🍚 Rice": {
+   "si": "🍚 බත්",
+   "ar": "🍚 أرز",
+   "ms": "🍚 Nasi",
+   "zh": "🍚 米饭",
+   "es": "🍚 Arroz"
+  },
+  "🍞 Bread": {
+   "si": "🍞 පාන්",
+   "ar": "🍞 خبز",
+   "ms": "🍞 Roti",
+   "zh": "🍞 面包",
+   "es": "🍞 Pan"
+  },
+  "🐄 Cow": {
+   "si": "🐄 එළදෙන",
+   "ar": "🐄 بقرة",
+   "ms": "🐄 Lembu",
+   "zh": "🐄 牛",
+   "es": "🐄 Vaca"
+  },
+  "🐅 Tiger": {
+   "si": "🐅 ව්‍යාඝ්‍රයා",
+   "ar": "🐅 نمر",
+   "ms": "🐅 Harimau",
+   "zh": "🐅 老虎",
+   "es": "🐅 Tigre"
+  },
+  "🐍 Snake": {
+   "si": "🐍 සර්පයා",
+   "ar": "🐍 ثعبان",
+   "ms": "🐍 Ular",
+   "zh": "🐍 蛇",
+   "es": "🐍 Serpiente"
+  },
+  "🐐 Goat": {
+   "si": "🐐 එළුවා",
+   "ar": "🐐 ماعز",
+   "ms": "🐐 Kambing",
+   "zh": "🐐 山羊",
+   "es": "🐐 Cabra"
+  },
+  "🐒 Monkey": {
+   "si": "🐒 වඳුරා",
+   "ar": "🐒 قرد",
+   "ms": "🐒 Monyet",
+   "zh": "🐒 猴子",
+   "es": "🐒 Mono"
+  },
+  "🐔 Hen": {
+   "si": "🐔 කිකිළිය",
+   "ar": "🐔 دجاجة",
+   "ms": "🐔 Ayam betina",
+   "zh": "🐔 母鸡",
+   "es": "🐔 Gallina"
+  },
+  "🐘 Elephant": {
+   "si": "🐘 අලියා",
+   "ar": "🐘 فيل",
+   "ms": "🐘 Gajah",
+   "zh": "🐘 大象",
+   "es": "🐘 Elefante"
+  },
+  "🐝 Bee": {
+   "si": "🐝 මී මැස්සා",
+   "ar": "🐝 نحلة",
+   "ms": "🐝 Lebah",
+   "zh": "🐝 蜜蜂",
+   "es": "🐝 Abeja"
+  },
+  "🐟 Fish": {
+   "si": "🐟 මාළුවා",
+   "ar": "🐟 سمكة",
+   "ms": "🐟 Ikan",
+   "zh": "🐟 鱼",
+   "es": "🐟 Pez"
+  },
+  "🐦 Bird": {
+   "si": "🐦 කුරුල්ලා",
+   "ar": "🐦 طائر",
+   "ms": "🐦 Burung",
+   "zh": "🐦 鸟",
+   "es": "🐦 Pájaro"
+  },
+  "🐱 Cat": {
+   "si": "🐱 පූසා",
+   "ar": "🐱 قطة",
+   "ms": "🐱 Kucing",
+   "zh": "🐱 猫",
+   "es": "🐱 Gato"
+  },
+  "🐳 Whale": {
+   "si": "🐳 තල්මසා",
+   "ar": "🐳 حوت",
+   "ms": "🐳 Ikan paus",
+   "zh": "🐳 鲸鱼",
+   "es": "🐳 Ballena"
+  },
+  "🐴 Horse": {
+   "si": "🐴 අශ්වයා",
+   "ar": "🐴 حصان",
+   "ms": "🐴 Kuda",
+   "zh": "🐴 马",
+   "es": "🐴 Caballo"
+  },
+  "🐶 Dog": {
+   "si": "🐶 බල්ලා",
+   "ar": "🐶 كلب",
+   "ms": "🐶 Anjing",
+   "zh": "🐶 狗",
+   "es": "🐶 Perro"
+  },
+  "👁️ Eye": {
+   "si": "👁️ ඇස",
+   "ar": "👁️ عين",
+   "ms": "👁️ Mata",
+   "zh": "👁️ 眼睛",
+   "es": "👁️ Ojo"
+  },
+  "👂 Ear": {
+   "si": "👂 කන",
+   "ar": "👂 أذن",
+   "ms": "👂 Telinga",
+   "zh": "👂 耳朵",
+   "es": "👂 Oreja"
+  },
+  "👃 Nose": {
+   "si": "👃 නාසය",
+   "ar": "👃 أنف",
+   "ms": "👃 Hidung",
+   "zh": "👃 鼻子",
+   "es": "👃 Nariz"
+  },
+  "👅 Tongue": {
+   "si": "👅 දිව",
+   "ar": "👅 لسان",
+   "ms": "👅 Lidah",
+   "zh": "👅 舌头",
+   "es": "👅 Lengua"
+  },
+  "👕 Shirt": {
+   "si": "👕 කමිසය",
+   "ar": "👕 قميص",
+   "ms": "👕 Baju",
+   "zh": "👕 衬衫",
+   "es": "👕 Camisa"
+  },
+  "👟 Shoe": {
+   "si": "👟 සපත්තුව",
+   "ar": "👟 حذاء",
+   "ms": "👟 Kasut",
+   "zh": "👟 鞋子",
+   "es": "👟 Zapato"
+  },
+  "💡 Bulb": {
+   "si": "💡 බල්බය",
+   "ar": "💡 مصباح",
+   "ms": "💡 Mentol",
+   "zh": "💡 灯泡",
+   "es": "💡 Foco"
+  },
+  "💧 Water": {
+   "si": "💧 වතුර",
+   "ar": "💧 ماء",
+   "ms": "💧 Air",
+   "zh": "💧 水",
+   "es": "💧 Agua"
+  },
+  "📖 Book": {
+   "si": "📖 පොත",
+   "ar": "📖 كتاب",
+   "ms": "📖 Buku",
+   "zh": "📖 书",
+   "es": "📖 Libro"
+  },
+  "🚂 Train": {
+   "si": "🚂 දුම්රිය",
+   "ar": "🚂 قطار",
+   "ms": "🚂 Kereta api",
+   "zh": "🚂 火车",
+   "es": "🚂 Tren"
+  },
+  "🚌 Bus": {
+   "si": "🚌 බස් රථය",
+   "ar": "🚌 حافلة",
+   "ms": "🚌 Bas",
+   "zh": "🚌 巴士",
+   "es": "🚌 Autobús"
+  },
+  "🚗 Car": {
+   "si": "🚗 කාරය",
+   "ar": "🚗 سيارة",
+   "ms": "🚗 Kereta",
+   "zh": "🚗 汽车",
+   "es": "🚗 Carro"
+  },
+  "🚢 Ship": {
+   "si": "🚢 නැව",
+   "ar": "🚢 سفينة",
+   "ms": "🚢 Kapal",
+   "zh": "🚢 轮船",
+   "es": "🚢 Barco"
+  },
+  "🚲 Cycle": {
+   "si": "🚲 බයිසිකලය",
+   "ar": "🚲 دراجة",
+   "ms": "🚲 Basikal",
+   "zh": "🚲 自行车",
+   "es": "🚲 Bicicleta"
+  },
+  "🛏️ Bed": {
+   "si": "🛏️ ඇඳ",
+   "ar": "🛏️ سرير",
+   "ms": "🛏️ Katil",
+   "zh": "🛏️ 床",
+   "es": "🛏️ Cama"
+  },
+  "🥄 Spoon": {
+   "si": "🥄 හැන්ද",
+   "ar": "🥄 ملعقة",
+   "ms": "🥄 Sudu",
+   "zh": "🥄 勺子",
+   "es": "🥄 Cuchara"
+  },
+  "🥕 Carrot": {
+   "si": "🥕 කැරට්",
+   "ar": "🥕 جزر",
+   "ms": "🥕 Lobak merah",
+   "zh": "🥕 胡萝卜",
+   "es": "🥕 Zanahoria"
+  },
+  "🥛 Milk": {
+   "si": "🥛 කිරි",
+   "ar": "🥛 حليب",
+   "ms": "🥛 Susu",
+   "zh": "🥛 牛奶",
+   "es": "🥛 Leche"
+  },
+  "🥭 Mango": {
+   "si": "🥭 අඹ",
+   "ar": "🥭 مانجو",
+   "ms": "🥭 Mangga",
+   "zh": "🥭 芒果",
+   "es": "🥭 Mango"
+  },
+  "🦀 Crab": {
+   "si": "🦀 කකුළුවා",
+   "ar": "🦀 سلطعون",
+   "ms": "🦀 Ketam",
+   "zh": "🦀 螃蟹",
+   "es": "🦀 Cangrejo"
+  },
+  "🦁 Lion": {
+   "si": "🦁 සිංහයා",
+   "ar": "🦁 أسد",
+   "ms": "🦁 Singa",
+   "zh": "🦁 狮子",
+   "es": "🦁 León"
+  },
+  "🦆 Duck": {
+   "si": "🦆 තාරාවා",
+   "ar": "🦆 بطة",
+   "ms": "🦆 Itik",
+   "zh": "🦆 鸭子",
+   "es": "🦆 Pato"
+  },
+  "🦋 Butterfly": {
+   "si": "🦋 සමනලයා",
+   "ar": "🦋 فراشة",
+   "ms": "🦋 Rama-rama",
+   "zh": "🦋 蝴蝶",
+   "es": "🦋 Mariposa"
+  },
+  "🦵 Leg": {
+   "si": "🦵 කකුල",
+   "ar": "🦵 ساق",
+   "ms": "🦵 Kaki",
+   "zh": "🦵 腿",
+   "es": "🦵 Pierna"
+  },
+  "🧼 Soap": {
+   "si": "🧼 සබන්",
+   "ar": "🧼 صابون",
+   "ms": "🧼 Sabun",
+   "zh": "🧼 肥皂",
+   "es": "🧼 Jabón"
+  },
+  "🪑 Chair": {
+   "si": "🪑 පුටුව",
+   "ar": "🪑 كرسي",
+   "ms": "🪑 Kerusi",
+   "zh": "🪑 椅子",
+   "es": "🪑 Silla"
+  },
+  "🪥 Toothbrush": {
+   "si": "🪥 දත් බුරුසුව",
+   "ar": "🪥 فرشاة أسنان",
+   "ms": "🪥 Berus gigi",
+   "zh": "🪥 牙刷",
+   "es": "🪥 Cepillo de dientes"
+  }
+ }
+}

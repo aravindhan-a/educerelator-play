@@ -4,8 +4,9 @@
 // supports with verified content. India keeps every class and exam track;
 // every other country starts with Class 1 foundations (numbers, letters and
 // sounds, the world around us), which are taught much the same way everywhere.
-// New languages (Arabic, Indonesian, Japanese, Danish, Somali, …) join one at
-// a time, after a native-speaker review.
+// Languages marked "preview" in content/languages.js (Sinhala, Arabic, Malay,
+// Chinese, Spanish) are AI-drafted for Class 1 and labelled Preview in the app
+// until a native speaker reviews them.
 //
 // grade(n) gives the local name for EC Play's Class n, matched by age
 // (Class 1 = about age 6).
@@ -21,13 +22,13 @@ export const COUNTRIES = [
     classes: [1], grade: (n) => `Grade ${n}`, tz: ["Asia/Kathmandu", "Asia/Katmandu"] },
   { code: "BD", name: "Bangladesh", flag: "🇧🇩", lat: 23.7, lon: 90.4, langs: ["bn", "en"], defaultLang: "bn",
     classes: [1], grade: (n) => `Class ${n}`, tz: ["Asia/Dhaka", "Asia/Dacca"] },
-  { code: "LK", name: "Sri Lanka", flag: "🇱🇰", lat: 7.9, lon: 80.7, langs: ["ta", "en"], defaultLang: "en",
-    classes: [1], grade: (n) => `Grade ${n}`, tz: ["Asia/Colombo"], note: "Sinhala is coming soon." },
-  { code: "AE", name: "United Arab Emirates", flag: "🇦🇪", lat: 24.3, lon: 54.4, langs: ["en", "hi", "ur", "ml", "ta", "bn"], defaultLang: "en",
-    classes: [1], grade: (n) => `Grade ${n}`, tz: ["Asia/Dubai"], note: "Arabic is coming soon." },
-  { code: "SG", name: "Singapore", flag: "🇸🇬", lat: 1.35, lon: 103.8, langs: ["en", "ta"], defaultLang: "en",
+  { code: "LK", name: "Sri Lanka", flag: "🇱🇰", lat: 7.9, lon: 80.7, langs: ["si", "ta", "en"], defaultLang: "en",
+    classes: [1], grade: (n) => `Grade ${n}`, tz: ["Asia/Colombo"] },
+  { code: "AE", name: "United Arab Emirates", flag: "🇦🇪", lat: 24.3, lon: 54.4, langs: ["en", "ar", "hi", "ur", "ml", "ta", "bn"], defaultLang: "en",
+    classes: [1], grade: (n) => `Grade ${n}`, tz: ["Asia/Dubai"] },
+  { code: "SG", name: "Singapore", flag: "🇸🇬", lat: 1.35, lon: 103.8, langs: ["en", "zh", "ms", "ta"], defaultLang: "en",
     classes: [1], grade: (n) => `Primary ${n}`, tz: ["Asia/Singapore"] },
-  { code: "US", name: "United States", flag: "🇺🇸", lat: 39, lon: -98, langs: ["en"], defaultLang: "en",
+  { code: "US", name: "United States", flag: "🇺🇸", lat: 39, lon: -98, langs: ["en", "es"], defaultLang: "en",
     classes: [1], grade: (n) => `Grade ${n}`,
     tz: ["America/New_York", "America/Chicago", "America/Denver", "America/Phoenix", "America/Los_Angeles", "America/Anchorage", "America/Detroit", "America/Boise", "America/Indiana/Indianapolis", "America/Kentucky/Louisville", "Pacific/Honolulu", "US/Eastern", "US/Central", "US/Mountain", "US/Pacific"] },
   { code: "GB", name: "United Kingdom", flag: "🇬🇧", lat: 54, lon: -2, langs: ["en"], defaultLang: "en",
