@@ -80,6 +80,12 @@ const CAT_LABEL = {
 };
 
 // Prompt templates (13 languages)
+// English subject: the question is about an ENGLISH word, so the prompt says
+// so and the answer options stay in English in every UI language (only the
+// instruction is translated). Translating the options would turn an English
+// lesson into a vocabulary quiz in the child's own language.
+export const P_MATCH_EN = { en:"Which English word matches the picture?", hi:"चित्र से कौन सा अंग्रेज़ी शब्द मेल खाता है?", ta:"படத்துடன் பொருந்தும் ஆங்கிலச் சொல் எது?", te:"చిత్రానికి సరిపోయే ఆంగ్ల పదం ఏది?", bn:"ছবির সাথে কোন ইংরেজি শব্দটি মেলে?", mr:"चित्राशी कोणता इंग्रजी शब्द जुळतो?", gu:"ચિત્ર સાથે કયો અંગ્રેજી શબ્દ મેળ ખાય છે?", kn:"ಚಿತ್ರಕ್ಕೆ ಹೊಂದುವ ಇಂಗ್ಲಿಷ್ ಪದ ಯಾವುದು?", ml:"ചിത്രവുമായി യോജിക്കുന്ന ഇംഗ്ലീഷ് വാക്ക് ഏതാണ്?", pa:"ਤਸਵੀਰ ਨਾਲ ਕਿਹੜਾ ਅੰਗਰੇਜ਼ੀ ਸ਼ਬਦ ਮੇਲ ਖਾਂਦਾ ਹੈ?", ur:"تصویر سے کون سا انگریزی لفظ ملتا ہے؟", or:"ଚିତ୍ର ସହିତ କେଉଁ ଇଂରାଜୀ ଶବ୍ଦ ମେଳ ଖାଏ?", ne:"चित्रसँग कुन अङ्ग्रेजी शब्द मेल खान्छ?" };
+export const enOnly = (text) => Object.fromEntries(LANGS.map((l) => [l, text]));
 const P_MATCH = { en:"Which word matches the picture?", hi:"कौन सा शब्द चित्र से मेल खाता है?", ta:"எந்த சொல் படத்துடன் பொருந்துகிறது?", te:"ఏ పదం చిత్రంతో సరిపోతుంది?", bn:"ছবির সাথে কোন শব্দ মিলে?", mr:"चित्राशी कोणता शब्द जुळतो?", gu:"કયો શબ્દ ચિત્ર સાથે મેળ ખાય છે?", kn:"ಯಾವ ಪದವು ಚಿತ್ರಕ್ಕೆ ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ?", ml:"ചിത്രവുമായി പൊരുത്തപ്പെടുന്ന വാക്ക് ഏതാണ്?", pa:"ਕਿਹੜਾ ਸ਼ਬਦ ਤਸਵੀਰ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਹੈ?", ur:"تصویر سے کون سا لفظ ملتا ہے؟", or:"କେଉଁ ଶବ୍ଦ ଚିତ୍ର ସହିତ ମେଳ ଖାଉଛି?", ne:"चित्रसँग कुन शब्द मेल खान्छ?" };
 const catPrompt = (cat) => {
   const L = CAT_LABEL[cat];
@@ -100,23 +106,24 @@ const pick = (r, arr) => arr[Math.floor(r() * arr.length)];
 export function trObj(word) { const o = { en: word.en }; for (const l of LANGS) if (l !== "en" && word.tr[l]) o[l] = word.tr[l]; return o; }
 
 // place the answer at a rotating index and fill other slots with distractors
-function assemble(correct, distractors, slot) {
+function assemble(correct, distractors, slot, english = false) {
   const choices = [];
   let di = 0;
-  for (let i = 0; i < 3; i++) choices.push(i === slot ? trObj(correct) : trObj(distractors[di++]));
+  const label = english ? (w) => enOnly(w.en) : trObj;
+  for (let i = 0; i < 3; i++) choices.push(i === slot ? label(correct) : label(distractors[di++]));
   return { choices, answerIndex: slot };
 }
 
-function genMatch(word, distractors, slot, id) {
-  const { choices, answerIndex } = assemble(word, distractors, slot);
-  return { id, type: "match-image", prompt: P_MATCH, visual: word.emoji, choices, answerIndex };
+function genMatch(word, distractors, slot, id, english = false) {
+  const { choices, answerIndex } = assemble(word, distractors, slot, english);
+  return { id, type: "match-image", prompt: english ? P_MATCH_EN : P_MATCH, visual: word.emoji, choices, answerIndex };
 }
 function genCategory(word, distractors, slot, id) {
   const { choices, answerIndex } = assemble(word, distractors, slot);
   return { id, type: "identify", prompt: catPrompt(word.cat), choices, answerIndex };
 }
 
-function build(subjectCats, includeCategory, prefix, target) {
+function build(subjectCats, includeCategory, prefix, target, english = false) {
   const r = rng(prefix.split("").reduce((a, c) => a + c.charCodeAt(0), 0));
   const pool = VOCAB.filter((w) => subjectCats.includes(w.cat));
   const out = [];
@@ -125,7 +132,7 @@ function build(subjectCats, includeCategory, prefix, target) {
   for (const w of pool) {
     const others = VOCAB.filter((x) => x.cat !== w.cat);
     const d = [...others].sort(() => r() - 0.5).slice(0, 2);
-    out.push(genMatch(w, d, n % 3, `${prefix}-${String(n).padStart(3, "0")}`)); n++;
+    out.push(genMatch(w, d, n % 3, `${prefix}-${String(n).padStart(3, "0")}`, english)); n++;
   }
   // category questions (EVS): "which of these is an animal/fruit/vehicle?"
   if (includeCategory) {
@@ -157,7 +164,7 @@ function validate(qs) {
 }
 
 const TASKS = [
-  { file: "content/levels/1-english.json", cats: ["animal","fruit","vehicle","nature","body","object","colour"], category: false, prefix: "1-eng-gen" },
+  { file: "content/levels/1-english.json", cats: ["animal","fruit","vehicle","nature","body","object","colour"], category: false, prefix: "1-eng-gen", english: true },
   { file: "content/levels/1-evs.json",     cats: ["animal","fruit","body","nature","object"],                    category: true,  prefix: "1-evs-gen" },
 ];
 
@@ -171,7 +178,7 @@ let grand = 0;
 for (const task of TASKS) {
   const full = path.join(ROOT, task.file);
   const data = JSON.parse(fs.readFileSync(full, "utf8"));
-  const batch = build(task.cats, task.category, task.prefix, TARGET);
+  const batch = build(task.cats, task.category, task.prefix, TARGET, !!task.english);
   const errs = validate(batch);
   if (errs.length) { console.error(`✗ ${task.file}:`, errs.slice(0, 5)); process.exit(1); }
   const before = (data.levels || []).reduce((a, l) => a + l.questions.length, 0);

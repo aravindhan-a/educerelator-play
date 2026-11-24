@@ -18,6 +18,11 @@ jobs:
       - name: Verify starter chunks match their parent banks
         run: node scripts/verify-starter-chunks.mjs
 
+      # Every Class 1 English/EVS answer is re-derived from independent truth
+      # tables; a wrong answer or a missing language must never deploy.
+      - name: Verify Class 1 questions
+        run: node scripts/verify-class1-depth.mjs
+
       # About/Impact numbers are counted from content/ on every deploy, so the
       # page can never claim more (or less) than the banks actually hold.
       - name: Refresh About page impact numbers
@@ -38,6 +43,7 @@ jobs:
           cp urban/frontend/learn-in-marathi.html deploy/
           cp urban/frontend/about.html deploy/
           cp urban/frontend/for-teachers.html deploy/
+          cp urban/frontend/stats.html deploy/
           cp urban/frontend/sw.js deploy/
           cp urban/frontend/online-learning-games-india.html deploy/
           cp urban/frontend/favicon.svg deploy/

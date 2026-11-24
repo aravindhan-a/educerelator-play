@@ -8,6 +8,7 @@ import { recordAnswer, recordScreenTime, loadStats, getLast7Days, formatDuration
 import { playCorrectChime, playWrongBuzz, playToggleBlip, unlockAudio } from "./sound-fx.js";
 import { drawSessionCard, drawStreakCard, drawReportCard, shareCard } from "./share-cards.js";
 import { playAudio, unlockSpeech } from "../../../shared-lib/audio-player.js";
+import { track, recencyBucket } from "./usage.js";
 import {
   createAdaptiveState,
   recordAttempt,
@@ -1152,6 +1153,7 @@ async function startPlay(subject) {
   sessionAnswers   = [];
   sessionStartedAt = Date.now();
   renderHUD();
+  track("start", { c: currentClass, s: subject, r: recencyBucket(loadStats()) });
 
   document.body.classList.add("focus-mode");
   subjectPickerEl.classList.add("hidden");
@@ -1281,6 +1283,7 @@ function handleAnswer(selectedIndex, selectedBtn) {
   const stats = recordResult(key, correct);
   streakCountEl.textContent = stats.streak;
   recordAnswer({ correct, subject: currentSubject });
+  track("answer", { c: currentClass, s: currentSubject, ok: correct ? 1 : 0 });
   syncProgress();
 
   mascotPlay.classList.remove("celebrate", "oops");
@@ -1312,6 +1315,7 @@ function handleAnswer(selectedIndex, selectedBtn) {
 
 // ── Session Complete ──
 function showSessionComplete() {
+  track("complete", { c: currentClass, s: currentSubject });
   const wasReview = !!reviewQueue;
   reviewQueue = null;
   document.body.classList.remove("focus-mode");

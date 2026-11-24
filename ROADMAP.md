@@ -94,7 +94,7 @@ polished enough to anchor a McGinnis Venture Competition submission.
 - [x] **C1. About/Impact page** (`692fb0a`): the founder story (TEDx, Teach For India),
   the mission, truthful numbers pulled at build time (question count, language
   count, class coverage); linked from footer; OG image from brand kit.
-- [ ] **C2. Privacy-first usage counters**: anonymous aggregate counters
+- [~] **C2. Privacy-first usage counters** (code shipped: `/api/track`, `js/usage.js`, `/stats.html`; goes live once Vercel KV is attached and the backend is redeployed): anonymous aggregate counters
   (sessions started, questions answered, per language) via the existing
   Vercel backend → a tiny JSON endpoint; NO user ids, NO cookies, NO IP
   storage; a /stats view the founder can screenshot for the pitch. Gate
