@@ -7,6 +7,13 @@
 //   World Bank WDI / HCI:  https://api.worldbank.org/v2  (mrnev=1: latest non-empty value)
 //   World Bank projections: source=40, children aged 0–14 in 2030/2040/2050
 //   IMF AI Preparedness Index: https://www.imf.org/external/datamapper/api/v1/AI_PI
+//
+// The "atlas" block per country (export sectors, top exports, world-market
+// shares, economic complexity, growth projection) comes from The Growth Lab
+// at Harvard's Atlas of Economic Complexity GraphQL API
+// (https://atlas.hks.harvard.edu/api/graphql: countryYear, countryProductYear
+// and productHs92, HS92 with services, 2024). It is kept as-is by this script.
+// After any refresh, rebuild the pages:  node scripts/generate-world-pages.mjs
 
 import fs from "fs";
 import path from "path";
@@ -41,6 +48,7 @@ const ranked = Object.entries(ai).map(([c, y]) => [c, Object.entries(y).at(-1)])
 ranked.forEach(([c, [year, v]], i) => { if (ISO[c]) (countries[ISO[c]] ||= {}).aiPreparedness = { value: +v.toFixed(3), rank: i + 1, of: ranked.length, year: +year }; });
 
 data.generated = new Date().toISOString().slice(0, 10);
+for (const [k, v] of Object.entries(data.countries || {})) if (v.atlas && countries[k]) countries[k].atlas = v.atlas;
 data.countries = countries;
 fs.writeFileSync(FILE, JSON.stringify(data, null, 1));
 console.log(`Updated ${Object.keys(countries).length} countries in ${path.relative(ROOT, FILE)}`);
