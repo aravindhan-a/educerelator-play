@@ -15,7 +15,7 @@
 // endpoint answers 204 and does nothing, so the app never breaks.
 
 const EVENTS = new Set(["start", "answer", "complete"]);
-const LANGS = new Set(["en","hi","ta","te","bn","mr","gu","kn","ml","pa","ur","or","ne","as","sa"]);
+const LANGS = new Set(["en","hi","ta","te","bn","mr","gu","kn","ml","pa","ur","or","ne","as","sa","si","ar","ms","zh","es"]);
 const RECENCY = new Set(["new", "d1", "d7", "d30", "older"]);
 const SUBJECT_RE = /^[a-z][a-z-]{1,30}$/;
 const ALLOWED_ORIGINS = new Set(["https://educerelator.com", "https://www.educerelator.com"]);

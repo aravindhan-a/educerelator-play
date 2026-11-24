@@ -17,7 +17,9 @@ const { COUNTRIES } = await import(pathToFileURL(path.join(ROOT, "content/countr
 const { MAP_W, MAP_H, LAND_PATH, PINS } = await import(pathToFileURL(path.join(FE, "js/world-land.js")));
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, "content/world/country-profiles.json"), "utf8"));
 const SITE = "https://educerelator.com";
-const LANG_NAMES = { en:"English", hi:"Hindi", ta:"Tamil", te:"Telugu", bn:"Bengali", mr:"Marathi", gu:"Gujarati", kn:"Kannada", ml:"Malayalam", pa:"Punjabi", ur:"Urdu", or:"Odia", ne:"Nepali" };
+const { LANGUAGES } = await import(pathToFileURL(path.join(ROOT, "content/languages.js")));
+const LANG = Object.fromEntries(LANGUAGES.map((l) => [l.code, l]));
+const langName = (code) => (LANG[code] ? `${LANG[code].english}${LANG[code].status === "preview" ? " (preview)" : ""}` : code);
 
 // ── formatting ──
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
@@ -127,7 +129,7 @@ function countryPage(c, i) {
 <div class="wrap chead">
   <p class="crumb"><a href="/world.html">Education around the world</a> › ${esc(c.name)}</p>
   <div class="ctitle"><span class="f" aria-hidden="true">${c.flag}</span><h1>${esc(c.name)}</h1><a class="ec" href="/">EC Play: ${esc(ecLabel(c))} →</a></div>
-  <p class="sub" style="margin-top:8px">${esc(edge(d))}. ${esc(t.title)}.${c.langs ? ` EC Play in ${c.langs.map((l) => LANG_NAMES[l] || l).join(", ")}.` : ""}${c.note ? ` ${esc(c.note)}` : ""}</p>
+  <p class="sub" style="margin-top:8px">${esc(edge(d))}. ${esc(t.title)}.${c.langs ? ` EC Play in ${c.langs.map(langName).join(", ")}.` : ""}${c.note ? ` ${esc(c.note)}` : ""}</p>
 </div>
 <nav class="toc" aria-label="Sections"><div class="wrap">
   <a href="#students">Students</a><a href="#learning">Learning</a><a href="#workforce">Workforce</a><a href="#industries">Industries</a><a href="#advantage">Competitive edge</a><a href="#ai">AI readiness</a><a href="#talent">Talent</a><a href="#skills">Skills</a>
@@ -276,7 +278,7 @@ ${cards}
   <a class="cta" href="/world/compare.html">Compare all ${COUNTRIES.length} side by side →</a>
 
   <h2 class="sec">Learn with EC Play in ${langs.size} languages</h2>
-  <p class="sub">Class 1 foundations, free for every child in these countries, and Class 1 to 12 in India. ${[...langs].map((l) => LANG_NAMES[l] || l).join(", ")}.</p>
+  <p class="sub">Class 1 foundations, free for every child in these countries, and Class 1 to 12 in India. ${[...langs].map(langName).join(", ")}. Preview languages were drafted with AI and are being checked by native speakers; the label comes off after that review.</p>
   <a class="cta" href="/">Start playing free →</a>
 
   <h2 class="sec" style="font-size:1rem">Sources</h2>
