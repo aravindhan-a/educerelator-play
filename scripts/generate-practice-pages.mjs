@@ -279,6 +279,7 @@ const core = [
   { loc: `${SITE}/learn-in-marathi.html`, pri: "0.9", freq: "monthly" },
   { loc: `${SITE}/about.html`, pri: "0.6", freq: "yearly" },
   { loc: `${SITE}/for-teachers.html`, pri: "0.6", freq: "yearly" },
+  { loc: `${SITE}/world.html`, pri: "0.6", freq: "monthly" },
   { loc: `${SITE}/practice/`, pri: "0.9", freq: "weekly" },
   { loc: `${SITE}/practice/exams/`, pri: "0.9", freq: "weekly" },
 ];

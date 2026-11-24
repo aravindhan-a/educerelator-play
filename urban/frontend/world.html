@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Education Around the World | EC Play</title>
+<meta name="description" content="How education is doing in the countries EC Play serves: students today and tomorrow, learning outcomes, workforce, industries, readiness for AI and talent flows, from World Bank and IMF data." />
+<link rel="canonical" href="https://educerelator.com/world.html" />
+<meta property="og:title" content="Education around the world" />
+<meta property="og:description" content="Students, learning, workforce, industries and AI readiness, country by country." />
+<meta property="og:url" content="https://educerelator.com/world.html" />
+<meta property="og:image" content="https://educerelator.com/og-image.png" />
+<meta name="theme-color" content="#7c3aed" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1a1a2e;--ink2:#4b4363;--muted:#6b6385;--brand:#7c3aed;--bar:#7c3aed;--track:#efe9fd;--line:#ece6fb;--bg:#faf9ff;--card:#fff;--land:#d9ccfb;--pin:#ff5e7e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#eeeaf8;--ink2:#cfc8e6;--muted:#a79fc2;--brand:#b69cff;--bar:#a78bfa;--track:#2a2342;--line:#2c2545;--bg:#13101f;--card:#1c1730;--land:#3a2f63;--pin:#ff7d96}}
+:root[data-theme="dark"]{--ink:#eeeaf8;--ink2:#cfc8e6;--muted:#a79fc2;--brand:#b69cff;--bar:#a78bfa;--track:#2a2342;--line:#2c2545;--bg:#13101f;--card:#1c1730;--land:#3a2f63;--pin:#ff7d96}
+body{font-family:"Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:var(--brand)}
+.top{background:linear-gradient(135deg,#ff5e7e,#7c3aed);color:#fff;padding:14px 16px;display:flex;gap:12px;align-items:center}
+.top a{color:#fff;text-decoration:none;font-weight:800}.top nav{margin-left:auto;display:flex;gap:14px;font-size:.9rem}
+.hero{max-width:1000px;margin:0 auto;padding:22px 16px 6px}
+.hero h1{font-size:clamp(1.5rem,4.5vw,2.1rem);font-weight:900;line-height:1.2}
+.hero p{color:var(--ink2);max-width:70ch;margin-top:6px}
+main{max-width:1000px;margin:0 auto;padding:0 16px 40px}
+.map{width:100%;height:auto;display:block;margin:10px 0 4px}
+.land{fill:var(--land)}
+.pin{cursor:pointer}.pin circle{fill:var(--pin);stroke:var(--card);stroke-width:2.5}.pin .dot{fill:var(--card);stroke:none}
+.pin.on circle:first-child{fill:var(--brand);transform:scale(1.5)}
+.pin:focus{outline:none}.pin:focus-visible circle:first-child{stroke:var(--ink);stroke-width:3}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 18px}
+.chip{border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-weight:700;cursor:pointer;min-height:40px}
+.chip[aria-pressed="true"]{border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 20%,transparent)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px}
+.ph{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.ph .flag{font-size:2.4rem;line-height:1}.ph h2{font-size:1.5rem;font-weight:900}
+.ph .ec{margin-left:auto;font-size:.85rem;font-weight:700;color:var(--brand);background:color-mix(in srgb,var(--brand) 10%,transparent);padding:6px 12px;border-radius:999px;text-decoration:none}
+h3{font-size:1rem;font-weight:900;margin:22px 0 8px;display:flex;align-items:baseline;gap:8px}
+h3 small{font-weight:600;color:var(--muted);font-size:.8rem}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}
+.tile{border:1px solid var(--line);border-radius:14px;padding:12px}
+.tile .n{font-size:clamp(1.15rem,4.5vw,1.45rem);font-weight:900;font-variant-numeric:tabular-nums;color:var(--ink)}
+.tile .l{font-size:.85rem;color:var(--ink2)}.tile .y{font-size:.75rem;color:var(--muted)}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(110px,34%) 1fr auto;gap:10px;align-items:center;font-size:.9rem}
+.bar .t{height:14px;background:var(--track);border-radius:0 4px 4px 0;position:relative}
+.bar .f{position:absolute;inset:0 auto 0 0;background:var(--bar);border-radius:0 4px 4px 0;min-width:2px}
+.bar .v{font-variant-numeric:tabular-nums;font-weight:700;min-width:5ch;text-align:right}
+.bar:hover .f{filter:brightness(1.1)}
+.reading{margin-top:10px;padding:10px 12px;border-left:4px solid var(--brand);background:color-mix(in srgb,var(--brand) 7%,transparent);border-radius:0 10px 10px 0;font-size:.92rem}
+.reading b{color:var(--brand)}
+.meter{height:16px;background:var(--track);border-radius:999px;position:relative;margin:8px 0 4px}
+.meter span{position:absolute;inset:0 auto 0 0;background:var(--bar);border-radius:999px}
+.meter-scale{display:flex;justify-content:space-between;font-size:.75rem;color:var(--muted)}
+.note{font-size:.82rem;color:var(--muted);margin-top:8px}
+.cmp{margin-top:26px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:.88rem}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-size:.78rem;color:var(--ink2);font-weight:800;cursor:pointer;user-select:none}
+th[aria-sort] ::after{content:""}
+tr.on td{background:color-mix(in srgb,var(--brand) 8%,transparent)}
+.sources{font-size:.82rem;color:var(--muted);margin-top:22px}
+.sources li{margin:4px 0 0 18px}
+@media (max-width:560px){.bar{grid-template-columns:1fr auto}.bar .t{grid-column:1 / -1;order:3}.ph .ec{margin-left:0}}
+</style>
+</head>
+<body>
+<header class="top"><a href="/">🦉 EC Play</a><nav><a href="/about.html">About</a><a href="/for-teachers.html">For Teachers</a></nav></header>
+<section class="hero">
+  <h1>Education around the world</h1>
+  <p>How learning is going in the countries EC Play serves: students today and tomorrow, learning outcomes, the workforce, what each economy sells to the world, readiness for AI, and where talent goes. Every number comes from the World Bank or the IMF and shows the year it describes.</p>
+</section>
+<main>
+  <svg class="map" id="map" aria-label="World map with the countries EC Play serves" role="group"></svg>
+  <div class="chips" id="chips" role="group" aria-label="Choose a country"></div>
+  <article class="panel" id="panel" aria-live="polite"></article>
+
+  <section class="cmp">
+    <h3>Compare countries <small>Tap a column to sort</small></h3>
+    <div class="tablewrap"><table id="cmp"></table></div>
+  </section>
+
+  <section class="sources" id="sources"></section>
+</main>
+
+<script type="module">
+import { COUNTRIES, getCountry } from "./content/countries.js";
+import { MAP_W, MAP_H, LAND_PATH, PINS } from "./js/world-land.js";
+
+const DATA = await (await fetch("./content/world/country-profiles.json")).json();
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const num = (v, d = 0) => Number(v).toLocaleString("en", { maximumFractionDigits: d });
+function big(v) {
+  const a = Math.abs(v);
+  if (a >= 1e9) return `${num(v / 1e9, 2)} billion`;
+  if (a >= 1e6) return `${num(v / 1e6, 1)} million`;
+  if (a >= 1e4) return `${num(v / 1e3, 0)} thousand`;
+  return num(v);
+}
+const pct = (v, d = 0) => `${num(v, d)}%`;
+const yr = (m) => (m && m.year ? `${m.year}` : "");
+const has = (m) => m && m.value != null;
+
+// ── Map ──
+const map = document.getElementById("map");
+map.setAttribute("viewBox", `0 0 ${MAP_W} ${MAP_H}`);
+map.innerHTML = `<path class="land" d="${LAND_PATH}"></path>` + COUNTRIES.map((c) => {
+  const [x, y] = PINS[c.code];
+  return `<g class="pin" data-code="${c.code}" transform="translate(${x} ${y})" tabindex="0" role="button" aria-label="${esc(c.name)}"><title>${esc(c.name)}</title><circle r="9"></circle><circle class="dot" r="4"></circle></g>`;
+}).join("");
+document.getElementById("chips").innerHTML = COUNTRIES.map((c) => `<button class="chip" type="button" data-code="${c.code}" aria-pressed="false">${c.flag} ${esc(c.name)}</button>`).join("");
+document.querySelectorAll("[data-code]").forEach((el) => {
+  el.addEventListener("click", () => show(el.dataset.code, true));
+  el.addEventListener("keydown", (e) => { if ((e.key === "Enter" || e.key === " ") && el.classList.contains("pin")) { e.preventDefault(); show(el.dataset.code, true); } });
+});
+
+// ── Readings derived from the data (rules shown on the page) ──
+function talentReading(d) {
+  const mig = d.netMigration?.value, rem = d.remittancesPctGdp?.value;
+  if (mig != null && mig < 0 && rem != null && rem >= 3)
+    return `<b>Builds talent the world employs.</b> About ${big(-mig)} more people leave than arrive each year, and money sent home by workers abroad equals ${pct(rem, 1)} of the economy.`;
+  if (mig != null && mig > 0)
+    return `<b>Attracts talent from abroad.</b> About ${big(mig)} more people arrive than leave each year${rem != null ? `, and remittances received are ${pct(rem, 1)} of the economy` : ""}.`;
+  return `<b>Mostly builds talent for home.</b> Migration is close to balanced${rem != null ? ` and remittances are ${pct(rem, 1)} of the economy` : ""}.`;
+}
+function exportReading(d) {
+  const goods = [["manufactured goods", d.manufPctMerchExports], ["fuel", d.fuelPctMerchExports], ["food", d.foodPctMerchExports]].filter(([, m]) => has(m)).sort((a, b) => b[1].value - a[1].value);
+  const parts = [];
+  if (goods.length) parts.push(`Goods exports are led by <b>${goods[0][0]}</b> (${pct(goods[0][1].value)} of goods exports, ${yr(goods[0][1])}).`);
+  if (has(d.ictPctServiceExports) && d.ictPctServiceExports.value >= 20) parts.push(`Digital services are a major strength: ICT is <b>${pct(d.ictPctServiceExports.value)}</b> of service exports.`);
+  if (has(d.highTechPctManufExports) && d.highTechPctManufExports.value >= 20) parts.push(`High technology makes up <b>${pct(d.highTechPctManufExports.value)}</b> of manufactured exports.`);
+  return parts.join(" ");
+}
+
+const tile = (n, l, y) => `<div class="tile"><div class="n">${n}</div><div class="l">${l}</div>${y ? `<div class="y">${y}</div>` : ""}</div>`;
+function bars(rows, max, unit = "%") {
+  return `<div class="bars">${rows.filter((r) => r[1] != null).map(([label, v, y]) =>
+    `<div class="bar" title="${esc(label)}: ${unit === "%" ? pct(v, 1) : big(v)}${y ? ` (${y})` : ""}"><span>${esc(label)}</span><span class="t"><span class="f" style="width:${Math.max(0, Math.min(100, (100 * v) / max))}%"></span></span><span class="v">${unit === "%" ? pct(v) : big(v)}</span></div>`).join("")}</div>`;
+}
+
+function show(code, focusPanel) {
+  const c = getCountry(code), d = DATA.countries[code];
+  if (!c || !d) return;
+  document.querySelectorAll(".pin").forEach((p) => p.classList.toggle("on", p.dataset.code === code));
+  document.querySelectorAll(".chip").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.code === code)));
+  document.querySelectorAll("#cmp tbody tr").forEach((r) => r.classList.toggle("on", r.dataset.code === code));
+  history.replaceState(null, "", `#${code}`);
+
+  const kids = d.children0to14, proj = d.children0to14Projected || {};
+  const future = [[`Today (${yr(kids)})`, kids?.value], ["2030", proj["2030"]], ["2040", proj["2040"]], ["2050", proj["2050"]]];
+  const fmax = Math.max(...future.map((f) => f[1] || 0));
+  const change = kids && proj["2050"] ? (100 * (proj["2050"] - kids.value)) / kids.value : null;
+  const ai = d.aiPreparedness;
+  const ecLabel = c.code === "IN" ? "EC Play: Class 1 to 12" : `EC Play: ${c.grade(1)}`;
+
+  document.getElementById("panel").innerHTML = `
+    <div class="ph"><span class="flag" aria-hidden="true">${c.flag}</span><h2>${esc(c.name)}</h2><a class="ec" href="/">${esc(ecLabel)} →</a></div>
+
+    <h3>Students today</h3>
+    <div class="tiles">
+      ${has(kids) ? tile(big(kids.value), "children aged 0 to 14", yr(kids)) : ""}
+      ${has(d.primaryEnrolled) ? tile(big(d.primaryEnrolled.value), "in primary school", yr(d.primaryEnrolled)) : ""}
+      ${has(d.secondaryEnrolled) ? tile(big(d.secondaryEnrolled.value), "in secondary school", yr(d.secondaryEnrolled)) : ""}
+      ${has(d.tertiaryEnrolled) ? tile(big(d.tertiaryEnrolled.value), "in higher education", yr(d.tertiaryEnrolled)) : ""}
+    </div>
+
+    <h3>Future students <small>children aged 0 to 14, World Bank projection</small></h3>
+    ${bars(future.map(([l, v]) => [l, v, null]), fmax, "n")}
+    ${change != null ? `<p class="reading">By 2050 the number of children is projected to <b>${change >= 0 ? "grow" : "shrink"} by ${pct(Math.abs(change))}</b>${change < -10 ? ": fewer students, so the focus shifts to quality and to every child counting" : change > 10 ? ": more classrooms and teachers will be needed" : ""}.</p>` : ""}
+
+    <h3>How learning is going</h3>
+    <div class="tiles">
+      ${has(d.learningPoverty) ? tile(pct(d.learningPoverty.value), "of 10-year-olds can't read and understand a simple text (learning poverty)", yr(d.learningPoverty)) : ""}
+      ${has(d.humanCapitalIndex) ? tile(num(d.humanCapitalIndex.value, 2), `Human Capital Index: a child born today reaches ${pct(100 * d.humanCapitalIndex.value)} of their potential productivity`, yr(d.humanCapitalIndex)) : ""}
+      ${has(d.primaryCompletion) ? tile(pct(d.primaryCompletion.value), "primary completion rate (gross: can pass 100% when older children also finish)", yr(d.primaryCompletion)) : ""}
+      ${has(d.educationSpendPctGdp) ? tile(pct(d.educationSpendPctGdp.value, 1), "of GDP spent on education by government", yr(d.educationSpendPctGdp)) : ""}
+      ${has(d.tertiaryEnrolmentRatio) ? tile(pct(d.tertiaryEnrolmentRatio.value), "gross enrolment in higher education (can pass 100% with adult and international students)", yr(d.tertiaryEnrolmentRatio)) : ""}
+    </div>
+
+    <h3>Workforce and economy</h3>
+    <div class="tiles">
+      ${has(d.laborForce) ? tile(big(d.laborForce.value), "people in the labour force", yr(d.laborForce)) : ""}
+      ${has(d.gdpPerCapitaUsd) ? tile(`$${num(d.gdpPerCapitaUsd.value)}`, "GDP per person (current US$)", yr(d.gdpPerCapitaUsd)) : ""}
+      ${has(d.internetUsersPct) ? tile(pct(d.internetUsersPct.value), "of people use the internet", yr(d.internetUsersPct)) : ""}
+    </div>
+    <p class="note">Share of the economy (GDP) by sector, ${yr(d.servicesPctGdp)}:</p>
+    ${bars([["Services", d.servicesPctGdp?.value], ["Industry", d.industryPctGdp?.value], ["Agriculture", d.agriculturePctGdp?.value]], 100)}
+
+    <h3>What it sells to the world</h3>
+    ${bars([["Manufactured goods", d.manufPctMerchExports?.value], ["Fuel", d.fuelPctMerchExports?.value], ["Food", d.foodPctMerchExports?.value]], 100)}
+    <p class="note">Share of goods exports, ${yr(d.manufPctMerchExports)}.</p>
+    <p class="reading">${exportReading(d)}</p>
+
+    <h3>Readiness for AI <small>IMF AI Preparedness Index</small></h3>
+    ${ai ? `<div class="tiles">${tile(num(ai.value, 2), "score from 0 to 1", ai.year)}${tile(`${ai.rank} of ${ai.of}`, "countries, ranked", ai.year)}</div>
+    <div class="meter" role="img" aria-label="AI preparedness ${num(ai.value, 2)} out of 1"><span style="width:${100 * ai.value}%"></span></div><div class="meter-scale"><span>0</span><span>1</span></div>
+    <p class="note">The IMF index combines four areas: digital infrastructure, human capital and labour-market policies, innovation and economic integration, and regulation and ethics. A higher score means a country is better placed to benefit from AI.</p>` : ""}
+
+    <h3>Talent: built at home, working where?</h3>
+    <div class="tiles">
+      ${has(d.netMigration) ? tile(`${d.netMigration.value > 0 ? "+" : ""}${big(d.netMigration.value)}`, "net migration a year (arrivals minus departures)", yr(d.netMigration)) : ""}
+      ${has(d.remittancesPctGdp) ? tile(pct(d.remittancesPctGdp.value, 1), "of GDP arrives as money sent home from workers abroad", yr(d.remittancesPctGdp)) : ""}
+    </div>
+    <p class="reading">${talentReading(d)}</p>
+    <p class="note">The highlighted readings are EC Play's summaries of the numbers above, using simple stated rules (for example, "builds talent the world employs" means net migration is negative and remittances are at least 3% of GDP). They are descriptions, not rankings or judgments.</p>`;
+  if (focusPanel) document.getElementById("panel").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+// ── Comparison table ──
+const COLS = [
+  ["Country", (c) => `${c.flag} ${c.name}`, null],
+  ["Children 0–14", (c, d) => d.children0to14?.value, big],
+  ["Change to 2050", (c, d) => d.children0to14 && d.children0to14Projected ? (100 * (d.children0to14Projected["2050"] - d.children0to14.value)) / d.children0to14.value : null, (v) => `${v > 0 ? "+" : ""}${pct(v)}`],
+  ["Learning poverty", (c, d) => d.learningPoverty?.value, (v) => pct(v)],
+  ["Human Capital Index", (c, d) => d.humanCapitalIndex?.value, (v) => num(v, 2)],
+  ["Labour force", (c, d) => d.laborForce?.value, big],
+  ["Services % GDP", (c, d) => d.servicesPctGdp?.value, (v) => pct(v)],
+  ["High-tech % of mfg exports", (c, d) => d.highTechPctManufExports?.value, (v) => pct(v)],
+  ["ICT % of service exports", (c, d) => d.ictPctServiceExports?.value, (v) => pct(v)],
+  ["AI preparedness", (c, d) => d.aiPreparedness?.value, (v) => num(v, 2)],
+  ["Remittances % GDP", (c, d) => d.remittancesPctGdp?.value, (v) => pct(v, 1)],
+];
+let sortCol = 9, sortDir = -1;
+function renderTable() {
+  const rows = COUNTRIES.map((c) => ({ c, d: DATA.countries[c.code] || {} }));
+  if (sortCol > 0) rows.sort((a, b) => ((COLS[sortCol][1](a.c, a.d) ?? -Infinity) - (COLS[sortCol][1](b.c, b.d) ?? -Infinity)) * sortDir);
+  const t = document.getElementById("cmp");
+  t.innerHTML = `<thead><tr>${COLS.map(([h], i) => `<th scope="col" data-i="${i}" ${i === sortCol ? `aria-sort="${sortDir < 0 ? "descending" : "ascending"}"` : ""}>${esc(h)}${i === sortCol ? (sortDir < 0 ? " ▼" : " ▲") : ""}</th>`).join("")}</tr></thead>
+  <tbody>${rows.map(({ c, d }) => `<tr data-code="${c.code}">${COLS.map(([, get, f], i) => { const v = get(c, d); return i === 0 ? `<td><a href="#${c.code}">${esc(v)}</a></td>` : `<td>${v == null ? "–" : f(v)}</td>`; }).join("")}</tr>`).join("")}</tbody>`;
+  t.querySelectorAll("th").forEach((th) => th.addEventListener("click", () => { const i = +th.dataset.i; if (i === sortCol) sortDir *= -1; else { sortCol = i; sortDir = -1; } renderTable(); }));
+  t.querySelectorAll("tbody a").forEach((a) => a.addEventListener("click", (e) => { e.preventDefault(); show(a.getAttribute("href").slice(1), true); }));
+  const cur = location.hash.slice(1); t.querySelectorAll("tbody tr").forEach((r) => r.classList.toggle("on", r.dataset.code === cur));
+}
+renderTable();
+
+const s = DATA.sources;
+document.getElementById("sources").innerHTML = `<h3>Sources</h3><ul>
+  <li><a href="${s.worldBank.url}" rel="noopener">${esc(s.worldBank.name)}</a>. Each value is the latest year available for that country, shown beside it.</li>
+  <li><a href="${s.worldBankProjections.url}" rel="noopener">${esc(s.worldBankProjections.name)}</a>.</li>
+  <li><a href="${s.imfAipi.url}" rel="noopener">${esc(s.imfAipi.name)}</a>.</li>
+  <li>Data gathered ${esc(DATA.generated)}. Some indicators are not reported for every country; those are left out rather than estimated.</li></ul>`;
+
+const start = getCountry(location.hash.slice(1)) ? location.hash.slice(1) : (getCountry(localStorage.getItem("ecplay_country") || "")?.code || "IN");
+show(start, false);
+</script>
+</body>
+</html>
