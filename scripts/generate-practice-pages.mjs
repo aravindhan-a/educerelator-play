@@ -279,7 +279,9 @@ const core = [
   { loc: `${SITE}/learn-in-marathi.html`, pri: "0.9", freq: "monthly" },
   { loc: `${SITE}/about.html`, pri: "0.6", freq: "yearly" },
   { loc: `${SITE}/for-teachers.html`, pri: "0.6", freq: "yearly" },
-  { loc: `${SITE}/world.html`, pri: "0.6", freq: "monthly" },
+  { loc: `${SITE}/world.html`, pri: "0.7", freq: "monthly" },
+  { loc: `${SITE}/world/compare.html`, pri: "0.5", freq: "monthly" },
+  ...["in","np","bd","lk","ae","sg","us","gb","au","gm"].map((c) => ({ loc: `${SITE}/world/${c}.html`, pri: "0.6", freq: "monthly" })),
   { loc: `${SITE}/practice/`, pri: "0.9", freq: "weekly" },
   { loc: `${SITE}/practice/exams/`, pri: "0.9", freq: "weekly" },
 ];

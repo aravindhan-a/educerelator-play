@@ -37,7 +37,12 @@
   "imfAipi": {
    "name": "IMF AI Preparedness Index (April 2024 release, 2023 data, 178 countries)",
    "url": "https://www.imf.org/external/datamapper/AI_PI@AIPI/ADVEC/EME/LIC"
-  }
+  },
+  "atlas": {
+   "name": "The Growth Lab at Harvard University, The Atlas of Economic Complexity (2024 trade data, HS92 with services)",
+   "url": "https://atlas.hks.harvard.edu/"
+  },
+  "atlasRankNote": "Complexity rank is EC Play's ordering of Atlas 2024 scores among the 143 countries with over 1 million people and over US$1 billion in exports; it can differ by a place or two from the Atlas's published ranking."
  },
  "countries": {
   "IN": {
@@ -143,6 +148,84 @@
     "rank": 79,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 792.1,
+    "sectors": [
+     {
+      "name": "Services",
+      "pct": 47.3
+     },
+     {
+      "name": "Chemicals",
+      "pct": 9.2
+     },
+     {
+      "name": "Minerals and energy",
+      "pct": 8.8
+     },
+     {
+      "name": "Agriculture",
+      "pct": 7.1
+     },
+     {
+      "name": "Textiles",
+      "pct": 5.2
+     },
+     {
+      "name": "Machinery",
+      "pct": 4.8
+     }
+    ],
+    "topExports": [
+     {
+      "name": "ICT and business services",
+      "pct": 26.4
+     },
+     {
+      "name": "Refined petroleum",
+      "pct": 7.5
+     },
+     {
+      "name": "Travel and tourism",
+      "pct": 4.4
+     },
+     {
+      "name": "Transport services",
+      "pct": 4.2
+     },
+     {
+      "name": "Packaged medicines",
+      "pct": 2.5
+     }
+    ],
+    "worldLeader": [
+     {
+      "name": "Home furnishing textiles",
+      "worldSharePct": 33.3
+     },
+     {
+      "name": "Rice",
+      "worldSharePct": 31.2
+     },
+     {
+      "name": "Cotton yarn",
+      "worldSharePct": 30.8
+     },
+     {
+      "name": "Diamonds",
+      "worldSharePct": 19.9
+     },
+     {
+      "name": "Synthetic dyes",
+      "worldSharePct": 19.5
+     }
+    ],
+    "eci": 0.69,
+    "eciRank": 42,
+    "eciRankOf": 143,
+    "growthProjPct": 4.0
    }
   },
   "NP": {
@@ -244,6 +327,76 @@
     "rank": 138,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 3,
+    "sectors": [
+     {
+      "name": "Services",
+      "pct": 62.2
+     },
+     {
+      "name": "Agriculture",
+      "pct": 14.4
+     },
+     {
+      "name": "Textiles",
+      "pct": 10.6
+     },
+     {
+      "name": "Other goods",
+      "pct": 5.2
+     },
+     {
+      "name": "Metals",
+      "pct": 3.8
+     },
+     {
+      "name": "Chemicals",
+      "pct": 2
+     }
+    ],
+    "topExports": [
+     {
+      "name": "ICT and business services",
+      "pct": 28.4
+     },
+     {
+      "name": "Travel and tourism",
+      "pct": 20.7
+     },
+     {
+      "name": "Transport services",
+      "pct": 8.2
+     },
+     {
+      "name": "Soybean oil",
+      "pct": 2.5
+     },
+     {
+      "name": "Hand-knotted carpets",
+      "pct": 2.2
+     }
+    ],
+    "worldLeader": [
+     {
+      "name": "Hand-knotted carpets",
+      "worldSharePct": 7.8
+     },
+     {
+      "name": "Synthetic fibre yarn",
+      "worldSharePct": 1.4
+     },
+     {
+      "name": "Soybean oil",
+      "worldSharePct": 0.6
+     }
+    ],
+    "eci": -0.1,
+    "eciRank": 87,
+    "eciRankOf": 143,
+    "growthProjPct": 2.9
    }
   },
   "BD": {
@@ -349,6 +502,84 @@
     "rank": 122,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 55.3,
+    "sectors": [
+     {
+      "name": "Textiles",
+      "pct": 80.8
+     },
+     {
+      "name": "Services",
+      "pct": 13.6
+     },
+     {
+      "name": "Agriculture",
+      "pct": 3
+     },
+     {
+      "name": "Chemicals",
+      "pct": 0.7
+     },
+     {
+      "name": "Other goods",
+      "pct": 0.6
+     },
+     {
+      "name": "Machinery",
+      "pct": 0.4
+     }
+    ],
+    "topExports": [
+     {
+      "name": "Knit T-shirts",
+      "pct": 12.4
+     },
+     {
+      "name": "Men's suits and pants",
+      "pct": 12.1
+     },
+     {
+      "name": "Knit sweaters and pullovers",
+      "pct": 10.6
+     },
+     {
+      "name": "Women's suits and pants",
+      "pct": 9
+     },
+     {
+      "name": "ICT and business services",
+      "pct": 8.7
+     }
+    ],
+    "worldLeader": [
+     {
+      "name": "Jute yarn",
+      "worldSharePct": 89.2
+     },
+     {
+      "name": "Jute fibre",
+      "worldSharePct": 69.1
+     },
+     {
+      "name": "Textile rags and scraps",
+      "worldSharePct": 20.9
+     },
+     {
+      "name": "Men's shirts",
+      "worldSharePct": 16.9
+     },
+     {
+      "name": "Babies' garments",
+      "worldSharePct": 15.3
+     }
+    ],
+    "eci": -0.47,
+    "eciRank": 97,
+    "eciRankOf": 143,
+    "growthProjPct": 4.2
    }
   },
   "LK": {
@@ -454,6 +685,84 @@
     "rank": 100,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 19.1,
+    "sectors": [
+     {
+      "name": "Services",
+      "pct": 36.2
+     },
+     {
+      "name": "Textiles",
+      "pct": 26.6
+     },
+     {
+      "name": "Agriculture",
+      "pct": 17.2
+     },
+     {
+      "name": "Chemicals",
+      "pct": 6.5
+     },
+     {
+      "name": "Machinery",
+      "pct": 2.5
+     },
+     {
+      "name": "Other goods",
+      "pct": 2.3
+     }
+    ],
+    "topExports": [
+     {
+      "name": "Travel and tourism",
+      "pct": 16.6
+     },
+     {
+      "name": "Transport services",
+      "pct": 9.4
+     },
+     {
+      "name": "ICT and business services",
+      "pct": 8.4
+     },
+     {
+      "name": "Tea",
+      "pct": 6.9
+     },
+     {
+      "name": "Women's knit undergarments",
+      "pct": 2.8
+     }
+    ],
+    "worldLeader": [
+     {
+      "name": "Coir and other plant fibres",
+      "worldSharePct": 25.7
+     },
+     {
+      "name": "Sisal and agave fibers",
+      "worldSharePct": 25.7
+     },
+     {
+      "name": "Cinnamon",
+      "worldSharePct": 25.4
+     },
+     {
+      "name": "Tea",
+      "worldSharePct": 18.2
+     },
+     {
+      "name": "Used rubber tyres",
+      "worldSharePct": 15
+     }
+    ],
+    "eci": -0.06,
+    "eciRank": 82,
+    "eciRankOf": 143,
+    "growthProjPct": 4.4
    }
   },
   "AE": {
@@ -555,6 +864,84 @@
     "rank": 41,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 449,
+    "sectors": [
+     {
+      "name": "Services",
+      "pct": 40.4
+     },
+     {
+      "name": "Minerals and energy",
+      "pct": 32.6
+     },
+     {
+      "name": "Precious stones and metals",
+      "pct": 14.2
+     },
+     {
+      "name": "Metals",
+      "pct": 3.7
+     },
+     {
+      "name": "Chemicals",
+      "pct": 2.9
+     },
+     {
+      "name": "Agriculture",
+      "pct": 1.6
+     }
+    ],
+    "topExports": [
+     {
+      "name": "Crude petroleum",
+      "pct": 20.4
+     },
+     {
+      "name": "Transport services",
+      "pct": 15.9
+     },
+     {
+      "name": "Travel and tourism",
+      "pct": 15.8
+     },
+     {
+      "name": "Gold",
+      "pct": 10.8
+     },
+     {
+      "name": "Refined petroleum",
+      "pct": 8.7
+     }
+    ],
+    "worldLeader": [
+     {
+      "name": "Diamonds",
+      "worldSharePct": 9.5
+     },
+     {
+      "name": "Copper wire",
+      "worldSharePct": 9.2
+     },
+     {
+      "name": "Gold",
+      "worldSharePct": 9
+     },
+     {
+      "name": "Aluminium",
+      "worldSharePct": 8.8
+     },
+     {
+      "name": "Crude petroleum",
+      "worldSharePct": 8.7
+     }
+    ],
+    "eci": 0.45,
+    "eciRank": 52,
+    "eciRankOf": 143,
+    "growthProjPct": 0.9
    }
   },
   "SG": {
@@ -656,6 +1043,84 @@
     "rank": 1,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 763.8,
+    "sectors": [
+     {
+      "name": "Services",
+      "pct": 52.3
+     },
+     {
+      "name": "Electronics",
+      "pct": 16.3
+     },
+     {
+      "name": "Machinery",
+      "pct": 10.8
+     },
+     {
+      "name": "Minerals and energy",
+      "pct": 5.5
+     },
+     {
+      "name": "Chemicals",
+      "pct": 4.8
+     },
+     {
+      "name": "Other goods",
+      "pct": 3.9
+     }
+    ],
+    "topExports": [
+     {
+      "name": "Transport services",
+      "pct": 18.1
+     },
+     {
+      "name": "ICT and business services",
+      "pct": 11.7
+     },
+     {
+      "name": "Integrated circuits (chips)",
+      "pct": 10.2
+     },
+     {
+      "name": "Insurance and finance",
+      "pct": 7.8
+     },
+     {
+      "name": "Refined petroleum",
+      "pct": 5.3
+     }
+    ],
+    "worldLeader": [
+     {
+      "name": "Therapy appliances",
+      "worldSharePct": 11.9
+     },
+     {
+      "name": "Laser machining tools",
+      "worldSharePct": 10.3
+     },
+     {
+      "name": "Integrated circuits (chips)",
+      "worldSharePct": 10.1
+     },
+     {
+      "name": "Photo lab equipment",
+      "worldSharePct": 9.7
+     },
+     {
+      "name": "Gas turbines",
+      "worldSharePct": 9.1
+     }
+    ],
+    "eci": 1.54,
+    "eciRank": 5,
+    "eciRankOf": 143,
+    "growthProjPct": 2.8
    }
   },
   "US": {
@@ -761,6 +1226,84 @@
     "rank": 3,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 3181.5,
+    "sectors": [
+     {
+      "name": "Services",
+      "pct": 36.2
+     },
+     {
+      "name": "Machinery",
+      "pct": 11.7
+     },
+     {
+      "name": "Chemicals",
+      "pct": 10.3
+     },
+     {
+      "name": "Minerals and energy",
+      "pct": 10.3
+     },
+     {
+      "name": "Agriculture",
+      "pct": 6.8
+     },
+     {
+      "name": "Electronics",
+      "pct": 6.4
+     }
+    ],
+    "topExports": [
+     {
+      "name": "ICT and business services",
+      "pct": 12.7
+     },
+     {
+      "name": "Insurance and finance",
+      "pct": 7
+     },
+     {
+      "name": "Travel and tourism",
+      "pct": 6.7
+     },
+     {
+      "name": "Refined petroleum",
+      "pct": 3.6
+     },
+     {
+      "name": "Crude petroleum",
+      "pct": 3.6
+     }
+    ],
+    "worldLeader": [
+     {
+      "name": "Nuts (almonds, pistachios)",
+      "worldSharePct": 44.8
+     },
+     {
+      "name": "Paintings and drawings",
+      "worldSharePct": 43.5
+     },
+     {
+      "name": "Hydrocarbon chemicals",
+      "worldSharePct": 35.8
+     },
+     {
+      "name": "Corn",
+      "worldSharePct": 32.4
+     },
+     {
+      "name": "Soybeans",
+      "worldSharePct": 31
+     }
+    ],
+    "eci": 1.12,
+    "eciRank": 18,
+    "eciRankOf": 143,
+    "growthProjPct": 1.9
    }
   },
   "GB": {
@@ -866,6 +1409,84 @@
     "rank": 14,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 1099.7,
+    "sectors": [
+     {
+      "name": "Services",
+      "pct": 58.9
+     },
+     {
+      "name": "Machinery",
+      "pct": 9.8
+     },
+     {
+      "name": "Precious stones and metals",
+      "pct": 6.3
+     },
+     {
+      "name": "Chemicals",
+      "pct": 6
+     },
+     {
+      "name": "Vehicles",
+      "pct": 5.5
+     },
+     {
+      "name": "Minerals and energy",
+      "pct": 3.4
+     }
+    ],
+    "topExports": [
+     {
+      "name": "Insurance and finance",
+      "pct": 14.3
+     },
+     {
+      "name": "ICT and business services",
+      "pct": 12
+     },
+     {
+      "name": "Travel and tourism",
+      "pct": 7.6
+     },
+     {
+      "name": "Gold",
+      "pct": 4.8
+     },
+     {
+      "name": "Transport services",
+      "pct": 3.7
+     }
+    ],
+    "worldLeader": [
+     {
+      "name": "Gas turbines",
+      "worldSharePct": 23.6
+     },
+     {
+      "name": "Spirits",
+      "worldSharePct": 19.5
+     },
+     {
+      "name": "Aircraft parts",
+      "worldSharePct": 17.7
+     },
+     {
+      "name": "Paintings and drawings",
+      "worldSharePct": 13.5
+     },
+     {
+      "name": "Platinum",
+      "worldSharePct": 12.2
+     }
+    ],
+    "eci": 1.25,
+    "eciRank": 12,
+    "eciRankOf": 143,
+    "growthProjPct": 1.9
    }
   },
   "AU": {
@@ -967,6 +1588,84 @@
     "rank": 15,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 377.5,
+    "sectors": [
+     {
+      "name": "Minerals and energy",
+      "pct": 47.6
+     },
+     {
+      "name": "Services",
+      "pct": 22.4
+     },
+     {
+      "name": "Agriculture",
+      "pct": 10.6
+     },
+     {
+      "name": "Precious stones and metals",
+      "pct": 6
+     },
+     {
+      "name": "Chemicals",
+      "pct": 3.9
+     },
+     {
+      "name": "Metals",
+      "pct": 3.5
+     }
+    ],
+    "topExports": [
+     {
+      "name": "Iron ore",
+      "pct": 19.7
+     },
+     {
+      "name": "Coal",
+      "pct": 13.9
+     },
+     {
+      "name": "Travel and tourism",
+      "pct": 13.8
+     },
+     {
+      "name": "Natural gas (LNG)",
+      "pct": 8.8
+     },
+     {
+      "name": "Gold",
+      "pct": 5.6
+     }
+    ],
+    "worldLeader": [
+     {
+      "name": "Wool",
+      "worldSharePct": 61.8
+     },
+     {
+      "name": "Other mineral substances",
+      "worldSharePct": 58.7
+     },
+     {
+      "name": "Iron ore",
+      "worldSharePct": 51.5
+     },
+     {
+      "name": "Lamb",
+      "worldSharePct": 39.2
+     },
+     {
+      "name": "Coal",
+      "worldSharePct": 34.7
+     }
+    ],
+    "eci": 0.1,
+    "eciRank": 74,
+    "eciRankOf": 143,
+    "growthProjPct": 1.2
    }
   },
   "GM": {
@@ -1068,6 +1767,63 @@
     "rank": 134,
     "of": 178,
     "year": 2023
+   },
+   "atlas": {
+    "year": 2024,
+    "exportsUsdBillion": 0.6,
+    "sectors": [
+     {
+      "name": "Services",
+      "pct": 76.3
+     },
+     {
+      "name": "Agriculture",
+      "pct": 15.3
+     },
+     {
+      "name": "Minerals and energy",
+      "pct": 4.2
+     },
+     {
+      "name": "Metals",
+      "pct": 2.8
+     },
+     {
+      "name": "Electronics",
+      "pct": 0.6
+     },
+     {
+      "name": "Chemicals",
+      "pct": 0.2
+     }
+    ],
+    "topExports": [
+     {
+      "name": "Travel and tourism",
+      "pct": 68.5
+     },
+     {
+      "name": "Transport services",
+      "pct": 5.5
+     },
+     {
+      "name": "Cashews and coconuts",
+      "pct": 3.7
+     },
+     {
+      "name": "Refined petroleum",
+      "pct": 2.2
+     },
+     {
+      "name": "Fishmeal",
+      "pct": 2
+     }
+    ],
+    "worldLeader": [],
+    "eci": -1.32,
+    "eciRank": null,
+    "eciRankOf": 143,
+    "growthProjPct": null
    }
   }
  }
