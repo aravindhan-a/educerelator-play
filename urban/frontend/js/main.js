@@ -9,6 +9,8 @@ import { playCorrectChime, playWrongBuzz, playToggleBlip, unlockAudio } from "./
 import { drawSessionCard, drawStreakCard, drawReportCard, shareCard } from "./share-cards.js";
 import { playAudio, unlockSpeech } from "../../../shared-lib/audio-player.js";
 import { track, recencyBucket } from "./usage.js";
+import { INDIA, savedCountry, saveCountry, detectCountry } from "../../../content/countries.js";
+import { openWorldPicker } from "./world.js";
 import {
   createAdaptiveState,
   recordAttempt,
@@ -133,6 +135,17 @@ let guestMode       = localStorage.getItem(GUEST_KEY) === "1";
 let lang            = localStorage.getItem(LANG_KEY) || "en";
 let curriculum      = localStorage.getItem(CURR_KEY) || "cbse";
 let region          = "all"; // resolved from the user's location by detectRegion()
+// Country ("Built for the world"): India keeps every class; other countries
+// start with Class 1. Anyone who has already played on this device is an
+// existing India user, so they never get asked; only new visitors see the
+// world picker.
+let country         = savedCountry();
+if (!country) {
+  const hasHistory = (() => { try { return !!localStorage.getItem("lastPlayed") || (loadStats().totalAnswered || 0) > 0; } catch { return false; } })();
+  if (hasHistory) { country = INDIA; saveCountry("IN"); }
+}
+const activeCountry = () => country || INDIA;
+const gradeName     = (n) => activeCountry().grade(n);
 let soundOn         = localStorage.getItem(SOUND_KEY) !== "0"; // default on
 let adaptiveState   = loadJSON(ADAPTIVE_KEY, createAdaptiveState);
 let currentClass    = null;
@@ -394,10 +407,10 @@ function updateWelcomeBanner() {
   // Continue bar
   const last = loadJSON("lastPlayed", () => null);
   const continueBar = document.getElementById("continue-bar");
-  if (last) {
+  if (last && activeCountry().classes.includes(last.classNum)) {
     const subjects = getSubjectsForClass(last.classNum);
     const meta = subjects.find((s) => s.id === last.subject);
-    const label = meta ? `${meta.emoji} Class ${last.classNum} · ${meta.label}` : `Class ${last.classNum} · ${last.subject}`;
+    const label = meta ? `${meta.emoji} ${gradeName(last.classNum)} · ${meta.label}` : `${gradeName(last.classNum)} · ${last.subject}`;
     document.getElementById("continue-btn").textContent = label;
     continueBar.classList.remove("hidden");
   } else {
@@ -643,15 +656,56 @@ langSwitcher.addEventListener("change", () => {
   if (currentQuestion) renderQuestion(currentQuestion);
 });
 
-// ── class grid ──
-ALL_CLASSES.forEach(({ num, groupLabel, colorClass }) => {
-  const btn = document.createElement("button");
-  btn.className = `class-btn ${colorClass}`;
-  const emoji = GROUP_EMOJI[colorClass] || "⭐";
-  btn.innerHTML = `<span class="class-emoji">${emoji}</span><span class="class-num">${num}</span><span class="class-label">${groupLabel}</span>`;
-  btn.addEventListener("click", () => showSubjectPicker(num));
-  classGridEl.appendChild(btn);
+// ── class grid (filtered and named for the learner's country) ──
+function renderClassGrid() {
+  const c = activeCountry();
+  classGridEl.innerHTML = "";
+  ALL_CLASSES.filter(({ num }) => c.classes.includes(num)).forEach(({ num, groupLabel, colorClass }) => {
+    const btn = document.createElement("button");
+    btn.className = `class-btn ${colorClass}`;
+    const emoji = GROUP_EMOJI[colorClass] || "⭐";
+    // India keeps "1 · Primary"; elsewhere show the local name ("Grade 1", "Year 1").
+    const small = c.code === "IN" ? groupLabel : gradeName(num).replace(/\s*\d+[–-]?\d*$/, "") || groupLabel;
+    btn.innerHTML = `<span class="class-emoji">${emoji}</span><span class="class-num">${num}</span><span class="class-label">${small}</span>`;
+    btn.setAttribute("aria-label", gradeName(num));
+    btn.addEventListener("click", () => showSubjectPicker(num));
+    classGridEl.appendChild(btn);
+  });
+  const coming = document.getElementById("grades-coming");
+  if (coming) {
+    coming.textContent = c.code === "IN" ? "" : `${gradeName(1)} is ready for ${c.name} ${c.flag}. More grades are coming soon.`;
+    coming.classList.toggle("hidden", c.code === "IN");
+  }
+  document.getElementById("exam-section")?.classList.toggle("hidden", !c.exams);
+  document.getElementById("exam-grid")?.classList.toggle("hidden", !c.exams);
+  const flagBtn = document.getElementById("country-btn");
+  if (flagBtn) {
+    flagBtn.textContent = c.flag;
+    flagBtn.setAttribute("aria-label", `Country: ${c.name}. Change country`);
+    flagBtn.classList.remove("hidden");
+  }
+}
+renderClassGrid();
+
+function setCountry(c, { setLanguage = true } = {}) {
+  country = c;
+  saveCountry(c.code);
+  if (setLanguage && c.defaultLang && c.defaultLang !== lang) {
+    langSwitcher.value = c.defaultLang;
+    langSwitcher.dispatchEvent(new Event("change"));
+  }
+  renderClassGrid();
+  updateWelcomeBanner();
+  if (c.regions) detectRegion(); else { region = "all"; showRegionLabel(); }
+}
+
+document.getElementById("country-btn")?.addEventListener("click", () => {
+  openWorldPicker({ current: activeCountry(), onChoose: (c) => setCountry(c) });
 });
+// First visit: ask where the learner is, with the device's best guess ready.
+if (!country && !window.EC_DEMO) {
+  openWorldPicker({ onChoose: (c) => setCountry(c) });
+}
 
 // ── NEET / JEE / UPSC revision (in-app, parallel to the K-12 loop) ──
 const examGridEl   = document.getElementById("exam-grid");
@@ -914,7 +968,7 @@ async function detectRegion() {
   }
   showRegionLabel();
 }
-detectRegion();
+if (activeCountry().regions) detectRegion();
 
 // ── curriculum tabs ──
 currTabsEl.querySelectorAll(".curr-tab").forEach((tab) => {
@@ -1067,7 +1121,7 @@ async function startReview(classNum) {
   currentClass   = classNum;
   currentSubject = qs[0]._subj;
   reviewQueue    = qs;
-  playBadgeEl.textContent = `Class ${classNum} · 🔁 Review`;
+  playBadgeEl.textContent = `${gradeName(classNum)} · 🔁 Review`;
 
   sessionCount     = 0;
   sessionCorrect   = 0;
@@ -1099,7 +1153,7 @@ function showSubjectPicker(classNum) {
   currentClass = classNum;
   const subjects = getSubjectsForClass(classNum);
 
-  classBadgeEl.textContent = `Class ${classNum}`;
+  classBadgeEl.textContent = gradeName(classNum);
   subjectGridEl.innerHTML = "";
   subjects.forEach(({ id, label, emoji }) => {
     const btn = document.createElement("button");
@@ -1140,7 +1194,7 @@ async function startPlay(subject) {
   currentSubject = subject;
   const subjects = getSubjectsForClass(currentClass);
   const meta = subjects.find((s) => s.id === subject);
-  playBadgeEl.textContent = `Class ${currentClass} · ${meta?.label ?? subject}`;
+  playBadgeEl.textContent = `${gradeName(currentClass)} · ${meta?.label ?? subject}`;
   localStorage.setItem("lastPlayed", JSON.stringify({ classNum: currentClass, subject }));
 
   sessionCount     = 0;
