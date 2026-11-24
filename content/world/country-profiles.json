@@ -1,0 +1,1074 @@
+{
+ "generated": "2026-11-23",
+ "sources": {
+  "worldBank": {
+   "name": "World Bank, World Development Indicators and Human Capital Index (most recent value per country)",
+   "url": "https://data.worldbank.org/",
+   "indicators": {
+    "population": "SP.POP.TOTL",
+    "children0to14": "SP.POP.0014.TO",
+    "primaryEnrolled": "SE.PRM.ENRL",
+    "secondaryEnrolled": "SE.SEC.ENRL",
+    "tertiaryEnrolled": "SE.TER.ENRL",
+    "learningPoverty": "SE.LPV.PRIM",
+    "humanCapitalIndex": "HD.HCI.OVRL",
+    "educationSpendPctGdp": "SE.XPD.TOTL.GD.ZS",
+    "primaryCompletion": "SE.PRM.CMPT.ZS",
+    "laborForce": "SL.TLF.TOTL.IN",
+    "agriculturePctGdp": "NV.AGR.TOTL.ZS",
+    "industryPctGdp": "NV.IND.TOTL.ZS",
+    "servicesPctGdp": "NV.SRV.TOTL.ZS",
+    "highTechPctManufExports": "TX.VAL.TECH.MF.ZS",
+    "ictPctServiceExports": "BX.GSR.CCIS.ZS",
+    "fuelPctMerchExports": "TX.VAL.FUEL.ZS.UN",
+    "foodPctMerchExports": "TX.VAL.FOOD.ZS.UN",
+    "manufPctMerchExports": "TX.VAL.MANF.ZS.UN",
+    "remittancesPctGdp": "BX.TRF.PWKR.DT.GD.ZS",
+    "netMigration": "SM.POP.NETM",
+    "internetUsersPct": "IT.NET.USER.ZS",
+    "gdpPerCapitaUsd": "NY.GDP.PCAP.CD",
+    "tertiaryEnrolmentRatio": "SE.TER.ENRR"
+   }
+  },
+  "worldBankProjections": {
+   "name": "World Bank, Population Estimates and Projections (children aged 0 to 14)",
+   "url": "https://databank.worldbank.org/source/population-estimates-and-projections"
+  },
+  "imfAipi": {
+   "name": "IMF AI Preparedness Index (April 2024 release, 2023 data, 178 countries)",
+   "url": "https://www.imf.org/external/datamapper/AI_PI@AIPI/ADVEC/EME/LIC"
+  }
+ },
+ "countries": {
+  "IN": {
+   "population": {
+    "value": 1463900000,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 354190000,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 126120000,
+    "year": 2025
+   },
+   "secondaryEnrolled": {
+    "value": 133160000,
+    "year": 2025
+   },
+   "tertiaryEnrolled": {
+    "value": 35148000,
+    "year": 2019
+   },
+   "learningPoverty": {
+    "value": 56.071,
+    "year": 2017
+   },
+   "humanCapitalIndex": {
+    "value": 0.49351,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 4.0987,
+    "year": 2022
+   },
+   "primaryCompletion": {
+    "value": 90.256,
+    "year": 2025
+   },
+   "laborForce": {
+    "value": 617630000,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 16.234,
+    "year": 2025
+   },
+   "industryPctGdp": {
+    "value": 25.205,
+    "year": 2025
+   },
+   "servicesPctGdp": {
+    "value": 49.338,
+    "year": 2025
+   },
+   "highTechPctManufExports": {
+    "value": 18.572,
+    "year": 2024
+   },
+   "ictPctServiceExports": {
+    "value": 48.597,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 13.149,
+    "year": 2025
+   },
+   "foodPctMerchExports": {
+    "value": 11.86,
+    "year": 2025
+   },
+   "manufPctMerchExports": {
+    "value": 70.109,
+    "year": 2025
+   },
+   "remittancesPctGdp": {
+    "value": 3.8096,
+    "year": 2025
+   },
+   "netMigration": {
+    "value": -495750,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 70,
+    "year": 2025
+   },
+   "gdpPerCapitaUsd": {
+    "value": 2702.5,
+    "year": 2025
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 34.447,
+    "year": 2025
+   },
+   "children0to14Projected": {
+    "2030": 341454000,
+    "2040": 323416000,
+    "2050": 298817000
+   },
+   "aiPreparedness": {
+    "value": 0.493,
+    "rank": 79,
+    "of": 178,
+    "year": 2023
+   }
+  },
+  "NP": {
+   "population": {
+    "value": 29618000,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 8308500,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 3565300,
+    "year": 2025
+   },
+   "secondaryEnrolled": {
+    "value": 3668700,
+    "year": 2024
+   },
+   "tertiaryEnrolled": {
+    "value": 438180,
+    "year": 2019
+   },
+   "humanCapitalIndex": {
+    "value": 0.5046,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 3.6885,
+    "year": 2024
+   },
+   "primaryCompletion": {
+    "value": 109.44,
+    "year": 2025
+   },
+   "laborForce": {
+    "value": 8362800,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 21.558,
+    "year": 2025
+   },
+   "industryPctGdp": {
+    "value": 12.051,
+    "year": 2025
+   },
+   "servicesPctGdp": {
+    "value": 54.368,
+    "year": 2025
+   },
+   "highTechPctManufExports": {
+    "value": 0.61752,
+    "year": 2022
+   },
+   "ictPctServiceExports": {
+    "value": 9.6073,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 0.000422,
+    "year": 2022
+   },
+   "foodPctMerchExports": {
+    "value": 49.388,
+    "year": 2022
+   },
+   "manufPctMerchExports": {
+    "value": 47.515,
+    "year": 2022
+   },
+   "remittancesPctGdp": {
+    "value": 32.312,
+    "year": 2025
+   },
+   "netMigration": {
+    "value": -364700,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 46.322,
+    "year": 2024
+   },
+   "gdpPerCapitaUsd": {
+    "value": 1535.9,
+    "year": 2025
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 21.292,
+    "year": 2024
+   },
+   "children0to14Projected": {
+    "2030": 7927000,
+    "2040": 7364000,
+    "2050": 6756000
+   },
+   "aiPreparedness": {
+    "value": 0.351,
+    "rank": 138,
+    "of": 178,
+    "year": 2023
+   }
+  },
+  "BD": {
+   "population": {
+    "value": 175690000,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 48570000,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 16687000,
+    "year": 2024
+   },
+   "secondaryEnrolled": {
+    "value": 15068000,
+    "year": 2024
+   },
+   "tertiaryEnrolled": {
+    "value": 3695200,
+    "year": 2019
+   },
+   "learningPoverty": {
+    "value": 51.22,
+    "year": 2022
+   },
+   "humanCapitalIndex": {
+    "value": 0.46404,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 2.0344,
+    "year": 2024
+   },
+   "primaryCompletion": {
+    "value": 94.302,
+    "year": 2024
+   },
+   "laborForce": {
+    "value": 74740000,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 11.424,
+    "year": 2025
+   },
+   "industryPctGdp": {
+    "value": 34.028,
+    "year": 2025
+   },
+   "servicesPctGdp": {
+    "value": 52.135,
+    "year": 2025
+   },
+   "highTechPctManufExports": {
+    "value": 0.53945,
+    "year": 2018
+   },
+   "ictPctServiceExports": {
+    "value": 8.7941,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 1.0969,
+    "year": 2018
+   },
+   "foodPctMerchExports": {
+    "value": 3.3871,
+    "year": 2018
+   },
+   "manufPctMerchExports": {
+    "value": 94.453,
+    "year": 2018
+   },
+   "remittancesPctGdp": {
+    "value": 7.4244,
+    "year": 2025
+   },
+   "netMigration": {
+    "value": -402100,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 53.422,
+    "year": 2024
+   },
+   "gdpPerCapitaUsd": {
+    "value": 2597.3,
+    "year": 2025
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 23.73,
+    "year": 2024
+   },
+   "children0to14Projected": {
+    "2030": 48868000,
+    "2040": 46072000,
+    "2050": 41675000
+   },
+   "aiPreparedness": {
+    "value": 0.384,
+    "rank": 122,
+    "of": 178,
+    "year": 2023
+   }
+  },
+  "LK": {
+   "population": {
+    "value": 21756000,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 4721200,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 1576400,
+    "year": 2023
+   },
+   "secondaryEnrolled": {
+    "value": 2537000,
+    "year": 2023
+   },
+   "tertiaryEnrolled": {
+    "value": 325870,
+    "year": 2019
+   },
+   "learningPoverty": {
+    "value": 14.806,
+    "year": 2015
+   },
+   "humanCapitalIndex": {
+    "value": 0.59832,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 1.8277,
+    "year": 2023
+   },
+   "primaryCompletion": {
+    "value": 94.543,
+    "year": 2023
+   },
+   "laborForce": {
+    "value": 8264800,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 8.3625,
+    "year": 2025
+   },
+   "industryPctGdp": {
+    "value": 25.44,
+    "year": 2025
+   },
+   "servicesPctGdp": {
+    "value": 54.631,
+    "year": 2025
+   },
+   "highTechPctManufExports": {
+    "value": 1.5379,
+    "year": 2024
+   },
+   "ictPctServiceExports": {
+    "value": 12.778,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 3.6307,
+    "year": 2025
+   },
+   "foodPctMerchExports": {
+    "value": 29.044,
+    "year": 2025
+   },
+   "manufPctMerchExports": {
+    "value": 63.739,
+    "year": 2025
+   },
+   "remittancesPctGdp": {
+    "value": 7.6321,
+    "year": 2025
+   },
+   "netMigration": {
+    "value": -30724,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 54.59,
+    "year": 2024
+   },
+   "gdpPerCapitaUsd": {
+    "value": 5002.1,
+    "year": 2025
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 20.741,
+    "year": 2023
+   },
+   "children0to14Projected": {
+    "2030": 4492000,
+    "2040": 4243000,
+    "2050": 3998000
+   },
+   "aiPreparedness": {
+    "value": 0.436,
+    "rank": 100,
+    "of": 178,
+    "year": 2023
+   }
+  },
+  "AE": {
+   "population": {
+    "value": 11513000,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 1839500,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 586480,
+    "year": 2024
+   },
+   "secondaryEnrolled": {
+    "value": 894300,
+    "year": 2024
+   },
+   "tertiaryEnrolled": {
+    "value": 191790,
+    "year": 2017
+   },
+   "learningPoverty": {
+    "value": 25.916,
+    "year": 2021
+   },
+   "humanCapitalIndex": {
+    "value": 0.67301,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 3.894,
+    "year": 2021
+   },
+   "primaryCompletion": {
+    "value": 99.174,
+    "year": 2023
+   },
+   "laborForce": {
+    "value": 7602900,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 0.76944,
+    "year": 2024
+   },
+   "industryPctGdp": {
+    "value": 44.329,
+    "year": 2024
+   },
+   "servicesPctGdp": {
+    "value": 54.901,
+    "year": 2024
+   },
+   "highTechPctManufExports": {
+    "value": 8.9603,
+    "year": 2023
+   },
+   "ictPctServiceExports": {
+    "value": 4.2771,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 68.203,
+    "year": 2023
+   },
+   "foodPctMerchExports": {
+    "value": 2.8913,
+    "year": 2023
+   },
+   "manufPctMerchExports": {
+    "value": 8.8108,
+    "year": 2023
+   },
+   "netMigration": {
+    "value": 158630,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 100,
+    "year": 2024
+   },
+   "gdpPerCapitaUsd": {
+    "value": 50274,
+    "year": 2024
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 63.738,
+    "year": 2024
+   },
+   "children0to14Projected": {
+    "2030": 1965000,
+    "2040": 2460000,
+    "2050": 2798000
+   },
+   "aiPreparedness": {
+    "value": 0.628,
+    "rank": 41,
+    "of": 178,
+    "year": 2023
+   }
+  },
+  "SG": {
+   "population": {
+    "value": 6111200,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 714350,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 238820,
+    "year": 2023
+   },
+   "secondaryEnrolled": {
+    "value": 163750,
+    "year": 2023
+   },
+   "tertiaryEnrolled": {
+    "value": 198050,
+    "year": 2018
+   },
+   "learningPoverty": {
+    "value": 3.37,
+    "year": 2021
+   },
+   "humanCapitalIndex": {
+    "value": 0.87913,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 2.191,
+    "year": 2024
+   },
+   "primaryCompletion": {
+    "value": 96.847,
+    "year": 2023
+   },
+   "laborForce": {
+    "value": 3760100,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 0.024622,
+    "year": 2025
+   },
+   "industryPctGdp": {
+    "value": 22.671,
+    "year": 2025
+   },
+   "servicesPctGdp": {
+    "value": 71.591,
+    "year": 2025
+   },
+   "highTechPctManufExports": {
+    "value": 59.43,
+    "year": 2024
+   },
+   "ictPctServiceExports": {
+    "value": 7.9553,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 9.4123,
+    "year": 2025
+   },
+   "foodPctMerchExports": {
+    "value": 2.2551,
+    "year": 2025
+   },
+   "manufPctMerchExports": {
+    "value": 78.206,
+    "year": 2025
+   },
+   "netMigration": {
+    "value": 16892,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 94.378,
+    "year": 2024
+   },
+   "gdpPerCapitaUsd": {
+    "value": 98814,
+    "year": 2025
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 97.289,
+    "year": 2023
+   },
+   "children0to14Projected": {
+    "2030": 752000,
+    "2040": 746000,
+    "2050": 571000
+   },
+   "aiPreparedness": {
+    "value": 0.801,
+    "rank": 1,
+    "of": 178,
+    "year": 2023
+   }
+  },
+  "US": {
+   "population": {
+    "value": 341780000,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 58442000,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 23833000,
+    "year": 2023
+   },
+   "secondaryEnrolled": {
+    "value": 25345000,
+    "year": 2023
+   },
+   "tertiaryEnrolled": {
+    "value": 18942000,
+    "year": 2018
+   },
+   "learningPoverty": {
+    "value": 9.6916,
+    "year": 2021
+   },
+   "humanCapitalIndex": {
+    "value": 0.70176,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 5.4204,
+    "year": 2021
+   },
+   "primaryCompletion": {
+    "value": 95.744,
+    "year": 2022
+   },
+   "laborForce": {
+    "value": 174830000,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 0.94296,
+    "year": 2021
+   },
+   "industryPctGdp": {
+    "value": 17.575,
+    "year": 2021
+   },
+   "servicesPctGdp": {
+    "value": 76.256,
+    "year": 2021
+   },
+   "highTechPctManufExports": {
+    "value": 24.323,
+    "year": 2024
+   },
+   "ictPctServiceExports": {
+    "value": 8.2183,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 17.296,
+    "year": 2025
+   },
+   "foodPctMerchExports": {
+    "value": 8.9808,
+    "year": 2025
+   },
+   "manufPctMerchExports": {
+    "value": 54.933,
+    "year": 2025
+   },
+   "remittancesPctGdp": {
+    "value": 0.030371,
+    "year": 2025
+   },
+   "netMigration": {
+    "value": 1230700,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 94.694,
+    "year": 2024
+   },
+   "gdpPerCapitaUsd": {
+    "value": 90027,
+    "year": 2025
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 79.362,
+    "year": 2022
+   },
+   "children0to14Projected": {
+    "2030": 56817000,
+    "2040": 57777000,
+    "2050": 59350000
+   },
+   "aiPreparedness": {
+    "value": 0.771,
+    "rank": 3,
+    "of": 178,
+    "year": 2023
+   }
+  },
+  "GB": {
+   "population": {
+    "value": 69487000,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 11788000,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 4865000,
+    "year": 2023
+   },
+   "secondaryEnrolled": {
+    "value": 6396700,
+    "year": 2023
+   },
+   "tertiaryEnrolled": {
+    "value": 2467100,
+    "year": 2018
+   },
+   "learningPoverty": {
+    "value": 3.3939,
+    "year": 2021
+   },
+   "humanCapitalIndex": {
+    "value": 0.78294,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 5.9068,
+    "year": 2021
+   },
+   "primaryCompletion": {
+    "value": 101.07,
+    "year": 2023
+   },
+   "laborForce": {
+    "value": 35409000,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 0.63996,
+    "year": 2025
+   },
+   "industryPctGdp": {
+    "value": 16.489,
+    "year": 2025
+   },
+   "servicesPctGdp": {
+    "value": 73.098,
+    "year": 2025
+   },
+   "highTechPctManufExports": {
+    "value": 29.233,
+    "year": 2024
+   },
+   "ictPctServiceExports": {
+    "value": 9.1426,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 7.168,
+    "year": 2025
+   },
+   "foodPctMerchExports": {
+    "value": 6.7073,
+    "year": 2025
+   },
+   "manufPctMerchExports": {
+    "value": 59.655,
+    "year": 2025
+   },
+   "remittancesPctGdp": {
+    "value": 0.13401,
+    "year": 2025
+   },
+   "netMigration": {
+    "value": 389910,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 95.472,
+    "year": 2024
+   },
+   "gdpPerCapitaUsd": {
+    "value": 57602,
+    "year": 2025
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 80.415,
+    "year": 2023
+   },
+   "children0to14Projected": {
+    "2030": 11190000,
+    "2040": 10864000,
+    "2050": 11284000
+   },
+   "aiPreparedness": {
+    "value": 0.731,
+    "rank": 14,
+    "of": 178,
+    "year": 2023
+   }
+  },
+  "AU": {
+   "population": {
+    "value": 27614000,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 4882100,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 2270200,
+    "year": 2024
+   },
+   "secondaryEnrolled": {
+    "value": 2645200,
+    "year": 2024
+   },
+   "tertiaryEnrolled": {
+    "value": 1677200,
+    "year": 2018
+   },
+   "learningPoverty": {
+    "value": 9.0636,
+    "year": 2021
+   },
+   "humanCapitalIndex": {
+    "value": 0.77024,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 5.0592,
+    "year": 2022
+   },
+   "laborForce": {
+    "value": 15125000,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 2.2666,
+    "year": 2025
+   },
+   "industryPctGdp": {
+    "value": 23.886,
+    "year": 2025
+   },
+   "servicesPctGdp": {
+    "value": 67.493,
+    "year": 2025
+   },
+   "highTechPctManufExports": {
+    "value": 25.159,
+    "year": 2024
+   },
+   "ictPctServiceExports": {
+    "value": 3.3942,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 26.894,
+    "year": 2025
+   },
+   "foodPctMerchExports": {
+    "value": 13.737,
+    "year": 2025
+   },
+   "manufPctMerchExports": {
+    "value": 9.8367,
+    "year": 2025
+   },
+   "remittancesPctGdp": {
+    "value": 0.11168,
+    "year": 2025
+   },
+   "netMigration": {
+    "value": 137110,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 96.131,
+    "year": 2024
+   },
+   "gdpPerCapitaUsd": {
+    "value": 65130,
+    "year": 2025
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 108.42,
+    "year": 2024
+   },
+   "children0to14Projected": {
+    "2030": 4855000,
+    "2040": 4890000,
+    "2050": 5175000
+   },
+   "aiPreparedness": {
+    "value": 0.727,
+    "rank": 15,
+    "of": 178,
+    "year": 2023
+   }
+  },
+  "GM": {
+   "population": {
+    "value": 2822100,
+    "year": 2025
+   },
+   "children0to14": {
+    "value": 1121000,
+    "year": 2025
+   },
+   "primaryEnrolled": {
+    "value": 442900,
+    "year": 2025
+   },
+   "secondaryEnrolled": {
+    "value": 369780,
+    "year": 2021
+   },
+   "tertiaryEnrolled": {
+    "value": 5001,
+    "year": 2012
+   },
+   "humanCapitalIndex": {
+    "value": 0.42157,
+    "year": 2020
+   },
+   "educationSpendPctGdp": {
+    "value": 2.8084,
+    "year": 2023
+   },
+   "primaryCompletion": {
+    "value": 84.17,
+    "year": 2025
+   },
+   "laborForce": {
+    "value": 807280,
+    "year": 2025
+   },
+   "agriculturePctGdp": {
+    "value": 23.847,
+    "year": 2025
+   },
+   "industryPctGdp": {
+    "value": 15.83,
+    "year": 2025
+   },
+   "servicesPctGdp": {
+    "value": 53.07,
+    "year": 2025
+   },
+   "highTechPctManufExports": {
+    "value": 3.3476,
+    "year": 2024
+   },
+   "ictPctServiceExports": {
+    "value": 0.18519,
+    "year": 2025
+   },
+   "fuelPctMerchExports": {
+    "value": 0,
+    "year": 2024
+   },
+   "foodPctMerchExports": {
+    "value": 90.664,
+    "year": 2024
+   },
+   "manufPctMerchExports": {
+    "value": 1.0095,
+    "year": 2024
+   },
+   "remittancesPctGdp": {
+    "value": 23.788,
+    "year": 2025
+   },
+   "netMigration": {
+    "value": -2984,
+    "year": 2025
+   },
+   "internetUsersPct": {
+    "value": 49.494,
+    "year": 2024
+   },
+   "gdpPerCapitaUsd": {
+    "value": 919.06,
+    "year": 2025
+   },
+   "tertiaryEnrolmentRatio": {
+    "value": 13.477,
+    "year": 2024
+   },
+   "children0to14Projected": {
+    "2030": 1149000,
+    "2040": 1198000,
+    "2050": 1224000
+   },
+   "aiPreparedness": {
+    "value": 0.36,
+    "rank": 134,
+    "of": 178,
+    "year": 2023
+   }
+  }
+ }
+}

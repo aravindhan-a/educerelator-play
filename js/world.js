@@ -40,7 +40,7 @@ export function openWorldPicker({ current, onChoose, onClose } = {}) {
       <div class="wp-grid">${cards}</div>
       <p class="wp-note" id="wp-note"></p>
       <button type="button" class="wp-go" id="wp-go" disabled>Start learning</button>
-      <p class="wp-foot">More countries and languages are on the way. Don't see yours? Pick the closest one and choose your language inside.</p>
+      <p class="wp-foot"><a href="/world.html" target="_blank" rel="noopener">Explore how education is doing in each country →</a><br>More countries and languages are on the way. Don't see yours? Pick the closest one and choose your language inside.</p>
     </div>`;
 
   const go = el.querySelector("#wp-go");

@@ -1273,3 +1273,4 @@ body.wp-open { overflow: hidden; }
 .wp-foot { font-size: .8rem; color: #6b6385; margin-top: 10px; }
 @media (max-width: 420px) { .wp-grid { grid-template-columns: repeat(2, 1fr); } .wp-card { padding: 18px 12px 14px; } }
 @media (prefers-reduced-motion: reduce) { .wp-pin circle { transition: none; } }
+.wp-foot a { color: #7c3aed; font-weight: 800; }
