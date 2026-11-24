@@ -12,13 +12,13 @@
 // PRECACHE must cover the FULL module-import graph of js/main.js — ES modules
 // fetch each import separately (no ?v= on imports) and one miss rejects the
 // whole graph. Bump VERSION on any precached-asset change.
-const VERSION = "v9";
+const VERSION = "v11";
 const CACHE = `ecplay-${VERSION}`;
 const PRECACHE = [
   "/",
   "/offline.html",
-  "/css/style.css?v=game8",
-  "/js/main.js?v=game8",
+  "/css/style.css?v=game10",
+  "/js/main.js?v=game10",
   "/js/auth.js",
   "/js/firebase-config.js",
   "/js/premium.js",
@@ -27,9 +27,13 @@ const PRECACHE = [
   "/js/share-cards.js",
   "/js/sound-fx.js",
   "/js/stats.js",
+  "/js/usage.js",
+  "/js/world.js",
+  "/js/world-land.js",
   "/content/curriculum.js",
   "/content/exams.js",
   "/content/regions.js",
+  "/content/countries.js",
   "/shared-lib/adaptive-engine.js",
   "/shared-lib/audio-player.js",
   "/fonts/baloo2-var.woff2",

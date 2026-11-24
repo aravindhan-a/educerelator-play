@@ -94,7 +94,8 @@ polished enough to anchor a McGinnis Venture Competition submission.
 - [x] **C1. About/Impact page** (`692fb0a`): the founder story (TEDx, Teach For India),
   the mission, truthful numbers pulled at build time (question count, language
   count, class coverage); linked from footer; OG image from brand kit.
-- [ ] **C2. Privacy-first usage counters**: anonymous aggregate counters
+- [x] **W1. Built for the world, wave 1** : first-visit world picker (land-only map, no borders), country detected from the device time zone only, local grade names; India keeps Class 1–12 and exams, Nepal, Bangladesh, Sri Lanka, UAE, Singapore, USA, UK, Australia and The Gambia get Class 1 in existing languages. Next: one new language at a time (Arabic, Indonesian, Japanese, Danish, Somali), each with a native-speaker review. Regenerate pins with `scripts/generate-world-map.mjs` when countries change.
+- [~] **C2. Privacy-first usage counters** (code shipped: `/api/track`, `js/usage.js`, `/stats.html`; goes live once Vercel KV is attached and the backend is redeployed): anonymous aggregate counters
   (sessions started, questions answered, per language) via the existing
   Vercel backend → a tiny JSON endpoint; NO user ids, NO cookies, NO IP
   storage; a /stats view the founder can screenshot for the pitch. Gate

@@ -49,7 +49,8 @@
         ecplay_name_asked: "1",
         ecplay_analytics: JSON.stringify(stats),
         lastPlayed: JSON.stringify({ classNum: 7, subject: "math" }),
-        ecplay_milestone_done: "7"
+        ecplay_milestone_done: "7",
+        ecplay_country: "IN"
       };
       // Keep the visitor's chosen language if they already had one.
       try { var l = window.localStorage.getItem("lang"); if (l) data.lang = l; } catch (e) {}
@@ -259,7 +260,7 @@
 <link rel="dns-prefetch" href="https://www.gstatic.com" />
 <link rel="dns-prefetch" href="https://firestore.googleapis.com" />
 <link rel="preload" href="fonts/baloo2-var.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="css/style.css?v=game8" />
+<link rel="stylesheet" href="css/style.css?v=game10" />
 </head>
 <body>
 
@@ -276,6 +277,7 @@
   <button id="topbar-brand" class="topbar-brand">🦉 EC Play</button>
   <div class="topbar-right">
     <span id="streak-display" class="streak-display hidden">🔥 <span id="streak-count">0</span></span>
+    <button id="country-btn" class="country-btn hidden" type="button" aria-label="Change country" title="Change country"></button>
     <button id="sound-toggle" class="sound-toggle" aria-label="Turn sound off" aria-pressed="true">🔊</button>
     <button id="topbar-signin" class="topbar-signin hidden">Sign in</button>
     <div id="user-info" class="user-info hidden">
@@ -338,8 +340,9 @@
     <div class="class-grid" id="class-grid">
       <!-- populated by JS -->
     </div>
+    <p id="grades-coming" class="grades-coming hidden"></p>
 
-    <div class="exam-section">
+    <div class="exam-section" id="exam-section">
       <h2 class="screen-title exam-section-title">Competitive Exams</h2>
       <p class="exam-section-sub">Exam-pattern revision with smart repetition</p>
     </div>
@@ -512,8 +515,10 @@
 
 </main>
 
+<section id="world-picker" class="world-picker hidden"></section>
+
 <footer class="site-footer">
-  <span class="footer-brand">© 2026 Educerelator · India 🇮🇳</span>
+  <span class="footer-brand">© 2026 Educerelator · Built for the world 🌍</span>
   <span class="footer-sep">·</span>
   <button id="about-link" class="footer-link">About</button>
   <span class="footer-sep">·</span>
@@ -619,7 +624,7 @@
 
 </div>
 
-<script type="module" src="js/main.js?v=game8"></script>
+<script type="module" src="js/main.js?v=game10"></script>
 <script>
 // PWA: register the service worker from the site root (scope "/") on every
 // page, so SEO-entry visitors get offline + install support too.
