@@ -62,6 +62,7 @@
     <li><strong>Learning progress:</strong> Subject scores, streak counts, and session history — stored so progress carries across devices.</li>
     <li><strong>Language preference:</strong> Your selected interface language, stored on your device.</li>
     <li><strong>Approximate region:</strong> We detect your state or union territory from your internet connection (IP address) so we can show questions set in your local context. This happens on our own server, the state is not linked to your account, and your IP address is <strong>not stored</strong>. We do not collect precise or GPS location, and you are never asked to share it.</li>
+    <li><strong>Anonymous usage counts:</strong> When a practice session starts, a question is answered or a session finishes, the app adds one to an anonymous total (for example, "questions answered in Tamil today"). Each count records only the type of event, the interface language, the class and subject, whether the answer was right, a rough "how long since this device last played" range worked out on the device itself, and the country from the internet connection. It contains <strong>no name, email, account, device or cookie identifier, and your IP address is not stored</strong>. These totals help us see whether EC Play is helping, and cannot be traced back to any child.</li>
   </ul>
   <p>We do <strong>not</strong> collect photos, audio recordings, card or bank details, or any data beyond what is listed above.</p>
 
@@ -86,6 +87,7 @@
   <p>We use the following sub-processors to operate the Service:</p>
   <ul>
     <li><strong>Google Firebase</strong> (Authentication and Firestore database) — stores account and progress data on Google's secure servers. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+    <li><strong>Vercel</strong> — runs our small server that detects the approximate region and keeps the anonymous usage totals described above. Subject to <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel's Privacy Policy</a>.</li>
     <li><strong>GitHub Pages</strong> — hosts the web application. Subject to <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's Privacy Statement</a>.</li>
   </ul>
 

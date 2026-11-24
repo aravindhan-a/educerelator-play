@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EC Play Usage</title>
+<meta name="robots" content="noindex, nofollow" />
+<meta name="theme-color" content="#7c3aed" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1a1a2e;--muted:#5b5576;--brand:#7c3aed;--line:#ece6fb;--bg:#faf9ff;--card:#fff;--bar:#a78bfa}
+@media (prefers-color-scheme:dark){:root{--ink:#eeeaf8;--muted:#b3abcc;--line:#2c2545;--bg:#13101f;--card:#1c1730;--bar:#8b5cf6}}
+body{font-family:"Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+header{background:linear-gradient(135deg,#ff5e7e,var(--brand));color:#fff;padding:18px 16px}
+header h1{font-size:1.3rem;font-weight:900}header p{opacity:.9;font-size:.9rem}
+main{max-width:980px;margin:0 auto;padding:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.tile .n{font-size:1.7rem;font-weight:900;color:var(--brand);font-variant-numeric:tabular-nums}
+.tile .l{font-size:.85rem;color:var(--muted)}
+h2{font-size:1rem;margin:18px 0 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;overflow-x:auto}
+.bars{display:flex;align-items:flex-end;gap:3px;height:140px;min-width:420px}
+.bars div{flex:1;background:var(--bar);border-radius:3px 3px 0 0;min-height:2px;position:relative}
+.axis{display:flex;justify-content:space-between;font-size:.75rem;color:var(--muted);min-width:420px;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:.9rem}td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.note{font-size:.82rem;color:var(--muted);margin-top:16px}
+.msg{padding:24px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<header><h1>EC Play usage</h1><p id="since">Anonymous totals: no names, no ids, no cookies.</p></header>
+<main>
+  <div id="app"><p class="msg">Loading…</p></div>
+  <p class="note">Counts come from anonymous events (session started, question answered, session finished). Nothing identifies a child or a device. "Returning" means the device had played before, worked out on the device itself. Demo mode is never counted.</p>
+</main>
+<script>
+const API = "https://educerelator-backend.vercel.app/api/track?days=30";
+const LANG = { en:"English", hi:"Hindi", ta:"Tamil", te:"Telugu", bn:"Bengali", mr:"Marathi", gu:"Gujarati", kn:"Kannada", ml:"Malayalam", pa:"Punjabi", ur:"Urdu", or:"Odia", ne:"Nepali", as:"Assamese", sa:"Sanskrit", other:"Other" };
+const fmt = (n) => Number(n || 0).toLocaleString("en-IN");
+const pct = (a, b) => (b ? Math.round((100 * a) / b) + "%" : "–");
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const n = (o, k) => Number((o || {})[k] || 0);
+
+function group(hash, keyFn) {
+  const out = {};
+  for (const [k, v] of Object.entries(hash || {})) {
+    const parts = k.split(":"), ev = parts.pop(), key = keyFn(parts);
+    (out[key] = out[key] || {})[ev] = (out[key][ev] || 0) + Number(v);
+  }
+  return Object.entries(out).sort((a, b) => n(b[1], "answer") - n(a[1], "answer"));
+}
+function table(rows, label, nameFn) {
+  if (!rows.length) return `<p class="msg">No data yet</p>`;
+  return `<table><thead><tr><th>${label}</th><th class="num">Sessions</th><th class="num">Answers</th></tr></thead><tbody>${
+    rows.map(([k, v]) => `<tr><td>${esc(nameFn(k))}</td><td class="num">${fmt(v.start)}</td><td class="num">${fmt(v.answer)}</td></tr>`).join("")}</tbody></table>`;
+}
+function countryName(code) {
+  try { return code === "XX" ? "Unknown" : new Intl.DisplayNames(["en"], { type: "region" }).of(code) || code; } catch { return code; }
+}
+
+async function main() {
+  const app = document.getElementById("app");
+  let d;
+  try { d = await (await fetch(API, { cache: "no-store" })).json(); }
+  catch { app.innerHTML = `<p class="msg">Couldn't reach the counter service. Try again in a moment.</p>`; return; }
+  if (!d.enabled) { app.innerHTML = `<p class="msg">Counting isn't switched on yet: the backend needs its storage (Vercel KV) attached and a redeploy.</p>`; return; }
+
+  const t = d.total || {}, r = d.byRecency || {};
+  const returning = n(r,"d1") + n(r,"d7") + n(r,"d30") + n(r,"older");
+  const recentReturn = n(r,"d1") + n(r,"d7");
+  if (d.since) document.getElementById("since").textContent = `Anonymous totals since ${d.since}. No names, no ids, no cookies.`;
+  const tiles = [
+    [fmt(t.start), "practice sessions started"],
+    [fmt(t.answer), "questions answered"],
+    [pct(n(t,"correct"), n(t,"answer")), "answered correctly"],
+    [pct(n(t,"complete"), n(t,"start")), "sessions finished"],
+    [pct(returning, n(t,"start")), "sessions by returning players"],
+    [pct(recentReturn, n(t,"start")), "returned within a week"],
+  ];
+  const daily = d.daily || [];
+  const max = Math.max(1, ...daily.map((x) => n(x, "answer")));
+  const bars = daily.map((x) => `<div title="${esc(x.date)}: ${fmt(x.answer)} answers, ${fmt(x.start)} sessions" style="height:${Math.round(100 * n(x,"answer") / max)}%"></div>`).join("");
+  const byClass = group(d.byClass, (p) => `Class ${p[0]} · ${p[1]}`);
+
+  app.innerHTML = `
+    <div class="grid">${tiles.map(([v, l]) => `<div class="tile"><div class="n">${v}</div><div class="l">${l}</div></div>`).join("")}</div>
+    <h2>Questions answered, last 30 days</h2>
+    <div class="card"><div class="bars" role="img" aria-label="Daily questions answered over the last 30 days">${bars}</div>
+      <div class="axis"><span>${esc(daily[0]?.date || "")}</span><span>${esc(daily.at(-1)?.date || "")}</span></div></div>
+    <div class="cols">
+      <div><h2>By language</h2><div class="card">${table(group(d.byLang, (p) => p[0]), "Language", (k) => LANG[k] || k)}</div></div>
+      <div><h2>By country</h2><div class="card">${table(group(d.byCountry, (p) => p[0]), "Country", countryName)}</div></div>
+    </div>
+    <h2>By class and subject</h2><div class="card">${table(byClass, "Class · subject", (k) => k)}</div>`;
+}
+main();
+</script>
+</body>
+</html>
